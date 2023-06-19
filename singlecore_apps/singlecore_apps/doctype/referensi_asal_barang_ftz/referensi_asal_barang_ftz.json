@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2023-06-07 10:39:06.564663",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kode_asal_barangftz",
+  "asal_barangftz"
+ ],
+ "fields": [
+  {
+   "fieldname": "kode_asal_barangftz",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "KODE ASAL BARANG FTZ",
+   "reqd": 1
+  },
+  {
+   "columns": 5,
+   "fieldname": "asal_barangftz",
+   "fieldtype": "Data",
+   "label": "ASAL BARANG FTZ",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-09 11:45:22.797887",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Referensi Asal Barang FTZ",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

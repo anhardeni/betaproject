@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2023-06-09 11:06:40.456075",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kode_cara_bayar",
+  "nama_cara_bayar"
+ ],
+ "fields": [
+  {
+   "fieldname": "kode_cara_bayar",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "KODE CARA BAYAR",
+   "reqd": 1
+  },
+  {
+   "columns": 5,
+   "fieldname": "nama_cara_bayar",
+   "fieldtype": "Data",
+   "label": "NAMA CARA BAYAR",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-09 11:46:04.095024",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Referensi Cara Bayar",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
