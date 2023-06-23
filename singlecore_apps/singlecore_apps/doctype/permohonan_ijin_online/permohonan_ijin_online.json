@@ -18,8 +18,10 @@
   "tanggal_surat_pemohon",
   "perihal_surat_pemohon",
   "tujuan_surat_pemohon",
+  "pemohon_sc",
   "penerima_barang",
   "no_kontrak",
+  "tanggal_kontrak",
   "jenis_pekerjaan",
   "jenis_jaminan",
   "nilai_jaminan",
@@ -32,7 +34,11 @@
   "barang_yang_dikirim",
   "barang_yang_dihasilkan",
   "barang_bahan_sisa_potongan",
-  "bom_perhitungan_konversi"
+  "bom_perhitungan_konversi",
+  "area_asuransi_tab",
+  "no_polis",
+  "tanggal_polis",
+  "upload_polis"
  ],
  "fields": [
   {
@@ -145,7 +151,7 @@
    "bold": 1,
    "fieldname": "barang_tab",
    "fieldtype": "Tab Break",
-   "label": "Barang yang Dikirim"
+   "label": "Data Barang "
   },
   {
    "fieldname": "barang_yang_dikirim",
@@ -156,23 +162,54 @@
   {
    "bold": 1,
    "fieldname": "barang_yang_dihasilkan",
-   "fieldtype": "Data",
-   "label": "Barang yang Dihasilkan"
+   "fieldtype": "Table",
+   "label": "Barang yang Dihasilkan",
+   "options": "Barang yang Dihasilkan"
   },
   {
    "fieldname": "barang_bahan_sisa_potongan",
-   "fieldtype": "Data",
-   "label": "Barang Bahan Sisa Potongan"
+   "fieldtype": "Table",
+   "label": "Barang Bahan Sisa Potongan",
+   "options": "Barang Bahan Sisa Potongan"
   },
   {
    "fieldname": "bom_perhitungan_konversi",
    "fieldtype": "Data",
    "label": "BOM  Perhitungan Konversi"
+  },
+  {
+   "fieldname": "pemohon_sc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tanggal_kontrak",
+   "fieldtype": "Date",
+   "label": "Tanggal Kontrak"
+  },
+  {
+   "fieldname": "area_asuransi_tab",
+   "fieldtype": "Tab Break",
+   "label": "Area Asuransi "
+  },
+  {
+   "fieldname": "no_polis",
+   "fieldtype": "Data",
+   "label": "No Polis"
+  },
+  {
+   "fieldname": "tanggal_polis",
+   "fieldtype": "Date",
+   "label": "Tanggal Polis"
+  },
+  {
+   "fieldname": "upload_polis",
+   "fieldtype": "Attach",
+   "label": "Upload Polis"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-22 20:14:25.171629",
+ "modified": "2023-06-23 16:19:25.851899",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Permohonan Ijin Online",

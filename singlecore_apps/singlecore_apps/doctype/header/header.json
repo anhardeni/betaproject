@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-23 11:21:43.537200",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nomor_aju",
+  "kode_dokumen",
+  "nama_dokumen"
+ ],
+ "fields": [
+  {
+   "fieldname": "nomor_aju",
+   "fieldtype": "Data",
+   "label": "NOMOR AJU"
+  },
+  {
+   "fieldname": "kode_dokumen",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "KODE DOKUMEN",
+   "options": "Referensi Dokumen",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "kode_dokumen.nama_dokumen",
+   "fieldname": "nama_dokumen",
+   "fieldtype": "Read Only",
+   "label": "NAMA DOKUMEN"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-23 15:27:38.528182",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "HEADER",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
