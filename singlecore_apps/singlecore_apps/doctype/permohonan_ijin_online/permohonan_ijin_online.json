@@ -1,0 +1,197 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-21 09:13:48.114796",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "petugas_area",
+  "nomor_surat_persetujuan",
+  "tanggal_surat_persetujuan",
+  "sifat_surat_persetujuan",
+  "perihal_surat_persetujuan",
+  "pemohon_area_column",
+  "nama_pemohon",
+  "nomor_surat_pemohon",
+  "tanggal_surat_pemohon",
+  "perihal_surat_pemohon",
+  "tujuan_surat_pemohon",
+  "penerima_barang",
+  "no_kontrak",
+  "jenis_pekerjaan",
+  "jenis_jaminan",
+  "nilai_jaminan",
+  "nama_penjamin",
+  "jabatan_pemohon",
+  "dasar_aturan",
+  "jangka_waktu_pekerjaan",
+  "tanggal_batas_akhir_pekerjaan",
+  "barang_tab",
+  "barang_yang_dikirim",
+  "barang_yang_dihasilkan",
+  "barang_bahan_sisa_potongan",
+  "bom_perhitungan_konversi"
+ ],
+ "fields": [
+  {
+   "fieldname": "petugas_area",
+   "fieldtype": "Tab Break",
+   "label": "Petugas Area"
+  },
+  {
+   "fieldname": "nomor_surat_persetujuan",
+   "fieldtype": "Data",
+   "label": "Nomor Surat Persetujuan"
+  },
+  {
+   "fieldname": "tanggal_surat_persetujuan",
+   "fieldtype": "Date",
+   "label": "Tanggal Surat Persetujuan"
+  },
+  {
+   "fieldname": "sifat_surat_persetujuan",
+   "fieldtype": "Data",
+   "label": "Sifat Surat Persetujuan"
+  },
+  {
+   "fieldname": "perihal_surat_persetujuan",
+   "fieldtype": "Data",
+   "label": "Perihal Surat Persetujuan"
+  },
+  {
+   "fieldname": "pemohon_area_column",
+   "fieldtype": "Tab Break",
+   "label": "Pemohon Area"
+  },
+  {
+   "fieldname": "nama_pemohon",
+   "fieldtype": "Data",
+   "label": "Nama Pemohon"
+  },
+  {
+   "fieldname": "nomor_surat_pemohon",
+   "fieldtype": "Data",
+   "label": "Nomor Surat Pemohon"
+  },
+  {
+   "fieldname": "tanggal_surat_pemohon",
+   "fieldtype": "Date",
+   "label": "Tanggal Surat Pemohon"
+  },
+  {
+   "fieldname": "perihal_surat_pemohon",
+   "fieldtype": "Data",
+   "label": "Perihal Surat Pemohon"
+  },
+  {
+   "fieldname": "tujuan_surat_pemohon",
+   "fieldtype": "Data",
+   "label": "Tujuan Surat Pemohon"
+  },
+  {
+   "fieldname": "penerima_barang",
+   "fieldtype": "Data",
+   "label": "Penerima Barang"
+  },
+  {
+   "fieldname": "no_kontrak",
+   "fieldtype": "Data",
+   "label": "No Kontrak"
+  },
+  {
+   "fieldname": "jenis_pekerjaan",
+   "fieldtype": "Data",
+   "label": "Jenis Pekerjaan"
+  },
+  {
+   "fieldname": "jenis_jaminan",
+   "fieldtype": "Data",
+   "label": "Jenis Jaminan"
+  },
+  {
+   "fieldname": "nilai_jaminan",
+   "fieldtype": "Data",
+   "label": "Nilai Jaminan"
+  },
+  {
+   "fieldname": "nama_penjamin",
+   "fieldtype": "Data",
+   "label": "Nama Penjamin"
+  },
+  {
+   "fieldname": "jabatan_pemohon",
+   "fieldtype": "Data",
+   "label": "Jabatan Pemohon"
+  },
+  {
+   "fieldname": "dasar_aturan",
+   "fieldtype": "Data",
+   "label": "Dasar Aturan"
+  },
+  {
+   "fieldname": "jangka_waktu_pekerjaan",
+   "fieldtype": "Duration",
+   "hide_seconds": 1,
+   "label": "Jangka Waktu Pekerjaan"
+  },
+  {
+   "fieldname": "tanggal_batas_akhir_pekerjaan",
+   "fieldtype": "Date",
+   "label": "Tanggal Batas Akhir Pekerjaan "
+  },
+  {
+   "bold": 1,
+   "fieldname": "barang_tab",
+   "fieldtype": "Tab Break",
+   "label": "Barang yang Dikirim"
+  },
+  {
+   "fieldname": "barang_yang_dikirim",
+   "fieldtype": "Table",
+   "label": "Barang yang Dikirim",
+   "options": "Barang yang Dikirim"
+  },
+  {
+   "bold": 1,
+   "fieldname": "barang_yang_dihasilkan",
+   "fieldtype": "Data",
+   "label": "Barang yang Dihasilkan"
+  },
+  {
+   "fieldname": "barang_bahan_sisa_potongan",
+   "fieldtype": "Data",
+   "label": "Barang Bahan Sisa Potongan"
+  },
+  {
+   "fieldname": "bom_perhitungan_konversi",
+   "fieldtype": "Data",
+   "label": "BOM  Perhitungan Konversi"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-22 20:14:25.171629",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Permohonan Ijin Online",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

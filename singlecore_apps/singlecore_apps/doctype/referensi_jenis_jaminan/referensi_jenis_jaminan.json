@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2023-06-21 14:31:50.065200",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kode_jenis_jaminan",
+  "nama_jenis_jaminan"
+ ],
+ "fields": [
+  {
+   "fieldname": "kode_jenis_jaminan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "KODE JENIS JAMINAN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_jenis_jaminan",
+   "fieldtype": "Data",
+   "label": "NAMA JENIS JAMINAN"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-22 20:13:56.689442",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Referensi Jenis Jaminan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
