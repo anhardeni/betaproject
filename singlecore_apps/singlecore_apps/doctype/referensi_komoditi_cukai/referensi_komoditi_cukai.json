@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2023-06-21 15:11:07.440501",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kode_komoditi_cukai",
+  "nama_komoditi_cukai"
+ ],
+ "fields": [
+  {
+   "fieldname": "kode_komoditi_cukai",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "KODE KOMODITI CUKAI",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_komoditi_cukai",
+   "fieldtype": "Data",
+   "label": "NAMA KOMODITI CUKAI"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-06 08:37:11.878688",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Referensi Komoditi Cukai",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

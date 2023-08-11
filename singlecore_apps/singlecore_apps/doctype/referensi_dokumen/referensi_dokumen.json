@@ -2,6 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "field:kode_dokumen",
  "creation": "2023-06-16 14:55:33.388395",
  "default_view": "List",
  "doctype": "DocType",
@@ -17,7 +18,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "KODE DOKUMEN",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "nama_dokumen",
@@ -27,10 +29,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-16 14:55:33.388395",
+ "modified": "2023-08-03 15:06:23.169790",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Referensi Dokumen",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

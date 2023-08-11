@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2023-06-22 08:44:33.141863",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kode_spek_khusus",
+  "nama_spek_khusus"
+ ],
+ "fields": [
+  {
+   "fieldname": "kode_spek_khusus",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "KODE SPEK KHUSUS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_spek_khusus",
+   "fieldtype": "Data",
+   "label": "NAMA SPEK KHUSUS"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-06 08:40:23.989701",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Referensi Spesifikasi Khusus",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

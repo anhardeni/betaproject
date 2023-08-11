@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2023-06-22 08:27:18.788478",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kode_kondisi_barang",
+  "nama_kondisi_barang"
+ ],
+ "fields": [
+  {
+   "fieldname": "kode_kondisi_barang",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "KODE KONDISI BARANG",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_kondisi_barang",
+   "fieldtype": "Data",
+   "label": "NAMA KONDISI BARANG"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-06 08:38:24.672023",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Referensi Kondisi Barang",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

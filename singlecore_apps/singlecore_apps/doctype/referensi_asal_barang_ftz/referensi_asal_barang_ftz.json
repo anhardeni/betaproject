@@ -17,20 +17,19 @@
    "fieldtype": "Int",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "KODE ASAL BARANG FTZ",
-   "reqd": 1
+   "label": "KODE ASAL BARANG FTZ"
   },
   {
    "columns": 5,
    "fieldname": "asal_barangftz",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "label": "ASAL BARANG FTZ",
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-09 11:45:22.797887",
+ "modified": "2023-07-07 17:31:28.929532",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Referensi Asal Barang FTZ",
