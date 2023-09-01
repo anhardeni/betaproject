@@ -7,18 +7,36 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "nomor_aju"
+  "nomoraju",
+  "seri_barang",
+  "kode",
+  "uraian"
  ],
  "fields": [
   {
-   "fieldname": "nomor_aju",
+   "fieldname": "nomoraju",
    "fieldtype": "Data",
    "label": "NOMOR AJU"
+  },
+  {
+   "fieldname": "seri_barang",
+   "fieldtype": "Data",
+   "label": "SERI BARANG"
+  },
+  {
+   "fieldname": "kode",
+   "fieldtype": "Data",
+   "label": "KODE"
+  },
+  {
+   "fieldname": "uraian",
+   "fieldtype": "Data",
+   "label": "URAIAN"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-06 10:09:14.156466",
+ "modified": "2023-08-31 11:30:13.527611",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG SPEK KHUSUS",

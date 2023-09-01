@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestDOKUMEN(FrappeTestCase):
+class TestJAMINAN(FrappeTestCase):
 	pass

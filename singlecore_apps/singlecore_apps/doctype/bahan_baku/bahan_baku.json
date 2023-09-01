@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-07-06 10:04:40.763288",
+ "creation": "2023-08-31 11:40:21.557336",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,6 +9,8 @@
  "field_order": [
   "nomoraju",
   "seri_barang",
+  "seri_bahan_baku",
+  "kode_asal_bahan_baku",
   "hs",
   "kode_barang",
   "uraian",
@@ -18,8 +20,6 @@
   "spesifikasi_lain",
   "kode_satuan",
   "jumlah_satuan",
-  "kode_kemasan",
-  "jumlah_kemasan",
   "kode_dokumen_asal",
   "kode_kantor_asal",
   "nomor_daftar_asal",
@@ -29,43 +29,16 @@
   "netto",
   "bruto",
   "volume",
-  "saldo_awal",
-  "saldo_akhir",
-  "jumlah_realisasi",
   "cif",
   "cif_rupiah",
   "ndpbm",
-  "fob",
-  "asuransi",
-  "freight",
-  "nilai_tambah",
-  "diskon",
   "harga_penyerahan",
   "harga_perolehan",
-  "harga_satuan",
-  "harga_ekspor",
-  "harga_patokan",
-  "nilai_barang",
   "nilai_jasa",
-  "nilai_dana_sawit",
-  "nilai_devisa",
-  "persentase_impor",
-  "kode_asal_barang",
-  "kode_daerah_asal",
-  "kode_guna_barang",
-  "kode_jenis_nilai",
-  "jatuh_tempo_royalti",
-  "kode_kategori_barang",
-  "kode_kondisi_barang",
-  "kode_negara_asal",
-  "kode_perhitungan",
-  "pernyataan_lartas",
-  "flag_4_tahun",
   "seri_izin",
-  "tahun_pembuatan",
-  "kapasitas_silinder",
   "kode_bkc",
   "kode_komoditi_bkc",
+  "kode_sub_komoditi_bkc",
   "flag_tis",
   "isi_per_kemasan",
   "jumlah_dilekatkan",
@@ -83,6 +56,16 @@
    "fieldname": "seri_barang",
    "fieldtype": "Data",
    "label": "SERI BARANG"
+  },
+  {
+   "fieldname": "seri_bahan_baku",
+   "fieldtype": "Data",
+   "label": "SERI BAHAN BAKU"
+  },
+  {
+   "fieldname": "kode_asal_bahan_baku",
+   "fieldtype": "Data",
+   "label": "KODE ASAL BAHAN BAKU"
   },
   {
    "fieldname": "hs",
@@ -130,16 +113,6 @@
    "label": "JUMLAH SATUAN"
   },
   {
-   "fieldname": "kode_kemasan",
-   "fieldtype": "Data",
-   "label": "KODE KEMASAN"
-  },
-  {
-   "fieldname": "jumlah_kemasan",
-   "fieldtype": "Data",
-   "label": "JUMLAH KEMASAN"
-  },
-  {
    "fieldname": "kode_dokumen_asal",
    "fieldtype": "Data",
    "label": "KODE DOKUMEN ASAL"
@@ -185,21 +158,6 @@
    "label": "VOLUME"
   },
   {
-   "fieldname": "saldo_awal",
-   "fieldtype": "Data",
-   "label": "SALDO AWAL"
-  },
-  {
-   "fieldname": "saldo_akhir",
-   "fieldtype": "Data",
-   "label": "SALDO AKHIR"
-  },
-  {
-   "fieldname": "jumlah_realisasi",
-   "fieldtype": "Data",
-   "label": "JUMLAH REALISASI"
-  },
-  {
    "fieldname": "cif",
    "fieldtype": "Data",
    "label": "CIF"
@@ -215,31 +173,6 @@
    "label": "NDPBM"
   },
   {
-   "fieldname": "fob",
-   "fieldtype": "Data",
-   "label": "FOB"
-  },
-  {
-   "fieldname": "asuransi",
-   "fieldtype": "Data",
-   "label": "ASURANSI"
-  },
-  {
-   "fieldname": "freight",
-   "fieldtype": "Data",
-   "label": "FREIGHT"
-  },
-  {
-   "fieldname": "nilai_tambah",
-   "fieldtype": "Data",
-   "label": "NILAI TAMBAH"
-  },
-  {
-   "fieldname": "diskon",
-   "fieldtype": "Data",
-   "label": "DISKON"
-  },
-  {
    "fieldname": "harga_penyerahan",
    "fieldtype": "Data",
    "label": "HARGA PENYERAHAN"
@@ -250,114 +183,14 @@
    "label": "HARGA PEROLEHAN"
   },
   {
-   "fieldname": "harga_satuan",
-   "fieldtype": "Data",
-   "label": "HARGA SATUAN"
-  },
-  {
-   "fieldname": "harga_ekspor",
-   "fieldtype": "Data",
-   "label": "HARGA EKSPOR"
-  },
-  {
-   "fieldname": "harga_patokan",
-   "fieldtype": "Data",
-   "label": "HARGA PATOKAN"
-  },
-  {
-   "fieldname": "nilai_barang",
-   "fieldtype": "Data",
-   "label": "NILAI BARANG"
-  },
-  {
    "fieldname": "nilai_jasa",
    "fieldtype": "Data",
    "label": "NILAI JASA"
   },
   {
-   "fieldname": "nilai_dana_sawit",
-   "fieldtype": "Data",
-   "label": "NILAI DANA SAWIT"
-  },
-  {
-   "fieldname": "nilai_devisa",
-   "fieldtype": "Data",
-   "label": "NILAI DEVISA"
-  },
-  {
-   "fieldname": "persentase_impor",
-   "fieldtype": "Data",
-   "label": "PERSENTASE IMPOR"
-  },
-  {
-   "fieldname": "kode_asal_barang",
-   "fieldtype": "Data",
-   "label": "KODE ASAL BARANG"
-  },
-  {
-   "fieldname": "kode_daerah_asal",
-   "fieldtype": "Data",
-   "label": "KODE DAERAH ASAL"
-  },
-  {
-   "fieldname": "kode_guna_barang",
-   "fieldtype": "Data",
-   "label": "KODE GUNA BARANG"
-  },
-  {
-   "fieldname": "kode_jenis_nilai",
-   "fieldtype": "Data",
-   "label": "KODE JENIS NILAI"
-  },
-  {
-   "fieldname": "jatuh_tempo_royalti",
-   "fieldtype": "Data",
-   "label": "JATUH TEMPO ROYALTI"
-  },
-  {
-   "fieldname": "kode_kategori_barang",
-   "fieldtype": "Data",
-   "label": "KODE KATEGORI BARANG"
-  },
-  {
-   "fieldname": "kode_kondisi_barang",
-   "fieldtype": "Data",
-   "label": "KODE KONDISI BARANG"
-  },
-  {
-   "fieldname": "kode_negara_asal",
-   "fieldtype": "Data",
-   "label": "KODE NEGARA ASAL"
-  },
-  {
-   "fieldname": "kode_perhitungan",
-   "fieldtype": "Data",
-   "label": "KODE PERHITUNGAN"
-  },
-  {
-   "fieldname": "pernyataan_lartas",
-   "fieldtype": "Data",
-   "label": "PERNYATAAN LARTAS"
-  },
-  {
-   "fieldname": "flag_4_tahun",
-   "fieldtype": "Data",
-   "label": "FLAG 4 TAHUN"
-  },
-  {
    "fieldname": "seri_izin",
    "fieldtype": "Data",
    "label": "SERI IZIN"
-  },
-  {
-   "fieldname": "tahun_pembuatan",
-   "fieldtype": "Data",
-   "label": "TAHUN PEMBUATAN"
-  },
-  {
-   "fieldname": "kapasitas_silinder",
-   "fieldtype": "Data",
-   "label": "KAPASITAS SILINDER"
   },
   {
    "fieldname": "kode_bkc",
@@ -368,6 +201,11 @@
    "fieldname": "kode_komoditi_bkc",
    "fieldtype": "Data",
    "label": "KODE KOMODITI BKC"
+  },
+  {
+   "fieldname": "kode_sub_komoditi_bkc",
+   "fieldtype": "Data",
+   "label": "KODE SUB KOMODITI BKC"
   },
   {
    "fieldname": "flag_tis",
@@ -402,10 +240,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-31 09:42:02.721661",
+ "modified": "2023-08-31 11:40:27.322723",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "BARANG",
+ "name": "BAHAN BAKU",
  "owner": "Administrator",
  "permissions": [
   {

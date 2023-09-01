@@ -4,5 +4,5 @@
 # import frappe
 from frappe.model.document import Document
 
-class ReferensiDokumen1(Document):
+class BAHANBAKU(Document):
 	pass

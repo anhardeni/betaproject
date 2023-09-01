@@ -7,18 +7,96 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "nomor_aju"
+  "nomoraju",
+  "seri",
+  "kode_entitas",
+  "kode_jenis_identitas",
+  "nomor_identitas",
+  "nama_entitas",
+  "alamat_entitas",
+  "nib_entitas",
+  "kode_jenis_api",
+  "kode_status",
+  "nomor_ijin_entitas",
+  "tanggal_ijin_entitas",
+  "kode_negara",
+  "niper_entitas"
  ],
  "fields": [
   {
-   "fieldname": "nomor_aju",
+   "fieldname": "nomoraju",
    "fieldtype": "Data",
    "label": "NOMOR AJU"
+  },
+  {
+   "fieldname": "seri",
+   "fieldtype": "Data",
+   "label": "SERI"
+  },
+  {
+   "fieldname": "kode_entitas",
+   "fieldtype": "Data",
+   "label": "KODE ENTITAS"
+  },
+  {
+   "fieldname": "kode_jenis_identitas",
+   "fieldtype": "Data",
+   "label": "KODE JENIS IDENTITAS"
+  },
+  {
+   "fieldname": "nomor_identitas",
+   "fieldtype": "Data",
+   "label": "NOMOR IDENTITAS"
+  },
+  {
+   "fieldname": "nama_entitas",
+   "fieldtype": "Data",
+   "label": "NAMA ENTITAS"
+  },
+  {
+   "fieldname": "alamat_entitas",
+   "fieldtype": "Data",
+   "label": "ALAMAT ENTITAS"
+  },
+  {
+   "fieldname": "nib_entitas",
+   "fieldtype": "Data",
+   "label": "NIB ENTITAS"
+  },
+  {
+   "fieldname": "kode_jenis_api",
+   "fieldtype": "Data",
+   "label": "KODE JENIS API"
+  },
+  {
+   "fieldname": "kode_status",
+   "fieldtype": "Data",
+   "label": "KODE STATUS"
+  },
+  {
+   "fieldname": "nomor_ijin_entitas",
+   "fieldtype": "Data",
+   "label": "NOMOR IJIN ENTITAS"
+  },
+  {
+   "fieldname": "tanggal_ijin_entitas",
+   "fieldtype": "Data",
+   "label": "TANGGAL IJIN ENTITAS"
+  },
+  {
+   "fieldname": "kode_negara",
+   "fieldtype": "Data",
+   "label": "KODE NEGARA"
+  },
+  {
+   "fieldname": "niper_entitas",
+   "fieldtype": "Data",
+   "label": "NIPER ENTITAS"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-06 09:59:53.590636",
+ "modified": "2023-08-30 15:03:09.781869",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "ENTITAS",

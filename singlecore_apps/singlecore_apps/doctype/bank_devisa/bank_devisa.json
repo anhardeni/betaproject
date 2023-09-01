@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-07-06 10:02:14.401513",
+ "creation": "2023-08-31 14:33:57.403417",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,12 +9,8 @@
  "field_order": [
   "nomoraju",
   "seri",
-  "kode_cara_angkut",
-  "nama_pengangkut",
-  "nomor_pengangkut",
-  "kode_bendera",
-  "call_sign",
-  "flag_angkut_plb"
+  "kode",
+  "nama"
  ],
  "fields": [
   {
@@ -28,42 +24,22 @@
    "label": "SERI"
   },
   {
-   "fieldname": "kode_cara_angkut",
+   "fieldname": "kode",
    "fieldtype": "Data",
-   "label": "KODE CARA ANGKUT"
+   "label": "KODE"
   },
   {
-   "fieldname": "nama_pengangkut",
+   "fieldname": "nama",
    "fieldtype": "Data",
-   "label": "NAMA PENGANGKUT"
-  },
-  {
-   "fieldname": "nomor_pengangkut",
-   "fieldtype": "Data",
-   "label": "NOMOR PENGANGKUT"
-  },
-  {
-   "fieldname": "kode_bendera",
-   "fieldtype": "Data",
-   "label": "KODE BENDERA"
-  },
-  {
-   "fieldname": "call_sign",
-   "fieldtype": "Data",
-   "label": "CALL SIGN"
-  },
-  {
-   "fieldname": "flag_angkut_plb",
-   "fieldtype": "Data",
-   "label": "FLAG ANGKUT PLB"
+   "label": "NAMA"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-30 16:45:42.695101",
+ "modified": "2023-08-31 14:33:57.403417",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "PENGANGKUT",
+ "name": "BANK DEVISA",
  "owner": "Administrator",
  "permissions": [
   {

@@ -7,18 +7,42 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "nomor_aju"
+  "nomoraju",
+  "seri",
+  "kode_kemasan",
+  "jumlah_kemasan",
+  "merek"
  ],
  "fields": [
   {
-   "fieldname": "nomor_aju",
+   "fieldname": "nomoraju",
    "fieldtype": "Data",
    "label": "NOMOR AJU"
+  },
+  {
+   "fieldname": "seri",
+   "fieldtype": "Data",
+   "label": "SERI"
+  },
+  {
+   "fieldname": "kode_kemasan",
+   "fieldtype": "Data",
+   "label": "KODE KEMASAN"
+  },
+  {
+   "fieldname": "jumlah_kemasan",
+   "fieldtype": "Data",
+   "label": "JUMLAH KEMASAN"
+  },
+  {
+   "fieldname": "merek",
+   "fieldtype": "Data",
+   "label": "MEREK"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-06 10:03:07.446190",
+ "modified": "2023-08-30 16:47:18.912867",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "KEMASAN",

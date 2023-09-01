@@ -1,20 +1,22 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-07-06 10:02:14.401513",
+ "creation": "2023-08-31 14:33:17.522718",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "nomoraju",
-  "seri",
-  "kode_cara_angkut",
-  "nama_pengangkut",
-  "nomor_pengangkut",
-  "kode_bendera",
-  "call_sign",
-  "flag_angkut_plb"
+  "kode_kantor",
+  "kode_jaminan",
+  "nomor_jaminan",
+  "tanggal_jaminan",
+  "nilai_jaminan",
+  "penjamin",
+  "tanggal_jatuh_tempo",
+  "nomor_bpj",
+  "tanggal_bpj"
  ],
  "fields": [
   {
@@ -23,47 +25,57 @@
    "label": "NOMOR AJU"
   },
   {
-   "fieldname": "seri",
+   "fieldname": "kode_kantor",
    "fieldtype": "Data",
-   "label": "SERI"
+   "label": "KODE KANTOR"
   },
   {
-   "fieldname": "kode_cara_angkut",
+   "fieldname": "kode_jaminan",
    "fieldtype": "Data",
-   "label": "KODE CARA ANGKUT"
+   "label": "KODE JAMINAN"
   },
   {
-   "fieldname": "nama_pengangkut",
+   "fieldname": "nomor_jaminan",
    "fieldtype": "Data",
-   "label": "NAMA PENGANGKUT"
+   "label": "NOMOR JAMINAN"
   },
   {
-   "fieldname": "nomor_pengangkut",
+   "fieldname": "tanggal_jaminan",
    "fieldtype": "Data",
-   "label": "NOMOR PENGANGKUT"
+   "label": "TANGGAL JAMINAN"
   },
   {
-   "fieldname": "kode_bendera",
+   "fieldname": "nilai_jaminan",
    "fieldtype": "Data",
-   "label": "KODE BENDERA"
+   "label": "NILAI JAMINAN"
   },
   {
-   "fieldname": "call_sign",
+   "fieldname": "penjamin",
    "fieldtype": "Data",
-   "label": "CALL SIGN"
+   "label": "PENJAMIN"
   },
   {
-   "fieldname": "flag_angkut_plb",
+   "fieldname": "tanggal_jatuh_tempo",
    "fieldtype": "Data",
-   "label": "FLAG ANGKUT PLB"
+   "label": "TANGGAL JATUH TEMPO"
+  },
+  {
+   "fieldname": "nomor_bpj",
+   "fieldtype": "Data",
+   "label": "NOMOR BPJ"
+  },
+  {
+   "fieldname": "tanggal_bpj",
+   "fieldtype": "Data",
+   "label": "TANGGAL BPJ"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-30 16:45:42.695101",
+ "modified": "2023-08-31 14:33:17.522718",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "PENGANGKUT",
+ "name": "JAMINAN",
  "owner": "Administrator",
  "permissions": [
   {

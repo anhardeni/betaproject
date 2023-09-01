@@ -1,20 +1,19 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-07-06 10:02:14.401513",
+ "creation": "2023-08-31 11:32:41.202144",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "nomoraju",
-  "seri",
-  "kode_cara_angkut",
-  "nama_pengangkut",
-  "nomor_pengangkut",
-  "kode_bendera",
-  "call_sign",
-  "flag_angkut_plb"
+  "seri_barang",
+  "kode_vd",
+  "nilai_barang",
+  "biaya_tambahan",
+  "biaya_pengurang",
+  "jatuh_tempo"
  ],
  "fields": [
   {
@@ -23,47 +22,42 @@
    "label": "NOMOR AJU"
   },
   {
-   "fieldname": "seri",
+   "fieldname": "seri_barang",
    "fieldtype": "Data",
-   "label": "SERI"
+   "label": "SERI BARANG"
   },
   {
-   "fieldname": "kode_cara_angkut",
+   "fieldname": "kode_vd",
    "fieldtype": "Data",
-   "label": "KODE CARA ANGKUT"
+   "label": "KODE VD"
   },
   {
-   "fieldname": "nama_pengangkut",
+   "fieldname": "nilai_barang",
    "fieldtype": "Data",
-   "label": "NAMA PENGANGKUT"
+   "label": "NILAI BARANG"
   },
   {
-   "fieldname": "nomor_pengangkut",
+   "fieldname": "biaya_tambahan",
    "fieldtype": "Data",
-   "label": "NOMOR PENGANGKUT"
+   "label": "BIAYA TAMBAHAN"
   },
   {
-   "fieldname": "kode_bendera",
+   "fieldname": "biaya_pengurang",
    "fieldtype": "Data",
-   "label": "KODE BENDERA"
+   "label": "BIAYA PENGURANG"
   },
   {
-   "fieldname": "call_sign",
+   "fieldname": "jatuh_tempo",
    "fieldtype": "Data",
-   "label": "CALL SIGN"
-  },
-  {
-   "fieldname": "flag_angkut_plb",
-   "fieldtype": "Data",
-   "label": "FLAG ANGKUT PLB"
+   "label": "JATUH TEMPO"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-30 16:45:42.695101",
+ "modified": "2023-08-31 11:32:41.202144",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "PENGANGKUT",
+ "name": "BARANG VD",
  "owner": "Administrator",
  "permissions": [
   {

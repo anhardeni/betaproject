@@ -7,18 +7,48 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "nomor_aju"
+  "nomoraju",
+  "seri",
+  "nomor_kontainer",
+  "kode_ukuran_kontainer",
+  "kode_jenis_kontainer",
+  "kode_tipe_kontainer"
  ],
  "fields": [
   {
-   "fieldname": "nomor_aju",
+   "fieldname": "nomoraju",
    "fieldtype": "Data",
    "label": "NOMOR AJU"
+  },
+  {
+   "fieldname": "seri",
+   "fieldtype": "Data",
+   "label": "SERI"
+  },
+  {
+   "fieldname": "nomor_kontainer",
+   "fieldtype": "Data",
+   "label": "NOMOR KONTAINER"
+  },
+  {
+   "fieldname": "kode_ukuran_kontainer",
+   "fieldtype": "Data",
+   "label": "KODE UKURAN KONTAINER"
+  },
+  {
+   "fieldname": "kode_jenis_kontainer",
+   "fieldtype": "Data",
+   "label": "KODE JENIS KONTAINER"
+  },
+  {
+   "fieldname": "kode_tipe_kontainer",
+   "fieldtype": "Data",
+   "label": "KODE TIPE KONTAINER"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-06 10:03:48.546697",
+ "modified": "2023-08-30 16:49:19.614000",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "KONTAINER",

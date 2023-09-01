@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestReferensiDokumen1(FrappeTestCase):
+class TestBARANGVD(FrappeTestCase):
 	pass

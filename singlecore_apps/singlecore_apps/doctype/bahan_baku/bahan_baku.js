@@ -1,7 +1,7 @@
 // Copyright (c) 2023, AnharDeni and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Referensi Dokumen1', {
+frappe.ui.form.on('BAHAN BAKU', {
 	// refresh: function(frm) {
 
 	// }

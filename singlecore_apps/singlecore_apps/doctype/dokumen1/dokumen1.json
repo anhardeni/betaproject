@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-07-06 10:02:14.401513",
+ "creation": "2023-08-30 15:14:27.585645",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,12 +9,11 @@
  "field_order": [
   "nomoraju",
   "seri",
-  "kode_cara_angkut",
-  "nama_pengangkut",
-  "nomor_pengangkut",
-  "kode_bendera",
-  "call_sign",
-  "flag_angkut_plb"
+  "kode_dokumen",
+  "nomor_dokumen",
+  "tanggal_dokumen",
+  "kode_fasilitas",
+  "kode_ijin"
  ],
  "fields": [
   {
@@ -28,42 +27,37 @@
    "label": "SERI"
   },
   {
-   "fieldname": "kode_cara_angkut",
+   "fieldname": "kode_dokumen",
    "fieldtype": "Data",
-   "label": "KODE CARA ANGKUT"
+   "label": "KODE DOKUMEN"
   },
   {
-   "fieldname": "nama_pengangkut",
+   "fieldname": "nomor_dokumen",
    "fieldtype": "Data",
-   "label": "NAMA PENGANGKUT"
+   "label": "NOMOR DOKUMEN"
   },
   {
-   "fieldname": "nomor_pengangkut",
+   "fieldname": "tanggal_dokumen",
    "fieldtype": "Data",
-   "label": "NOMOR PENGANGKUT"
+   "label": "TANGGAL DOKUMEN"
   },
   {
-   "fieldname": "kode_bendera",
+   "fieldname": "kode_fasilitas",
    "fieldtype": "Data",
-   "label": "KODE BENDERA"
+   "label": "KODE FASILITAS"
   },
   {
-   "fieldname": "call_sign",
+   "fieldname": "kode_ijin",
    "fieldtype": "Data",
-   "label": "CALL SIGN"
-  },
-  {
-   "fieldname": "flag_angkut_plb",
-   "fieldtype": "Data",
-   "label": "FLAG ANGKUT PLB"
+   "label": "KODE IJIN"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-30 16:45:42.695101",
+ "modified": "2023-08-30 15:14:27.585645",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "PENGANGKUT",
+ "name": "DOKUMEN1",
  "owner": "Administrator",
  "permissions": [
   {

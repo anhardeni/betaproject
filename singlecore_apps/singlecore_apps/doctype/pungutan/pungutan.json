@@ -1,39 +1,45 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:kode_dokumen",
- "creation": "2023-06-26 14:55:58.083913",
+ "creation": "2023-08-31 14:30:25.219919",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kode_dokumen",
-  "nama_dokumen"
+  "nomoraju",
+  "kode_fasilitas_tarif",
+  "seri_bahan_baku",
+  "nilai_pungutan"
  ],
  "fields": [
   {
-   "fieldname": "kode_dokumen",
+   "fieldname": "nomoraju",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "KODE DOKUMEN",
-   "reqd": 1,
-   "unique": 1
+   "label": "NOMOR AJU"
   },
   {
-   "fieldname": "nama_dokumen",
+   "fieldname": "kode_fasilitas_tarif",
    "fieldtype": "Data",
-   "label": "NAMA DOKUMEN"
+   "label": "KODE FASILITAS TARIF"
+  },
+  {
+   "fieldname": "seri_bahan_baku",
+   "fieldtype": "Data",
+   "label": "KODE JENIS PUNGUTAN"
+  },
+  {
+   "fieldname": "nilai_pungutan",
+   "fieldtype": "Data",
+   "label": "NILAI PUNGUTAN"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-26 14:55:58.083913",
+ "modified": "2023-08-31 14:30:25.219919",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "Referensi Dokumen1",
- "naming_rule": "By fieldname",
+ "name": "PUNGUTAN",
  "owner": "Administrator",
  "permissions": [
   {

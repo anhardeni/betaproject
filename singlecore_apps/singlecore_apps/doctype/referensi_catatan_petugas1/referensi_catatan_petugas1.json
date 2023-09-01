@@ -1,27 +1,31 @@
 {
  "actions": [],
- "allow_rename": 1,
- "creation": "2023-07-06 10:01:09.106249",
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2023-08-25 16:37:43.240965",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "nomor_aju"
+  "catatan_petugas1"
  ],
  "fields": [
   {
-   "fieldname": "nomor_aju",
-   "fieldtype": "Data",
-   "label": "NOMOR AJU"
+   "fieldname": "catatan_petugas1",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Catatan Petugas1",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-06 10:01:09.106249",
+ "modified": "2023-08-25 16:37:43.240965",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "DOKUMEN",
+ "name": "Referensi Catatan Petugas1",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {

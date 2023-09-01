@@ -7,18 +7,36 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "nomor_aju"
+  "nomoraju",
+  "seri_barang",
+  "seri_dokumen",
+  "seri_izin"
  ],
  "fields": [
   {
-   "fieldname": "nomor_aju",
+   "fieldname": "nomoraju",
    "fieldtype": "Data",
    "label": "NOMOR AJU"
+  },
+  {
+   "fieldname": "seri_barang",
+   "fieldtype": "Data",
+   "label": "SERI BARANG"
+  },
+  {
+   "fieldname": "seri_dokumen",
+   "fieldtype": "Data",
+   "label": "SERI DOKUMEN"
+  },
+  {
+   "fieldname": "seri_izin",
+   "fieldtype": "Data",
+   "label": "SERI IZIN"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-06 10:07:37.061071",
+ "modified": "2023-08-31 11:28:24.131510",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG DOKUMEN",
