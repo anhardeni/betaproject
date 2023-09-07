@@ -1,0 +1,633 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-05 09:35:16.220251",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nomoraju",
+  "kode_dokumen",
+  "nama_dokumen",
+  "kode_kantor_bongkar",
+  "kode_kantor_periksa",
+  "kode_kantor_tujuan",
+  "kode_kantor_ekspor",
+  "kode_jenis_impor",
+  "kode_jenis_ekspor",
+  "kode_jenis_tpb",
+  "kode_jenis_plb",
+  "kode_jenis_prosedur",
+  "kode_tujuan_pemasukan",
+  "kode_tujuan_pengiriman",
+  "kode_tujuan_tpb",
+  "kode_cara_dagang",
+  "kode_cara_bayar",
+  "kode_cara_bayar_lainnya",
+  "kode_gudang_asal",
+  "kode_gudang_tujuan",
+  "kode_jenis_kirim",
+  "kode_jenis_pengiriman",
+  "kode_kategori_ekspor",
+  "kode_kategori_masuk_ftz",
+  "kode_kategori_keluar_ftz",
+  "kode_kategori_barang_ftz",
+  "kode_lokasi",
+  "kode_lokasi_bayar",
+  "lokasi_asal",
+  "lokasi_tujuan",
+  "kode_daerah_asal",
+  "kode_negara_tujuan",
+  "kode_tutup_pu",
+  "nomor_bc11",
+  "tanggal_bc11",
+  "nomor_pos",
+  "nomor_sub_pos",
+  "kode_pelabuhan_bongkar",
+  "kode_pelabuhan_muat",
+  "kode_pelabuhan_muat_akhir",
+  "kode_pelabuhan_transit",
+  "kode_pelabuhan_tujuan",
+  "kode_pelabuhan_ekspor",
+  "kode_tps",
+  "tanggal_berangkat",
+  "tanggal_ekspor",
+  "tanggal_masuk",
+  "tanggal_muat",
+  "tanggal_tiba",
+  "tanggal_periksa",
+  "tempat_stuffing",
+  "tanggal_stuffing",
+  "kode_tanda_pengaman",
+  "jumlah_tanda_pengaman",
+  "flag_curah",
+  "flag_sda",
+  "flag_vd",
+  "flag_migas",
+  "kode_asuransi",
+  "asuransi",
+  "nilai_barang",
+  "nilai_incoterm",
+  "nilai_maklon",
+  "freight",
+  "fob",
+  "biaya_tambahan",
+  "biaya_pengurang",
+  "vd",
+  "cif",
+  "harga_penyerahan",
+  "ndpbm",
+  "total_dana_sawit",
+  "dasar_pengenaan_pajak",
+  "nilai_jasa",
+  "uang_muka",
+  "bruto",
+  "netto",
+  "volume",
+  "kota_pernyataan",
+  "tanggal_pernyataan",
+  "nama_pernyataan",
+  "jabatan_pernyataan",
+  "kode_valuta",
+  "kode_incoterm",
+  "kode_jasa_kena_pajak",
+  "nomor_bukti_bayar",
+  "tanggal_bukti_bayar",
+  "kode_jenis_nilai",
+  "kode_kantor_muat",
+  "nomor_daftar",
+  "tanggal_daftar",
+  "kode_barang_asal_ftz",
+  "kode_tujuan_pengeluaran",
+  "ppn_pajak",
+  "ppnbm_pajak",
+  "tarif_ppn_pajak",
+  "tarif_ppnbm_pajak",
+  "barang_tidak_berwujud"
+ ],
+ "fields": [
+  {
+   "fieldname": "nomoraju",
+   "fieldtype": "Data",
+   "label": "NOMOR AJU"
+  },
+  {
+   "fieldname": "kode_dokumen",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "KODE DOKUMEN",
+   "options": "Referensi Dokumen",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "kode_dokumen.nama_dokumen",
+   "fieldname": "nama_dokumen",
+   "fieldtype": "Read Only",
+   "label": "KODE KANTOR"
+  },
+  {
+   "fieldname": "kode_kantor_bongkar",
+   "fieldtype": "Data",
+   "label": "KODE KANTOR BONGKAR"
+  },
+  {
+   "fieldname": "kode_kantor_periksa",
+   "fieldtype": "Data",
+   "label": "KODE KANTOR PERIKSA"
+  },
+  {
+   "fieldname": "kode_kantor_tujuan",
+   "fieldtype": "Data",
+   "label": "KODE KANTOR TUJUAN"
+  },
+  {
+   "fieldname": "kode_kantor_ekspor",
+   "fieldtype": "Data",
+   "label": "KODE KANTOR EKSPOR"
+  },
+  {
+   "fieldname": "kode_jenis_impor",
+   "fieldtype": "Data",
+   "label": "KODE JENIS IMPOR"
+  },
+  {
+   "fieldname": "kode_jenis_ekspor",
+   "fieldtype": "Data",
+   "label": "KODE JENIS EKSPOR"
+  },
+  {
+   "fieldname": "kode_jenis_tpb",
+   "fieldtype": "Data",
+   "label": "KODE JENIS TPB"
+  },
+  {
+   "fieldname": "kode_jenis_plb",
+   "fieldtype": "Data",
+   "label": "KODE JENIS PLB"
+  },
+  {
+   "fieldname": "kode_jenis_prosedur",
+   "fieldtype": "Data",
+   "label": "KODE JENIS PROSEDUR"
+  },
+  {
+   "fieldname": "kode_tujuan_pemasukan",
+   "fieldtype": "Data",
+   "label": "KODE TUJUAN PEMASUKAN"
+  },
+  {
+   "fieldname": "kode_tujuan_pengiriman",
+   "fieldtype": "Data",
+   "label": "KODE TUJUAN PENGIRIMAN"
+  },
+  {
+   "fieldname": "kode_tujuan_tpb",
+   "fieldtype": "Data",
+   "label": "KODE TUJUAN TPB"
+  },
+  {
+   "fieldname": "kode_cara_dagang",
+   "fieldtype": "Data",
+   "label": "KODE CARA DAGANG"
+  },
+  {
+   "fieldname": "kode_cara_bayar",
+   "fieldtype": "Data",
+   "label": "KODE CARA BAYAR"
+  },
+  {
+   "fieldname": "kode_cara_bayar_lainnya",
+   "fieldtype": "Data",
+   "label": "KODE CARA BAYAR LAINNYA"
+  },
+  {
+   "fieldname": "kode_gudang_asal",
+   "fieldtype": "Data",
+   "label": "KODE GUDANG ASAL"
+  },
+  {
+   "fieldname": "kode_gudang_tujuan",
+   "fieldtype": "Data",
+   "label": "KODE GUDANG TUJUAN"
+  },
+  {
+   "fieldname": "kode_jenis_kirim",
+   "fieldtype": "Data",
+   "label": "KODE JENIS KIRIM"
+  },
+  {
+   "fieldname": "kode_jenis_pengiriman",
+   "fieldtype": "Data",
+   "label": "KODE JENIS PENGIRIMAN"
+  },
+  {
+   "fieldname": "kode_kategori_ekspor",
+   "fieldtype": "Data",
+   "label": "KODE KATEGORI EKSPOR"
+  },
+  {
+   "fieldname": "kode_kategori_masuk_ftz",
+   "fieldtype": "Data",
+   "label": "KODE KATEGORI MASUK FTZ"
+  },
+  {
+   "fieldname": "kode_kategori_keluar_ftz",
+   "fieldtype": "Data",
+   "label": "KODE KATEGORI KELUAR FTZ"
+  },
+  {
+   "fieldname": "kode_kategori_barang_ftz",
+   "fieldtype": "Data",
+   "label": "KODE KATEGORI BARANG FTZ"
+  },
+  {
+   "fieldname": "kode_lokasi",
+   "fieldtype": "Data",
+   "label": "KODE LOKASI"
+  },
+  {
+   "fieldname": "kode_lokasi_bayar",
+   "fieldtype": "Data",
+   "label": "KODE LOKASI BAYAR"
+  },
+  {
+   "fieldname": "lokasi_asal",
+   "fieldtype": "Data",
+   "label": "LOKASI ASAL"
+  },
+  {
+   "fieldname": "lokasi_tujuan",
+   "fieldtype": "Data",
+   "label": "LOKASI TUJUAN"
+  },
+  {
+   "fieldname": "kode_daerah_asal",
+   "fieldtype": "Data",
+   "label": "KODE DAERAH ASAL"
+  },
+  {
+   "fieldname": "kode_negara_tujuan",
+   "fieldtype": "Data",
+   "label": "KODE NEGARA TUJUAN"
+  },
+  {
+   "fieldname": "kode_tutup_pu",
+   "fieldtype": "Data",
+   "label": "KODE TUTUP PU"
+  },
+  {
+   "fieldname": "nomor_bc11",
+   "fieldtype": "Data",
+   "label": "NOMOR BC11"
+  },
+  {
+   "fieldname": "tanggal_bc11",
+   "fieldtype": "Data",
+   "label": "TANGGAL BC11"
+  },
+  {
+   "fieldname": "nomor_pos",
+   "fieldtype": "Data",
+   "label": "NOMOR POS"
+  },
+  {
+   "fieldname": "nomor_sub_pos",
+   "fieldtype": "Data",
+   "label": "NOMOR SUB POS"
+  },
+  {
+   "fieldname": "kode_pelabuhan_bongkar",
+   "fieldtype": "Data",
+   "label": "KODE PELABUHAN BONGKAR"
+  },
+  {
+   "fieldname": "kode_pelabuhan_muat",
+   "fieldtype": "Data",
+   "label": "KODE PELABUHAN MUAT"
+  },
+  {
+   "fieldname": "kode_pelabuhan_muat_akhir",
+   "fieldtype": "Data",
+   "label": "KODE PELABUHAN MUAT AKHIR"
+  },
+  {
+   "fieldname": "kode_pelabuhan_transit",
+   "fieldtype": "Data",
+   "label": "KODE PELABUHAN TRANSIT"
+  },
+  {
+   "fieldname": "kode_pelabuhan_tujuan",
+   "fieldtype": "Data",
+   "label": "KODE PELABUHAN TUJUAN"
+  },
+  {
+   "fieldname": "kode_pelabuhan_ekspor",
+   "fieldtype": "Data",
+   "label": "KODE PELABUHAN EKSPOR"
+  },
+  {
+   "fieldname": "kode_tps",
+   "fieldtype": "Data",
+   "label": "KODE TPS"
+  },
+  {
+   "fieldname": "tanggal_berangkat",
+   "fieldtype": "Data",
+   "label": "TANGGAL BERANGKAT"
+  },
+  {
+   "fieldname": "tanggal_ekspor",
+   "fieldtype": "Data",
+   "label": "TANGGAL EKSPOR"
+  },
+  {
+   "fieldname": "tanggal_masuk",
+   "fieldtype": "Data",
+   "label": "TANGGAL MASUK"
+  },
+  {
+   "fieldname": "tanggal_muat",
+   "fieldtype": "Data",
+   "label": "TANGGAL MUAT"
+  },
+  {
+   "fieldname": "tanggal_tiba",
+   "fieldtype": "Data",
+   "label": "TANGGAL TIBA"
+  },
+  {
+   "fieldname": "tanggal_periksa",
+   "fieldtype": "Data",
+   "label": "TANGGAL PERIKSA"
+  },
+  {
+   "fieldname": "tempat_stuffing",
+   "fieldtype": "Data",
+   "label": "TEMPAT STUFFING"
+  },
+  {
+   "fieldname": "tanggal_stuffing",
+   "fieldtype": "Data",
+   "label": "TANGGAL STUFFING"
+  },
+  {
+   "fieldname": "kode_tanda_pengaman",
+   "fieldtype": "Data",
+   "label": "KODE TANDA PENGAMAN"
+  },
+  {
+   "fieldname": "jumlah_tanda_pengaman",
+   "fieldtype": "Data",
+   "label": "JUMLAH TANDA PENGAMAN"
+  },
+  {
+   "fieldname": "flag_curah",
+   "fieldtype": "Data",
+   "label": "FLAG CURAH"
+  },
+  {
+   "fieldname": "flag_sda",
+   "fieldtype": "Data",
+   "label": "FLAG SDA"
+  },
+  {
+   "fieldname": "flag_vd",
+   "fieldtype": "Data",
+   "label": "FLAG VD"
+  },
+  {
+   "fieldname": "flag_migas",
+   "fieldtype": "Data",
+   "label": "FLAG MIGAS"
+  },
+  {
+   "fieldname": "kode_asuransi",
+   "fieldtype": "Data",
+   "label": "KODE ASURANSI"
+  },
+  {
+   "fieldname": "asuransi",
+   "fieldtype": "Data",
+   "label": "ASURANSI"
+  },
+  {
+   "fieldname": "nilai_barang",
+   "fieldtype": "Data",
+   "label": "NILAI BARANG"
+  },
+  {
+   "fieldname": "nilai_incoterm",
+   "fieldtype": "Data",
+   "label": "NILAI INCOTERM"
+  },
+  {
+   "fieldname": "nilai_maklon",
+   "fieldtype": "Data",
+   "label": "NILAI MAKLON"
+  },
+  {
+   "fieldname": "freight",
+   "fieldtype": "Data",
+   "label": "FREIGHT"
+  },
+  {
+   "fieldname": "fob",
+   "fieldtype": "Data",
+   "label": "FOB"
+  },
+  {
+   "fieldname": "biaya_tambahan",
+   "fieldtype": "Data",
+   "label": "BIAYA TAMBAHAN"
+  },
+  {
+   "fieldname": "biaya_pengurang",
+   "fieldtype": "Data",
+   "label": "BIAYA PENGURANG"
+  },
+  {
+   "fieldname": "vd",
+   "fieldtype": "Data",
+   "label": "VD"
+  },
+  {
+   "fieldname": "cif",
+   "fieldtype": "Data",
+   "label": "CIF"
+  },
+  {
+   "fieldname": "harga_penyerahan",
+   "fieldtype": "Data",
+   "label": "HARGA PENYERAHAN"
+  },
+  {
+   "fieldname": "ndpbm",
+   "fieldtype": "Data",
+   "label": "NDPBM"
+  },
+  {
+   "fieldname": "total_dana_sawit",
+   "fieldtype": "Data",
+   "label": "TOTAL DANA SAWIT"
+  },
+  {
+   "fieldname": "dasar_pengenaan_pajak",
+   "fieldtype": "Data",
+   "label": "DASAR PENGENAAN PAJAK"
+  },
+  {
+   "fieldname": "nilai_jasa",
+   "fieldtype": "Data",
+   "label": "NILAI JASA"
+  },
+  {
+   "fieldname": "uang_muka",
+   "fieldtype": "Data",
+   "label": "UANG MUKA"
+  },
+  {
+   "fieldname": "bruto",
+   "fieldtype": "Data",
+   "label": "BRUTO"
+  },
+  {
+   "fieldname": "netto",
+   "fieldtype": "Data",
+   "label": "NETTO"
+  },
+  {
+   "fieldname": "volume",
+   "fieldtype": "Data",
+   "label": "VOLUME"
+  },
+  {
+   "fieldname": "kota_pernyataan",
+   "fieldtype": "Data",
+   "label": "KOTA PERNYATAAN"
+  },
+  {
+   "fieldname": "tanggal_pernyataan",
+   "fieldtype": "Data",
+   "label": "TANGGAL PERNYATAAN"
+  },
+  {
+   "fieldname": "nama_pernyataan",
+   "fieldtype": "Data",
+   "label": "NAMA PERNYATAAN"
+  },
+  {
+   "fieldname": "jabatan_pernyataan",
+   "fieldtype": "Data",
+   "label": "JABATAN PERNYATAAN"
+  },
+  {
+   "fieldname": "kode_valuta",
+   "fieldtype": "Data",
+   "label": "KODE VALUTA"
+  },
+  {
+   "fieldname": "kode_incoterm",
+   "fieldtype": "Data",
+   "label": "KODE INCOTERM"
+  },
+  {
+   "fieldname": "kode_jasa_kena_pajak",
+   "fieldtype": "Data",
+   "label": "KODE JASA KENA PAJAK"
+  },
+  {
+   "fieldname": "nomor_bukti_bayar",
+   "fieldtype": "Data",
+   "label": "NOMOR BUKTI BAYAR"
+  },
+  {
+   "fieldname": "tanggal_bukti_bayar",
+   "fieldtype": "Data",
+   "label": "TANGGAL BUKTI BAYAR"
+  },
+  {
+   "fieldname": "kode_jenis_nilai",
+   "fieldtype": "Data",
+   "label": "KODE JENIS NILAI"
+  },
+  {
+   "fieldname": "kode_kantor_muat",
+   "fieldtype": "Data",
+   "label": "KODE KANTOR MUAT"
+  },
+  {
+   "fieldname": "nomor_daftar",
+   "fieldtype": "Data",
+   "label": "NOMOR DAFTAR"
+  },
+  {
+   "fieldname": "tanggal_daftar",
+   "fieldtype": "Data",
+   "label": "TANGGAL DAFTAR"
+  },
+  {
+   "fieldname": "kode_barang_asal_ftz",
+   "fieldtype": "Data",
+   "label": "KODE ASAL BARANG FTZ"
+  },
+  {
+   "fieldname": "kode_tujuan_pengeluaran",
+   "fieldtype": "Data",
+   "label": "KODE TUJUAN PENGELUARAN"
+  },
+  {
+   "fieldname": "ppn_pajak",
+   "fieldtype": "Data",
+   "label": "PPN PAJAK"
+  },
+  {
+   "fieldname": "ppnbm_pajak",
+   "fieldtype": "Data",
+   "label": "PPNBM PAJAK"
+  },
+  {
+   "fieldname": "tarif_ppn_pajak",
+   "fieldtype": "Data",
+   "label": "TARIF PPN PAJAK"
+  },
+  {
+   "fieldname": "tarif_ppnbm_pajak",
+   "fieldtype": "Data",
+   "label": "TARIF PPNBM PAJAK"
+  },
+  {
+   "fieldname": "barang_tidak_berwujud",
+   "fieldtype": "Data",
+   "label": "BARANG TIDAK BERWUJUD"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-05 09:35:16.220251",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "HEADER MASTER",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

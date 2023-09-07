@@ -7,6 +7,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "asaldata",
   "nomoraju",
   "kode_dokumen",
   "nama_dokumen",
@@ -122,8 +123,10 @@
    "bold": 1,
    "fetch_from": "kode_dokumen.nama_dokumen",
    "fieldname": "nama_dokumen",
-   "fieldtype": "Read Only",
-   "label": "KODE KANTOR"
+   "fieldtype": "Link",
+   "label": "KODE KANTOR",
+   "options": "Referensi Kantor",
+   "reqd": 1
   },
   {
    "fieldname": "nomoraju",
@@ -132,23 +135,27 @@
   },
   {
    "fieldname": "kode_kantor_bongkar",
-   "fieldtype": "Data",
-   "label": "KODE KANTOR BONGKAR"
+   "fieldtype": "Link",
+   "label": "KODE KANTOR BONGKAR",
+   "options": "Referensi Kantor"
   },
   {
    "fieldname": "kode_kantor_periksa",
-   "fieldtype": "Data",
-   "label": "KODE KANTOR PERIKSA"
+   "fieldtype": "Link",
+   "label": "KODE KANTOR PERIKSA",
+   "options": "Referensi Kantor"
   },
   {
    "fieldname": "kode_kantor_tujuan",
-   "fieldtype": "Data",
-   "label": "KODE KANTOR TUJUAN"
+   "fieldtype": "Link",
+   "label": "KODE KANTOR TUJUAN",
+   "options": "Referensi Kantor"
   },
   {
    "fieldname": "kode_kantor_ekspor",
-   "fieldtype": "Data",
-   "label": "KODE KANTOR EKSPOR"
+   "fieldtype": "Link",
+   "label": "KODE KANTOR EKSPOR",
+   "options": "Referensi Kantor"
   },
   {
    "fieldname": "kode_jenis_impor",
@@ -604,11 +611,18 @@
    "fieldname": "barang_tidak_berwujud",
    "fieldtype": "Data",
    "label": "BARANG TIDAK BERWUJUD"
+  },
+  {
+   "default": "S",
+   "fieldname": "asaldata",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "ASAL DATA"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-30 14:59:16.490960",
+ "modified": "2023-09-05 10:09:32.864960",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "HEADER",
