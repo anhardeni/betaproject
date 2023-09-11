@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-08 19:55:13.661300",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nomoraju",
+  "kodejenisbarang",
+  "kodejenisgudang",
+  "namapic",
+  "alamat",
+  "nomortelppic",
+  "jumlahcontainer20",
+  "jumlahcontainer40",
+  "lokasisiapperiksa",
+  "kodecarastuffing",
+  "kodejenispartof",
+  "tanggalpkb",
+  "waktusiapperiksa"
+ ],
+ "fields": [
+  {
+   "fieldname": "nomoraju",
+   "fieldtype": "Data",
+   "label": "NOMOR AJU"
+  },
+  {
+   "description": "[1] Barang Ekspor Gabungan; \n[2] Bahan/Barang Asal Impor Fasilitas",
+   "fieldname": "kodejenisbarang",
+   "fieldtype": "Select",
+   "label": "kodeJenisBarang",
+   "options": "1\n2"
+  },
+  {
+   "description": "[1] Gudang Veem; [2] Gudang Pabrik; [3] Gudang Konsolidasi; [4] Lainnya",
+   "fieldname": "kodejenisgudang",
+   "fieldtype": "Select",
+   "label": "kodeJenisGudang",
+   "options": "1\n2\n3\n4"
+  },
+  {
+   "fieldname": "namapic",
+   "fieldtype": "Data",
+   "label": "namaPic"
+  },
+  {
+   "fieldname": "alamat",
+   "fieldtype": "Data",
+   "label": "alamat"
+  },
+  {
+   "fieldname": "nomortelppic",
+   "fieldtype": "Data",
+   "label": "nomorTelpPic",
+   "length": 25
+  },
+  {
+   "fieldname": "jumlahcontainer20",
+   "fieldtype": "Int",
+   "label": "jumlahContainer20"
+  },
+  {
+   "fieldname": "jumlahcontainer40",
+   "fieldtype": "Int",
+   "label": "jumlahContainer40"
+  },
+  {
+   "fieldname": "lokasisiapperiksa",
+   "fieldtype": "Data",
+   "label": "lokasiSiapPeriksa"
+  },
+  {
+   "description": "[4] Empty; [7] LCL; [8] FCL",
+   "fieldname": "kodecarastuffing",
+   "fieldtype": "Select",
+   "label": "kodeCaraStuffing",
+   "options": "4\n7\n8"
+  },
+  {
+   "description": "[1] Gabungan kemudahan ekspor; [2] Gabungan ke/non ke",
+   "fieldname": "kodejenispartof",
+   "fieldtype": "Select",
+   "label": "kodeJenisPartOf",
+   "options": "1\n2"
+  },
+  {
+   "fieldname": "tanggalpkb",
+   "fieldtype": "Date",
+   "label": "tanggalPkb"
+  },
+  {
+   "fieldname": "waktusiapperiksa",
+   "fieldtype": "Datetime",
+   "label": "waktuSiapPeriksa"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-08 19:55:47.649457",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "KESIAPAN BARANG",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
