@@ -57,6 +57,7 @@
   "tanggal_ekspor",
   "tanggal_masuk",
   "tanggal_muat",
+  "column_break_rbmu3",
   "tanggal_tiba",
   "tanggal_periksa",
   "tempat_stuffing",
@@ -107,6 +108,7 @@
   "tarif_ppn_pajak",
   "tarif_ppnbm_pajak",
   "barang_tidak_berwujud",
+  "scbreak_section",
   "barang",
   "entitas",
   "kemasan",
@@ -634,6 +636,7 @@
    "reqd": 1
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "barang",
    "fieldtype": "Table",
    "label": "BARANG",
@@ -680,11 +683,20 @@
    "fieldtype": "Table",
    "label": "KESIAPAN BARANG",
    "options": "KESIAPAN BARANG"
+  },
+  {
+   "fieldname": "column_break_rbmu3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scbreak_section",
+   "fieldtype": "Section Break",
+   "label": "Detail Barang"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-08 19:56:41.583400",
+ "modified": "2023-09-11 10:05:28.124421",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "HEADER",

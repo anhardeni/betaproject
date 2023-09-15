@@ -10,7 +10,7 @@
   "nomoraju",
   "seri_barang",
   "kode",
-  "uraian"
+  "uraianbarangspekkhusus"
  ],
  "fields": [
   {
@@ -29,14 +29,14 @@
    "label": "KODE"
   },
   {
-   "fieldname": "uraian",
+   "fieldname": "uraianbarangspekkhusus",
    "fieldtype": "Data",
    "label": "URAIAN"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-31 11:30:13.527611",
+ "modified": "2023-09-13 17:30:16.375912",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG SPEK KHUSUS",

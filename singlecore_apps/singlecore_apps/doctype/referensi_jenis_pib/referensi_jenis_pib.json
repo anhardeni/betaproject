@@ -2,43 +2,37 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:kode_dokumen",
- "creation": "2023-06-16 14:55:33.388395",
+ "autoname": "field:kode_jenis_pib",
+ "creation": "2023-09-15 14:24:30.742746",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kode_dokumen",
-  "nama_dokumen",
-  "nama_dok4digit"
+  "kode_jenis_pib",
+  "nama_jenis_pib"
  ],
  "fields": [
   {
-   "fieldname": "kode_dokumen",
+   "fieldname": "kode_jenis_pib",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "KODE DOKUMEN",
+   "label": "KODE JENIS PIB",
    "reqd": 1,
    "unique": 1
   },
   {
-   "fieldname": "nama_dokumen",
+   "fieldname": "nama_jenis_pib",
    "fieldtype": "Data",
-   "label": "NAMA DOKUMEN"
-  },
-  {
-   "fieldname": "nama_dok4digit",
-   "fieldtype": "Data",
-   "label": "NAMA DOK4DIGIT"
+   "label": "NAMA JENIS PIB"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-14 17:11:33.164988",
+ "modified": "2023-09-15 14:45:06.637425",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "Referensi Dokumen",
+ "name": "Referensi Jenis Pib",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

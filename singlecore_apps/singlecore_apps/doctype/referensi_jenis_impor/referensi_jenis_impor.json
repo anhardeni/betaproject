@@ -8,29 +8,29 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kode_jenis_prosedur",
-  "nama_jenis_prosedur"
+  "kode_jenis_impor1",
+  "nama_jenis_impor1"
  ],
  "fields": [
   {
-   "fieldname": "kode_jenis_prosedur",
+   "fieldname": "kode_jenis_impor1",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "KODE JENIS PROSEDUR",
+   "label": "KODE JENIS IMPOR1",
    "reqd": 1
   },
   {
-   "fieldname": "nama_jenis_prosedur",
+   "fieldname": "nama_jenis_impor1",
    "fieldtype": "Data",
-   "label": "NAMA JENIS PROSEDUR"
+   "label": "NAMA JENIS IMPOR1"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-06 08:34:45.235049",
+ "modified": "2023-09-15 17:01:49.353890",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "Referensi Jenis Prosedur",
+ "name": "Referensi Jenis Impor",
  "owner": "Administrator",
  "permissions": [
   {

@@ -53,7 +53,8 @@
   "penelitian_putusan_tab",
   "putusan_permohonan",
   "putusan_jaminan",
-  "putusan_perbaikan_data"
+  "putusan_perbaikan_data",
+  "bapak"
  ],
  "fields": [
   {
@@ -299,12 +300,18 @@
    "fieldname": "putusan_perbaikan_data",
    "fieldtype": "Data",
    "label": "Putusan Perbaikan Data"
+  },
+  {
+   "fieldname": "bapak",
+   "fieldtype": "Table",
+   "label": "BAPAK",
+   "options": "ANAK"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 3,
- "modified": "2023-07-31 11:04:18.340654",
+ "modified": "2023-09-12 08:34:40.771109",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Permohonan Online V1",
