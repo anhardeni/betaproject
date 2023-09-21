@@ -25,19 +25,19 @@
   },
   {
    "fieldname": "seri_dokumen",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "SERI DOKUMEN"
   },
   {
    "fieldname": "seri_izin",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "SERI IZIN"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-09-08 19:22:00.203133",
+ "modified": "2023-09-20 08:07:42.013646",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG DOKUMEN",

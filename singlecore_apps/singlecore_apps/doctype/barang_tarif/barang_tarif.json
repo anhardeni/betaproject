@@ -34,94 +34,103 @@
   },
   {
    "fieldname": "seri_barang",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "SERI BARANG"
   },
   {
    "fieldname": "kode_pungutan",
-   "fieldtype": "Data",
-   "label": "KODE PUNGUTAN"
+   "fieldtype": "Link",
+   "label": "KODE PUNGUTAN",
+   "options": "Referensi Jenis Pungutan"
   },
   {
    "fieldname": "kode_tarif",
-   "fieldtype": "Data",
-   "label": "KODE TARIF"
+   "fieldtype": "Link",
+   "label": "KODE TARIF",
+   "options": "Referensi Jenis Tarif"
   },
   {
    "fieldname": "tarif",
-   "fieldtype": "Data",
-   "label": "TARIF"
+   "fieldtype": "Float",
+   "label": "TARIF",
+   "precision": "2"
   },
   {
    "fieldname": "kode_fasilitas",
-   "fieldtype": "Data",
-   "label": "KODE FASILITAS"
+   "fieldtype": "Link",
+   "label": "KODE FASILITAS",
+   "options": "Referensi Fasilitas"
   },
   {
    "fieldname": "tarif_fasilitas",
-   "fieldtype": "Data",
-   "label": "TARIF FASILITAS"
+   "fieldtype": "Link",
+   "label": "TARIF FASILITAS",
+   "options": "Referensi Fasilitas Tarif"
   },
   {
    "fieldname": "nilai_bayar",
-   "fieldtype": "Data",
-   "label": "NILAI BAYAR"
+   "fieldtype": "Float",
+   "label": "NILAI BAYAR",
+   "precision": "4"
   },
   {
    "fieldname": "nilai_fasilitas",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "NILAI FASILITAS"
   },
   {
    "fieldname": "nilai_sudah_dilunasi",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "NILAI SUDAH DILUNASI"
   },
   {
    "fieldname": "kode_satuan",
-   "fieldtype": "Data",
-   "label": "KODE SATUAN"
+   "fieldtype": "Link",
+   "label": "KODE SATUAN",
+   "options": "Referensi Satuan Barang"
   },
   {
    "fieldname": "jumlah_satuan",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "JUMLAH SATUAN"
   },
   {
    "fieldname": "flag_bmt_sementara",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "FLAG BMT SEMENTARA"
   },
   {
    "fieldname": "kode_komoditi_cukai",
-   "fieldtype": "Data",
-   "label": "KODE KOMODITI CUKAI"
+   "fieldtype": "Link",
+   "label": "KODE KOMODITI CUKAI",
+   "options": "Referensi Komoditi Cukai"
   },
   {
    "fieldname": "flag_tis",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "FLAG TIS"
   },
   {
    "fieldname": "flag_pelekatan",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "FLAG PELEKATAN"
   },
   {
    "fieldname": "kode_kemasan",
-   "fieldtype": "Data",
-   "label": "KODE KEMASAN"
+   "fieldtype": "Link",
+   "label": "KODE KEMASAN",
+   "options": "Referensi Jenis Kemasan"
   },
   {
    "fieldname": "jumlah_kemasan",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "JUMLAH KEMASAN"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-09-08 19:21:05.675692",
+ "modified": "2023-09-20 08:04:44.974245",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG TARIF",
