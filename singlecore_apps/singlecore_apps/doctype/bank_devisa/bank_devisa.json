@@ -20,29 +20,32 @@
   },
   {
    "fieldname": "seri",
-   "fieldtype": "Data",
-   "label": "SERI"
+   "fieldtype": "Int",
+   "label": "SERI BANK"
   },
   {
    "fieldname": "kode",
-   "fieldtype": "Data",
-   "label": "KODE"
+   "fieldtype": "Link",
+   "label": "KODE BANK",
+   "options": "Referensi Bank"
   },
   {
+   "fetch_from": "kode.asal_bank",
    "fieldname": "nama",
-   "fieldtype": "Data",
-   "label": "NAMA"
+   "fieldtype": "Select",
+   "label": "NAMA BANK"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-09-08 19:37:44.237387",
+ "modified": "2023-09-21 10:01:27.932116",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BANK DEVISA",
  "owner": "Administrator",
  "permissions": [],
+ "search_fields": "nama",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
