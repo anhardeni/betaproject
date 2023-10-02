@@ -4,5 +4,5 @@
 # import frappe
 from frappe.model.document import Document
 
-class HEADERMASTER(Document):
+class ReferensiPelabuhanDalamNegeri(Document):
 	pass

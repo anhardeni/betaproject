@@ -1,33 +1,28 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-09-12 08:32:49.703690",
+ "creation": "2023-07-24 11:18:47.591960",
+ "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "nama",
-  "alamat"
+  "kode_bom"
  ],
  "fields": [
   {
-   "fieldname": "nama",
+   "fieldname": "kode_bom",
    "fieldtype": "Data",
-   "label": "NAMA"
-  },
-  {
-   "fieldname": "alamat",
-   "fieldtype": "Data",
-   "label": "ALAMAT"
+   "label": "Kode BOM"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-09-12 08:32:49.703690",
+ "modified": "2023-10-02 15:24:38.626065",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "CUCU",
+ "name": "BOM  Perhitungan Konversi",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

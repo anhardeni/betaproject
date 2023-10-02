@@ -2,6 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "field:nama_jenis_jaminan",
  "creation": "2023-06-21 14:31:50.065200",
  "default_view": "List",
  "doctype": "DocType",
@@ -22,15 +23,17 @@
   {
    "fieldname": "nama_jenis_jaminan",
    "fieldtype": "Data",
-   "label": "NAMA JENIS JAMINAN"
+   "label": "NAMA JENIS JAMINAN",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-22 20:13:56.689442",
+ "modified": "2023-09-22 16:21:54.280132",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Referensi Jenis Jaminan",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

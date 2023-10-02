@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestHEADERMASTER(FrappeTestCase):
+class TestReferensiGudang(FrappeTestCase):
 	pass

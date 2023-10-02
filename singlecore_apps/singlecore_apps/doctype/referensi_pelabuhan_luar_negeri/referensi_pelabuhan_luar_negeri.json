@@ -2,39 +2,35 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:nama_layanan",
- "creation": "2023-08-04 10:27:34.263910",
+ "creation": "2023-10-02 09:10:29.552024",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kode_layanan",
-  "nama_layanan"
+  "kode_pelabuhan_ln",
+  "nama_pelabuhan_ln"
  ],
  "fields": [
   {
-   "fieldname": "kode_layanan",
+   "fieldname": "kode_pelabuhan_ln",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "KODE LAYANAN",
-   "reqd": 1,
-   "unique": 1
+   "label": "KODE PELABUHAN LN",
+   "reqd": 1
   },
   {
-   "fieldname": "nama_layanan",
+   "fieldname": "nama_pelabuhan_ln",
    "fieldtype": "Data",
-   "label": "NAMA LAYANAN",
-   "unique": 1
+   "label": "NAMA PELABUHAN LN"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-22 10:46:44.535181",
+ "modified": "2023-10-02 09:10:29.552024",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "Referensi Layanan Fix",
- "naming_rule": "By fieldname",
+ "name": "Referensi Pelabuhan Luar Negeri",
  "owner": "Administrator",
  "permissions": [
   {

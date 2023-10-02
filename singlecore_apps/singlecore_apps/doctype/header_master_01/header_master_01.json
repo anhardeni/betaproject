@@ -11,7 +11,7 @@
   "nomoraju",
   "asaldata",
   "kode_dokumen",
-  "kode_daftar",
+  "kode_kantor",
   "kode_kantor_bongkar",
   "kode_kantor_periksa",
   "kode_kantor_tujuan",
@@ -137,17 +137,6 @@
    "label": "KODE DOKUMEN",
    "options": "Referensi Dokumen",
    "reqd": 1
-  },
-  {
-   "fieldname": "kode_daftar",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "KODE KANTOR",
-   "options": "Referensi Kantor",
-   "reqd": 1,
-   "search_index": 1
   },
   {
    "fieldname": "kode_kantor_bongkar",
@@ -680,11 +669,22 @@
    "fieldtype": "Table",
    "label": "KESIAPAN BARANG",
    "options": "KESIAPAN BARANG"
+  },
+  {
+   "fieldname": "kode_kantor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "KODE KANTOR",
+   "options": "Referensi Kantor",
+   "reqd": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-11 07:49:49.187835",
+ "modified": "2023-09-29 11:36:38.282535",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "HEADER MASTER-01",
