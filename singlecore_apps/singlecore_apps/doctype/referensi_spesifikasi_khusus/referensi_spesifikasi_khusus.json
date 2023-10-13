@@ -22,12 +22,12 @@
   {
    "fieldname": "nama_spek_khusus",
    "fieldtype": "Data",
-   "label": "NAMA SPEK KHUSUS"
+   "label": "Uraian Barang Spek Khusus"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-06 08:40:23.989701",
+ "modified": "2023-10-05 15:28:40.388288",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Referensi Spesifikasi Khusus",

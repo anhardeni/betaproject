@@ -52,7 +52,7 @@
   {
    "description": "0 - TIDAK\n1 - YA",
    "fieldname": "flag_angkut_plb",
-   "fieldtype": "Small Text",
+   "fieldtype": "Select",
    "label": "FLAG ANGKUT PLB",
    "options": "0\n1"
   },
@@ -65,7 +65,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-09-21 09:56:05.075972",
+ "modified": "2023-10-05 07:55:27.708920",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "PENGANGKUT",

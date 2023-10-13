@@ -1,0 +1,1194 @@
+[
+ {
+  "asal_bank": "TRANSAKSI_TUNAI",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "0",
+  "modified": "2023-06-07 14:10:00.044296",
+  "name": "9c5b00484e"
+ },
+ {
+  "asal_bank": "INDONESIA EXIMBANK",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "0",
+  "modified": "2023-06-07 14:10:00.062907",
+  "name": "4632802088"
+ },
+ {
+  "asal_bank": "POS INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "0",
+  "modified": "2023-06-07 14:10:00.067295",
+  "name": "ceca5614ac"
+ },
+ {
+  "asal_bank": "BANK RAKYAT INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "2",
+  "modified": "2023-06-07 14:10:00.071148",
+  "name": "0dc8027b11"
+ },
+ {
+  "asal_bank": "BANK MANDIRI",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "8",
+  "modified": "2023-06-07 14:10:00.075294",
+  "name": "b2884e6747"
+ },
+ {
+  "asal_bank": "BANK NEGARA INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "9",
+  "modified": "2023-06-07 14:10:00.079170",
+  "name": "acde9013f5"
+ },
+ {
+  "asal_bank": "BANK DANAMON SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "11",
+  "modified": "2023-06-07 14:10:00.083021",
+  "name": "6b946edb25"
+ },
+ {
+  "asal_bank": "BANK DANAMON",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "11",
+  "modified": "2023-06-07 14:10:00.086838",
+  "name": "865b3bbab4"
+ },
+ {
+  "asal_bank": "BANK PERMATA SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "13",
+  "modified": "2023-06-07 14:10:00.090893",
+  "name": "f17718ad95"
+ },
+ {
+  "asal_bank": "BANK PERMATA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "13",
+  "modified": "2023-06-07 14:10:00.094673",
+  "name": "174e990b1d"
+ },
+ {
+  "asal_bank": "BANK CENTRAL ASIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "14",
+  "modified": "2023-06-07 14:10:00.098639",
+  "name": "b8e12aad7f"
+ },
+ {
+  "asal_bank": "BANK INTERNASIONAL INDONESIA SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "16",
+  "modified": "2023-06-07 14:10:00.102449",
+  "name": "ef84ee3489"
+ },
+ {
+  "asal_bank": "BANK INTERNASIONAL INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "16",
+  "modified": "2023-06-07 14:10:00.106602",
+  "name": "c2f9ebd6df"
+ },
+ {
+  "asal_bank": "BANK PANIN",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "19",
+  "modified": "2023-06-07 14:10:00.110482",
+  "name": "84da0395cc"
+ },
+ {
+  "asal_bank": "BANK CIMB NIAGA SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "22",
+  "modified": "2023-06-07 14:10:00.114174",
+  "name": "17cb4d8e85"
+ },
+ {
+  "asal_bank": "BANK CIMB NIAGA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "22",
+  "modified": "2023-06-07 14:10:00.117790",
+  "name": "58addb06e9"
+ },
+ {
+  "asal_bank": "BANK UOB BUANA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "23",
+  "modified": "2023-06-07 14:10:00.121393",
+  "name": "0648b77689"
+ },
+ {
+  "asal_bank": "BANK OCBC NISP",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "28",
+  "modified": "2023-06-07 14:10:00.125492",
+  "name": "cf42be4b26"
+ },
+ {
+  "asal_bank": "BANK OCBC NISP SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "28",
+  "modified": "2023-06-07 14:10:00.129622",
+  "name": "393c7bc3c7"
+ },
+ {
+  "asal_bank": "CITIBANK",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "31",
+  "modified": "2023-06-07 14:10:00.133838",
+  "name": "d7c74816df"
+ },
+ {
+  "asal_bank": "JPMORGAN CHASE BANK",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "32",
+  "modified": "2023-06-07 14:10:00.137823",
+  "name": "2bd2ad794d"
+ },
+ {
+  "asal_bank": "BANK OF AMERICA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "33",
+  "modified": "2023-06-07 14:10:00.142128",
+  "name": "3a557d0e29"
+ },
+ {
+  "asal_bank": "BANK WINDU KENTJANA INTERNATIONAL",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "36",
+  "modified": "2023-06-07 14:10:00.145901",
+  "name": "19cd2b5c78"
+ },
+ {
+  "asal_bank": "BANK ARTHA GRAHA INTERNASIONAL",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "37",
+  "modified": "2023-06-07 14:10:00.149780",
+  "name": "da8f8c169a"
+ },
+ {
+  "asal_bank": "BANGKOK BANK PUBLIC CO. LTD",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "40",
+  "modified": "2023-06-07 14:10:00.153583",
+  "name": "8ac9ef3d15"
+ },
+ {
+  "asal_bank": "HSBC SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "41",
+  "modified": "2023-06-07 14:10:00.159381",
+  "name": "12f2e842f8"
+ },
+ {
+  "asal_bank": "HSBC",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "41",
+  "modified": "2023-06-07 14:10:00.163136",
+  "name": "b13c2cde94"
+ },
+ {
+  "asal_bank": "MUFG BANK, LTD",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "42",
+  "modified": "2023-06-07 14:10:00.167048",
+  "name": "694c138ed8"
+ },
+ {
+  "asal_bank": "BANK SUMITOMO MITSUI INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "45",
+  "modified": "2023-06-07 14:10:00.170852",
+  "name": "ac928c272a"
+ },
+ {
+  "asal_bank": "BANK DBS INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "46",
+  "modified": "2023-06-07 14:10:00.174965",
+  "name": "6ae7edad1c"
+ },
+ {
+  "asal_bank": "BANK RESONA PERDANIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "47",
+  "modified": "2023-06-07 14:10:00.178696",
+  "name": "c1b0ba980c"
+ },
+ {
+  "asal_bank": "BANK MIZUHO INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "48",
+  "modified": "2023-06-07 14:10:00.182340",
+  "name": "5f6793dba4"
+ },
+ {
+  "asal_bank": "STANDARD CHARTERED BANK",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "50",
+  "modified": "2023-06-07 14:10:00.186187",
+  "name": "e929bd7137"
+ },
+ {
+  "asal_bank": "THE ROYAL BANK OF SCOTLAND N.V.",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "52",
+  "modified": "2023-06-07 14:10:00.190659",
+  "name": "1cda66b428"
+ },
+ {
+  "asal_bank": "BANK CAPITAL INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "54",
+  "modified": "2023-06-07 14:10:00.194826",
+  "name": "58b896cc40"
+ },
+ {
+  "asal_bank": "BANK BNP PARIBAS INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "57",
+  "modified": "2023-06-07 14:10:00.198775",
+  "name": "dc37633309"
+ },
+ {
+  "asal_bank": "BANK KEB INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "59",
+  "modified": "2023-06-07 14:10:00.202416",
+  "name": "c113b1d3d2"
+ },
+ {
+  "asal_bank": "PT.BANK RABOBANK INTERNATIONAL INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "60",
+  "modified": "2023-06-07 14:10:00.206377",
+  "name": "0409c14612"
+ },
+ {
+  "asal_bank": "ANZ PANIN BANK",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "61",
+  "modified": "2023-06-07 14:10:00.210436",
+  "name": "344e181a36"
+ },
+ {
+  "asal_bank": "DEUTSCHE BANK AG",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "67",
+  "modified": "2023-06-07 14:10:00.214228",
+  "name": "c7760bec61"
+ },
+ {
+  "asal_bank": "BANK WOORI INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "68",
+  "modified": "2023-06-07 14:10:00.218065",
+  "name": "c8073f4a6d"
+ },
+ {
+  "asal_bank": "BANK OF CHINA LIMITED",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "69",
+  "modified": "2023-06-07 14:10:00.221814",
+  "name": "3f407665f5"
+ },
+ {
+  "asal_bank": "BANK BUMI ARTA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "76",
+  "modified": "2023-06-07 14:10:00.225740",
+  "name": "372cc58b85"
+ },
+ {
+  "asal_bank": "BANK EKONOMI RAHARJA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "87",
+  "modified": "2023-06-07 14:10:00.229520",
+  "name": "3202f2844b"
+ },
+ {
+  "asal_bank": "BANK ANTARDAERAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "88",
+  "modified": "2023-06-07 14:10:00.233319",
+  "name": "199c046196"
+ },
+ {
+  "asal_bank": "BANK RABOBANK INTERNATIONAL INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "89",
+  "modified": "2023-06-07 14:10:00.237034",
+  "name": "d2d2005015"
+ },
+ {
+  "asal_bank": "BANK MUTIARA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "95",
+  "modified": "2023-06-07 14:10:00.241107",
+  "name": "8a16fd8ec4"
+ },
+ {
+  "asal_bank": "BANK MAYAPADA INTERNATIONAL",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "97",
+  "modified": "2023-06-07 14:10:00.244877",
+  "name": "7cebfd9151"
+ },
+ {
+  "asal_bank": "BPD JABAR BANTEN",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "110",
+  "modified": "2023-06-07 14:10:00.248908",
+  "name": "4c2712444b"
+ },
+ {
+  "asal_bank": "BPD DKI SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "111",
+  "modified": "2023-06-07 14:10:00.252635",
+  "name": "7a0f5de5f9"
+ },
+ {
+  "asal_bank": "BPD DKI",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "111",
+  "modified": "2023-06-07 14:10:00.256635",
+  "name": "e73f746a05"
+ },
+ {
+  "asal_bank": "BPD YOGYAKARTA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "112",
+  "modified": "2023-06-07 14:10:00.260677",
+  "name": "a674345136"
+ },
+ {
+  "asal_bank": "BPD YOGYAKARTA SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "112",
+  "modified": "2023-06-07 14:10:00.264692",
+  "name": "3a5f452b3b"
+ },
+ {
+  "asal_bank": "BPD JAWA TENGAH SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "113",
+  "modified": "2023-06-07 14:10:00.268579",
+  "name": "3e4b094f73"
+ },
+ {
+  "asal_bank": "BPD JAWA TENGAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "113",
+  "modified": "2023-06-07 14:10:00.273203",
+  "name": "34b35ef81f"
+ },
+ {
+  "asal_bank": "BPD JAWA TIMUR SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "114",
+  "modified": "2023-06-07 14:10:00.277067",
+  "name": "98677d42f9"
+ },
+ {
+  "asal_bank": "BPD JAWA TIMUR",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "114",
+  "modified": "2023-06-07 14:10:00.280861",
+  "name": "40781bb657"
+ },
+ {
+  "asal_bank": "BPD JAMBI",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "115",
+  "modified": "2023-06-07 14:10:00.286623",
+  "name": "83b664bf2f"
+ },
+ {
+  "asal_bank": "BPD ACEH SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "116",
+  "modified": "2023-06-07 14:10:00.290571",
+  "name": "14ef7ed827"
+ },
+ {
+  "asal_bank": "BPD ACEH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "116",
+  "modified": "2023-06-07 14:10:00.294664",
+  "name": "3ab04c1ecd"
+ },
+ {
+  "asal_bank": "BPD SUMATERA UTARA SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "117",
+  "modified": "2023-06-07 14:10:00.298726",
+  "name": "002bfa594c"
+ },
+ {
+  "asal_bank": "BPD SUMATERA UTARA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "117",
+  "modified": "2023-06-07 14:10:00.302553",
+  "name": "b8543b6e97"
+ },
+ {
+  "asal_bank": "BPD SUMATERA BARAT SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "118",
+  "modified": "2023-06-07 14:10:00.306625",
+  "name": "8df034b6e3"
+ },
+ {
+  "asal_bank": "BPD SUMATERA BARAT",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "118",
+  "modified": "2023-06-07 14:10:00.310413",
+  "name": "9af9f7b706"
+ },
+ {
+  "asal_bank": "BPD RIAU",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "119",
+  "modified": "2023-06-07 14:10:00.314251",
+  "name": "c59072bf81"
+ },
+ {
+  "asal_bank": "BPD RIAU SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "119",
+  "modified": "2023-06-07 14:10:00.318195",
+  "name": "5dce3469a6"
+ },
+ {
+  "asal_bank": "BPD SUMSEL dan BABEL",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "120",
+  "modified": "2023-06-07 14:10:00.321640",
+  "name": "0671283372"
+ },
+ {
+  "asal_bank": "BPD SUMSEL dan BABEL SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "120",
+  "modified": "2023-06-07 14:10:00.325500",
+  "name": "78ff410025"
+ },
+ {
+  "asal_bank": "BPD LAMPUNG",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "121",
+  "modified": "2023-06-07 14:10:00.329915",
+  "name": "a3d9562a0c"
+ },
+ {
+  "asal_bank": "BPD KALIMANTAN SELATAN SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "122",
+  "modified": "2023-06-07 14:10:00.333700",
+  "name": "da1ee42f1d"
+ },
+ {
+  "asal_bank": "BPD KALIMANTAN SELATAN",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "122",
+  "modified": "2023-06-07 14:10:00.337576",
+  "name": "ceabf5fa93"
+ },
+ {
+  "asal_bank": "BPD KALIMANTAN BARAT SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "123",
+  "modified": "2023-06-07 14:10:00.341462",
+  "name": "ef42537dfe"
+ },
+ {
+  "asal_bank": "BPD KALIMANTAN BARAT",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "123",
+  "modified": "2023-06-07 14:10:00.345285",
+  "name": "fe135c6883"
+ },
+ {
+  "asal_bank": "BPD KALIMANTAN TIMUR",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "124",
+  "modified": "2023-06-07 14:10:00.349140",
+  "name": "2de7d43d96"
+ },
+ {
+  "asal_bank": "BPD KALIMANTAN TIMUR SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "124",
+  "modified": "2023-06-07 14:10:00.352946",
+  "name": "42be2cf235"
+ },
+ {
+  "asal_bank": "BPD KALIMANTAN TENGAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "125",
+  "modified": "2023-06-07 14:10:00.356758",
+  "name": "93eaf07c3b"
+ },
+ {
+  "asal_bank": "BPD SULAWESI SELATAN",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "126",
+  "modified": "2023-06-07 14:10:00.360802",
+  "name": "585729f9a7"
+ },
+ {
+  "asal_bank": "BPD SULAWESI SELATAN SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "126",
+  "modified": "2023-06-07 14:10:00.364677",
+  "name": "389f65f561"
+ },
+ {
+  "asal_bank": "BPD SULAWESI UTARA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "127",
+  "modified": "2023-06-07 14:10:00.368509",
+  "name": "8efd9669d1"
+ },
+ {
+  "asal_bank": "BPD NUSA TENGGARA BARAT SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "128",
+  "modified": "2023-06-07 14:10:00.371889",
+  "name": "e06241d202"
+ },
+ {
+  "asal_bank": "BPD NUSA TENGGARA BARAT",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "128",
+  "modified": "2023-06-07 14:10:00.375976",
+  "name": "23a85dc8b1"
+ },
+ {
+  "asal_bank": "BPD BALI",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "129",
+  "modified": "2023-06-07 14:10:00.379846",
+  "name": "e968f1c6ab"
+ },
+ {
+  "asal_bank": "BPD NUSA TENGGARA TIMUR",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "130",
+  "modified": "2023-06-07 14:10:00.383680",
+  "name": "1869071af2"
+ },
+ {
+  "asal_bank": "BPD MALUKU",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "131",
+  "modified": "2023-06-07 14:10:00.387775",
+  "name": "71dc993b3a"
+ },
+ {
+  "asal_bank": "BPD PAPUA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "132",
+  "modified": "2023-06-07 14:10:00.393355",
+  "name": "99609d25a3"
+ },
+ {
+  "asal_bank": "BPD BENGKULU",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "133",
+  "modified": "2023-06-07 14:10:00.397086",
+  "name": "ae94b6f33c"
+ },
+ {
+  "asal_bank": "BPD SULAWESI TENGAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "134",
+  "modified": "2023-06-07 14:10:00.400915",
+  "name": "b2879b94bf"
+ },
+ {
+  "asal_bank": "BPD SULAWESI TENGGARA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "135",
+  "modified": "2023-06-07 14:10:00.404893",
+  "name": "58883db72f"
+ },
+ {
+  "asal_bank": "BANK NUSANTARA PARAHYANGAN",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "145",
+  "modified": "2023-06-07 14:10:00.409114",
+  "name": "6b96598f2f"
+ },
+ {
+  "asal_bank": "BANK SWADESI",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "146",
+  "modified": "2023-06-07 14:10:00.412933",
+  "name": "ffb31de623"
+ },
+ {
+  "asal_bank": "BANK MUAMALAT INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "147",
+  "modified": "2023-06-07 14:10:00.416857",
+  "name": "b5ed9c4c10"
+ },
+ {
+  "asal_bank": "BANK MESTIKA DHARMA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "151",
+  "modified": "2023-06-07 14:10:00.420655",
+  "name": "e668551e6f"
+ },
+ {
+  "asal_bank": "BANK METRO EXPRESS",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "152",
+  "modified": "2023-06-07 14:10:00.424908",
+  "name": "ff4729a11d"
+ },
+ {
+  "asal_bank": "BANK SINARMAS",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "153",
+  "modified": "2023-06-07 14:10:00.429057",
+  "name": "a8c9024d9f"
+ },
+ {
+  "asal_bank": "BANK SINARMAS SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "153",
+  "modified": "2023-06-07 14:10:00.432851",
+  "name": "ca439508d2"
+ },
+ {
+  "asal_bank": "BANK MASPION INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "157",
+  "modified": "2023-06-07 14:10:00.436519",
+  "name": "eef060d3a8"
+ },
+ {
+  "asal_bank": "BANK GANESHA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "161",
+  "modified": "2023-06-07 14:10:00.440276",
+  "name": "727c04f153"
+ },
+ {
+  "asal_bank": "BANK ICBC INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "164",
+  "modified": "2023-06-07 14:10:00.444196",
+  "name": "f408da2359"
+ },
+ {
+  "asal_bank": "BANK KESAWAN",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "167",
+  "modified": "2023-06-07 14:10:00.448461",
+  "name": "7dd7dd3c0c"
+ },
+ {
+  "asal_bank": "BANK TABUNGAN NEGARA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "200",
+  "modified": "2023-06-07 14:10:00.452464",
+  "name": "3c2adc2027"
+ },
+ {
+  "asal_bank": "BANK TABUNGAN NEGARA SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "200",
+  "modified": "2023-06-07 14:10:00.456453",
+  "name": "6ff2d3f91a"
+ },
+ {
+  "asal_bank": "BANK HIMPUNAN SAUDARA 1906",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "212",
+  "modified": "2023-06-07 14:10:00.460342",
+  "name": "1191bf4790"
+ },
+ {
+  "asal_bank": "BANK TABUNGAN PENSIUNAN NASIONAL SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "213",
+  "modified": "2023-06-07 14:10:00.464223",
+  "name": "2967ac4b8d"
+ },
+ {
+  "asal_bank": "BANK TABUNGAN PENSIUNAN NASIONAL",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "213",
+  "modified": "2023-06-07 14:10:00.468169",
+  "name": "61439e052f"
+ },
+ {
+  "asal_bank": "BANK INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "385",
+  "modified": "2023-06-07 14:10:00.472240",
+  "name": "26ed45c2c6"
+ },
+ {
+  "asal_bank": "BANK VICTORIA SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "405",
+  "modified": "2023-06-07 14:10:00.476313",
+  "name": "38bce6b623"
+ },
+ {
+  "asal_bank": "BANK RAKYAT INDONESIA SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "422",
+  "modified": "2023-06-07 14:10:00.479985",
+  "name": "62131cac02"
+ },
+ {
+  "asal_bank": "BPD JABAR BANTEN SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "425",
+  "modified": "2023-06-07 14:10:00.483717",
+  "name": "5533349ca6"
+ },
+ {
+  "asal_bank": "BANK MEGA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "426",
+  "modified": "2023-06-07 14:10:00.487345",
+  "name": "25805fc1fa"
+ },
+ {
+  "asal_bank": "BANK NEGARA INDONESIA SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "427",
+  "modified": "2023-06-07 14:10:00.491400",
+  "name": "c02a686130"
+ },
+ {
+  "asal_bank": "BANK BUKOPIN",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "441",
+  "modified": "2023-06-07 14:10:00.495528",
+  "name": "62f9e11ca6"
+ },
+ {
+  "asal_bank": "BANK MANDIRI SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "451",
+  "modified": "2023-06-07 14:10:00.499351",
+  "name": "3b9109e400"
+ },
+ {
+  "asal_bank": "BANK BISNIS INTERNASIONAL",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "459",
+  "modified": "2023-06-07 14:10:00.503036",
+  "name": "ca7e687da6"
+ },
+ {
+  "asal_bank": "BANK ANDARA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "466",
+  "modified": "2023-06-07 14:10:00.507345",
+  "name": "92b541cd52"
+ },
+ {
+  "asal_bank": "BANK JASA JAKARTA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "472",
+  "modified": "2023-06-07 14:10:00.511128",
+  "name": "3674360895"
+ },
+ {
+  "asal_bank": "BANK HANA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "484",
+  "modified": "2023-06-07 14:10:00.515253",
+  "name": "f41ea47666"
+ },
+ {
+  "asal_bank": "BANK ICB BUMIPUTERA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "485",
+  "modified": "2023-06-07 14:10:00.519185",
+  "name": "b981b04e01"
+ },
+ {
+  "asal_bank": "BANK YUDHA BHAKTI",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "490",
+  "modified": "2023-06-07 14:10:00.525188",
+  "name": "a53f4b29f0"
+ },
+ {
+  "asal_bank": "BANK MITRA NIAGA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "491",
+  "modified": "2023-06-07 14:10:00.529333",
+  "name": "b0e0a0c6a0"
+ },
+ {
+  "asal_bank": "BANK AGRONIAGA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "494",
+  "modified": "2023-06-07 14:10:00.533055",
+  "name": "9dcd8394ab"
+ },
+ {
+  "asal_bank": "BANK SBI INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "498",
+  "modified": "2023-06-07 14:10:00.537108",
+  "name": "76a5d03320"
+ },
+ {
+  "asal_bank": "BANK ROYAL INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "501",
+  "modified": "2023-06-07 14:10:00.540990",
+  "name": "672422bba7"
+ },
+ {
+  "asal_bank": "BANK NATIONAL NOBU",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "503",
+  "modified": "2023-06-07 14:10:00.544851",
+  "name": "af577dfdf5"
+ },
+ {
+  "asal_bank": "BANK MEGA SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "506",
+  "modified": "2023-06-07 14:10:00.548867",
+  "name": "29152a0424"
+ },
+ {
+  "asal_bank": "BANK INA PERDANA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "513",
+  "modified": "2023-06-07 14:10:00.553004",
+  "name": "55289e254f"
+ },
+ {
+  "asal_bank": "BANK PANIN SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "517",
+  "modified": "2023-06-07 14:10:00.557547",
+  "name": "946e818383"
+ },
+ {
+  "asal_bank": "PRIMA MASTER BANK",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "520",
+  "modified": "2023-06-07 14:10:00.561502",
+  "name": "bcfcdf04bd"
+ },
+ {
+  "asal_bank": "BANK BUKOPIN SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "521",
+  "modified": "2023-06-07 14:10:00.565292",
+  "name": "4240dea38d"
+ },
+ {
+  "asal_bank": "DIPO INTERNASIONAL BANK",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "523",
+  "modified": "2023-06-07 14:10:00.569309",
+  "name": "debde84fc2"
+ },
+ {
+  "asal_bank": "BANK BARCLAYS INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "525",
+  "modified": "2023-06-07 14:10:00.573569",
+  "name": "b819196f10"
+ },
+ {
+  "asal_bank": "LIMAN INTERNASIONAL BANK",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "526",
+  "modified": "2023-06-07 14:10:00.577638",
+  "name": "2fb6c3afd7"
+ },
+ {
+  "asal_bank": "ANGLOMAS INTERNATIONAL BANK",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "531",
+  "modified": "2023-06-07 14:10:00.581402",
+  "name": "2ade4e813f"
+ },
+ {
+  "asal_bank": "BANK KESEJAHTERAAN EKONOMI",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "535",
+  "modified": "2023-06-07 14:10:00.584952",
+  "name": "60d36c8625"
+ },
+ {
+  "asal_bank": "BANK CENTRAL ASIA SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "536",
+  "modified": "2023-06-07 14:10:00.588754",
+  "name": "4d8486297b"
+ },
+ {
+  "asal_bank": "BANK ARTOS INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "542",
+  "modified": "2023-06-07 14:10:00.592679",
+  "name": "7bf05eb03d"
+ },
+ {
+  "asal_bank": "BANK SAHABAT PURBA DANARTA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "547",
+  "modified": "2023-06-07 14:10:00.597025",
+  "name": "ca5aeec7c8"
+ },
+ {
+  "asal_bank": "BANK MULTI ARTA SENTOSA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "548",
+  "modified": "2023-06-07 14:10:00.600835",
+  "name": "306c1d98ff"
+ },
+ {
+  "asal_bank": "BANK MAYORA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "553",
+  "modified": "2023-06-07 14:10:00.604695",
+  "name": "a5032cb2eb"
+ },
+ {
+  "asal_bank": "BANK INDEX SELINDO",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "555",
+  "modified": "2023-06-07 14:10:00.608690",
+  "name": "66ccc22b1e"
+ },
+ {
+  "asal_bank": "BANK PUNDI INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "558",
+  "modified": "2023-06-07 14:10:00.612471",
+  "name": "f5ce292038"
+ },
+ {
+  "asal_bank": "CENTRATAMA NASIONAL BANK",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "559",
+  "modified": "2023-06-07 14:10:00.616190",
+  "name": "46be80d98f"
+ },
+ {
+  "asal_bank": "BANK FAMA INTERNATIONAL",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "562",
+  "modified": "2023-06-07 14:10:00.620061",
+  "name": "3d0af68369"
+ },
+ {
+  "asal_bank": "BANK SINAR HARAPAN BALI",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "564",
+  "modified": "2023-06-07 14:10:00.624200",
+  "name": "4f5cbe5fe2"
+ },
+ {
+  "asal_bank": "BANK VICTORIA INTERNATIONAL",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "566",
+  "modified": "2023-06-07 14:10:00.628186",
+  "name": "9590cf44fa"
+ },
+ {
+  "asal_bank": "BANK HARDA INTERNASIONAL",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "567",
+  "modified": "2023-06-07 14:10:00.632003",
+  "name": "b45966124a"
+ },
+ {
+  "asal_bank": "BANK AGRIS",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "945",
+  "modified": "2023-06-07 14:10:00.635626",
+  "name": "3fa8da6ef3"
+ },
+ {
+  "asal_bank": "BANK MAYBANK SYARIAH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "947",
+  "modified": "2023-06-07 14:10:00.639890",
+  "name": "ea7cc9f771"
+ },
+ {
+  "asal_bank": "BANK CHINATRUST INDONESIA",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "949",
+  "modified": "2023-06-07 14:10:00.643983",
+  "name": "52051cd97e"
+ },
+ {
+  "asal_bank": "BANK COMMONWEALTH",
+  "docstatus": 0,
+  "doctype": "Referensi Bank",
+  "kode_bank": "950",
+  "modified": "2023-06-07 14:10:00.649762",
+  "name": "a1b99c704c"
+ }
+]

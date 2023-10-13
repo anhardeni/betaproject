@@ -1,0 +1,3058 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "1A",
+  "modified": "2023-06-21 14:24:19.278322",
+  "nama_kemasan": "Drum, steel",
+  "name": "cf6ba4aa19"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "1B",
+  "modified": "2023-06-21 14:24:19.288506",
+  "nama_kemasan": "Drum, aluminium",
+  "name": "515ed54687"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "1D",
+  "modified": "2023-06-21 14:24:19.293125",
+  "nama_kemasan": "Drum, plywood",
+  "name": "248f447e7b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "1F",
+  "modified": "2023-06-21 14:24:19.297372",
+  "nama_kemasan": "Container, flexible",
+  "name": "22d4a6b984"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "1G",
+  "modified": "2023-06-21 14:24:19.301405",
+  "nama_kemasan": "Drum, fibre",
+  "name": "e3d54220e8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "1W",
+  "modified": "2023-06-21 14:24:19.305304",
+  "nama_kemasan": "Drum, wooden",
+  "name": "651fadf419"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "2C",
+  "modified": "2023-06-21 14:24:19.309131",
+  "nama_kemasan": "Barrel, wooden",
+  "name": "ffd60abb43"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "3A",
+  "modified": "2023-06-21 14:24:19.313276",
+  "nama_kemasan": "Jerrican, steel",
+  "name": "1039c05885"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "3H",
+  "modified": "2023-06-21 14:24:19.317217",
+  "nama_kemasan": "Jerrican, plastic",
+  "name": "8face75ad2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "43",
+  "modified": "2023-06-21 14:24:19.321062",
+  "nama_kemasan": "Bag, super bulk",
+  "name": "70e9eede7d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "44",
+  "modified": "2023-06-21 14:24:19.324940",
+  "nama_kemasan": "Bag, polybag",
+  "name": "fa5bb242c6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "4A",
+  "modified": "2023-06-21 14:24:19.329571",
+  "nama_kemasan": "Box, steel",
+  "name": "805080d4c3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "4B",
+  "modified": "2023-06-21 14:24:19.333558",
+  "nama_kemasan": "Box, aluminium",
+  "name": "5d815b9126"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "4C",
+  "modified": "2023-06-21 14:24:19.337414",
+  "nama_kemasan": "Box, natural wood",
+  "name": "7fee667be6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "4D",
+  "modified": "2023-06-21 14:24:19.341501",
+  "nama_kemasan": "Box, plywood",
+  "name": "bd100375cb"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "4F",
+  "modified": "2023-06-21 14:24:19.345370",
+  "nama_kemasan": "Box, reconstituted wood",
+  "name": "5aa53ec7ab"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "4G",
+  "modified": "2023-06-21 14:24:19.349484",
+  "nama_kemasan": "Box, fibreboard",
+  "name": "9360033fde"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "4H",
+  "modified": "2023-06-21 14:24:19.353437",
+  "nama_kemasan": "Box, plastic",
+  "name": "f17fba9f67"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "5H",
+  "modified": "2023-06-21 14:24:19.357517",
+  "nama_kemasan": "Bag, woven plastic",
+  "name": "c5e3e228c0"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "5L",
+  "modified": "2023-06-21 14:24:19.361519",
+  "nama_kemasan": "Bag, textile",
+  "name": "20ed52d3bf"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "5M",
+  "modified": "2023-06-21 14:24:19.365268",
+  "nama_kemasan": "Bag, paper",
+  "name": "1b5853fd6c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "6H",
+  "modified": "2023-06-21 14:24:19.369393",
+  "nama_kemasan": "Composite packaging, plastic receptacle",
+  "name": "c21c0818ad"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "6P",
+  "modified": "2023-06-21 14:24:19.373327",
+  "nama_kemasan": "Composite packaging, glass receptacle",
+  "name": "d7b93b7a38"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "7A",
+  "modified": "2023-06-21 14:24:19.377279",
+  "nama_kemasan": "Case, car",
+  "name": "2b00878181"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "7B",
+  "modified": "2023-06-21 14:24:19.381155",
+  "nama_kemasan": "Case, wooden",
+  "name": "fe09f12ad0"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "8A",
+  "modified": "2023-06-21 14:24:19.384637",
+  "nama_kemasan": "Pallet, wooden",
+  "name": "588cf686e5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "8B",
+  "modified": "2023-06-21 14:24:19.388815",
+  "nama_kemasan": "Crate, wooden",
+  "name": "9b4b037435"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "8C",
+  "modified": "2023-06-21 14:24:19.392811",
+  "nama_kemasan": "Bundle, wooden",
+  "name": "79fd49d3b4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AA",
+  "modified": "2023-06-21 14:24:19.396927",
+  "nama_kemasan": "Intermediate bulk container, rigid plastic",
+  "name": "e611f98896"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AB",
+  "modified": "2023-06-21 14:24:19.400790",
+  "nama_kemasan": "Receptacle, fibre",
+  "name": "133e0ba925"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AC",
+  "modified": "2023-06-21 14:24:19.404770",
+  "nama_kemasan": "Receptacle, paper",
+  "name": "eb54dd9163"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AD",
+  "modified": "2023-06-21 14:24:19.408672",
+  "nama_kemasan": "Receptacle, wooden",
+  "name": "01d43737df"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AE",
+  "modified": "2023-06-21 14:24:19.412700",
+  "nama_kemasan": "Aerosol",
+  "name": "d64d4c98db"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AF",
+  "modified": "2023-06-21 14:24:19.416972",
+  "nama_kemasan": "Pallet, modular, collars 80cms * 60cms",
+  "name": "14ceeffe85"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AG",
+  "modified": "2023-06-21 14:24:19.421321",
+  "nama_kemasan": "Pallet, shrinkwrapped",
+  "name": "25558450ec"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AH",
+  "modified": "2023-06-21 14:24:19.427059",
+  "nama_kemasan": "Pallet, 100cms * 110cms",
+  "name": "b320bb7662"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AI",
+  "modified": "2023-06-21 14:24:19.431253",
+  "nama_kemasan": "Clamshell",
+  "name": "54920c0c51"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AJ",
+  "modified": "2023-06-21 14:24:19.435241",
+  "nama_kemasan": "Cone",
+  "name": "13c1e166f9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AL",
+  "modified": "2023-06-21 14:24:19.439811",
+  "nama_kemasan": "Ball",
+  "name": "3901274c8e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AM",
+  "modified": "2023-06-21 14:24:19.443703",
+  "nama_kemasan": "Ampoule, non protected",
+  "name": "48f008fdd1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AP",
+  "modified": "2023-06-21 14:24:19.447586",
+  "nama_kemasan": "Ampoule, protected",
+  "name": "b4515ec86e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AT",
+  "modified": "2023-06-21 14:24:19.451361",
+  "nama_kemasan": "Atomizer",
+  "name": "650ce2a2af"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "AV",
+  "modified": "2023-06-21 14:24:19.455200",
+  "nama_kemasan": "Capsule",
+  "name": "1ac2cb2876"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "B4",
+  "modified": "2023-06-21 14:24:19.459485",
+  "nama_kemasan": "Belt",
+  "name": "e69cd6944e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BA",
+  "modified": "2023-06-21 14:24:19.463365",
+  "nama_kemasan": "Barrel",
+  "name": "bad84031da"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BB",
+  "modified": "2023-06-21 14:24:19.467549",
+  "nama_kemasan": "Bobbin",
+  "name": "1cc1a01845"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BC",
+  "modified": "2023-06-21 14:24:19.471460",
+  "nama_kemasan": "Bottlecrate, bottlerack",
+  "name": "7db20dbade"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BD",
+  "modified": "2023-06-21 14:24:19.475112",
+  "nama_kemasan": "Board",
+  "name": "bc1329a602"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BE",
+  "modified": "2023-06-21 14:24:19.479090",
+  "nama_kemasan": "Bundle",
+  "name": "5a37381aaf"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BF",
+  "modified": "2023-06-21 14:24:19.482811",
+  "nama_kemasan": "Balloon, non-protected",
+  "name": "1b089cd14c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BG",
+  "modified": "2023-06-21 14:24:19.487059",
+  "nama_kemasan": "Bag",
+  "name": "790f35ce4b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BH",
+  "modified": "2023-06-21 14:24:19.490829",
+  "nama_kemasan": "Bunch",
+  "name": "e39d3de115"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BI",
+  "modified": "2023-06-21 14:24:19.494616",
+  "nama_kemasan": "Bin",
+  "name": "295579c232"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BJ",
+  "modified": "2023-06-21 14:24:19.498703",
+  "nama_kemasan": "Bucket",
+  "name": "98d74d1af2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BK",
+  "modified": "2023-06-21 14:24:19.502703",
+  "nama_kemasan": "Basket",
+  "name": "cbfcc4ca41"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BL",
+  "modified": "2023-06-21 14:24:19.506632",
+  "nama_kemasan": "Bale, compressed",
+  "name": "a79fa6fd00"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BM",
+  "modified": "2023-06-21 14:24:19.510403",
+  "nama_kemasan": "Basin",
+  "name": "6a9455d885"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BN",
+  "modified": "2023-06-21 14:24:19.514200",
+  "nama_kemasan": "Bale, non -compressed",
+  "name": "0916c2fd2a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BO",
+  "modified": "2023-06-21 14:24:19.517982",
+  "nama_kemasan": "Bottle, non-protected, cylindrical",
+  "name": "b044799089"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BP",
+  "modified": "2023-06-21 14:24:19.521624",
+  "nama_kemasan": "Balloon, protected",
+  "name": "892901ac32"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BQ",
+  "modified": "2023-06-21 14:24:19.526326",
+  "nama_kemasan": "Bottle, protected cylindrical",
+  "name": "0670f1d458"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BR",
+  "modified": "2023-06-21 14:24:19.531022",
+  "nama_kemasan": "Bar",
+  "name": "144eb44eca"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BS",
+  "modified": "2023-06-21 14:24:19.536133",
+  "nama_kemasan": "Bottle, non-protected, bulbous",
+  "name": "545c3af14e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BT",
+  "modified": "2023-06-21 14:24:19.540211",
+  "nama_kemasan": "Bolt",
+  "name": "583af19efd"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BU",
+  "modified": "2023-06-21 14:24:19.544019",
+  "nama_kemasan": "Butt",
+  "name": "2e2ed4200b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BV",
+  "modified": "2023-06-21 14:24:19.548159",
+  "nama_kemasan": "Bottle, protected bulbous",
+  "name": "0d2da19b6d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BW",
+  "modified": "2023-06-21 14:24:19.552030",
+  "nama_kemasan": "Box, for liquids",
+  "name": "7bb56abe72"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BX",
+  "modified": "2023-06-21 14:24:19.556127",
+  "nama_kemasan": "Box",
+  "name": "8c54171f24"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BY",
+  "modified": "2023-06-21 14:24:19.560253",
+  "nama_kemasan": "Board, in bundle/bunch/truss",
+  "name": "4ae36f51a4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "BZ",
+  "modified": "2023-06-21 14:24:19.564695",
+  "nama_kemasan": "Bars, in bundle/bunch/truss",
+  "name": "02e3f7dc26"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CA",
+  "modified": "2023-06-21 14:24:19.568835",
+  "nama_kemasan": "Can, rectangular",
+  "name": "acd9e4bbba"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CB",
+  "modified": "2023-06-21 14:24:19.572742",
+  "nama_kemasan": "Beer crate",
+  "name": "9b1a854835"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CC",
+  "modified": "2023-06-21 14:24:19.577024",
+  "nama_kemasan": "Churn",
+  "name": "9e2b6cc69f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CD",
+  "modified": "2023-06-21 14:24:19.581393",
+  "nama_kemasan": "Can, with handle and spout",
+  "name": "2be4289572"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CE",
+  "modified": "2023-06-21 14:24:19.585778",
+  "nama_kemasan": "Creel",
+  "name": "9ec837d056"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CF",
+  "modified": "2023-06-21 14:24:19.589973",
+  "nama_kemasan": "Coffer",
+  "name": "de251da160"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CG",
+  "modified": "2023-06-21 14:24:19.594152",
+  "nama_kemasan": "Cage",
+  "name": "eaa6155ea4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CH",
+  "modified": "2023-06-21 14:24:19.598045",
+  "nama_kemasan": "Chest",
+  "name": "4f6e112953"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CI",
+  "modified": "2023-06-21 14:24:19.601902",
+  "nama_kemasan": "Canister",
+  "name": "87dababfa0"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CJ",
+  "modified": "2023-06-21 14:24:19.606040",
+  "nama_kemasan": "Coffin",
+  "name": "c38fea7763"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CK",
+  "modified": "2023-06-21 14:24:19.610073",
+  "nama_kemasan": "Cask",
+  "name": "da8062af8c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CL",
+  "modified": "2023-06-21 14:24:19.614111",
+  "nama_kemasan": "Coil",
+  "name": "b932791dae"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CM",
+  "modified": "2023-06-21 14:24:19.618047",
+  "nama_kemasan": "Card",
+  "name": "8430e98ee8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CN",
+  "modified": "2023-06-21 14:24:19.622221",
+  "nama_kemasan": "Cont,not otherwise specfied as transport equipment",
+  "name": "f3e2efdd7b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CO",
+  "modified": "2023-06-21 14:24:19.626059",
+  "nama_kemasan": "Carboy, non-protected",
+  "name": "38308a23d4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CP",
+  "modified": "2023-06-21 14:24:19.630807",
+  "nama_kemasan": "Carboy, protected",
+  "name": "ca09a2571d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CQ",
+  "modified": "2023-06-21 14:24:19.634855",
+  "nama_kemasan": "Cartridge",
+  "name": "ed1a4edfc6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CR",
+  "modified": "2023-06-21 14:24:19.638752",
+  "nama_kemasan": "Crate",
+  "name": "68db2c23bf"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CS",
+  "modified": "2023-06-21 14:24:19.642656",
+  "nama_kemasan": "Case",
+  "name": "7b50749127"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CT",
+  "modified": "2023-06-21 14:24:19.646343",
+  "nama_kemasan": "Carton",
+  "name": "b85da84cbb"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CU",
+  "modified": "2023-06-21 14:24:19.650121",
+  "nama_kemasan": "Cup",
+  "name": "591f865e55"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CV",
+  "modified": "2023-06-21 14:24:19.653834",
+  "nama_kemasan": "Cover",
+  "name": "708030c19f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CW",
+  "modified": "2023-06-21 14:24:19.657437",
+  "nama_kemasan": "Cage, roll",
+  "name": "82c956d2f8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CX",
+  "modified": "2023-06-21 14:24:19.661191",
+  "nama_kemasan": "Can, cylindical",
+  "name": "3c049dff64"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CY",
+  "modified": "2023-06-21 14:24:19.665123",
+  "nama_kemasan": "Cylinder",
+  "name": "e521a8cacc"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "CZ",
+  "modified": "2023-06-21 14:24:19.669155",
+  "nama_kemasan": "Canvas",
+  "name": "4c7f3f8e75"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DA",
+  "modified": "2023-06-21 14:24:19.673279",
+  "nama_kemasan": "Crate, multiple layer, plastic",
+  "name": "a1c4279dbc"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DB",
+  "modified": "2023-06-21 14:24:19.677656",
+  "nama_kemasan": "Crate, multiple layer, wooden",
+  "name": "8a3fae6dbe"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DC",
+  "modified": "2023-06-21 14:24:19.681825",
+  "nama_kemasan": "Crate, multiple layer, cardboard",
+  "name": "782b6ea61f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DG",
+  "modified": "2023-06-21 14:24:19.685816",
+  "nama_kemasan": "Cage, Commonwealth Handling Equipment Pool (CHEP)",
+  "name": "8bec00d4ae"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DH",
+  "modified": "2023-06-21 14:24:19.689653",
+  "nama_kemasan": "Box,Commnwealth Hndling Equipmnt Pool/CHEP,Eurobox",
+  "name": "cad429ce91"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DI",
+  "modified": "2023-06-21 14:24:19.693502",
+  "nama_kemasan": "Drum, iron",
+  "name": "da16f7b037"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DJ",
+  "modified": "2023-06-21 14:24:19.698000",
+  "nama_kemasan": "Demijohn, non-protected",
+  "name": "932149f94a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DK",
+  "modified": "2023-06-21 14:24:19.702188",
+  "nama_kemasan": "Crate, bulk, cardboard",
+  "name": "112cb48da2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DL",
+  "modified": "2023-06-21 14:24:19.706900",
+  "nama_kemasan": "Crate, bulk, plastic",
+  "name": "1414d05e97"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DM",
+  "modified": "2023-06-21 14:24:19.711357",
+  "nama_kemasan": "Crate, bulk, wooden",
+  "name": "08f29f0a22"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DN",
+  "modified": "2023-06-21 14:24:19.715260",
+  "nama_kemasan": "Dispenser",
+  "name": "178912dcb2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DP",
+  "modified": "2023-06-21 14:24:19.719224",
+  "nama_kemasan": "Demijohn, protected",
+  "name": "0353246a76"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DR",
+  "modified": "2023-06-21 14:24:19.723179",
+  "nama_kemasan": "Drum",
+  "name": "ed3f36e271"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DS",
+  "modified": "2023-06-21 14:24:19.727158",
+  "nama_kemasan": "Tray, one layer no cover, plastic",
+  "name": "67a3ab2107"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DT",
+  "modified": "2023-06-21 14:24:19.731191",
+  "nama_kemasan": "Tray, one layer no cover, wooden",
+  "name": "d9875c2d00"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DU",
+  "modified": "2023-06-21 14:24:19.735040",
+  "nama_kemasan": "Tray, one layer no cover, polystyrene",
+  "name": "6a46be0f88"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DV",
+  "modified": "2023-06-21 14:24:19.739192",
+  "nama_kemasan": "Tray, one layer no cover, cardboard",
+  "name": "6c22f203aa"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DW",
+  "modified": "2023-06-21 14:24:19.744205",
+  "nama_kemasan": "Tray, two layers no cover, plastic tray",
+  "name": "8f8ddae5d5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DX",
+  "modified": "2023-06-21 14:24:19.748119",
+  "nama_kemasan": "Tray, two layers no cover, wooden",
+  "name": "b55ef7da97"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "DY",
+  "modified": "2023-06-21 14:24:19.752243",
+  "nama_kemasan": "Tray, two layers no cover, cardboard",
+  "name": "1416a14f89"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "EC",
+  "modified": "2023-06-21 14:24:19.755984",
+  "nama_kemasan": "Bag, plastic",
+  "name": "5a958de1c0"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ED",
+  "modified": "2023-06-21 14:24:19.759990",
+  "nama_kemasan": "Case, with pallet base",
+  "name": "7b1c8722b9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "EE",
+  "modified": "2023-06-21 14:24:19.763953",
+  "nama_kemasan": "Case, with pallet base, wooden",
+  "name": "df31d2dc32"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "EF",
+  "modified": "2023-06-21 14:24:19.768071",
+  "nama_kemasan": "Case, with pallet base, cardboard",
+  "name": "b643105bb8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "EG",
+  "modified": "2023-06-21 14:24:19.772126",
+  "nama_kemasan": "Case, with pallet base, plastic",
+  "name": "96ded4fa2d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "EH",
+  "modified": "2023-06-21 14:24:19.776007",
+  "nama_kemasan": "Case, with pallet base, metal",
+  "name": "6e196201c2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "EI",
+  "modified": "2023-06-21 14:24:19.779997",
+  "nama_kemasan": "Case, isothermic",
+  "name": "c3963a762d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "EN",
+  "modified": "2023-06-21 14:24:19.783860",
+  "nama_kemasan": "Envelope",
+  "name": "485b939d97"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "FB",
+  "modified": "2023-06-21 14:24:19.787778",
+  "nama_kemasan": "Flexibag",
+  "name": "54fc30e1c5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "FC",
+  "modified": "2023-06-21 14:24:19.791744",
+  "nama_kemasan": "Fruit crate",
+  "name": "59cab4a73f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "FD",
+  "modified": "2023-06-21 14:24:19.795749",
+  "nama_kemasan": "Framed crate",
+  "name": "a79ac905dd"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "FE",
+  "modified": "2023-06-21 14:24:19.799488",
+  "nama_kemasan": "Flexitank",
+  "name": "0bb1a3a967"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "FI",
+  "modified": "2023-06-21 14:24:19.803279",
+  "nama_kemasan": "Firkin",
+  "name": "dff1cfc297"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "FL",
+  "modified": "2023-06-21 14:24:19.807529",
+  "nama_kemasan": "Flask",
+  "name": "e7ebb6ea7a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "FO",
+  "modified": "2023-06-21 14:24:19.815482",
+  "nama_kemasan": "Footlocker",
+  "name": "41d63fb3d4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "FP",
+  "modified": "2023-06-21 14:24:19.819463",
+  "nama_kemasan": "Filmpack",
+  "name": "c30a173d1e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "FR",
+  "modified": "2023-06-21 14:24:19.823671",
+  "nama_kemasan": "Frame",
+  "name": "56ff71a6bf"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "FT",
+  "modified": "2023-06-21 14:24:19.828382",
+  "nama_kemasan": "Foodtainer",
+  "name": "9236f19377"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "FW",
+  "modified": "2023-06-21 14:24:19.832585",
+  "nama_kemasan": "Cart, flatbed",
+  "name": "7a78e072df"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "FX",
+  "modified": "2023-06-21 14:24:19.836698",
+  "nama_kemasan": "Bag, flexible container",
+  "name": "90aab0641b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "GB",
+  "modified": "2023-06-21 14:24:19.840669",
+  "nama_kemasan": "Gas bottle",
+  "name": "9a83addb7c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "GI",
+  "modified": "2023-06-21 14:24:19.844497",
+  "nama_kemasan": "Girder",
+  "name": "e3c801aacb"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "GL",
+  "modified": "2023-06-21 14:24:19.848923",
+  "nama_kemasan": "Container, gallon",
+  "name": "669f7310f2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "GR",
+  "modified": "2023-06-21 14:24:19.852815",
+  "nama_kemasan": "Receptacle, glass",
+  "name": "9df8c4617f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "GU",
+  "modified": "2023-06-21 14:24:19.856745",
+  "nama_kemasan": "Tray, containing horizontally stacked flat items",
+  "name": "6cffd32ae2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "GY",
+  "modified": "2023-06-21 14:24:19.860895",
+  "nama_kemasan": "Bag, gunny",
+  "name": "a12af0e512"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "GZ",
+  "modified": "2023-06-21 14:24:19.865114",
+  "nama_kemasan": "Girders, in bundle/bunch/truss",
+  "name": "32cf8bc029"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "HA",
+  "modified": "2023-06-21 14:24:19.868948",
+  "nama_kemasan": "Basket, with handle, plastic",
+  "name": "b896474ad2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "HB",
+  "modified": "2023-06-21 14:24:19.881087",
+  "nama_kemasan": "Basket, with handle, wooden",
+  "name": "67d457943b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "HC",
+  "modified": "2023-06-21 14:24:19.886114",
+  "nama_kemasan": "Basket, with handle, cardboard",
+  "name": "05b5a4420c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "HG",
+  "modified": "2023-06-21 14:24:19.890487",
+  "nama_kemasan": "Hogshead",
+  "name": "f7a6fbed16"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "HN",
+  "modified": "2023-06-21 14:24:19.895125",
+  "nama_kemasan": "Hanger",
+  "name": "4eafaf0c37"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "HR",
+  "modified": "2023-06-21 14:24:19.899694",
+  "nama_kemasan": "Hamper",
+  "name": "cdc3651e7b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "HZ",
+  "modified": "2023-06-21 14:24:19.904341",
+  "nama_kemasan": "bukan kaleng kaleng",
+  "name": "7752651fcd"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "IA",
+  "modified": "2023-06-21 14:24:19.908800",
+  "nama_kemasan": "Package, display, wooden",
+  "name": "686cec68be"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "IB",
+  "modified": "2023-06-21 14:24:19.912711",
+  "nama_kemasan": "Package, display, cardboard",
+  "name": "7295068e42"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "IC",
+  "modified": "2023-06-21 14:24:19.916940",
+  "nama_kemasan": "Package, display, plastic",
+  "name": "1fe162f12a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ID",
+  "modified": "2023-06-21 14:24:19.920831",
+  "nama_kemasan": "Package, display, metal",
+  "name": "2bb0df9f40"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "IE",
+  "modified": "2023-06-21 14:24:19.925565",
+  "nama_kemasan": "Package, show",
+  "name": "23a61f8aa6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "IF",
+  "modified": "2023-06-21 14:24:19.930062",
+  "nama_kemasan": "Package, flow",
+  "name": "fadbaa0d0a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "IG",
+  "modified": "2023-06-21 14:24:19.934019",
+  "nama_kemasan": "Package, paper wrapped",
+  "name": "9c2538cc9f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "IH",
+  "modified": "2023-06-21 14:24:19.938889",
+  "nama_kemasan": "Drum, plastic",
+  "name": "b5a997d452"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "IK",
+  "modified": "2023-06-21 14:24:19.943276",
+  "nama_kemasan": "Package, cardboard, with bottle grip-holes",
+  "name": "71b8cf19db"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "IL",
+  "modified": "2023-06-21 14:24:19.947589",
+  "nama_kemasan": "Tray, rigid, lidded stackable (CEN TS 14482:2002)",
+  "name": "3c318c37a9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "IN",
+  "modified": "2023-06-21 14:24:19.951301",
+  "nama_kemasan": "Ingot",
+  "name": "3509fbc1b9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "IZ",
+  "modified": "2023-06-21 14:24:19.955921",
+  "nama_kemasan": "ingots, in bundle/bunch/truss",
+  "name": "b68934bf0c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "JB",
+  "modified": "2023-06-21 14:24:19.961848",
+  "nama_kemasan": "Bag, jumbo",
+  "name": "d0fec56d69"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "JC",
+  "modified": "2023-06-21 14:24:19.967040",
+  "nama_kemasan": "Jerrican, rectangular",
+  "name": "899b41894b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "JG",
+  "modified": "2023-06-21 14:24:19.972463",
+  "nama_kemasan": "Jug",
+  "name": "5e75f6ea2d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "JR",
+  "modified": "2023-06-21 14:24:19.977235",
+  "nama_kemasan": "Jar",
+  "name": "d26d0dd518"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "JT",
+  "modified": "2023-06-21 14:24:19.982116",
+  "nama_kemasan": "Jutebag",
+  "name": "95f08d9f58"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "JY",
+  "modified": "2023-06-21 14:24:19.986936",
+  "nama_kemasan": "Jerrican, cylindrical",
+  "name": "970169aa42"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "KG",
+  "modified": "2023-06-21 14:24:19.991650",
+  "nama_kemasan": "Keg",
+  "name": "1b9af2c1b7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "KI",
+  "modified": "2023-06-21 14:24:19.996584",
+  "nama_kemasan": "Kit",
+  "name": "79e4f6dd17"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "KR",
+  "modified": "2023-06-21 14:24:20.001233",
+  "nama_kemasan": "karung",
+  "name": "4f8dae232d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "LE",
+  "modified": "2023-06-21 14:24:20.005848",
+  "nama_kemasan": "Luggage",
+  "name": "16fa182b41"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "LG",
+  "modified": "2023-06-21 14:24:20.010241",
+  "nama_kemasan": "Log",
+  "name": "eddf01aca3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "LT",
+  "modified": "2023-06-21 14:24:20.014609",
+  "nama_kemasan": "Lot",
+  "name": "6b7c195b0e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "LU",
+  "modified": "2023-06-21 14:24:20.018841",
+  "nama_kemasan": "Lug",
+  "name": "10fc331e1e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "LV",
+  "modified": "2023-06-21 14:24:20.022927",
+  "nama_kemasan": "Liftvan",
+  "name": "7759ad54b5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "LZ",
+  "modified": "2023-06-21 14:24:20.028286",
+  "nama_kemasan": "Logs, in bundle/bunch/truss",
+  "name": "9031506aa2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "MA",
+  "modified": "2023-06-21 14:24:20.032976",
+  "nama_kemasan": "Crate, metal",
+  "name": "99e0c118ff"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "MB",
+  "modified": "2023-06-21 14:24:20.037653",
+  "nama_kemasan": "Multiply bag",
+  "name": "0b551bdc64"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "MC",
+  "modified": "2023-06-21 14:24:20.042550",
+  "nama_kemasan": "milk crate",
+  "name": "1fce70c45c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ME",
+  "modified": "2023-06-21 14:24:20.046923",
+  "nama_kemasan": "Container, metal",
+  "name": "cf32834c5a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "MR",
+  "modified": "2023-06-21 14:24:20.051062",
+  "nama_kemasan": "Receptacle, metal",
+  "name": "0a6482611b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "MS",
+  "modified": "2023-06-21 14:24:20.055321",
+  "nama_kemasan": "Multiwall sack",
+  "name": "583977975d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "MT",
+  "modified": "2023-06-21 14:24:20.059777",
+  "nama_kemasan": "Mat",
+  "name": "a0ea274195"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "MW",
+  "modified": "2023-06-21 14:24:20.064150",
+  "nama_kemasan": "Receptacle, plastic wrapped",
+  "name": "26771e6ddf"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "MX",
+  "modified": "2023-06-21 14:24:20.068044",
+  "nama_kemasan": "Macth box",
+  "name": "130663223d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "NA",
+  "modified": "2023-06-21 14:24:20.071970",
+  "nama_kemasan": "Not available",
+  "name": "5348ef7419"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "NE",
+  "modified": "2023-06-21 14:24:20.076004",
+  "nama_kemasan": "Unpacked or unpackaged",
+  "name": "3f4a91aeda"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "NF",
+  "modified": "2023-06-21 14:24:20.080319",
+  "nama_kemasan": "Unpacked or unpackaged, single unit",
+  "name": "d3f41c73ab"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "NG",
+  "modified": "2023-06-21 14:24:20.084155",
+  "nama_kemasan": "Unpacked or unpackaged, multiple units",
+  "name": "2171ef2a76"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "NS",
+  "modified": "2023-06-21 14:24:20.087851",
+  "nama_kemasan": "Nest",
+  "name": "7f3d532f45"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "NT",
+  "modified": "2023-06-21 14:24:20.091680",
+  "nama_kemasan": "Net",
+  "name": "fbb0333562"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "NU",
+  "modified": "2023-06-21 14:24:20.095956",
+  "nama_kemasan": "Net, tube, plastic",
+  "name": "07fc593baa"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "NV",
+  "modified": "2023-06-21 14:24:20.100100",
+  "nama_kemasan": "Net, tube, textile",
+  "name": "09f2bcdf32"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "OA",
+  "modified": "2023-06-21 14:24:20.103991",
+  "nama_kemasan": "Pallet, CHEP 40 cm x 60 cm",
+  "name": "39f42c2631"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "OB",
+  "modified": "2023-06-21 14:24:20.107918",
+  "nama_kemasan": "Pallet, CHEP 80 cm x 120 cm",
+  "name": "3d87d13c26"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "OC",
+  "modified": "2023-06-21 14:24:20.111745",
+  "nama_kemasan": "Pallet, CHEP 100 cm x 120 cm",
+  "name": "332c7ef542"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "OD",
+  "modified": "2023-06-21 14:24:20.115430",
+  "nama_kemasan": "Pallet, AS 4068-1993",
+  "name": "f6f9f9ba57"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "OE",
+  "modified": "2023-06-21 14:24:20.119275",
+  "nama_kemasan": "Pallet, ISO T11",
+  "name": "a7d82a128f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "OF",
+  "modified": "2023-06-21 14:24:20.123429",
+  "nama_kemasan": "Platform, unspecified weight or dimension",
+  "name": "80e61f6ae6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "OK",
+  "modified": "2023-06-21 14:24:20.129329",
+  "nama_kemasan": "Block",
+  "name": "91902065cb"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "OT",
+  "modified": "2023-06-21 14:24:20.133838",
+  "nama_kemasan": "Octabin",
+  "name": "ecf6de489b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "OU",
+  "modified": "2023-06-21 14:24:20.138134",
+  "nama_kemasan": "Container, outer",
+  "name": "02bc88c207"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "P2",
+  "modified": "2023-06-21 14:24:20.141745",
+  "nama_kemasan": "Pan",
+  "name": "87143a865c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PA",
+  "modified": "2023-06-21 14:24:20.145490",
+  "nama_kemasan": "Packet",
+  "name": "b27a0f0c4f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PB",
+  "modified": "2023-06-21 14:24:20.149258",
+  "nama_kemasan": "Pallet, box Combined open-ended box and pallet",
+  "name": "8983268ee2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PC",
+  "modified": "2023-06-21 14:24:20.153031",
+  "nama_kemasan": "Parcel",
+  "name": "66e98c4c92"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PD",
+  "modified": "2023-06-21 14:24:20.156797",
+  "nama_kemasan": "Pallet, modular, collars 80cms * 100cms",
+  "name": "f1807de90e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PE",
+  "modified": "2023-06-21 14:24:20.161192",
+  "nama_kemasan": "Pallet, modular, collars 80cms * 120cms",
+  "name": "2ad68f100f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PF",
+  "modified": "2023-06-21 14:24:20.165197",
+  "nama_kemasan": "Pen",
+  "name": "965bd08cab"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PG",
+  "modified": "2023-06-21 14:24:20.169047",
+  "nama_kemasan": "Plate",
+  "name": "468ca206a6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PH",
+  "modified": "2023-06-21 14:24:20.173211",
+  "nama_kemasan": "Pitcher",
+  "name": "8ea62675b3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PI",
+  "modified": "2023-06-21 14:24:20.177298",
+  "nama_kemasan": "Pipe",
+  "name": "d6cb100ce4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PJ",
+  "modified": "2023-06-21 14:24:20.180987",
+  "nama_kemasan": "Punnet",
+  "name": "1c8e0cab0b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PK",
+  "modified": "2023-06-21 14:24:20.184801",
+  "nama_kemasan": "Package",
+  "name": "a57732f088"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PL",
+  "modified": "2023-06-21 14:24:20.188967",
+  "nama_kemasan": "Pail",
+  "name": "13dcd2a159"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PN",
+  "modified": "2023-06-21 14:24:20.192673",
+  "nama_kemasan": "Plank",
+  "name": "3f0b8528ad"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PO",
+  "modified": "2023-06-21 14:24:20.196553",
+  "nama_kemasan": "Pouch",
+  "name": "39a5e97d67"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PP",
+  "modified": "2023-06-21 14:24:20.200334",
+  "nama_kemasan": "Piece",
+  "name": "5262903fc1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PR",
+  "modified": "2023-06-21 14:24:20.204456",
+  "nama_kemasan": "Receptacle, plastic",
+  "name": "c9e8279fab"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PT",
+  "modified": "2023-06-21 14:24:20.208595",
+  "nama_kemasan": "Pot",
+  "name": "a9d7aefe6b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PU",
+  "modified": "2023-06-21 14:24:20.212310",
+  "nama_kemasan": "Tray",
+  "name": "b6bcc866bc"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PV",
+  "modified": "2023-06-21 14:24:20.216029",
+  "nama_kemasan": "Pipes, in bundle/bunch/truss",
+  "name": "db8e8339da"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PX",
+  "modified": "2023-06-21 14:24:20.219886",
+  "nama_kemasan": "Pallet",
+  "name": "41744368b5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PY",
+  "modified": "2023-06-21 14:24:20.223789",
+  "nama_kemasan": "Plates, in bundle/bunch/truss",
+  "name": "cdc1f4ad4f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "PZ",
+  "modified": "2023-06-21 14:24:20.227623",
+  "nama_kemasan": "Pipes, in bundle/bunch/truss",
+  "name": "9c9d44a1be"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QA",
+  "modified": "2023-06-21 14:24:20.232157",
+  "nama_kemasan": "Drum, steel, non-removable head",
+  "name": "472c28229b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QB",
+  "modified": "2023-06-21 14:24:20.236053",
+  "nama_kemasan": "Drum, steel, removable head",
+  "name": "68b1c3235e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QC",
+  "modified": "2023-06-21 14:24:20.239851",
+  "nama_kemasan": "Drum, aluminium, non-removable head",
+  "name": "42be68a55e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QD",
+  "modified": "2023-06-21 14:24:20.243842",
+  "nama_kemasan": "Drum, aluminium, removable head",
+  "name": "f76cff66d9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QF",
+  "modified": "2023-06-21 14:24:20.247779",
+  "nama_kemasan": "Drum, plastic, non-removable head",
+  "name": "7de668de1c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QG",
+  "modified": "2023-06-21 14:24:20.251685",
+  "nama_kemasan": "Drum, plastic, removable head",
+  "name": "ddd5f88f9f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QH",
+  "modified": "2023-06-21 14:24:20.255568",
+  "nama_kemasan": "Barrel, wooden, bung type",
+  "name": "6dca224cd0"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QJ",
+  "modified": "2023-06-21 14:24:20.259350",
+  "nama_kemasan": "Barrel, wooden, removable head",
+  "name": "fc4a54a9f6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QK",
+  "modified": "2023-06-21 14:24:20.263567",
+  "nama_kemasan": "Jerrican, steel, non-removable head",
+  "name": "a65f5b92ae"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QL",
+  "modified": "2023-06-21 14:24:20.268100",
+  "nama_kemasan": "Jerrican, steel, removable head",
+  "name": "48475ce8a9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QM",
+  "modified": "2023-06-21 14:24:20.271728",
+  "nama_kemasan": "Jerrican, plastic, non-removable head",
+  "name": "6f48282fa3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QN",
+  "modified": "2023-06-21 14:24:20.275405",
+  "nama_kemasan": "Jerrican, plastic, removable head",
+  "name": "80a1940066"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QP",
+  "modified": "2023-06-21 14:24:20.279522",
+  "nama_kemasan": "Box, wooden, natural wood, ordinary",
+  "name": "d4f8c88624"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QQ",
+  "modified": "2023-06-21 14:24:20.283369",
+  "nama_kemasan": "Box, wooden, natural wood, with sift proof walls",
+  "name": "49e2e9f3a5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QR",
+  "modified": "2023-06-21 14:24:20.287500",
+  "nama_kemasan": "Box, plastic, expanded",
+  "name": "c4ec674dfc"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "QS",
+  "modified": "2023-06-21 14:24:20.291192",
+  "nama_kemasan": "Box, plastic, solid",
+  "name": "817380d3bb"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "RD",
+  "modified": "2023-06-21 14:24:20.295961",
+  "nama_kemasan": "Rod",
+  "name": "23587b56bf"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "RG",
+  "modified": "2023-06-21 14:24:20.300042",
+  "nama_kemasan": "Ring",
+  "name": "fcb7274999"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "RJ",
+  "modified": "2023-06-21 14:24:20.304073",
+  "nama_kemasan": "Rack, clothing hanger",
+  "name": "bc49730a07"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "RK",
+  "modified": "2023-06-21 14:24:20.307793",
+  "nama_kemasan": "Rack",
+  "name": "8f41142218"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "RL",
+  "modified": "2023-06-21 14:24:20.311961",
+  "nama_kemasan": "Reel",
+  "name": "3378efba13"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "RO",
+  "modified": "2023-06-21 14:24:20.316121",
+  "nama_kemasan": "Roll",
+  "name": "a29eeb2d94"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "RT",
+  "modified": "2023-06-21 14:24:20.320038",
+  "nama_kemasan": "Rednet",
+  "name": "10f0d1a574"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "RZ",
+  "modified": "2023-06-21 14:24:20.323863",
+  "nama_kemasan": "Rods, in bundle/ bunch/truss",
+  "name": "ad2b977d98"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SA",
+  "modified": "2023-06-21 14:24:20.327888",
+  "nama_kemasan": "Sack",
+  "name": "806fd60407"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SB",
+  "modified": "2023-06-21 14:24:20.331777",
+  "nama_kemasan": "Slab",
+  "name": "c495f28edb"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SC",
+  "modified": "2023-06-21 14:24:20.335608",
+  "nama_kemasan": "Shallow crate",
+  "name": "f5e2996378"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SD",
+  "modified": "2023-06-21 14:24:20.342933",
+  "nama_kemasan": "Spindle",
+  "name": "bf7fefeacc"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SE",
+  "modified": "2023-06-21 14:24:20.346969",
+  "nama_kemasan": "Sea-chest",
+  "name": "19e2181a45"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SH",
+  "modified": "2023-06-21 14:24:20.350837",
+  "nama_kemasan": "Sachet",
+  "name": "ac09d653dc"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SI",
+  "modified": "2023-06-21 14:24:20.354932",
+  "nama_kemasan": "Skid",
+  "name": "706394c0ec"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SK",
+  "modified": "2023-06-21 14:24:20.358937",
+  "nama_kemasan": "Skeleton case",
+  "name": "2e0ff3c337"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SL",
+  "modified": "2023-06-21 14:24:20.362967",
+  "nama_kemasan": "Slipsheet",
+  "name": "2690565e98"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SM",
+  "modified": "2023-06-21 14:24:20.366975",
+  "nama_kemasan": "Sheetmetal",
+  "name": "b3ec643a3f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SO",
+  "modified": "2023-06-21 14:24:20.370647",
+  "nama_kemasan": "Spool",
+  "name": "4c282a6d6d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SP",
+  "modified": "2023-06-21 14:24:20.374544",
+  "nama_kemasan": "Sheet, plastic wrapping",
+  "name": "227dfd1edc"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SS",
+  "modified": "2023-06-21 14:24:20.381837",
+  "nama_kemasan": "Case, steel",
+  "name": "23ef2159f4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ST",
+  "modified": "2023-06-21 14:24:20.385561",
+  "nama_kemasan": "Sheet",
+  "name": "44ffc2643c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SU",
+  "modified": "2023-06-21 14:24:20.389526",
+  "nama_kemasan": "Suitcase",
+  "name": "ab5c8a6b99"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SV",
+  "modified": "2023-06-21 14:24:20.393445",
+  "nama_kemasan": "Envelope, steel",
+  "name": "96e46ac5e0"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SW",
+  "modified": "2023-06-21 14:24:20.397583",
+  "nama_kemasan": "Shrinkwrapped",
+  "name": "7341944593"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SX",
+  "modified": "2023-06-21 14:24:20.401741",
+  "nama_kemasan": "Set",
+  "name": "a1e52e50df"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SY",
+  "modified": "2023-06-21 14:24:20.405606",
+  "nama_kemasan": "Sleeve",
+  "name": "1817740770"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "SZ",
+  "modified": "2023-06-21 14:24:20.409473",
+  "nama_kemasan": "Sheets, in bundle/bunch/truss",
+  "name": "b00d3d4be2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "T1",
+  "modified": "2023-06-21 14:24:20.413241",
+  "nama_kemasan": "Tablet",
+  "name": "6f924b4b73"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TB",
+  "modified": "2023-06-21 14:24:20.417005",
+  "nama_kemasan": "Tub",
+  "name": "1eb54cde26"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TC",
+  "modified": "2023-06-21 14:24:20.420855",
+  "nama_kemasan": "Tea-chest",
+  "name": "bdc87348df"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TD",
+  "modified": "2023-06-21 14:24:20.425336",
+  "nama_kemasan": "Collapsible tube",
+  "name": "88ce299ce2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TE",
+  "modified": "2023-06-21 14:24:20.430652",
+  "nama_kemasan": "Tyre",
+  "name": "d9b72a1218"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TG",
+  "modified": "2023-06-21 14:24:20.437723",
+  "nama_kemasan": "Tank container, generic",
+  "name": "20321fefbd"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TI",
+  "modified": "2023-06-21 14:24:20.443643",
+  "nama_kemasan": "Tierce",
+  "name": "e1c8b7fa0a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TK",
+  "modified": "2023-06-21 14:24:20.448479",
+  "nama_kemasan": "Tank, rectangular",
+  "name": "20127c54ac"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TL",
+  "modified": "2023-06-21 14:24:20.452611",
+  "nama_kemasan": "Tub, with lid",
+  "name": "6a4b6a352f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TN",
+  "modified": "2023-06-21 14:24:20.456884",
+  "nama_kemasan": "Tin",
+  "name": "d5e431b71c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TO",
+  "modified": "2023-06-21 14:24:20.461462",
+  "nama_kemasan": "Tun",
+  "name": "0a206b5a59"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TP",
+  "modified": "2023-06-21 14:24:20.466063",
+  "nama_kemasan": "Tray",
+  "name": "ee6bd2a841"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TR",
+  "modified": "2023-06-21 14:24:20.470582",
+  "nama_kemasan": "Trunk",
+  "name": "0bd78ac1ba"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TS",
+  "modified": "2023-06-21 14:24:20.474386",
+  "nama_kemasan": "Truss",
+  "name": "6b6c3fd026"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TT",
+  "modified": "2023-06-21 14:24:20.478476",
+  "nama_kemasan": "Bag, tote",
+  "name": "a6ec60eb4a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TU",
+  "modified": "2023-06-21 14:24:20.482456",
+  "nama_kemasan": "Tube",
+  "name": "aecfc61765"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TV",
+  "modified": "2023-06-21 14:24:20.486472",
+  "nama_kemasan": "Tube, with nozzle",
+  "name": "a243432a20"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TW",
+  "modified": "2023-06-21 14:24:20.490439",
+  "nama_kemasan": "Pallet, triwall",
+  "name": "b5caccbd35"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TY",
+  "modified": "2023-06-21 14:24:20.494516",
+  "nama_kemasan": "Tank, cylindrical",
+  "name": "8806b58a20"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "TZ",
+  "modified": "2023-06-21 14:24:20.498883",
+  "nama_kemasan": "Tubes, in bundle/bunch/truss",
+  "name": "9ccc51f129"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "UC",
+  "modified": "2023-06-21 14:24:20.502788",
+  "nama_kemasan": "Uncaged",
+  "name": "7ec742e5a4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "UN",
+  "modified": "2023-06-21 14:24:20.507000",
+  "nama_kemasan": "Unpackage",
+  "name": "824897a2ed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "VA",
+  "modified": "2023-06-21 14:24:20.510783",
+  "nama_kemasan": "Vat",
+  "name": "83a299d6fc"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "VG",
+  "modified": "2023-06-21 14:24:20.514473",
+  "nama_kemasan": "Bulk, gas ( at 1031 mbar and 15C )",
+  "name": "3bf8ad2787"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "VI",
+  "modified": "2023-06-21 14:24:20.518283",
+  "nama_kemasan": "Vial",
+  "name": "2ad04ae31a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "VK",
+  "modified": "2023-06-21 14:24:20.522442",
+  "nama_kemasan": "Vanpack",
+  "name": "2d1b22de35"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "VL",
+  "modified": "2023-06-21 14:24:20.526704",
+  "nama_kemasan": "Bulk, liquid",
+  "name": "875e2889b1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "VN",
+  "modified": "2023-06-21 14:24:20.531826",
+  "nama_kemasan": "Vehicle",
+  "name": "c2933d8242"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "VO",
+  "modified": "2023-06-21 14:24:20.536070",
+  "nama_kemasan": "Bulk, solid, large particles (\"nodules\")",
+  "name": "db182f1a13"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "VP",
+  "modified": "2023-06-21 14:24:20.540366",
+  "nama_kemasan": "Vacuumpacked",
+  "name": "e8dafe0269"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "VQ",
+  "modified": "2023-06-21 14:24:20.544670",
+  "nama_kemasan": "Bulk,liquefied gas (at abnorml temprture/pressure)",
+  "name": "a7d3d457f6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "VR",
+  "modified": "2023-06-21 14:24:20.549103",
+  "nama_kemasan": "Bulk, solid, granular particles (\"grains\")",
+  "name": "4f4710bfe8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "VS",
+  "modified": "2023-06-21 14:24:20.553169",
+  "nama_kemasan": "Bulk, scrap metal",
+  "name": "ae8a6fdf5a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "VY",
+  "modified": "2023-06-21 14:24:20.557394",
+  "nama_kemasan": "Bulk, solid, fine particles (\"powders\")",
+  "name": "846f491526"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WA",
+  "modified": "2023-06-21 14:24:20.561548",
+  "nama_kemasan": "Intermediate bulk container",
+  "name": "fb939dba32"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WB",
+  "modified": "2023-06-21 14:24:20.565526",
+  "nama_kemasan": "Wickerbottle",
+  "name": "3a8d87de98"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WC",
+  "modified": "2023-06-21 14:24:20.569540",
+  "nama_kemasan": "Intermediate bulk container, steel",
+  "name": "f7b9cd7957"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WD",
+  "modified": "2023-06-21 14:24:20.573422",
+  "nama_kemasan": "Intermediate bulk container, aluminium",
+  "name": "b0731dc1d2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WF",
+  "modified": "2023-06-21 14:24:20.577472",
+  "nama_kemasan": "Intermediate bulk container, metal",
+  "name": "f08a18a5b5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WG",
+  "modified": "2023-06-21 14:24:20.581629",
+  "nama_kemasan": "Intermediate bulk cont,steel,pressurised >10 kpa",
+  "name": "e7d754d99f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WH",
+  "modified": "2023-06-21 14:24:20.585819",
+  "nama_kemasan": "Intermedt bulk cont,aluminium,pressurised >10 kpa",
+  "name": "88a0072d3f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WJ",
+  "modified": "2023-06-21 14:24:20.589817",
+  "nama_kemasan": "Intermediate bulk container,metal, pressure 10 kpa",
+  "name": "2cfb6abc19"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WK",
+  "modified": "2023-06-21 14:24:20.593650",
+  "nama_kemasan": "Intermediate bulk container, steel, liquid",
+  "name": "97d5eced55"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WL",
+  "modified": "2023-06-21 14:24:20.597672",
+  "nama_kemasan": "Intermediate bulk container, aluminium, liquid",
+  "name": "ede7f293f3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WM",
+  "modified": "2023-06-21 14:24:20.601580",
+  "nama_kemasan": "Intermediate bulk container, metal, liquid",
+  "name": "9750def4d9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WN",
+  "modified": "2023-06-21 14:24:20.605452",
+  "nama_kemasan": "Intermd bulk cont,woven plastic,without coat/liner",
+  "name": "6f50a8b42d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WP",
+  "modified": "2023-06-21 14:24:20.609420",
+  "nama_kemasan": "Intermediate bulk container, woven plastic, coated",
+  "name": "662cfa79d6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WQ",
+  "modified": "2023-06-21 14:24:20.613350",
+  "nama_kemasan": "Intermediate bulk cont,woven plastic,with liner",
+  "name": "c7c25f4da0"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WR",
+  "modified": "2023-06-21 14:24:20.617244",
+  "nama_kemasan": "Intermedt bulk cont,woven plastic,coated and liner",
+  "name": "ac0c4b3c5f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WS",
+  "modified": "2023-06-21 14:24:20.621100",
+  "nama_kemasan": "Intermediate bulk container, plastic film",
+  "name": "c7341b209e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WT",
+  "modified": "2023-06-21 14:24:20.625480",
+  "nama_kemasan": "Intermediate bulk cont,textile with out coat/liner",
+  "name": "1e0b6f781f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WU",
+  "modified": "2023-06-21 14:24:20.630063",
+  "nama_kemasan": "Intermdte bulk cont,natural wood,with inner liner",
+  "name": "ff3dc43564"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WV",
+  "modified": "2023-06-21 14:24:20.634017",
+  "nama_kemasan": "Intermediate bulk container, textile, coated",
+  "name": "f2ea72826e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WW",
+  "modified": "2023-06-21 14:24:20.637837",
+  "nama_kemasan": "Intermediate bulk container, textile, with liner",
+  "name": "8cf30687da"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WX",
+  "modified": "2023-06-21 14:24:20.641883",
+  "nama_kemasan": "Intermediate bulk cont,textile,coated and liner",
+  "name": "95975f0ecc"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WY",
+  "modified": "2023-06-21 14:24:20.645538",
+  "nama_kemasan": "Intermediate bulk cont,plywood,with inner liner",
+  "name": "7d64c0f088"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "WZ",
+  "modified": "2023-06-21 14:24:20.649595",
+  "nama_kemasan": "Intermd bulk cont,reconstttd wood,with inner liner",
+  "name": "d2116be917"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "XA",
+  "modified": "2023-06-21 14:24:20.653447",
+  "nama_kemasan": "Bag, woven plastic, without inner coat/liner",
+  "name": "f67d4cc1f9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "XB",
+  "modified": "2023-06-21 14:24:20.657473",
+  "nama_kemasan": "Bag, woven plastic, sift proof",
+  "name": "98ed71afbf"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "XC",
+  "modified": "2023-06-21 14:24:20.661528",
+  "nama_kemasan": "Bag, woven plastic, water resistant",
+  "name": "5ea9428688"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "XD",
+  "modified": "2023-06-21 14:24:20.665428",
+  "nama_kemasan": "Bag, plastics film",
+  "name": "c76034cbdf"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "XF",
+  "modified": "2023-06-21 14:24:20.669134",
+  "nama_kemasan": "Bag, textile, without inner coat/liner",
+  "name": "64aeb0f5a8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "XG",
+  "modified": "2023-06-21 14:24:20.672989",
+  "nama_kemasan": "Bag, textile, sift proof",
+  "name": "e7925ac4f5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "XH",
+  "modified": "2023-06-21 14:24:20.677374",
+  "nama_kemasan": "Bag, textile, water resistant",
+  "name": "918b80c8ce"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "XJ",
+  "modified": "2023-06-21 14:24:20.681246",
+  "nama_kemasan": "Bag, paper, multi-wall",
+  "name": "fbd0a55a37"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "XK",
+  "modified": "2023-06-21 14:24:20.684810",
+  "nama_kemasan": "Bag, paper, multi-wall, water resistant",
+  "name": "ec5c5091d9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "XN",
+  "modified": "2023-06-21 14:24:20.689202",
+  "nama_kemasan": "test",
+  "name": "40f2f8e88e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YA",
+  "modified": "2023-06-21 14:24:20.693127",
+  "nama_kemasan": "Compsite packging,plastic receptacle in steel drum",
+  "name": "27641c631a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YB",
+  "modified": "2023-06-21 14:24:20.697020",
+  "nama_kemasan": "Compste packgng,plastc recptcle in steel crate box",
+  "name": "4166a8c392"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YC",
+  "modified": "2023-06-21 14:24:20.700581",
+  "nama_kemasan": "Compste packgng,plastic recptcle in aluminium drum",
+  "name": "8c98916d5c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YD",
+  "modified": "2023-06-21 14:24:20.704553",
+  "nama_kemasan": "Compste packgng,plastic recptcle in alumnium crate",
+  "name": "6a3a5e6ec3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YF",
+  "modified": "2023-06-21 14:24:20.708738",
+  "nama_kemasan": "Compsite packging,plastic receptacle in wooden box",
+  "name": "010827d085"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YG",
+  "modified": "2023-06-21 14:24:20.712943",
+  "nama_kemasan": "Compste packgng,plastic receptacle in plywood drum",
+  "name": "f8bcaef36b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YH",
+  "modified": "2023-06-21 14:24:20.717202",
+  "nama_kemasan": "Compste packging,plastic receptacle in plywood box",
+  "name": "6884d36b91"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YJ",
+  "modified": "2023-06-21 14:24:20.721374",
+  "nama_kemasan": "Compsite packging,plastic receptacle in fibre drum",
+  "name": "19b654b8b2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YK",
+  "modified": "2023-06-21 14:24:20.725256",
+  "nama_kemasan": "Compste packgng,plastic recptcle in fibreboard box",
+  "name": "c05d0845d8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YL",
+  "modified": "2023-06-21 14:24:20.729548",
+  "nama_kemasan": "Compste packgng,plastic receptacle in plastic drum",
+  "name": "64229773cc"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YM",
+  "modified": "2023-06-21 14:24:20.733531",
+  "nama_kemasan": "Compsite packgng,plstc recptcle in solid plstc box",
+  "name": "6c74dff6eb"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YN",
+  "modified": "2023-06-21 14:24:20.737362",
+  "nama_kemasan": "Composite packaging,glass receptacle in steel drum",
+  "name": "c33123845f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YP",
+  "modified": "2023-06-21 14:24:20.741149",
+  "nama_kemasan": "Compste packgng,glass recptacle in steel crate box",
+  "name": "eea0046f3c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YQ",
+  "modified": "2023-06-21 14:24:20.744874",
+  "nama_kemasan": "Compste packgng,glass receptacle in aluminium drum",
+  "name": "b7004ba632"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YR",
+  "modified": "2023-06-21 14:24:20.748756",
+  "nama_kemasan": "Compste packgng,glass recptacle in aluminium crate",
+  "name": "6dd74dceff"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YS",
+  "modified": "2023-06-21 14:24:20.752397",
+  "nama_kemasan": "Composite packaging,glass receptacle in wooden box",
+  "name": "214d115415"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YT",
+  "modified": "2023-06-21 14:24:20.756431",
+  "nama_kemasan": "Compsite packging,glass receptacle in plywood drum",
+  "name": "e4d0679f27"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YV",
+  "modified": "2023-06-21 14:24:20.760443",
+  "nama_kemasan": "Compste packgng,glass recptcle in wickrwork hamper",
+  "name": "9a47b99aaa"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YW",
+  "modified": "2023-06-21 14:24:20.764210",
+  "nama_kemasan": "Composite packaging,glass receptacle in fibre drum",
+  "name": "a3aa9dd7b8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YX",
+  "modified": "2023-06-21 14:24:20.768379",
+  "nama_kemasan": "Compste packgng,glass receptacle in fibreboard box",
+  "name": "cbcaf82b32"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YY",
+  "modified": "2023-06-21 14:24:20.772298",
+  "nama_kemasan": "Compste pckgng,glss recptcl in expndbl plastc pack",
+  "name": "57067fee56"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "YZ",
+  "modified": "2023-06-21 14:24:20.776192",
+  "nama_kemasan": "Compsite packgng,glass recptcle in solid plstc pck",
+  "name": "68e5b009a4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZA",
+  "modified": "2023-06-21 14:24:20.780228",
+  "nama_kemasan": "Intermediate bulk container, paper, multi-wall",
+  "name": "d6dd4f4692"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZB",
+  "modified": "2023-06-21 14:24:20.784094",
+  "nama_kemasan": "Bag, large",
+  "name": "aa61a17eaa"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZC",
+  "modified": "2023-06-21 14:24:20.788084",
+  "nama_kemasan": "Intermd bulk cont,paper,multi-wall,water resistant",
+  "name": "04cde4f757"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZD",
+  "modified": "2023-06-21 14:24:20.792036",
+  "nama_kemasan": "Intermd bulk cont,rgd plstc,w/strctrl equipm,solid",
+  "name": "8435cf1c92"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZF",
+  "modified": "2023-06-21 14:24:20.795948",
+  "nama_kemasan": "Intermd bulk cont,rgid plstc,freestandng,solds",
+  "name": "8d47f5e3ed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZG",
+  "modified": "2023-06-21 14:24:20.799890",
+  "nama_kemasan": "Intermdbulk cnt,rgd plstc,w/strctrl equipm,pressrd",
+  "name": "164f3d0b5d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZH",
+  "modified": "2023-06-21 14:24:20.803683",
+  "nama_kemasan": "Intermd bulk cont,rgd plstc,freestnd,pressurised",
+  "name": "8b88d4021e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZJ",
+  "modified": "2023-06-21 14:24:20.807360",
+  "nama_kemasan": "Intermd bulk cont,rgd plstc,w/strctrl equipm,lquid",
+  "name": "63169e59a7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZK",
+  "modified": "2023-06-21 14:24:20.810979",
+  "nama_kemasan": "Intermd bulk cont,rgid plstc,freestanding,liquids",
+  "name": "7ea5cc4184"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZL",
+  "modified": "2023-06-21 14:24:20.814777",
+  "nama_kemasan": "Intermd bulk cont,composite,rigid plastic,solids",
+  "name": "69a561f42d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZM",
+  "modified": "2023-06-21 14:24:20.818976",
+  "nama_kemasan": "Intermd bulk cont,compste,flexbl plastic, solids",
+  "name": "52acb7e9bb"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZN",
+  "modified": "2023-06-21 14:24:20.822723",
+  "nama_kemasan": "Intermd bulk cont,compsit,rgid plstc,pressurised",
+  "name": "b7d257db7d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZP",
+  "modified": "2023-06-21 14:24:20.826940",
+  "nama_kemasan": "Intermd bulk cont,compsit,flexbl plstc,pressurised",
+  "name": "e0701b7d15"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZQ",
+  "modified": "2023-06-21 14:24:20.830835",
+  "nama_kemasan": "Intermd bulk cont,composite,rigid plastic,liquids",
+  "name": "b18ddd7103"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZR",
+  "modified": "2023-06-21 14:24:20.834641",
+  "nama_kemasan": "Intermd bulk cont,compsite,flexible plastc,liquids",
+  "name": "5f788f2df8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZS",
+  "modified": "2023-06-21 14:24:20.838818",
+  "nama_kemasan": "Intermediate bulk container, composite",
+  "name": "83d6effd9b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZT",
+  "modified": "2023-06-21 14:24:20.842840",
+  "nama_kemasan": "Intermediate bulk container, fibreboard",
+  "name": "5c1444c9d2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZU",
+  "modified": "2023-06-21 14:24:20.846679",
+  "nama_kemasan": "Intermediate bulk container, flexible",
+  "name": "8f9413b110"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZV",
+  "modified": "2023-06-21 14:24:20.851042",
+  "nama_kemasan": "Intermediate bulk container,metal,other than steel",
+  "name": "40945ce9e7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZW",
+  "modified": "2023-06-21 14:24:20.855169",
+  "nama_kemasan": "Intermediate bulk container, natural wood",
+  "name": "f3d77ac2f5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZX",
+  "modified": "2023-06-21 14:24:20.859271",
+  "nama_kemasan": "Intermediate bulk container, plywood",
+  "name": "a7665ce27d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZY",
+  "modified": "2023-06-21 14:24:20.863792",
+  "nama_kemasan": "Intermediate bulk container, reconstituted wood",
+  "name": "5ae707d01e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kemasan",
+  "kode_kemasan": "ZZ",
+  "modified": "2023-06-21 14:24:20.867887",
+  "nama_kemasan": "Mutually defined",
+  "name": "3aa5ee2711"
+ }
+]

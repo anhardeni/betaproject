@@ -1,0 +1,26 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kontainer",
+  "kode_jenis_kontainer": "4",
+  "modified": "2023-06-21 14:27:08.331678",
+  "nama_jenis_kontainer": "EMPTY",
+  "name": "d2748cc297"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kontainer",
+  "kode_jenis_kontainer": "8",
+  "modified": "2023-06-21 14:27:08.345250",
+  "nama_jenis_kontainer": "FCL",
+  "name": "322fc329db"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Kontainer",
+  "kode_jenis_kontainer": "7",
+  "modified": "2023-06-21 14:27:08.349988",
+  "nama_jenis_kontainer": "LCL",
+  "name": "54afcd3927"
+ }
+]

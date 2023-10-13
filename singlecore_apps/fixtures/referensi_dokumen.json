@@ -1,0 +1,1474 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "10",
+  "modified": "2023-06-16 14:56:42.769404",
+  "nama_dokumen": "RKSP",
+  "name": "10"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "11",
+  "modified": "2023-06-16 14:56:42.786433",
+  "nama_dokumen": "MANIFES",
+  "name": "11"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "16",
+  "modified": "2023-06-16 14:56:42.791390",
+  "nama_dokumen": "BC 1.6 - PEMBERITAHUAN PABEAN PENGELUARAN BARANG DARI KAWASAN PABEAN UNTUK DITIMBUN DI PUSAT LOGISTIK BERIKAT",
+  "name": "16"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "20",
+  "modified": "2023-06-16 14:56:42.795695",
+  "nama_dokumen": "BC 2.0 - PEMBERITAHUAN IMPOR BARANG",
+  "name": "20"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "21",
+  "modified": "2023-06-16 14:56:42.802322",
+  "nama_dokumen": "PIBK/IMPOR KHUSUS",
+  "name": "21"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "23",
+  "modified": "2023-06-16 14:56:42.806865",
+  "nama_dokumen": "BC 2.3 - PEMBERITAHUAN IMPOR BARANG UNTUK DITIMBUN DI TEMPAT PENIMBUNAN BERIKAT",
+  "name": "23"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "25",
+  "modified": "2023-06-16 14:56:42.811678",
+  "nama_dokumen": "BC 2.5 - PEMBERITAHUAN IMPOR BARANG DARI TEMPAT PENIMBUNAN BERIKAT",
+  "name": "25"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "27",
+  "modified": "2023-06-16 14:56:42.816145",
+  "nama_dokumen": "BC 2.7 - PEMBERITAHUAN PENGELUARAN UNTUK DIANGKUT DARI TEMPAT PENIMBUNAN BERIKAT KE TEMPAT PENIMBUNAN BERIKAT LAINNYA",
+  "name": "27"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "28",
+  "modified": "2023-06-16 14:56:42.820654",
+  "nama_dokumen": "BC 2.8 - PEMBERITAHUAN IMPOR BARANG DARI PUSAT LOGISTIK BERIKAT",
+  "name": "28"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "30",
+  "modified": "2023-06-16 14:56:42.825336",
+  "nama_dokumen": "BC 3.0 - PEMBERITAHUAN EKSPOR NARAMG",
+  "name": "30"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "33",
+  "modified": "2023-06-16 14:56:42.829819",
+  "nama_dokumen": "BC 3.3 - PEMBERITAHUAN EKSPOR BARANG MELALUI/DARI PUSAT LOGISTIK BERIKAT",
+  "name": "33"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "40",
+  "modified": "2023-06-16 14:56:42.834407",
+  "nama_dokumen": "BC 4.0 - PEMBERITAHUAN PEMASUKAN BARANG ASAL TEMPAT LAIN DALAM DAERAH PABEAN KE TEMPAT PENIMBUNAN BERIKAT",
+  "name": "40"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "41",
+  "modified": "2023-06-16 14:56:42.838751",
+  "nama_dokumen": "BC 4.1 - PEMBERITAHUAN PENGELUARAN KEMBALI BARANG ASAL TEMPAT LAIN DALAM DAERAH PABEAN DARI TEMPAT PENIMBUNAN BERIKAT",
+  "name": "41"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "50",
+  "modified": "2023-06-16 14:56:42.843308",
+  "nama_dokumen": "KITE",
+  "name": "50"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "51",
+  "modified": "2023-06-16 14:56:42.848544",
+  "nama_dokumen": "FTZ 01",
+  "name": "51"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "52",
+  "modified": "2023-06-16 14:56:42.852967",
+  "nama_dokumen": "FTZ 02",
+  "name": "52"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "53",
+  "modified": "2023-06-16 14:56:42.857551",
+  "nama_dokumen": "FTZ 03",
+  "name": "53"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "65",
+  "modified": "2023-06-16 14:56:42.861979",
+  "nama_dokumen": "BC 1.1 KONSOLIDASI PJT",
+  "name": "65"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "111",
+  "modified": "2023-06-16 14:56:42.866363",
+  "nama_dokumen": "Bank Devisa Hasil Ekspor (DHE)",
+  "name": "111"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "161",
+  "modified": "2023-06-16 14:56:42.870232",
+  "nama_dokumen": "PPB - PEMBERITAHUAN PERPINDAHAN BARANG ANTAR TEMPAT PENIMBUNAN DALAM SATU PUSAT LOGISTIK BERIKAT",
+  "name": "161"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "217",
+  "modified": "2023-06-16 14:56:42.874225",
+  "nama_dokumen": "PACKING LIST",
+  "name": "217"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "246",
+  "modified": "2023-06-16 14:56:42.878205",
+  "nama_dokumen": "L/C",
+  "name": "246"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "261",
+  "modified": "2023-06-16 14:56:42.882088",
+  "nama_dokumen": "BC 2.6.1 - PEMBERITAHUAN PENGELUARAN BARANG DARI TEMPAT PENIMBUNAN BERIKAT DENGAN JAMINAN",
+  "name": "261"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "262",
+  "modified": "2023-06-16 14:56:42.886038",
+  "nama_dokumen": "BC 2.6.2 - PEMBERITAHUAN PEMASUKAN KEMBALI BARANG YANG DI KELUARKAN DARI TEMPAT PENIMBUNAN BERIKAT DENGAN JAMINAN",
+  "name": "262"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "281",
+  "modified": "2023-06-16 14:56:42.889839",
+  "nama_dokumen": "PPK - PEMBERITAHUAN PEMASUKAN KEMBALI BARANG ASAL PLB DARI LOKASI PENERIMA FASILITAS DI TEMPAT LAIN DALAM DAERAH PABEAN KE PLB",
+  "name": "281"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "282",
+  "modified": "2023-06-16 14:56:42.893829",
+  "nama_dokumen": "DOKAP PLB - PEMBERITAHUAN PENGELUARAN DENGAN DOKUMEN PELENGKAP",
+  "name": "282"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "315",
+  "modified": "2023-06-16 14:56:42.897556",
+  "nama_dokumen": "KONTRAK",
+  "name": "315"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "331",
+  "modified": "2023-06-16 14:56:42.901303",
+  "nama_dokumen": "P3BET - PEMBERITAHUAN PENGGABUNGAN DAN PEMECAHAN BARANG EKSPOR DAN TRANSHIPMENT",
+  "name": "331"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "343",
+  "modified": "2023-06-16 14:56:42.905269",
+  "nama_dokumen": "SHIPING ORDER",
+  "name": "343"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "380",
+  "modified": "2023-06-16 14:56:42.909255",
+  "nama_dokumen": "INVOICE",
+  "name": "380"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "383",
+  "modified": "2023-06-16 14:56:42.913263",
+  "nama_dokumen": "SSTB",
+  "name": "383"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "388",
+  "modified": "2023-06-16 14:56:42.917122",
+  "nama_dokumen": "FAKTUR PAJAK",
+  "name": "388"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "410",
+  "modified": "2023-06-16 14:56:42.922597",
+  "nama_dokumen": "SURAT SANGGUP BAYAR / SSB",
+  "name": "410"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "430",
+  "modified": "2023-06-16 14:56:42.926460",
+  "nama_dokumen": "BANK GARANSI",
+  "name": "430"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "440",
+  "modified": "2023-06-16 14:56:42.930555",
+  "nama_dokumen": "SURAT TANDA BUKTI SETOR / STBS",
+  "name": "440"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "454",
+  "modified": "2023-06-16 14:56:42.934439",
+  "nama_dokumen": "SSPCP / SSBC",
+  "name": "454"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "455",
+  "modified": "2023-06-16 14:56:42.938477",
+  "nama_dokumen": "SURAT SETORAN PAJAK (SSP)",
+  "name": "455"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "456",
+  "modified": "2023-06-16 14:56:42.942240",
+  "nama_dokumen": "SKB",
+  "name": "456"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "457",
+  "modified": "2023-06-16 14:56:42.946090",
+  "nama_dokumen": "Surat Keterangan Bebas (SKB) PPh",
+  "name": "457"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "458",
+  "modified": "2023-06-16 14:56:42.949711",
+  "nama_dokumen": "SURAT KETERANGAN TIDAK DIPUNGUT (SKTD) PPN",
+  "name": "458"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "500",
+  "modified": "2023-06-16 14:56:42.953632",
+  "nama_dokumen": "MOU PDE (Eksportir)",
+  "name": "500"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "511",
+  "modified": "2023-06-16 14:56:42.957508",
+  "nama_dokumen": "FTZ-01 PEMASUKAN DARI LUAR DAERAH PABEAN (IMPOR)",
+  "name": "511"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "512",
+  "modified": "2023-06-16 14:56:42.961356",
+  "nama_dokumen": "FTZ-01 PENGELUARAN KE LUAR DAERAH PABEAN (EKSPOR)",
+  "name": "512"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "513",
+  "modified": "2023-06-16 14:56:42.965180",
+  "nama_dokumen": "FTZ-01 PENGELUARAN KE TEMPAT LAIN DALAM DAERAH PABEAN",
+  "name": "513"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "521",
+  "modified": "2023-06-16 14:56:42.969048",
+  "nama_dokumen": "FTZ-02 PEMASUKAN ANTAR FREE TRADE ZONE DAN KAWASAN BERIKAT",
+  "name": "521"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "522",
+  "modified": "2023-06-16 14:56:42.973422",
+  "nama_dokumen": "FTZ-02 PENGELUARAN ANTAR FREE TRADE ZONE DAN KAWASAN BERIKAT",
+  "name": "522"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "531",
+  "modified": "2023-06-16 14:56:42.977882",
+  "nama_dokumen": "FTZ-03 PEMASUKAN DARI TEMPAT LAIN DALAM DAERAH PABEAN",
+  "name": "531"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "640",
+  "modified": "2023-06-16 14:56:42.981749",
+  "nama_dokumen": "DELIVERY ORDER",
+  "name": "640"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "666",
+  "modified": "2023-06-16 14:56:42.985614",
+  "nama_dokumen": "Pengecualian Dengan Surat Keputusan",
+  "name": "666"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "704",
+  "modified": "2023-06-16 14:56:42.989410",
+  "nama_dokumen": "MASTER B/L",
+  "name": "704"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "705",
+  "modified": "2023-06-16 14:56:42.993479",
+  "nama_dokumen": "B/L",
+  "name": "705"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "740",
+  "modified": "2023-06-16 14:56:42.997403",
+  "nama_dokumen": "AWB",
+  "name": "740"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "741",
+  "modified": "2023-06-16 14:56:43.001425",
+  "nama_dokumen": "MASTER AWB",
+  "name": "741"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "800",
+  "modified": "2023-06-16 14:56:43.005446",
+  "nama_dokumen": "SERTIFIKAT ALAT PERANGKAT TELEKOM/POSTEL",
+  "name": "800"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "803",
+  "modified": "2023-06-16 14:56:43.009220",
+  "nama_dokumen": "SATS LN / DEPHUT",
+  "name": "803"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "805",
+  "modified": "2023-06-16 14:56:43.013047",
+  "nama_dokumen": "REGISTRASI B3 / KLH",
+  "name": "805"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "808",
+  "modified": "2023-06-16 14:56:43.016915",
+  "nama_dokumen": "IJIN IMPOR / POLRI",
+  "name": "808"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "809",
+  "modified": "2023-06-16 14:56:43.020626",
+  "nama_dokumen": "SIE",
+  "name": "809"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "810",
+  "modified": "2023-06-16 14:56:43.024491",
+  "nama_dokumen": "SM/SPM",
+  "name": "810"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "811",
+  "modified": "2023-06-16 14:56:43.030188",
+  "nama_dokumen": "Sertifikat Legalitas Kayu (Dok.V-Legal)",
+  "name": "811"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "812",
+  "modified": "2023-06-16 14:56:43.033897",
+  "nama_dokumen": "Dok. Impor (PIB)",
+  "name": "812"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "813",
+  "modified": "2023-06-16 14:56:43.037692",
+  "nama_dokumen": "DOK. CUKAI (CK)",
+  "name": "813"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "814",
+  "modified": "2023-06-16 14:56:43.041492",
+  "nama_dokumen": "SKEP IJIN EKSPOR BERKALA",
+  "name": "814"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "815",
+  "modified": "2023-06-16 14:56:43.045325",
+  "nama_dokumen": "SKEP IJIN TATA NIAGA EKSPOR",
+  "name": "815"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "816",
+  "modified": "2023-06-16 14:56:43.049439",
+  "nama_dokumen": "DOK. EKSPOR (PEB)",
+  "name": "816"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "817",
+  "modified": "2023-06-16 14:56:43.053396",
+  "nama_dokumen": "Eksportir Terdaftar (ET) Depdag",
+  "name": "817"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "818",
+  "modified": "2023-06-16 14:56:43.057049",
+  "nama_dokumen": "Endorsement BRIK",
+  "name": "818"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "819",
+  "modified": "2023-06-16 14:56:43.061155",
+  "nama_dokumen": "Sertifikat Intan Kasar",
+  "name": "819"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "820",
+  "modified": "2023-06-16 14:56:43.065176",
+  "nama_dokumen": "Surat Persetujuan Ekspor (SPE)",
+  "name": "820"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "821",
+  "modified": "2023-06-16 14:56:43.068887",
+  "nama_dokumen": "Surat Tanda Registrasi UPPB",
+  "name": "821"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "822",
+  "modified": "2023-06-16 14:56:43.072926",
+  "nama_dokumen": "Srt Tanda Pendaftaran Pedagang Bokor SIR",
+  "name": "822"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "834",
+  "modified": "2023-06-16 14:56:43.076808",
+  "nama_dokumen": "SNI GULA KRISTAL MENTAH / DEPTAN",
+  "name": "834"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "835",
+  "modified": "2023-06-16 14:56:43.080485",
+  "nama_dokumen": "IZIN DAN/ATAU PENDAFT PESTISIDA / DEPTAN",
+  "name": "835"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "836",
+  "modified": "2023-06-16 14:56:43.084383",
+  "nama_dokumen": "IZIN IMPOR / DEPTAN",
+  "name": "836"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "842",
+  "modified": "2023-06-16 14:56:43.088280",
+  "nama_dokumen": "SNI / ESDM",
+  "name": "842"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "843",
+  "modified": "2023-06-16 14:56:43.092173",
+  "nama_dokumen": "NOMOR PELUMAS TERDAFTAR / ESDM",
+  "name": "843"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "844",
+  "modified": "2023-06-16 14:56:43.096288",
+  "nama_dokumen": "IJIN USAHA NIAGA/IU NIAGA TERBATAS/ESDM",
+  "name": "844"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "845",
+  "modified": "2023-06-16 14:56:43.100144",
+  "nama_dokumen": "REKOMENDASI IMPOR PELUMAS",
+  "name": "845"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "846",
+  "modified": "2023-06-16 14:56:43.104055",
+  "nama_dokumen": "SKEM",
+  "name": "846"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "851",
+  "modified": "2023-06-16 14:56:43.107963",
+  "nama_dokumen": "SURAT IJIN KARANTINA TANAMAN",
+  "name": "851"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "853",
+  "modified": "2023-06-16 14:56:43.111758",
+  "nama_dokumen": "SURAT IJIN KARANTINA HEWAN / IKAN",
+  "name": "853"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "854",
+  "modified": "2023-06-16 14:56:43.115482",
+  "nama_dokumen": "SURAT PERSETUJUAN MUAT BPOM",
+  "name": "854"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "856",
+  "modified": "2023-06-16 14:56:43.119478",
+  "nama_dokumen": "LAP. PEMERIKSAAN SURVEYOR (LPS-E)",
+  "name": "856"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "857",
+  "modified": "2023-06-16 14:56:43.123350",
+  "nama_dokumen": "FUMIGATION CERTIFICATE",
+  "name": "857"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "858",
+  "modified": "2023-06-16 14:56:43.127214",
+  "nama_dokumen": "CITES CERTIFICATE",
+  "name": "858"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "860",
+  "modified": "2023-06-16 14:56:43.131095",
+  "nama_dokumen": "Electronic Certificate Of Origin (E-CO)",
+  "name": "860"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "861",
+  "modified": "2023-06-16 14:56:43.134913",
+  "nama_dokumen": "CERTIFICATE OF ORIGIN (CO)",
+  "name": "861"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "862",
+  "modified": "2023-06-16 14:56:43.138755",
+  "nama_dokumen": "SKEP USDFS",
+  "name": "862"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "871",
+  "modified": "2023-06-16 14:56:43.142612",
+  "nama_dokumen": "Nomor Pendaftaran Alat Kesehatan/Depkes",
+  "name": "871"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "872",
+  "modified": "2023-06-16 14:56:43.146336",
+  "nama_dokumen": "LAPORAN SURVEYOR DEPKES",
+  "name": "872"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "873",
+  "modified": "2023-06-16 14:56:43.151898",
+  "nama_dokumen": "IP (NARKTK, PREKURSOR & PSIKOTR)/DEPKES",
+  "name": "873"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "874",
+  "modified": "2023-06-16 14:56:43.155743",
+  "nama_dokumen": "IT (PREKURSOR & PSIKOTR)/DEPKES",
+  "name": "874"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "875",
+  "modified": "2023-06-16 14:56:43.159617",
+  "nama_dokumen": "SPI (NARKTK, PREKURSOR & PSIKOTR)/DEPKES",
+  "name": "875"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "876",
+  "modified": "2023-06-16 14:56:43.163295",
+  "nama_dokumen": "Ijin Pembawaan UKA",
+  "name": "876"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "877",
+  "modified": "2023-06-16 14:56:43.167252",
+  "nama_dokumen": "Ijin Persetujuan Pembawaan UKA",
+  "name": "877"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "878",
+  "modified": "2023-06-16 14:56:43.171032",
+  "nama_dokumen": "Ijin Pelaporan Pembawaan UKA",
+  "name": "878"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "888",
+  "modified": "2023-06-16 14:56:43.175297",
+  "nama_dokumen": "PENGECUALIAN PERIJINAN",
+  "name": "888"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "902",
+  "modified": "2023-06-16 14:56:43.179451",
+  "nama_dokumen": "IJIN BAPETEN",
+  "name": "902"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "911",
+  "modified": "2023-06-16 14:56:43.183298",
+  "nama_dokumen": "SURAT KEPUTUSAN",
+  "name": "911"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "912",
+  "modified": "2023-06-16 14:56:43.187303",
+  "nama_dokumen": "SKEP FASILITAS BKPM",
+  "name": "912"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "913",
+  "modified": "2023-06-16 14:56:43.191254",
+  "nama_dokumen": "SKEP FASILITAS PERTAMBANGAN",
+  "name": "913"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "914",
+  "modified": "2023-06-16 14:56:43.195168",
+  "nama_dokumen": "KITE IKM",
+  "name": "914"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "915",
+  "modified": "2023-06-16 14:56:43.199110",
+  "nama_dokumen": "Skep Fasilitas Impor Sementara",
+  "name": "915"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "917",
+  "modified": "2023-06-16 14:56:43.203116",
+  "nama_dokumen": "BPBC / BPPAI",
+  "name": "917"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "918",
+  "modified": "2023-06-16 14:56:43.206996",
+  "nama_dokumen": "SK LABEL BAHASA INDONESIA",
+  "name": "918"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "936",
+  "modified": "2023-06-16 14:56:43.210708",
+  "nama_dokumen": "KH-9a/Izin Impor Karantina Hewan",
+  "name": "936"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "937",
+  "modified": "2023-06-16 14:56:43.214697",
+  "nama_dokumen": "KH-14/Izin Impor Karantina Hewan",
+  "name": "937"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "938",
+  "modified": "2023-06-16 14:56:43.218603",
+  "nama_dokumen": "KH-17/Izin Impor Karantina Hewan",
+  "name": "938"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "939",
+  "modified": "2023-06-16 14:56:43.222396",
+  "nama_dokumen": "KT-5/Izin Impor Karantina Pertanian",
+  "name": "939"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "940",
+  "modified": "2023-06-16 14:56:43.226106",
+  "nama_dokumen": "KT-9/Izin Impor Karantina Pertanian",
+  "name": "940"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "941",
+  "modified": "2023-06-16 14:56:43.229912",
+  "nama_dokumen": "KT-13/Izin Impor Karantina Pertanian",
+  "name": "941"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "942",
+  "modified": "2023-06-16 14:56:43.233779",
+  "nama_dokumen": "IZIN IMPOR KARANTINA TUMBUHAN",
+  "name": "942"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "943",
+  "modified": "2023-06-16 14:56:43.237639",
+  "nama_dokumen": "KH-5 / IZIN IMPOR KARANTINA HEWAN",
+  "name": "943"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "944",
+  "modified": "2023-06-16 14:56:43.241474",
+  "nama_dokumen": "KH-7 / IZIN IMPOR KARANTINA HEWAN",
+  "name": "944"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "945",
+  "modified": "2023-06-16 14:56:43.245375",
+  "nama_dokumen": "KH-12 / IZIN IMPOR KARANTINA HEWAN",
+  "name": "945"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "946",
+  "modified": "2023-06-16 14:56:43.249218",
+  "nama_dokumen": "KID-3 / IZIN IMPOR KARANTINA IKAN",
+  "name": "946"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "947",
+  "modified": "2023-06-16 14:56:43.252987",
+  "nama_dokumen": "KID-15 / IZIN IMPOR KARANTINA IKAN",
+  "name": "947"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "948",
+  "modified": "2023-06-16 14:56:43.256770",
+  "nama_dokumen": "NPIK",
+  "name": "948"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "949",
+  "modified": "2023-06-16 14:56:43.260699",
+  "nama_dokumen": "PENGAKUAN SBG IMPORTIR PRODUSEN",
+  "name": "949"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "950",
+  "modified": "2023-06-16 14:56:43.264761",
+  "nama_dokumen": "KID-4/IZIN KARANTINA IKAN",
+  "name": "950"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "951",
+  "modified": "2023-06-16 14:56:43.268644",
+  "nama_dokumen": "HC (HEALTH CERTIFICATE)",
+  "name": "951"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "956",
+  "modified": "2023-06-16 14:56:43.273677",
+  "nama_dokumen": "PENGAKUAN SBG IMPORTIR TERDAFTAR",
+  "name": "956"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "957",
+  "modified": "2023-06-16 14:56:43.277335",
+  "nama_dokumen": "SNI/SPB/DEPDAG",
+  "name": "957"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "958",
+  "modified": "2023-06-16 14:56:43.281259",
+  "nama_dokumen": "LAPORAN SURVEYOR / DEPDAG",
+  "name": "958"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "959",
+  "modified": "2023-06-16 14:56:43.285198",
+  "nama_dokumen": "SURAT PERSETUJUAN IMPOR DEP.DAG",
+  "name": "959"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "960",
+  "modified": "2023-06-16 14:56:43.288909",
+  "nama_dokumen": "3D/PC dan/atau PFP",
+  "name": "960"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "961",
+  "modified": "2023-06-16 14:56:43.292633",
+  "nama_dokumen": "Hasil Lab",
+  "name": "961"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "993",
+  "modified": "2023-06-16 14:56:43.296653",
+  "nama_dokumen": "SURAT IJIN MENTERI PERTANIAN",
+  "name": "993"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "994",
+  "modified": "2023-06-16 14:56:43.300332",
+  "nama_dokumen": "BUKTI PENERIMAAN JAMINAN (BPJ)",
+  "name": "994"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "995",
+  "modified": "2023-06-16 14:56:43.304183",
+  "nama_dokumen": "STBS / SSP-E (PAJAK EKSPOR)",
+  "name": "995"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "996",
+  "modified": "2023-06-16 14:56:43.308060",
+  "nama_dokumen": "SRT SANGGUP BAYAR (SSB)",
+  "name": "996"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "997",
+  "modified": "2023-06-16 14:56:43.311930",
+  "nama_dokumen": "COSTOMS BOND / STTJ",
+  "name": "997"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "998",
+  "modified": "2023-06-16 14:56:43.315637",
+  "nama_dokumen": "SKEP FASILITAS KEMUDAHAN EKSPOR",
+  "name": "998"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "999",
+  "modified": "2023-06-16 14:56:43.319283",
+  "nama_dokumen": "LAINNYA",
+  "name": "999"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3001",
+  "modified": "2023-06-16 14:56:43.328785",
+  "nama_dokumen": "Izin Prinsip Pendirian Kawasan Berikat Sebelum Fisik Bangunan Berdiri",
+  "name": "3001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3002",
+  "modified": "2023-06-16 14:56:43.332504",
+  "nama_dokumen": "Keputusan Penetapan Tempat Sebagai Kawasan Berikat Dan Pemberian Izin Penyelenggara Kawasan Berikat",
+  "name": "3002"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3004",
+  "modified": "2023-06-16 14:56:43.342276",
+  "nama_dokumen": "Izin PDKB",
+  "name": "3004"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3007",
+  "modified": "2023-06-16 14:56:43.349679",
+  "nama_dokumen": "Perubahan Keputusan Izin Penyelenggara Kawasan Berikat, Izin Pengusaha Kawasan Berikat, Atau Izin PDKB",
+  "name": "3007"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3008",
+  "modified": "2023-06-16 14:56:43.353536",
+  "nama_dokumen": "Pemberian Izin Penambahan Pintu Khusus Pemasukan Dan Pengeluaran Barang Di Kawasan Berikat",
+  "name": "3008"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3009",
+  "modified": "2023-06-16 14:56:43.359579",
+  "nama_dokumen": "Pemberian Izin Penambahan Pintu Khusus Orang Di Kawasan Berikat",
+  "name": "3009"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3010",
+  "modified": "2023-06-16 14:56:43.363901",
+  "nama_dokumen": "Persetujuan Pemasukan Barang Dari Kawasan Bebas Ke Kawasan Berikat",
+  "name": "3010"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3011",
+  "modified": "2023-06-16 14:56:43.367621",
+  "nama_dokumen": "Persetujuan Pemasukan Barang Modal Dari Luar Daerah Pabean",
+  "name": "3011"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3012",
+  "modified": "2023-06-16 14:56:43.371403",
+  "nama_dokumen": "Persetujuan Pemasukan Barang Modal Dari Kawasan Berikat Lain",
+  "name": "3012"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3013",
+  "modified": "2023-06-16 14:56:43.375218",
+  "nama_dokumen": "Persetujuan Pemasukan Barang Jadi Asal Luar Daerah Pabean Untuk Digabungkan Dengan Hasil Produksi Utama Kawasan Berikat",
+  "name": "3013"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3014",
+  "modified": "2023-06-16 14:56:43.378913",
+  "nama_dokumen": "Persetujuan Pemasukan Peralatan Perkantoran Asal Luar Daerah Pabean Ke Kawasan Berikat",
+  "name": "3014"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3015",
+  "modified": "2023-06-16 14:56:43.383043",
+  "nama_dokumen": "Persetujuan Pemasukan Barang Contoh Asal Luar Daerah Pabean",
+  "name": "3015"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3016",
+  "modified": "2023-06-16 14:56:43.386913",
+  "nama_dokumen": "Persetujuan Pembebasan Bea Masuk Untuk Barang Contoh Yang Akan Dikeluarkan Ke Tempat Lain Dalam Daerah Pabean",
+  "name": "3016"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3017",
+  "modified": "2023-06-16 14:56:43.390674",
+  "nama_dokumen": "Persetujuan Mengeluarkan Hasil Produksi Kawasan Berikat Ke Tempat Penyelenggaraan Pameran Berikat (TPPB)",
+  "name": "3017"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3019",
+  "modified": "2023-06-16 14:56:43.396621",
+  "nama_dokumen": "Persetujuan Untuk Mengeluarkan Barang Dan/Atau Bahan Rusak Dan/Atau Apkir (Reject) Asal Tlddp Ke TLDDP",
+  "name": "3019"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3020",
+  "modified": "2023-06-16 14:56:43.400383",
+  "nama_dokumen": "Persetujuan Pengeluaran Bahan Baku/Sisa Bahan Baku Asal Impor Untuk Direekspor",
+  "name": "3020"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3021",
+  "modified": "2023-06-16 14:56:43.404133",
+  "nama_dokumen": "Persetujuan Pengeluaran Bahan Baku Dan/Atau Sisa Bahan Baku Asal Luar Daerah Pabean Ke Kawasan Berikat Lain",
+  "name": "3021"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3022",
+  "modified": "2023-06-16 14:56:43.407831",
+  "nama_dokumen": "Persetujuan Pengeluaran Bahan Baku Dan/Atau Sisa Bahan Baku Asal Luar Daerah Pabean Ke Perusahaan Industri Di TLDDP",
+  "name": "3022"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3026",
+  "modified": "2023-06-16 14:56:43.417481",
+  "nama_dokumen": "Persetujuan Pengeluaran Barang Modal Asal Impor Yang Belum Dibayar BM-nya Untuk Direekspor",
+  "name": "3026"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3030",
+  "modified": "2023-06-16 14:56:43.426776",
+  "nama_dokumen": "Persetujuan Pengeluaran Peralatan Perkantoran Asal Impor Yang Belum Lunas BM Untuk Direekspor",
+  "name": "3030"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3035",
+  "modified": "2023-06-16 14:56:43.438485",
+  "nama_dokumen": "Persetujuan Untuk Memindahtangankan Barang Modal Asal Tempat Lain Dalam Daerah Pabean",
+  "name": "3035"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3036",
+  "modified": "2023-06-16 14:56:43.442987",
+  "nama_dokumen": "Persetujuan Pengeluaran Barang Modal Untuk Perbaikan/Reparasi Ke Luar Daerah Pabean",
+  "name": "3036"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3037",
+  "modified": "2023-06-16 14:56:43.447387",
+  "nama_dokumen": "Persetujuan Pengeluaran Barang Modal Untuk Perbaikan/Reparasi Ke TLDDP",
+  "name": "3037"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3038",
+  "modified": "2023-06-16 14:56:43.451679",
+  "nama_dokumen": "Persetujuan Pengeluaran Barang Modal Untuk Perbaikan/Reparasi Ke KB Lain",
+  "name": "3038"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3039",
+  "modified": "2023-06-16 14:56:43.455490",
+  "nama_dokumen": "Persetujuan Subkontrak Kurang Dari 60 (Enam Puluh) Hari Ke TLDDP",
+  "name": "3039"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3040",
+  "modified": "2023-06-16 14:56:43.459301",
+  "nama_dokumen": "Persetujuan Subkontrak Kurang Dari 60 (Enam Puluh) Hari Ke KB Lain",
+  "name": "3040"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3041",
+  "modified": "2023-06-16 14:56:43.463584",
+  "nama_dokumen": "Persetujuan Subkontrak Lebih Dari 60 (Enam Puluh) Hari Ke TLDDP",
+  "name": "3041"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3042",
+  "modified": "2023-06-16 14:56:43.467237",
+  "nama_dokumen": "Persetujuan Subkontrak Lebih Dari 60 (Enam Puluh) Hari Ke PDKB Lain",
+  "name": "3042"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3043",
+  "modified": "2023-06-16 14:56:43.471422",
+  "nama_dokumen": "Persetujuan Meminjamkan Mesin/Cetakan (Moulding) Ke KB Lain Dalam Rangka Subkontrak",
+  "name": "3043"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3044",
+  "modified": "2023-06-16 14:56:43.476801",
+  "nama_dokumen": "Persetujuan Meminjamkan Mesin/Cetakan (Moulding) Ke KB Lain Bukan Dalam Rangka Subkontrak",
+  "name": "3044"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3045",
+  "modified": "2023-06-16 14:56:43.480935",
+  "nama_dokumen": "Persetujuan Meminjamkan Mesin/Cetakan (Moulding) Ke TLDDP Dalam Rangka Subkontrak",
+  "name": "3045"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3046",
+  "modified": "2023-06-16 14:56:43.484710",
+  "nama_dokumen": "Persetujuan Meminjamkan Mesin/Cetakan (Moulding) Ke TLDDP Bukan Dalam Rangka Subkontrak",
+  "name": "3046"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3047",
+  "modified": "2023-06-16 14:56:43.488579",
+  "nama_dokumen": "Persetujuan Perpanjangan Meminjamkan Mesin Dan/Atau Cetakan (Moulding) Ke PDKB Lain Dalam Rangka Subkontrak",
+  "name": "3047"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3048",
+  "modified": "2023-06-16 14:56:43.492361",
+  "nama_dokumen": "Persetujuan Perpanjangan Meminjamkan Mesin Dan/Atau Cetakan (Moulding) Ke PDKB Lain Bukan Dalam Rangka Subkontrak",
+  "name": "3048"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3049",
+  "modified": "2023-06-16 14:56:43.496718",
+  "nama_dokumen": "Persetujuan Perpanjangan Meminjamkan Mesin Dan/Atau Cetakan (Moulding) Ke TLDDP Dalam Rangka Subkontrak",
+  "name": "3049"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3050",
+  "modified": "2023-06-16 14:56:43.500528",
+  "nama_dokumen": "Persetujuan Perpanjangan Meminjamkan Mesin Dan/Atau Cetakan (Moulding) Ke TLDDP Selain Dalam Rangka Subkontrak",
+  "name": "3050"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3051",
+  "modified": "2023-06-16 14:56:43.504346",
+  "nama_dokumen": "Persetujuan Peminjaman Mesin Atau Cetakan (Moulding) Yang Melebihi Jangka Waktu",
+  "name": "3051"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3052",
+  "modified": "2023-06-16 14:56:43.508266",
+  "nama_dokumen": "Persetujuan Pemusnahan Atas Barangbarang Yang Busuk Dan/Atau Yang Karena Sifat Dan Bentuknya Dapat Dimusnahkan",
+  "name": "3052"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3053",
+  "modified": "2023-06-16 14:56:43.512050",
+  "nama_dokumen": "Persetujuan Perusakan Atas Barang Asal Luar Daerah Pabean Yang Karena Sifat Dan Bentuknya Tidak Dapat Dimusnahkan",
+  "name": "3053"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3054",
+  "modified": "2023-06-16 14:56:43.515640",
+  "nama_dokumen": "Persetujuan Menerima Subkontrak Dari TLDDP",
+  "name": "3054"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3055",
+  "modified": "2023-06-16 14:56:43.519331",
+  "nama_dokumen": "Persetujuan Peminjaman Mesin/Cetakan (Moulding) Dari TLDDP Dalam Rangka Subkontrak",
+  "name": "3055"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3056",
+  "modified": "2023-06-16 14:56:43.523078",
+  "nama_dokumen": "Persetujuan Peminjaman Mesin/Cetakan (Moulding) Dari TLDDP Bukan Dalam Rangka Subkontrak",
+  "name": "3056"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3057",
+  "modified": "2023-06-16 14:56:43.527068",
+  "nama_dokumen": "Persetujuan Peminjaman Mesin/Peralatan Pabrik Dari TLDDP",
+  "name": "3057"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3060",
+  "modified": "2023-06-16 14:56:43.530810",
+  "nama_dokumen": "Persetujuan Pemasukan Barang Modal Berupa Peralatan Pabrik Dari Luar Daerah Pabean",
+  "name": "3060"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3061",
+  "modified": "2023-06-16 14:56:43.534545",
+  "nama_dokumen": "Persetujuan Pemasukan Barang Modal Berupa Suku Cadang Dari Luar Daerah Pabean Yang Dimasukkan Tidak Bersamaan Dengan Barang Modal",
+  "name": "3061"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3062",
+  "modified": "2023-06-16 14:56:43.538277",
+  "nama_dokumen": "Persetujuan Pemasukan Kembali (Reimpor) Barang Hasil Produksi Asal TPB",
+  "name": "3062"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3063",
+  "modified": "2023-06-16 14:56:43.542011",
+  "nama_dokumen": "Persetujuan Pemasukan Kembali (Reimpor) Barang Modal Setelah Perbaikan/Reparasi Dari Luar Daerah Pabean",
+  "name": "3063"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3064",
+  "modified": "2023-06-16 14:56:43.545750",
+  "nama_dokumen": "Persetujuan Perpanjangan Jangka Waktu Pengeluaran Barang Modal Keperluan Perbaikan/Reparasi Tujuan TLDDP",
+  "name": "3064"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3065",
+  "modified": "2023-06-16 14:56:43.549580",
+  "nama_dokumen": "Persetujuan Pengeluaran Barang Contoh/Sampel KB Dengan Tujuan TLDDP",
+  "name": "3065"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Dokumen",
+  "kode_dokumen": "3066",
+  "modified": "2023-06-16 14:56:43.553403",
+  "nama_dokumen": "Rekomendasi Meminjamkan Barang Modal Ke TLDDP Dalam Rangka Subkontrak Atau Bukan Lebih Dari 6 Bulan",
+  "name": "3066"
+ }
+]

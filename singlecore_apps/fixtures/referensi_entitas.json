@@ -1,0 +1,90 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "1",
+  "modified": "2023-06-16 15:13:31.429306",
+  "nama_entitas": "IMPORTIR",
+  "name": "1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "2",
+  "modified": "2023-06-16 15:13:31.445124",
+  "nama_entitas": "EKSPORTIR",
+  "name": "2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "3",
+  "modified": "2023-06-16 15:13:31.452328",
+  "nama_entitas": "PENGUSAHA",
+  "name": "3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "4",
+  "modified": "2023-06-16 15:13:31.456829",
+  "nama_entitas": "PPJK",
+  "name": "4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "5",
+  "modified": "2023-06-16 15:13:31.461070",
+  "nama_entitas": "PEMASOK",
+  "name": "5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "6",
+  "modified": "2023-06-16 15:13:31.465080",
+  "nama_entitas": "PEMBELI",
+  "name": "6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "7",
+  "modified": "2023-06-16 15:13:31.469022",
+  "nama_entitas": "PEMILIK",
+  "name": "7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "8",
+  "modified": "2023-06-16 15:13:31.473024",
+  "nama_entitas": "PENERIMA",
+  "name": "8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "9",
+  "modified": "2023-06-16 15:13:31.476949",
+  "nama_entitas": "PENGIRIM",
+  "name": "9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "10",
+  "modified": "2023-06-16 15:13:31.481048",
+  "nama_entitas": "PENJUAL",
+  "name": "10"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "11",
+  "modified": "2023-06-16 15:13:31.484773",
+  "nama_entitas": "PEMUSATAN",
+  "name": "11"
+ }
+]

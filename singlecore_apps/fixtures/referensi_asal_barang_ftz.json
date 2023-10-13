@@ -1,0 +1,42 @@
+[
+ {
+  "asal_barangftz": "Sepenuhnya diperoleh dan/atau diproduksi di luar Daerah Pabean",
+  "docstatus": 0,
+  "doctype": "Referensi Asal Barang FTZ",
+  "kode_asal_barangftz": 1,
+  "modified": "2023-06-07 10:42:04.132423",
+  "name": "1"
+ },
+ {
+  "asal_barangftz": "Sepenuhnya diperoleh dan/atau diproduksi di tempat lain dalam Daerah Pabean",
+  "docstatus": 0,
+  "doctype": "Referensi Asal Barang FTZ",
+  "kode_asal_barangftz": 2,
+  "modified": "2023-06-07 10:42:04.147919",
+  "name": "2"
+ },
+ {
+  "asal_barangftz": "Sepenuhnya diperoleh dan/atau diproduksi di Tempat Penimbunan Berikat atau Kawasan Ekonomi Khusus",
+  "docstatus": 0,
+  "doctype": "Referensi Asal Barang FTZ",
+  "kode_asal_barangftz": 4,
+  "modified": "2023-06-07 10:42:04.157835",
+  "name": "4"
+ },
+ {
+  "asal_barangftz": "Lainnya",
+  "docstatus": 0,
+  "doctype": "Referensi Asal Barang FTZ",
+  "kode_asal_barangftz": 5,
+  "modified": "2023-06-07 10:42:04.161125",
+  "name": "5"
+ },
+ {
+  "asal_barangftz": "Sepenuhnya diperoleh dan/atau diproduksi di Kawasan Bebas atau Kawasan Bebas lainnya dengan menggunakan bahan baku dan/atau bahan penolong yang sepenuhnya berasal dari Kawasan Bebas atau Kawasan Bebas lainnya",
+  "docstatus": 0,
+  "doctype": "Referensi Asal Barang FTZ",
+  "kode_asal_barangftz": 3,
+  "modified": "2023-07-07 17:21:49.311810",
+  "name": "3"
+ }
+]

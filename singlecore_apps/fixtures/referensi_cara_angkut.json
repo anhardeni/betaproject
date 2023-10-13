@@ -1,0 +1,74 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Angkut",
+  "kode_cara_angkut": "1",
+  "modified": "2023-06-08 14:07:42.439378",
+  "nama_cara_angkut": "LAUT",
+  "name": "1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Angkut",
+  "kode_cara_angkut": "2",
+  "modified": "2023-06-08 14:07:42.462700",
+  "nama_cara_angkut": "KERETA API",
+  "name": "2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Angkut",
+  "kode_cara_angkut": "3",
+  "modified": "2023-06-08 14:07:42.467280",
+  "nama_cara_angkut": "DARAT",
+  "name": "3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Angkut",
+  "kode_cara_angkut": "4",
+  "modified": "2023-06-08 14:07:42.471508",
+  "nama_cara_angkut": "UDARA",
+  "name": "4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Angkut",
+  "kode_cara_angkut": "5",
+  "modified": "2023-06-08 14:07:42.475899",
+  "nama_cara_angkut": "POS",
+  "name": "5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Angkut",
+  "kode_cara_angkut": "6",
+  "modified": "2023-06-08 14:07:42.479669",
+  "nama_cara_angkut": "MULTIMODA",
+  "name": "6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Angkut",
+  "kode_cara_angkut": "7",
+  "modified": "2023-06-08 14:07:42.483499",
+  "nama_cara_angkut": "INSTALASI / PIPA",
+  "name": "7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Angkut",
+  "kode_cara_angkut": "8",
+  "modified": "2023-06-08 14:07:42.487486",
+  "nama_cara_angkut": "PERAIRAN",
+  "name": "8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Angkut",
+  "kode_cara_angkut": "9",
+  "modified": "2023-06-08 14:07:42.493116",
+  "nama_cara_angkut": "LAINNYA",
+  "name": "9"
+ }
+]

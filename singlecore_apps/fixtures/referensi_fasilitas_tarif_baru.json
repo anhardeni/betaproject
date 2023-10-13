@@ -1,0 +1,74 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Fasilitas Tarif Baru",
+  "kode_fasilitas_tarif": "1",
+  "modified": "2023-07-05 14:07:31.367140",
+  "nama_fasilitas_tarif": "DIBAYAR",
+  "name": "1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Fasilitas Tarif Baru",
+  "kode_fasilitas_tarif": "2",
+  "modified": "2023-07-05 14:07:31.381292",
+  "nama_fasilitas_tarif": "DITANGGUNG PEMERINTAH",
+  "name": "2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Fasilitas Tarif Baru",
+  "kode_fasilitas_tarif": "3",
+  "modified": "2023-07-05 14:07:31.385211",
+  "nama_fasilitas_tarif": "DITANGGUHKAN",
+  "name": "3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Fasilitas Tarif Baru",
+  "kode_fasilitas_tarif": "4",
+  "modified": "2023-07-05 14:07:31.389072",
+  "nama_fasilitas_tarif": "BERKALA",
+  "name": "4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Fasilitas Tarif Baru",
+  "kode_fasilitas_tarif": "5",
+  "modified": "2023-07-05 14:07:31.393215",
+  "nama_fasilitas_tarif": "DIBEBASKAN",
+  "name": "5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Fasilitas Tarif Baru",
+  "kode_fasilitas_tarif": "6",
+  "modified": "2023-07-05 14:07:31.397131",
+  "nama_fasilitas_tarif": "TIDAK DIPUNGUT",
+  "name": "6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Fasilitas Tarif Baru",
+  "kode_fasilitas_tarif": "7",
+  "modified": "2023-07-05 14:07:31.401144",
+  "nama_fasilitas_tarif": "SUDAH DILUNASI",
+  "name": "7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Fasilitas Tarif Baru",
+  "kode_fasilitas_tarif": "8",
+  "modified": "2023-07-05 14:07:31.405144",
+  "nama_fasilitas_tarif": "DIJAMINKAN",
+  "name": "8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Fasilitas Tarif Baru",
+  "kode_fasilitas_tarif": "9",
+  "modified": "2023-07-05 14:07:31.408856",
+  "nama_fasilitas_tarif": "DITUNDA",
+  "name": "9"
+ }
+]

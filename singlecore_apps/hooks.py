@@ -199,3 +199,59 @@ app_license = "MIT"
 # auth_hooks = [
 #	"singlecore_apps.auth.validate"
 # ]
+
+fixtures = [
+
+        #"Referensi Gudang",
+        "Referensi Ijin",
+        "Referensi Incoterm",
+        "Referensi Jenis API",
+        "Referensi Jenis Ekspor",
+        "Referensi Jenis Identitas",
+       # "Referensi Jenis Impor",
+         "Referensi Jenis Jaminan",
+        "Referensi Jenis Kemasan",
+        "Referensi Jenis Kontainer",
+        "Referensi Layanan Fix",
+        "Referensi Jenis Pib",
+        "Referensi Jenis Pungutan",
+        "Referensi Jenis TPB",
+        "Referensi Jenis Tarif",
+        "Referensi Jenis Transaksi Perdagangan",
+        "Referensi Jenis VD",
+        "Referensi Kantor",
+        "Referensi Kapal",
+        "Referensi Kategori Barang",
+        "Referensi Kategori Ekspor",
+        "Referensi Kategori Keluar FTZ ",
+        "Referensi Komoditi Cukai ",
+        "Referensi Kondisi Barang ",
+        "Referensi Layan ",
+        "Referensi Layanan ",
+        "Referensi Layanan Fix ",
+        "Referensi Lokasi Bayar ",
+        "Referensi Negara ",
+        "Referensi Pelabuhan Dalam Negeri ",
+        "Referensi Pelabuhan Luar Negeri ",
+        "Referensi Putusan Petugas ",
+        "Referensi Respon ",
+        "Referensi Respon_copy1 ",
+        "Referensi Satuan Barang ",
+        "Referensi Satuan Barang_copy1 ",
+        "Referensi Spesifikasi Khusus ",
+        "Referensi Status ",
+        "Referensi Status Pengusaha ",
+        "Referensi Status_copy1 ",
+        "Referensi Tipe Kontainer ",
+        "Referensi Tujuan Pemasukan ",
+        "Referensi Tujuan Pengeluaran ",
+        "Referensi Tujuan Pengiriman ",
+        "Referensi Tutup Pu ",
+        "Referensi Ukuran Kontainer ",
+        "Referensi Valuta ",
+        "Referensi Valuta_copy1 "
+
+           
+    
+]
+

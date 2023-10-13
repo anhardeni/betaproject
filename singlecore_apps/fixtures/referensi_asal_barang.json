@@ -1,0 +1,34 @@
+[
+ {
+  "asal_barang": "Sepenuhnya diperoleh dan/atau diproduksi di luar daerah pabean",
+  "docstatus": 0,
+  "doctype": "Referensi Asal Barang",
+  "kode_asal_barang": 1,
+  "modified": "2023-06-07 09:06:40.680781",
+  "name": "1"
+ },
+ {
+  "asal_barang": "Sepenuhnya diperoleh dan/atau diproduksi di tempat lain dalam daerah pabean",
+  "docstatus": 0,
+  "doctype": "Referensi Asal Barang",
+  "kode_asal_barang": 2,
+  "modified": "2023-06-07 09:06:40.702073",
+  "name": "2"
+ },
+ {
+  "asal_barang": "Kawasan Pabean",
+  "docstatus": 0,
+  "doctype": "Referensi Asal Barang",
+  "kode_asal_barang": 3,
+  "modified": "2023-06-07 09:06:40.708897",
+  "name": "3"
+ },
+ {
+  "asal_barang": "Lainnya",
+  "docstatus": 0,
+  "doctype": "Referensi Asal Barang",
+  "kode_asal_barang": 4,
+  "modified": "2023-06-07 09:06:40.713018",
+  "name": "4"
+ }
+]

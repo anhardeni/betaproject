@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-07-31 08:52:44.082953",
+ "creation": "2023-10-12 15:33:22.306696",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -13,13 +13,14 @@
   "sifat_surat_persetujuan",
   "perihal_surat_persetujuan",
   "pemohon_area_column",
-  "pengeluarann_sementara",
+  "pengeluaran_sementara",
   "nama_pemohon",
   "nomor_surat_pemohon",
   "tanggal_surat_pemohon",
-  "perihal_surat_pemohon",
+  "kode_layanan",
   "tujuan_surat_pemohon",
   "upload1",
+  "breakcolumn_permohonan",
   "penerima_barang",
   "no_kontrak",
   "tanggal_kontrak",
@@ -41,12 +42,14 @@
   "tanggal_pendaftaran",
   "alasan_perbaikan",
   "dokumen_pendukung",
+  "section_break_kou5u",
   "detail_perubahan_dokumen",
   "barang_tab",
   "barang_yang_dikirim",
   "barang_yang_dihasilkan",
   "barang_bahan_sisa_potongan",
   "bom_perhitungan_konversi",
+  "area_asuransi_tab",
   "no_polis",
   "tanggal_polis",
   "upload_polis",
@@ -87,9 +90,9 @@
    "label": "Pemohon Area"
   },
   {
-   "fieldname": "pengeluarann_sementara",
+   "fieldname": "pengeluaran_sementara",
    "fieldtype": "Section Break",
-   "label": "Pengeluaran Sementara DLL"
+   "label": "Permohonan Pengguna Jasa"
   },
   {
    "fieldname": "nama_pemohon",
@@ -107,9 +110,13 @@
    "label": "Tanggal Surat Pemohon"
   },
   {
-   "fieldname": "perihal_surat_pemohon",
-   "fieldtype": "Data",
-   "label": "Perihal Surat Pemohon"
+   "fieldname": "kode_layanan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Perihal Surat Pemohon",
+   "options": "Referensi Layanan Fix"
   },
   {
    "fieldname": "tujuan_surat_pemohon",
@@ -120,6 +127,10 @@
    "fieldname": "upload1",
    "fieldtype": "Attach",
    "label": "Upload1"
+  },
+  {
+   "fieldname": "breakcolumn_permohonan",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "penerima_barang",
@@ -229,6 +240,10 @@
    "label": "Dokumen Pendukung"
   },
   {
+   "fieldname": "section_break_kou5u",
+   "fieldtype": "Section Break"
+  },
+  {
    "fieldname": "detail_perubahan_dokumen",
    "fieldtype": "Table",
    "label": "Detail Perubahan Dokumen",
@@ -264,6 +279,11 @@
    "fieldtype": "Table",
    "label": "BOM  Perhitungan Konversi",
    "options": "BOM  Perhitungan Konversi"
+  },
+  {
+   "fieldname": "area_asuransi_tab",
+   "fieldtype": "Tab Break",
+   "label": "Area Asuransi "
   },
   {
    "fieldname": "no_polis",
@@ -304,10 +324,10 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 3,
- "modified": "2023-10-06 17:34:17.834471",
+ "modified": "2023-10-12 15:33:22.306696",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "Permohonan Online V1",
+ "name": "Nama Perihal Layanan",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,0 +1,298 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "P2",
+  "modified": "2023-08-04 10:28:00.887585",
+  "nama_layanan": "Permohonan Pembatalan Dokumen Kepabeanan BC 2.3",
+  "name": "P2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PBN01",
+  "modified": "2023-08-04 10:28:00.903807",
+  "nama_layanan": "Penerimaan Jaminan Dalam Rangka Kegiatan Kepabeanan (Bank Garansi, Customs Bond, Corporate Guarantee)",
+  "name": "PBN01"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PBN02",
+  "modified": "2023-08-04 10:28:00.908738",
+  "nama_layanan": "Pengembalian Jaminan Dalam Rangka Kegiatan Kepabeanan (Bank Garansi, Customs Bond, Corporate Guarantee)",
+  "name": "PBN02"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PDAD01",
+  "modified": "2023-08-04 10:28:00.912748",
+  "nama_layanan": "Penyerahan Perpanjangan Surat Kuasa PJT/PPJK",
+  "name": "PDAD01"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PDAD02",
+  "modified": "2023-08-04 10:28:00.916822",
+  "nama_layanan": "Permohonan Pelayanan Dokumen BC 2.3 Oleh PJT/PPJK (Surat Kuasa Tahunan)",
+  "name": "PDAD02"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC01a",
+  "modified": "2023-08-04 10:28:00.921001",
+  "nama_layanan": "Permohonan Persetujuan Subkontrak ke TLDDP",
+  "name": "PKC01a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC01b",
+  "modified": "2023-08-04 10:28:00.925129",
+  "nama_layanan": "Permohonan Persetujuan Menerima Subkontrak dari TLDDP",
+  "name": "PKC01b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC02a",
+  "modified": "2023-08-04 10:28:00.929185",
+  "nama_layanan": "Permohonan Persetujuan Meminjamkan Mesin/Cetakan (Moulding) Bukan dalam rangka Subkontrak",
+  "name": "PKC02a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC02b",
+  "modified": "2023-08-04 10:28:00.932971",
+  "nama_layanan": "Permohonan Persetujuan Meminjamkan Mesin/Cetakan (Moulding) dalam rangka Subkontrak",
+  "name": "PKC02b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC03a",
+  "modified": "2023-08-04 10:28:00.936998",
+  "nama_layanan": "Permohonan Persetujuan Pengeluaran Barang Modal Untuk Perbaikan/Reparasi ke TLDDP",
+  "name": "PKC03a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC03b",
+  "modified": "2023-08-04 10:28:00.942342",
+  "nama_layanan": "Permohonan Persetujuan Menerima Pekerjaan Perbaikan/Reparasi dari TLDDP",
+  "name": "PKC03b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC04",
+  "modified": "2023-08-04 10:28:00.946549",
+  "nama_layanan": "Permohonan Pengeluaran Sementara Barang dan/atau Bahan Dalam Rangka Tujuan Lain",
+  "name": "PKC04"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC05",
+  "modified": "2023-08-04 10:28:00.950150",
+  "nama_layanan": "Permohonan Perubahan Persetujuan Pengeluaran Sementara",
+  "name": "PKC05"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC06",
+  "modified": "2023-08-04 10:28:00.954670",
+  "nama_layanan": "Permohonan Perpanjangan Persetujuan Pengeluaran Sementara",
+  "name": "PKC06"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC07",
+  "modified": "2023-08-04 10:28:00.958926",
+  "nama_layanan": "Permohonan Pembatalan Persetujuan Pengeluaran Sementara",
+  "name": "PKC07"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC08a",
+  "modified": "2023-08-04 10:28:00.962720",
+  "nama_layanan": "Permohonan Perubahan Dokumen Kepabeanan BC 1.6",
+  "name": "PKC08a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC08b",
+  "modified": "2023-08-04 10:28:00.967069",
+  "nama_layanan": "Permohonan Perubahan Dokumen Kepabeanan BC 2.3",
+  "name": "PKC08b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC08c",
+  "modified": "2023-08-04 10:28:00.971253",
+  "nama_layanan": "Permohonan Perubahan Dokumen Kepabeanan BC 2.5",
+  "name": "PKC08c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC08d",
+  "modified": "2023-08-04 10:28:00.975283",
+  "nama_layanan": "Permohonan Perubahan Dokumen Kepabeanan BC 2.6.1",
+  "name": "PKC08d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC08e",
+  "modified": "2023-08-04 10:28:00.979394",
+  "nama_layanan": "Permohonan Perubahan Dokumen Kepabeanan BC 2.6.2",
+  "name": "PKC08e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC08f",
+  "modified": "2023-08-04 10:28:00.983558",
+  "nama_layanan": "Permohonan Perubahan Dokumen Kepabeanan BC 2.7",
+  "name": "PKC08f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC08g",
+  "modified": "2023-08-04 10:28:00.987950",
+  "nama_layanan": "Permohonan Perubahan Dokumen Kepabeanan BC 2.8",
+  "name": "PKC08g"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC08h",
+  "modified": "2023-08-04 10:28:00.992335",
+  "nama_layanan": "Permohonan Perubahan Dokumen Kepabeanan BC 4.0",
+  "name": "PKC08h"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC08i",
+  "modified": "2023-08-04 10:28:00.996601",
+  "nama_layanan": "Permohonan Perubahan Dokumen Kepabeanan BC 4.1",
+  "name": "PKC08i"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC09a",
+  "modified": "2023-08-04 10:28:01.000467",
+  "nama_layanan": "Permohonan Pembatalan Dokumen Kepabeanan BC 2.5",
+  "name": "PKC09a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC09b",
+  "modified": "2023-08-04 10:28:01.005082",
+  "nama_layanan": "Permohonan Pembatalan Dokumen Kepabeanan BC 2.6.1",
+  "name": "PKC09b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC09c",
+  "modified": "2023-08-04 10:28:01.009256",
+  "nama_layanan": "Permohonan Pembatalan Dokumen Kepabeanan BC 2.6.2",
+  "name": "PKC09c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC09d",
+  "modified": "2023-08-04 10:28:01.013264",
+  "nama_layanan": "Permohonan Pembatalan Dokumen Kepabeanan BC 2.7",
+  "name": "PKC09d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC09e",
+  "modified": "2023-08-04 10:28:01.017657",
+  "nama_layanan": "Permohonan Pembatalan Dokumen Kepabeanan BC 2.8",
+  "name": "PKC09e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC09f",
+  "modified": "2023-08-04 10:28:01.022307",
+  "nama_layanan": "Permohonan Pembatalan Dokumen Kepabeanan BC 4.0",
+  "name": "PKC09f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC09g",
+  "modified": "2023-08-04 10:28:01.026804",
+  "nama_layanan": "Permohonan Pembatalan Dokumen Kepabeanan BC 4.1",
+  "name": "PKC09g"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC10a",
+  "modified": "2023-08-04 10:28:01.030737",
+  "nama_layanan": "Permohonan Persetujuan Perusakan Barang dan/atau Bahan",
+  "name": "PKC10a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC10b",
+  "modified": "2023-08-04 10:28:01.034940",
+  "nama_layanan": "Perubahan Persetujuan Perusakan Barang dan/atau Bahan",
+  "name": "PKC10b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC10c",
+  "modified": "2023-08-04 10:28:01.039592",
+  "nama_layanan": "Pembatalan Persetujuan Perusakan Barang dan/atau Bahan",
+  "name": "PKC10c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC11a",
+  "modified": "2023-08-04 10:28:01.043572",
+  "nama_layanan": "Permohonan Persetujuan Pemusnahan Barang dan/atau Bahan",
+  "name": "PKC11a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC11b",
+  "modified": "2023-08-04 10:28:01.047515",
+  "nama_layanan": "Perubahan Persetujuan Pemusnahan Barang dan/atau Bahan",
+  "name": "PKC11b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Layanan Fix",
+  "kode_layanan": "PKC11c",
+  "modified": "2023-08-04 10:28:01.052440",
+  "nama_layanan": "Pembatalan Persetujuan Pemusnahan Barang dan/atau Bahan",
+  "name": "PKC11c"
+ }
+]

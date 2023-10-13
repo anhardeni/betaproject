@@ -1,0 +1,130 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "CFR",
+  "modified": "2023-06-21 14:02:53.263234",
+  "nama_incoterm": "Cost and Freight",
+  "name": "8fade3f2af"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "CIF",
+  "modified": "2023-06-21 14:02:53.277764",
+  "nama_incoterm": "Cost, Insurance and Freight",
+  "name": "007647fb5f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "CIP",
+  "modified": "2023-06-21 14:02:53.282384",
+  "nama_incoterm": "Carriage and Insurance Paid to",
+  "name": "f503628c37"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "CPT",
+  "modified": "2023-06-21 14:02:53.286678",
+  "nama_incoterm": "Carriage Paid To",
+  "name": "98d340a96d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DAF",
+  "modified": "2023-06-21 14:02:53.290552",
+  "nama_incoterm": "Delivered At Frontier",
+  "name": "85a8edbacd"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DAP",
+  "modified": "2023-06-21 14:02:53.294421",
+  "nama_incoterm": "Delivered At Place",
+  "name": "98506b19b1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DAT",
+  "modified": "2023-06-21 14:02:53.298364",
+  "nama_incoterm": "Delivered At Terminal",
+  "name": "34c8f79b5e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DDP",
+  "modified": "2023-06-21 14:02:53.302120",
+  "nama_incoterm": "Delivered Duty Paid",
+  "name": "5e31596e04"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DDU",
+  "modified": "2023-06-21 14:02:53.305774",
+  "nama_incoterm": "Delivered Duty Unpaid",
+  "name": "8f6cf1e5d5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DEQ",
+  "modified": "2023-06-21 14:02:53.309759",
+  "nama_incoterm": "Delivered Ex Quay",
+  "name": "3c8beea3b8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DES",
+  "modified": "2023-06-21 14:02:53.313656",
+  "nama_incoterm": "Delivered Ex Ship",
+  "name": "db92ffbfa7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "EXW",
+  "modified": "2023-06-21 14:02:53.317492",
+  "nama_incoterm": "Ex Works",
+  "name": "897d875f36"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "FAS",
+  "modified": "2023-06-21 14:02:53.321304",
+  "nama_incoterm": "Free Alongside Ship",
+  "name": "b4acca0628"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "FCA",
+  "modified": "2023-06-21 14:02:53.325079",
+  "nama_incoterm": "Free Carrier",
+  "name": "027af48f14"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "FOB",
+  "modified": "2023-06-21 14:02:53.329666",
+  "nama_incoterm": "Free on Board",
+  "name": "ddd5bdccb9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "LAN",
+  "modified": "2023-06-21 14:02:53.333683",
+  "nama_incoterm": "LAINNYA",
+  "name": "463ffbf57f"
+ }
+]

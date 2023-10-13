@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestHEADER(FrappeTestCase):
+class TestNamaPerihalLayanan(FrappeTestCase):
 	pass

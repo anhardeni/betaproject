@@ -1,0 +1,138 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "1",
+  "modified": "2023-06-09 16:01:50.818579",
+  "nama_cara_bayar": "BIASA/TUNAI",
+  "name": "6786a867eb"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "2",
+  "modified": "2023-06-09 16:01:50.829851",
+  "nama_cara_bayar": "BERKALA",
+  "name": "f55d7f5ff4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "3",
+  "modified": "2023-06-09 16:01:50.837026",
+  "nama_cara_bayar": "DENGAN JAMINAN",
+  "name": "2b4bd4066c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "4",
+  "modified": "2023-06-09 16:01:50.841290",
+  "nama_cara_bayar": "PERHITUNGAN KEMUDIAN",
+  "name": "853b8062d4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "5",
+  "modified": "2023-06-09 16:01:50.845277",
+  "nama_cara_bayar": "KONSINYASI (CONSIGNMENT)",
+  "name": "5210925859"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "6",
+  "modified": "2023-06-09 16:01:50.849393",
+  "nama_cara_bayar": "USANCE LETTER OF CREDIT",
+  "name": "0b2241721b"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "7",
+  "modified": "2023-06-09 16:01:50.853172",
+  "nama_cara_bayar": "RED CLAUSE LETTER OF CREDIT",
+  "name": "0c61b5412f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "8",
+  "modified": "2023-06-09 16:01:50.857415",
+  "nama_cara_bayar": "INTER-COMPANY ACCOUNT",
+  "name": "9e589d9344"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "9",
+  "modified": "2023-06-09 16:01:50.861513",
+  "nama_cara_bayar": "GABUNGAN/LAINNYA",
+  "name": "3c812dd297"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "10",
+  "modified": "2023-06-09 16:01:50.865634",
+  "nama_cara_bayar": "PEMBAYARAN KEMUDIAN (OPEN ACCOUNT) SECARA BERTAHAP",
+  "name": "b95379c6b8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "11",
+  "modified": "2023-06-09 16:01:50.869441",
+  "nama_cara_bayar": "PEMBAYARAN KEMUDIAN (OPEN ACCOUNT) SECARA TUNAI",
+  "name": "d347f166ce"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "12",
+  "modified": "2023-06-09 16:01:50.873665",
+  "nama_cara_bayar": "DILAKUKAN DI DN DENGAN PEMBAYARAN UANG TUNAI",
+  "name": "36e32e0bff"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "13",
+  "modified": "2023-06-09 16:01:50.877870",
+  "nama_cara_bayar": "DILAKUKAN DI DN DENGAN PEMBAYARAN MELALUI TELEGRAPH",
+  "name": "3e7a162bf3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "14",
+  "modified": "2023-06-09 16:01:50.881769",
+  "nama_cara_bayar": "DILAKUKAN TANPA PEMBAYARAN",
+  "name": "7208468c76"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "15",
+  "modified": "2023-06-09 16:01:50.885432",
+  "nama_cara_bayar": "PEMBAYARAN DIMUKA (ADVANCE PAYMENT)",
+  "name": "c471e946fe"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "16",
+  "modified": "2023-06-09 16:01:50.889102",
+  "nama_cara_bayar": "SIGHT LETTER OF CREDIT",
+  "name": "954f5c4546"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Bayar",
+  "kode_cara_bayar": "17",
+  "modified": "2023-06-09 16:01:50.893061",
+  "nama_cara_bayar": "INKASO (COLLECTION DRAFT)",
+  "name": "0c59edc933"
+ }
+]
