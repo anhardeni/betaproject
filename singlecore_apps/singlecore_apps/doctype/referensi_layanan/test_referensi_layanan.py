@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestReferensiLayan(FrappeTestCase):
+class TestReferensiLayanan(FrappeTestCase):
 	pass

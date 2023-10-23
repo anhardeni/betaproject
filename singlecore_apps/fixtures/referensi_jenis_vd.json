@@ -1,0 +1,98 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis VD",
+  "kode_jenis_nilai": "BTR",
+  "modified": "2023-06-21 14:50:32.767509",
+  "nama_jenis_nilai": "BUKAN TRANSAKSI JUAL BELI LAINNYA",
+  "name": "b605fa48f4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis VD",
+  "kode_jenis_nilai": "CAM",
+  "modified": "2023-06-21 14:50:32.779340",
+  "nama_jenis_nilai": "Barang terdiri dari barang-barang yang merupakan obyek transaksi gabungan dari dua atau lebih jenis transaksi 1 sampai dengan 10",
+  "name": "64138fca2d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis VD",
+  "kode_jenis_nilai": "CMA",
+  "modified": "2023-06-21 14:50:32.784232",
+  "nama_jenis_nilai": "BUKAN TRANSAKSI JUAL BELI BERUPA BARANG HADIAH/PROMOSI/CONTOH",
+  "name": "de7b68aedd"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis VD",
+  "kode_jenis_nilai": "FTR",
+  "modified": "2023-06-21 14:50:32.788914",
+  "nama_jenis_nilai": "TRANSAKSI JUAL BELI BERDASARKAN HARGA FUTURES (FUTURE PRICE), YAITU HARGA YANG BARU DAPAT DITENTUKAN SETELAH PIB DISAMPAIKAN",
+  "name": "8de6073967"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis VD",
+  "kode_jenis_nilai": "HBH",
+  "modified": "2023-06-21 14:50:32.793674",
+  "nama_jenis_nilai": "BUKAN TRANSAKSI JUAL BELI BERUPA BARANG BANTUAN/HIBAH",
+  "name": "6b9683be9f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis VD",
+  "kode_jenis_nilai": "ITM",
+  "modified": "2023-06-21 14:50:32.797799",
+  "nama_jenis_nilai": "BUKAN TRANSAKSI JUAL BELI BERUPA BARANG YANG DIIMPOR OLEH INTERMEDIARY YANG TIDAK MEMBELI BARANG",
+  "name": "ab6ecdd2db"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis VD",
+  "kode_jenis_nilai": "KON",
+  "modified": "2023-06-21 14:50:32.801833",
+  "nama_jenis_nilai": "BUKAN TRANSAKSI JUAL BELI BERUPA BARANG KONSINYASI",
+  "name": "d12a963203"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis VD",
+  "kode_jenis_nilai": "LES",
+  "modified": "2023-06-21 14:50:32.805670",
+  "nama_jenis_nilai": "BUKAN TRANSAKSI JUAL BELI BERUPA BARANG SEWA (LEASING)",
+  "name": "e53b6fd1e3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis VD",
+  "kode_jenis_nilai": "NTR",
+  "modified": "2023-06-21 14:50:32.809877",
+  "nama_jenis_nilai": "TRANSAKSI JUAL BELI",
+  "name": "9024fc0ba3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis VD",
+  "kode_jenis_nilai": "PRO",
+  "modified": "2023-06-21 14:50:32.814059",
+  "nama_jenis_nilai": "TRANSAKSI JUAL BELI MENGANDUNG PROCEEDS YANG NILAINYA BELUM DAPAT DITENTUKAN",
+  "name": "54d3bbaa31"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis VD",
+  "kode_jenis_nilai": "ROY",
+  "modified": "2023-06-21 14:50:32.818225",
+  "nama_jenis_nilai": "TRANSAKSI JUAL BELI MENGANDUNG ROYALTI YANG NILAINYA BELUM DAPAT DITENTUKAN",
+  "name": "e50c9f3e46"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis VD",
+  "kode_jenis_nilai": "TIP",
+  "modified": "2023-06-21 14:50:32.822273",
+  "nama_jenis_nilai": "TITIPAN",
+  "name": "db4a437b72"
+ }
+]

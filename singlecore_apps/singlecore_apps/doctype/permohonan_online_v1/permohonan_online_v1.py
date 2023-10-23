@@ -8,6 +8,7 @@ from num2words import num2words
 
 
 class PermohonanOnlineV1(Document):
+	
 	def validate(self):
 		#self.get_jaminan_in_words() 
 	  	frappe.msgprint("testtt event")
@@ -26,6 +27,23 @@ class PermohonanOnlineV1(Document):
 	def save_document(self):
 		doc.jaminan_in_words = 'tujuh ratus'
 		doc.save()
+
+	
+	def in_words_id(integer: int, in_million=True) -> str:
+		"""
+		Returns string in words for the given integer.
+		"""
+		#from num2words import num2words
+
+		locale = "id" if not in_million else frappe.local.lang
+		integer = int(integer)
+		try:
+			ret = num2words(integer, lang=locale)
+		except NotImplementedError:
+			ret = num2words(integer, lang="en")
+		except OverflowError:
+			ret = num2words(integer, lang="en")
+		return ret.replace("-", " ")
 
 	##from frappe.utils import money_in_words
 		#self.jaminan_in_words = f''delapan ratus ribu rupiah''

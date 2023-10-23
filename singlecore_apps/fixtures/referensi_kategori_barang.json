@@ -1,0 +1,290 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "1",
+  "modified": "2023-06-21 15:18:26.941649",
+  "nama_kategori_barang": "BARANG UNTUK DITIMBUN",
+  "name": "40cfdafdf0"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "2",
+  "modified": "2023-06-21 15:18:26.952428",
+  "nama_kategori_barang": "BARANG UNTUK KEPERLUAN PENGUSAHAAN",
+  "name": "75fcabaab8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "11",
+  "modified": "2023-06-21 15:18:26.957003",
+  "nama_kategori_barang": "UNTUK BAHAN BAKU/BAHAN PENOLONG",
+  "name": "a1f19bc3c5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "12",
+  "modified": "2023-06-21 15:18:26.961082",
+  "nama_kategori_barang": "UNTUK PENGEMAS/ALAT BANTU PENGEMAS",
+  "name": "d75c81ccef"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "13",
+  "modified": "2023-06-21 15:18:26.965376",
+  "nama_kategori_barang": "UNTUK PERALATAN UNTUK PEMBANGUNAN, PERLUASAN, ATAU KONSTRUKSI KB",
+  "name": "9cb58dafd5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "14",
+  "modified": "2023-06-21 15:18:26.969628",
+  "nama_kategori_barang": "UNTUK BARANG MODAL DAN/ATAU SPAREPARTS BARANG MODAL",
+  "name": "5bac0f2f1f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "15",
+  "modified": "2023-06-21 15:18:26.973665",
+  "nama_kategori_barang": "UNTUK BARANG CONTOH",
+  "name": "5e84e17760"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "16",
+  "modified": "2023-06-21 15:18:26.977879",
+  "nama_kategori_barang": "UNTUK BARANG JADI GUNA DIGABUNG DENGAN HASIL PRODUKSI",
+  "name": "f092b867d7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "17",
+  "modified": "2023-06-21 15:18:26.981790",
+  "nama_kategori_barang": "UNTUK BARANG REIMPOR",
+  "name": "f9c6066468"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "18",
+  "modified": "2023-06-21 15:18:26.985865",
+  "nama_kategori_barang": "UNTUK PERALATAN PERKANTORAN",
+  "name": "aed4d1f3b4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "19",
+  "modified": "2023-06-21 15:18:26.990200",
+  "nama_kategori_barang": "BARANG UNTUK KEPERLUAN PENANGANAN COVID19",
+  "name": "a7e090f074"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "21",
+  "modified": "2023-06-21 15:18:26.994185",
+  "nama_kategori_barang": "UNTUK BARANG YANG DITIMBUN DI GB",
+  "name": "2e1c1f6563"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "22",
+  "modified": "2023-06-21 15:18:26.998017",
+  "nama_kategori_barang": "UNTUK BARANG REIMPOR",
+  "name": "75a4880fa7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "31",
+  "modified": "2023-06-21 15:18:27.002139",
+  "nama_kategori_barang": "UNTUK BARANG UNTUK DIPAMERKAN",
+  "name": "32e9d02449"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "32",
+  "modified": "2023-06-21 15:18:27.005827",
+  "nama_kategori_barang": "UNTUK BARANG UNTUK MENDUKUNG KEPERLUAN PAMERAN",
+  "name": "409765db43"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "33",
+  "modified": "2023-06-21 15:18:27.009756",
+  "nama_kategori_barang": "UNTUK BARANG REIMPOR",
+  "name": "6756772fc1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "41",
+  "modified": "2023-06-21 15:18:27.013959",
+  "nama_kategori_barang": "UNTUK BARANG YANG DITIMBUN DI TBB",
+  "name": "2c61bce20e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "42",
+  "modified": "2023-06-21 15:18:27.018988",
+  "nama_kategori_barang": "UNTUK BARANG REIMPOR",
+  "name": "aabc2d3f5f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "51",
+  "modified": "2023-06-21 15:18:27.022888",
+  "nama_kategori_barang": "UNTUK BARANG LELANG",
+  "name": "57adef7f5c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "52",
+  "modified": "2023-06-21 15:18:27.026843",
+  "nama_kategori_barang": "UNTUK SPAREPARTS",
+  "name": "f316ba9e3f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "53",
+  "modified": "2023-06-21 15:18:27.031075",
+  "nama_kategori_barang": "UNTUK BARANG REIMPOR",
+  "name": "8ac87fdd09"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "61",
+  "modified": "2023-06-21 15:18:27.035170",
+  "nama_kategori_barang": "UNTUK BARANG YANG DITIMBUN DI KDUB",
+  "name": "434ed77d3d"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "23",
+  "kode_kategori_barang": "62",
+  "modified": "2023-06-21 15:18:27.039591",
+  "nama_kategori_barang": "UNTUK BARANG REIMPOR",
+  "name": "d4092b4375"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "25",
+  "kode_kategori_barang": "1",
+  "modified": "2023-06-21 15:18:27.043285",
+  "nama_kategori_barang": "HASIL PRODUKSI",
+  "name": "92ec3b3dd4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "25",
+  "kode_kategori_barang": "2",
+  "modified": "2023-06-21 15:18:27.047535",
+  "nama_kategori_barang": "BAHAN BAKU",
+  "name": "44d1934271"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "25",
+  "kode_kategori_barang": "3",
+  "modified": "2023-06-21 15:18:27.051866",
+  "nama_kategori_barang": "BARANG MODAL",
+  "name": "da0b1377aa"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "25",
+  "kode_kategori_barang": "4",
+  "modified": "2023-06-21 15:18:27.055725",
+  "nama_kategori_barang": "PERALATAN KANTOR",
+  "name": "6cfd60f6a2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "25",
+  "kode_kategori_barang": "5",
+  "modified": "2023-06-21 15:18:27.059579",
+  "nama_kategori_barang": "SISA DARI PROSES PRODUKSI/LIMBAH (WASTE/SCRAP) DAN/ATAU SISA ATAU BEKAS PENGEMAS",
+  "name": "200f0b5a2c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "25",
+  "kode_kategori_barang": "6",
+  "modified": "2023-06-21 15:18:27.063997",
+  "nama_kategori_barang": "BARANG YANG DITIMBUN UNTUK DIJUAL",
+  "name": "78a7646693"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "25",
+  "kode_kategori_barang": "7",
+  "modified": "2023-06-21 15:18:27.067875",
+  "nama_kategori_barang": "BARANG YANG DIPAMERKAN UNTUK DIJUAL",
+  "name": "be55b76c57"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "25",
+  "kode_kategori_barang": "8",
+  "modified": "2023-06-21 15:18:27.071751",
+  "nama_kategori_barang": "BARANG LAINNYA",
+  "name": "a721bcff61"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Barang",
+  "kode_dokumen": "25",
+  "kode_kategori_barang": "9",
+  "modified": "2023-06-21 15:18:27.075607",
+  "nama_kategori_barang": "BARANG UNTUK KEPERLUAN PENANGANAN COVID19",
+  "name": "0e7398184f"
+ }
+]

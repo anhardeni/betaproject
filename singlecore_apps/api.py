@@ -9,6 +9,7 @@ NOT_FOUND = 400
 def get_all_header():
     header = frappe.db.sql("""SELECT `tabHEADER V2`.name AS nomorAju,  JSON_ARRAYAGG(tabENTITAS.seri) AS seriEntitas     FROM `tabHEADER V2`INNER JOIN tabENTITAS ON  `tabHEADER V2`.`name` = tabENTITAS.parent;""", as_dict=True)
 
+
     return header
 
 
@@ -75,7 +76,8 @@ def get_all_bc30():
     kode_kantor_bongkar AS kodeKantorBongkar, 
     kode_dokumen  
     FROM `tabHEADER V2`
-    WHERE `tabHEADER V2`.kode_dokumen = "30" ;""", as_dict=True)
+    WHERE `tabHEADER V2`.kode_dokumen = "30"
+        AND  `tabHEADER V2`.name = "000030BT000120231002000013"     ;""", as_dict=True)
 
     return bc30
 
@@ -92,4 +94,16 @@ def get_all_headerl1():
     frappe.get_list("HEADER V2")
     #headerq = frappe.qb.from_('HEADER').select('name' , 'owner', 'nomor_aju' , 'kode_dokumen' ).run(as_dict=True)
     #headerq30 = frappe.qb.from_('HEADER V2').select('name').as_('nomorAju').run(as_dict=True)
+
+@frappe.whitelist(allow_guest=True)
+def get_all_bc301():
+    bc301 = frappe.db.sql("""SELECT JSON_OBJECT(
+        asaldata,asalData	
+        , Asuransi,	Asuransi
+        , kode_kantor ,	kode_Kantor 
+    )
+    FROM `tabHEADER V2`
+         ;""", as_dict=True)
+
+    return bc301
  

@@ -1,0 +1,82 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Transaksi Perdagangan",
+  "kode_jenis_transaksi_perdagangan": "IMB",
+  "modified": "2023-06-21 14:30:19.944279",
+  "name": "d67ef7121e",
+  "uraian": "Transaksi Perdagangan Dengan Imbal Dagang"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Transaksi Perdagangan",
+  "kode_jenis_transaksi_perdagangan": "IOA",
+  "modified": "2023-06-21 14:30:19.958045",
+  "name": "d762ab43a5",
+  "uraian": "Pembayaran Dilakukan Dengan Interoffice Account"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Transaksi Perdagangan",
+  "kode_jenis_transaksi_perdagangan": "KMD",
+  "modified": "2023-06-21 14:30:19.962767",
+  "name": "9d5e872940",
+  "uraian": "Pembayaran Kemudian"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Transaksi Perdagangan",
+  "kode_jenis_transaksi_perdagangan": "KON",
+  "modified": "2023-06-21 14:30:19.966559",
+  "name": "d22e7bbde2",
+  "uraian": "Pembayaran Dilakukan Dengan Konsinyasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Transaksi Perdagangan",
+  "kode_jenis_transaksi_perdagangan": "LAI",
+  "modified": "2023-06-21 14:30:19.970936",
+  "name": "1b5f0be77d",
+  "uraian": "Transaksi Perdagangan Atau Cara Pembayaran Lainnya"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Transaksi Perdagangan",
+  "kode_jenis_transaksi_perdagangan": "PMK",
+  "modified": "2023-06-21 14:30:19.974748",
+  "name": "ce2fffe7e9",
+  "uraian": "Pembayaran Dilakukan Dimuka"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Transaksi Perdagangan",
+  "kode_jenis_transaksi_perdagangan": "RLC",
+  "modified": "2023-06-21 14:30:19.978702",
+  "name": "d9fc5202c3",
+  "uraian": "Pembayaran Dengan Red Clause Letter Of Credit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Transaksi Perdagangan",
+  "kode_jenis_transaksi_perdagangan": "SLC",
+  "modified": "2023-06-21 14:30:19.982654",
+  "name": "523b688349",
+  "uraian": "Pembayaran Dengan Sight Letter Of Credit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Transaksi Perdagangan",
+  "kode_jenis_transaksi_perdagangan": "ULC",
+  "modified": "2023-06-21 14:30:19.986993",
+  "name": "2f0040d7b1",
+  "uraian": "Pembayaran Dengan Usance Letter Of Credit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Transaksi Perdagangan",
+  "kode_jenis_transaksi_perdagangan": "WSI",
+  "modified": "2023-06-21 14:30:19.991511",
+  "name": "f6fd333071",
+  "uraian": "Pembayaran Dilakukan Dengan Wesel Inkaso"
+ }
+]

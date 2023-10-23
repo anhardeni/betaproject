@@ -203,7 +203,7 @@ app_license = "MIT"
 fixtures = [
 
         #"Referensi Gudang",
-        "Referensi Ijin",
+        #"Referensi Ijin",
         "Referensi Incoterm",
         "Referensi Jenis API",
         "Referensi Jenis Ekspor",
@@ -213,22 +213,20 @@ fixtures = [
         "Referensi Jenis Kemasan",
         "Referensi Jenis Kontainer",
         "Referensi Layanan Fix",
-        "Referensi Jenis Pib",
+        #"Referensi Jenis Pib",
         "Referensi Jenis Pungutan",
         "Referensi Jenis TPB",
         "Referensi Jenis Tarif",
         "Referensi Jenis Transaksi Perdagangan",
         "Referensi Jenis VD",
         "Referensi Kantor",
-        "Referensi Kapal",
+        #"Referensi Kapal",
         "Referensi Kategori Barang",
         "Referensi Kategori Ekspor",
-        "Referensi Kategori Keluar FTZ ",
+        #"Referensi Kategori Keluar FTZ ",
         "Referensi Komoditi Cukai ",
         "Referensi Kondisi Barang ",
-        "Referensi Layan ",
-        "Referensi Layanan ",
-        "Referensi Layanan Fix ",
+        #"Referensi Layanan Fix ",
         "Referensi Lokasi Bayar ",
         "Referensi Negara ",
         "Referensi Pelabuhan Dalam Negeri ",
@@ -248,9 +246,7 @@ fixtures = [
         "Referensi Tujuan Pengiriman ",
         "Referensi Tutup Pu ",
         "Referensi Ukuran Kontainer ",
-        "Referensi Valuta ",
-        "Referensi Valuta_copy1 "
-
+        "Referensi Valuta "   
            
     
 ]

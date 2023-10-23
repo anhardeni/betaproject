@@ -1,0 +1,162 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "10",
+  "modified": "2023-06-21 15:09:20.797688",
+  "nama_kategori_ekspor": "Umum",
+  "name": "bad849fd4c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "21",
+  "modified": "2023-06-21 15:09:20.811561",
+  "nama_kategori_ekspor": "NIPER dengan pembebasan",
+  "name": "b74be528f9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "22",
+  "modified": "2023-06-21 15:09:20.816386",
+  "nama_kategori_ekspor": "NIPER dengan pengembalian",
+  "name": "4a5e3fbf46"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "33",
+  "modified": "2023-06-21 15:09:20.820577",
+  "nama_kategori_ekspor": "Khusus barang kiriman",
+  "name": "99be57cebe"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "34",
+  "modified": "2023-06-21 15:09:20.824807",
+  "nama_kategori_ekspor": "Khusus barang pindahan",
+  "name": "d03eee7d05"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "31",
+  "modified": "2023-06-21 15:09:20.829062",
+  "nama_kategori_ekspor": "Khusus barang perwakilan negara asing",
+  "name": "18a80aefb1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "32",
+  "modified": "2023-06-21 15:09:20.833729",
+  "nama_kategori_ekspor": "Khusus barang badan internasional",
+  "name": "c43815c884"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "35",
+  "modified": "2023-06-21 15:09:20.838082",
+  "nama_kategori_ekspor": "Khusus barang untuk keperluan ibadah untuk umum, sosial, pendidikan, kebudayaan, oleh raga, atau bencana alam",
+  "name": "dd3560772c"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "36",
+  "modified": "2023-06-21 15:09:20.842977",
+  "nama_kategori_ekspor": "Khusus barang cinderamata",
+  "name": "6560fdeb86"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "37",
+  "modified": "2023-06-21 15:09:20.847708",
+  "nama_kategori_ekspor": "Khusus barang contoh",
+  "name": "f050fd2ca0"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "38",
+  "modified": "2023-06-21 15:09:20.853238",
+  "nama_kategori_ekspor": "Khusus barang keperluan penelitian",
+  "name": "db9c437b65"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "41",
+  "modified": "2023-06-21 15:09:20.859129",
+  "nama_kategori_ekspor": "TPB dari kawasan berikat",
+  "name": "6368f0edb2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "42",
+  "modified": "2023-06-21 15:09:20.864247",
+  "nama_kategori_ekspor": "TPB dari gudang berikat",
+  "name": "ddf9879918"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "43",
+  "modified": "2023-06-21 15:09:20.869303",
+  "nama_kategori_ekspor": "TPB dari tempat pameran berikat",
+  "name": "a35fa34a1e"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "44",
+  "modified": "2023-06-21 15:09:20.873699",
+  "nama_kategori_ekspor": "TPB dari toko bebas bea",
+  "name": "1ebc951550"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "45",
+  "modified": "2023-06-21 15:09:20.878068",
+  "nama_kategori_ekspor": "TPB dari tempat lelang berikat",
+  "name": "dd0ece90e8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "46",
+  "modified": "2023-06-21 15:09:20.882738",
+  "nama_kategori_ekspor": "TPB dari kawasan daur ulang berikat",
+  "name": "230c4d02e8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "51",
+  "modified": "2023-06-21 15:09:20.887423",
+  "nama_kategori_ekspor": "PLB",
+  "name": "576a3a6f07"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "61",
+  "modified": "2023-06-21 15:09:20.891989",
+  "nama_kategori_ekspor": "BKC yang belum dilunasi cukainya",
+  "name": "5f1c6c0d95"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_kategori_ekspor": "23",
+  "modified": "2023-06-21 15:09:20.896372",
+  "nama_kategori_ekspor": "KITE dengan pembebasan dan pengembalian",
+  "name": "b82da52b42"
+ }
+]

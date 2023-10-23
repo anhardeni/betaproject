@@ -1,0 +1,66 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis TPB",
+  "kode_jenis_tpb": "1",
+  "modified": "2023-06-21 14:46:59.939996",
+  "nama_jenis_tpb": "KAWASAN BERIKAT",
+  "name": "0fd5e57380"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis TPB",
+  "kode_jenis_tpb": "2",
+  "modified": "2023-06-21 14:46:59.954760",
+  "nama_jenis_tpb": "GUDANG BERIKAT",
+  "name": "2bba0507f8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis TPB",
+  "kode_jenis_tpb": "3",
+  "modified": "2023-06-21 14:46:59.959207",
+  "nama_jenis_tpb": "TPPB",
+  "name": "83bb262f2a"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis TPB",
+  "kode_jenis_tpb": "4",
+  "modified": "2023-06-21 14:46:59.963453",
+  "nama_jenis_tpb": "TBB",
+  "name": "d7cac96354"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis TPB",
+  "kode_jenis_tpb": "5",
+  "modified": "2023-06-21 14:46:59.967701",
+  "nama_jenis_tpb": "TLB",
+  "name": "ae29eef698"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis TPB",
+  "kode_jenis_tpb": "6",
+  "modified": "2023-06-21 14:46:59.971510",
+  "nama_jenis_tpb": "KDUB",
+  "name": "2190bc2655"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis TPB",
+  "kode_jenis_tpb": "7",
+  "modified": "2023-06-21 14:46:59.976643",
+  "nama_jenis_tpb": "PLB",
+  "name": "bde1c67283"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis TPB",
+  "kode_jenis_tpb": "8",
+  "modified": "2023-06-21 14:46:59.980443",
+  "nama_jenis_tpb": "LAINNYA",
+  "name": "1212f23dfe"
+ }
+]
