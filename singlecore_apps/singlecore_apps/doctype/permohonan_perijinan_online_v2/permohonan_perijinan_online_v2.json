@@ -1,7 +1,7 @@
 {
  "actions": [],
  "autoname": "format:AJUBETA-{#####}",
- "creation": "2023-10-26 17:27:46.054643",
+ "creation": "2023-10-26 17:42:12.127609",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -543,7 +543,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "PERMOHONAN PERIJINAN ONLINE V1",
+   "options": "PERMOHONAN PERIJINAN ONLINE V2",
    "print_hide": 1,
    "read_only": 1
   }
@@ -552,10 +552,10 @@
  "is_submittable": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2023-10-26 17:27:46.054643",
+ "modified": "2023-10-26 17:42:12.127609",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "PERMOHONAN PERIJINAN ONLINE V1",
+ "name": "PERMOHONAN PERIJINAN ONLINE V2",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

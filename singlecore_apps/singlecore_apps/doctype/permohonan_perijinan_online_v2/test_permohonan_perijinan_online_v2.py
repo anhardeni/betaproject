@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestPermohonanOnlineV1(FrappeTestCase):
+class TestPERMOHONANPERIJINANONLINEV2(FrappeTestCase):
 	pass

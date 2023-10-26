@@ -1,7 +1,7 @@
 {
  "actions": [],
  "autoname": "format:AJUBETA-{#####}",
- "creation": "2023-10-26 17:27:46.054643",
+ "creation": "2023-10-26 17:40:23.373156",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -87,7 +87,6 @@
   "column_break_g90ut",
   "catatan_petugas_permohonan",
   "catatan_petugas_jaminan",
-  "amended_from",
   "amended_from"
  ],
  "fields": [
@@ -537,25 +536,16 @@
    "options": "PERMOHONAN PERIJINAN ONLINE V1",
    "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "PERMOHONAN PERIJINAN ONLINE V1",
-   "print_hide": 1,
-   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2023-10-26 17:27:46.054643",
+ "modified": "2023-10-26 18:34:15.156738",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "PERMOHONAN PERIJINAN ONLINE V1",
+ "name": "INHOUSE V3",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

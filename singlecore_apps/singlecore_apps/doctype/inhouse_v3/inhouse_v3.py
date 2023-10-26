@@ -4,5 +4,5 @@
 # import frappe
 from frappe.model.document import Document
 
-class PERMOHONANPERIJINANONLINEV1(Document):
+class INHOUSEV3(Document):
 	pass
