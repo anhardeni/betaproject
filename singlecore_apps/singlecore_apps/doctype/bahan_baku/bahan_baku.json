@@ -44,7 +44,9 @@
   "jumlah_dilekatkan",
   "jumlah_pita_cukai",
   "hje_cukai",
-  "tarif_cukai"
+  "tarif_cukai",
+  "bahan_baku_dokumen",
+  "bahan_tarif"
  ],
  "fields": [
   {
@@ -236,11 +238,23 @@
    "fieldname": "tarif_cukai",
    "fieldtype": "Data",
    "label": "TARIF CUKAI"
+  },
+  {
+   "fieldname": "bahan_baku_dokumen",
+   "fieldtype": "Table",
+   "label": "BAHAN BAKU DOKUMEN",
+   "options": "BAHAN BAKU DOKUMEN"
+  },
+  {
+   "fieldname": "bahan_tarif",
+   "fieldtype": "Table",
+   "label": "BAHAN TARIF",
+   "options": "BAHAN BAKU TARIF"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-31 11:40:27.322723",
+ "modified": "2023-10-27 19:20:28.156399",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BAHAN BAKU",

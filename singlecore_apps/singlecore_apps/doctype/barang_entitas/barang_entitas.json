@@ -9,7 +9,9 @@
  "field_order": [
   "nomoraju",
   "seri_barang",
-  "seri_dokumen"
+  "seri_dokumen",
+  "seri_entitas",
+  "seri_barang_pemilik"
  ],
  "fields": [
   {
@@ -19,19 +21,29 @@
   },
   {
    "fieldname": "seri_barang",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "SERI BARANG"
   },
   {
    "fieldname": "seri_dokumen",
    "fieldtype": "Int",
    "label": "SERI DOKUMEN"
+  },
+  {
+   "fieldname": "seri_entitas",
+   "fieldtype": "Int",
+   "label": "SERI ENTITAS"
+  },
+  {
+   "fieldname": "seri_barang_pemilik",
+   "fieldtype": "Int",
+   "label": "SERI BARANG PEMILIK"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-09-20 08:19:20.619754",
+ "modified": "2023-10-27 18:43:00.337727",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG ENTITAS",

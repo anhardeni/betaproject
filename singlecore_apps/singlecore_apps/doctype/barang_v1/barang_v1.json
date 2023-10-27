@@ -482,8 +482,13 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-10-03 15:25:23.287721",
+ "links": [
+  {
+   "link_doctype": "BAHAN BAKU",
+   "link_fieldname": "nomoraju"
+  }
+ ],
+ "modified": "2023-10-27 19:26:00.327685",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG V1",

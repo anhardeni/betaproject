@@ -20,6 +20,8 @@
   "nama_pemohon",
   "alamat_pemohon",
   "nomor_npwp",
+  "nama_perusahaan",
+  "alamat_perusahaan",
   "nomor_permohonan",
   "tanggal_permohonan",
   "kode_layanan",
@@ -43,7 +45,7 @@
   "tanggal_kontrak",
   "jenis_pekerjaan",
   "jenis_jaminan",
-  "pengunaan_jaminan",
+  "penggunaan_jaminan",
   "nilai_jaminan",
   "jaminan_in_words",
   "nama_penjamin",
@@ -87,7 +89,6 @@
   "column_break_g90ut",
   "catatan_petugas_permohonan",
   "catatan_petugas_jaminan",
-  "amended_from",
   "amended_from"
  ],
  "fields": [
@@ -282,12 +283,6 @@
    "in_standard_filter": 1,
    "label": "Jenis Jaminan",
    "options": "Referensi Jenis Jaminan"
-  },
-  {
-   "fieldname": "pengunaan_jaminan",
-   "fieldtype": "Select",
-   "label": "Pengunaan Jaminan",
-   "options": "Sekali\nTerus-Menerus"
   },
   {
    "fieldname": "nilai_jaminan",
@@ -546,13 +541,29 @@
    "options": "PERMOHONAN PERIJINAN ONLINE V1",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "nama_perusahaan",
+   "fieldtype": "Data",
+   "label": "Nama Perusahaan"
+  },
+  {
+   "fieldname": "alamat_perusahaan",
+   "fieldtype": "Data",
+   "label": "Alamat Perusahaan"
+  },
+  {
+   "fieldname": "penggunaan_jaminan",
+   "fieldtype": "Select",
+   "label": "Penggunaan Jaminan",
+   "options": "Sekali\nTerus-Menerus"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2023-10-26 17:27:46.054643",
+ "modified": "2023-10-27 16:52:51.468769",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "PERMOHONAN PERIJINAN ONLINE V1",
