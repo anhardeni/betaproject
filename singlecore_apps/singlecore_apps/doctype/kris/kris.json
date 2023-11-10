@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-31 09:32:12.461083",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nama",
+  "ketikan_enak",
+  "ketikan_enak2",
+  "ketikan3",
+  "daftar_iku"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "nama"
+  },
+  {
+   "fieldname": "ketikan_enak",
+   "fieldtype": "Long Text",
+   "label": "ketikan enak"
+  },
+  {
+   "fieldname": "ketikan_enak2",
+   "fieldtype": "Text Editor",
+   "label": "ketikan enak2"
+  },
+  {
+   "fieldname": "ketikan3",
+   "fieldtype": "Markdown Editor",
+   "label": "ketikan3"
+  },
+  {
+   "fieldname": "daftar_iku",
+   "fieldtype": "Select",
+   "label": "daftar iku",
+   "options": "\n1 a\n2\n3 aa\n4 33\n20 rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-31 09:54:35.154803",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "kris",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

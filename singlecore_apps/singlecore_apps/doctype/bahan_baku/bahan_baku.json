@@ -56,18 +56,20 @@
   },
   {
    "fieldname": "seri_barang",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "SERI BARANG"
   },
   {
    "fieldname": "seri_bahan_baku",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "SERI BAHAN BAKU"
   },
   {
+   "description": "Referensi kode asal bahan baku: [0] Impor, [1] Lokal\"",
    "fieldname": "kode_asal_bahan_baku",
-   "fieldtype": "Data",
-   "label": "KODE ASAL BAHAN BAKU"
+   "fieldtype": "Select",
+   "label": "KODE ASAL BAHAN BAKU",
+   "options": "\n0\n1"
   },
   {
    "fieldname": "hs",
@@ -111,7 +113,7 @@
   },
   {
    "fieldname": "jumlah_satuan",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "JUMLAH SATUAN"
   },
   {
@@ -141,47 +143,47 @@
   },
   {
    "fieldname": "seri_barang_asal",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "SERI BARANG ASAL"
   },
   {
    "fieldname": "netto",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "NETTO"
   },
   {
    "fieldname": "bruto",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "BRUTO"
   },
   {
    "fieldname": "volume",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "VOLUME"
   },
   {
    "fieldname": "cif",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "CIF"
   },
   {
    "fieldname": "cif_rupiah",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "CIF RUPIAH"
   },
   {
    "fieldname": "ndpbm",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "NDPBM"
   },
   {
    "fieldname": "harga_penyerahan",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "HARGA PENYERAHAN"
   },
   {
    "fieldname": "harga_perolehan",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "HARGA PEROLEHAN"
   },
   {
@@ -191,7 +193,7 @@
   },
   {
    "fieldname": "seri_izin",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "SERI IZIN"
   },
   {
@@ -211,12 +213,12 @@
   },
   {
    "fieldname": "flag_tis",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "FLAG TIS"
   },
   {
    "fieldname": "isi_per_kemasan",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "ISI PER KEMASAN"
   },
   {
@@ -231,12 +233,12 @@
   },
   {
    "fieldname": "hje_cukai",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "HJE CUKAI"
   },
   {
    "fieldname": "tarif_cukai",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "TARIF CUKAI"
   },
   {
@@ -254,7 +256,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-27 19:20:28.156399",
+ "modified": "2023-11-10 18:22:41.037134",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BAHAN BAKU",

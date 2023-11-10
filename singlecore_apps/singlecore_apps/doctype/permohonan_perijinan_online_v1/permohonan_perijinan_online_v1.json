@@ -18,41 +18,42 @@
   "pemohon_area_column",
   "pengeluaran_sementara",
   "nama_pemohon",
+  "jabatan_pemohon",
   "alamat_pemohon",
-  "nomor_npwp",
+  "npwp_pemohon",
   "nama_perusahaan",
   "alamat_perusahaan",
   "nomor_permohonan",
   "tanggal_permohonan",
   "kode_layanan",
-  "nama_perihal_layana",
+  "nama_perihal_layanan",
   "lampiran_permohonan",
-  "tujuan_surat_pemohon",
   "upload1",
-  "upload2a",
-  "upload2b",
   "upload3",
   "tanda_tangan_pemohon",
   "breakcolumn_permohonan",
+  "penerima_barang",
+  "npwp_penerima_barang",
+  "alamat_penerima_barang",
+  "pengirim_barang",
+  "npwp_pengirim_barang",
+  "alamat_pengirim_barang",
+  "no_kontrak",
+  "tanggal_kontrak",
+  "jenis_pekerjaan",
+  "jangka_waktu_pekerjaan",
+  "tanggal_batas_akhir_pekerjaan",
+  "jenis_jaminan",
+  "penggunaan_jaminan",
+  "nama_penjamin",
   "no_surat_aju_jaminan",
   "tgl_surat_aju_jaminan",
   "no_surat_tarik_jaminan",
   "tgl_surat_tarik_jaminan",
-  "penerima_barang",
-  "npwp_penerima_barang",
-  "alamat_penerima_barang",
-  "no_kontrak",
-  "tanggal_kontrak",
-  "jenis_pekerjaan",
-  "jenis_jaminan",
-  "penggunaan_jaminan",
+  "upload2a",
+  "upload2b",
   "nilai_jaminan",
   "jaminan_in_words",
-  "nama_penjamin",
-  "jabatan_pemohon",
-  "dasar_aturan",
-  "jangka_waktu_pekerjaan",
-  "tanggal_batas_akhir_pekerjaan",
   "perbaikan_data_section",
   "kode_dokumen",
   "nomor_aju",
@@ -70,6 +71,8 @@
   "data_barang_tab",
   "barang_yang_dikirim_section",
   "barang_yang_dikirim",
+  "barang_yang_akan_dimasukkan_section",
+  "barang_yang_akan_dimasukkan",
   "section_break_mj6z0",
   "barang_yang_dihasilkan",
   "section_break_url2h",
@@ -153,11 +156,6 @@
    "label": "Alamat Pemohon"
   },
   {
-   "fieldname": "nomor_npwp",
-   "fieldtype": "Data",
-   "label": "NPWP Pemohon"
-  },
-  {
    "fieldname": "nomor_permohonan",
    "fieldtype": "Data",
    "label": "Nomor"
@@ -173,15 +171,8 @@
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "Perihal",
+   "label": "Kode Perihal Layanan",
    "options": "Referensi Layanan Fix"
-  },
-  {
-   "fetch_from": "kode_layanan.nama_layanan",
-   "fieldname": "nama_perihal_layana",
-   "fieldtype": "Data",
-   "label": "Nama Perihal Layanan",
-   "read_only": 1
   },
   {
    "fieldname": "lampiran_permohonan",
@@ -189,21 +180,18 @@
    "label": "Lampiran"
   },
   {
-   "fieldname": "tujuan_surat_pemohon",
-   "fieldtype": "Data",
-   "label": "Tujuan Surat Pemohon"
-  },
-  {
    "fieldname": "upload1",
    "fieldtype": "Attach",
    "label": "Upload Permohonan"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"",
    "fieldname": "upload2a",
    "fieldtype": "Attach",
    "label": "Upload Aju Jaminan"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN02\"",
    "fieldname": "upload2b",
    "fieldtype": "Attach",
    "label": "Upload Tarik Jaminan"
@@ -223,59 +211,70 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"",
    "fieldname": "no_surat_aju_jaminan",
    "fieldtype": "Data",
    "label": "No Surat Aju Jaminan",
    "length": 50
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"",
    "fieldname": "tgl_surat_aju_jaminan",
    "fieldtype": "Date",
    "label": "Tgl Surat Aju Jaminan"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN02\"",
    "fieldname": "no_surat_tarik_jaminan",
    "fieldtype": "Data",
    "label": " No Surat Tarik Jaminan",
    "length": 50
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN02\"",
    "fieldname": "tgl_surat_tarik_jaminan",
    "fieldtype": "Date",
    "label": " Tgl Surat Tarik Jaminan"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "penerima_barang",
    "fieldtype": "Data",
    "label": "Penerima Barang"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "npwp_penerima_barang",
    "fieldtype": "Data",
    "label": "NPWP Penerima Barang"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "alamat_penerima_barang",
    "fieldtype": "Data",
    "label": "Alamat Penerima Barang"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"||doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC03b\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "no_kontrak",
    "fieldtype": "Data",
    "label": "No Kontrak"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"||doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC03b\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "tanggal_kontrak",
    "fieldtype": "Date",
    "label": "Tanggal Kontrak"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"||doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC03b\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "jenis_pekerjaan",
    "fieldtype": "Select",
    "label": "Jenis Pekerjaan",
-   "options": "\nWASHING"
+   "options": "PRESSING\nSABLON\nWASHING"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"",
    "fieldname": "jenis_jaminan",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -285,17 +284,20 @@
    "options": "Referensi Jenis Jaminan"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"||doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC03b\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "nilai_jaminan",
    "fieldtype": "Currency",
    "label": "Nilai Jaminan"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"||doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC03b\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "jaminan_in_words",
    "fieldtype": "Data",
    "label": "Terbilang",
    "read_only": 1
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"",
    "fieldname": "nama_penjamin",
    "fieldtype": "Data",
    "label": "Nama Penjamin"
@@ -306,38 +308,39 @@
    "label": "Jabatan Pemohon"
   },
   {
-   "fieldname": "dasar_aturan",
-   "fieldtype": "Data",
-   "label": "Dasar Aturan"
-  },
-  {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"||doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC03b\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "jangka_waktu_pekerjaan",
    "fieldtype": "Duration",
    "hide_seconds": 1,
    "label": "Jangka Waktu Pekerjaan"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"||doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC03b\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "tanggal_batas_akhir_pekerjaan",
    "fieldtype": "Date",
    "label": "Tanggal Batas Akhir Pekerjaan "
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC08a\"||doc.kode_layanan===\"PKC08b\"||doc.kode_layanan===\"PKC08c\"||doc.kode_layanan===\"PKC08d\"||doc.kode_layanan===\"PKC08e\"||doc.kode_layanan===\"PKC08f\"||doc.kode_layanan===\"PKC08g\"||doc.kode_layanan===\"PKC08h\"||doc.kode_layanan===\"PKC08i\"||doc.kode_layanan===\"PKC09a\"||doc.kode_layanan===\"PKC09b\"||doc.kode_layanan===\"PKC09c\"||doc.kode_layanan===\"PKC09d\"||doc.kode_layanan===\"PKC09e\"||doc.kode_layanan===\"PKC09f\"||doc.kode_layanan===\"PKC09g\"",
    "fieldname": "perbaikan_data_section",
    "fieldtype": "Section Break",
-   "label": "Perbaikan Data Dokumen"
+   "label": "Perbaikan/Pembatalan Dokumen"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC08a\"||doc.kode_layanan===\"PKC08b\"||doc.kode_layanan===\"PKC08c\"||doc.kode_layanan===\"PKC08d\"||doc.kode_layanan===\"PKC08e\"||doc.kode_layanan===\"PKC08f\"||doc.kode_layanan===\"PKC08g\"||doc.kode_layanan===\"PKC08h\"||doc.kode_layanan===\"PKC08i\"||doc.kode_layanan===\"PKC09a\"||doc.kode_layanan===\"PKC09b\"||doc.kode_layanan===\"PKC09c\"||doc.kode_layanan===\"PKC09d\"||doc.kode_layanan===\"PKC09e\"||doc.kode_layanan===\"PKC09f\"||doc.kode_layanan===\"PKC09g\"",
    "fieldname": "kode_dokumen",
    "fieldtype": "Link",
    "label": "Referensi Dokumen",
    "options": "Referensi Dokumen"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC08a\"||doc.kode_layanan===\"PKC08b\"||doc.kode_layanan===\"PKC08c\"||doc.kode_layanan===\"PKC08d\"||doc.kode_layanan===\"PKC08e\"||doc.kode_layanan===\"PKC08f\"||doc.kode_layanan===\"PKC08g\"||doc.kode_layanan===\"PKC08h\"||doc.kode_layanan===\"PKC08i\"||doc.kode_layanan===\"PKC09a\"||doc.kode_layanan===\"PKC09b\"||doc.kode_layanan===\"PKC09c\"||doc.kode_layanan===\"PKC09d\"||doc.kode_layanan===\"PKC09e\"||doc.kode_layanan===\"PKC09f\"||doc.kode_layanan===\"PKC09g\"",
    "fieldname": "nomor_aju",
    "fieldtype": "Data",
    "label": "Nomor Aju"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC08a\"||doc.kode_layanan===\"PKC08b\"||doc.kode_layanan===\"PKC08c\"||doc.kode_layanan===\"PKC08d\"||doc.kode_layanan===\"PKC08e\"||doc.kode_layanan===\"PKC08f\"||doc.kode_layanan===\"PKC08g\"||doc.kode_layanan===\"PKC08h\"||doc.kode_layanan===\"PKC08i\"||doc.kode_layanan===\"PKC09a\"||doc.kode_layanan===\"PKC09b\"||doc.kode_layanan===\"PKC09c\"||doc.kode_layanan===\"PKC09d\"||doc.kode_layanan===\"PKC09e\"||doc.kode_layanan===\"PKC09f\"||doc.kode_layanan===\"PKC09g\"",
    "fieldname": "tanggal_aju",
    "fieldtype": "Date",
    "label": "Tanggal Aju"
@@ -347,26 +350,31 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC08a\"||doc.kode_layanan===\"PKC08b\"||doc.kode_layanan===\"PKC08c\"||doc.kode_layanan===\"PKC08d\"||doc.kode_layanan===\"PKC08e\"||doc.kode_layanan===\"PKC08f\"||doc.kode_layanan===\"PKC08g\"||doc.kode_layanan===\"PKC08h\"||doc.kode_layanan===\"PKC08i\"||doc.kode_layanan===\"PKC09a\"||doc.kode_layanan===\"PKC09b\"||doc.kode_layanan===\"PKC09c\"||doc.kode_layanan===\"PKC09d\"||doc.kode_layanan===\"PKC09e\"||doc.kode_layanan===\"PKC09f\"||doc.kode_layanan===\"PKC09g\"",
    "fieldname": "nomor_pendaftaran",
    "fieldtype": "Data",
    "label": "Nomor Pendaftaran"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC08a\"||doc.kode_layanan===\"PKC08b\"||doc.kode_layanan===\"PKC08c\"||doc.kode_layanan===\"PKC08d\"||doc.kode_layanan===\"PKC08e\"||doc.kode_layanan===\"PKC08f\"||doc.kode_layanan===\"PKC08g\"||doc.kode_layanan===\"PKC08h\"||doc.kode_layanan===\"PKC08i\"||doc.kode_layanan===\"PKC09a\"||doc.kode_layanan===\"PKC09b\"||doc.kode_layanan===\"PKC09c\"||doc.kode_layanan===\"PKC09d\"||doc.kode_layanan===\"PKC09e\"||doc.kode_layanan===\"PKC09f\"||doc.kode_layanan===\"PKC09g\"",
    "fieldname": "tanggal_pendaftaran",
    "fieldtype": "Date",
    "label": "Tanggal Pendaftaran"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC08a\"||doc.kode_layanan===\"PKC08b\"||doc.kode_layanan===\"PKC08c\"||doc.kode_layanan===\"PKC08d\"||doc.kode_layanan===\"PKC08e\"||doc.kode_layanan===\"PKC08f\"||doc.kode_layanan===\"PKC08g\"||doc.kode_layanan===\"PKC08h\"||doc.kode_layanan===\"PKC08i\"",
    "fieldname": "alasan_perbaikan",
    "fieldtype": "Text",
    "label": "Alasan Perbaikan"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC09a\"||doc.kode_layanan===\"PKC09b\"||doc.kode_layanan===\"PKC09c\"||doc.kode_layanan===\"PKC09d\"||doc.kode_layanan===\"PKC09e\"||doc.kode_layanan===\"PKC09f\"||doc.kode_layanan===\"PKC09g\"",
    "fieldname": "alasan_pembatalan",
    "fieldtype": "Text",
    "label": "Alasan Pembatalan"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC08a\"||doc.kode_layanan===\"PKC08b\"||doc.kode_layanan===\"PKC08c\"||doc.kode_layanan===\"PKC08d\"||doc.kode_layanan===\"PKC08e\"||doc.kode_layanan===\"PKC08f\"||doc.kode_layanan===\"PKC08g\"||doc.kode_layanan===\"PKC08h\"||doc.kode_layanan===\"PKC08i\"||doc.kode_layanan===\"PKC09a\"||doc.kode_layanan===\"PKC09b\"||doc.kode_layanan===\"PKC09c\"||doc.kode_layanan===\"PKC09d\"||doc.kode_layanan===\"PKC09e\"||doc.kode_layanan===\"PKC09f\"||doc.kode_layanan===\"PKC09g\"",
    "fieldname": "dokumen_pendukung",
    "fieldtype": "Data",
    "label": "Dokumen Pendukung"
@@ -376,6 +384,7 @@
    "fieldtype": "Section Break"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC08a\"||doc.kode_layanan===\"PKC08b\"||doc.kode_layanan===\"PKC08c\"||doc.kode_layanan===\"PKC08d\"||doc.kode_layanan===\"PKC08e\"||doc.kode_layanan===\"PKC08f\"||doc.kode_layanan===\"PKC08g\"||doc.kode_layanan===\"PKC08h\"||doc.kode_layanan===\"PKC08i\"",
    "fieldname": "detail_perubahan_dokumen",
    "fieldtype": "Table",
    "label": "Detail Perubahan Dokumen",
@@ -386,24 +395,28 @@
    "fieldtype": "Section Break"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC09a\"||doc.kode_layanan===\"PKC09b\"||doc.kode_layanan===\"PKC09c\"||doc.kode_layanan===\"PKC09d\"||doc.kode_layanan===\"PKC09e\"||doc.kode_layanan===\"PKC09f\"||doc.kode_layanan===\"PKC09g\"",
    "fieldname": "detail_pembatalan_dokumen",
    "fieldtype": "Table",
    "label": "Detail Pembatalan Dokumen",
    "options": "Detail Pembatalan Dokumen"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC03b\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "data_barang_tab",
    "fieldtype": "Tab Break",
    "label": "Data Barang"
   },
   {
    "bold": 1,
+   "depends_on": "eval:doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "barang_yang_dikirim_section",
    "fieldtype": "Section Break",
    "label": "Barang yang Dikirim"
   },
   {
    "allow_bulk_edit": 1,
+   "depends_on": "eval:doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "barang_yang_dikirim",
    "fieldtype": "Table",
    "label": "Barang yang Dikirim",
@@ -454,18 +467,21 @@
   {
    "bold": 1,
    "collapsible": 1,
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"||doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC03b\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "section_break_4ibvo",
    "fieldtype": "Section Break",
    "label": "BOM  Perhitungan Konversi",
    "options": "fa fa-rss"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"||doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC03b\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "bom_perhitungan_konversi",
    "fieldtype": "Table",
    "label": "BOM  Perhitungan Konversi",
    "options": "BOM  Perhitungan Konversi"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"",
    "fieldname": "area_asuransi_tab",
    "fieldtype": "Tab Break",
    "label": "Area Asuransi "
@@ -497,12 +513,14 @@
    "options": "Referensi Putusan Petugas"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"",
    "fieldname": "putusan_jaminan",
    "fieldtype": "Link",
    "label": "Putusan Jaminan",
    "options": "Referensi Putusan Petugas"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC08a\"||doc.kode_layanan===\"PKC08b\"||doc.kode_layanan===\"PKC08c\"||doc.kode_layanan===\"PKC08d\"||doc.kode_layanan===\"PKC08e\"||doc.kode_layanan===\"PKC08f\"||doc.kode_layanan===\"PKC08g\"||doc.kode_layanan===\"PKC08h\"||doc.kode_layanan===\"PKC08i\"",
    "fieldname": "putusan_perbaikan_data",
    "fieldtype": "Link",
    "label": "Putusan Perbaikan Data",
@@ -519,6 +537,7 @@
    "options": "Referensi Catatan Petugas"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"",
    "fieldname": "catatan_petugas_jaminan",
    "fieldtype": "Link",
    "label": "Catatan Petugas Jaminan",
@@ -553,17 +572,59 @@
    "label": "Alamat Perusahaan"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"",
    "fieldname": "penggunaan_jaminan",
    "fieldtype": "Select",
    "label": "Penggunaan Jaminan",
    "options": "Sekali\nTerus-Menerus"
+  },
+  {
+   "fetch_from": "kode_layanan.nama_layanan",
+   "fieldname": "nama_perihal_layanan",
+   "fieldtype": "Data",
+   "label": "Perihal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "barang_yang_akan_dimasukkan_section",
+   "fieldtype": "Section Break",
+   "label": "Barang yang akan Dimasukkan"
+  },
+  {
+   "fieldname": "barang_yang_akan_dimasukkan",
+   "fieldtype": "Table",
+   "label": "Barang yang akan Dimasukkan",
+   "options": "Barang yang akan Dimasukkan"
+  },
+  {
+   "depends_on": "eval:doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC03b\"",
+   "fieldname": "pengirim_barang",
+   "fieldtype": "Data",
+   "label": "Pengirim Barang"
+  },
+  {
+   "depends_on": "eval:doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC03b\"",
+   "fieldname": "npwp_pengirim_barang",
+   "fieldtype": "Data",
+   "label": "NPWP Pengirim Barang"
+  },
+  {
+   "depends_on": "eval:doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC03b\"",
+   "fieldname": "alamat_pengirim_barang",
+   "fieldtype": "Data",
+   "label": "Alamat Pengirim Barang"
+  },
+  {
+   "fieldname": "npwp_pemohon",
+   "fieldtype": "Data",
+   "label": "NPWP Pemohon"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2023-10-27 16:52:51.468769",
+ "modified": "2023-11-01 15:08:22.134509",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "PERMOHONAN PERIJINAN ONLINE V1",
