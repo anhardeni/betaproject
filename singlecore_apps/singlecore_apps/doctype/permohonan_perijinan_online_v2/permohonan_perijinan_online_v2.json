@@ -84,10 +84,11 @@
   "putusan_permohonan",
   "putusan_jaminan",
   "putusan_perbaikan_data",
-  "column_break_g90ut",
+  "column_break_qxbnp",
   "catatan_petugas_permohonan",
   "catatan_petugas_jaminan",
-  "amended_from",
+  "column_break_g90ut",
+  "penelitian_dan_keputusan",
   "amended_from"
  ],
  "fields": [
@@ -515,7 +516,7 @@
   },
   {
    "fieldname": "column_break_g90ut",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "catatan_petugas_permohonan",
@@ -534,7 +535,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "PERMOHONAN PERIJINAN ONLINE V1",
+   "options": "PERMOHONAN PERIJINAN ONLINE V2",
    "print_hide": 1,
    "read_only": 1
   },
@@ -546,13 +547,23 @@
    "options": "PERMOHONAN PERIJINAN ONLINE V2",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "penelitian_dan_keputusan",
+   "fieldtype": "Table",
+   "label": "Penelitian Dan Keputusan",
+   "options": "Penelitian dan Keputusan"
+  },
+  {
+   "fieldname": "column_break_qxbnp",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2023-10-26 17:42:12.127609",
+ "modified": "2023-11-20 16:46:58.935085",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "PERMOHONAN PERIJINAN ONLINE V2",

@@ -423,6 +423,7 @@
    "options": "Barang yang Dikirim"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC03b\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "section_break_mj6z0",
    "fieldtype": "Section Break",
    "label": " Barang yang Dihasilkan",
@@ -431,6 +432,7 @@
   {
    "allow_bulk_edit": 1,
    "bold": 1,
+   "depends_on": "eval:doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC01b\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC03b\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "barang_yang_dihasilkan",
    "fieldtype": "Table",
    "label": "Barang yang Dihasilkan",
@@ -459,6 +461,7 @@
    "options": "fa fa-rss"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "barang_bahan_yang_ditambahkan",
    "fieldtype": "Table",
    "label": "Barang Bahan yang Ditambahkan",
@@ -487,16 +490,19 @@
    "label": "Area Asuransi "
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"",
    "fieldname": "no_polis",
    "fieldtype": "Data",
    "label": "No Polis"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"",
    "fieldname": "tanggal_polis",
    "fieldtype": "Date",
    "label": "Tanggal Polis"
   },
   {
+   "depends_on": "eval:doc.kode_layanan===\"PBN01\"||doc.kode_layanan===\"PBN02\"",
    "fieldname": "upload_polis",
    "fieldtype": "Attach",
    "label": "Upload Polis"
@@ -591,6 +597,7 @@
    "label": "Barang yang akan Dimasukkan"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "barang_yang_akan_dimasukkan",
    "fieldtype": "Table",
    "label": "Barang yang akan Dimasukkan",
@@ -624,7 +631,7 @@
  "is_submittable": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2023-11-01 15:08:22.134509",
+ "modified": "2023-11-24 09:13:59.909595",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "PERMOHONAN PERIJINAN ONLINE V1",

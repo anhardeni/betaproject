@@ -1,0 +1,53 @@
+from typing import List, Optional
+from sqlmodel import Field, Relationship, SQLModel
+
+metadata = SQLModel.metadata
+
+class ChildTable(SQLModel, table=True):
+    __tablename__ = 'child_table'
+
+    id: int = Field(primary_key=True, nullable=False)
+    parent_id: int = Field(primary_key=True, nullable=False))
+    desc: Optional[str] 
+
+
+class GrandchildTable(SQLModel, table=True):
+    __tablename__ = 'grandchild_table'
+
+    id: int = Field(primary_key=True, nullable=False))
+    child_id: int = Field(primary_key=True, nullable=False))
+    desc: Optional[str] = Field(default=None)
+
+
+class ParentTable(SQLModel, table=True):
+    __tablename__ = 'parent_table'
+
+    id: int = Field(sa_column=mapped_column('id', INTEGER(11), primary_key=True))
+    desc: Optional[str] = Field(default=None, sa_column=mapped_column('desc', String(20)))
+
+
+class Team(SQLModel, table=True):
+    __table_args__ = (
+        Index('team_name', 'team_name', unique=True),
+    )
+
+    id: Optional[int] = Field(default=None, sa_column=mapped_column('id', INTEGER(10), primary_key=True))
+    team_name: str = Field(sa_column=mapped_column('team_name', String(30), nullable=False))
+    description: Optional[str] = Field(default=None, sa_column=mapped_column('description', Text))
+
+    person: List['Person'] = Relationship(back_populates='team')
+
+
+class Person(SQLModel, table=True):
+    __table_args__ = (
+        ForeignKeyConstraint(['id_team'], ['team.id'], name='person_ibfk_1'),
+        Index('id_team', 'id_team'),
+        Index('team_person', 'id', 'id_team', unique=True)
+    )
+
+    id: Optional[int] = Field(default=None, sa_column=mapped_column('id', INTEGER(10), primary_key=True))
+    id_team: int = Field(sa_column=mapped_column('id_team', INTEGER(10), nullable=False))
+    person_name: str = Field(sa_column=mapped_column('person_name', String(40), nullable=False))
+    notes: str = Field(sa_column=mapped_column('notes', String(40), nullable=False))
+
+    team: Optional['Team'] = Relationship(back_populates='person')

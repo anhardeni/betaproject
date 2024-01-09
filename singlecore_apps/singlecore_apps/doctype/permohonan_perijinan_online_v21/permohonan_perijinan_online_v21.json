@@ -1,0 +1,578 @@
+{
+ "actions": [],
+ "autoname": "format:AJUBETA-{#####}",
+ "creation": "2023-11-17 14:51:47.806926",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "petugas_area",
+  "nomor_surat_persetujuan",
+  "pejabat_penandatangan",
+  "lampiran_persetujuan",
+  "tanggal_surat_persetujuan",
+  "tanggal_jatuh_tempo",
+  "sifat_surat_persetujuan",
+  "perihal_surat_persetujuan",
+  "pemohon_area_column",
+  "pengeluaran_sementara",
+  "nama_pemohon",
+  "alamat_pemohon",
+  "nomor_npwp",
+  "nomor_permohonan",
+  "tanggal_permohonan",
+  "kode_layanan",
+  "nama_perihal_layana",
+  "lampiran_permohonan",
+  "tujuan_surat_pemohon",
+  "upload1",
+  "upload2a",
+  "upload2b",
+  "upload3",
+  "tanda_tangan_pemohon",
+  "breakcolumn_permohonan",
+  "no_surat_aju_jaminan",
+  "tgl_surat_aju_jaminan",
+  "no_surat_tarik_jaminan",
+  "tgl_surat_tarik_jaminan",
+  "penerima_barang",
+  "npwp_penerima_barang",
+  "alamat_penerima_barang",
+  "no_kontrak",
+  "tanggal_kontrak",
+  "jenis_pekerjaan",
+  "jenis_jaminan",
+  "pengunaan_jaminan",
+  "nilai_jaminan",
+  "jaminan_in_words",
+  "nama_penjamin",
+  "jabatan_pemohon",
+  "dasar_aturan",
+  "jangka_waktu_pekerjaan",
+  "tanggal_batas_akhir_pekerjaan",
+  "perbaikan_data_section",
+  "kode_dokumen",
+  "nomor_aju",
+  "tanggal_aju",
+  "column_break_qzwu3",
+  "nomor_pendaftaran",
+  "tanggal_pendaftaran",
+  "alasan_perbaikan",
+  "alasan_pembatalan",
+  "dokumen_pendukung",
+  "section_break_kou5u",
+  "detail_perubahan_dokumen",
+  "section_break_aeb2z",
+  "detail_pembatalan_dokumen",
+  "data_barang_tab",
+  "barang_yang_dikirim_section",
+  "barang_yang_dikirim",
+  "section_break_mj6z0",
+  "barang_yang_dihasilkan",
+  "section_break_url2h",
+  "barang_bahan_sisa_potongan",
+  "section_break_slaok",
+  "barang_bahan_yang_ditambahkan",
+  "section_break_4ibvo",
+  "bom_perhitungan_konversi",
+  "area_asuransi_tab",
+  "no_polis",
+  "tanggal_polis",
+  "upload_polis",
+  "penelitian_putusan_tab",
+  "penelitian_dan_keputusan",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "petugas_area",
+   "fieldtype": "Tab Break",
+   "label": "Petugas Area"
+  },
+  {
+   "fieldname": "nomor_surat_persetujuan",
+   "fieldtype": "Data",
+   "label": "Nomor Surat Persetujuan"
+  },
+  {
+   "fieldname": "pejabat_penandatangan",
+   "fieldtype": "Data",
+   "label": "Pejabat Penandatangan"
+  },
+  {
+   "fieldname": "lampiran_persetujuan",
+   "fieldtype": "Data",
+   "label": "Lampiran Persetujuan"
+  },
+  {
+   "fieldname": "tanggal_surat_persetujuan",
+   "fieldtype": "Date",
+   "label": "Tanggal Surat Persetujuan"
+  },
+  {
+   "fieldname": "tanggal_jatuh_tempo",
+   "fieldtype": "Date",
+   "label": "Tanggal Jatuh Tempo"
+  },
+  {
+   "fieldname": "sifat_surat_persetujuan",
+   "fieldtype": "Data",
+   "label": "Sifat Surat Persetujuan"
+  },
+  {
+   "fieldname": "perihal_surat_persetujuan",
+   "fieldtype": "Data",
+   "label": "Perihal Surat Persetujuan"
+  },
+  {
+   "fieldname": "pemohon_area_column",
+   "fieldtype": "Tab Break",
+   "label": "Pemohon Area"
+  },
+  {
+   "fieldname": "pengeluaran_sementara",
+   "fieldtype": "Section Break",
+   "label": "Permohonan Pengguna Jasa"
+  },
+  {
+   "fieldname": "nama_pemohon",
+   "fieldtype": "Data",
+   "label": "Nama Pemohon"
+  },
+  {
+   "fieldname": "alamat_pemohon",
+   "fieldtype": "Data",
+   "label": "Alamat Pemohon"
+  },
+  {
+   "fieldname": "nomor_npwp",
+   "fieldtype": "Data",
+   "label": "NPWP Pemohon"
+  },
+  {
+   "fieldname": "nomor_permohonan",
+   "fieldtype": "Data",
+   "label": "Nomor"
+  },
+  {
+   "fieldname": "tanggal_permohonan",
+   "fieldtype": "Date",
+   "label": "Tanggal Permohonan"
+  },
+  {
+   "fieldname": "kode_layanan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Perihal",
+   "options": "Referensi Layanan Fix"
+  },
+  {
+   "fetch_from": "kode_layanan.nama_layanan",
+   "fieldname": "nama_perihal_layana",
+   "fieldtype": "Data",
+   "label": "Nama Perihal Layanan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lampiran_permohonan",
+   "fieldtype": "Data",
+   "label": "Lampiran"
+  },
+  {
+   "fieldname": "tujuan_surat_pemohon",
+   "fieldtype": "Data",
+   "label": "Tujuan Surat Pemohon"
+  },
+  {
+   "fieldname": "upload1",
+   "fieldtype": "Attach",
+   "label": "Upload Permohonan"
+  },
+  {
+   "fieldname": "upload2a",
+   "fieldtype": "Attach",
+   "label": "Upload Aju Jaminan"
+  },
+  {
+   "fieldname": "upload2b",
+   "fieldtype": "Attach",
+   "label": "Upload Tarik Jaminan"
+  },
+  {
+   "fieldname": "upload3",
+   "fieldtype": "Attach",
+   "label": "Upload Dok Lain"
+  },
+  {
+   "fieldname": "tanda_tangan_pemohon",
+   "fieldtype": "Signature",
+   "label": "Tanda Tangan Pemohon"
+  },
+  {
+   "fieldname": "breakcolumn_permohonan",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_surat_aju_jaminan",
+   "fieldtype": "Data",
+   "label": "No Surat Aju Jaminan",
+   "length": 50
+  },
+  {
+   "fieldname": "tgl_surat_aju_jaminan",
+   "fieldtype": "Date",
+   "label": "Tgl Surat Aju Jaminan"
+  },
+  {
+   "fieldname": "no_surat_tarik_jaminan",
+   "fieldtype": "Data",
+   "label": " No Surat Tarik Jaminan",
+   "length": 50
+  },
+  {
+   "fieldname": "tgl_surat_tarik_jaminan",
+   "fieldtype": "Date",
+   "label": " Tgl Surat Tarik Jaminan"
+  },
+  {
+   "fieldname": "penerima_barang",
+   "fieldtype": "Data",
+   "label": "Penerima Barang"
+  },
+  {
+   "fieldname": "npwp_penerima_barang",
+   "fieldtype": "Data",
+   "label": "NPWP Penerima Barang"
+  },
+  {
+   "fieldname": "alamat_penerima_barang",
+   "fieldtype": "Data",
+   "label": "Alamat Penerima Barang"
+  },
+  {
+   "fieldname": "no_kontrak",
+   "fieldtype": "Data",
+   "label": "No Kontrak"
+  },
+  {
+   "fieldname": "tanggal_kontrak",
+   "fieldtype": "Date",
+   "label": "Tanggal Kontrak"
+  },
+  {
+   "fieldname": "jenis_pekerjaan",
+   "fieldtype": "Select",
+   "label": "Jenis Pekerjaan",
+   "options": "\nWASHING"
+  },
+  {
+   "fieldname": "jenis_jaminan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Jenis Jaminan",
+   "options": "Referensi Jenis Jaminan"
+  },
+  {
+   "fieldname": "pengunaan_jaminan",
+   "fieldtype": "Select",
+   "label": "Pengunaan Jaminan",
+   "options": "Sekali\nTerus-Menerus"
+  },
+  {
+   "fieldname": "nilai_jaminan",
+   "fieldtype": "Currency",
+   "label": "Nilai Jaminan"
+  },
+  {
+   "fieldname": "jaminan_in_words",
+   "fieldtype": "Data",
+   "label": "Terbilang",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nama_penjamin",
+   "fieldtype": "Data",
+   "label": "Nama Penjamin"
+  },
+  {
+   "fieldname": "jabatan_pemohon",
+   "fieldtype": "Data",
+   "label": "Jabatan Pemohon"
+  },
+  {
+   "fieldname": "dasar_aturan",
+   "fieldtype": "Data",
+   "label": "Dasar Aturan"
+  },
+  {
+   "fieldname": "jangka_waktu_pekerjaan",
+   "fieldtype": "Duration",
+   "hide_seconds": 1,
+   "label": "Jangka Waktu Pekerjaan"
+  },
+  {
+   "fieldname": "tanggal_batas_akhir_pekerjaan",
+   "fieldtype": "Date",
+   "label": "Tanggal Batas Akhir Pekerjaan "
+  },
+  {
+   "fieldname": "perbaikan_data_section",
+   "fieldtype": "Section Break",
+   "label": "Perbaikan Data Dokumen"
+  },
+  {
+   "fieldname": "kode_dokumen",
+   "fieldtype": "Link",
+   "label": "Referensi Dokumen",
+   "options": "Referensi Dokumen"
+  },
+  {
+   "fieldname": "nomor_aju",
+   "fieldtype": "Data",
+   "label": "Nomor Aju"
+  },
+  {
+   "fieldname": "tanggal_aju",
+   "fieldtype": "Date",
+   "label": "Tanggal Aju"
+  },
+  {
+   "fieldname": "column_break_qzwu3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nomor_pendaftaran",
+   "fieldtype": "Data",
+   "label": "Nomor Pendaftaran"
+  },
+  {
+   "fieldname": "tanggal_pendaftaran",
+   "fieldtype": "Date",
+   "label": "Tanggal Pendaftaran"
+  },
+  {
+   "fieldname": "alasan_perbaikan",
+   "fieldtype": "Text",
+   "label": "Alasan Perbaikan"
+  },
+  {
+   "fieldname": "alasan_pembatalan",
+   "fieldtype": "Text",
+   "label": "Alasan Pembatalan"
+  },
+  {
+   "fieldname": "dokumen_pendukung",
+   "fieldtype": "Data",
+   "label": "Dokumen Pendukung"
+  },
+  {
+   "fieldname": "section_break_kou5u",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "detail_perubahan_dokumen",
+   "fieldtype": "Table",
+   "label": "Detail Perubahan Dokumen",
+   "options": "Detail Perubahan Dokumen"
+  },
+  {
+   "fieldname": "section_break_aeb2z",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "detail_pembatalan_dokumen",
+   "fieldtype": "Table",
+   "label": "Detail Pembatalan Dokumen",
+   "options": "Detail Pembatalan Dokumen"
+  },
+  {
+   "fieldname": "data_barang_tab",
+   "fieldtype": "Tab Break",
+   "label": "Data Barang"
+  },
+  {
+   "bold": 1,
+   "fieldname": "barang_yang_dikirim_section",
+   "fieldtype": "Section Break",
+   "label": "Barang yang Dikirim"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "barang_yang_dikirim",
+   "fieldtype": "Table",
+   "label": "Barang yang Dikirim",
+   "options": "Barang yang Dikirim"
+  },
+  {
+   "fieldname": "section_break_mj6z0",
+   "fieldtype": "Section Break",
+   "label": " Barang yang Dihasilkan",
+   "options": "fa fa-tasks\n"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "bold": 1,
+   "fieldname": "barang_yang_dihasilkan",
+   "fieldtype": "Table",
+   "label": "Barang yang Dihasilkan",
+   "options": "Barang yang Dihasilkan"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_url2h",
+   "fieldtype": "Section Break",
+   "label": "Barang Bahan Sisa Potongan",
+   "options": "fa fa-tasks"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "bold": 1,
+   "fieldname": "barang_bahan_sisa_potongan",
+   "fieldtype": "Table",
+   "label": "Barang Bahan Sisa Potongan",
+   "options": "Barang Bahan Sisa Potongan"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_slaok",
+   "fieldtype": "Section Break",
+   "label": " Barang Bahan yang Ditambahkan",
+   "options": "fa fa-rss"
+  },
+  {
+   "fieldname": "barang_bahan_yang_ditambahkan",
+   "fieldtype": "Table",
+   "label": "Barang Bahan yang Ditambahkan",
+   "options": "Barang Bahan yang Ditambahkan"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_break_4ibvo",
+   "fieldtype": "Section Break",
+   "label": "BOM  Perhitungan Konversi",
+   "options": "fa fa-rss"
+  },
+  {
+   "fieldname": "bom_perhitungan_konversi",
+   "fieldtype": "Table",
+   "label": "BOM  Perhitungan Konversi",
+   "options": "BOM  Perhitungan Konversi"
+  },
+  {
+   "fieldname": "area_asuransi_tab",
+   "fieldtype": "Tab Break",
+   "label": "Area Asuransi "
+  },
+  {
+   "fieldname": "no_polis",
+   "fieldtype": "Data",
+   "label": "No Polis"
+  },
+  {
+   "fieldname": "tanggal_polis",
+   "fieldtype": "Date",
+   "label": "Tanggal Polis"
+  },
+  {
+   "fieldname": "upload_polis",
+   "fieldtype": "Attach",
+   "label": "Upload Polis"
+  },
+  {
+   "fieldname": "penelitian_putusan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Penelitian Putusan"
+  },
+  {
+   "fieldname": "penelitian_dan_keputusan",
+   "fieldtype": "Table",
+   "label": "Penelitian Dan Keputusan",
+   "options": "Penelitian dan Keputusan"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PERMOHONAN PERIJINAN ONLINE V21",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PERMOHONAN PERIJINAN ONLINE V21",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "max_attachments": 5,
+ "modified": "2023-11-17 14:52:44.717858",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "PERMOHONAN PERIJINAN ONLINE V21",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Lv.1",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Lv.2",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Analis",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

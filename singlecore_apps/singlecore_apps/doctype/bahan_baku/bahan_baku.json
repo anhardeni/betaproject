@@ -123,8 +123,9 @@
   },
   {
    "fieldname": "kode_kantor_asal",
-   "fieldtype": "Data",
-   "label": "KODE KANTOR ASAL"
+   "fieldtype": "Link",
+   "label": "KODE KANTOR ASAL",
+   "options": "Referensi Kantor"
   },
   {
    "fieldname": "nomor_daftar_asal",
@@ -256,7 +257,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-10 18:22:41.037134",
+ "modified": "2023-11-15 16:55:06.469344",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BAHAN BAKU",

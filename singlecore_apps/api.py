@@ -2,6 +2,7 @@ from os import stat
 import frappe
 from frappe.query_builder import DocType
 
+
 SUCCESS = 200
 NOT_FOUND = 400
 
@@ -106,4 +107,19 @@ def get_all_bc301():
          ;""", as_dict=True)
 
     return bc301
+
+@frappe.whitelist(allow_guest=True)
+def get_all_bctest01():
+    bctest01 = frappe.db.sql("""select json_object(
+        'id',p.id
+        ,'desc',p.desc
+        ,'child_objects',JSON_EXTRACT(IFNULL((select
+        CONCAT('[',GROUP_CONCAT(
+        json_object('id',c.id,'parent_id',c.parent_id,'desc',c.desc)
+        ),']')   
+        from `child_table` c where  c.parent_id = p.id),'[]'),'$')
+        ) from `parent_table` p where p.id = 2;""", as_dict=True)
+
+    return bctest01
+
  
