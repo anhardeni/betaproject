@@ -1,0 +1,184 @@
+{
+    "asalData": "S",
+    "asuransi": 0,
+    "barang": [
+      {
+        "bahanBaku": [
+          {
+            "cif": 0,
+            "cifRupiah": 0,
+            "hargaPenyerahan": 21.6,
+            "hargaPerolehan": 0,
+            "jumlahSatuan": 300,
+            "kodeAsalBahanBaku": "1",
+            "kodeBarang": ".",
+            "kodeDokAsal": "40",
+            "kodeDokumen": "",
+            "kodeKantor": "150300",
+            "kodeSatuanBarang": "NPR",
+            "merkBarang": "-",
+            "ndpbm": 0,
+            "netto": 0,
+            "nilaiJasa": 0,
+            "nomorAjuDokAsal": "15034001061820240111000231",
+            "nomorDaftarDokAsal": "602783",
+            "posTarif": "39269081",
+            "seriBahanBaku": 1,
+            "seriBarang": 1,
+            "seriBarangDokAsal": 0,
+            "seriIjin": 0,
+            "spesifikasiLainBarang": "-",
+            "tanggalDaftarDokAsal": "2024-01-11",
+            "tipeBarang": "-",
+            "ukuranBarang": "-",
+            "uraianBarang": "LC, SL001, OVAL, PT 1TONE;120 CM;9-12T;4.00 MM;BLACK/CLEAR A"
+          }
+        ],
+        "cif": 0,
+        "cifRupiah": 0,
+        "hargaEkspor": 0,
+        "hargaPenyerahan": 334864.8,
+        "hargaPerolehan": 0,
+        "isiPerKemasan": 0,
+        "jumlahKemasan": 1,
+        "jumlahSatuan": 300,
+        "kodeAsalBahanBaku": "1",
+        "kodeBarang": ".",
+        "kodeDokumen": "41",
+        "kodeJenisKemasan": "BG",
+        "kodeSatuanBarang": "NPR",
+        "merk": "-",
+        "ndpbm": 0,
+        "netto": 2,
+        "nilaiBarang": 0,
+        "nilaiJasa": 0,
+        "posTarif": "39269081",
+        "seriBarang": 1,
+        "spesifikasiLain": "-",
+        "tipe": "-",
+        "uangMuka": 0,
+        "ukuran": "-",
+        "uraian": "LC, SL001, OVAL, PT 1TONE;120 CM;9-12T;4.00 MM;BLACK/CLEAR AGLET",
+        "volume": 0
+      }
+    ],
+    "biayaPengurang": 0,
+    "biayaTambahan": 0,
+    "bruto": 2.5,
+    "cif": 0,
+    "dokumen": [
+      {
+        "idDokumen": "",
+        "kodeDokumen": "380",
+        "nomorDokumen": "-",
+        "seriDokumen": 1,
+        "tanggalDokumen": "1900-01-01"
+      },
+      {
+        "idDokumen": "",
+        "kodeDokumen": "640",
+        "nomorDokumen": "0765/PAI/MAT/I/2024",
+        "seriDokumen": 2,
+        "tanggalDokumen": "2024-01-29"
+      },
+      {
+        "idDokumen": "",
+        "kodeDokumen": "217",
+        "nomorDokumen": "0765/PAI/MAT/I/2024",
+        "seriDokumen": 3,
+        "tanggalDokumen": "2024-01-29"
+      },
+      {
+        "idDokumen": "",
+        "kodeDokumen": "40",
+        "nomorDokumen": "602783",
+        "seriDokumen": 4,
+        "tanggalDokumen": "2024-01-11"
+      }
+    ],
+    "entitas": [
+      {
+        "alamatEntitas": "JALAN RAYA SERPONG KM. 7, KAMURANG ATAS RT.002 RW.001 PAKUALAM SERPONG UTARA, KOTA TANGERANG SELATAN BANTEN 15320",
+        "kodeEntitas": "3",
+        "kodeJenisApi": "02",
+        "kodeJenisIdentitas": "5",
+        "kodeStatus": "",
+        "namaEntitas": "PRATAMA ABADI INDUSTRI",
+        "nibEntitas": "8120104842705",
+        "nomorIdentitas": "010618270057000",
+        "nomorIjinEntitas": "2661/KM.4/2017",
+        "seriEntitas": 1,
+        "tanggalIjinEntitas": "2017-10-12"
+      },
+      {
+        "alamatEntitas": "JALAN RAYA SERPONG KM. 7, KAMURANG ATAS RT.002 RW.001 PAKUALAM SERPONG UTARA, KOTA TANGERANG SELATAN BANTEN 15320",
+        "kodeEntitas": "7",
+        "kodeJenisApi": "02",
+        "kodeJenisIdentitas": "5",
+        "kodeStatus": "10",
+        "namaEntitas": "PRATAMA ABADI INDUSTRI",
+        "nibEntitas": "8120104842705",
+        "nomorIdentitas": "010618270057000",
+        "nomorIjinEntitas": "2661/KM.4/2017",
+        "seriEntitas": 2,
+        "tanggalIjinEntitas": "2017-10-12"
+      },
+      {
+        "alamatEntitas": "JALAN PERINTIS KEMERDEKAAN KM.6 KP. CIMENTENG RT.001/005 SUKABUMI",
+        "kodeEntitas": "8",
+        "kodeJenisApi": "02",
+        "kodeJenisIdentitas": "5",
+        "kodeStatus": "10",
+        "namaEntitas": "PAIHO INDONESIA, PT",
+        "nibEntitas": "",
+        "nomorIdentitas": "312015324405000",
+        "nomorIjinEntitas": "",
+        "seriEntitas": 3,
+        "tanggalIjinEntitas": ""
+      }
+    ],
+    "freight": 0,
+    "hargaPenyerahan": 21.6,
+    "jabatanTtd": "KUASA DIREKSI",
+    "jumlahKontainer": 0,
+    "kemasan": [
+      {
+        "jumlahKemasan": 1,
+        "kodeJenisKemasan": "BG",
+        "merkKemasan": "-",
+        "seriKemasan": 1
+      }
+    ],
+    "kodeDokumen": "41",
+    "kodeJenisEkspor": "",
+    "kodeJenisImpor": "",
+    "kodeJenisTpb": "1",
+    "kodeKantor": "150300",
+    "kodeLokasiBayar": "",
+    "kodePembayar": "",
+    "kodeTujuanPengiriman": "3",
+    "kontainer": [],
+    "kotaTtd": "TANGERANG",
+    "namaTtd": "",
+    "ndpbm": 0,
+    "netto": 2,
+    "nik": "",
+    "nilaiBarang": 0,
+    "nomorAju": "15034101061820240129000021",
+    "pengangkut": [
+      {
+        "namaPengangkut": "Mobil Box",
+        "nomorPengangkut": "F 1524 UT",
+        "seriPengangkut": "1"
+      }
+    ],
+    "seri": 0,
+    "tanggalAju": "2024-01-29",
+    "tanggalTtd": "2024-01-29",
+    "uangMuka": 0,
+    "userPortal": "",
+    "vd": 0,
+    "volume": 0
+  }
+  
+  

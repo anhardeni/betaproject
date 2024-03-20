@@ -2,6 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "field:kode_spek_khusus",
  "creation": "2023-06-22 08:44:33.141863",
  "default_view": "List",
  "doctype": "DocType",
@@ -9,7 +10,8 @@
  "engine": "InnoDB",
  "field_order": [
   "kode_spek_khusus",
-  "nama_spek_khusus"
+  "nama_spek_khusus",
+  "group_spek_khusus"
  ],
  "fields": [
   {
@@ -17,20 +19,28 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "KODE SPEK KHUSUS",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "nama_spek_khusus",
    "fieldtype": "Data",
    "label": "Uraian Barang Spek Khusus"
+  },
+  {
+   "fieldname": "group_spek_khusus",
+   "fieldtype": "Select",
+   "label": "Group Spek Khusus",
+   "options": "\nKENDARAAN BERMOTOR\nCHEMICAL ABSTRACT SERVICE (CAS)\nICUMSA"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-05 15:28:40.388288",
+ "modified": "2024-01-26 14:07:42.887542",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Referensi Spesifikasi Khusus",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

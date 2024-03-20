@@ -13,7 +13,9 @@ from database import Base
 
 
 class ParentBase(SQLModel):
-     desc: Optional[str] = Field(default=None)
+     #desc: Optional[str] = Field(default=None)
+     desc: Optional[str] = Field(validation_alias="descParent", default=None)
+     #secret_name: str = Field(validation_alias="secretName")
 
 class ParentTable(ParentBase, table=True):
     __tablename__ = 'parent_table'
@@ -27,7 +29,7 @@ class ParentRead(ParentBase):
 # #-----------------------------------------------
 class ChildBase(SQLModel):
     parent_id: Optional [int] = Field(default= None, foreign_key= 'parent_table.id')
-    desc: Optional[str] = Field(alias='Keterangan')
+    desc: Optional[str] = Field(default=None, validation_alias='Keterangan')
     
 
 class ChildTable(ChildBase,table=True):
@@ -58,6 +60,7 @@ class GrandchildRead(GrandchildBase):
 #-----------------------------------------------------------------
 class ParentdWithChild(ParentRead):
     childs: List[ChildRead] = []
+    #grandchilds: List[ChildWithGrandchild] = []
 
 
 class ChildWithGrandchild(ChildRead):

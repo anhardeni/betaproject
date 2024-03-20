@@ -459,8 +459,8 @@
   },
   {
    "fieldname": "detail_section",
-   "fieldtype": "Section Break",
-   "label": "Detail"
+   "fieldtype": "Tab Break",
+   "label": "TARIF DAN DOKUMEN"
   },
   {
    "fieldname": "barang_tarif",
@@ -488,7 +488,7 @@
    "link_fieldname": "nomoraju"
   }
  ],
- "modified": "2023-10-27 19:26:00.327685",
+ "modified": "2024-01-30 18:40:58.933245",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG V1",

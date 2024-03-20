@@ -127,7 +127,8 @@ def read_parentwithchildren(*, id: int, session: Session = Depends(get_session))
 
 
 @app.get("/children-with-grandchild/{id}", response_model=ChildWithGrandchild)
-def read_childwithgrandchild(*, id: int, session: Session = Depends(get_session)):
+def read_childwithgrandchild  
+(*, id: int, session: Session = Depends(get_session)):
     child_table_link = session.get(ChildTable, id)
     if not  child_table_link:
         raise HTTPException(status_code=404, detail=" childs not found")

@@ -412,7 +412,7 @@
    "depends_on": "eval:doc.kode_layanan===\"PKC01a\"||doc.kode_layanan===\"PKC02a\"||doc.kode_layanan===\"PKC03a\"||doc.kode_layanan===\"PKC04\"||doc.kode_layanan===\"PKC05\"||doc.kode_layanan===\"PKC06\"||doc.kode_layanan===\"PKC07\"",
    "fieldname": "barang_yang_dikirim_section",
    "fieldtype": "Section Break",
-   "label": "Barang yang Dikirim"
+   "label": "Barang yang Dikirim_Keluar"
   },
   {
    "allow_bulk_edit": 1,
@@ -631,7 +631,7 @@
  "is_submittable": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2023-11-24 09:13:59.909595",
+ "modified": "2024-02-23 16:47:15.829696",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "PERMOHONAN PERIJINAN ONLINE V1",

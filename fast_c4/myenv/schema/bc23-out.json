@@ -1,0 +1,289 @@
+{
+    "asalData": "S",
+    "asuransi": 0.0,
+    "bruto": 20820,
+    "cif": 86748,
+    "fob": 0,
+    "freight": 0,
+    "hargaPenyerahan": 0,
+    "jabatanTtd": "DIREKTUR",
+    "jumlahKontainer": 0,
+    "kodeAsuransi": "LN",
+    "kodeDokumen": "23",
+    "kodeIncoterm": "CIF",
+    "kodeKantor": "150300",
+    "kodeKantorBongkar": "040300",
+    "kodePelBongkar": "IDTPP",
+    "kodePelMuat": "CNSHK",
+    "kodePelTransit": "000000",
+    "kodeTps": "TPK1",
+    "kodeTujuanTpb": "1",
+    "kodeTutupPu": "11",
+    "kodeValuta": "USD",
+    "kotaTtd": "TANGERANG",
+    "namaTtd": "LIONG TJOEN TJEN",
+    "ndpbm": 15701,
+    "netto": 0,
+    "nik": "05.023170",
+    "nilaiBarang": 86748,
+    "nomorAju": "00002331207820231019000002",
+    "nomorBc11": "004670",
+    "posBc11": "0305",
+    "seri": 1,
+    "subposBc11": "00000000",
+    "tanggalBc11": "2023-10-17",
+    "tanggalTiba": "2023-10-20",
+    "tanggalTtd": "2023-10-18",
+    "biayaTambahan": 0,
+    "biayaPengurang": 0,
+    "kodeKenaPajak": "1",
+    "barang": [
+      {
+        "idBarang": "-",
+        "asuransi": 0,
+        "cif": 12408,
+        "diskon": 0,
+        "fob": 0,
+        "freight": 0,
+        "hargaEkspor": 0,
+        "hargaPenyerahan": 0,
+        "hargaSatuan": 5.17,
+        "isiPerKemasan": 0,
+        "jumlahKemasan": 2,
+        "jumlahSatuan": 2400,
+        "kodeBarang": "BB000001",
+        "kodeDokumen": "",
+        "kodeKategoriBarang": "11",
+        "kodeJenisKemasan": "PX",
+        "kodeNegaraAsal": "CN",
+        "kodePerhitungan": "1",
+        "kodeSatuanBarang": "KGM",
+        "merk": "",
+        "netto": 2400,
+        "nilaiBarang": 12408,
+        "nilaiTambah": 0,
+        "posTarif": "39095000",
+        "seriBarang": 1,
+        "spesifikasiLain": "-",
+        "tipe": "-",
+        "ukuran": "-",
+        "uraian": "THERMOPLASTICS POWDER P357",
+        "ndpbm": 15701,
+        "cifRupiah": 194818008,
+        "hargaPerolehan": 0,
+        "kodeAsalBahanBaku": "0",
+        "barangTarif": [
+          {
+            "kodeJenisTarif": "1",
+            "jumlahSatuan": 2400,
+            "kodeFasilitasTarif": "3",
+            "kodeSatuanBarang": "KGM",
+            "kodeJenisPungutan": "BM",
+            "nilaiBayar": 0,
+            "nilaiFasilitas": 9740900.4,
+            "nilaiSudahDilunasi": 0,
+            "seriBarang": 1,
+            "tarif": 5,
+            "tarifFasilitas": 100
+          },
+          {
+            "kodeJenisTarif": "1",
+            "jumlahSatuan": 2400,
+            "kodeFasilitasTarif": "6",
+            "kodeSatuanBarang": "KGM",
+            "kodeJenisPungutan": "PPH",
+            "nilaiBayar": 0,
+            "nilaiFasilitas": 5113972.71,
+            "nilaiSudahDilunasi": 0,
+            "seriBarang": 1,
+            "tarif": 2.5,
+            "tarifFasilitas": 100
+          },
+          {
+            "kodeJenisTarif": "1",
+            "jumlahSatuan": 2400,
+            "kodeFasilitasTarif": "6",
+            "kodeSatuanBarang": "KGM",
+            "kodeJenisPungutan": "PPN",
+            "nilaiBayar": 0,
+            "nilaiFasilitas": 22501479.92,
+            "nilaiSudahDilunasi": 0,
+            "seriBarang": 1,
+            "tarif": 11,
+            "tarifFasilitas": 100
+          }
+        ],
+        "barangDokumen": [
+          {
+            "seriDokumen": ""
+          }
+        ]
+      },
+      {
+        "idBarang": "-",
+        "asuransi": 0,
+        "cif": 12408,
+        "diskon": 0,
+        "fob": 0,
+        "freight": 0,
+        "hargaEkspor": 0,
+        "hargaPenyerahan": 0,
+        "hargaSatuan": 4.13,
+        "isiPerKemasan": 0,
+        "jumlahKemasan": 18,
+        "jumlahSatuan": 18000,
+        "kodeBarang": "BB000008",
+        "kodeDokumen": "",
+        "kodeKategoriBarang": "11",
+        "kodeJenisKemasan": "PX",
+        "kodeNegaraAsal": "CN",
+        "kodePerhitungan": "1",
+        "kodeSatuanBarang": "KGM",
+        "merk": "",
+        "netto": 18000,
+        "nilaiBarang": 74340,
+        "nilaiTambah": 0,
+        "posTarif": "39095000",
+        "seriBarang": 2,
+        "spesifikasiLain": "-",
+        "tipe": "-",
+        "ukuran": "-",
+        "uraian": "THERMOPLASTIC POWDER RP 1.0",
+        "ndpbm": 15701,
+        "cifRupiah": 1167212340,
+        "hargaPerolehan": 0,
+        "kodeAsalBahanBaku": "0",
+        "barangTarif": [
+          {
+            "kodeJenisTarif": "1",
+            "jumlahSatuan": 18000,
+            "kodeFasilitasTarif": "3",
+            "kodeSatuanBarang": "KGM",
+            "kodeJenisPungutan": "BM",
+            "nilaiBayar": 0,
+            "nilaiFasilitas": 58360617,
+            "nilaiSudahDilunasi": 0,
+            "seriBarang": 2,
+            "tarif": 5,
+            "tarifFasilitas": 100
+          },
+          {
+            "kodeJenisTarif": "1",
+            "jumlahSatuan": 18000,
+            "kodeFasilitasTarif": "6",
+            "kodeSatuanBarang": "KGM",
+            "kodeJenisPungutan": "PPH",
+            "nilaiBayar": 0,
+            "nilaiFasilitas": 30639323.93,
+            "nilaiSudahDilunasi": 0,
+            "seriBarang": 2,
+            "tarif": 2.5,
+            "tarifFasilitas": 100
+          },
+          {
+            "kodeJenisTarif": "1",
+            "jumlahSatuan": 2400,
+            "kodeFasilitasTarif": "6",
+            "kodeSatuanBarang": "KGM",
+            "kodeJenisPungutan": "PPN",
+            "nilaiBayar": 0,
+            "nilaiFasilitas": 134813025.27,
+            "nilaiSudahDilunasi": 0,
+            "seriBarang": 2,
+            "tarif": 11,
+            "tarifFasilitas": 100
+          }
+        ],
+        "barangDokumen": [
+          {
+            "seriDokumen": ""
+          }
+        ]
+      }
+    ],
+    "entitas": [
+      {
+        "alamatEntitas": "JL. MILLENIUM 22 BLOK R3 NO.7\r\nKAWASAN INDUSTRI MILLENIUM / KADU AGUNG\r\nTIGARAKSA, TANGERANG, BANTEN",
+        "kodeEntitas": "3",
+        "kodeJenisIdentitas": "5",
+        "namaEntitas": "INDO RX",
+        "nibEntitas": "8120114191264",
+        "nomorIdentitas": "312078603451000",
+        "nomorIjinEntitas": "KEP-24/WBC.07/KPP.MP.02/2018",
+        "tanggalIjinEntitas": "2018-02-05",
+        "seriEntitas": 3
+      },
+      {
+        "alamatEntitas": "HEADQUARTER GIULINISTRASSE 2 67065 LUDWIGSHAFEN GERMANY",
+        "kodeEntitas": "5",
+        "kodeJenisIdentitas": "",
+        "namaEntitas": "RHENOFLEX GMBH",
+        "nibEntitas": "",
+        "nomorIdentitas": "",
+        "nomorIjinEntitas": "",
+        "tanggalIjinEntitas": "1901-01-01",
+        "seriEntitas": 5
+      },
+      {
+        "alamatEntitas": "JL. MILLENIUM 22 BLOK R3 NO.7\r\nKAWASAN INDUSTRI MILLENIUM / KADU AGUNG\r\nTIGARAKSA, TANGERANG, BANTEN",
+        "kodeEntitas": "7",
+        "kodeJenisApi": "02",
+        "kodeJenisIdentitas": "5",
+        "kodeStatus": "LAINNYA",
+        "namaEntitas": "INDO RX",
+        "nomorIdentitas": "312078603451000",
+        "nomorIjinEntitas": "KEP-24/WBC.07/KPP.MP.02/2018",
+        "tanggalIjinEntitas": "2018-02-05",
+        "seriEntitas": 7
+      }
+    ],
+    "kemasan": [
+      {
+        "jumlahKemasan": 20,
+        "kodeJenisKemasan": "PX",
+        "seriKemasan": 1,
+        "merkKemasan": ""
+      }
+    ],
+    "kontainer": [
+      {
+        "kodeTipeKontainer": "1",
+        "kodeUkuranKontainer": "40",
+        "nomorKontainer": "TGHU6985468",
+        "seriKontainer": 1,
+        "kodeJenisKontainer": "8"
+      }
+    ],
+    "dokumen": [
+      {
+        "idDokumen": "",
+        "kodeDokumen": "380",
+        "nomorDokumen": "10024943-1",
+        "seriDokumen": 1,
+        "tanggalDokumen": "2023-10-10"
+      },
+      {
+        "idDokumen": "",
+        "kodeDokumen": "705",
+        "nomorDokumen": "OOLU8894896220",
+        "seriDokumen": 3,
+        "tanggalDokumen": "2023-10-14"
+      },
+      {
+        "idDokumen": "",
+        "kodeDokumen": "217",
+        "nomorDokumen": "TANPA NOMOR",
+        "seriDokumen": 2,
+        "tanggalDokumen": "2023-09-18"
+      }
+    ],
+    "pengangkut": [
+      {
+        "kodeBendera": "CN",
+        "namaPengangkut": "XIN QUAN ZHOU",
+        "nomorPengangkut": "123S",
+        "kodeCaraAngkut": "1",
+        "seriPengangkut": 1
+      }
+    ]
+  }

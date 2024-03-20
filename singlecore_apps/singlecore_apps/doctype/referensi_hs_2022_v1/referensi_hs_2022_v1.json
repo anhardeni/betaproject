@@ -1,0 +1,253 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_import": 1,
+ "autoname": "field:hs_code",
+ "creation": "2024-03-19 09:57:51.114356",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ex",
+  "hs_code",
+  "hscode2",
+  "hscode4",
+  "hscode6",
+  "kd_sat_bm",
+  "kd_trf_bm",
+  "trf_bm",
+  "trf_ppn",
+  "trf_ppnbm",
+  "column_break_l3zgt",
+  "it",
+  "ip",
+  "pi",
+  "ls",
+  "border",
+  "post_border",
+  "jenis_barang",
+  "satuan_barang",
+  "uraian_hs_eng",
+  "uraian_hs_ind",
+  "section_break_veg5w",
+  "column_break_ylgvi",
+  "hsurai2",
+  "hsurai4",
+  "hsurai6",
+  "hsuraiall",
+  "no_skep",
+  "year_of_tgl_skep",
+  "section_break_7cl3a"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "ex",
+   "fieldtype": "Check",
+   "label": "ex"
+  },
+  {
+   "fieldname": "hs_code",
+   "fieldtype": "Data",
+   "label": "HS Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "hscode2",
+   "fieldtype": "Data",
+   "label": "Hscode2"
+  },
+  {
+   "fieldname": "hscode4",
+   "fieldtype": "Data",
+   "label": "Hscode4"
+  },
+  {
+   "fieldname": "hscode6",
+   "fieldtype": "Data",
+   "label": "Hscode6"
+  },
+  {
+   "fieldname": "kd_sat_bm",
+   "fieldtype": "Data",
+   "label": "Kd Sat Bm"
+  },
+  {
+   "fieldname": "kd_trf_bm",
+   "fieldtype": "Data",
+   "label": "Kd Trf Bm"
+  },
+  {
+   "fieldname": "trf_bm",
+   "fieldtype": "Data",
+   "label": "Trf Bm"
+  },
+  {
+   "fieldname": "trf_ppn",
+   "fieldtype": "Data",
+   "label": "Trf Ppn"
+  },
+  {
+   "fieldname": "trf_ppnbm",
+   "fieldtype": "Data",
+   "label": "Trf Ppnbm"
+  },
+  {
+   "fieldname": "column_break_l3zgt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "it",
+   "fieldtype": "Check",
+   "label": "IT"
+  },
+  {
+   "default": "0",
+   "fieldname": "ip",
+   "fieldtype": "Check",
+   "label": "IP"
+  },
+  {
+   "default": "0",
+   "fieldname": "pi",
+   "fieldtype": "Check",
+   "label": "PI"
+  },
+  {
+   "default": "0",
+   "fieldname": "ls",
+   "fieldtype": "Check",
+   "label": "LS"
+  },
+  {
+   "default": "0",
+   "fieldname": "border",
+   "fieldtype": "Check",
+   "label": "BORDER"
+  },
+  {
+   "default": "0",
+   "fieldname": "post_border",
+   "fieldtype": "Check",
+   "label": "POST BORDER"
+  },
+  {
+   "fieldname": "jenis_barang",
+   "fieldtype": "Data",
+   "label": "JENIS BARANG"
+  },
+  {
+   "fieldname": "satuan_barang",
+   "fieldtype": "Data",
+   "label": "SATUAN BARANG"
+  },
+  {
+   "fieldname": "uraian_hs_eng",
+   "fieldtype": "Data",
+   "label": "Uraian HS Eng"
+  },
+  {
+   "fieldname": "uraian_hs_ind",
+   "fieldtype": "Data",
+   "label": "Uraian HS Ind"
+  },
+  {
+   "fieldname": "section_break_veg5w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ylgvi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hsurai2",
+   "fieldtype": "Data",
+   "label": "Hsurai2"
+  },
+  {
+   "fieldname": "hsurai4",
+   "fieldtype": "Data",
+   "label": "Hsurai4"
+  },
+  {
+   "fieldname": "hsurai6",
+   "fieldtype": "Data",
+   "label": "Hsurai6"
+  },
+  {
+   "fieldname": "hsuraiall",
+   "fieldtype": "Data",
+   "label": "HsuraiAll"
+  },
+  {
+   "fieldname": "no_skep",
+   "fieldtype": "Data",
+   "label": "No Skep"
+  },
+  {
+   "fieldname": "year_of_tgl_skep",
+   "fieldtype": "Data",
+   "label": "Year of Tgl Skep"
+  },
+  {
+   "fieldname": "section_break_7cl3a",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-19 09:59:59.917868",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Referensi HS 2022 v1",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_referensi_hs_2022",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Entry.1",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Analis",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Lv.1",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

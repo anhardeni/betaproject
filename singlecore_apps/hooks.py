@@ -246,6 +246,7 @@ fixtures = [
         "Referensi Tujuan Pengiriman ",
         "Referensi Tutup Pu ",
         "Referensi Ukuran Kontainer ",
+        "Referensi HS 2022 ",
         "Referensi Valuta "   
            
     

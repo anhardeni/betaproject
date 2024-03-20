@@ -1,0 +1,209 @@
+{
+    "asalData": "S",
+    "asuransi": 0.04,
+    "bankDevisa": [
+      {
+        "kodeBank": "68",
+        "namaBank": "BANK WOORI INDONESIA",
+        "seriBank": 1
+      }
+    ],
+    "barang": [
+      {
+        "barangDokumen": [],
+        "barangPemilik": [
+          {
+            "seriEntitas": 2
+          }
+        ],
+        "barangTarif": [],
+        "cif": 0,
+        "cifRupiah": 0,
+        "fob": 18.14,
+        "hargaEkspor": 0,
+        "hargaPatokan": 0,
+        "hargaPerolehan": 0,
+        "hargaSatuan": 18.14,
+        "jumlahKemasan": 1,
+        "jumlahSatuan": 1,
+        "kodeAsalBahanBaku": "1",
+        "kodeBarang": "-",
+        "kodeDaerahAsal": "3671",
+        "kodeDokumen": "30",
+        "kodeJenisKemasan": "CT",
+        "kodeNegaraAsal": "ID",
+        "kodeSatuanBarang": "NPR",
+        "merk": "NIKE",
+        "ndpbm": 0,
+        "netto": 1,
+        "nilaiBarang": 0,
+        "nilaiDanaSawit": 0,
+        "posTarif": "64041190",
+        "seriBarang": 1,
+        "spesifikasiLain": "",
+        "tipe": "-",
+        "ukuran": "-",
+        "uraian": "NIKE FOOTWEAR=SEPATU OLAHRAGA W NIKE CORTEZ SE (FZ5167-133) Kode : S23102001",
+        "volume": 0
+      }
+    ],
+    "bruto": 2,
+    "cif": 18.14,
+    "disclaimer": "1",
+    "dokumen": [
+      {
+        "kodeDokumen": "380",
+        "nomorDokumen": "S23102001",
+        "seriDokumen": 1,
+        "tanggalDokumen": "2023-10-20"
+      },
+      {
+        "kodeDokumen": "217",
+        "nomorDokumen": "S23102001",
+        "seriDokumen": 2,
+        "tanggalDokumen": "2023-10-20"
+      },
+      {
+        "kodeDokumen": "500",
+        "nomorDokumen": "169/WBC.04/NK_EKS/2004",
+        "seriDokumen": 3,
+        "tanggalDokumen": "2004-04-15"
+      },
+      {
+        "kodeDokumen": "705",
+        "nomorDokumen": "-",
+        "seriDokumen": 4,
+        "tanggalDokumen": "2023-11-21"
+      },
+      {
+        "kodeDokumen": "920",
+        "nomorDokumen": "2661/KM.4/2017",
+        "seriDokumen": 5,
+        "tanggalDokumen": "2017-10-12"
+      }
+    ],
+    "entitas": [
+      {
+        "alamatEntitas": "JALAN RAYA SERPONG KM. 7, KAMURANG ATAS RT.002 RW.001 PAKUALAM SERPONG UTARA, KOTA TANGERANG SELATAN BANTEN 15320",
+        "kodeEntitas": "2",
+        "kodeJenisApi": "",
+        "kodeJenisIdentitas": "5",
+        "kodeNegara": "",
+        "kodeStatus": "3",
+        "namaEntitas": "PRATAMA ABADI INDUSTRI",
+        "nibEntitas": "",
+        "nomorIdentitas": "010618270057000",
+        "seriEntitas": 1
+      },
+      {
+        "alamatEntitas": "JALAN RAYA SERPONG KM. 7, KAMURANG ATAS RT.002 RW.001 PAKUALAM SERPONG UTARA, KOTA TANGERANG SELATAN BANTEN 15320",
+        "kodeEntitas": "7",
+        "kodeJenisApi": "",
+        "kodeJenisIdentitas": "5",
+        "kodeNegara": "",
+        "kodeStatus": "10",
+        "namaEntitas": "PRATAMA ABADI INDUSTRI",
+        "nibEntitas": "",
+        "nomorIdentitas": "010618270057000",
+        "seriEntitas": 2
+      },
+      {
+        "alamatEntitas": "RAJANAKARN  BUILDING 3 SOUTH SALORN ROAD YANMAWA SALORN BANGKOK 10 10120",
+        "kodeEntitas": "8",
+        "kodeJenisApi": "02",
+        "kodeJenisIdentitas": "5",
+        "kodeNegara": "TH",
+        "kodeStatus": "10",
+        "namaEntitas": "NIKE (THAILAND) LTD 12TH FLOOR",
+        "nibEntitas": "",
+        "nomorIdentitas": "",
+        "seriEntitas": 3
+      },
+      {
+        "alamatEntitas": "30 Pasir Panjang Road#10-31/32 Mapletree Business City Singapore117440",
+        "kodeEntitas": "6",
+        "kodeJenisApi": "",
+        "kodeJenisIdentitas": "",
+        "kodeNegara": "SG",
+        "kodeStatus": "",
+        "namaEntitas": "Nike Global Trading BV SINGAPORE BRANCH",
+        "nibEntitas": "",
+        "nomorIdentitas": "",
+        "seriEntitas": 4
+      }
+    ],
+    "flagCurah": "2",
+    "flagMigas": "2",
+    "fob": 18.14,
+    "freight": 0.91,
+    "idPengguna": "",
+    "jabatanTtd": "DIREKTUR",
+    "jumlahKontainer": 1,
+    "kemasan": [
+      {
+        "jumlahKemasan": 1,
+        "kodeJenisKemasan": "CT",
+        "merkKemasan": "NIKE",
+        "seriKemasan": 1
+      }
+    ],
+    "kesiapanBarang": [],
+    "kodeAsuransi": "DN",
+    "kodeCaraBayar": "9",
+    "kodeCaraDagang": "15",
+    "kodeDokumen": "30",
+    "kodeIncoterm": "FOB",
+    "kodeJenisEkspor": "1",
+    "kodeJenisNilai": "",
+    "kodeJenisProsedur": "",
+    "kodeKantor": "040300",
+    "kodeKantorEkspor": "040300",
+    "kodeKantorMuat": "040300",
+    "kodeKantorPeriksa": "150300",
+    "kodeKategoriEkspor": "10",
+    "kodeLokasi": "6",
+    "kodeNegaraTujuan": "BE",
+    "kodePelBongkar": "NLRTM",
+    "kodePelEkspor": "IDTPP",
+    "kodePelMuat": "IDTPP",
+    "kodePelTujuan": "NLRTM",
+    "kodePembayar": "TRANSFER",
+    "kodeTps": "",
+    "kodeValuta": "USD",
+    "kontainer": [
+      {
+        "kodeJenisKontainer": "8",
+        "kodeTipeKontainer": "1",
+        "kodeUkuranKontainer": "45",
+        "nomorKontainer": "CXDU1860815",
+        "seriKontainer": 1
+      }
+    ],
+    "kotaTtd": "TANGERANG",
+    "namaTtd": "LISTA LOANDA",
+    "ndpbm": 0,
+    "netto": 1,
+    "nilaiMaklon": 0,
+    "nomorAju": "15033001061820231121008859",
+    "nomorBc11": "",
+    "pengangkut": [
+      {
+        "kodeBendera": "LR",
+        "kodeCaraAngkut": "1",
+        "namaPengangkut": "REUNION",
+        "nomorPengangkut": "123",
+        "seriPengangkut": 1
+      }
+    ],
+    "posBc11": "",
+    "seri": 0,
+    "subPosBc11": "",
+    "tanggalAju": "2023-11-21",
+    "tanggalBc11": "1900-01-01",
+    "tanggalEkspor": "2023-11-30",
+    "tanggalPeriksa": "2023-11-21",
+    "tanggalTtd": "2023-11-30",
+    "totalDanaSawit": 0
+  }
+  
+  
