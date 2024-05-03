@@ -75,8 +75,7 @@ def read_item(item_id: int, q: Union[str, None] = None):
 #     return results
 
 
-@app.get('/parents', response_model=List[ParentTable],
-         status_code=status.HTTP_200_OK)
+@app.get('/parents', response_model=List[ParentTable], status_code=status.HTTP_200_OK)
 async def get_all_parents():
     statement = select(ParentTable)
     results = session.exec(statement).all()
@@ -127,8 +126,7 @@ def read_parentwithchildren(*, id: int, session: Session = Depends(get_session))
 
 
 @app.get("/children-with-grandchild/{id}", response_model=ChildWithGrandchild)
-def read_childwithgrandchild  
-(*, id: int, session: Session = Depends(get_session)):
+def read_childwithgrandchild(*, id: int, session: Session = Depends(get_session)):
     child_table_link = session.get(ChildTable, id)
     if not  child_table_link:
         raise HTTPException(status_code=404, detail=" childs not found")
@@ -144,8 +142,16 @@ async def get_all_heroes():
 
     return results
 
-@app.get('/hero/{name}', response_model=List[Hero],
+
+@app.get('/hero-pydantic', response_model=List[HeroPydantic],
          status_code=status.HTTP_200_OK)
+async def get_all_heroes():
+    statement = select(HeroPydantic)
+    results = session.exec(statement).all()
+
+    return results
+
+@app.get('/hero/{name}', response_model=List[Hero],status_code=status.HTTP_200_OK)
 async def get_one_hero(name: str):
     statement = select(Hero).where(Hero.name == name)
     results = session.exec(statement).all()

@@ -9,12 +9,13 @@ from sqlmodel import (
     create_engine,
     select,
 )
+from pydantic import BaseModel
 from database import Base
 
 
 class ParentBase(SQLModel):
      #desc: Optional[str] = Field(default=None)
-     desc: Optional[str] = Field(validation_alias="descParent", default=None)
+     desc: Optional[str] = Field(alias="descParent", default=None)
      #secret_name: str = Field(validation_alias="secretName")
 
 class ParentTable(ParentBase, table=True):
@@ -29,7 +30,7 @@ class ParentRead(ParentBase):
 # #-----------------------------------------------
 class ChildBase(SQLModel):
     parent_id: Optional [int] = Field(default= None, foreign_key= 'parent_table.id')
-    desc: Optional[str] = Field(default=None, validation_alias='Keterangan')
+    desc: Optional[str] = Field(default=None, alias='Keterangan')
     
 
 class ChildTable(ChildBase,table=True):
@@ -70,7 +71,7 @@ class ChildWithGrandchild(ChildRead):
 
 class TeamBase(SQLModel):
     name: str = Field(default=None,index=True)
-    headquaters: str = Field(default=None,alias="kantor pusat")
+    headquaters: str = Field(default=None, alias="kantor pusat")
     team_name: str
     description: str
 
@@ -102,7 +103,8 @@ class TeamRead(TeamBase):
 
 class HeroBase(SQLModel):
     name: str = Field(index=True)
-    secret_name: str
+    #secret_name: str
+    secret_name :str = Field(alias="Nama_Rahasia")
     age: Optional[int] = Field(default=None, index=True)
     team_id: Optional[int] = Field(default=None, foreign_key="team.id")
 
