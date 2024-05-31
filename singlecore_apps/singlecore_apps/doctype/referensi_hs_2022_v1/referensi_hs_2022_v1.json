@@ -141,16 +141,16 @@
   {
    "fieldname": "satuan_barang",
    "fieldtype": "Data",
-   "label": "SATUAN BARANG"
+   "label": "SATUAN BARANG WAJIB"
   },
   {
    "fieldname": "uraian_hs_eng",
-   "fieldtype": "Data",
+   "fieldtype": "Long Text",
    "label": "Uraian HS Eng"
   },
   {
    "fieldname": "uraian_hs_ind",
-   "fieldtype": "Data",
+   "fieldtype": "Long Text",
    "label": "Uraian HS Ind"
   },
   {
@@ -163,22 +163,22 @@
   },
   {
    "fieldname": "hsurai2",
-   "fieldtype": "Data",
+   "fieldtype": "Long Text",
    "label": "Hsurai2"
   },
   {
    "fieldname": "hsurai4",
-   "fieldtype": "Data",
+   "fieldtype": "Long Text",
    "label": "Hsurai4"
   },
   {
    "fieldname": "hsurai6",
-   "fieldtype": "Data",
+   "fieldtype": "Long Text",
    "label": "Hsurai6"
   },
   {
    "fieldname": "hsuraiall",
-   "fieldtype": "Data",
+   "fieldtype": "Long Text",
    "label": "HsuraiAll"
   },
   {
@@ -198,7 +198,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-19 09:59:59.917868",
+ "modified": "2024-05-03 16:39:32.451336",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Referensi HS 2022 v1",

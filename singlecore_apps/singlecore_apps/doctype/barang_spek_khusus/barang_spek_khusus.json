@@ -9,8 +9,8 @@
  "field_order": [
   "nomoraju",
   "seri_barang",
-  "kode",
-  "uraianbarangspekkhusus"
+  "kode_spek_khusus",
+  "uraian__spek_khusus"
  ],
  "fields": [
   {
@@ -24,37 +24,26 @@
    "label": "SERI BARANG"
   },
   {
-   "fieldname": "kode",
-   "fieldtype": "Data",
-   "label": "KODE"
+   "fieldname": "kode_spek_khusus",
+   "fieldtype": "Link",
+   "label": "KODE SPEK KHUSUS",
+   "options": "Referensi Spesifikasi Khusus"
   },
   {
-   "fieldname": "uraianbarangspekkhusus",
+   "fieldname": "uraian__spek_khusus",
    "fieldtype": "Data",
-   "label": "URAIAN"
+   "label": "URAIAN SPEK KHUSUS"
   }
  ],
  "index_web_pages_for_search": 1,
+ "istable": 1,
  "links": [],
- "modified": "2023-09-13 17:30:16.375912",
+ "modified": "2024-05-22 10:13:08.662440",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG SPEK KHUSUS",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

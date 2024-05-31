@@ -111,47 +111,4 @@ class PengangkutItem(BaseModel):
 
 
 class Model(BaseModel):
-    asalData: str
-    asuransi: float
-    bruto: int
-    cif: int
-    fob: int
-    freight: int
-    hargaPenyerahan: int
-    jabatanTtd: str
-    jumlahKontainer: int
-    kodeAsuransi: str
-    kodeDokumen: str
-    kodeIncoterm: str
-    kodeKantor: str
-    kodeKantorBongkar: str
-    kodePelBongkar: str
-    kodePelMuat: str
-    kodePelTransit: str
-    kodeTps: str
-    kodeTujuanTpb: str
-    kodeTutupPu: str
-    kodeValuta: str
-    kotaTtd: str
-    namaTtd: str
-    ndpbm: int
-    netto: int
-    nik: str
-    nilaiBarang: int
-    nomorAju: str
-    nomorBc11: str
-    posBc11: str
-    seri: int
-    subposBc11: str
-    tanggalBc11: str
-    tanggalTiba: str
-    tanggalTtd: str
-    biayaTambahan: int
-    biayaPengurang: int
-    kodeKenaPajak: str
-    barang: List[BarangItem]
-    entitas: List[Entita]
-    kemasan: List[KemasanItem]
-    kontainer: List[KontainerItem]
-    dokumen: List[Dokuman]
-    pengangkut: List[PengangkutItem]
+    cd

@@ -1,36 +1,48 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
- "creation": "2023-06-21 14:50:13.796648",
+ "autoname": "field:id_pengguna",
+ "creation": "2024-05-15 19:16:49.721110",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kode_jenis_nilai",
-  "nama_jenis_nilai"
+  "id_pengguna",
+  "nama",
+  "jabatan",
+  "kota"
  ],
  "fields": [
   {
-   "fieldname": "kode_jenis_nilai",
+   "fieldname": "id_pengguna",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "KODE JENIS NILAI VD",
-   "reqd": 1
+   "label": "ID",
+   "unique": 1
   },
   {
-   "fieldname": "nama_jenis_nilai",
+   "fieldname": "nama",
    "fieldtype": "Data",
-   "label": "NAMA JENIS NILAI VD"
+   "label": "NAMA"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "JABATAN"
+  },
+  {
+   "fieldname": "kota",
+   "fieldtype": "Data",
+   "label": "KOTA"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-22 08:25:56.659653",
+ "modified": "2024-05-15 19:19:18.380815",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "Referensi Jenis VD",
+ "name": "ID PENGUNA",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

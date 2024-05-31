@@ -2,35 +2,37 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "creation": "2023-06-21 14:50:13.796648",
- "default_view": "List",
+ "autoname": "field:kode_fasilitas_tarif",
+ "creation": "2023-07-05 14:06:19.499163",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kode_jenis_nilai",
-  "nama_jenis_nilai"
+  "kode_fasilitas_tarif",
+  "nama_fasilitas_tarif"
  ],
  "fields": [
   {
-   "fieldname": "kode_jenis_nilai",
+   "fieldname": "kode_fasilitas_tarif",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "KODE JENIS NILAI VD",
-   "reqd": 1
+   "label": "KODE FASILITAS TARIF",
+   "reqd": 1,
+   "unique": 1
   },
   {
-   "fieldname": "nama_jenis_nilai",
+   "fieldname": "nama_fasilitas_tarif",
    "fieldtype": "Data",
-   "label": "NAMA JENIS NILAI VD"
+   "label": "NAMA FASILITAS TARIF"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-22 08:25:56.659653",
+ "modified": "2024-05-17 14:38:27.501223",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "Referensi Jenis VD",
+ "name": "Referensi Fasilitas Tarif Baru",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

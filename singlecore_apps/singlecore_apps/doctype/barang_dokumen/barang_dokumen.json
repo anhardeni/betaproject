@@ -36,8 +36,13 @@
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
- "links": [],
- "modified": "2023-09-20 08:07:42.013646",
+ "links": [
+  {
+   "link_doctype": "BARANG V1",
+   "link_fieldname": "nomoraju"
+  }
+ ],
+ "modified": "2024-05-17 17:46:10.455451",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG DOKUMEN",

@@ -85,7 +85,10 @@
   "detail_section",
   "barang_tarif",
   "barang_dokumen",
-  "barang_pemilik"
+  "barang_pemilik",
+  "spek_khusus_dan_value_declaration_tab",
+  "barang_spek_khusus",
+  "barang_vd"
  ],
  "fields": [
   {
@@ -101,13 +104,15 @@
   },
   {
    "fieldname": "hs",
-   "fieldtype": "Data",
-   "label": "HS"
+   "fieldtype": "Link",
+   "label": "HS",
+   "options": "Referensi HS 2022 v1"
   },
   {
    "fieldname": "kode_barang",
-   "fieldtype": "Data",
-   "label": "KODE BARANG"
+   "fieldtype": "Link",
+   "label": "KODE BARANG",
+   "options": "Item"
   },
   {
    "fieldname": "uraian",
@@ -460,7 +465,7 @@
   {
    "fieldname": "detail_section",
    "fieldtype": "Tab Break",
-   "label": "TARIF DAN DOKUMEN"
+   "label": "TARIF DAN DOKUMEN PEMILIK"
   },
   {
    "fieldname": "barang_tarif",
@@ -479,6 +484,23 @@
    "fieldtype": "Table",
    "label": "BARANG PEMILIK",
    "options": "BARANG ENTITAS"
+  },
+  {
+   "fieldname": "spek_khusus_dan_value_declaration_tab",
+   "fieldtype": "Tab Break",
+   "label": "SPEK KHUSUS DAN VALUE DECLARATION"
+  },
+  {
+   "fieldname": "barang_spek_khusus",
+   "fieldtype": "Table",
+   "label": "BARANG SPEK KHUSUS",
+   "options": "BARANG SPEK KHUSUS"
+  },
+  {
+   "fieldname": "barang_vd",
+   "fieldtype": "Table",
+   "label": "BARANG VD",
+   "options": "BARANG VD"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -488,7 +510,7 @@
    "link_fieldname": "nomoraju"
   }
  ],
- "modified": "2024-01-30 18:40:58.933245",
+ "modified": "2024-05-22 14:47:55.275614",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG V1",

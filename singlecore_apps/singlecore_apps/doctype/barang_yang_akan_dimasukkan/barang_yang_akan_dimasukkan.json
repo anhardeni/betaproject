@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-31 15:07:03.253641",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_barang",
+  "jumlah_item_barang",
+  "keterangan",
+  "satuan"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_barang",
+   "fieldtype": "Link",
+   "label": "Item Barang",
+   "options": "Item"
+  },
+  {
+   "fieldname": "jumlah_item_barang",
+   "fieldtype": "Data",
+   "label": "Jumlah Barang"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Data",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "satuan",
+   "fieldtype": "Link",
+   "label": "Satuan",
+   "options": "UOM"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-17 14:34:27.888323",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Barang yang akan Dimasukkan",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
