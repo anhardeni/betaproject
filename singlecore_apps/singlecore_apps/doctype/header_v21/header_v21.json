@@ -1,11 +1,5 @@
 {
- "actions": [
-  {
-   "action": "/api/method/singlecore_apps.api.get_nested_data",
-   "action_type": "Route",
-   "label": "draft-json"
-  }
- ],
+ "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{00}{kode_dokumen4digit}{BT0001}{YYYY}{MM}{DD}{######}",
@@ -787,7 +781,7 @@
    "link_fieldname": "nomoraju"
   }
  ],
- "modified": "2024-05-03 14:34:05.755825",
+ "modified": "2025-11-28 23:05:56.996761",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "HEADER V21",
@@ -807,6 +801,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

@@ -1,54 +1,68 @@
 {
- "actions": [],
- "allow_rename": 1,
- "creation": "2023-07-06 10:07:37.061071",
- "default_view": "List",
- "doctype": "DocType",
- "editable_grid": 1,
- "engine": "InnoDB",
- "field_order": [
-  "nomoraju",
-  "seri_barang",
-  "seri_dokumen",
-  "seri_izin"
- ],
- "fields": [
-  {
-   "fieldname": "nomoraju",
-   "fieldtype": "Data",
-   "label": "NOMOR AJU"
-  },
-  {
-   "fieldname": "seri_barang",
-   "fieldtype": "Data",
-   "label": "SERI BARANG"
-  },
-  {
-   "fieldname": "seri_dokumen",
-   "fieldtype": "Int",
-   "label": "SERI DOKUMEN"
-  },
-  {
-   "fieldname": "seri_izin",
-   "fieldtype": "Int",
-   "label": "SERI IZIN"
-  }
- ],
- "index_web_pages_for_search": 1,
- "istable": 1,
- "links": [
-  {
-   "link_doctype": "BARANG V1",
-   "link_fieldname": "nomoraju"
-  }
- ],
- "modified": "2024-05-17 17:46:10.455451",
- "modified_by": "Administrator",
- "module": "Singlecore Apps",
- "name": "BARANG DOKUMEN",
- "owner": "Administrator",
- "permissions": [],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
+    "actions": [],
+    "allow_rename": 1,
+    "creation": "2023-07-06 10:07:37.061071",
+    "default_view": "List",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "nomoraju",
+        "seri_barang",
+        "seri_dokumen",
+        "seri_izin"
+    ],
+    "fields": [
+        {
+            "fieldname": "nomoraju",
+            "fieldtype": "Data",
+            "label": "NOMOR AJU"
+        },
+        {
+            "fieldname": "seri_barang",
+            "fieldtype": "Data",
+            "label": "SERI BARANG"
+        },
+        {
+            "fieldname": "seri_dokumen",
+            "fieldtype": "Int",
+            "label": "SERI DOKUMEN"
+        },
+        {
+            "fieldname": "seri_izin",
+            "fieldtype": "Int",
+            "label": "SERI IZIN"
+        }
+    ],
+    "index_web_pages_for_search": 1,
+    "istable": 1,
+    "links": [
+        {
+            "link_doctype": "BARANG V1",
+            "link_fieldname": "nomoraju"
+        }
+    ],
+    "modified": "2024-05-17 17:46:10.455451",
+    "modified_by": "Administrator",
+    "module": "Singlecore Apps",
+    "name": "BARANG DOKUMEN",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "All",
+            "share": 1,
+            "write": 1
+        }
+    ],
+    "row_format": "Dynamic",
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
 }
