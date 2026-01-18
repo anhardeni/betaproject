@@ -1,52 +1,59 @@
 {
- "actions": [],
- "allow_import": 1,
- "allow_rename": 1,
- "creation": "2023-06-21 15:08:35.015188",
- "default_view": "List",
- "doctype": "DocType",
- "editable_grid": 1,
- "engine": "InnoDB",
- "field_order": [
-  "kode_kategori_ekspor",
-  "nama_kategori_ekspor"
- ],
- "fields": [
-  {
-   "fieldname": "kode_kategori_ekspor",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "KODE KATEGORI EKSPOR",
-   "reqd": 1
-  },
-  {
-   "fieldname": "nama_kategori_ekspor",
-   "fieldtype": "Data",
-   "label": "NAMA KATEGORI EKSPOR"
-  }
- ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-07-06 08:36:54.504143",
- "modified_by": "Administrator",
- "module": "Singlecore Apps",
- "name": "Referensi Kategori Ekspor",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
+    "actions": [],
+    "allow_import": 1,
+    "creation": "2023-06-21 15:08:35.015188",
+    "default_view": "List",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "kode_kategori_ekspor",
+        "kode_dokumen",
+        "nama_kategori_ekspor"
+    ],
+    "fields": [
+        {
+            "fieldname": "kode_kategori_ekspor",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "label": "KODE KATEGORI EKSPOR",
+            "reqd": 1
+        },
+        {
+            "fieldname": "nama_kategori_ekspor",
+            "fieldtype": "Data",
+            "label": "NAMA KATEGORI EKSPOR"
+        },
+        {
+            "fieldname": "kode_dokumen",
+            "fieldtype": "Data",
+            "label": "KODE DOKUMEN",
+            "length": 5
+        }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2025-12-27 12:42:33.326718",
+    "modified_by": "Administrator",
+    "module": "Singlecore Apps",
+    "name": "Referensi Kategori Ekspor",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "System Manager",
+            "share": 1,
+            "write": 1
+        }
+    ],
+    "row_format": "Dynamic",
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
 }

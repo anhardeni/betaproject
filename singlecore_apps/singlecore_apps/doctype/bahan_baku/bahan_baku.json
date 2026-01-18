@@ -1,282 +1,289 @@
 {
- "actions": [],
- "allow_rename": 1,
- "creation": "2023-08-31 11:40:21.557336",
- "default_view": "List",
- "doctype": "DocType",
- "editable_grid": 1,
- "engine": "InnoDB",
- "field_order": [
-  "nomoraju",
-  "seri_barang",
-  "seri_bahan_baku",
-  "kode_asal_bahan_baku",
-  "hs",
-  "kode_barang",
-  "uraian",
-  "merek",
-  "tipe",
-  "ukuran",
-  "spesifikasi_lain",
-  "kode_satuan",
-  "jumlah_satuan",
-  "kode_dokumen_asal",
-  "kode_kantor_asal",
-  "nomor_daftar_asal",
-  "tanggal_daftar_asal",
-  "nomor_aju_asal",
-  "seri_barang_asal",
-  "netto",
-  "bruto",
-  "volume",
-  "cif",
-  "cif_rupiah",
-  "ndpbm",
-  "harga_penyerahan",
-  "harga_perolehan",
-  "nilai_jasa",
-  "seri_izin",
-  "kode_bkc",
-  "kode_komoditi_bkc",
-  "kode_sub_komoditi_bkc",
-  "flag_tis",
-  "isi_per_kemasan",
-  "jumlah_dilekatkan",
-  "jumlah_pita_cukai",
-  "hje_cukai",
-  "tarif_cukai",
-  "bahan_baku_dokumen",
-  "bahan_tarif"
- ],
- "fields": [
-  {
-   "fieldname": "nomoraju",
-   "fieldtype": "Data",
-   "label": "NOMOR AJU"
-  },
-  {
-   "fieldname": "seri_barang",
-   "fieldtype": "Int",
-   "label": "SERI BARANG"
-  },
-  {
-   "fieldname": "seri_bahan_baku",
-   "fieldtype": "Int",
-   "label": "SERI BAHAN BAKU"
-  },
-  {
-   "description": "Referensi kode asal bahan baku: [0] Impor, [1] Lokal\"",
-   "fieldname": "kode_asal_bahan_baku",
-   "fieldtype": "Select",
-   "label": "KODE ASAL BAHAN BAKU",
-   "options": "\n0\n1"
-  },
-  {
-   "fieldname": "hs",
-   "fieldtype": "Data",
-   "label": "HS"
-  },
-  {
-   "fieldname": "kode_barang",
-   "fieldtype": "Data",
-   "label": "KODE BARANG"
-  },
-  {
-   "fieldname": "uraian",
-   "fieldtype": "Data",
-   "label": "URAIAN"
-  },
-  {
-   "fieldname": "merek",
-   "fieldtype": "Data",
-   "label": "MEREK"
-  },
-  {
-   "fieldname": "tipe",
-   "fieldtype": "Data",
-   "label": "TIPE"
-  },
-  {
-   "fieldname": "ukuran",
-   "fieldtype": "Data",
-   "label": "UKURAN"
-  },
-  {
-   "fieldname": "spesifikasi_lain",
-   "fieldtype": "Data",
-   "label": "SPESIFIKASI LAIN"
-  },
-  {
-   "fieldname": "kode_satuan",
-   "fieldtype": "Data",
-   "label": "KODE SATUAN"
-  },
-  {
-   "fieldname": "jumlah_satuan",
-   "fieldtype": "Float",
-   "label": "JUMLAH SATUAN"
-  },
-  {
-   "fieldname": "kode_dokumen_asal",
-   "fieldtype": "Data",
-   "label": "KODE DOKUMEN ASAL"
-  },
-  {
-   "fieldname": "kode_kantor_asal",
-   "fieldtype": "Link",
-   "label": "KODE KANTOR ASAL",
-   "options": "Referensi Kantor"
-  },
-  {
-   "fieldname": "nomor_daftar_asal",
-   "fieldtype": "Data",
-   "label": "NOMOR DAFTAR ASAL"
-  },
-  {
-   "fieldname": "tanggal_daftar_asal",
-   "fieldtype": "Data",
-   "label": "TANGGAL DAFTAR ASAL"
-  },
-  {
-   "fieldname": "nomor_aju_asal",
-   "fieldtype": "Data",
-   "label": "NOMOR AJU ASAL"
-  },
-  {
-   "fieldname": "seri_barang_asal",
-   "fieldtype": "Int",
-   "label": "SERI BARANG ASAL"
-  },
-  {
-   "fieldname": "netto",
-   "fieldtype": "Float",
-   "label": "NETTO"
-  },
-  {
-   "fieldname": "bruto",
-   "fieldtype": "Float",
-   "label": "BRUTO"
-  },
-  {
-   "fieldname": "volume",
-   "fieldtype": "Float",
-   "label": "VOLUME"
-  },
-  {
-   "fieldname": "cif",
-   "fieldtype": "Float",
-   "label": "CIF"
-  },
-  {
-   "fieldname": "cif_rupiah",
-   "fieldtype": "Float",
-   "label": "CIF RUPIAH"
-  },
-  {
-   "fieldname": "ndpbm",
-   "fieldtype": "Float",
-   "label": "NDPBM"
-  },
-  {
-   "fieldname": "harga_penyerahan",
-   "fieldtype": "Float",
-   "label": "HARGA PENYERAHAN"
-  },
-  {
-   "fieldname": "harga_perolehan",
-   "fieldtype": "Float",
-   "label": "HARGA PEROLEHAN"
-  },
-  {
-   "fieldname": "nilai_jasa",
-   "fieldtype": "Data",
-   "label": "NILAI JASA"
-  },
-  {
-   "fieldname": "seri_izin",
-   "fieldtype": "Int",
-   "label": "SERI IZIN"
-  },
-  {
-   "fieldname": "kode_bkc",
-   "fieldtype": "Data",
-   "label": "KODE BKC"
-  },
-  {
-   "fieldname": "kode_komoditi_bkc",
-   "fieldtype": "Data",
-   "label": "KODE KOMODITI BKC"
-  },
-  {
-   "fieldname": "kode_sub_komoditi_bkc",
-   "fieldtype": "Data",
-   "label": "KODE SUB KOMODITI BKC"
-  },
-  {
-   "fieldname": "flag_tis",
-   "fieldtype": "Int",
-   "label": "FLAG TIS"
-  },
-  {
-   "fieldname": "isi_per_kemasan",
-   "fieldtype": "Int",
-   "label": "ISI PER KEMASAN"
-  },
-  {
-   "fieldname": "jumlah_dilekatkan",
-   "fieldtype": "Data",
-   "label": "JUMLAH DILEKATKAN"
-  },
-  {
-   "fieldname": "jumlah_pita_cukai",
-   "fieldtype": "Data",
-   "label": "JUMLAH PITA CUKAI"
-  },
-  {
-   "fieldname": "hje_cukai",
-   "fieldtype": "Float",
-   "label": "HJE CUKAI"
-  },
-  {
-   "fieldname": "tarif_cukai",
-   "fieldtype": "Float",
-   "label": "TARIF CUKAI"
-  },
-  {
-   "fieldname": "bahan_baku_dokumen",
-   "fieldtype": "Table",
-   "label": "BAHAN BAKU DOKUMEN",
-   "options": "BAHAN BAKU DOKUMEN"
-  },
-  {
-   "fieldname": "bahan_tarif",
-   "fieldtype": "Table",
-   "label": "BAHAN TARIF",
-   "options": "BAHAN BAKU TARIF"
-  }
- ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-11-15 16:55:06.469344",
- "modified_by": "Administrator",
- "module": "Singlecore Apps",
- "name": "BAHAN BAKU",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
+    "actions": [],
+    "allow_rename": 1,
+    "creation": "2023-08-31 11:40:21.557336",
+    "default_view": "List",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "nomoraju",
+        "seri_barang",
+        "seri_bahan_baku",
+        "parent_barang",
+        "kode_asal_bahan_baku",
+        "hs",
+        "kode_barang",
+        "uraian",
+        "merek",
+        "tipe",
+        "ukuran",
+        "spesifikasi_lain",
+        "kode_satuan",
+        "jumlah_satuan",
+        "kode_dokumen_asal",
+        "kode_kantor_asal",
+        "nomor_daftar_asal",
+        "tanggal_daftar_asal",
+        "nomor_aju_asal",
+        "seri_barang_asal",
+        "netto",
+        "bruto",
+        "volume",
+        "cif",
+        "cif_rupiah",
+        "ndpbm",
+        "harga_penyerahan",
+        "harga_perolehan",
+        "nilai_jasa",
+        "seri_izin",
+        "kode_bkc",
+        "kode_komoditi_bkc",
+        "kode_sub_komoditi_bkc",
+        "flag_tis",
+        "isi_per_kemasan",
+        "jumlah_dilekatkan",
+        "jumlah_pita_cukai",
+        "hje_cukai",
+        "tarif_cukai",
+        "bahan_baku_dokumen",
+        "bahan_tarif"
+    ],
+    "fields": [
+        {
+            "fieldname": "nomoraju",
+            "fieldtype": "Data",
+            "label": "NOMOR AJU"
+        },
+        {
+            "fieldname": "seri_barang",
+            "fieldtype": "Int",
+            "label": "SERI BARANG"
+        },
+        {
+            "fieldname": "parent_barang",
+            "fieldtype": "Link",
+            "label": "Parent Barang V1",
+            "options": "BARANG V1"
+        },
+        {
+            "fieldname": "seri_bahan_baku",
+            "fieldtype": "Int",
+            "label": "SERI BAHAN BAKU"
+        },
+        {
+            "description": "Referensi kode asal bahan baku: [0] Impor, [1] Lokal\"",
+            "fieldname": "kode_asal_bahan_baku",
+            "fieldtype": "Select",
+            "label": "KODE ASAL BAHAN BAKU",
+            "options": "\n0\n1"
+        },
+        {
+            "fieldname": "hs",
+            "fieldtype": "Data",
+            "label": "HS"
+        },
+        {
+            "fieldname": "kode_barang",
+            "fieldtype": "Data",
+            "label": "KODE BARANG"
+        },
+        {
+            "fieldname": "uraian",
+            "fieldtype": "Data",
+            "label": "URAIAN"
+        },
+        {
+            "fieldname": "merek",
+            "fieldtype": "Data",
+            "label": "MEREK"
+        },
+        {
+            "fieldname": "tipe",
+            "fieldtype": "Data",
+            "label": "TIPE"
+        },
+        {
+            "fieldname": "ukuran",
+            "fieldtype": "Data",
+            "label": "UKURAN"
+        },
+        {
+            "fieldname": "spesifikasi_lain",
+            "fieldtype": "Data",
+            "label": "SPESIFIKASI LAIN"
+        },
+        {
+            "fieldname": "kode_satuan",
+            "fieldtype": "Data",
+            "label": "KODE SATUAN"
+        },
+        {
+            "fieldname": "jumlah_satuan",
+            "fieldtype": "Float",
+            "label": "JUMLAH SATUAN"
+        },
+        {
+            "fieldname": "kode_dokumen_asal",
+            "fieldtype": "Data",
+            "label": "KODE DOKUMEN ASAL"
+        },
+        {
+            "fieldname": "kode_kantor_asal",
+            "fieldtype": "Link",
+            "label": "KODE KANTOR ASAL",
+            "options": "Referensi Kantor"
+        },
+        {
+            "fieldname": "nomor_daftar_asal",
+            "fieldtype": "Data",
+            "label": "NOMOR DAFTAR ASAL"
+        },
+        {
+            "fieldname": "tanggal_daftar_asal",
+            "fieldtype": "Data",
+            "label": "TANGGAL DAFTAR ASAL"
+        },
+        {
+            "fieldname": "nomor_aju_asal",
+            "fieldtype": "Data",
+            "label": "NOMOR AJU ASAL"
+        },
+        {
+            "fieldname": "seri_barang_asal",
+            "fieldtype": "Int",
+            "label": "SERI BARANG ASAL"
+        },
+        {
+            "fieldname": "netto",
+            "fieldtype": "Float",
+            "label": "NETTO"
+        },
+        {
+            "fieldname": "bruto",
+            "fieldtype": "Float",
+            "label": "BRUTO"
+        },
+        {
+            "fieldname": "volume",
+            "fieldtype": "Float",
+            "label": "VOLUME"
+        },
+        {
+            "fieldname": "cif",
+            "fieldtype": "Float",
+            "label": "CIF"
+        },
+        {
+            "fieldname": "cif_rupiah",
+            "fieldtype": "Float",
+            "label": "CIF RUPIAH"
+        },
+        {
+            "fieldname": "ndpbm",
+            "fieldtype": "Float",
+            "label": "NDPBM"
+        },
+        {
+            "fieldname": "harga_penyerahan",
+            "fieldtype": "Float",
+            "label": "HARGA PENYERAHAN"
+        },
+        {
+            "fieldname": "harga_perolehan",
+            "fieldtype": "Float",
+            "label": "HARGA PEROLEHAN"
+        },
+        {
+            "fieldname": "nilai_jasa",
+            "fieldtype": "Data",
+            "label": "NILAI JASA"
+        },
+        {
+            "fieldname": "seri_izin",
+            "fieldtype": "Int",
+            "label": "SERI IZIN"
+        },
+        {
+            "fieldname": "kode_bkc",
+            "fieldtype": "Data",
+            "label": "KODE BKC"
+        },
+        {
+            "fieldname": "kode_komoditi_bkc",
+            "fieldtype": "Data",
+            "label": "KODE KOMODITI BKC"
+        },
+        {
+            "fieldname": "kode_sub_komoditi_bkc",
+            "fieldtype": "Data",
+            "label": "KODE SUB KOMODITI BKC"
+        },
+        {
+            "fieldname": "flag_tis",
+            "fieldtype": "Int",
+            "label": "FLAG TIS"
+        },
+        {
+            "fieldname": "isi_per_kemasan",
+            "fieldtype": "Int",
+            "label": "ISI PER KEMASAN"
+        },
+        {
+            "fieldname": "jumlah_dilekatkan",
+            "fieldtype": "Data",
+            "label": "JUMLAH DILEKATKAN"
+        },
+        {
+            "fieldname": "jumlah_pita_cukai",
+            "fieldtype": "Data",
+            "label": "JUMLAH PITA CUKAI"
+        },
+        {
+            "fieldname": "hje_cukai",
+            "fieldtype": "Float",
+            "label": "HJE CUKAI"
+        },
+        {
+            "fieldname": "tarif_cukai",
+            "fieldtype": "Float",
+            "label": "TARIF CUKAI"
+        },
+        {
+            "fieldname": "bahan_baku_dokumen",
+            "fieldtype": "Table",
+            "label": "BAHAN BAKU DOKUMEN",
+            "options": "BAHAN BAKU DOKUMEN"
+        },
+        {
+            "fieldname": "bahan_tarif",
+            "fieldtype": "Table",
+            "label": "BAHAN TARIF",
+            "options": "BAHAN BAKU TARIF"
+        }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2023-11-15 16:55:06.469344",
+    "modified_by": "Administrator",
+    "module": "Singlecore Apps",
+    "name": "BAHAN BAKU",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "System Manager",
+            "share": 1,
+            "write": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
 }

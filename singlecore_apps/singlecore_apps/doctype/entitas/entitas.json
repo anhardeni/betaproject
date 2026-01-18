@@ -20,7 +20,8 @@
   "nomor_ijin_entitas",
   "tanggal_ijin_entitas",
   "kode_negara",
-  "niper_entitas"
+  "niper_entitas",
+  "kode_kategori_konsolidator"
  ],
  "fields": [
   {
@@ -57,7 +58,7 @@
   },
   {
    "fieldname": "alamat_entitas",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "ALAMAT ENTITAS"
   },
   {
@@ -80,12 +81,14 @@
   {
    "fieldname": "nomor_ijin_entitas",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "NOMOR IJIN ENTITAS"
   },
   {
    "fieldname": "tanggal_ijin_entitas",
    "fieldtype": "Date",
-   "label": "TANGGAL IJIN ENTITAS"
+   "label": "TANGGAL IJIN ENTITAS",
+   "in_list_view": 1
   },
   {
    "fieldname": "kode_negara",
@@ -97,17 +100,24 @@
    "fieldname": "niper_entitas",
    "fieldtype": "Data",
    "label": "NIPER ENTITAS"
+  },
+  {
+   "fieldname": "kode_kategori_konsolidator",
+   "fieldtype": "Link",
+   "label": "KODE KATEGORI KONSOLIDATOR",
+   "options": "Referensi Kategori Konsolidator"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-09-20 13:34:15.659211",
+ "modified": "2026-01-03 21:08:51.437201",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "ENTITAS",
  "owner": "Administrator",
  "permissions": [],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

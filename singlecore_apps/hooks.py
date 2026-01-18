@@ -11,8 +11,8 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/singlecore_apps/css/singlecore_apps.css"
-# app_include_js = "/assets/singlecore_apps/js/singlecore_apps.js"
+app_include_css = "/assets/singlecore_apps/css/singlecore_apps.css"
+app_include_js = "/assets/singlecore_apps/js/theme_manager.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/singlecore_apps/css/singlecore_apps.css"

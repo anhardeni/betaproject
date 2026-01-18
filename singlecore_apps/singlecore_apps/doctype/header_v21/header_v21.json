@@ -1,5 +1,11 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": "/api/method/singlecore_apps.api.get_nested_data",
+   "action_type": "Route",
+   "label": "draft-json"
+  }
+ ],
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{00}{kode_dokumen4digit}{BT0001}{YYYY}{MM}{DD}{######}",
@@ -115,6 +121,7 @@
   "barang_tidak_berwujud",
   "data_3_tab",
   "entitas",
+  "komponen_biaya",
   "data_4_tab",
   "kemasan",
   "dokumen",
@@ -752,15 +759,21 @@
    "options": "KONTAINER"
   },
   {
-   "fieldname": "data_6_tab",
-   "fieldtype": "Tab Break",
-   "label": "Data 6"
-  },
-  {
    "fieldname": "bank_devisa",
    "fieldtype": "Table",
    "label": "BANK DEVISA",
    "options": "BANK DEVISA"
+  },
+  {
+   "fieldname": "kesiapan_barang",
+   "fieldtype": "Table",
+   "label": "KESIAPAN BARANG",
+   "options": "KESIAPAN BARANG"
+  },
+  {
+   "fieldname": "data_6_tab",
+   "fieldtype": "Tab Break",
+   "label": "Data 6"
   },
   {
    "fieldname": "data_7_tab",
@@ -768,10 +781,10 @@
    "label": "Data 7"
   },
   {
-   "fieldname": "kesiapan_barang",
+   "fieldname": "komponen_biaya",
    "fieldtype": "Table",
-   "label": "KESIAPAN BARANG",
-   "options": "KESIAPAN BARANG"
+   "label": "KOMPONEN BIAYA",
+   "options": "KOMPONEN BIAYA"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -781,7 +794,7 @@
    "link_fieldname": "nomoraju"
   }
  ],
- "modified": "2025-11-28 23:05:56.996761",
+ "modified": "2026-01-12 07:09:00.373560",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "HEADER V21",

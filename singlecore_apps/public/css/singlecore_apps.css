@@ -1,0 +1,62 @@
+/* Global CSS Variables for Themes */
+
+:root {
+    --primary: #1F2937;
+    --primary-bg: #FFFFFF;
+    --text-color: #374151;
+    --border-color: #E5E7EB;
+}
+
+/* Success Theme (Green Vibrant) */
+[data-theme='success'] {
+    --primary: #059669;
+    --primary-bg: #ECFDF5;
+    --text-color: #064E3B;
+    --border-color: #A7F3D0;
+    --btn-primary-bg: #10B981;
+    --navbar-bg: #065F46;
+}
+
+/* Apply overrides to Frappe elements */
+[data-theme='success'] .page-container,
+[data-theme='success'] .layout-main-section {
+    background-color: var(--primary-bg) !important;
+}
+
+[data-theme='success'] .navbar {
+    background-color: var(--navbar-bg) !important;
+}
+
+[data-theme='success'] .btn-primary {
+    background-color: var(--btn-primary-bg) !important;
+    border-color: var(--btn-primary-bg) !important;
+}
+
+[data-theme='success'] .sidebar-item-container.active {
+    background-color: var(--primary-bg) !important;
+    color: var(--primary) !important;
+}
+
+/* Ocean Theme (Blue) */
+[data-theme='ocean'] {
+    --primary: #1E40AF;
+    --primary-bg: #EFF6FF;
+    --text-color: #1E3A8A;
+    --border-color: #BFDBFE;
+    --btn-primary-bg: #3B82F6;
+    --navbar-bg: #1D4ED8;
+}
+
+[data-theme='ocean'] .page-container,
+[data-theme='ocean'] .layout-main-section {
+    background-color: var(--primary-bg) !important;
+}
+
+[data-theme='ocean'] .navbar {
+    background-color: var(--navbar-bg) !important;
+}
+
+[data-theme='ocean'] .btn-primary {
+    background-color: var(--btn-primary-bg) !important;
+    border-color: var(--btn-primary-bg) !important;
+}

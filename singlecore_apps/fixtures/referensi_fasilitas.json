@@ -1,482 +1,482 @@
 [
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "1",
-  "modified": "2023-06-16 16:14:53.248267",
-  "nama_fasilitas": "PMA",
-  "name": "1"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "2",
-  "modified": "2023-06-16 16:14:53.257650",
-  "nama_fasilitas": "PMDN",
-  "name": "2"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "3",
-  "modified": "2023-06-16 16:14:53.263291",
-  "nama_fasilitas": "KITE/Kemudahan Impor Tujuan Ekspor - KITE PEMBEBASAN",
-  "name": "3"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "4",
-  "modified": "2023-06-16 16:14:53.269053",
-  "nama_fasilitas": "Insentif Otomotif",
-  "name": "4"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "5",
-  "modified": "2023-06-16 16:14:53.273104",
-  "nama_fasilitas": "PTNI",
-  "name": "5"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "6",
-  "modified": "2023-06-16 16:14:53.277222",
-  "nama_fasilitas": "ATIGA",
-  "name": "6"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "7",
-  "modified": "2023-06-16 16:14:53.281329",
-  "nama_fasilitas": "Keperluan Pertahanan dan Keamanan",
-  "name": "7"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "8",
-  "modified": "2023-06-16 16:14:53.284946",
-  "nama_fasilitas": "Industri Strategis",
-  "name": "8"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "9",
-  "modified": "2023-06-16 16:14:53.288895",
-  "nama_fasilitas": "Proyek pemerintah yang dibiayai dengan hibah atau dana pinjaman luar negeri",
-  "name": "9"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "10",
-  "modified": "2023-06-16 16:14:53.292647",
-  "nama_fasilitas": "Perwakilan Negara Asing dan Pejabatnya",
-  "name": "10"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "11",
-  "modified": "2023-06-16 16:14:53.296322",
-  "nama_fasilitas": "Badan Internasional dan Pejabatnya",
-  "name": "11"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "12",
-  "modified": "2023-06-16 16:14:53.300102",
-  "nama_fasilitas": "--",
-  "name": "12"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "13",
-  "modified": "2023-06-16 16:14:53.303947",
-  "nama_fasilitas": "Hadiah untuk ibadah umum, amal,sosial/kebudayaan",
-  "name": "13"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "14",
-  "modified": "2023-06-16 16:14:53.307542",
-  "nama_fasilitas": "Keperluan museum, kebun binatang dan tempat lain yang semacam itu",
-  "name": "14"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "15",
-  "modified": "2023-06-16 16:14:53.311329",
-  "nama_fasilitas": "Keperluan khusus tuna netra dan penyandang cacat",
-  "name": "15"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "16",
-  "modified": "2023-06-16 16:14:53.315463",
-  "nama_fasilitas": "Penelitian dan Pengembangan Ilmu Pengetahuan",
-  "name": "16"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "17",
-  "modified": "2023-06-16 16:14:53.319422",
-  "nama_fasilitas": "Barang contoh tidak untuk diperdagangkan",
-  "name": "17"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "18",
-  "modified": "2023-06-16 16:14:53.323100",
-  "nama_fasilitas": "Barang re-impor yang mendapat fasilitas KITE",
-  "name": "18"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "19",
-  "modified": "2023-06-16 16:14:53.327031",
-  "nama_fasilitas": "Pencegahan Pencemaran Lingkungan",
-  "name": "19"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "20",
-  "modified": "2023-06-16 16:14:53.330792",
-  "nama_fasilitas": "Bibit atau benih untuk pengembangan pertanian, peternakan dan perikanan",
-  "name": "20"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "21",
-  "modified": "2023-06-16 16:14:53.334928",
-  "nama_fasilitas": "Hasil laut",
-  "name": "21"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "22",
-  "modified": "2023-06-16 16:14:53.338670",
-  "nama_fasilitas": "Barang yang semula diekspor untuk perbaikan, pengerjaan dan pengujian",
-  "name": "22"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "23",
-  "modified": "2023-06-16 16:14:53.342468",
-  "nama_fasilitas": "Bahan terapi manusia, pengelompokan darah, dan bahan penjenisan jaringan",
-  "name": "23"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "24",
-  "modified": "2023-06-16 16:14:53.347281",
-  "nama_fasilitas": "Diimpor pleh pemerintah pusat/ daerah untuk kepentingan umum",
-  "name": "24"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "25",
-  "modified": "2023-06-16 16:14:53.351525",
-  "nama_fasilitas": "Berasal dari Kawasan Berikat",
-  "name": "25"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "26",
-  "modified": "2023-06-16 16:14:53.355354",
-  "nama_fasilitas": "Berasal dari Gudang Berikat",
-  "name": "26"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "28",
-  "modified": "2023-06-16 16:14:53.359359",
-  "nama_fasilitas": "Keputusan lainnya (selain 01-26 dan 29-36)",
-  "name": "28"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "29",
-  "modified": "2023-06-16 16:14:53.363275",
-  "nama_fasilitas": "Pertamina",
-  "name": "29"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "30",
-  "modified": "2023-06-16 16:14:53.367121",
-  "nama_fasilitas": "Pembangunan atau pengembangan Industri non PMA/PMDN",
-  "name": "30"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "31",
-  "modified": "2023-06-16 16:14:53.371315",
-  "nama_fasilitas": "Barang reimpor yang tidak mendapatkan fasilitas KITE",
-  "name": "31"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "32",
-  "modified": "2023-06-16 16:14:53.375523",
-  "nama_fasilitas": "Barang yang semula diekspor untuk pengerjaan proyek, pameran dan pengemasan",
-  "name": "32"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "33",
-  "modified": "2023-06-16 16:14:53.381143",
-  "nama_fasilitas": "Berasal dari Toko Bebas Bea",
-  "name": "33"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "34",
-  "modified": "2023-06-16 16:14:53.384885",
-  "nama_fasilitas": "Berasal dari Entreport Tujuan Pameran",
-  "name": "34"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "35",
-  "modified": "2023-06-16 16:14:53.388828",
-  "nama_fasilitas": "Impor Sementara",
-  "name": "35"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "36",
-  "modified": "2023-06-16 16:14:53.392693",
-  "nama_fasilitas": "AIDA",
-  "name": "36"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "37",
-  "modified": "2023-06-16 16:14:53.396448",
-  "nama_fasilitas": "BKPM",
-  "name": "37"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "38",
-  "modified": "2023-06-16 16:14:53.400285",
-  "nama_fasilitas": "Pertambangan",
-  "name": "38"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "39",
-  "modified": "2023-06-16 16:14:53.404102",
-  "nama_fasilitas": "Penundaan Bea Masuk, Cukai dan/atau Pajak",
-  "name": "39"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "40",
-  "modified": "2023-06-16 16:14:53.408102",
-  "nama_fasilitas": "KITE Pengembalian",
-  "name": "40"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "41",
-  "modified": "2023-06-16 16:14:53.411925",
-  "nama_fasilitas": "KITE IKM",
-  "name": "41"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "44",
-  "modified": "2023-06-16 16:14:53.416123",
-  "nama_fasilitas": "test",
-  "name": "44"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "50",
-  "modified": "2023-06-16 16:14:53.420144",
-  "nama_fasilitas": "Keterangan Karantina",
-  "name": "50"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "51",
-  "modified": "2023-06-16 16:14:53.424078",
-  "nama_fasilitas": "Keterangan Kesehatan / POM",
-  "name": "51"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "52",
-  "modified": "2023-06-16 16:14:53.427939",
-  "nama_fasilitas": "Keterangan Pajak",
-  "name": "52"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "53",
-  "modified": "2023-06-16 16:14:53.432055",
-  "nama_fasilitas": "Keterangan lainnya (selain 50 s.d 52)",
-  "name": "53"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "54",
-  "modified": "2023-06-16 16:14:53.435846",
-  "nama_fasilitas": "Preferensi Tarif Importasi Asean-China (ACFTA)",
-  "name": "54"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "55",
-  "modified": "2023-06-16 16:14:53.439745",
-  "nama_fasilitas": "Preferensi Tarif Importasi Asean-Korea (AKFTA)",
-  "name": "55"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "56",
-  "modified": "2023-06-16 16:14:53.444467",
-  "nama_fasilitas": "Preferensi Tarif Indonesia-Japan (IJ-EPA)",
-  "name": "56"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "57",
-  "modified": "2023-06-16 16:14:53.448934",
-  "nama_fasilitas": "Preferensi Tarif Importasi Asean-India (AIFTA)",
-  "name": "57"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "58",
-  "modified": "2023-06-16 16:14:53.453313",
-  "nama_fasilitas": "Preferensi Tarif Asean-Australia-New Zealand (AANZFTA)",
-  "name": "58"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "59",
-  "modified": "2023-06-16 16:14:53.457919",
-  "nama_fasilitas": "Preferensi Tarif Indonesia Pakistan FTA",
-  "name": "59"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "60",
-  "modified": "2023-06-16 16:14:53.462255",
-  "nama_fasilitas": "USDFS",
-  "name": "60"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "61",
-  "modified": "2023-06-16 16:14:53.467039",
-  "nama_fasilitas": "AJCEP",
-  "name": "61"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "62",
-  "modified": "2023-06-16 16:14:53.471597",
-  "nama_fasilitas": "Preferensi Tarif Indonesia - Palestina",
-  "name": "62"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "63",
-  "modified": "2023-06-16 16:14:53.476347",
-  "nama_fasilitas": "Preferensi Tarif Indonesia - Chili (ICCEPA)",
-  "name": "63"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "64",
-  "modified": "2023-06-16 16:14:53.480797",
-  "nama_fasilitas": "Preferensi Tarif ASEAN - Hongkong, China FTA",
-  "name": "64"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "65",
-  "modified": "2023-06-16 16:14:53.485253",
-  "nama_fasilitas": "Preferensi Tarif Indonesia Australia (IACEPA)",
-  "name": "65"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "70",
-  "modified": "2023-06-16 16:14:53.489698",
-  "nama_fasilitas": "Pembebasan Bea Masuk barang dan bahan untuk pembangunan dan pengembangan industri dalam rangka penanaman modal",
-  "name": "70"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "71",
-  "modified": "2023-06-16 16:14:53.494132",
-  "nama_fasilitas": "Pembebasan Bea Masuk barang dan bahan dalam rangka pembangunan dan pengembangan industri untuk jangka waktu tertentu",
-  "name": "71"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Fasilitas",
-  "kode_fasilitas": "99",
-  "modified": "2023-06-16 16:14:53.500351",
-  "nama_fasilitas": "Terdapat beberapa fasilitas/ pemenuhan peryaratan impor untuk 1 dokumen",
-  "name": "99"
- }
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "1",
+        "modified": "2023-06-16 16:14:53.248267",
+        "nama_fasilitas": "PMA",
+        "name": "01"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "2",
+        "modified": "2023-06-16 16:14:53.257650",
+        "nama_fasilitas": "PMDN",
+        "name": "02"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "3",
+        "modified": "2023-06-16 16:14:53.263291",
+        "nama_fasilitas": "KITE/Kemudahan Impor Tujuan Ekspor - KITE PEMBEBASAN",
+        "name": "03"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "4",
+        "modified": "2023-06-16 16:14:53.269053",
+        "nama_fasilitas": "Insentif Otomotif",
+        "name": "04"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "5",
+        "modified": "2023-06-16 16:14:53.273104",
+        "nama_fasilitas": "PTNI",
+        "name": "05"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "6",
+        "modified": "2023-06-16 16:14:53.277222",
+        "nama_fasilitas": "ATIGA",
+        "name": "06"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "7",
+        "modified": "2023-06-16 16:14:53.281329",
+        "nama_fasilitas": "Keperluan Pertahanan dan Keamanan",
+        "name": "07"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "8",
+        "modified": "2023-06-16 16:14:53.284946",
+        "nama_fasilitas": "Industri Strategis",
+        "name": "08"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "9",
+        "modified": "2023-06-16 16:14:53.288895",
+        "nama_fasilitas": "Proyek pemerintah yang dibiayai dengan hibah atau dana pinjaman luar negeri",
+        "name": "09"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "10",
+        "modified": "2023-06-16 16:14:53.292647",
+        "nama_fasilitas": "Perwakilan Negara Asing dan Pejabatnya",
+        "name": "10"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "11",
+        "modified": "2023-06-16 16:14:53.296322",
+        "nama_fasilitas": "Badan Internasional dan Pejabatnya",
+        "name": "11"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "12",
+        "modified": "2023-06-16 16:14:53.300102",
+        "nama_fasilitas": "--",
+        "name": "12"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "13",
+        "modified": "2023-06-16 16:14:53.303947",
+        "nama_fasilitas": "Hadiah untuk ibadah umum, amal,sosial/kebudayaan",
+        "name": "13"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "14",
+        "modified": "2023-06-16 16:14:53.307542",
+        "nama_fasilitas": "Keperluan museum, kebun binatang dan tempat lain yang semacam itu",
+        "name": "14"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "15",
+        "modified": "2023-06-16 16:14:53.311329",
+        "nama_fasilitas": "Keperluan khusus tuna netra dan penyandang cacat",
+        "name": "15"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "16",
+        "modified": "2023-06-16 16:14:53.315463",
+        "nama_fasilitas": "Penelitian dan Pengembangan Ilmu Pengetahuan",
+        "name": "16"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "17",
+        "modified": "2023-06-16 16:14:53.319422",
+        "nama_fasilitas": "Barang contoh tidak untuk diperdagangkan",
+        "name": "17"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "18",
+        "modified": "2023-06-16 16:14:53.323100",
+        "nama_fasilitas": "Barang re-impor yang mendapat fasilitas KITE",
+        "name": "18"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "19",
+        "modified": "2023-06-16 16:14:53.327031",
+        "nama_fasilitas": "Pencegahan Pencemaran Lingkungan",
+        "name": "19"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "20",
+        "modified": "2023-06-16 16:14:53.330792",
+        "nama_fasilitas": "Bibit atau benih untuk pengembangan pertanian, peternakan dan perikanan",
+        "name": "20"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "21",
+        "modified": "2023-06-16 16:14:53.334928",
+        "nama_fasilitas": "Hasil laut",
+        "name": "21"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "22",
+        "modified": "2023-06-16 16:14:53.338670",
+        "nama_fasilitas": "Barang yang semula diekspor untuk perbaikan, pengerjaan dan pengujian",
+        "name": "22"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "23",
+        "modified": "2023-06-16 16:14:53.342468",
+        "nama_fasilitas": "Bahan terapi manusia, pengelompokan darah, dan bahan penjenisan jaringan",
+        "name": "23"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "24",
+        "modified": "2023-06-16 16:14:53.347281",
+        "nama_fasilitas": "Diimpor pleh pemerintah pusat/ daerah untuk kepentingan umum",
+        "name": "24"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "25",
+        "modified": "2023-06-16 16:14:53.351525",
+        "nama_fasilitas": "Berasal dari Kawasan Berikat",
+        "name": "25"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "26",
+        "modified": "2023-06-16 16:14:53.355354",
+        "nama_fasilitas": "Berasal dari Gudang Berikat",
+        "name": "26"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "28",
+        "modified": "2023-06-16 16:14:53.359359",
+        "nama_fasilitas": "Keputusan lainnya (selain 01-26 dan 29-36)",
+        "name": "28"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "29",
+        "modified": "2023-06-16 16:14:53.363275",
+        "nama_fasilitas": "Pertamina",
+        "name": "29"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "30",
+        "modified": "2023-06-16 16:14:53.367121",
+        "nama_fasilitas": "Pembangunan atau pengembangan Industri non PMA/PMDN",
+        "name": "30"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "31",
+        "modified": "2023-06-16 16:14:53.371315",
+        "nama_fasilitas": "Barang reimpor yang tidak mendapatkan fasilitas KITE",
+        "name": "31"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "32",
+        "modified": "2023-06-16 16:14:53.375523",
+        "nama_fasilitas": "Barang yang semula diekspor untuk pengerjaan proyek, pameran dan pengemasan",
+        "name": "32"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "33",
+        "modified": "2023-06-16 16:14:53.381143",
+        "nama_fasilitas": "Berasal dari Toko Bebas Bea",
+        "name": "33"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "34",
+        "modified": "2023-06-16 16:14:53.384885",
+        "nama_fasilitas": "Berasal dari Entreport Tujuan Pameran",
+        "name": "34"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "35",
+        "modified": "2023-06-16 16:14:53.388828",
+        "nama_fasilitas": "Impor Sementara",
+        "name": "35"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "36",
+        "modified": "2023-06-16 16:14:53.392693",
+        "nama_fasilitas": "AIDA",
+        "name": "36"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "37",
+        "modified": "2023-06-16 16:14:53.396448",
+        "nama_fasilitas": "BKPM",
+        "name": "37"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "38",
+        "modified": "2023-06-16 16:14:53.400285",
+        "nama_fasilitas": "Pertambangan",
+        "name": "38"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "39",
+        "modified": "2023-06-16 16:14:53.404102",
+        "nama_fasilitas": "Penundaan Bea Masuk, Cukai dan/atau Pajak",
+        "name": "39"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "40",
+        "modified": "2023-06-16 16:14:53.408102",
+        "nama_fasilitas": "KITE Pengembalian",
+        "name": "40"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "41",
+        "modified": "2023-06-16 16:14:53.411925",
+        "nama_fasilitas": "KITE IKM",
+        "name": "41"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "44",
+        "modified": "2023-06-16 16:14:53.416123",
+        "nama_fasilitas": "test",
+        "name": "44"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "50",
+        "modified": "2023-06-16 16:14:53.420144",
+        "nama_fasilitas": "Keterangan Karantina",
+        "name": "50"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "51",
+        "modified": "2023-06-16 16:14:53.424078",
+        "nama_fasilitas": "Keterangan Kesehatan / POM",
+        "name": "51"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "52",
+        "modified": "2023-06-16 16:14:53.427939",
+        "nama_fasilitas": "Keterangan Pajak",
+        "name": "52"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "53",
+        "modified": "2023-06-16 16:14:53.432055",
+        "nama_fasilitas": "Keterangan lainnya (selain 50 s.d 52)",
+        "name": "53"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "54",
+        "modified": "2023-06-16 16:14:53.435846",
+        "nama_fasilitas": "Preferensi Tarif Importasi Asean-China (ACFTA)",
+        "name": "54"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "55",
+        "modified": "2023-06-16 16:14:53.439745",
+        "nama_fasilitas": "Preferensi Tarif Importasi Asean-Korea (AKFTA)",
+        "name": "55"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "56",
+        "modified": "2023-06-16 16:14:53.444467",
+        "nama_fasilitas": "Preferensi Tarif Indonesia-Japan (IJ-EPA)",
+        "name": "56"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "57",
+        "modified": "2023-06-16 16:14:53.448934",
+        "nama_fasilitas": "Preferensi Tarif Importasi Asean-India (AIFTA)",
+        "name": "57"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "58",
+        "modified": "2023-06-16 16:14:53.453313",
+        "nama_fasilitas": "Preferensi Tarif Asean-Australia-New Zealand (AANZFTA)",
+        "name": "58"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "59",
+        "modified": "2023-06-16 16:14:53.457919",
+        "nama_fasilitas": "Preferensi Tarif Indonesia Pakistan FTA",
+        "name": "59"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "60",
+        "modified": "2023-06-16 16:14:53.462255",
+        "nama_fasilitas": "USDFS",
+        "name": "60"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "61",
+        "modified": "2023-06-16 16:14:53.467039",
+        "nama_fasilitas": "AJCEP",
+        "name": "61"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "62",
+        "modified": "2023-06-16 16:14:53.471597",
+        "nama_fasilitas": "Preferensi Tarif Indonesia - Palestina",
+        "name": "62"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "63",
+        "modified": "2023-06-16 16:14:53.476347",
+        "nama_fasilitas": "Preferensi Tarif Indonesia - Chili (ICCEPA)",
+        "name": "63"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "64",
+        "modified": "2023-06-16 16:14:53.480797",
+        "nama_fasilitas": "Preferensi Tarif ASEAN - Hongkong, China FTA",
+        "name": "64"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "65",
+        "modified": "2023-06-16 16:14:53.485253",
+        "nama_fasilitas": "Preferensi Tarif Indonesia Australia (IACEPA)",
+        "name": "65"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "70",
+        "modified": "2023-06-16 16:14:53.489698",
+        "nama_fasilitas": "Pembebasan Bea Masuk barang dan bahan untuk pembangunan dan pengembangan industri dalam rangka penanaman modal",
+        "name": "70"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "71",
+        "modified": "2023-06-16 16:14:53.494132",
+        "nama_fasilitas": "Pembebasan Bea Masuk barang dan bahan dalam rangka pembangunan dan pengembangan industri untuk jangka waktu tertentu",
+        "name": "71"
+    },
+    {
+        "docstatus": 0,
+        "doctype": "Referensi Fasilitas",
+        "kode_fasilitas": "99",
+        "modified": "2023-06-16 16:14:53.500351",
+        "nama_fasilitas": "Terdapat beberapa fasilitas/ pemenuhan peryaratan impor untuk 1 dokumen",
+        "name": "99"
+    }
 ]

@@ -1,39 +1,33 @@
 {
  "actions": [],
- "allow_import": 1,
- "allow_rename": 1,
- "autoname": "field:kode_fasilitas",
- "creation": "2023-06-16 16:13:35.808812",
- "default_view": "List",
+ "autoname": "autoincrement",
+ "creation": "2026-01-01 18:10:18.620177",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kode_fasilitas",
-  "nama_fasilitas"
+  "kode_jenis_pengangkutan",
+  "jenis_pengangkutan"
  ],
  "fields": [
   {
-   "fieldname": "kode_fasilitas",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "KODE FASILITAS",
-   "reqd": 1,
-   "unique": 1
+   "fieldname": "kode_jenis_pengangkutan",
+   "fieldtype": "Int",
+   "label": "KODE_JENIS_PENGANGKUTAN"
   },
   {
-   "fieldname": "nama_fasilitas",
+   "fieldname": "jenis_pengangkutan",
    "fieldtype": "Data",
-   "label": "NAMA FASILITAS"
+   "label": "JENIS_PENGANGKUTAN"
   }
  ],
+ "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-01 21:11:40.611553",
+ "modified": "2026-01-01 18:13:01.198417",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
- "name": "Referensi Fasilitas",
- "naming_rule": "By fieldname",
+ "name": "Referensi Jenis Pengangkutan",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
@@ -50,6 +44,7 @@
   }
  ],
  "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

@@ -1,24 +1,12 @@
 from os import stat
 import frappe
 from frappe.query_builder import DocType
+import requests
+import json
 
 
 SUCCESS = 200
 NOT_FOUND = 400
-
-
-@frappe.whitelist(allow_guest=True)
-def get_all_headerg():
-    headerg = frappe.db.sql("""SELECT kode_kantor_bongkar AS kodeKantorBongkar, kode_dokumen  FROM `tabHEADER V2` ;""", as_dict=True)
-
-    return headerg
-
-@frappe.whitelist(allow_guest=True)
-def get_all_headera1():
-    headera1 = frappe.db.sql("""SELECT kode_kantor_bongkar AS kodeKantorBongkar, JSON_ARRAYAGG(kode_dokumen) FROM `tabHEADER V2` ;""", as_dict=True)
-
-    return headera1
-
 
 @frappe.whitelist(allow_guest=True)
 def get_all_headerq():
@@ -45,77 +33,6 @@ def get_all_headerq():
         #).run(as_dict=True)
 
     #return headerq
-
-@frappe.whitelist(allow_guest=True)
-def get_all_bc20():
-    bc20 = frappe.db.sql("""SELECT 
-    name AS nomorAju,
-    kode_kantor_bongkar AS kodeKantorBongkar, 
-    kode_dokumen  
-    FROM `tabHEADER V2` ;""", as_dict=True)
-
-    return bc20
-
-
-@frappe.whitelist(allow_guest=True)
-def get_all_bc30():
-    bc30 = frappe.db.sql("""SELECT 
-    asaldata	AS	asalData	,
-    asuransi	AS	asuransi	,
-    barang_tidak_berwujud	AS	barang_tidak_berwujud	,
-    biaya_pengurang	AS	biaya_pengurang	,
-    biaya_tambahan	AS	biaya_tambahan	,
-    bruto	AS	bruto	,
-    cif	AS	cif	,
-    kode_kantor_bongkar AS kodeKantorBongkar, 
-    kode_dokumen  
-    FROM `tabHEADER V2`
-    WHERE `tabHEADER V2`.kode_dokumen = "30"
-        AND  `tabHEADER V2`.name = "000030BT000120231002000013"     ;""", as_dict=True)
-
-    return bc30
-
-@frappe.whitelist(allow_guest=True)
-def get_all_headerq30():
-    #headerq30 = frappe.qb.Table("tabHEADER")
-    #headerq30 = frappe.qb.from_('HEADER').select('name' , 'owner', 'nomor_aju' , 'kode_dokumen' ).where('kode_dokumen' == '261').walk(as_dict=True)
-    headerq30 = frappe.qb.from_('HEADER V2').select('name' , 'owner', 'nomoraju' , 'kode_dokumen' ).run(as_dict=True)
-    #headerq30 = frappe.qb.from_('HEADER V2').select('name').as_('nomorAju').run(as_dict=True)
-    return headerq30
-
-@frappe.whitelist(allow_guest=True)
-def get_all_headerl1():
-    frappe.get_list("HEADER V2")
-    #headerq = frappe.qb.from_('HEADER').select('name' , 'owner', 'nomor_aju' , 'kode_dokumen' ).run(as_dict=True)
-    #headerq30 = frappe.qb.from_('HEADER V2').select('name').as_('nomorAju').run(as_dict=True)
-
-@frappe.whitelist(allow_guest=True)
-def get_all_bc301():
-    bc301 = frappe.db.sql("""SELECT JSON_OBJECT(
-        asaldata,asalData	
-        , Asuransi,	Asuransi
-        , kode_kantor ,	kode_Kantor 
-    )
-    FROM `tabHEADER V2`
-         ;""", as_dict=True)
-
-    return bc301
-
-@frappe.whitelist(allow_guest=True)
-def get_all_bctest01():
-    bctest01 = frappe.db.sql("""select json_object(
-        'id',p.id
-        ,'desc',p.desc
-        ,'child_objects',JSON_EXTRACT(IFNULL((select
-        CONCAT('[',GROUP_CONCAT(
-        json_object('id',c.id,'parent_id',c.parent_id,'desc',c.desc)
-        ),']')   
-        from `child_table` c where  c.parent_id = p.id),'[]'),'$')
-        ) from `parent_table` p where p.id = 2;""", as_dict=True)
-
-    return bctest01
-
-
 
 frappe.whitelist(allow_guest=True)
 def authenticate_and_get_token(username, password):
@@ -392,202 +309,6 @@ def get_nested_data_all():    # Example: Retrieve data from Frappe doctypes
 
     return nested_data_all
 
-@frappe.whitelist(allow_guest=True)
-def get_nested_data_bc23():    # Example: Retrieve data from Frappe doctypes
-    parent_data = frappe.get_doc("HEADER V2", "000020BT000120241128505790")
-    entitas_data = frappe.get_list("ENTITAS",  filters={"parent": parent_data.name}, fields=[ 'seri', 'kode_entitas', 'parent', 'alamat_entitas','kode_jenis_identitas','nama_entitas','nib_entitas','nomor_identitas','nomor_ijin_entitas','tanggal_ijin_entitas'],)
-       
-    barang_data = frappe.get_list("BARANG V1", filters={"nomoraju": parent_data.name}, fields=['name','nomoraju', 'seri_barang','asuransi','cif','diskon','fob','freight','harga_ekspor','harga_penyerahan','harga_satuan','isi_per_kemasan','jumlah_kemasan','jumlah_satuan','kode_barang','kode_dokumen_asal','kode_kategori_barang','kode_negara_asal','kode_perhitungan','kode_satuan','merek','netto','nilai_barang','nilai_tambah','hs','spesifikasi_lain','tipe','ukuran','uraian','ndpbm','cif_rupiah','harga_perolehan','kode_asal_barang'],)
-    barang_tarif_data = frappe.get_list("BARANG TARIF", fields=['nomoraju', 'seri_barang', 'parent','name','kode_tarif','jumlah_satuan','kode_fasilitas','kode_satuan','kode_pungutan','nilai_bayar','nilai_fasilitas','nilai_sudah_dilunasi','tarif','tarif_fasilitas'],)
-    barang_dokumen_data = frappe.get_list("BARANG DOKUMEN",  fields=['seri_izin', 'seri_barang', 'parent','name'],)
-     
-    kemasan_data = frappe.get_list("KEMASAN", filters={"parent": parent_data.name}, fields=[ 'jumlah_kemasan','merek_kemasan', 'kode_kemasan','seri','name'],)
-    kontainer_data = frappe.get_list("KONTAINER", filters={"parent": parent_data.name}, fields=['name','kode_jenis_kontainer','kode_tipe_kontainer','kode_ukuran_kontainer','nomor_kontainer','seri'],)
-    dokumen_data = frappe.get_list("DOKUMEN", filters={"parent": parent_data.name}, fields=['name', 'kode_dokumen','nomor_dokumen','seri','tanggal_dokumen'],)
-    pengangkut_data = frappe.get_list("PENGANGKUT", filters={"parent": parent_data.name}, fields=['name','call_sign','kode_bendera','nama_pengangkut','nomor_pengangkut','kode_cara_angkut','seri_pengangkut'],)
-
-    # Format the data into the nested JSON structure with aliases
-    nested_data_bc23 = {
-       # "data": {
-            "asalData": parent_data.asaldata,  # Alias for parent field 1
-            "nomorAju": parent_data.name,  # Alias for parent field 1
-            "kodeDokumen": parent_data.kode_dokumen,  # Alias for parent field 2
-            "asuransi":float(parent_data.asuransi),
-            "bruto":float(parent_data.bruto),
-            "cif":float(parent_data.cif),
-            "fob":float(parent_data.fob),
-            "freight":float(parent_data.freight),
-            "hargaPenyerahan":float(parent_data.harga_penyerahan),
-            "nik": parent_data.id_pengguna,
-            "jabatanTtd":parent_data.jabatan_pernyataan,
-            "jumlahKontainer":int(parent_data.jumlah_kontainer),
-            "kodeAsuransi":parent_data.kode_asuransi,
-            "kodeIncoterm":parent_data.kode_incoterm,
-            "kodeKantor": parent_data.kode_kantor,
-            "kodeKantorBongkar":parent_data.kode_kantor_bongkar,
-            "kodePelBongkar":parent_data.kode_pelabuhan_bongkar,
-            "kodePelMuat":parent_data.kode_pelabuhan_muat,
-            "kodePelTransit":parent_data.kode_pelabuhan_transit,
-            "kodeTps":parent_data.kode_tps,
-            "kodeTujuanTpb":parent_data.kode_tujuan_tpb,
-            "kodeTutupPu":parent_data.kode_tutup_pu,
-            "kodeValuta":parent_data.kode_valuta,
-            "kotaTtd":parent_data.kota_pernyataan,
-            "namaTtd":parent_data.nama_pernyataan,
-            "ndpbm":float(parent_data.ndpbm),
-            "netto":float(parent_data.netto),
-            "nilaiBarang":float(parent_data.nilai_barang),	
-            "nomorBc11":parent_data.nomor_bc11, 
-            "posBc11":parent_data.nomor_pos,
-            "seri":int(parent_data.seri_dokumen),
-            "subposBc11":parent_data.nomor_sub_pos,
-            "tanggalBc11":parent_data.tanggal_bc11,
-            "tanggalTiba":parent_data.tanggal_tiba,
-            "tanggalTtd":parent_data.tanggal_pernyataan,
-            "biayaTambahan":float(parent_data.biaya_tambahan),
-            "biayaPengurang":float(parent_data.biaya_pengurang),	
-            "kodeKenaPajak":parent_data.kode_jasa_kena_pajak,
-            "entitas": [
-                {
-                    "seriEntitas": int(entitas.seri),
-                    "kodeEntitas": entitas.kode_entitas,
-                    "alamatEntitas": entitas.alamat_entitas,
-                    "kodeJenisIdentitas": entitas.kode_jenis_identitas,
-                    "namaEntitas": entitas.nama_entitas,
-                    "nibEntitas": entitas.nib_entitas,
-                    "nomorIdentitas": entitas.nomor_identitas,
-                    "nomorIjinEntitas": entitas.nomor_ijin_entitas,
-                    "tanggalIjinEntitas": entitas.tanggal_ijin_entitas
-                    
-
-                 
-                }
-                for entitas in entitas_data
-            ],
-            "barang": [
-                {
-                    "Nomor_aju_brg": child.nomoraju,  # Alias for child field 1
-                    "kode_brg": child.name,  # Alias for child field 1
-                    "Seri_barang_brg": child.seri_barang,  # Alias for child field 2
-                    "asuransi": float(child.asuransi),
-                    "cif": float(child.cif),
-                    "diskon": float(child.diskon),
-                    "fob": float(child.fob),
-                    "freight": float(child.freight),
-                    "hargaEkspor": float(child.harga_ekspor),
-                    "hargaPenyerahan": float(child.harga_penyerahan),
-                    "hargaSatuan": float(child.harga_satuan),
-                    "isiPerKemasan": float(child.isi_per_kemasan),
-                    "jumlahKemasan": float(child.jumlah_kemasan),
-                    "jumlahSatuan": float(child.jumlah_satuan),
-                    "kodeBarang": child.kode_barang,
-                    "kodeDokumen": child.kode_dokumen_asal,
-                    "kodeKategoriBarang": child.kode_kategori_barang,
-                    "kodeJenisKemasan": child.kode_jenis_kemasan,
-                    "kodeNegaraAsal": child.kode_negara_asal,
-                    "kodePerhitungan": child.kode_perhitungan,
-                    "kodeSatuanBarang": child.kode_satuan,
-                    "merk": child.merek,
-                    "netto": float(child.netto),
-                    "nilaiBarang": float(child.nilai_barang),
-                    "nilaiTambah": float(child.nilai_tambah),
-                    "posTarif": child.hs,
-                    "seriBarang": child.seri_barang,
-                    "spesifikasiLain": child.spesifikasi_lain,
-                    "tipe": child.tipe,
-                    "ukuran": child.ukuran,
-                    "uraian": child.uraian,
-                    "ndpbm": float(child.ndpbm),
-                    "cifRupiah": float(child.cif_rupiah),
-                    "hargaPerolehan": float(child.harga_perolehan),
-                    "kodeAsalBahanBaku": child.kode_asal_barang,
-                    "barangTarif": [
-                       {
-                           "kodeJenisTarif": item.kode_tarif,
-                           "jumlahSatuan": float(item.jumlah_satuan),
-                           "kodeFasilitasTarif": item.kode_fasilitas,
-                           "kodeSatuanBarang": item.kode_satuan,
-                           "kodeJenisPungutan": item.kode_pungutan,
-                           "nilaiBayar": float(item.nilai_bayar),
-                           "nilaiFasilitas": float(item.nilai_fasilitas),
-                           "nilaiSudahDilunasi": float(item.nilai_sudah_dilunasi),
-                           "seriBarang": int(item.seri_barang),
-                           "tarif": float(item.tarif),
-                           "tarifFasilitas": float(item.tarif_fasilitas)
-                       }
-                       for item in barang_tarif_data if item.parent == child.name
-                    ],
-                    "barangDokumen": [
-                       {
-                           "seriDokumen": item.seri_dokumen
-                       }
-                       for item in barang_dokumen_data if item.parent == child.name
-                    ]
-                }
-                for child in barang_data
-            ],
-            "kemasan": [
-                {
-                    "jumlahKemasan": kemasan.jumlah_kemasan,
-                    "kodeJenisKemasan": kemasan.kode_kemasan,
-                    "merkKemasan": kemasan.merek_kemasan,
-                    "seriKemasan": int(kemasan.seri)
-                
-                }
-                for kemasan in kemasan_data
-            ],
-            "kontainer": [
-                {
-                    "kodeJenisKontainer": kontainer.kode_jenis_kontainer,
-                    "kodeTipeKontainer": kontainer.kode_tipe_kontainer,
-                    "kodeUkuranKontainer": kontainer.kode_ukuran_kontainer,
-                    "nomorKontainer": kontainer.nomor_kontainer,
-                    "seriKontainer": int(kontainer.seri)
-                                    
-                }
-                for kontainer in kontainer_data
-            ],
-             "dokumen": [
-                {
-                    "kodeDokumen": dokumen.kode_dokumen,
-                    "nomorDokumen": dokumen.nomor_dokumen,
-                    "seriDokumen": int(dokumen.seri),
-                    "tanggalDokumen": dokumen.tanggal_dokumen
-                   
-                    #"grandchildren": [
-                    #    {
-                    #        "grandchild_field1": grandchild.grandchild_field1,  # Alias for grandchild field 1
-                    #        "grandchild_field2": grandchild.grandchild_field2  # Alias for grandchild field 2
-                    #    }
-                    #    for grandchild in grandchildren_data if grandchild.parent == child.name
-                    #]
-                }
-                for dokumen in dokumen_data
-            ],
-             "pengangkut": [
-                {
-                    "callSign": pengangkut.call_sign, # Alias for child field 1
-                    "kodeBendera": pengangkut.kode_bendera,
-                    "namaPengangkut": pengangkut.nama_pengangkut,
-                    "nomorPengangkut": pengangkut.nomor_pengangkut,
-                    "kodeCaraAngkut": pengangkut.kode_cara_angkut,
-                    "seriPengangkut": int(pengangkut.seri_pengangkut)
-               
-                    #"grandchildren": [
-                    #    {
-                    #        "grandchild_field1": grandchild.grandchild_field1,  # Alias for grandchild field 1
-                    #        "grandchild_field2": grandchild.grandchild_field2  # Alias for grandchild field 2
-                    #    }
-                    #    for grandchild in grandchildren_data if grandchild.parent == child.name
-                    #]
-                }
-                for pengangkut in pengangkut_data
-            ],
-       # }
-    }
-
-    return nested_data_bc23
-
 
 @frappe.whitelist(allow_guest=True)
 def get_nested_data_bc20():    # Example: Retrieve data from Frappe doctypes
@@ -836,7 +557,308 @@ def get_nested_data_bc20():    # Example: Retrieve data from Frappe doctypes
 
 
 
+@frappe.whitelist(allow_guest=True)
+def get_ceisa_bc27_json(nomor_aju):
+    try:
+        doc = frappe.get_doc("HEADER V21", nomor_aju)
+        
+        # Helper to format date
+        def fmt_date(date_obj):
+            if not date_obj: return ""
+            return str(date_obj)
 
+        # Helper to get child table data
+        def get_child_data(child_table_name, fields_map):
+            data = []
+            for child in doc.get(child_table_name, []):
+                item = {}
+                for json_field, doc_field in fields_map.items():
+                    val = child.get(doc_field)
+                    item[json_field] = val if val is not None else ""
+                data.append(item)
+            return data
+
+        # 1. Map Header Fields
+        payload = {
+            "idPengguna": "", # Not in DocType
+            "nomorAju": doc.nomoraju or doc.name,
+            "tanggalAju": fmt_date(doc.tanggal_pernyataan), # Mapping to tanggal_pernyataan
+            "asalData": doc.asaldata,
+            "asuransi": doc.asuransi,
+            "bruto": doc.bruto,
+            "cif": doc.cif,
+            "disclaimer": doc.disclaimer,
+            "fob": doc.fob,
+            "freight": doc.freight,
+            "jabatanTtd": doc.jabatan_pernyataan,
+            "jumlahKontainer": len(doc.get("kontainer", [])), # Calculated
+            "kodeAsuransi": doc.kode_asuransi,
+            "kodeCaraBayar": doc.kode_cara_bayar,
+            "kodeDokumen": doc.kode_dokumen,
+            "kodeIncoterm": doc.kode_incoterm,
+            "kodeJenisNilai": doc.kode_jenis_nilai,
+            "kodeJenisProsedur": doc.kode_jenis_pib, # Assuming mapping
+            "kodeKantor": doc.kode_kantor,
+            "kodePelMuat": doc.kode_pelabuhan_muat,
+            "kodePelTujuan": doc.kode_pelabuhan_tujuan,
+            "kodeTps": doc.kode_tps,
+            "kodeValuta": doc.kode_valuta,
+            "kotaTtd": doc.kota_pernyataan,
+            "namaTtd": doc.nama_pernyataan,
+            "ndpbm": doc.ndpbm,
+            "netto": doc.netto,
+            "nilaiMaklon": doc.nilai_maklon,
+            "seri": 0, # Default or calculated?
+            "tanggalTtd": fmt_date(doc.tanggal_pernyataan),
+            "totalDanaSawit": doc.total_dana_sawit,
+            "biayaPengurang": doc.biaya_pengurang,
+            "biayaTambahan": doc.biaya_tambahan,
+            "flagVd": doc.flag_vd,
+            "hargaPenyerahan": doc.harga_penyerahan,
+            "jumlahTandaPengaman": doc.jumlah_tanda_pengaman,
+            "kodeJenisImpor": doc.kode_jenis_impor,
+            "kodePelTransit": doc.kode_pelabuhan_transit,
+            "kodeTutupPu": doc.kode_tutup_pu,
+            "nilaiBarang": doc.nilai_barang,
+            "nilaiIncoterm": doc.nilai_incoterm,
+            "nomorBc11": doc.nomor_bc11,
+            "posBc11": doc.nomor_pos,
+            "subPosBc11": doc.nomor_sub_pos,
+            "tanggalBc11": fmt_date(doc.tanggal_bc11),
+            "tanggalTiba": fmt_date(doc.tanggal_tiba),
+            "volume": doc.volume,
+            "vd": doc.vd,
+        }
+
+        # 2. Map Child Tables (Entitas, Kemasan, Dokumen, Pengangkut)
+        payload["entitas"] = get_child_data("entitas", {
+            "alamatEntitas": "alamat_entitas",
+            "kodeEntitas": "kode_entitas",
+            "kodeJenisIdentitas": "kode_jenis_identitas",
+            "namaEntitas": "nama_entitas",
+            "nibEntitas": "nib_entitas",
+            "nomorIdentitas": "nomor_identitas",
+            "kodeStatus": "kode_status",
+            "seriEntitas": "seri_entitas",
+            "kodeJenisApi": "kode_jenis_api",
+            "kodeNegara": "kode_negara",
+            "kodeAfiliasi": "kode_afiliasi"
+        })
+
+        payload["kemasan"] = get_child_data("kemasan", {
+            "jumlahKemasan": "jumlah_kemasan",
+            "kodeJenisKemasan": "kode_jenis_kemasan",
+            "merkKemasan": "merek_kemasan",
+            "seriKemasan": "seri_kemasan"
+        })
+
+        payload["dokumen"] = get_child_data("dokumen", {
+            "kodeDokumen": "kode_dokumen",
+            "nomorDokumen": "nomor_dokumen",
+            "seriDokumen": "seri_dokumen",
+            "tanggalDokumen": "tanggal_dokumen"
+        })
+
+        payload["pengangkut"] = get_child_data("pengangkut", {
+            "kodeBendera": "kode_bendera",
+            "namaPengangkut": "nama_pengangkut",
+            "nomorPengangkut": "nomor_pengangkut",
+            "kodeCaraAngkut": "kode_cara_angkut",
+            "seriPengangkut": "seri_pengangkut"
+        })
+        
+        payload["kontainer"] = get_child_data("kontainer", {
+            "kodeTipeKontainer": "kode_tipe_kontainer",
+            "kodeUkuranKontainer": "kode_ukuran_kontainer",
+            "nomorKontainer": "nomor_kontainer",
+            "seriKontainer": "seri_kontainer",
+            "kodeJenisKontainer": "kode_jenis_kontainer"
+        })
+
+        # 3. Map Barang V1
+        barang_list = []
+        # Fetch linked BARANG V1 items
+        barangs = frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["*"], order_by="seri_barang asc")
+        
+        for brg in barangs:
+            brg_item = {
+                "cif": brg.cif,
+                "cifRupiah": brg.cif_rupiah,
+                "fob": brg.fob,
+                "hargaEkspor": brg.harga_ekspor,
+                "hargaPatokan": brg.harga_patokan,
+                "hargaPerolehan": brg.harga_perolehan,
+                "hargaSatuan": brg.harga_satuan,
+                "jumlahKemasan": brg.jumlah_kemasan,
+                "jumlahSatuan": brg.jumlah_satuan,
+                "kodeJenisKemasan": brg.kode_kemasan,
+                "kodeNegaraAsal": brg.kode_negara_asal,
+                "kodeSatuanBarang": brg.kode_satuan,
+                "merk": brg.merek,
+                "ndpbm": brg.ndpbm,
+                "netto": brg.netto,
+                "nilaiBarang": brg.nilai_barang,
+                "nilaiDanaSawit": brg.nilai_dana_sawit,
+                "posTarif": brg.hs,
+                "seriBarang": brg.seri_barang,
+                "tipe": brg.tipe,
+                "uraian": brg.uraian,
+                "volume": brg.volume,
+                "asuransi": brg.asuransi,
+                "bruto": brg.bruto,
+                "diskon": brg.diskon,
+                "freight": brg.freight,
+                "hargaPenyerahan": brg.harga_penyerahan,
+                "hjeCukai": brg.hje_cukai,
+                "isiPerKemasan": brg.isi_per_kemasan,
+                "jumlahBahanBaku": brg.jumlah_bahan_baku,
+                "jumlahDilekatkan": brg.jumlah_dilekatkan,
+                "jumlahPitaCukai": brg.jumlah_pita_cukai,
+                "jumlahRealisasi": brg.jumlah_realisasi,
+                "kapasitasSilinder": brg.kapasitas_silinder,
+                "kodeKondisiBarang": brg.kode_kondisi_barang,
+                "nilaiDevisa": brg.nilai_devisa,
+                "nilaiTambah": brg.nilai_tambah,
+                "pernyataanLartas": brg.pernyataan_lartas,
+                "persentaseImpor": brg.persentase_impor,
+                "saldoAkhir": brg.saldo_akhir,
+                "saldoAwal": brg.saldo_awal,
+                "seriBarangDokAsal": brg.seri_barang_asal,
+                "seriIjin": brg.seri_izin,
+                "tahunPembuatan": brg.tahun_pembuatan,
+                "tarifCukai": brg.tarif_cukai,
+            }
+            
+            # Fetch Child Tables for this Barang
+            # BARANG TARIF
+            brg_doc = frappe.get_doc("BARANG V1", brg.name) # Need doc to get child tables easily
+            
+            brg_item["barangTarif"] = []
+            for trf in brg_doc.get("barang_tarif", []):
+                brg_item["barangTarif"].append({
+                    "tarif": trf.tarif,
+                    "nilaiBayar": trf.nilai_bayar,
+                    "seriBarang": trf.seri_barang,
+                    "kodeKemasan": "", # Not in BARANG TARIF
+                    "jumlahSatuan": trf.jumlah_satuan,
+                    "jumlahKemasan": 0, # Not in BARANG TARIF
+                    "kodeJenisTarif": trf.kode_tarif,
+                    "nilaiFasilitas": trf.nilai_fasilitas,
+                    "tarifFasilitas": trf.tarif_fasilitas,
+                    "kodeSatuanBarang": trf.kode_satuan,
+                    "kodeJenisPungutan": trf.kode_pungutan,
+                    "kodeKomoditiCukai": "", # Not in BARANG TARIF
+                    "kodeFasilitasTarif": trf.kode_fasilitas,
+                    "nilaiSudahDilunasi": trf.nilai_sudah_dilunasi,
+                    "kodeSubKomoditiCukai": "" # Not in BARANG TARIF
+                })
+
+            # BARANG DOKUMEN
+            brg_item["barangDokumen"] = []
+            for dok in brg_doc.get("barang_dokumen", []):
+                brg_item["barangDokumen"].append({
+                    "seriDokumen": dok.seri_dokumen,
+                    "seriIzin": dok.seri_izin
+                })
+                
+            # BARANG SPEK KHUSUS
+            brg_item["barangSpekKhusus"] = []
+            for spek in brg_doc.get("barang_spek_khusus", []):
+                brg_item["barangSpekKhusus"].append({
+                    "kodeSpekKhusus": spek.kode_spek_khusus,
+                    "uraian": spek.uraian
+                })
+                
+            # BARANG VD
+            brg_item["barangVd"] = []
+            for vd in brg_doc.get("barang_vd", []):
+                brg_item["barangVd"].append({
+                    "kodeJenisVd": vd.kode_jenis_vd,
+                    "nilaiBarang": vd.nilai_barang
+                })
+                
+            # BARANG PEMILIK
+            brg_item["barangPemilik"] = []
+             # Assuming barang_pemilik exists in BARANG V1 based on previous file views
+            for pem in brg_doc.get("barang_pemilik", []):
+                 brg_item["barangPemilik"].append({
+                     "seriEntitas": pem.seri_entitas
+                 })
+
+            # BAHAN BAKU (Linked Standard DocType, not child table)
+            brg_item["bahanBaku"] = []
+            bahan_bakus = frappe.get_all("BAHAN BAKU", 
+                filters={"parent_barang": brg.name}, 
+                fields=["*"],
+                order_by="seri_bahan_baku asc"
+            )
+            for bb in bahan_bakus:
+                bb_doc = frappe.get_doc("BAHAN BAKU", bb.name)
+                bb_item = {
+                    "seriBahanBaku": bb.seri_bahan_baku,
+                    "kodeAsalBahanBaku": bb.kode_asal_bahan_baku,
+                    "hs": bb.hs,
+                    "kodeBarang": bb.kode_barang,
+                    "uraian": bb.uraian,
+                    "merek": bb.merek,
+                    "tipe": bb.tipe,
+                    "ukuran": bb.ukuran,
+                    "spesifikasiLain": bb.spesifikasi_lain,
+                    "kodeSatuan": bb.kode_satuan,
+                    "jumlahSatuan": bb.jumlah_satuan,
+                    "netto": bb.netto,
+                    "bruto": bb.bruto,
+                    "volume": bb.volume,
+                    "cif": bb.cif,
+                    "cifRupiah": bb.cif_rupiah,
+                    "ndpbm": bb.ndpbm,
+                    "hargaPenyerahan": bb.harga_penyerahan,
+                    "hargaPerolehan": bb.harga_perolehan,
+                    "kodeDokumenAsal": bb.kode_dokumen_asal,
+                    "kodeKantorAsal": bb.kode_kantor_asal,
+                    "nomorDaftarAsal": bb.nomor_daftar_asal,
+                    "tanggalDaftarAsal": bb.tanggal_daftar_asal,
+                    "nomorAjuAsal": bb.nomor_aju_asal,
+                    "seriBarangAsal": bb.seri_barang_asal,
+                }
+                
+                # BAHAN BAKU TARIF (child of BAHAN BAKU)
+                bb_item["bahanBakuTarif"] = []
+                for bbt in bb_doc.get("bahan_tarif", []):
+                    bb_item["bahanBakuTarif"].append({
+                        "kodePungutan": bbt.kode_pungutan,
+                        "kodeTarif": bbt.kode_tarif,
+                        "tarif": bbt.tarif,
+                        "kodeFasilitas": bbt.kode_fasilitas,
+                        "tarifFasilitas": bbt.tarif_fasilitas,
+                        "nilaiBayar": bbt.nilai_bayar,
+                        "nilaiFasilitas": bbt.nilai_fasilitas
+                    })
+                
+                # BAHAN BAKU DOKUMEN (child of BAHAN BAKU)
+                bb_item["bahanBakuDokumen"] = []
+                for bbd in bb_doc.get("bahan_baku_dokumen", []):
+                    bb_item["bahanBakuDokumen"].append({
+                        "seriDokumen": bbd.seri_dokumen,
+                        "seriIzin": bbd.seri_izin
+                    })
+                
+                brg_item["bahanBaku"].append(bb_item)
+
+            barang_list.append(brg_item)
+
+        payload["barang"] = barang_list
+        
+        return payload
+
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Get CEISA BC20 JSON Error")
+        return {"status": "error", "message": str(e)}
+
+import openpyxl
+import base64
+import io
+from frappe.utils import getdate, flt, cint
 
  
 @frappe.whitelist(allow_guest=True)
@@ -1100,8 +1122,10 @@ def import_ceisa_excel(file_data):
         wb = openpyxl.load_workbook(io.BytesIO(decoded_file), data_only=True)
         
         # Helper to get value from sheet
-        def get_sheet_data(sheet_name):
+        def get_sheet_data(sheet_name, optional=False):
             if sheet_name not in wb.sheetnames:
+                if not optional:
+                    frappe.log_error(f"Sheet '{sheet_name}' not found in workbook. Available: {wb.sheetnames}", "Excel Import Warning")
                 return []
             ws = wb[sheet_name]
             data = []
@@ -1135,7 +1159,7 @@ def import_ceisa_excel(file_data):
             "KODE JENIS PLB": "kode_jenis_plb",
             "KODE JENIS PROSEDUR": "kode_jenis_pib",
             "KODE TUJUAN PEMASUKAN": "kode_tujuan_pemasukan",
-            "KODE TUJUAN PENGIRIMAN": "kode_tujuan_pengiriman",
+            "KODE TUJUAN PENGIRIMAN": "kode_tujuan_pengiriman_value",
             "KODE TUJUAN TPB": "kode_tujuan_tpb",
             "KODE CARA DAGANG": "kode_cara_dagang",
             "KODE CARA BAYAR": "kode_cara_bayar",
@@ -1240,6 +1264,7 @@ def import_ceisa_excel(file_data):
              doc = frappe.get_doc("HEADER V21", existing_header[0].name)
         else:
             doc = frappe.new_doc("HEADER V21")
+            doc.name = nomor_aju  # Set document name to nomoraju
             doc.nomoraju = nomor_aju
             
         # Map all Header Fields dynamically
@@ -1259,8 +1284,16 @@ def import_ceisa_excel(file_data):
         doc.flags.ignore_links = True
         doc.save(ignore_permissions=True)
         
+        # Rename document to use nomoraju as name if it's different
+        if doc.name != nomor_aju:
+            try:
+                frappe.rename_doc("HEADER V21", doc.name, nomor_aju, force=True, merge=False)
+                doc = frappe.get_doc("HEADER V21", nomor_aju)  # Reload after rename
+            except Exception as rename_err:
+                frappe.log_error(f"Could not rename HEADER V21 to {nomor_aju}: {rename_err}", "Rename Error")
+        
         # Helper to create child table
-        def create_child(doctype, parent_field, sheet_name, mapping):
+        def create_child(doctype, parent_field, sheet_name, mapping, optional=False):
             # Clear existing?
             # frappe.db.delete(doctype, {parent_field: doc.name}) 
             # Better to use doc.set(field, []) if it was a child table field, but these are separate tables linked by parent?
@@ -1268,7 +1301,7 @@ def import_ceisa_excel(file_data):
             # BUT the API `get_ceisa_bc20_json` treated them as child tables `doc.get("entitas")`.
             # So we should populate them via the parent doc.
             
-            rows = get_sheet_data(sheet_name)
+            rows = get_sheet_data(sheet_name, optional)
             child_list = []
             for row in rows:
                 child_item = {}
@@ -1322,6 +1355,58 @@ def import_ceisa_excel(file_data):
             "SERI KONTAINER": "seri_kontainer",
             "KODE JENIS KONTAINER": "kode_jenis_kontainer"
         })
+
+        # Additional HEADER child tables
+        # PUNGUTAN
+        create_child("pungutan", "parent", "PUNGUTAN", {
+            "KODE FASILITAS TARIF": "kode_fasilitas_tarif",
+            "KODE JENIS PUNGUTAN": "kode_jenis_pungutan",
+            "NILAI PUNGUTAN": "nilai_pungutan",
+            "NPWP BILLING": "npwp_billing"
+        })
+        
+        # JAMINAN
+        create_child("jaminan", "parent", "JAMINAN", {
+            "KODE KANTOR": "kode_kantor",
+            "KODE JAMINAN": "kode_jaminan",
+            "NOMOR JAMINAN": "nomor_jaminan",
+            "TANGGAL JAMINAN": "tanggal_jaminan",
+            "NILAI JAMINAN": "nilai_jaminan",
+            "PENJAMIN": "penjamin",
+            "TANGGAL JATUH TEMPO": "tanggal_jatuh_tempo",
+            "NOMOR BPJ": "nomor_bpj",
+            "TANGGAL BPJ": "tanggal_bpj"
+        })
+        
+        # BANKDEVISA
+        create_child("bank_devisa", "parent", "BANKDEVISA", {
+            "SERI": "seri",
+            "KODE": "kode",
+            "NAMA": "nama"
+        })
+        
+        # KOMPONENBIAYA (optional, might not exist in all files)
+        create_child("komponen_biaya", "parent", "KOMPONENBIAYA", {
+           "JENIS NILAI" : "jenisNilai",
+            "HARGA INVOICE": "hargaInvoice",
+            "PEMBAYARAN TIDAK LANGSUNG": "pembayaranTidakLangsung",
+            "DISKON": "diskon",
+            "KOMISI PENJUALAN": "komisiPenjualan",
+            "BIAYA PENGEMASAN": "biayaPengemasan",
+            "BIAYA PENGEPAKAN": "biayaPengepakan",
+            "ASSIST": "assist",
+            "ROYALTI": "royalti",
+            "PROCEEDS": "proceeds",
+            "BIAYA TRANSPORTASI": "biayaTransportasi",
+            "BIAYA PEMUATAN": "biayaPemuatan",
+            "ASURANSI": "asuransi",
+            "GARANSI": "garansi",
+            "BIAYA KEPENTINGAN SENDIRI": "biayaKepentinganSendiri",
+            "BIAYA PASCA IMPOR": "biayaPascaImpor",
+            "BIAYA PAJAK INTERNAL": "biayaPajakInternal",
+            "BUNGA": "bunga",
+            "DEVIDEN": "deviden"
+        }, optional=True)
 
         doc.save(ignore_permissions=True)
         
@@ -1426,11 +1511,206 @@ def import_ceisa_excel(file_data):
             if b_docs:
                 b_doc.set("barang_dokumen", b_docs)
             
+            # BARANGENTITAS
+            be_rows = get_sheet_data("BARANGENTITAS")
+            b_entitas = []
+            for e_row in be_rows:
+                if cint(e_row.get("SERI BARANG")) == seri_barang:
+                    b_entitas.append({
+                        "seri_entitas": cint(e_row.get("SERI ENTITAS"))
+                    })
+            if b_entitas:
+                b_doc.set("barang_pemilik", b_entitas)
+            
+            # BARANGSPEKKHUSUS
+            bsk_rows = get_sheet_data("BARANGSPEKKHUSUS")
+            b_spek = []
+            for sk_row in bsk_rows:
+                if cint(sk_row.get("SERI BARANG")) == seri_barang:
+                    b_spek.append({
+                        "kode_spek_khusus": sk_row.get("KODE"),
+                        "uraian": sk_row.get("URAIAN")
+                    })
+            if b_spek:
+                b_doc.set("barang_spek_khusus", b_spek)
+            
+            # BARANGVD
+            bvd_rows = get_sheet_data("BARANGVD")
+            b_vd = []
+            for vd_row in bvd_rows:
+                if cint(vd_row.get("SERI BARANG")) == seri_barang:
+                    b_vd.append({
+                        "kode_jenis_vd": vd_row.get("KODE VD"),
+                        "nilai_barang": flt(vd_row.get("NILAI BARANG"))
+                    })
+            if b_vd:
+                b_doc.set("barang_vd", b_vd)
+            
+            # Save BARANG V1 with all child tables
             b_doc.flags.ignore_links = True
             b_doc.save(ignore_permissions=True)
+            
+            # BAHANBAKU (Linked Standard DocType)
+            # We import this AFTER saving BARANG V1 so we can link it
+            bb_rows = get_sheet_data("BAHANBAKU", optional=True)
+            for bb_row in bb_rows:
+                if cint(bb_row.get("SERI BARANG")) == seri_barang:
+                    seri_bahan_baku = cint(bb_row.get("SERI BAHAN BAKU"))
+                    
+                    # Check if exists
+                    existing_bb = frappe.get_all("BAHAN BAKU", filters={
+                        "nomoraju": nomor_aju, 
+                        "seri_barang": seri_barang,
+                        "seri_bahan_baku": seri_bahan_baku
+                    })
+                    
+                    if existing_bb:
+                        bb_doc = frappe.get_doc("BAHAN BAKU", existing_bb[0].name)
+                    else:
+                        bb_doc = frappe.new_doc("BAHAN BAKU")
+                        bb_doc.nomoraju = nomor_aju
+                        bb_doc.seri_barang = seri_barang
+                        bb_doc.seri_bahan_baku = seri_bahan_baku
+
+                    # Map Fields
+                    bb_doc.parent_barang = b_doc.name # Link to specific BARANG V1
+                    bb_doc.kode_asal_bahan_baku = bb_row.get("KODE ASAL BAHAN BAKU")
+                    bb_doc.hs = bb_row.get("HS")
+                    bb_doc.kode_barang = bb_row.get("KODE BARANG")
+                    bb_doc.uraian = bb_row.get("URAIAN")
+                    bb_doc.merek = bb_row.get("MEREK")
+                    bb_doc.tipe = bb_row.get("TIPE")
+                    bb_doc.ukuran = bb_row.get("UKURAN")
+                    bb_doc.spesifikasi_lain = bb_row.get("SPESIFIKASI LAIN")
+                    bb_doc.kode_satuan = bb_row.get("KODE SATUAN")
+                    bb_doc.jumlah_satuan = flt(bb_row.get("JUMLAH SATUAN"))
+                    bb_doc.netto = flt(bb_row.get("NETTO"))
+                    
+                    # BAHANBAKUTARIF (child of BAHANBAKU)
+                    bbt_rows = get_sheet_data("BAHANBAKUTARIF", optional=True)
+                    bb_tarifs = []
+                    for bbt_row in bbt_rows:
+                        if (cint(bbt_row.get("SERI BARANG")) == seri_barang and 
+                            cint(bbt_row.get("SERI BAHAN BAKU")) == seri_bahan_baku):
+                            bb_tarifs.append({
+                                "kode_pungutan": bbt_row.get("KODE PUNGUTAN"),
+                                "kode_tarif": bbt_row.get("KODE TARIF"),
+                                "tarif": flt(bbt_row.get("TARIF")),
+                                "kode_fasilitas": bbt_row.get("KODE FASILITAS"),
+                                "tarif_fasilitas": flt(bbt_row.get("TARIF FASILITAS")),
+                                "nilai_bayar": flt(bbt_row.get("NILAI BAYAR")),
+                                "nilai_fasilitas": flt(bbt_row.get("NILAI FASILITAS"))
+                            })
+                    if bb_tarifs:
+                        bb_doc.set("bahan_tarif", bb_tarifs) # Fieldname in JSON is 'bahan_tarif'
+                    
+                    # BAHANBAKUDOKUMEN (child of BAHANBAKU)
+                    bbd_rows = get_sheet_data("BAHANBAKUDOKUMEN", optional=True)
+                    bb_docs = []
+                    for bbd_row in bbd_rows:
+                        if (cint(bbd_row.get("SERI BARANG")) == seri_barang and 
+                            cint(bbd_row.get("SERI BAHAN BAKU")) == seri_bahan_baku):
+                            bb_docs.append({
+                                "seri_dokumen": bbd_row.get("SERI DOKUMEN"),
+                                "seri_izin": bbd_row.get("SERI IZIN")
+                            })
+                    if bb_docs:
+                        bb_doc.set("bahan_baku_dokumen", bb_docs)
+                    
+                    bb_doc.flags.ignore_links = True
+                    bb_doc.save(ignore_permissions=True)
+
 
         return {"status": "success", "message": f"Successfully imported Header {nomor_aju} with {len(barang_rows)} barang items"}
 
+
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Import CEISA Excel Error")
+        return {"status": "error", "message": str(e)}
+
+
+BEACUKAI_BASE_URL = "https://apis-gw.beacukai.go.id"
+
+def get_cached_token():
+    return frappe.cache().hget("beacukai_token", frappe.session.user)
+
+@frappe.whitelist()
+def login_beacukai(username, password):
+    url = f"{BEACUKAI_BASE_URL}/nle-oauth/v1/user/login"
+    payload = {
+        "username": username,
+        "password": password
+    }
+    try:
+        response = requests.post(url, json=payload)
+        response.raise_for_status()
+        data = response.json()
+        
+        token = None
+        if "item" in data and "access_token" in data["item"]:
+             token = data["item"]["access_token"]
+        elif "access_token" in data:
+             token = data["access_token"]
+        
+        if token:
+            frappe.cache().hset("beacukai_token", frappe.session.user, token)
+            return {"status": "success", "message": "Login successful"}
+        else:
+            return {"status": "error", "message": "Token not found", "response": data}
+            
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Beacukai Login Error")
+        return {"status": "error", "message": str(e)}
+
+@frappe.whitelist()
+def check_ceisa_status(nomor_aju):
+    token = get_cached_token()
+    if not token:
+        return {"status": "error", "message": "Please login to Beacukai first."}
+        
+    url = f"{BEACUKAI_BASE_URL}/openapi/status/{nomor_aju}"
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json"
+    }
+    
+    try:
+        response = requests.get(url, headers=headers)
+        return {
+            "status": "success" if response.status_code == 200 else "error",
+            "http_code": response.status_code,
+            "response": response.json() if response.content else response.text
+        }
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+
+@frappe.whitelist()
+def send_ceisa_document(docname):
+    token = get_cached_token()
+    if not token:
+        return {"status": "error", "message": "Please login to Beacukai first."}
+    
+    try:
+        # Use existing function to get payload
+        # Assuming docname passed is the nomor_aju or name
+        payload = get_ceisa_bc20_json(docname)
+        
+        if isinstance(payload, dict) and payload.get("status") == "error":
+             return payload # Propagate error from get_ceisa_bc20_json
+        
+        url = f"{BEACUKAI_BASE_URL}/openapi/document?isFinal=false"
+        headers = {
+            "Authorization": f"Bearer {token}",
+            "Content-Type": "application/json"
+        }
+        
+        response = requests.post(url, json=payload, headers=headers)
+        
+        return {
+            "status": "success" if response.status_code == 200 else "error",
+            "http_code": response.status_code,
+            "response": response.json() if response.content else response.text
+        }
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Send CEISA Document Error")
         return {"status": "error", "message": str(e)}
