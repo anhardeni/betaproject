@@ -21,7 +21,8 @@
   "tanggal_ijin_entitas",
   "kode_negara",
   "niper_entitas",
-  "kode_kategori_konsolidator"
+  "kode_kategori_konsolidator",
+  "kode_afiliasi"
  ],
  "fields": [
   {
@@ -87,8 +88,8 @@
   {
    "fieldname": "tanggal_ijin_entitas",
    "fieldtype": "Date",
-   "label": "TANGGAL IJIN ENTITAS",
-   "in_list_view": 1
+   "in_list_view": 1,
+   "label": "TANGGAL IJIN ENTITAS"
   },
   {
    "fieldname": "kode_negara",
@@ -106,12 +107,17 @@
    "fieldtype": "Link",
    "label": "KODE KATEGORI KONSOLIDATOR",
    "options": "Referensi Kategori Konsolidator"
+  },
+  {
+   "fieldname": "kode_afiliasi",
+   "fieldtype": "Data",
+   "label": "KODE AFILIASI"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-01-03 21:08:51.437201",
+ "modified": "2026-01-18 11:42:16.037199",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "ENTITAS",

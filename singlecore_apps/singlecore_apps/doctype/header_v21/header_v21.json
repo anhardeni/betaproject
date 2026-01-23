@@ -9,7 +9,7 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{00}{kode_dokumen4digit}{BT0001}{YYYY}{MM}{DD}{######}",
- "creation": "2024-05-03 14:33:28.196685",
+ "creation": "2026-01-18 11:36:53.350207",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -121,7 +121,6 @@
   "barang_tidak_berwujud",
   "data_3_tab",
   "entitas",
-  "komponen_biaya",
   "data_4_tab",
   "kemasan",
   "dokumen",
@@ -131,7 +130,16 @@
   "data_6_tab",
   "bank_devisa",
   "data_7_tab",
-  "kesiapan_barang"
+  "kesiapan_barang",
+  "kode_jenis_pengeluaran",
+  "kode_jenis_prosedur",
+  "kode_jenis_pengangkutan",
+  "barang_kiriman",
+  "flag_konsol",
+  "flag_proporsional_netto",
+  "respon_json",
+  "komponen_biaya_tab",
+  "komponen_biaya"
  ],
  "fields": [
   {
@@ -785,6 +793,47 @@
    "fieldtype": "Table",
    "label": "KOMPONEN BIAYA",
    "options": "KOMPONEN BIAYA"
+  },
+  {
+   "fieldname": "kode_jenis_pengeluaran",
+   "fieldtype": "Data",
+   "label": "KODE JENIS PENGELUARAN"
+  },
+  {
+   "fieldname": "kode_jenis_prosedur",
+   "fieldtype": "Data",
+   "label": "KODE JENIS PROSEDUR"
+  },
+  {
+   "fieldname": "kode_jenis_pengangkutan",
+   "fieldtype": "Data",
+   "label": "KODE JENIS PENGANGKUTAN"
+  },
+  {
+   "fieldname": "barang_kiriman",
+   "fieldtype": "Data",
+   "label": "BARANG KIRIMAN"
+  },
+  {
+   "fieldname": "flag_konsol",
+   "fieldtype": "Data",
+   "label": "FLAG KONSOL"
+  },
+  {
+   "fieldname": "flag_proporsional_netto",
+   "fieldtype": "Data",
+   "label": "FLAG PROPORSIONAL NETTO"
+  },
+  {
+   "fieldname": "respon_json",
+   "fieldtype": "Code",
+   "label": "Respon Data (JSON)",
+   "options": "JSON"
+  },
+  {
+   "fieldname": "komponen_biaya_tab",
+   "fieldtype": "Tab Break",
+   "label": "KOMPONEN BIAYA"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -794,7 +843,7 @@
    "link_fieldname": "nomoraju"
   }
  ],
- "modified": "2026-01-12 07:09:00.373560",
+ "modified": "2026-01-18 11:43:01.714358",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "HEADER V21",

@@ -88,7 +88,9 @@
   "barang_pemilik",
   "spek_khusus_dan_value_declaration_tab",
   "barang_spek_khusus",
-  "barang_vd"
+  "barang_vd",
+  "metode_penentuan_nilai",
+  "statement_perbedaan_harga"
  ],
  "fields": [
   {
@@ -177,7 +179,7 @@
   },
   {
    "fieldname": "nomor_daftar_asal",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "NOMOR DAFTAR ASAL"
   },
   {
@@ -501,6 +503,16 @@
    "fieldtype": "Table",
    "label": "BARANG VD",
    "options": "BARANG VD"
+  },
+  {
+   "fieldname": "metode_penentuan_nilai",
+   "fieldtype": "Data",
+   "label": "METODE PENENTUAN NILAI"
+  },
+  {
+   "fieldname": "statement_perbedaan_harga",
+   "fieldtype": "Data",
+   "label": "STATEMENT PERBEDAAN HARGA"
   }
  ],
  "index_web_pages_for_search": 1,
