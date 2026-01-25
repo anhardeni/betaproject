@@ -5,3 +5,6 @@
 tags
 singlecore_apps/docs/current
 node_modules/
+
+# Schema files folder
+../../base erp xls/

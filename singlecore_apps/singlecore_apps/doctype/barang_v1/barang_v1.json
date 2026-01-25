@@ -373,6 +373,7 @@
    "options": "Referensi Kategori Barang"
   },
   {
+   "default": "1",
    "description": "Referensi Kondisi Barang: [1] Baik, [2] Baru, [3] Bekas, [4] Segar, [5] Beku, [6] Baik/Baru, [7] Baik/Baru, [8] Baik/Bekas\"",
    "fieldname": "kode_kondisi_barang",
    "fieldtype": "Link",
@@ -522,7 +523,7 @@
    "link_fieldname": "parent_barang"
   }
  ],
- "modified": "2025-12-14 22:04:40.336503",
+ "modified": "2026-01-25 13:54:35.445731",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG V1",

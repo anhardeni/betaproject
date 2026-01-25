@@ -260,6 +260,8 @@ def import_ceisa_excel(file_data, dry_run=False):
         else:
             doc = frappe.new_doc("HEADER V21")
             doc.nomoraju = nomor_aju
+            doc.name = nomor_aju  # Set document name to NOMOR AJU
+            doc.flags.name_set = True  # Prevent autoname from overriding
 
         # Map Header
         for excel_col, doc_field in HEADER_MAPPING.items():
@@ -441,6 +443,7 @@ def import_ceisa_excel(file_data, dry_run=False):
             "SPESIFIKASI LAIN": "spesifikasi_lain",
             "KODE SATUAN": "kode_satuan",
             "JUMLAH SATUAN": "jumlah_satuan",
+            "JUMLAH BAHAN BAKU": "jumlah_bahan_baku",
             "KODE KEMASAN": "kode_kemasan",
             "JUMLAH KEMASAN": "jumlah_kemasan",
             "NETTO": "netto",
@@ -467,8 +470,12 @@ def import_ceisa_excel(file_data, dry_run=False):
             "PERNYATAAN LARTAS": "pernyataan_lartas",
             "TAHUN PEMBUATAN": "tahun_pembuatan",
             "KODE JENIS EKSPOR": "kode_jenis_ekspor",
+            "KODE KATEGORI BARANG": "kode_kategori_barang",
+            "KODE KONDISI BARANG": "kode_kondisi_barang",
             "SERI IZIN": "seri_izin",
             "KODE ASAL BARANG": "kode_asal_barang",
+            "KODE NEGARA ASAL": "kode_negara_asal",
+            "KODE DAERAH ASAL": "kode_daerah_asal",
             "STATEMENT PERBEDAAN HARGA": "statement_perbedaan_harga",
             "SALDO AWAL": "saldo_awal",
             "KAPASITAS SILINDER": "kapasitas_silinder",

@@ -1,6 +1,6 @@
 import frappe
 import requests
-from .ceisa_export import get_ceisa_bc20_json
+from . import ceisa_export
 
 BEACUKAI_BASE_URL = "https://apis-gw.beacukai.go.id"
 
@@ -59,13 +59,42 @@ def check_ceisa_status(nomor_aju):
 
 @frappe.whitelist()
 def send_ceisa_document(docname):
+    """Dynamically sends the correct CEISA document based on kode_dokumen"""
     token = get_cached_token()
     if not token:
         return {"status": "error", "message": "Please login to Beacukai first."}
     
     try:
-        # Use imported function to get payload
-        payload = get_ceisa_bc20_json(docname)
+        # Get the document to determine its type
+        doc = frappe.get_doc("HEADER V21", docname)
+        bc_type = doc.kode_dokumen
+        
+        # Mapping of document codes to their export functions
+        EXPORT_MAP = {
+            "16": ceisa_export.get_ceisa_bc16_json,
+            "20": ceisa_export.get_ceisa_bc20_json,
+            "23": ceisa_export.get_ceisa_bc23_json,
+            "25": ceisa_export.get_ceisa_bc25_json,
+            "27": ceisa_export.get_ceisa_bc27_json,
+            "28": ceisa_export.get_ceisa_bc28_json,
+            "30": ceisa_export.get_ceisa_bc30_json,
+            "33": ceisa_export.get_ceisa_bc33_json,
+            "40": ceisa_export.get_ceisa_bc40_json,
+            "41": ceisa_export.get_ceisa_bc41_json,
+            "261": ceisa_export.get_ceisa_bc261_json,
+            "262": ceisa_export.get_ceisa_bc262_json,
+            "331": ceisa_export.get_ceisa_p3bet_json,
+            "511": ceisa_export.get_ceisa_ftz011_json,
+            "512": ceisa_export.get_ceisa_ftz012_json,
+            "513": ceisa_export.get_ceisa_ftz013_json
+        }
+        
+        export_func = EXPORT_MAP.get(str(bc_type))
+        if not export_func:
+            return {"status": "error", "message": f"Document type {bc_type} is not supported for automatic sending yet."}
+
+        # Generate payload
+        payload = export_func(docname)
         
         if isinstance(payload, dict) and payload.get("status") == "error":
              return payload 
@@ -86,3 +115,4 @@ def send_ceisa_document(docname):
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Send CEISA Document Error")
         return {"status": "error", "message": str(e)}
+

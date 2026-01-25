@@ -4,6 +4,25 @@
 // Include the Barang Manager
 frappe.require('/assets/singlecore_apps/js/header_v2_barang_manager.js');
 
+const BC_SETTINGS = {
+	'16': { label: 'BC16', btn: 'btn-success', suffix: 'bc16' },
+	'20': { label: 'BC20', btn: 'btn-info', suffix: 'bc20' },
+	'23': { label: 'BC23', btn: 'btn-warning', suffix: 'bc23' },
+	'25': { label: 'BC25', btn: 'btn-secondary', suffix: 'bc25' },
+	'27': { label: 'BC27', btn: 'btn-success', suffix: 'bc27' },
+	'28': { label: 'BC28', btn: 'btn-success', suffix: 'bc28' },
+	'30': { label: 'BC30', btn: 'btn-info', suffix: 'bc30' },
+	'33': { label: 'BC33', btn: 'btn-primary', suffix: 'bc33' },
+	'40': { label: 'BC40', btn: 'btn-warning', suffix: 'bc40' },
+	'41': { label: 'BC41', btn: 'btn-secondary', suffix: 'bc41' },
+	'262': { label: 'BC262', btn: 'btn-info', suffix: 'bc262' },
+	'261': { label: 'BC261', btn: 'btn-info', suffix: 'bc261' },
+	'511': { label: 'FTZ01-1', btn: 'btn-success', suffix: 'ftz011' },
+	'512': { label: 'FTZ01-2', btn: 'btn-success', suffix: 'ftz012' },
+	'513': { label: 'FTZ01-3', btn: 'btn-success', suffix: 'ftz013' },
+	'331': { label: 'P3BET', btn: 'btn-success', suffix: 'p3bet' }
+};
+
 frappe.ui.form.on('HEADER V21', {
 	refresh: function (frm) {
 		// Change background color
@@ -16,16 +35,29 @@ frappe.ui.form.on('HEADER V21', {
 				show_barang_manager(frm);
 			}, __('Actions')).addClass('btn-primary');
 
-			frm.add_custom_button(__('📄 Export PIB BC20 JSON'), function () {
-				let nomor_aju = frm.doc.nomoraju || frm.doc.name;
-				let url = `/api/method/singlecore_apps.api.get_ceisa_bc20_json?nomor_aju=${nomor_aju}`;
-				window.open(url, '_blank');
-			}, __('Actions')).addClass('btn-info');
+			// Context-aware Export & Validation Buttons
+			const bc_type = frm.doc.kode_dokumen;
+			const setting = BC_SETTINGS[bc_type];
+			if (setting) {
+				frm.add_custom_button(__(`📄 Export ${setting.label} JSON`), function () {
+					const url = `/api/method/singlecore_apps.api.get_ceisa_${setting.suffix}_json?nomor_aju=${frm.doc.nomoraju || frm.doc.name}`;
+					window.open(url, '_blank');
+				}, __('Actions')).addClass(setting.btn);
 
-			frm.add_custom_button(__('📄 Export BC27 JSON'), function () {
-				let nomor_aju = frm.doc.nomoraju || frm.doc.name;
-				let url = `/api/method/singlecore_apps.api.get_ceisa_bc27_json?nomor_aju=${nomor_aju}`;
-				window.open(url, '_blank');
+				frm.add_custom_button(__(`✅ Check ${setting.label} Schema`), () => validate_bc_schema(frm, setting.label, setting.suffix), __('Actions')).addClass('btn-primary');
+			}
+
+			frm.add_custom_button(__("🌍 JSON Export TO Negara"), function () {
+				frappe.prompt("Pilih negara:", (country) => {
+					frappe.call({
+						method: "singlecore_apps.api.export_to_country",
+						args: { header_name: frm.doc.name, country_code: country },
+						callback: (r) => {
+							let json = JSON.stringify(r.message, null, 2);
+							download_json(json, `${frm.doc.nomoraju}_${country}.json`);
+						}
+					});
+				});
 			}, __('Actions')).addClass('btn-success');
 
 			frm.add_custom_button(__('📥 Import Excel'), function () {
@@ -152,7 +184,9 @@ function add_beacukai_actions(frm) {
 	}, __('Beacukai'));
 
 	frm.add_custom_button(__('📤 Send Document'), function () {
-		frappe.confirm('Are you sure you want to send this document to Beacukai?', function () {
+		const setting = BC_SETTINGS[frm.doc.kode_dokumen];
+		const label = setting ? setting.label : 'this';
+		frappe.confirm(`Are you sure you want to send this <b>${label}</b> document to Beacukai?`, function () {
 			frappe.call({
 				method: 'singlecore_apps.api.send_ceisa_document',
 				args: {
@@ -193,4 +227,70 @@ function add_beacukai_actions(frm) {
 			}
 		});
 	}, __('Beacukai'));
+}
+
+// Unified Validation Helper
+function validate_bc_schema(frm, label, suffix) {
+	const nomor_aju = frm.doc.nomoraju || frm.doc.name;
+	frappe.call({
+		method: `singlecore_apps.api.ceisa_export.validate_${suffix}_export`,
+		args: { nomor_aju: nomor_aju },
+		freeze: true,
+		freeze_message: __(`Validating ${label} JSON against schema...`),
+		callback: function (r) {
+			if (!r.message) {
+				frappe.msgprint({
+					title: __('Error'),
+					message: __('No response received from server'),
+					indicator: 'red'
+				});
+				return;
+			}
+
+			let result = r.message;
+			if (result.valid) {
+				frappe.msgprint({
+					title: __('Schema Validation'),
+					message: result.message || `✅ BC${bc_type} JSON is valid!`,
+					indicator: 'green'
+				});
+			} else if (result.errors) {
+				let error_html = `
+					<table class="table table-bordered table-hover" style="font-size: 0.9em;">
+						<thead>
+							<tr class="active">
+								<th style="width: 30%;">${__('Field Path')}</th>
+								<th>${__('Error')}</th>
+							</tr>
+						</thead>
+						<tbody>
+				`;
+
+				result.errors.forEach(err => {
+					error_html += `
+						<tr>
+							<td><code style="word-break: break-all;">${err.path}</code></td>
+							<td>${err.message}</td>
+						</tr>
+					`;
+				});
+
+				error_html += '</tbody></table>';
+
+				frappe.msgprint({
+					title: __('Schema Validation Failed'),
+					message: error_html,
+					indicator: 'red',
+					wide: true
+				});
+			} else {
+				frappe.msgprint({
+					title: __('Schema Validation Failed'),
+					message: '<strong>Error:</strong> ' + (result.error || 'Unknown error'),
+					indicator: 'red',
+					wide: true
+				});
+			}
+		}
+	});
 }

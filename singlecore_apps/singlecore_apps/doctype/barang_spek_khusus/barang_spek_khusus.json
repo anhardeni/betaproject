@@ -10,7 +10,7 @@
   "nomoraju",
   "seri_barang",
   "kode_spek_khusus",
-  "uraian__spek_khusus"
+  "uraian_spek_khusus"
  ],
  "fields": [
   {
@@ -30,7 +30,7 @@
    "options": "Referensi Spesifikasi Khusus"
   },
   {
-   "fieldname": "uraian__spek_khusus",
+   "fieldname": "uraian_spek_khusus",
    "fieldtype": "Data",
    "label": "URAIAN SPEK KHUSUS"
   }
@@ -38,12 +38,13 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-05-22 10:13:08.662440",
+ "modified": "2026-01-25 12:57:09.593019",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG SPEK KHUSUS",
  "owner": "Administrator",
  "permissions": [],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
