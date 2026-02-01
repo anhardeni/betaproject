@@ -11,14 +11,14 @@
 // BC TYPE OPTIONS (Shared)
 // ═══════════════════════════════════════════════════════════════════
 const BC_TYPE_OPTIONS = [
-    { value: "20", label: "BC 2.0 - PIB (Pemberitahuan Impor Barang)" },
-    { value: "23", label: "BC 2.3 - TPB Import" },
-    { value: "25", label: "BC 2.5 - TPB Internal Transfer" },
-    { value: "27", label: "BC 2.7 - TPB Release" },
-    { value: "30", label: "BC 3.0 - PEB (Pemberitahuan Ekspor Barang)" },
-    { value: "33", label: "BC 3.3 - PLB" },
-    { value: "40", label: "BC 4.0 - TPB from TLDDP" },
-    { value: "41", label: "BC 4.1 - TPB to TLDDP" },
+    { value: "20", label: "BC 20 - PIB (Pemberitahuan Impor Barang)" },
+    { value: "23", label: "BC 23 - TPB Import" },
+    { value: "16", label: "BC 16 - Pemasukkan Barang ke PLB" },
+    { value: "27", label: "BC 27 - TPB Release" },
+    { value: "30", label: "BC 30 - PEB (Pemberitahuan Ekspor Barang)" },
+    { value: "33", label: "BC 33 - PLB" },
+    { value: "40", label: "BC 40 - TPB from TLDDP" },
+    { value: "41", label: "BC 41 - TPB to TLDDP" },
 ];
 
 function get_bc_options_string() {
@@ -63,17 +63,17 @@ frappe.ui.form.on("HEADER V21", {
         // Import from single PO
         frm.add_custom_button(__("🔗 Import dari PO"), function () {
             ensure_saved_then(frm, () => show_po_picker_dialog(frm));
-        }, __("Import Data"));
+        }, __("Import from Purchase Document"));
 
         // Import from single PI
         frm.add_custom_button(__("📋 Import dari PI"), function () {
             ensure_saved_then(frm, () => show_pi_picker_dialog(frm));
-        }, __("Import Data"));
+        }, __("Import from Purchase Document"));
 
         // Multi-source import
         frm.add_custom_button(__("📦 Multi-Source Import"), function () {
             ensure_saved_then(frm, () => show_multi_source_dialog(frm));
-        }, __("Import Data"));
+        }, __("Import from Purchase Document"));
     }
 });
 
