@@ -30,9 +30,14 @@ app_include_js = "/assets/singlecore_apps/js/theme_manager.js"
 
 # include js in doctype views
 doctype_js = {
+    # Import (PO/PI)
     "Purchase Order": "public/js/erpnext_integration.js",
     "Purchase Invoice": "public/js/erpnext_integration.js",
-    "HEADER V21": "public/js/erpnext_integration.js"
+    # Export (SO/SI)
+    "Sales Order": "public/js/erpnext_export_integration.js",
+    "Sales Invoice": "public/js/erpnext_export_integration.js",
+    # HEADER V21 - both integrations
+    "HEADER V21": ["public/js/erpnext_integration.js", "public/js/erpnext_export_integration.js"]
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
