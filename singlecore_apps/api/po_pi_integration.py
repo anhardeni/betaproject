@@ -167,35 +167,61 @@ def get_company_entitas_data(company_name=None):
 def get_supplier_entitas_data(supplier_name):
     """
     Get supplier data for ENTITAS Kode 5 (Pemasok)
+    Uses Supplier Primary Address for ALAMAT ENTITAS
     """
     if not supplier_name or not frappe.db.exists("Supplier", supplier_name):
         return {}
     
     supplier = frappe.get_doc("Supplier", supplier_name)
     
-    # Get supplier address
+    # Get supplier PRIMARY address
     address = ""
-    address_name = frappe.db.get_value("Dynamic Link", {
-        "link_doctype": "Supplier",
-        "link_name": supplier_name,
-        "parenttype": "Address"
-    }, "parent")
+    
+    # Method 1: Try to get primary address from Address DocType
+    address_name = frappe.db.get_value("Address", {
+        "is_primary_address": 1,
+        "name": ["in", frappe.get_all("Dynamic Link", 
+            filters={
+                "link_doctype": "Supplier",
+                "link_name": supplier_name,
+                "parenttype": "Address"
+            },
+            pluck="parent"
+        )]
+    }, "name")
+    
+    # Method 2: If no primary, get first linked address
+    if not address_name:
+        address_name = frappe.db.get_value("Dynamic Link", {
+            "link_doctype": "Supplier",
+            "link_name": supplier_name,
+            "parenttype": "Address"
+        }, "parent")
     
     if address_name:
         addr_doc = frappe.get_doc("Address", address_name)
-        address = ", ".join(filter(None, [
+        # Build full address string
+        address_parts = [
             addr_doc.address_line1,
             addr_doc.address_line2,
             addr_doc.city,
             addr_doc.state,
+            addr_doc.pincode,
             addr_doc.country
-        ]))
+        ]
+        address = ", ".join(filter(None, address_parts))
     
     # Get country code
     country_code = ""
     if supplier.country:
         country_code = frappe.db.get_value("Country", supplier.country, "code") or ""
         country_code = country_code.upper()[:2] if country_code else ""
+    elif address_name:
+        # Try to get country from address
+        addr_country = frappe.db.get_value("Address", address_name, "country")
+        if addr_country:
+            country_code = frappe.db.get_value("Country", addr_country, "code") or ""
+            country_code = country_code.upper()[:2] if country_code else ""
     
     return {
         "nama_entitas": supplier.supplier_name,
