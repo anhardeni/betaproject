@@ -13,6 +13,7 @@
 const BC_EXPORT_OPTIONS = [
     { value: "25", label: "BC 2.5 - TPB Internal Transfer" },
     { value: "27", label: "BC 2.7 - TPB Release" },
+    { value: "28", label: "BC 2.8 - Pengeluaran Barang dari PLB" },
     { value: "30", label: "BC 3.0 - PEB (Pemberitahuan Ekspor Barang)" },
     { value: "33", label: "BC 3.3 - PLB" },
 ];
@@ -55,7 +56,7 @@ frappe.ui.form.on("Sales Invoice", {
 frappe.ui.form.on("HEADER V21", {
     refresh(frm) {
         // Check if this is an export document type
-        let export_codes = ["25", "27", "30", "33"];
+        let export_codes = ["25", "27", "28", "30", "33"];
         let is_export = export_codes.includes(frm.doc.kode_dokumen);
 
         // Show Export import buttons
