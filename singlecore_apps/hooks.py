@@ -261,3 +261,4 @@ doctype_js = {
     
 #]
 
+import singlecore_apps.mcp

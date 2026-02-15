@@ -109,15 +109,17 @@
    "options": "Referensi Kategori Konsolidator"
   },
   {
+   "default": "TAH",
    "fieldname": "kode_afiliasi",
-   "fieldtype": "Data",
-   "label": "KODE AFILIASI"
+   "fieldtype": "Select",
+   "label": "KODE AFILIASI",
+   "options": "AFL\nCTR\nFAM\nTAH"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-01-18 11:42:16.037199",
+ "modified": "2026-02-15 17:54:07.803018",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "ENTITAS",

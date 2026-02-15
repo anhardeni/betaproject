@@ -1,74 +1,57 @@
+"""
+CEISA Integration - Main Entry Point
+=====================================
+
+This module serves as the main entry point for CEISA API integration.
+Core API query functions are organized in the ceisa_api/ folder:
+
+    ceisa_api/
+    ├── __init__.py   - Package exports
+    ├── auth.py       - Login, token caching, header building
+    ├── kurs.py       - Exchange rate (kurs) queries
+    └── status.py     - Document status queries (by Nomor Aju / NPWP)
+
+This file retains the send_ceisa_document function and re-exports
+auth functions for backward compatibility.
+"""
+
 import frappe
 import requests
 from . import ceisa_export
 
-BEACUKAI_BASE_URL = "https://apis-gw.beacukai.go.id"
+# Re-export from ceisa_api for backward compatibility
+from .ceisa_api.auth import (
+    get_ceisa_settings,
+    get_cached_token,
+    build_auth_headers as _build_auth_headers,
+    ensure_login as _ensure_login,
+    login_beacukai,
+)
+from .ceisa_api.kurs import get_kurs
+from .ceisa_api.status import get_status_by_nomor_aju, get_status_by_npwp
 
-def get_cached_token():
-    return frappe.cache().hget("beacukai_token", frappe.session.user)
+# Backward compatibility alias
+check_ceisa_status = get_status_by_nomor_aju
 
-@frappe.whitelist()
-def login_beacukai(username, password):
-    url = f"{BEACUKAI_BASE_URL}/nle-oauth/v1/user/login"
-    payload = {
-        "username": username,
-        "password": password
-    }
-    try:
-        response = requests.post(url, json=payload)
-        response.raise_for_status()
-        data = response.json()
-        
-        token = None
-        if "item" in data and "access_token" in data["item"]:
-             token = data["item"]["access_token"]
-        elif "access_token" in data:
-             token = data["access_token"]
-        
-        if token:
-            frappe.cache().hset("beacukai_token", frappe.session.user, token)
-            return {"status": "success", "message": "Login successful"}
-        else:
-            return {"status": "error", "message": "Token not found", "response": data}
-            
-    except Exception as e:
-        frappe.log_error(frappe.get_traceback(), "Beacukai Login Error")
-        return {"status": "error", "message": str(e)}
-
-@frappe.whitelist()
-def check_ceisa_status(nomor_aju):
-    token = get_cached_token()
-    if not token:
-        return {"status": "error", "message": "Please login to Beacukai first."}
-        
-    url = f"{BEACUKAI_BASE_URL}/openapi/status/{nomor_aju}"
-    headers = {
-        "Authorization": f"Bearer {token}",
-        "Content-Type": "application/json"
-    }
-    
-    try:
-        response = requests.get(url, headers=headers)
-        return {
-            "status": "success" if response.status_code == 200 else "error",
-            "http_code": response.status_code,
-            "response": response.json() if response.content else response.text
-        }
-    except Exception as e:
-        return {"status": "error", "message": str(e)}
 
 @frappe.whitelist()
 def send_ceisa_document(docname):
-    """Dynamically sends the correct CEISA document based on kode_dokumen"""
-    token = get_cached_token()
+    """Dynamically sends the correct CEISA document based on kode_dokumen.
+
+    Endpoint: POST /openapi/document?isFinal=false
+    """
+    token = _ensure_login()
     if not token:
         return {"status": "error", "message": "Please login to Beacukai first."}
-    
+
     try:
+        settings = get_ceisa_settings()
+        base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
+
         # Get the document to determine its type
         doc = frappe.get_doc("HEADER V21", docname)
         bc_type = doc.kode_dokumen
-        
+
         # Mapping of document codes to their export functions
         EXPORT_MAP = {
             "16": ceisa_export.get_ceisa_bc16_json,
@@ -88,25 +71,22 @@ def send_ceisa_document(docname):
             "512": ceisa_export.get_ceisa_ftz012_json,
             "513": ceisa_export.get_ceisa_ftz013_json
         }
-        
+
         export_func = EXPORT_MAP.get(str(bc_type))
         if not export_func:
             return {"status": "error", "message": f"Document type {bc_type} is not supported for automatic sending yet."}
 
         # Generate payload
         payload = export_func(docname)
-        
+
         if isinstance(payload, dict) and payload.get("status") == "error":
-             return payload 
-        
-        url = f"{BEACUKAI_BASE_URL}/openapi/document?isFinal=false"
-        headers = {
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json"
-        }
-        
+            return payload
+
+        url = f"{base_url}/openapi/document?isFinal=false"
+        headers = _build_auth_headers(token)
+
         response = requests.post(url, json=payload, headers=headers)
-        
+
         return {
             "status": "success" if response.status_code == 200 else "error",
             "http_code": response.status_code,
@@ -115,4 +95,3 @@ def send_ceisa_document(docname):
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Send CEISA Document Error")
         return {"status": "error", "message": str(e)}
-
