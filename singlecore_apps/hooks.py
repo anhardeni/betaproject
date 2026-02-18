@@ -122,23 +122,11 @@ doctype_js = {
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-#	"all": [
-#		"singlecore_apps.tasks.all"
-#	],
-#	"daily": [
-#		"singlecore_apps.tasks.daily"
-#	],
-#	"hourly": [
-#		"singlecore_apps.tasks.hourly"
-#	],
-#	"weekly": [
-#		"singlecore_apps.tasks.weekly"
-#	],
-#	"monthly": [
-#		"singlecore_apps.tasks.monthly"
-#	],
-# }
+scheduler_events = {
+	"hourly": [
+		"singlecore_apps.singlecore_apps.doctype.customs_status_log.customs_status_log.update_all_active_status"
+	],
+}
 
 # Testing
 # -------
@@ -209,56 +197,52 @@ doctype_js = {
 #	"singlecore_apps.auth.validate"
 # ]
 
-#fixtures = [
-
-        #"Referensi Gudang",
-        #"Referensi Ijin",
-#         "Referensi Incoterm",
-#         "Referensi Jenis API",
-#         "Referensi Jenis Ekspor",
-#         "Referensi Jenis Identitas",
-#        # "Referensi Jenis Impor",
-#          "Referensi Jenis Jaminan",
-#         "Referensi Jenis Kemasan",
-#         "Referensi Jenis Kontainer",
-#         "Referensi Layanan Fix",
-#         #"Referensi Jenis Pib",
-#         "Referensi Jenis Pungutan",
-#         "Referensi Jenis TPB",
-#         "Referensi Jenis Tarif",
-#         "Referensi Jenis Transaksi Perdagangan",
-#         "Referensi Jenis VD",
-#         "Referensi Kantor",
-#         #"Referensi Kapal",
-#         "Referensi Kategori Barang",
-#         "Referensi Kategori Ekspor",
-#         #"Referensi Kategori Keluar FTZ ",
-#         "Referensi Komoditi Cukai ",
-#         "Referensi Kondisi Barang ",
-#         #"Referensi Layanan Fix ",
-#         "Referensi Lokasi Bayar ",
-#         "Referensi Negara ",
-#         "Referensi Pelabuhan Dalam Negeri ",
-#         "Referensi Pelabuhan Luar Negeri ",
-#         "Referensi Putusan Petugas ",
-#         "Referensi Respon ",
-#         "Referensi Respon_copy1 ",
-#         "Referensi Satuan Barang ",
-#         "Referensi Satuan Barang_copy1 ",
-#         "Referensi Spesifikasi Khusus ",
-#         "Referensi Status ",
-#         "Referensi Status Pengusaha ",
-#         "Referensi Status_copy1 ",
-#         "Referensi Tipe Kontainer ",
-#         "Referensi Tujuan Pemasukan ",
-#         "Referensi Tujuan Pengeluaran ",
-#         "Referensi Tujuan Pengiriman ",
-#         "Referensi Tutup Pu ",
-#         "Referensi Ukuran Kontainer ",
-#         "Referensi HS 2022 ",
-#         "Referensi Valuta "   
-           
-    
-#]
+fixtures = [
+    "Referensi Gudang",
+    "Referensi Ijin",
+    "Referensi Incoterm",
+    "Referensi Jenis API",
+    "Referensi Jenis Ekspor",
+    "Referensi Jenis Identitas",
+    "Referensi Jenis Impor",
+    "Referensi Jenis Jaminan",
+    "Referensi Jenis Kemasan",
+    "Referensi Jenis Kontainer",
+    "Referensi Layanan Fix",
+    "Referensi Jenis Pib",
+    "Referensi Jenis Pungutan",
+    "Referensi Jenis TPB",
+    "Referensi Jenis Tarif",
+    "Referensi Jenis Transaksi Perdagangan",
+    "Referensi Jenis VD",
+    "Referensi Kantor",
+    "Referensi Kapal",
+    "Referensi Kategori Barang",
+    "Referensi Kategori Ekspor",
+    "Referensi Kategori Keluar FTZ ",
+    "Referensi Komoditi Cukai ",
+    "Referensi Kondisi Barang ",
+    "Referensi Lokasi Bayar ",
+    "Referensi Negara ",
+    "Referensi Pelabuhan Dalam Negeri ",
+    "Referensi Pelabuhan Luar Negeri ",
+    "Referensi Putusan Petugas ",
+    "Referensi Respon ",
+    "Referensi Respon_copy1 ",
+    "Referensi Satuan Barang ",
+    "Referensi Satuan Barang_copy1 ",
+    "Referensi Spesifikasi Khusus ",
+    "Referensi Status ",
+    "Referensi Status Pengusaha ",
+    #"Referensi Status_copy1 ",
+    "Referensi Tipe Kontainer ",
+    "Referensi Tujuan Pemasukan ",
+    "Referensi Tujuan Pengeluaran ",
+    "Referensi Tujuan Pengiriman ",
+    "Referensi Tutup Pu ",
+    "Referensi Ukuran Kontainer ",
+    #"Referensi HS 2022 ",
+    "Referensi Valuta "
+]
 
 import singlecore_apps.mcp

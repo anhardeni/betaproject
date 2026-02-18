@@ -1,0 +1,64 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "creation": "2026-02-18 17:10:00.000000",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "kode_status",
+        "uraian",
+        "waktu_rekam",
+        "status_aju",
+        "nomor_daftar",
+        "tanggal_daftar",
+        "keterangan"
+    ],
+    "fields": [
+        {
+            "fieldname": "kode_status",
+            "fieldtype": "Data",
+            "label": "Kode Status"
+        },
+        {
+            "fieldname": "uraian",
+            "fieldtype": "Data",
+            "label": "Uraian"
+        },
+        {
+            "fieldname": "waktu_rekam",
+            "fieldtype": "Datetime",
+            "label": "Waktu Rekam"
+        },
+        {
+            "fieldname": "status_aju",
+            "fieldtype": "Data",
+            "label": "Status Aju"
+        },
+        {
+            "fieldname": "nomor_daftar",
+            "fieldtype": "Data",
+            "label": "Nomor Daftar"
+        },
+        {
+            "fieldname": "tanggal_daftar",
+            "fieldtype": "Date",
+            "label": "Tanggal Daftar"
+        },
+        {
+            "fieldname": "keterangan",
+            "fieldtype": "Data",
+            "label": "Keterangan"
+        }
+    ],
+    "istable": 1,
+    "modified": "2026-02-18 17:10:00.000000",
+    "modified_by": "Administrator",
+    "module": "Singlecore Apps",
+    "name": "Status History",
+    "owner": "Administrator",
+    "permissions": [],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+}

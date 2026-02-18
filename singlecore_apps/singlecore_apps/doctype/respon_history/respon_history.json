@@ -1,0 +1,76 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "creation": "2026-02-18 17:10:00.000000",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "kode_respon",
+        "nomor_daftar",
+        "tanggal_daftar",
+        "nomor_respon",
+        "tanggal_respon",
+        "waktu_respon",
+        "keterangan",
+        "pesan_json",
+        "pdf_base64"
+    ],
+    "fields": [
+        {
+            "fieldname": "kode_respon",
+            "fieldtype": "Data",
+            "label": "Kode Respon"
+        },
+        {
+            "fieldname": "nomor_daftar",
+            "fieldtype": "Data",
+            "label": "Nomor Daftar"
+        },
+        {
+            "fieldname": "tanggal_daftar",
+            "fieldtype": "Date",
+            "label": "Tanggal Daftar"
+        },
+        {
+            "fieldname": "nomor_respon",
+            "fieldtype": "Data",
+            "label": "Nomor Respon"
+        },
+        {
+            "fieldname": "tanggal_respon",
+            "fieldtype": "Date",
+            "label": "Tanggal Respon"
+        },
+        {
+            "fieldname": "waktu_respon",
+            "fieldtype": "Datetime",
+            "label": "Waktu Respon"
+        },
+        {
+            "fieldname": "keterangan",
+            "fieldtype": "Data",
+            "label": "Keterangan"
+        },
+        {
+            "fieldname": "pesan_json",
+            "fieldtype": "JSON",
+            "label": "Pesan Array"
+        },
+        {
+            "fieldname": "pdf_base64",
+            "fieldtype": "Attach",
+            "label": "PDF File"
+        }
+    ],
+    "istable": 1,
+    "modified": "2026-02-18 17:10:00.000000",
+    "modified_by": "Administrator",
+    "module": "Singlecore Apps",
+    "name": "Respon History",
+    "owner": "Administrator",
+    "permissions": [],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+}

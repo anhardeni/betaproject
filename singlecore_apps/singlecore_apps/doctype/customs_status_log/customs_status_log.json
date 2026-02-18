@@ -1,0 +1,82 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "field:nomor_aju",
+    "creation": "2026-02-18 17:10:00.000000",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "nomor_aju",
+        "npwp",
+        "fetched_at",
+        "last_status",
+        "status_history",
+        "respon_history"
+    ],
+    "fields": [
+        {
+            "fieldname": "nomor_aju",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "label": "Nomor Aju",
+            "reqd": 1,
+            "unique": 1
+        },
+        {
+            "fieldname": "npwp",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "label": "NPWP Pemberitahu"
+        },
+        {
+            "fieldname": "fetched_at",
+            "fieldtype": "Datetime",
+            "in_list_view": 1,
+            "label": "Di-fetch Pada",
+            "reqd": 1
+        },
+        {
+            "fieldname": "last_status",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "label": "Status Terakhir"
+        },
+        {
+            "fieldname": "status_history",
+            "fieldtype": "Table",
+            "label": "Status History",
+            "options": "Status History"
+        },
+        {
+            "fieldname": "respon_history",
+            "fieldtype": "Table",
+            "label": "Respon History",
+            "options": "Respon History"
+        }
+    ],
+    "index_web_pages_for_search": 1,
+    "modified": "2026-02-18 17:10:00.000000",
+    "modified_by": "Administrator",
+    "module": "Singlecore Apps",
+    "name": "Customs Status Log",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "System Manager",
+            "share": 1,
+            "write": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": [],
+    "track_changes": 1
+}

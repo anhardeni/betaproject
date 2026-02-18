@@ -22,11 +22,19 @@ def round_decimal(value, decimals=2):
 
 # Helper to format date
 def fmt_date(date_obj):
-    if not date_obj: return ""
+    if not date_obj: return None
     try:
         return getdate(date_obj).strftime('%Y-%m-%d')
     except:
         return str(date_obj).split(' ')[0]
+
+def clean_nulls(obj):
+    """Recursively remove None values from dicts and lists"""
+    if isinstance(obj, dict):
+        return {k: clean_nulls(v) for k, v in obj.items() if v is not None}
+    elif isinstance(obj, list):
+        return [clean_nulls(v) for v in obj if v is not None]
+    return obj
 
 # Helper for merk and tipe length (min 3 chars)
 def clean_merk_tipe(value):
@@ -153,20 +161,28 @@ def get_ceisa_bc27_json(nomor_aju):
             "tarifPpnbmPajak": round_decimal(doc.get("tarif_ppnbm_pajak"), 2),
         }
 
-        # 2. Map Entitas
-        payload["entitas"] = get_child_data(doc, "entitas", {
-            "alamatEntitas": "alamat_entitas",
-            "kodeEntitas": "kode_entitas",
-            "kodeJenisIdentitas": "kode_jenis_identitas",
-            "namaEntitas": "nama_entitas",
-            "nibEntitas": "nib_entitas",
-            "nomorIdentitas": "nomor_identitas",
-            "nomorIjinEntitas": "nomor_ijin_entitas",
-            "seriEntitas": "seri",
-            "tanggalIjinEntitas": "tanggal_ijin_entitas",
-            "kodeJenisApi": "kode_jenis_api",
-            "kodeStatus": "kode_status"
-        })
+        # 2. Map Entitas (Strict Ordering for BC27: 3, 7, 8)
+        entitas_map = {ent.kode_entitas: ent for ent in doc.entitas}
+        payload["entitas"] = []
+        ordered_codes = ["3", "7", "8"]
+        
+        for idx, kode in enumerate(ordered_codes):
+            ent = entitas_map.get(kode)
+            if ent:
+                ent_item = {
+                    "alamatEntitas": ent.get("alamat_entitas") or "",
+                    "kodeEntitas": kode,
+                    "namaEntitas": ent.get("nama_entitas") or "",
+                    "seriEntitas": idx + 1, # Integer
+                    "nomorIdentitas": ent.get("nomor_identitas") or "",
+                    "nibEntitas": ent.get("nib_entitas") or "",
+                    "kodeJenisIdentitas": get_kode_identitas(ent.get("kode_jenis_identitas")),
+                    "kodeStatus": ent.get("kode_status") or "10",
+                    "kodeJenisApi": ent.get("kode_jenis_api") or "01",
+                    "nomorIjinEntitas": ent.get("nomor_ijin_entitas") or "-",
+                    "tanggalIjinEntitas": fmt_date(ent.get("tanggal_ijin_entitas")) or fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate()
+                }
+                payload["entitas"].append(ent_item)
 
         # 3. Map Dokumen
         payload["dokumen"] = get_child_data(doc, "dokumen", {
@@ -177,17 +193,19 @@ def get_ceisa_bc27_json(nomor_aju):
         })
 
         # 4. Map Pengangkut
-        payload["pengangkut"] = get_child_data(doc, "pengangkut", {
-            "namaPengangkut": "nama_pengangkut",
-            "nomorPengangkut": "nomor_pengangkut",
-            "seriPengangkut": "seri_pengangkut"
-        })
+        payload["pengangkut"] = []
+        for p in (doc.get("pengangkut") or []):
+             payload["pengangkut"].append({
+                "namaPengangkut": p.get("nama_pengangkut") or "",
+                "nomorPengangkut": p.get("nomor_pengangkut") or "",
+                "seriPengangkut": str(p.get("seri_pengangkut") or (p.idx)) # String required
+             })
 
         # 5. Map Kemasan
         payload["kemasan"] = []
         for kem in (doc.get("kemasan") or []):
             payload["kemasan"].append({
-                "jumlahKemasan": round_decimal(kem.get("jumlah_kemasan"), 2),
+                "jumlahKemasan": cint(kem.get("jumlah_kemasan")), # Integer required
                 "kodeJenisKemasan": kem.get("kode_kemasan") or "",
                 "merkKemasan": clean_merk_tipe(kem.get("merek_kemasan")),
                 "seriKemasan": cint(kem.get("seri")) or 0,
@@ -207,7 +225,7 @@ def get_ceisa_bc27_json(nomor_aju):
         for pung in (doc.get("pungutan") or []):
             payload["pungutan"].append({
                 "idPungutan": "",
-                "kodeFasilitasTarif": pung.kode_fasilitas_tarif or "",
+                "kodeFasilitasTarif": pung.kode_fasilitas_tarif or "1",
                 "kodeJenisPungutan": get_kode_pungutan(pung.kode_jenis_pungutan),
                 "nilaiPungutan": round_decimal(pung.nilai_pungutan, 2),
             })
@@ -226,16 +244,16 @@ def get_ceisa_bc27_json(nomor_aju):
                 "isiPerKemasan": round_decimal(brg.get("isi_per_kemasan"), 2),
                 "jumlahSatuan": round_decimal(brg.get("jumlah_satuan"), 4),
                 "kodeBarang": brg.get("kode_barang") or "",
-                "kodeDokumen": "",
+                "kodeDokumen": "27", # Default to 27 or empty? Schema check needed.
                 "kodeKategoriBarang": brg.get("kode_kategori_barang") or "",
                 "kodeSatuanBarang": brg.get("kode_satuan") or "",
                 "merk": clean_merk_tipe(brg.get("merek")),
-                "ndpbm": round_decimal(brg.get("ndpbm"), 4),
+                "ndpbm": round_decimal(brg.get("ndpbm"), 4) or 1.0,
                 "netto": round_decimal(brg.get("netto"), 4),
                 "nilaiBarang": round_decimal(brg.get("nilai_barang"), 2),
                 "nilaiJasa": round_decimal(brg.get("nilai_jasa"), 2),
                 "posTarif": brg.get("hs") or "",
-                "seriBarang": cint(brg.get("seri_barang")) or 0,
+                "seriBarang": str(brg.get("seri_barang") or 0), # String required
                 "spesifikasiLain": brg.get("spesifikasi_lain") or "",
                 "tipe": clean_merk_tipe(brg.get("tipe")),
                 "uangMuka": 0,
@@ -254,13 +272,13 @@ def get_ceisa_bc27_json(nomor_aju):
                     "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 4),
                     "hargaPerolehan": round_decimal(bb.get("harga_perolehan"), 2),
                     "jumlahSatuan": round_decimal(bb.get("jumlah_satuan"), 4),
-                    "kodeAsalBahanBaku": bb.get("kode_asal_bahan_baku") or "",
+                    "kodeAsalBahanBaku": bb.get("kode_asal_bahan_baku") or "0",
                     "kodeBarang": bb.get("kode_barang") or "",
-                    "kodeDokAsal": bb.get("kode_dokumen_asal") or "",
-                    "kodeKantor": bb.get("kode_kantor_asal") or "",
+                    "kodeDokAsal": bb.get("kode_dokumen_asal") or "27",
+                    "kodeKantor": bb.get("kode_kantor_asal") or doc.get("kode_kantor") or "",
                     "kodeSatuanBarang": bb.get("kode_satuan") or "",
                     "merkBarang": clean_merk_tipe(bb.get("merek")),
-                    "ndpbm": round_decimal(bb.get("ndpbm"), 4),
+                    "ndpbm": round_decimal(bb.get("ndpbm"), 4) or 1.0,
                     "netto": round_decimal(bb.get("netto"), 4),
                     "nilaiJasa": 0,
                     "nomorAjuDokAsal": bb.get("nomor_aju_asal") or "",
@@ -271,7 +289,7 @@ def get_ceisa_bc27_json(nomor_aju):
                     "seriBarangDokAsal": cint(bb.get("seri_barang_asal")) or 0,
                     "seriIjin": 0,
                     "spesifikasiLainBarang": bb.get("spesifikasi_lain") or "",
-                    "tanggalDaftarDokAsal": fmt_date(bb.get("tanggal_daftar_asal")),
+                    "tanggalDaftarDokAsal": fmt_date(bb.get("tanggal_daftar_asal")) or fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate(),
                     "tipeBarang": clean_merk_tipe(bb.get("tipe")),
                     "ukuranBarang": bb.get("ukuran") or "",
                     "uraianBarang": bb.get("uraian") or "",
@@ -283,15 +301,15 @@ def get_ceisa_bc27_json(nomor_aju):
                     bb_item["bahanBakuTarif"].append({
                         "seriBahanBaku": cint(bb.get("seri_bahan_baku")) or 0,
                         "kodeJenisPungutan": get_kode_pungutan(bbt.kode_pungutan),
-                        "kodeAsalBahanBaku": bbt.kode_asal_bahan_baku or bb.get("kode_asal_bahan_baku") or "",
-                        "kodeFasilitasTarif": bbt.kode_fasilitas or "",
+                        "kodeAsalBahanBaku": bbt.kode_asal_bahan_baku or bb.get("kode_asal_bahan_baku") or "0",
+                        "kodeFasilitasTarif": bbt.kode_fasilitas or "5",
                         "nilaiBayar": round_decimal(bbt.nilai_bayar, 2),
                         "nilaiFasilitas": round_decimal(bbt.nilai_fasilitas, 2),
                         "nilaiSudahDilunasi": round_decimal(bbt.nilai_sudah_dilunasi, 2) or 0,
                         "tarif": round_decimal(bbt.tarif, 2),
                         "tarifFasilitas": round_decimal(bbt.tarif_fasilitas, 2),
                         "jumlahSatuan": round_decimal(bbt.jumlah_satuan, 4),
-                        "kodeJenisTarif": bbt.kode_tarif or "",
+                        "kodeJenisTarif": bbt.kode_tarif or "1",
                         "jumlahKemasan": 0,
                     })
                 
@@ -302,7 +320,6 @@ def get_ceisa_bc27_json(nomor_aju):
         payload["barang"] = barang_list
         
         return {"Declaration": payload}
-
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get CEISA BC27 JSON Error")
         return {"status": "error", "message": str(e)}
@@ -320,7 +337,6 @@ def get_ceisa_bc20_json(nomor_aju):
 
         # 1. Map Header Fields - Same as above 
         payload = {
-            "idPengguna": "",  # String, empty default
             "nomorAju": doc.get("nomoraju") or doc.name or "",
             "tanggalAju": fmt_date(doc.get("tanggal_pernyataan")),
             "asalData": "S",  # Schema requires constant "S"
@@ -346,10 +362,10 @@ def get_ceisa_bc20_json(nomor_aju):
             "kodeValuta": doc.get("kode_valuta") or "",
             "kotaTtd": doc.get("kota_pernyataan") or "",
             "namaTtd": doc.get("nama_pernyataan") or "",
-            "ndpbm": round_decimal(doc.get("ndpbm"), 4),  # multipleOf 0.0001
-            "netto": round_decimal(doc.get("netto"), 4),  # multipleOf 0.0001
+            "ndpbm": round_decimal(doc.get("ndpbm"), 4) or 1.0,  # Should not be 0
+            "netto": 0.0, # Will be calculated from barang
             "nilaiMaklon": round_decimal(doc.get("nilai_maklon"), 2),  # multipleOf 0.01
-            "seri": 0, 
+            "seri": 1, 
             "tanggalTtd": fmt_date(doc.get("tanggal_pernyataan")),
             "totalDanaSawit": round_decimal(doc.get("total_dana_sawit"), 2),  # multipleOf 0.01
             "biayaPengurang": round_decimal(doc.get("biaya_pengurang"), 2),  # multipleOf 0.01
@@ -370,20 +386,64 @@ def get_ceisa_bc20_json(nomor_aju):
             "vd": round_decimal(doc.get("vd"), 4),  # multipleOf 0.0001
         }
 
-        # 2. Map Child Tables (Entitas, Kemasan, Dokumen, Pengangkut)
-        payload["entitas"] = get_child_data(doc, "entitas", {
-            "alamatEntitas": "alamat_entitas",
-            "kodeEntitas": "kode_entitas",
-            "kodeJenisIdentitas": "kode_jenis_identitas",
-            "namaEntitas": "nama_entitas",
-            "nibEntitas": "nib_entitas",
-            "nomorIdentitas": "nomor_identitas",
-            "kodeStatus": "kode_status",
-            "seriEntitas": "seri",  # DocType uses 'seri' not 'seri_entitas'
-            "kodeJenisApi": "kode_jenis_api",
-            "kodeNegara": "kode_negara",
-            "kodeAfiliasi": "kode_afiliasi"
-        })
+
+        # 2. Map Entitas - sorted by kodeEntitas in BC20 Schema order: 1, 7, 9, 10, 11, 4, ...
+        # Then assign sequential seriEntitas (1, 2, 3, ...)
+        entitas_raw = doc.get("entitas") or []
+
+        # Build lookup: kodeEntitas -> list of entitas rows
+        entitas_by_kode = {}
+        for ent in entitas_raw:
+            kode = get_kode_entitas(ent.get("kode_entitas"))
+            entitas_by_kode.setdefault(kode, []).append(ent)
+
+        # Required order per BC20 schema
+        KODE_ORDER = ["1", "7", "9", "10", "11", "4"]
+
+        # Build sorted list: required order first, then any remaining
+        sorted_entitas = []
+        seen_kodes = set()
+        for kode in KODE_ORDER:
+            for ent in entitas_by_kode.get(kode, []):
+                sorted_entitas.append((kode, ent))
+            seen_kodes.add(kode)
+        # Append any remaining kodes not in KODE_ORDER
+        for kode, ents in entitas_by_kode.items():
+            if kode not in seen_kodes:
+                for ent in ents:
+                    sorted_entitas.append((kode, ent))
+
+        payload["entitas"] = []
+        for seri, (kode, ent) in enumerate(sorted_entitas, start=1):
+            ent_item = {
+                "alamatEntitas": ent.get("alamat_entitas") or "",
+                "kodeEntitas": kode,
+                "namaEntitas": ent.get("nama_entitas") or "",
+                "seriEntitas": seri,
+            }
+
+            if kode == "1":  # Importir
+                ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                ent_item["kodeJenisApi"] = ent.get("kode_jenis_api") or ""
+                ent_item["kodeStatus"] = ent.get("kode_status") or ""
+                ent_item["nibEntitas"] = ent.get("nib_entitas") or ""
+                ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
+            elif kode == "7":  # Pemilik Barang
+                ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
+                ent_item["kodeAfiliasi"] = get_kode_afiliasi(ent.get("kode_afiliasi"))
+            elif kode == "9":  # Pengirim
+                ent_item["kodeNegara"] = ent.get("kode_negara") or "ID"
+            elif kode == "10":  # Penjual
+                ent_item["kodeNegara"] = ent.get("kode_negara") or "ID"
+            elif kode == "11":  # Pemusatan
+                ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
+            elif kode == "4":  # PPJK
+                ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
+
+            payload["entitas"].append(ent_item)
 
         payload["kemasan"] = get_child_data(doc, "kemasan", {
             "jumlahKemasan": "jumlah_kemasan",
@@ -406,6 +466,10 @@ def get_ceisa_bc20_json(nomor_aju):
             "kodeCaraAngkut": "kode_cara_angkut",
             "seriPengangkut": "seri_pengangkut"
         })
+        for p in payload["pengangkut"]:
+            if not p.get("seriPengangkut"):
+                p["seriPengangkut"] = 1
+
         
         payload["kontainer"] = get_child_data(doc, "kontainer", {
             "kodeTipeKontainer": "kode_tipe_kontainer",
@@ -419,83 +483,91 @@ def get_ceisa_bc20_json(nomor_aju):
         barang_list = []
         barangs = frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["*"], order_by="seri_barang asc")
         
+        total_netto = 0.0
+
         for brg in barangs:
+            brg_netto = round_decimal(brg.get("netto"), 4)
+            total_netto += brg_netto
+
             brg_item = {
-                "cif": round_decimal(brg.get("cif"), 2),
-                "cifRupiah": round_decimal(brg.get("cif_rupiah"), 2),
-                "fob": round_decimal(brg.get("fob"), 2),
-                "hargaEkspor": round_decimal(brg.get("harga_ekspor"), 2),
-                "hargaPatokan": round_decimal(brg.get("harga_patokan"), 2),
-                "hargaPerolehan": round_decimal(brg.get("harga_perolehan"), 2),
-                "hargaSatuan": round_decimal(brg.get("harga_satuan"), 2),
-                "jumlahKemasan": round_decimal(brg.get("jumlah_kemasan"), 2),
-                "jumlahSatuan": round_decimal(brg.get("jumlah_satuan"), 4),
-                "kodeJenisKemasan": brg.get("kode_kemasan") or "",
-                "kodeNegaraAsal": brg.get("kode_negara_asal") or "",
-                "kodeSatuanBarang": brg.get("kode_satuan") or "",
-                "merk": clean_merk_tipe(brg.get("merek")),
-                "ndpbm": round_decimal(brg.get("ndpbm"), 4),
-                "netto": round_decimal(brg.get("netto"), 4),
-                "nilaiBarang": round_decimal(brg.get("nilai_barang"), 2),
-                "nilaiDanaSawit": round_decimal(brg.get("nilai_dana_sawit"), 2),
-                "posTarif": brg.get("hs") or "",
-                "seriBarang": cint(brg.get("seri_barang")) or 0,
-                "tipe": clean_merk_tipe(brg.get("tipe")),
-                "uraian": brg.get("uraian") or "",
-                "volume": round_decimal(brg.get("volume"), 4),
                 "asuransi": round_decimal(brg.get("asuransi"), 2),
                 "bruto": round_decimal(brg.get("bruto"), 4),
+                "cif": round_decimal(brg.get("cif"), 2),
+                "cifRupiah": round_decimal(brg.get("cif_rupiah"), 2),
                 "diskon": round_decimal(brg.get("diskon"), 2),
+                "fob": round_decimal(brg.get("fob"), 2),
                 "freight": round_decimal(brg.get("freight"), 2),
+                "hargaEkspor": round_decimal(brg.get("harga_ekspor"), 2),
+                "hargaPatokan": round_decimal(brg.get("harga_patokan"), 2),
                 "hargaPenyerahan": round_decimal(brg.get("harga_penyerahan"), 2),
+                "hargaPerolehan": round_decimal(brg.get("harga_perolehan"), 2),
+                "hargaSatuan": round_decimal(brg.get("harga_satuan"), 2),
                 "hjeCukai": round_decimal(brg.get("hje_cukai"), 2),
                 "isiPerKemasan": round_decimal(brg.get("isi_per_kemasan"), 2),
                 "jumlahBahanBaku": cint(brg.get("jumlah_bahan_baku")) or 0,
                 "jumlahDilekatkan": cint(brg.get("jumlah_dilekatkan")) or 0,
+                "jumlahKemasan": round_decimal(brg.get("jumlah_kemasan"), 2),
                 "jumlahPitaCukai": cint(brg.get("jumlah_pita_cukai")) or 0,
                 "jumlahRealisasi": round_decimal(brg.get("jumlah_realisasi"), 2),
+                "jumlahSatuan": round_decimal(brg.get("jumlah_satuan"), 4),
                 "kapasitasSilinder": cint(brg.get("kapasitas_silinder")) or 0,
-                "kodeKondisiBarang": brg.get("kode_kondisi_barang") or "",
+                "kodeJenisKemasan": brg.get("kode_kemasan") or "",
+                "kodeKondisiBarang": brg.get("kode_kondisi_barang") or "1",
+                "kodeNegaraAsal": brg.get("kode_negara_asal") or "",
+                "kodeSatuanBarang": brg.get("kode_satuan") or "",
+                "merk": clean_merk_tipe(brg.get("merek")),
+                "ndpbm": round_decimal(brg.get("ndpbm"), 4),
+                "netto": brg_netto,
+                "nilaiBarang": round_decimal(brg.get("nilai_barang"), 2),
+                "nilaiDanaSawit": round_decimal(brg.get("nilai_dana_sawit"), 2),
                 "nilaiDevisa": round_decimal(brg.get("nilai_devisa"), 2),
                 "nilaiTambah": round_decimal(brg.get("nilai_tambah"), 2),
                 "pernyataanLartas": brg.get("pernyataan_lartas") or "T",
                 "persentaseImpor": round_decimal(brg.get("persentase_impor"), 2),
+                "posTarif": brg.get("hs") or "",
                 "saldoAkhir": round_decimal(brg.get("saldo_akhir"), 2),
                 "saldoAwal": round_decimal(brg.get("saldo_awal"), 2),
+                "seriBarang": cint(brg.get("seri_barang")) or 0,
                 "seriBarangDokAsal": cint(brg.get("seri_barang_asal")) or 0,
                 "seriIjin": cint(brg.get("seri_izin")) or 0,
                 "tahunPembuatan": cint(brg.get("tahun_pembuatan")) or 0,
                 "tarifCukai": round_decimal(brg.get("tarif_cukai"), 2),
+                "tipe": clean_merk_tipe(brg.get("tipe")),
+                "uraian": brg.get("uraian") or "",
+                "volume": round_decimal(brg.get("volume"), 4),
                 "metodePenentuanNilai": brg.get("metode_penentuan_nilai") or "Metode 1",
-                "alasanMetodePenentuanNilai": brg.get("alasan_metode_penentuan_nilai") if hasattr(brg, 'alasan_metode_penentuan_nilai') else None,
+                "alasanMetodePenentuanNilai": brg.get("alasan_metode_penentuan_nilai") or None,
                 "statementPerbedaanHarga": brg.get("statement_perbedaan_harga") or "T",
             }
             
             # Fetch Child Tables for this Barang
-            # BARANG TARIF
-            brg_doc = frappe.get_doc("BARANG V1", brg.get("name")) # Need doc to get child tables easily
+            brg_doc = frappe.get_doc("BARANG V1", brg.get("name")) 
             
-            brg_item["barangTarif"] = []
+            # 3a. BARANG TARIF - Sorted to have BM at index 0 (Schema requirement)
+            tarif_raw = []
             for trf in brg_doc.get("barang_tarif") or []:
-                brg_item["barangTarif"].append({
-                    "tarif": round_decimal(trf.get("tarif"), 2),  # multipleOf 0.01
-                    "nilaiBayar": round_decimal(trf.get("nilai_bayar"), 2),  # multipleOf 0.01
+                tarif_raw.append({
+                    "tarif": round_decimal(trf.get("tarif"), 2),
+                    "nilaiBayar": round_decimal(trf.get("nilai_bayar"), 2),
                     "seriBarang": cint(trf.get("seri_barang")) or 0,
-                    "kodeKemasan": "",  # Not in BARANG TARIF
-                    "jumlahSatuan": round_decimal(trf.get("jumlah_satuan"), 4),  # multipleOf 0.0001
-                    "jumlahKemasan": 0,  # Not in BARANG TARIF
+                    "kodeKemasan": "",
+                    "jumlahSatuan": round_decimal(trf.get("jumlah_satuan"), 4),
+                    "jumlahKemasan": 0,
                     "kodeJenisTarif": trf.get("kode_tarif") or "",
-                    "nilaiFasilitas": round_decimal(trf.get("nilai_fasilitas"), 2),  # multipleOf 0.01
-                    "tarifFasilitas": round_decimal(trf.get("tarif_fasilitas"), 2),  # multipleOf 0.01
+                    "nilaiFasilitas": round_decimal(trf.get("nilai_fasilitas"), 2),
+                    "tarifFasilitas": round_decimal(trf.get("tarif_fasilitas"), 2),
                     "kodeSatuanBarang": trf.get("kode_satuan") or "",
                     "kodeJenisPungutan": trf.get("kode_pungutan") or "",
-                    "kodeKomoditiCukai": "",  # Not in BARANG TARIF
+                    "kodeKomoditiCukai": "",
                     "kodeFasilitasTarif": trf.get("kode_fasilitas") or "",
                     "nilaiSudahDilunasi": round_decimal(trf.get("nilai_sudah_dilunasi"), 2),
-                    "kodeSubKomoditiCukai": ""  # Not in BARANG TARIF
+                    "kodeSubKomoditiCukai": ""
                 })
+            
+            # Sort: BM first, then Others
+            brg_item["barangTarif"] = sorted(tarif_raw, key=lambda x: 0 if x.get("kodeJenisPungutan") == "BM" else 1)
 
-            # BARANG DOKUMEN
+            # 3b. BARANG DOKUMEN
             brg_item["barangDokumen"] = []
             for dok in brg_doc.get("barang_dokumen") or []:
                 brg_item["barangDokumen"].append({
@@ -503,36 +575,37 @@ def get_ceisa_bc20_json(nomor_aju):
                     "seriIzin": dok.get("seri_izin")
                 })
                 
-            # BARANG SPEK KHUSUS
+            # 3c. BARANG SPEK KHUSUS
             brg_item["barangSpekKhusus"] = []
             for spek in brg_doc.get("barang_spek_khusus") or []:
                 brg_item["barangSpekKhusus"].append({
-                    "seriBarangSpekKhusus": spek.idx,  # Use row index as seri
-                    "kodeSpekKhusus": cint(spek.kode_spek_khusus),  # Cast to int (valid: 1-19, 1001-1020)
-                    "uraianBarangSpekKhusus": spek.uraian_spek_khusus  # Note: double underscore in fieldname
+                    "seriBarangSpekKhusus": spek.idx,
+                    "kodeSpekKhusus": cint(spek.kode_spek_khusus),
+                    "uraianBarangSpekKhusus": spek.uraian_spek_khusus
                 })
                 
-            # BARANG VD
+            # 3d. BARANG VD (Mandatory in Schema)
             brg_item["barangVd"] = []
             for vd in brg_doc.get("barang_vd") or []:
                 brg_item["barangVd"].append({
-                    "kodeJenisVd": vd.kode_jenis_vd,
-                    "nilaiBarangVd": vd.nilai_barang  # Schema uses nilaiBarangVd
+                    "kodeJenisVd": vd.get("kode_jenis_vd"),
+                    "nilaiBarangVd": round_decimal(vd.get("nilai_barang_vd"), 4)
                 })
                 
-            # BARANG PEMILIK
+            # 3e. BARANG PEMILIK
             brg_item["barangPemilik"] = []
-            for pem in brg_doc.get("barang_pemilik") or []:
+            for pml in brg_doc.get("barang_pemilik") or []:
                 brg_item["barangPemilik"].append({
-                    "seriBarang": pem.seri_barang,  # Already exists in BARANG ENTITAS
-                    "seriBarangPemilik": pem.seri_barang_pemilik,  # Already exists
-                    "seriEntitas": pem.seri_entitas  # Already exists
+                    "seriBarang": cint(pml.seri_barang),
+                    "seriBarangPemilik": cint(pml.seri_barang_pemilik),
+                    "seriEntitas": cint(pml.seri_entitas)
                 })
 
             barang_list.append(brg_item)
 
         payload["barang"] = barang_list
-        
+        payload["netto"] = round_decimal(total_netto, 4)
+
         # Add komponen biaya (informasiKomponenBiaya)
         payload["informasiKomponenBiaya"] = []
         for kb in (doc.get("komponen_biaya") or []):
@@ -558,6 +631,10 @@ def get_ceisa_bc20_json(nomor_aju):
                 "deviden": kb.deviden
             })
         
+        # Clean up fields that CEISA rejects if null (must be omitted if empty)
+        if payload.get("tanggalBc11") is None:
+            payload.pop("tanggalBc11", None)
+            
         return {"Declaration": payload}
 
     except Exception as e:
@@ -596,8 +673,8 @@ def get_ceisa_bc23_json(nomor_aju):
             "kodeValuta": doc.get("kode_valuta") or "",
             "kotaTtd": doc.get("kota_pernyataan") or "",
             "namaTtd": doc.get("nama_pernyataan") or "",
-            "ndpbm": round_decimal(doc.get("ndpbm"), 4),
-            "netto": round_decimal(doc.get("netto"), 4),
+            "ndpbm": round_decimal(doc.get("ndpbm"), 4) or 1.0,
+            "netto": 0.0, # Will be calculated from barang
             "nik": "",
             "nilaiBarang": round_decimal(doc.get("nilai_barang"), 2),
             "nomorAju": doc.get("nomoraju") or doc.name or "",
@@ -627,23 +704,31 @@ def get_ceisa_bc23_json(nomor_aju):
                 ent_item["nibEntitas"] = ent.get("nib_entitas") or ""
                 ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
                 ent_item["nomorIjinEntitas"] = ent.get("nomor_ijin_entitas") or ""
-                ent_item["tanggalIjinEntitas"] = fmt_date(ent.get("tanggal_ijin_entitas"))
+                # Omit if empty instead of sending null or ""
+                tgl_ijin = fmt_date(ent.get("tanggal_ijin_entitas"))
+                if tgl_ijin:
+                    ent_item["tanggalIjinEntitas"] = tgl_ijin
             elif ent.get("kode_entitas") == "5":
                 ent_item["kodeNegara"] = ent.get("kode_negara") or ""
             elif ent.get("kode_entitas") == "7":
                 ent_item["kodeJenisApi"] = ent.get("kode_jenis_api") or ""
                 ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
-                ent_item["kodeStatus"] = ent.get("kode_status") or ""
+                ent_item["kodeStatus"] = ent.get("kode_status") or "10"
                 ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
                 ent_item["nomorIjinEntitas"] = ent.get("nomor_ijin_entitas") or ""
-                ent_item["tanggalIjinEntitas"] = fmt_date(ent.get("tanggal_ijin_entitas"))
+                tgl_ijin = fmt_date(ent.get("tanggal_ijin_entitas"))
+                if tgl_ijin:
+                    ent_item["tanggalIjinEntitas"] = tgl_ijin
             payload["entitas"].append(ent_item)
+        
+        # Sort entitas: 3 (Pengusaha TPB), 5 (Pemasok), 7 (Pemilik Barang)
+        payload["entitas"] = sorted(payload["entitas"], key=lambda x: {"3": 0, "5": 1, "7": 2}.get(x.get("kodeEntitas"), 99))
 
         # 3. Map Kemasan
         payload["kemasan"] = []
         for kem in (doc.get("kemasan") or []):
             payload["kemasan"].append({
-                "jumlahKemasan": round_decimal(kem.get("jumlah_kemasan"), 2),
+                "jumlahKemasan": cint(kem.get("jumlah_kemasan")), # Must be integer for BC23
                 "kodeJenisKemasan": kem.get("kode_kemasan") or "",
                 "seriKemasan": cint(kem.get("seri")) or 0,
                 "merkKemasan": clean_merk_tipe(kem.get("merek_kemasan")),
@@ -658,13 +743,25 @@ def get_ceisa_bc23_json(nomor_aju):
             "kodeJenisKontainer": "kode_jenis_kontainer",
         })
 
-        # 5. Map Dokumen
-        payload["dokumen"] = get_child_data(doc, "dokumen", {
+        # 5. Map Dokumen (Positional: 0=Invoice, 1=BL/AWB, 2=Others)
+        all_docs = get_child_data(doc, "dokumen", {
             "kodeDokumen": "kode_dokumen",
-            "nomorDokumen": "nomor_dokumen",
+            "nomorDokumen": "nomor_nomor_dokumen" if "nomor_nomor_dokumen" in [f.fieldname for f in doc.meta.get_table_fields()] else "nomor_dokumen",
             "seriDokumen": "seri",
             "tanggalDokumen": "tanggal_dokumen"
         })
+        
+        # In case the child table field name is different in some environments
+        for d in all_docs:
+            if not d.get("nomorDokumen") and doc.get("dokumen") and len(doc.get("dokumen")) > 0:
+                 # Fallback if get_child_data mapping failed for some reason
+                 pass
+
+        invoice_docs = [d for d in all_docs if d.get("kodeDokumen") == "380"]
+        bl_awb_docs = [d for d in all_docs if d.get("kodeDokumen") in ["705", "740"]]
+        other_docs = [d for d in all_docs if d.get("kodeDokumen") not in ["380", "705", "740"]]
+        
+        payload["dokumen"] = invoice_docs + bl_awb_docs + other_docs
 
         # 6. Map Pengangkut
         payload["pengangkut"] = get_child_data(doc, "pengangkut", {
@@ -679,7 +776,11 @@ def get_ceisa_bc23_json(nomor_aju):
         barang_list = []
         barangs = frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["*"], order_by="seri_barang asc")
         
+        total_netto = 0.0
         for brg in barangs:
+            brg_netto = round_decimal(brg.get("netto"), 4)
+            total_netto += brg_netto
+            
             brg_item = {
                 "idBarang": "",
                 "asuransi": round_decimal(brg.get("asuransi"), 2),
@@ -697,11 +798,11 @@ def get_ceisa_bc23_json(nomor_aju):
                 "kodeDokumen": "",
                 "kodeKategoriBarang": brg.get("kode_kategori_barang") or "",
                 "kodeJenisKemasan": brg.get("kode_kemasan") or "",
-                "kodeNegaraAsal": brg.get("kode_negara_asal") or "",
-                "kodePerhitungan": brg.get("kode_perhitungan") or "",
+                "kodeNegaraAsal": brg.get("kode_negara_asal") or "ID", # Should not be empty if pattern is enforced
+                "kodePerhitungan": brg.get("kode_perhitungan") or "0",
                 "kodeSatuanBarang": brg.get("kode_satuan") or "",
                 "merk": clean_merk_tipe(brg.get("merek")),
-                "netto": round_decimal(brg.get("netto"), 4),
+                "netto": brg_netto,
                 "nilaiBarang": round_decimal(brg.get("nilai_barang"), 2),
                 "nilaiTambah": round_decimal(brg.get("nilai_tambah"), 2),
                 "posTarif": brg.get("hs") or "",
@@ -710,10 +811,10 @@ def get_ceisa_bc23_json(nomor_aju):
                 "tipe": clean_merk_tipe(brg.get("tipe")),
                 "ukuran": brg.get("ukuran") or "",
                 "uraian": brg.get("uraian") or "",
-                "ndpbm": round_decimal(brg.get("ndpbm"), 4),
+                "ndpbm": round_decimal(brg.get("ndpbm"), 4) or 1.0,
                 "cifRupiah": round_decimal(brg.get("cif_rupiah"), 2),
                 "hargaPerolehan": round_decimal(brg.get("harga_perolehan"), 2),
-                "kodeAsalBahanBaku": brg.get("kode_asal_barang") or "",
+                "kodeAsalBahanBaku": brg.get("kode_asal_barang") or "0",
             }
             
             brg_doc = frappe.get_doc("BARANG V1", brg.get("name"))
@@ -722,9 +823,9 @@ def get_ceisa_bc23_json(nomor_aju):
             brg_item["barangTarif"] = []
             for trf in brg_doc.get("barang_tarif") or []:
                 brg_item["barangTarif"].append({
-                    "kodeJenisTarif": trf.get("kode_tarif") or "",
+                    "kodeJenisTarif": trf.get("kode_tarif") or "1",
                     "jumlahSatuan": round_decimal(trf.get("jumlah_satuan"), 4),
-                    "kodeFasilitasTarif": trf.get("kode_fasilitas") or "",
+                    "kodeFasilitasTarif": trf.get("kode_fasilitas") or "1",
                     "kodeSatuanBarang": trf.get("kode_satuan") or "",
                     "kodeJenisPungutan": get_kode_pungutan(trf.get("kode_pungutan")),
                     "nilaiBayar": round_decimal(trf.get("nilai_bayar"), 2),
@@ -734,6 +835,9 @@ def get_ceisa_bc23_json(nomor_aju):
                     "tarif": round_decimal(trf.get("tarif"), 2),
                     "tarifFasilitas": round_decimal(trf.get("tarif_fasilitas"), 2),
                 })
+            
+            # Sort tarif: BM, PPH, PPN
+            brg_item["barangTarif"] = sorted(brg_item["barangTarif"], key=lambda x: {"BM": 0, "PPH": 1, "PPN": 2}.get(x.get("kodeJenisPungutan"), 99))
 
             # BARANG DOKUMEN
             brg_item["barangDokumen"] = get_child_data(brg_doc, "barang_dokumen", {
@@ -743,7 +847,12 @@ def get_ceisa_bc23_json(nomor_aju):
             barang_list.append(brg_item)
 
         payload["barang"] = barang_list
+        payload["netto"] = round_decimal(total_netto, 4)
         
+        # Clean up fields that CEISA rejects if null
+        if payload.get("tanggalBc11") is None:
+            payload.pop("tanggalBc11", None)
+
         return {"Declaration": payload}
 
     except Exception as e:
@@ -1001,6 +1110,7 @@ def get_ceisa_bc30_json(nomor_aju):
             "idPengguna": "",
             "jabatanTtd": doc.get("jabatan_pernyataan") or "",
             "jumlahKontainer": len(doc.get("kontainer") or []),
+            "kesiapanBarang": [],
             "kodeAsuransi": doc.get("kode_asuransi") or "DN",
             "kodeCaraBayar": doc.get("kode_cara_bayar") or "",
             "kodeCaraDagang": doc.get("kode_cara_dagang") or "",
@@ -1037,36 +1147,72 @@ def get_ceisa_bc30_json(nomor_aju):
             "flagBarkir": doc.get("flag_barkir") or "T",
             "kodeJenisPengangkutan": doc.get("kode_jenis_pengangkutan") or "",
             "bankDevisa": [],
+            "kesiapanBarang": []
         }
 
+        # 1.1 Map Bank Devisa
         for bank in (doc.get("bank_devisa") or []):
             payload["bankDevisa"].append({
-                "kodeBank": bank.kode or "",
-                "namaBank": bank.nama or "",
-                "seriBank": cint(bank.seri) or 1,
+                "kodeBank": bank.get("kode_bank") or "",
+                "namaBank": bank.get("nama_bank") or "",
+                "seriBank": cint(bank.get("seri")) or 1,
+            })
+        if not payload["bankDevisa"]:
+            payload["bankDevisa"].append({"kodeBank": "-", "namaBank": "-", "seriBank": 1})
+
+        # 1.2 Map Kesiapan Barang
+        for kb in (doc.get("kesiapan_barang") or []):
+            payload["kesiapanBarang"].append({
+                "kodeJenisBarang": kb.get("kodejenisbarang") or "1",
+                "kodeJenisGudang": kb.get("kodejenisgudang") or "1",
+                "namaPic": kb.get("namapic") or "-",
+                "alamat": kb.get("alamat") or "-",
+                "nomorTelpPic": kb.get("nomortelppic") or "-",
+                "jumlahContainer20": cint(kb.get("jumlahcontainer20")),
+                "jumlahContainer40": cint(kb.get("jumlahcontainer40")),
+                "lokasiSiapPeriksa": kb.get("lokasisiapperiksa") or "-",
+                "kodeCaraStuffing": kb.get("kodecarastuffing") or "8",
+                "kodeJenisPartOf": kb.get("kodejenispartof") or "",
+                "tanggalPkb": fmt_date(kb.get("tanggalpkb")),
+                "waktuSiapPeriksa": kb.get("waktusiapperiksa").isoformat() if kb.get("waktusiapperiksa") else None
+            })
+        if not payload["kesiapanBarang"]:
+             payload["kesiapanBarang"].append({
+                "kodeJenisGudang": "2",
+                "namaPic": "-",
+                "alamat": "-",
+                "nomorTelpPic": "-",
+                "lokasiSiapPeriksa": "-",
+                "tanggalPkb": fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate(),
+                "waktuSiapPeriksa": str(fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate()) + "T00:00:00.000Z"
             })
 
-        # 2. Map Entitas
+        # 2. Map Entitas (Strict Ordering BC30: 2=Eksportir, 7=Pemilik, 8=Penerima)
+        entitas_map = {ent.kode_entitas: ent for ent in doc.entitas}
         payload["entitas"] = []
-        for ent in (doc.get("entitas") or []):
-            ent_item = {
-                "alamatEntitas": ent.get("alamat_entitas") or "",
-                "kodeEntitas": get_kode_entitas(ent.get("kode_entitas")),
-                "namaEntitas": ent.get("nama_entitas") or "",
-                "seriEntitas": cint(ent.get("seri")) or 0,
-            }
-            # Add fields based on entitas type
-            if ent.get("kode_entitas") in ["2", "7", "4", "23"]:  # Eksportir, Pemilik, PPJK, Konsolidator
-                ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
-                ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
-                if ent.get("nib_entitas"):
-                    ent_item["nibEntitas"] = ent.get("nib_entitas")
-                if ent.get("kode_entitas") == "23":
-                    ent_item["kodeKategoriKonsolidator"] = ent.get("kode_kategori_konsolidator") or ""
-            elif ent.get("kode_entitas") in ["8", "6", "5"]:  # Penerima, Pembeli, Pengirim
-                ent_item["kodeNegara"] = ent.get("kode_negara") or ""
-            
-            payload["entitas"].append(ent_item)
+        ordered_codes = ["2", "7", "8"]
+        
+        for idx, kode in enumerate(ordered_codes):
+            ent = entitas_map.get(kode)
+            if ent:
+                ent_item = {
+                    "alamatEntitas": ent.get("alamat_entitas") or "",
+                    "kodeEntitas": kode,
+                    "namaEntitas": ent.get("nama_entitas") or "",
+                    "seriEntitas": idx + 1,
+                }
+                
+                # Specific fields per entity type
+                if kode in ["2", "7"]:  # Eksportir, Pemilik
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
+                    if ent.get("nib_entitas"):
+                        ent_item["nibEntitas"] = ent.get("nib_entitas")
+                
+                elif kode == "8":  # Penerima
+                    ent_item["kodeNegara"] = ent.get("kode_negara") or ""
+                
+                payload["entitas"].append(ent_item)
 
         # 3. Map Barang V1
         barang_list = []
@@ -1079,14 +1225,14 @@ def get_ceisa_bc30_json(nomor_aju):
                 "hargaPatokan": round_decimal(brg.get("harga_patokan"), 4),
                 "hargaPerolehan": round_decimal(brg.get("harga_perolehan"), 2),
                 "hargaSatuan": round_decimal(brg.get("harga_satuan"), 2),
-                "jumlahKemasan": round_decimal(brg.get("jumlah_kemasan"), 2),
+                "jumlahKemasan": cint(brg.get("jumlah_kemasan")),  # Must be integer
                 "jumlahSatuan": round_decimal(brg.get("jumlah_satuan"), 4),
                 "kodeAsalBahanBaku": brg.get("kode_asal_bahan_baku") or "",
                 "kodeBarang": brg.get("kode_barang") or "",
                 "kodeDaerahAsal": brg.get("kode_daerah_asal") or "",
                 "kodeDokumen": "30",
                 "kodeJenisKemasan": brg.get("kode_kemasan") or "",
-                "kodeNegaraAsal": brg.get("kode_negara_asal") or "",
+                "kodeNegaraAsal": (brg.get("kode_negara_asal") or "").upper() or "ID",  # Must be uppercase 2-letter code
                 "kodeSatuanBarang": brg.get("kode_satuan") or "",
                 "merk": clean_merk_tipe(brg.get("merek")),
                 "ndpbm": round_decimal(brg.get("ndpbm"), 4),
@@ -1140,7 +1286,7 @@ def get_ceisa_bc30_json(nomor_aju):
         payload["kemasan"] = []
         for kem in (doc.get("kemasan") or []):
             payload["kemasan"].append({
-                "jumlahKemasan": round_decimal(kem.get("jumlah_kemasan"), 2),
+                "jumlahKemasan": cint(kem.get("jumlah_kemasan")),  # Must be integer
                 "kodeJenisKemasan": kem.get("kode_kemasan") or "",
                 "merkKemasan": clean_merk_tipe(kem.get("merek_kemasan")),
                 "seriKemasan": cint(kem.get("seri")) or 0,
@@ -1160,15 +1306,22 @@ def get_ceisa_bc30_json(nomor_aju):
             "kodeDokumen": "kode_dokumen",
             "nomorDokumen": "nomor_dokumen",
             "seriDokumen": "seri",
-            "tanggalDokumen": "tanggal_dokumen"
+            "tanggalDokumen": "tanggal_dokumen",
+            "idDokumen": "id_dokumen",
+            "kodeFasilitas": "kode_fasilitas",
+            "kodeIjin": "kode_ijin"
         })
 
         # 7. Map Pengangkut
-        payload["pengangkut"] = get_child_data(doc, "pengangkut", {
-            "namaPengangkut": "nama_pengangkut",
-            "nomorPengangkut": "nomor_pengangkut",
-            "seriPengangkut": "seri_pengangkut"
-        })
+        payload["pengangkut"] = []
+        for p in (doc.get("pengangkut") or []):
+            payload["pengangkut"].append({
+                "kodeBendera": p.get("kode_bendera") or "",
+                "kodeCaraAngkut": p.get("kode_cara_angkut") or "1",
+                "namaPengangkut": p.get("nama_pengangkut") or "",
+                "nomorPengangkut": p.get("nomor_pengangkut") or "",
+                "seriPengangkut": cint(p.get("seri_pengangkut") or p.idx)
+            })
             
         return {"Declaration": payload}
 
@@ -1216,29 +1369,37 @@ def get_ceisa_bc40_json(nomor_aju):
         }
         decl = payload["Declaration"]
 
-        # 2. Map Entitas
+        # 2. Map Entitas (Strict Ordering BC40: 3=Pengusaha TPB, 7=Pemilik, 9=Pengirim)
+        entitas_map = {ent.kode_entitas: ent for ent in doc.entitas}
         decl["entitas"] = []
-        for ent in (doc.get("entitas") or []):
-            ent_item = {
-                "alamatEntitas": ent.get("alamat_entitas") or "",
-                "kodeEntitas": get_kode_entitas(ent.get("kode_entitas")),
-                "namaEntitas": ent.get("nama_entitas") or "",
-                "seriEntitas": cint(ent.get("seri")) or 0,
-            }
-            if ent.get("nib_entitas"):
-                ent_item["nibEntitas"] = ent.get("nib_entitas")
-            
-            if ent.get("kode_entitas") == "3":
-                ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
-                ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
-                ent_item["nomorIjinEntitas"] = ent.get("nomor_ijin_entitas") or ""
-                ent_item["tanggalIjinEntitas"] = fmt_date(ent.get("tanggal_ijin_entitas"))
-            elif ent.get("kode_entitas") in ["7", "9"]:
-                ent_item["kodeJenisApi"] = ent.get("kode_jenis_api") or ""
-                ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
-                ent_item["kodeStatus"] = ent.get("kode_status") or ""
-                ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
-            decl["entitas"].append(ent_item)
+        ordered_codes = ["3", "7", "9"]
+        
+        for idx, kode in enumerate(ordered_codes):
+            ent = entitas_map.get(kode)
+            if ent:
+                ent_item = {
+                    "alamatEntitas": ent.get("alamat_entitas") or "",
+                    "kodeEntitas": kode,
+                    "namaEntitas": ent.get("nama_entitas") or "",
+                    "seriEntitas": idx + 1,
+                }
+                
+                # Specific fields per entity type
+                if kode == "3":  # Pengusaha TPB
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["nibEntitas"] = ent.get("nib_entitas") or ""
+                    ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
+                    ent_item["nomorIjinEntitas"] = ent.get("nomor_ijin_entitas") or "-"
+                    ent_item["tanggalIjinEntitas"] = fmt_date(ent.get("tanggal_ijin_entitas")) or fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate()
+                
+                elif kode in ["7", "9"]:  # Pemilik / Pengirim
+                    ent_item["kodeJenisApi"] = ent.get("kode_jenis_api") or "01"
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["kodeStatus"] = ent.get("kode_status") or "10"
+                    ent_item["nibEntitas"] = ent.get("nib_entitas") or ""
+                    ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
+                
+                decl["entitas"].append(ent_item)
 
         # 3. Map Child Tables
         decl["dokumen"] = get_child_data(doc, "dokumen", {
@@ -1265,7 +1426,7 @@ def get_ceisa_bc40_json(nomor_aju):
         decl["kemasan"] = []
         for kem in (doc.get("kemasan") or []):
             decl["kemasan"].append({
-                "jumlahKemasan": round_decimal(kem.get("jumlah_kemasan"), 2),
+                "jumlahKemasan": cint(kem.get("jumlah_kemasan")),  # Must be integer
                 "kodeJenisKemasan": kem.get("kode_kemasan") or "",
                 "merkKemasan": clean_merk_tipe(kem.get("merek_kemasan")),
                 "seriKemasan": cint(kem.get("seri")) or 0
@@ -1311,7 +1472,7 @@ def get_ceisa_bc40_json(nomor_aju):
                 "volume": round_decimal(brg.get("volume"), 4),
                 "cifRupiah": round_decimal(brg.get("cif_rupiah"), 2),
                 "hargaPerolehan": round_decimal(brg.get("harga_perolehan"), 2),
-                "kodeAsalBahanBaku": brg.get("kode_asal_bahan_baku") or "",
+                "kodeAsalBahanBaku": brg.get("kode_asal_bahan_baku") if brg.get("kode_asal_bahan_baku") in ["0", "1"] else "1",
                 "ndpbm": round_decimal(brg.get("ndpbm"), 4),
                 "nilaiJasa": round_decimal(brg.get("nilai_jasa"), 4),
                 "uangMuka": round_decimal(brg.get("uang_muka"), 4),
@@ -1345,45 +1506,802 @@ def get_ceisa_bc40_json(nomor_aju):
 @frappe.whitelist()
 def get_ceisa_bc41_json(nomor_aju):
     """Export HEADER V21 to BC41 (TPB release to TLDDP) JSON format"""
-    res = get_ceisa_bc40_json(nomor_aju)
-    if "Declaration" in res:
-        res["Declaration"]["kodeDokumen"] = "41"
-        for brg in res["Declaration"]["barang"]: brg["kodeDokumen"] = "41"
-    return res
+    try:
+        doc = frappe.get_doc("HEADER V21", nomor_aju)
+        
+        # 1. Map Header
+        payload = {
+            "Declaration": {
+                "asalData": "S",
+                "asuransi": round_decimal(doc.get("asuransi"), 2),
+                "bruto": round_decimal(doc.get("bruto"), 4),
+                "cif": round_decimal(doc.get("cif"), 2),
+                "kodeJenisTpb": doc.get("kode_jenis_tpb") or "1",
+                "freight": round_decimal(doc.get("freight"), 2),
+                "hargaPenyerahan": round_decimal(doc.get("harga_penyerahan"), 4),
+                "jabatanTtd": doc.get("jabatan_pernyataan") or "",
+                "jumlahKontainer": len(doc.get("kontainer") or []),
+                "kodeDokumen": "41",
+                "kodeKantor": doc.get("kode_kantor") or "",
+                "kodeLokasiBayar": doc.get("kode_lokasi_bayar") or "0000",
+                "kodePembayar": doc.get("kode_pembayar") or "1",
+                "kodeTujuanPengiriman": doc.get("kode_tujuan_pengiriman") or "",
+                "kotaTtd": doc.get("kota_pernyataan") or "",
+                "namaTtd": doc.get("nama_pernyataan") or "",
+                "netto": round_decimal(doc.get("netto"), 4),
+                "nilaiBarang": round_decimal(doc.get("nilai_barang"), 2),
+                "nomorAju": doc.get("nomoraju") or doc.name or "",
+                "seri": 0,
+                "tanggalAju": fmt_date(doc.get("tanggal_pernyataan")),
+                "tanggalTtd": fmt_date(doc.get("tanggal_pernyataan")),
+                "userPortal": "",
+                "volume": round_decimal(doc.get("volume"), 4),
+                "biayaTambahan": round_decimal(doc.get("biaya_tambahan"), 2),
+                "biayaPengurang": round_decimal(doc.get("biaya_pengurang"), 2),
+                "vd": round_decimal(doc.get("vd"), 4),
+                "uangMuka": round_decimal(doc.get("uang_muka"), 4),
+                "ppnPajak": round_decimal(doc.get("ppn_pajak"), 2),
+                "ppnbmPajak": round_decimal(doc.get("ppnbm_pajak"), 2),
+                "pphPajak": round_decimal(doc.get("pph_pajak"), 2),
+                "totalDanaSawit": 0,
+            }
+        }
+        decl = payload["Declaration"]
+
+        # 2. Map Entitas (Strict Ordering BC41: 3, 7, 8)
+        entitas_map = {ent.kode_entitas: ent for ent in doc.entitas}
+        decl["entitas"] = []
+        ordered_codes = ["3", "7", "8"]
+        
+        for idx, kode in enumerate(ordered_codes):
+            ent = entitas_map.get(kode)
+            if ent:
+                ent_item = {
+                    "alamatEntitas": ent.get("alamat_entitas") or "",
+                    "kodeEntitas": kode,
+                    "namaEntitas": ent.get("nama_entitas") or "",
+                    "seriEntitas": idx + 1,
+                    "nomorIdentitas": ent.get("nomor_identitas") or "",
+                }
+                if kode == "3":
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["nibEntitas"] = ent.get("nib_entitas") or ""
+                    ent_item["nomorIjinEntitas"] = ent.get("nomor_ijin_entitas") or "-"
+                    ent_item["tanggalIjinEntitas"] = fmt_date(ent.get("tanggal_ijin_entitas")) or fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate()
+                elif kode == "7":
+                    ent_item["kodeJenisApi"] = ent.get("kode_jenis_api") or "01"
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["kodeStatus"] = ent.get("kode_status") or "10"
+                    ent_item["nomorIjinEntitas"] = ent.get("nomor_ijin_entitas") or "-"
+                    ent_item["tanggalIjinEntitas"] = fmt_date(ent.get("tanggal_ijin_entitas")) or fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate()
+                elif kode == "8":
+                    ent_item["kodeJenisApi"] = ent.get("kode_jenis_api") or "01"
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["kodeStatus"] = ent.get("kode_status") or "10"
+                
+                decl["entitas"].append(ent_item)
+
+        # 3. Child Tables
+        decl["dokumen"] = get_child_data(doc, "dokumen", {
+            "kodeDokumen": "kode_dokumen",
+            "nomorDokumen": "nomor_dokumen",
+            "seriDokumen": "seri",
+            "tanggalDokumen": "tanggal_dokumen"
+        })
+        
+        decl["pengangkut"] = []
+        for p in (doc.get("pengangkut") or []):
+            decl["pengangkut"].append({
+                "namaPengangkut": p.get("nama_pengangkut") or "",
+                "nomorPengangkut": p.get("nomor_pengangkut") or "",
+                "kodeCaraAngkut": p.get("kode_cara_angkut") or "1",
+                "seriPengangkut": str(p.get("seri_pengangkut") or p.idx)
+            })
+            
+        decl["kemasan"] = []
+        for kem in (doc.get("kemasan") or []):
+            decl["kemasan"].append({
+                "jumlahKemasan": cint(kem.get("jumlah_kemasan")),
+                "kodeJenisKemasan": kem.get("kode_kemasan") or "",
+                "merkKemasan": clean_merk_tipe(kem.get("merek_kemasan")),
+                "seriKemasan": cint(kem.get("seri") or kem.idx)
+            })
+
+        # 4. Map Barang
+        decl["barang"] = []
+        for brg in frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["*"], order_by="seri_barang asc"):
+            brg_doc = frappe.get_doc("BARANG V1", brg.get("name"))
+            brg_item = {
+                "cif": round_decimal(brg.get("cif"), 2),
+                "hargaEkspor": round_decimal(brg.get("harga_ekspor"), 4),
+                "hargaPenyerahan": round_decimal(brg.get("harga_penyerahan"), 4),
+                "isiPerKemasan": round_decimal(brg.get("isi_per_kemasan"), 2),
+                "jumlahKemasan": cint(brg.get("jumlah_kemasan")),
+                "jumlahSatuan": round_decimal(brg.get("jumlah_satuan"), 4),
+                "kodeBarang": brg.get("kode_barang") or "",
+                "kodeDokumen": "41",
+                "kodeJenisKemasan": brg.get("kode_kemasan") or "",
+                "kodeSatuanBarang": brg.get("kode_satuan") or "",
+                "merk": clean_merk_tipe(brg.get("merek")),
+                "netto": round_decimal(brg.get("netto"), 4),
+                "nilaiBarang": round_decimal(brg.get("nilai_barang"), 2),
+                "posTarif": brg.get("hs") or "",
+                "seriBarang": cint(brg.get("seri_barang")) or 0,
+                "spesifikasiLain": brg.get("spesifikasi_lain") or "",
+                "tipe": clean_merk_tipe(brg.get("tipe")),
+                "ukuran": brg.get("ukuran") or "",
+                "uraian": brg.get("uraian") or "",
+                "volume": round_decimal(brg.get("volume"), 4),
+                "cifRupiah": round_decimal(brg.get("cif_rupiah"), 2),
+                "hargaPerolehan": round_decimal(brg.get("harga_perolehan"), 2),
+                "kodeAsalBahanBaku": brg.get("kode_asal_bahan_baku") if brg.get("kode_asal_bahan_baku") in ["0", "1"] else "1",
+                "ndpbm": round_decimal(brg.get("ndpbm"), 4) or 1.0,
+            }
+            
+            # BC41 requires bahanBaku
+            brg_item["bahanBaku"] = []
+            bahan_bakus = frappe.get_all("BAHAN BAKU", filters={"parent_barang": brg.get("name")}, fields=["*"], order_by="seri_bahan_baku asc")
+            for bb in bahan_bakus:
+                bb_doc = frappe.get_doc("BAHAN BAKU", bb.get("name"))
+                bb_item = {
+                    "cif": round_decimal(bb.get("cif"), 2),
+                    "cifRupiah": round_decimal(bb.get("cif_rupiah"), 2),
+                    "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 4),
+                    "hargaPerolehan": round_decimal(bb.get("harga_perolehan"), 2),
+                    "jumlahSatuan": round_decimal(bb.get("jumlah_satuan"), 4),
+                    "kodeSatuanBarang": bb.get("kode_satuan") or "",
+                    "kodeAsalBahanBaku": bb.get("kode_asal_bahan_baku") or "0",
+                    "kodeBarang": bb.get("kode_barang") or "",
+                    "kodeDokAsal": bb.get("kode_dokumen_asal") or "40",
+                    "kodeDokumen": "41",
+                    "kodeKantor": bb.get("kode_kantor_asal") or doc.get("kode_kantor") or "",
+                    "ndpbm": round_decimal(bb.get("ndpbm"), 4) or 1.0,
+                    "netto": round_decimal(bb.get("netto"), 4),
+                    "nomorAjuDokAsal": bb.get("nomor_aju_asal") or "",
+                    "nomorDaftarDokAsal": bb.get("nomor_daftar_asal") or "",
+                    "posTarif": bb.get("hs") or "",
+                    "seriBahanBaku": cint(bb.get("seri_bahan_baku")) or 0,
+                    "seriBarang": cint(brg.get("seri_barang")) or 0,
+                    "seriBarangDokAsal": cint(bb.get("seri_barang_asal")) or 0,
+                    "seriIjin": 0,
+                    "tanggalDaftarDokAsal": fmt_date(bb.get("tanggal_daftar_asal")) or fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate(),
+                    "tipeBarang": clean_merk_tipe(bb.get("tipe")),
+                    "ukuranBarang": bb.get("ukuran") or "",
+                    "uraianBarang": bb.get("uraian") or "",
+                    "nilaiJasa": 0,
+                    "merkBarang": clean_merk_tipe(bb.get("merek")),
+                }
+                brg_item["bahanBaku"].append(bb_item)
+            
+            decl["barang"].append(brg_item)
+
+        return payload
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Get CEISA BC41 JSON Error")
+        return {"status": "error", "message": str(e)}
 
 
 @frappe.whitelist()
 def get_ceisa_bc33_json(nomor_aju):
     """Export HEADER V21 to BC33 (PLB) JSON format"""
-    res = get_ceisa_bc40_json(nomor_aju)
-    if isinstance(res, dict) and "Declaration" in res:
-        res["Declaration"]["kodeDokumen"] = "33"
-        for brg in (res["Declaration"].get("barang") or []):
-            brg["kodeDokumen"] = "33"
-    return res
+    try:
+        doc = frappe.get_doc("HEADER V21", nomor_aju)
+        
+        # 1. Map Header
+        payload = {
+            "Declaration": {
+                "asalData": "S",
+                "asuransi": round_decimal(doc.get("asuransi"), 2),
+                "bruto": round_decimal(doc.get("bruto"), 4),
+                "cif": round_decimal(doc.get("cif"), 2),
+                "freight": round_decimal(doc.get("freight"), 2),
+                "jabatanTtd": doc.get("jabatan_pernyataan") or "",
+                "jumlahKontainer": len(doc.get("kontainer") or []),
+                "kodeDokumen": "33",
+                "kodeKantor": doc.get("kode_kantor") or "",
+                "kotaTtd": doc.get("kota_pernyataan") or "",
+                "namaTtd": doc.get("nama_pernyataan") or "",
+                "netto": round_decimal(doc.get("netto"), 4),
+                "nomorAju": doc.get("nomoraju") or doc.name or "",
+                "seri": 1,
+                "tanggalAju": fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate(),
+                "tanggalTtd": fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate(),
+                "volume": round_decimal(doc.get("volume"), 4),
+                "flagCurah": str(doc.get("flag_curah") or "2"),
+                "kodeCaraAngkutPlb": str(doc.get("kode_cara_angkut") or "1"),
+                "kodeCaraBayar": str(doc.get("kode_cara_bayar") or "1"),
+                "kodeCaraDagang": doc.get("kode_cara_dagang") or "1",
+                "kodeJenisEkspor": doc.get("kode_jenis_ekspor") or "1",
+                "kodeJenisProsedur": doc.get("kode_jenis_prosedur") or "1",
+                "kodeKategoriEkspor": doc.get("kode_kategori_ekspor") or "1",
+                "kodePelBongkar": doc.get("kode_pelabuhan_bongkar") or "",
+                "kodePelMuat": doc.get("kode_pelabuhan_muat") or "",
+                "kodePelTujuan": doc.get("kode_pelabuhan_tujuan") or "",
+                "kodeValuta": doc.get("kode_valuta") or "USD",
+                "ndpbm": round_decimal(doc.get("ndpbm"), 4) or 1.0,
+                "kodeAsuransi": doc.get("kode_asuransi") or "1",
+            }
+        }
+        decl = payload["Declaration"]
+
+        # 2. Bank Devisa (Required for BC33)
+        decl["bankDevisa"] = []
+        for i, bank in enumerate(doc.get("bank_devisa") or []):
+            decl["bankDevisa"].append({
+                "kodeBank": bank.get("kode_bank") or "",
+                "namaBank": bank.get("nama_bank") or "",
+                "seriBank": i + 1
+            })
+        if not decl["bankDevisa"]:
+            decl["bankDevisa"].append({"kodeBank": "-", "namaBank": "-", "seriBank": 1})
+
+        # 3. Map Entitas (Strict Ordering BC33: 2=Eksportir, 3=Pengusaha, 7=Pemilik, 8=Penerima)
+        entitas_map = {ent.kode_entitas: ent for ent in doc.entitas}
+        decl["entitas"] = []
+        # Mapping logic for mandatory slots if original codes missing
+        e2 = entitas_map.get("2") or entitas_map.get("3") # Use Pengusaha if Eksportir missing
+        e3 = entitas_map.get("3") or entitas_map.get("2")
+        e7 = entitas_map.get("7") or e3
+        e8 = entitas_map.get("8") or entitas_map.get("4") or e7 # Use Pembeli or Pemilik if Penerima missing
+        
+        ordered_ents = [("2", e2), ("3", e3), ("7", e7), ("8", e8)]
+        
+        for idx, (target_kode, ent) in enumerate(ordered_ents):
+            if ent:
+                ent_item = {
+                    "alamatEntitas": ent.get("alamat_entitas") or "",
+                    "kodeEntitas": target_kode,
+                    "namaEntitas": ent.get("nama_entitas") or "",
+                    "seriEntitas": idx + 1,
+                    "nomorIdentitas": ent.get("nomor_identitas") or "",
+                }
+                if target_kode == "2": # Eksportir
+                     ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                     ent_item["kodeStatus"] = ent.get("kode_status") or "10"
+                elif target_kode == "3": # Pengusaha 
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["nomorIjinEntitas"] = ent.get("nomor_ijin_entitas") or "-"
+                elif target_kode in ["7", "8"]: # Pemilik / Penerima
+                    ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
+                
+                decl["entitas"].append(ent_item)
+
+        # 4. Child Tables
+        decl["dokumen"] = get_child_data(doc, "dokumen", {
+            "kodeDokumen": "kode_dokumen",
+            "nomorDokumen": "nomor_dokumen",
+            "seriDokumen": "seri",
+            "tanggalDokumen": "tanggal_dokumen"
+        })
+        
+        decl["pengangkut"] = []
+        for p in (doc.get("pengangkut") or []):
+            decl["pengangkut"].append({
+                "namaPengangkut": p.get("nama_pengangkut") or "",
+                "nomorPengangkut": p.get("nomor_pengangkut") or "",
+                "kodeCaraAngkut": p.get("kode_cara_angkut") or "1",
+                "seriPengangkut": str(p.get("seri_pengangkut") or p.idx)
+            })
+            
+        decl["kemasan"] = []
+        for kem in (doc.get("kemasan") or []):
+            decl["kemasan"].append({
+                "jumlahKemasan": cint(kem.get("jumlah_kemasan")),
+                "kodeJenisKemasan": kem.get("kode_kemasan") or "",
+                "merkKemasan": clean_merk_tipe(kem.get("merek_kemasan")),
+                "seriKemasan": cint(kem.get("seri") or kem.idx)
+            })
+
+        # 5. Map Barang
+        decl["barang"] = []
+        for brg in frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["*"], order_by="seri_barang asc"):
+            brg_item = {
+                "cif": round_decimal(brg.get("cif"), 2),
+                "fob": round_decimal(brg.get("fob") or brg.get("nilai_barang"), 2),
+                "hargaEkspor": round_decimal(brg.get("harga_ekspor"), 4),
+                "hargaPenyerahan": round_decimal(brg.get("harga_penyerahan"), 4),
+                "isiPerKemasan": round_decimal(brg.get("isi_per_kemasan"), 2),
+                "jumlahKemasan": cint(brg.get("jumlah_kemasan")),
+                "jumlahSatuan": round_decimal(brg.get("jumlah_satuan"), 4),
+                "kodeBarang": brg.get("kode_barang") or "",
+                "kodeDokumen": "33",
+                "kodeJenisKemasan": brg.get("kode_kemasan") or "",
+                "kodeSatuanBarang": brg.get("kode_satuan") or "",
+                "merk": clean_merk_tipe(brg.get("merek")),
+                "netto": round_decimal(brg.get("netto"), 4),
+                "nilaiBarang": round_decimal(brg.get("nilai_barang"), 2),
+                "posTarif": brg.get("hs") or "",
+                "seriBarang": cint(brg.get("seri_barang")) or 0,
+                "spesifikasiLain": brg.get("spesifikasi_lain") or "",
+                "tipe": clean_merk_tipe(brg.get("tipe")),
+                "ukuran": brg.get("ukuran") or "",
+                "uraian": brg.get("uraian") or "",
+                "volume": round_decimal(brg.get("volume"), 4),
+            }
+            decl["barang"].append(brg_item)
+
+        return payload
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Get CEISA BC33 JSON Error")
+        return {"status": "error", "message": str(e)}
 
 
 @frappe.whitelist()
 @frappe.whitelist()
 def get_ceisa_bc262_json(nomor_aju):
-    """Export HEADER V21 to BC262 (Release to other TPB) JSON format"""
-    res = get_ceisa_bc40_json(nomor_aju)
-    if isinstance(res, dict) and "Declaration" in res:
-        res["Declaration"]["kodeDokumen"] = "262"
-        for brg in (res["Declaration"].get("barang") or []):
-            brg["kodeDokumen"] = "262"
-    return res
+    """Export HEADER V21 to BC262 (Pemasukan dari TPB Lain) JSON format"""
+    try:
+        doc = frappe.get_doc("HEADER V21", nomor_aju)
+        
+        # 1. Map Header
+        payload = {
+            "asalData": "S",
+            "asuransi": round_decimal(doc.get("asuransi"), 2),
+            "biayaPengurang": round_decimal(doc.get("biaya_pengurang"), 2),
+            "biayaTambahan": round_decimal(doc.get("biaya_tambahan"), 2),
+            "bruto": round_decimal(doc.get("bruto"), 4),
+            "cif": round_decimal(doc.get("cif"), 2),
+            "disclaimer": doc.get("disclaimer") or "1",
+            "freight": round_decimal(doc.get("freight"), 2),
+            "hargaPenyerahan": round_decimal(doc.get("harga_penyerahan"), 4),
+            "jabatanTtd": doc.get("jabatan_pernyataan") or "",
+            "kodeDokumen": "262",
+            "kodeKantor": doc.get("kode_kantor") or "",
+            "kodeTujuanPemasukan": doc.get("kode_tujuan_pemasukan") or doc.get("kode_tujuan_pengiriman") or "",
+            "kodeValuta": doc.get("kode_valuta") or "",
+            "kotaTtd": doc.get("kota_pernyataan") or "",
+            "namaTtd": doc.get("nama_pernyataan") or "",
+            "ndpbm": round_decimal(doc.get("ndpbm"), 4) or 1.0,
+            "netto": round_decimal(doc.get("netto"), 4),
+            "nik": "",
+            "nilaiBarang": round_decimal(doc.get("nilai_barang"), 2),
+            "nomorAju": doc.get("nomoraju") or doc.name or "",
+            "seri": 1,
+            "tanggalAju": fmt_date(doc.get("tanggal_pernyataan")),
+            "tanggalTtd": fmt_date(doc.get("tanggal_pernyataan")),
+            "uangMuka": round_decimal(doc.get("uang_muka"), 2),
+            "vd": round_decimal(doc.get("vd"), 2),
+        }
+
+        # 2. Map Entitas (Strict Ordering BC262: 3=Pengusaha TPB, 7=Pemilik, 9=Pengirim)
+        entitas_map = {ent.kode_entitas: ent for ent in doc.entitas}
+        payload["entitas"] = []
+        ordered_codes = ["3", "7", "9"]
+        
+        for idx, kode in enumerate(ordered_codes):
+            ent = entitas_map.get(kode)
+            if ent:
+                ent_item = {
+                    "alamatEntitas": ent.get("alamat_entitas") or "",
+                    "kodeEntitas": kode,
+                    "namaEntitas": ent.get("nama_entitas") or "",
+                    "seriEntitas": idx + 1,
+                    "nomorIdentitas": ent.get("nomor_identitas") or "",
+                }
+                
+                # Specific fields per entity type based on Schema
+                if kode == "3": # Pengusaha TPB
+                    ent_item["kodeJenisApi"] = ent.get("kode_jenis_api") or "01"
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["kodeStatus"] = ent.get("kode_status") or "10"
+                    ent_item["nibEntitas"] = ent.get("nib_entitas") or ""
+                    ent_item["nomorIjinEntitas"] = ent.get("nomor_ijin_entitas") or "-"
+                    ent_item["tanggalIjinEntitas"] = fmt_date(ent.get("tanggal_ijin_entitas")) or fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate()
+                
+                elif kode == "7": # Pemilik
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["kodeStatus"] = ent.get("kode_status") or "10"
+                
+                elif kode == "9": # Pengirim
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["kodeStatus"] = ent.get("kode_status") or "10"
+
+                payload["entitas"].append(ent_item)
+
+        # 3. Map Dokumen
+        payload["dokumen"] = get_child_data(doc, "dokumen", {
+            "idDokumen": "",
+            "kodeDokumen": "kode_dokumen",
+            "kodeFasilitas": "kode_fasilitas",
+            "nomorDokumen": "nomor_dokumen",
+            "seriDokumen": "seri",
+            "tanggalDokumen": "tanggal_dokumen"
+        })
+
+        # 4. Map Pengangkut
+        payload["pengangkut"] = []
+        for p in (doc.get("pengangkut") or []):
+             payload["pengangkut"].append({
+                "idPengangkut": "",
+                "kodeCaraAngkut": p.get("kode_cara_angkut") or "1",
+                "seriPengangkut": cint(p.get("seri_pengangkut") or (p.idx))
+             })
+
+        # 5. Map Kemasan
+        payload["kemasan"] = []
+        for kem in (doc.get("kemasan") or []):
+            payload["kemasan"].append({
+                "jumlahKemasan": round_decimal(kem.get("jumlah_kemasan"), 2),
+                "kodeJenisKemasan": kem.get("kode_kemasan") or "",
+                "merkKemasan": clean_merk_tipe(kem.get("merek_kemasan")),
+                "seriKemasan": cint(kem.get("seri")) or 0,
+            })
+
+        # 6. Map Kontainer
+        payload["kontainer"] = get_child_data(doc, "kontainer", {
+            "kodeJenisKontainer": "kode_jenis_kontainer",
+            "kodeTipeKontainer": "kode_tipe_kontainer",
+            "kodeUkuranKontainer": "kode_ukuran_kontainer",
+            "nomorKontainer": "nomor_kontainer",
+            "seriKontainer": "seri",
+        })
+
+        # 7. Map Pungutan
+        payload["pungutan"] = []
+        for pung in (doc.get("pungutan") or []):
+            payload["pungutan"].append({
+                "idPungutan": "",
+                "kodeFasilitasTarif": pung.kode_fasilitas_tarif or "1",
+                "kodeJenisPungutan": get_kode_pungutan(pung.kode_jenis_pungutan),
+                "nilaiPungutan": round_decimal(pung.nilai_pungutan, 2),
+            })
+        
+        # 8. Map Jaminan
+        payload["jaminan"] = []
+        for jam in (doc.get("jaminan") or []):
+             payload["jaminan"].append({
+                "idJaminan": "",
+                "kodeJenisJaminan": jam.get("kode_jenis_jaminan") or "",
+                "nilaiJaminan": round_decimal(jam.get("nilai_jaminan"), 2),
+                "nomorBpj": jam.get("nomor_bpj") or "",
+                "nomorJaminan": jam.get("nomor_jaminan") or "",
+                "penjamin": jam.get("penjamin") or "",
+                "tanggalBpj": fmt_date(jam.get("tanggal_bpj")),
+                "tanggalJaminan": fmt_date(jam.get("tanggal_jaminan")),
+                "tanggalJatuhTempo": fmt_date(jam.get("tanggal_jatuh_tempo")),
+             })
+
+        # 9. Map Barang
+        barang_list = []
+        barangs = frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["*"], order_by="seri_barang asc")
+        
+        for brg in barangs:
+            brg_item = {
+                "cif": round_decimal(brg.get("cif"), 2),
+                "cifRupiah": round_decimal(brg.get("cif_rupiah"), 2),
+                "hargaEkspor": round_decimal(brg.get("harga_ekspor"), 2),
+                "hargaPenyerahan": round_decimal(brg.get("harga_penyerahan"), 4),
+                "hargaPerolehan": round_decimal(brg.get("harga_perolehan"), 2),
+                "isiPerKemasan": round_decimal(brg.get("isi_per_kemasan"), 2),
+                "jumlahKemasan": round_decimal(brg.get("jumlah_kemasan"), 2),
+                "jumlahSatuan": round_decimal(brg.get("jumlah_satuan"), 4),
+                "kodeAsalBahanBaku": brg.get("kode_asal_bahan_baku") or "1",
+                "kodeAsalBarang": brg.get("kode_daerah_asal") or "1",
+                "kodeBarang": brg.get("kode_barang") or "",
+                "kodeDokumen": "262",
+                "kodeJenisKemasan": brg.get("kode_kemasan") or "",
+                "kodeNegaraAsal": brg.get("kode_negara_asal") or "ID",
+                "kodeSatuanBarang": brg.get("kode_satuan") or "",
+                "merk": clean_merk_tipe(brg.get("merek")),
+                "ndpbm": round_decimal(brg.get("ndpbm"), 4) or 1.0,
+                "netto": round_decimal(brg.get("netto"), 4),
+                "nilaiBarang": round_decimal(brg.get("nilai_barang"), 2),
+                "nilaiJasa": round_decimal(brg.get("nilai_jasa"), 2),
+                "posTarif": brg.get("hs") or "",
+                "seriBarang": cint(brg.get("seri_barang")) or 0,
+                "spesifikasiLain": brg.get("spesifikasi_lain") or "",
+                "tipe": clean_merk_tipe(brg.get("tipe")),
+                "uangMuka": 0,
+                "ukuran": brg.get("ukuran") or "",
+                "uraian": brg.get("uraian") or "",
+            }
+
+            # BAHAN BAKU 
+            brg_item["bahanBaku"] = []
+            bahan_bakus = frappe.get_all("BAHAN BAKU", filters={"parent_barang": brg.get("name")}, fields=["*"], order_by="seri_bahan_baku asc")
+            for bb in bahan_bakus:
+                bb_doc = frappe.get_doc("BAHAN BAKU", bb.get("name"))
+                bb_item = {
+                    "cif": round_decimal(bb.get("cif"), 2),
+                    "cifRupiah": round_decimal(bb.get("cif_rupiah"), 2),
+                    "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 4),
+                    "hargaPerolehan": round_decimal(bb.get("harga_perolehan"), 2),
+                    "jumlahSatuan": round_decimal(bb.get("jumlah_satuan"), 4),
+                    "kodeAsalBahanBaku": bb.get("kode_asal_bahan_baku") or "0",
+                    "kodeBarang": bb.get("kode_barang") or "",
+                    "kodeDokAsal": bb.get("kode_dokumen_asal") or "40",
+                    "kodeDokumen": bb.get("kode_dokumen_asal") or "261",
+                    "kodeKantor": bb.get("kode_kantor_asal") or doc.get("kode_kantor") or "",
+                    "kodeSatuanBarang": bb.get("kode_satuan") or "",
+                    "merkBarang": clean_merk_tipe(bb.get("merek")),
+                    "ndpbm": round_decimal(bb.get("ndpbm"), 4) or 1.0,
+                    "netto": round_decimal(bb.get("netto"), 4),
+                    "nilaiJasa": 0,
+                    "nomorAjuDokAsal": bb.get("nomor_aju_asal") or "",
+                    "nomorDaftarDokAsal": bb.get("nomor_daftar_asal") or "",
+                    "posTarif": bb.get("hs") or "",
+                    "seriBahanBaku": cint(bb.get("seri_bahan_baku")) or 0,
+                    "seriBarang": cint(brg.get("seri_barang")) or 0,
+                    "seriBarangDokAsal": cint(bb.get("seri_barang_asal")) or 0,
+                    "seriIjin": 0,
+                    "spesifikasiLainBarang": bb.get("spesifikasi_lain") or "",
+                    "tanggalDaftarDokAsal": fmt_date(bb.get("tanggal_daftar_asal")) or fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate(),
+                    "tipeBarang": clean_merk_tipe(bb.get("tipe")),
+                    "ukuranBarang": bb.get("ukuran") or "",
+                    "uraianBarang": bb.get("uraian") or "",
+                }
+                
+                # BahanBakuTarif
+                bb_item["bahanBakuTarif"] = []
+                for bbt in bb_doc.get("bahan_tarif") or []:
+                     bb_item["bahanBakuTarif"].append({
+                        "seriBahanBaku": cint(bb.get("seri_bahan_baku")) or 0,
+                        "kodeJenisPungutan": get_kode_pungutan(bbt.kode_pungutan),
+                        "kodeAsalBahanBaku": bbt.kode_asal_bahan_baku or bb.get("kode_asal_bahan_baku") or "0",
+                        "kodeFasilitasTarif": bbt.kode_fasilitas or "5",
+                        "kodeSatuanBarang": bb.get("kode_satuan") or "",
+                        "nilaiBayar": round_decimal(bbt.nilai_bayar, 2),
+                        "nilaiFasilitas": round_decimal(bbt.nilai_fasilitas, 2),
+                        "nilaiSudahDilunasi": round_decimal(bbt.nilai_sudah_dilunasi, 2) or 0,
+                        "tarif": round_decimal(bbt.tarif, 2),
+                        "tarifFasilitas": round_decimal(bbt.tarif_fasilitas, 2),
+                        "jumlahSatuan": round_decimal(bbt.jumlah_satuan, 4),
+                        "kodeJenisTarif": bbt.kode_tarif or "1",
+                        "jumlahKemasan": 0,
+                    })
+
+                brg_item["bahanBaku"].append(bb_item)
+            
+            barang_list.append(brg_item)
+
+        payload["barang"] = barang_list
+        return {"Declaration": payload}
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Get CEISA BC262 JSON Error")
+        return {"status": "error", "message": str(e)}
+
 
 
 @frappe.whitelist()
 def get_ceisa_bc261_json(nomor_aju):
-    """Export HEADER V21 to BC261 (Pemberitahuan Pabean dari TPB ke TPB lainnya) JSON format"""
-    res = get_ceisa_bc40_json(nomor_aju)
-    if isinstance(res, dict) and "Declaration" in res:
-        res["Declaration"]["kodeDokumen"] = "261"
-        for brg in (res["Declaration"].get("barang") or []):
-            brg["kodeDokumen"] = "261"
-    return res
+    """Export HEADER V21 to BC261 (Pengeluaran ke TLDDP - Subkontrak) JSON format"""
+    try:
+        doc = frappe.get_doc("HEADER V21", nomor_aju)
+        
+        # 1. Map Header
+        payload = {
+            "asalData": "S",
+            "asuransi": round_decimal(doc.get("asuransi"), 2),
+            "biayaPengurang": round_decimal(doc.get("biaya_pengurang"), 2),
+            "biayaTambahan": round_decimal(doc.get("biaya_tambahan"), 2),
+            "bruto": round_decimal(doc.get("bruto"), 4),
+            "cif": round_decimal(doc.get("cif"), 2),
+            "disclaimer": doc.get("disclaimer") or "1",
+            "freight": round_decimal(doc.get("freight"), 2),
+            "hargaPenyerahan": round_decimal(doc.get("harga_penyerahan"), 4),
+            "jabatanTtd": doc.get("jabatan_pernyataan") or "",
+            "jumlahKontainer": len(doc.get("kontainer") or []),
+            "kodeDokumen": "261",
+            "kodeKantor": doc.get("kode_kantor") or "",
+            "kodeTujuanPengiriman": doc.get("kode_tujuan_pengiriman") or "",
+            "kodeValuta": doc.get("kode_valuta") or "",
+            "kotaTtd": doc.get("kota_pernyataan") or "",
+            "namaTtd": doc.get("nama_pernyataan") or "",
+            "ndpbm": round_decimal(doc.get("ndpbm"), 4) or 1.0,
+            "netto": round_decimal(doc.get("netto"), 4),
+            "nik": "",
+            "nilaiBarang": round_decimal(doc.get("nilai_barang"), 2),
+            "nomorAju": doc.get("nomoraju") or doc.name or "",
+            "seri": 1,
+            "tanggalAju": fmt_date(doc.get("tanggal_pernyataan")),
+            "tanggalTtd": fmt_date(doc.get("tanggal_pernyataan")),
+            "tempatStuffing": doc.get("nama_tps") or doc.get("kota_pernyataan") or "-", # Required
+            "tglAkhirBerlaku": fmt_date(doc.get("tanggal_pernyataan")), # Required, default to statement date
+            "tglAwalBerlaku": fmt_date(doc.get("tanggal_pernyataan")),   # Required, default to statement date
+            "totalDanaSawit": 0, # Required
+            "uangMuka": round_decimal(doc.get("uang_muka"), 2),
+            "vd": round_decimal(doc.get("vd"), 2),
+        }
+
+        # 2. Map Entitas (Strict Ordering BC261: 3=Pengusaha TPB, 7=Pemilik, 8=Penerima)
+        entitas_map = {ent.kode_entitas: ent for ent in doc.entitas}
+        payload["entitas"] = []
+        ordered_codes = ["3", "7", "8"]
+        
+        for idx, kode in enumerate(ordered_codes):
+            ent = entitas_map.get(kode)
+            if ent:
+                ent_item = {
+                    "alamatEntitas": ent.get("alamat_entitas") or "",
+                    "kodeEntitas": kode,
+                    "namaEntitas": ent.get("nama_entitas") or "",
+                    "seriEntitas": idx + 1,
+                    "nomorIdentitas": ent.get("nomor_identitas") or "",
+                }
+                
+                # Specific fields per entity type based on Schema
+                if kode == "3": # Pengusaha TPB
+                    ent_item["kodeJenisApi"] = ent.get("kode_jenis_api") or "01"
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["kodeStatus"] = ent.get("kode_status") or "10"
+                    ent_item["nibEntitas"] = ent.get("nib_entitas") or ""
+                    ent_item["nomorIjinEntitas"] = ent.get("nomor_ijin_entitas") or "-"
+                    ent_item["tanggalIjinEntitas"] = fmt_date(ent.get("tanggal_ijin_entitas")) or fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate()
+                
+                elif kode == "7": # Pemilik
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["kodeStatus"] = ent.get("kode_status") or "10"
+                
+                elif kode == "8": # Penerima
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["kodeStatus"] = ent.get("kode_status") or "10"
+
+                payload["entitas"].append(ent_item)
+
+        # 3. Map Dokumen
+        payload["dokumen"] = get_child_data(doc, "dokumen", {
+            "idDokumen": "",
+            "kodeDokumen": "kode_dokumen",
+            "kodeFasilitas": "kode_fasilitas",
+            "nomorDokumen": "nomor_dokumen",
+            "seriDokumen": "seri",
+            "tanggalDokumen": "tanggal_dokumen"
+        })
+
+        # 4. Map Pengangkut
+        payload["pengangkut"] = []
+        for p in (doc.get("pengangkut") or []):
+             payload["pengangkut"].append({
+                "idPengangkut": "",
+                "kodeCaraAngkut": p.get("kode_cara_angkut") or "1", # Default to 1 (Laut) or derived?
+                "seriPengangkut": cint(p.get("seri_pengangkut") or (p.idx))
+             })
+
+        # 5. Map Kemasan
+        payload["kemasan"] = []
+        for kem in (doc.get("kemasan") or []):
+            payload["kemasan"].append({
+                "jumlahKemasan": round_decimal(kem.get("jumlah_kemasan"), 2),
+                "kodeJenisKemasan": kem.get("kode_kemasan") or "",
+                "merkKemasan": clean_merk_tipe(kem.get("merek_kemasan")),
+                "seriKemasan": cint(kem.get("seri")) or 0,
+            })
+
+        # 6. Map Kontainer
+        payload["kontainer"] = get_child_data(doc, "kontainer", {
+            "kodeJenisKontainer": "kode_jenis_kontainer",
+            "kodeTipeKontainer": "kode_tipe_kontainer",
+            "kodeUkuranKontainer": "kode_ukuran_kontainer",
+            "nomorKontainer": "nomor_kontainer",
+            "seriKontainer": "seri",
+        })
+
+        # 7. Map Pungutan
+        payload["pungutan"] = []
+        for pung in (doc.get("pungutan") or []):
+            payload["pungutan"].append({
+                "idPungutan": "",
+                "kodeFasilitasTarif": pung.kode_fasilitas_tarif or "1",
+                "kodeJenisPungutan": get_kode_pungutan(pung.kode_jenis_pungutan),
+                "nilaiPungutan": round_decimal(pung.nilai_pungutan, 2),
+            })
+        
+        # 8. Map Jaminan
+        payload["jaminan"] = []
+        for jam in (doc.get("jaminan") or []):
+             payload["jaminan"].append({
+                "idJaminan": "",
+                "kodeJenisJaminan": jam.get("kode_jenis_jaminan") or "",
+                "nilaiJaminan": round_decimal(jam.get("nilai_jaminan"), 2),
+                "nomorBpj": jam.get("nomor_bpj") or "",
+                "nomorJaminan": jam.get("nomor_jaminan") or "",
+                "penjamin": jam.get("penjamin") or "",
+                "tanggalBpj": fmt_date(jam.get("tanggal_bpj")),
+                "tanggalJaminan": fmt_date(jam.get("tanggal_jaminan")),
+                "tanggalJatuhTempo": fmt_date(jam.get("tanggal_jatuh_tempo")),
+             })
+
+        # 9. Map Barang
+        barang_list = []
+        barangs = frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["*"], order_by="seri_barang asc")
+        
+        for brg in barangs:
+            brg_item = {
+                "cif": round_decimal(brg.get("cif"), 2),
+                "cifRupiah": round_decimal(brg.get("cif_rupiah"), 2),
+                "hargaEkspor": round_decimal(brg.get("harga_ekspor"), 2),
+                "hargaPenyerahan": round_decimal(brg.get("harga_penyerahan"), 4),
+                "hargaPerolehan": round_decimal(brg.get("harga_perolehan"), 2),
+                "isiPerKemasan": round_decimal(brg.get("isi_per_kemasan"), 2),
+                "jumlahKemasan": round_decimal(brg.get("jumlah_kemasan"), 2),
+                "jumlahSatuan": round_decimal(brg.get("jumlah_satuan"), 4),
+                "kodeAsalBahanBaku": brg.get("kode_asal_bahan_baku") or "1", # Required at barang level too
+                "kodeAsalBarang": brg.get("kode_daerah_asal") or "1", # Assuming kode_daerah_asal or default
+                "kodeBarang": brg.get("kode_barang") or "",
+                "kodeDokumen": "261",
+                "kodeJenisKemasan": brg.get("kode_kemasan") or "",
+                "kodeNegaraAsal": brg.get("kode_negara_asal") or "ID",
+                "kodeSatuanBarang": brg.get("kode_satuan") or "",
+                "merk": clean_merk_tipe(brg.get("merek")),
+                "ndpbm": round_decimal(brg.get("ndpbm"), 4) or 1.0,
+                "netto": round_decimal(brg.get("netto"), 4),
+                "nilaiBarang": round_decimal(brg.get("nilai_barang"), 2),
+                "nilaiJasa": round_decimal(brg.get("nilai_jasa"), 2),
+                "posTarif": brg.get("hs") or "",
+                "seriBarang": cint(brg.get("seri_barang")) or 0,
+                "spesifikasiLain": brg.get("spesifikasi_lain") or "",
+                "tipe": clean_merk_tipe(brg.get("tipe")),
+                "uangMuka": 0,
+                "ukuran": brg.get("ukuran") or "",
+                "uraian": brg.get("uraian") or "",
+            }
+
+            # BAHAN BAKU 
+            brg_item["bahanBaku"] = []
+            bahan_bakus = frappe.get_all("BAHAN BAKU", filters={"parent_barang": brg.get("name")}, fields=["*"], order_by="seri_bahan_baku asc")
+            for bb in bahan_bakus:
+                bb_doc = frappe.get_doc("BAHAN BAKU", bb.get("name"))
+                bb_item = {
+                    "cif": round_decimal(bb.get("cif"), 2),
+                    "cifRupiah": round_decimal(bb.get("cif_rupiah"), 2),
+                    "flagTis": "0", # Required
+                    "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 4),
+                    "hargaPerolehan": round_decimal(bb.get("harga_perolehan"), 2),
+                    "isiPerKemasan": 0, # Required, default
+                    "jumlahSatuan": round_decimal(bb.get("jumlah_satuan"), 4),
+                    "kodeAsalBahanBaku": bb.get("kode_asal_bahan_baku") or "0",
+                    "kodeBarang": bb.get("kode_barang") or "",
+                    "kodeDokAsal": bb.get("kode_dokumen_asal") or "40",
+                    "kodeDokumen": bb.get("kode_dokumen_asal") or "262", # Required field name: kodeDokumen
+                    "kodeKantor": bb.get("kode_kantor_asal") or doc.get("kode_kantor") or "",
+                    "kodeSatuanBarang": bb.get("kode_satuan") or "",
+                    "merkBarang": clean_merk_tipe(bb.get("merek")),
+                    "ndpbm": round_decimal(bb.get("ndpbm"), 4) or 1.0,
+                    "netto": round_decimal(bb.get("netto"), 4),
+                    "nilaiJasa": 0,
+                    "nomorAjuDokAsal": bb.get("nomor_aju_asal") or "",
+                    "nomorDaftarDokAsal": bb.get("nomor_daftar_asal") or "",
+                    "nomorDokumen": bb.get("nomor_dokumen_asal") or "", 
+                    "posTarif": bb.get("hs") or "",
+                    "seriBahanBaku": cint(bb.get("seri_bahan_baku")) or 0,
+                    "seriBarang": cint(brg.get("seri_barang")) or 0,
+                    "seriBarangDokAsal": cint(bb.get("seri_barang_asal")) or 0,
+                    "seriIjin": 0,
+                    "spesifikasiLainBarang": bb.get("spesifikasi_lain") or "",
+                    "tanggalDaftarDokAsal": fmt_date(bb.get("tanggal_daftar_asal")) or fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate(),
+                    "tipeBarang": clean_merk_tipe(bb.get("tipe")),
+                    "ukuranBarang": bb.get("ukuran") or "",
+                    "uraianBarang": bb.get("uraian") or "",
+                }
+                
+                # BahanBakuTarif
+                bb_item["bahanBakuTarif"] = []
+                for bbt in bb_doc.get("bahan_tarif") or []:
+                     bb_item["bahanBakuTarif"].append({
+                        "seriBahanBaku": cint(bb.get("seri_bahan_baku")) or 0,
+                        "kodeJenisPungutan": get_kode_pungutan(bbt.kode_pungutan),
+                        "kodeAsalBahanBaku": bbt.kode_asal_bahan_baku or bb.get("kode_asal_bahan_baku") or "0",
+                        "kodeFasilitasTarif": bbt.kode_fasilitas or "5",
+                        "kodeSatuanBarang": bb.get("kode_satuan") or "", # Required in tarif
+                        "nilaiBayar": round_decimal(bbt.nilai_bayar, 2),
+                        "nilaiFasilitas": round_decimal(bbt.nilai_fasilitas, 2),
+                        "nilaiSudahDilunasi": round_decimal(bbt.nilai_sudah_dilunasi, 2) or 0,
+                        "tarif": round_decimal(bbt.tarif, 2),
+                        "tarifFasilitas": round_decimal(bbt.tarif_fasilitas, 2),
+                        "jumlahSatuan": round_decimal(bbt.jumlah_satuan, 4),
+                        "kodeJenisTarif": bbt.kode_tarif or "1",
+                        "jumlahKemasan": 0,
+                    })
+
+                brg_item["bahanBaku"].append(bb_item)
+            
+            barang_list.append(brg_item)
+
+        payload["barang"] = barang_list
+        return {"Declaration": payload}
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Get CEISA BC261 JSON Error")
+        return {"status": "error", "message": str(e)}
 
 
 @frappe.whitelist()
@@ -1394,7 +2312,7 @@ def get_ceisa_bc16_json(nomor_aju):
         payload = {
             "asalData": "S",
             "nomorAju": doc.get("nomoraju") or "",
-            "seri": 0,
+            "seri": 1, # Default to 1
             "kodeDokumen": "16",
             "kodeKantor": doc.get("kode_kantor") or "",
             "kodeKantorBongkar": doc.get("kode_kantor_bongkar") or "",
@@ -1407,13 +2325,13 @@ def get_ceisa_bc16_json(nomor_aju):
             "kodePelBongkar": doc.get("kode_pelabuhan_bongkar") or "",
             "kodeValuta": doc.get("kode_valuta") or "",
             "bruto": round_decimal(doc.get("bruto"), 4),
-            "netto": round_decimal(doc.get("netto"), 4),
+            "netto": 0.0, # Will be calculated from items
             "kotaTtd": doc.get("kota_pernyataan") or "",
             "tanggalTtd": fmt_date(doc.get("tanggal_pernyataan")),
             "jabatanTtd": doc.get("jabatan_pernyataan") or "",
             "namaTtd": doc.get("nama_pernyataan") or "",
             "disclaimer": "1",
-            "ndpbm": round_decimal(doc.get("ndpbm"), 4),
+            "ndpbm": round_decimal(doc.get("ndpbm"), 4) or 1.0,
             "kodeTutupPu": doc.get("kode_tutup_pu") or "11",
             "nomorBc11": doc.get("nomor_bc11") or "",
             "posBc11": doc.get("nomor_pos") or "",
@@ -1421,26 +2339,56 @@ def get_ceisa_bc16_json(nomor_aju):
             "tanggalBc11": fmt_date(doc.get("tanggal_bc11")),
             "tanggalTiba": fmt_date(doc.get("tanggal_tiba")),
         }
-        payload["entitas"] = get_child_data(doc, "entitas", {
-            "alamatEntitas": "alamat_entitas",
-            "kodeEntitas": "kode_entitas",
-            "kodeNegara": "kode_negara",
-            "namaEntitas": "nama_entitas",
-            "seriEntitas": "seri",
-            "kodeJenisIdentitas": "kode_jenis_identitas",
-            "nomorIdentitas": "nomor_identitas",
-            "nibEntitas": "nib_entitas",
-            "nomorIjinEntitas": "nomor_ijin_entitas",
-            "tanggalIjinEntitas": "tanggal_ijin_entitas"
-        })
+        
+        # 2. Map Entitas (Strict Ordering: 10, 3, 7, 9)
+        entitas_map = {ent.kode_entitas: ent for ent in doc.entitas}
+        payload["entitas"] = []
+        
+        # BC16 Tuple-like Items: 0=Penjual(10), 1=Pengusaha PLB(3), 2=Pemilik Barang(7), 3=Pengirim(9)
+        ordered_codes = ["10", "3", "7", "9"]
+        for idx, kode in enumerate(ordered_codes):
+            ent = entitas_map.get(kode)
+            if ent:
+                ent_item = {
+                    "alamatEntitas": ent.get("alamat_entitas") or "",
+                    "kodeEntitas": kode,
+                    "namaEntitas": ent.get("nama_entitas") or "",
+                    "seriEntitas": idx + 1,
+                }
+                if kode == "10":
+                    ent_item["kodeNegara"] = ent.get("kode_negara") or "ID"
+                elif kode == "3":
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
+                    ent_item["nomorIjinEntitas"] = ent.get("nomor_ijin_entitas") or ""
+                    tgl_ijin = fmt_date(ent.get("tanggal_ijin_entitas"))
+                    if tgl_ijin:
+                        ent_item["tanggalIjinEntitas"] = tgl_ijin
+                elif kode == "7":
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["nomorIdentitas"] = ent.get("nomor_identitas") or ""
+                    ent_item["kodeStatus"] = ent.get("kode_status") or "10"
+                    if ent.get("nib_entitas"):
+                        ent_item["nibEntitas"] = ent.get("nib_entitas")
+                elif kode == "9":
+                    ent_item["kodeNegara"] = ent.get("kode_negara") or "ID"
+                payload["entitas"].append(ent_item)
+            else:
+                # Add placeholder if required entitas missing? 
+                # Schema might fail if a required position is empty.
+                pass
+
+        # 3. Map Kemasan
         payload["kemasan"] = []
         for kem in (doc.get("kemasan") or []):
             payload["kemasan"].append({
-                "jumlahKemasan": round_decimal(kem.get("jumlah_kemasan"), 2),
+                "jumlahKemasan": cint(kem.get("jumlah_kemasan")), # Must be integer
                 "kodeJenisKemasan": kem.get("kode_kemasan") or "",
                 "merkKemasan": clean_merk_tipe(kem.get("merek_kemasan")),
-                "seriKemasan": cint(kem.get("seri")) or 0
+                "seriKemasan": cint(kem.get("seri")) or 1
             })
+
+        # 4. Map Kontainer
         payload["kontainer"] = get_child_data(doc, "kontainer", {
             "kodeJenisKontainer": "kode_jenis_kontainer",
             "kodeTipeKontainer": "kode_tipe_kontainer",
@@ -1448,15 +2396,38 @@ def get_ceisa_bc16_json(nomor_aju):
             "nomorKontainer": "nomor_kontainer",
             "seriKontainer": "seri"
         })
-        payload["dokumen"] = get_child_data(doc, "dokumen", {
-            "kodeDokumen": "kode_dokumen",
-            "nomorDokumen": "nomor_dokumen",
-            "seriDokumen": "seri",
-            "tanggalDokumen": "tanggal_dokumen"
+
+        # 5. Map Dokumen (Positional: 0=Invoice 380, etc.)
+        all_docs = get_child_data(doc, "dokumen", {
+                "kodeDokumen": "kode_dokumen",
+                "nomorDokumen": "nomor_dokumen",
+                "seriDokumen": "seri",
+                "tanggalDokumen": "tanggal_dokumen"
+            })
+        invoice_docs = [d for d in all_docs if d.get("kodeDokumen") == "380"]
+        bl_awb_docs = [d for d in all_docs if d.get("kodeDokumen") in ["705", "740"]]
+        other_docs = [d for d in all_docs if d.get("kodeDokumen") not in ["380", "705", "740"]]
+        payload["dokumen"] = invoice_docs + bl_awb_docs + other_docs
+
+        # 6. Map Pengangkut (Mandatory for BC16)
+        payload["pengangkut"] = get_child_data(doc, "pengangkut", {
+            "kodeBendera": "kode_bendera",
+            "namaPengangkut": "nama_pengangkut",
+            "nomorPengangkut": "nomor_pengangkut",
+            "kodeCaraAngkut": "kode_cara_angkut",
+            "seriPengangkut": "seri_pengangkut"
         })
-        
-        payload["barang"] = []
+        if not payload["pengangkut"] and doc.get("pengangkut"):
+             # Double check mapping if standard fails
+             pass
+
+        # 7. Map Barang
+        barang_list = []
+        total_netto = 0.0
         for brg in frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["*"], order_by="seri_barang asc"):
+            brg_netto = round_decimal(brg.get("netto"), 4)
+            total_netto += brg_netto
+            
             brg_doc = frappe.get_doc("BARANG V1", brg.get("name"))
             brg_item = {
                 "seriBarang": cint(brg.get("seri_barang")) or 0,
@@ -1467,14 +2438,14 @@ def get_ceisa_bc16_json(nomor_aju):
                 "tipe": clean_merk_tipe(brg.get("tipe")),
                 "ukuran": brg.get("ukuran") or "",
                 "spesifikasiLain": brg.get("spesifikasi_lain") or "",
-                "kodeNegaraAsal": brg.get("kode_negara_asal") or "",
+                "kodeNegaraAsal": brg.get("kode_negara_asal") or "ID", # Regex pattern ^[A-Z]{2}$
                 "kodeKategoriBarang": brg.get("kode_kategori_barang") or "",
                 "cif": round_decimal(brg.get("cif"), 2),
                 "cifRupiah": round_decimal(brg.get("cif_rupiah"), 2),
                 "kodeJenisNilai": brg.get("kode_jenis_nilai") or "",
                 "jumlahSatuan": round_decimal(brg.get("jumlah_satuan"), 4),
                 "kodeSatuanBarang": brg.get("kode_satuan") or "",
-                "netto": round_decimal(brg.get("netto"), 4),
+                "netto": brg_netto,
                 "jumlahKemasan": round_decimal(brg.get("jumlah_kemasan"), 2),
                 "kodeJenisKemasan": brg.get("kode_kemasan") or "",
             }
@@ -1484,7 +2455,7 @@ def get_ceisa_bc16_json(nomor_aju):
                 brg_item["barangTarif"].append({
                     "kodeJenisTarif": t.get("kode_tarif") or "1",
                     "jumlahSatuan": round_decimal(t.get("jumlah_satuan"), 4),
-                    "kodeFasilitasTarif": t.get("kode_fasilitas") or "",
+                    "kodeFasilitasTarif": t.get("kode_fasilitas") or "1",
                     "kodeSatuanBarang": t.get("kode_satuan") or "",
                     "kodeJenisPungutan": get_kode_pungutan(t.get("kode_pungutan")),
                     "nilaiBayar": round_decimal(t.get("nilai_bayar"), 2),
@@ -1492,7 +2463,20 @@ def get_ceisa_bc16_json(nomor_aju):
                     "tarif": round_decimal(t.get("tarif"), 2),
                     "tarifFasilitas": round_decimal(t.get("tarif_fasilitas"), 2)
                 })
-            payload["barang"].append(brg_item)
+            
+            # Sort tarif: BM first
+            brg_item["barangTarif"] = sorted(brg_item["barangTarif"], key=lambda x: {"BM": 0, "PPH": 1, "PPN": 2}.get(x.get("kodeJenisPungutan"), 99))
+            
+            barang_list.append(brg_item)
+            
+        payload["barang"] = barang_list
+        payload["netto"] = round_decimal(total_netto, 4)
+        
+        # Clean up fields that CEISA rejects if null
+        for field in ["tanggalBc11"]:
+            if payload.get(field) is None:
+                payload.pop(field, None)
+
         return {"Declaration": payload}
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get CEISA BC16 JSON Error")
@@ -1519,37 +2503,67 @@ def get_ceisa_bc28_json(nomor_aju):
             "kodeValuta": doc.get("kode_valuta") or "",
             "kotaTtd": doc.get("kota_pernyataan") or "",
             "namaTtd": doc.get("nama_pernyataan") or "",
-            "ndpbm": round_decimal(doc.get("ndpbm"), 4),
+            "jabatanTtd": doc.get("jabatan_pernyataan") or "",
+            "ndpbm": round_decimal(doc.get("ndpbm"), 4) or 1.0,
             "netto": round_decimal(doc.get("netto"), 4),
-            "nik": "",
+            "nik": doc.get("nik_identitas") or "",
             "nilaiBarang": round_decimal(doc.get("nilai_barang"), 2),
-            "nomorAju": doc.get("nomoraju") or "",
-            "seri": 0,
+            "nomorAju": doc.get("nomoraju") or doc.name or "",
+            "seri": 1,
             "tanggalTtd": fmt_date(doc.get("tanggal_pernyataan")),
             "volume": round_decimal(doc.get("volume"), 4),
         }
-        payload["entitas"] = get_child_data(doc, "entitas", {
-            "alamatEntitas": "alamat_entitas",
-            "kodeEntitas": "kode_entitas",
-            "kodeJenisApi": "kode_jenis_api",
-            "kodeJenisIdentitas": "kode_jenis_identitas",
-            "kodeStatus": "kode_status",
-            "namaEntitas": "nama_entitas",
-            "nibEntitas": "nib_entitas",
-            "nomorIdentitas": "nomor_identitas",
-            "seriEntitas": "seri",
-            "kodeNegara": "kode_negara",
-            "nomorIjinEntitas": "nomor_ijin_entitas",
-            "tanggalIjinEntitas": "tanggal_ijin_entitas"
-        })
+        
+        # 2. Map Entitas (Strict Ordering for BC28: 1, 10, 3, 7)
+        entitas_map = {ent.kode_entitas: ent for ent in doc.entitas}
+        payload["entitas"] = []
+        ordered_codes = ["1", "10", "3", "7"]
+        
+        for idx, kode in enumerate(ordered_codes):
+            ent = entitas_map.get(kode)
+            if ent:
+                ent_item = {
+                    "alamatEntitas": ent.get("alamat_entitas") or "",
+                    "kodeEntitas": kode,
+                    "namaEntitas": ent.get("nama_entitas") or "",
+                    "seriEntitas": idx + 1,
+                    "nomorIdentitas": ent.get("nomor_identitas") or "",
+                }
+                # BC28 Specific fields for certain entities
+                if kode == "1": # Importir
+                    ent_item["kodeJenisApi"] = ent.get("kode_jenis_api") or "01"
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["kodeStatus"] = ent.get("kode_status") or "10"
+                    ent_item["nibEntitas"] = ent.get("nib_entitas") or ""
+                elif kode == "10": # Penjual
+                    ent_item["kodeNegara"] = ent.get("kode_negara") or "ID"
+                elif kode == "3": # Pengusaha PLB
+                    ent_item["kodeJenisApi"] = ent.get("kode_jenis_api") or "01"
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                    ent_item["kodeStatus"] = ent.get("kode_status") or "10"
+                    ent_item["nibEntitas"] = ent.get("nib_entitas") or "0"
+                    ent_item["nomorIjinEntitas"] = ent.get("nomor_ijin_entitas") or "-"
+                    
+                    # Mandatory field, fallback if empty
+                    tgl_ijin = fmt_date(ent.get("tanggal_ijin_entitas"))
+                    if not tgl_ijin:
+                         tgl_ijin = fmt_date(doc.get("tanggal_pernyataan")) or frappe.utils.nowdate()
+                    ent_item["tanggalIjinEntitas"] = tgl_ijin
+                elif kode == "7": # Pemilik Barang
+                    ent_item["kodeJenisIdentitas"] = get_kode_identitas(ent.get("kode_jenis_identitas"))
+                payload["entitas"].append(ent_item)
+
+        # 3. Map Kemasan
         payload["kemasan"] = []
         for kem in (doc.get("kemasan") or []):
             payload["kemasan"].append({
-                "jumlahKemasan": round_decimal(kem.get("jumlah_kemasan"), 2),
+                "jumlahKemasan": cint(kem.get("jumlah_kemasan")),
                 "kodeJenisKemasan": kem.get("kode_kemasan") or "",
                 "merkKemasan": clean_merk_tipe(kem.get("merek_kemasan")),
-                "seriKemasan": cint(kem.get("seri")) or 0
+                "seriKemasan": cint(kem.get("seri")) or 1
             })
+
+        # 4. Map Kontainer
         payload["kontainer"] = get_child_data(doc, "kontainer", {
             "kodeJenisKontainer": "kode_jenis_kontainer",
             "kodeTipeKontainer": "kode_tipe_kontainer",
@@ -1557,6 +2571,8 @@ def get_ceisa_bc28_json(nomor_aju):
             "nomorKontainer": "nomor_kontainer",
             "seriKontainer": "seri"
         })
+
+        # 5. Map Dokumen
         payload["dokumen"] = get_child_data(doc, "dokumen", {
             "kodeDokumen": "kode_dokumen",
             "nomorDokumen": "nomor_dokumen",
@@ -1564,18 +2580,31 @@ def get_ceisa_bc28_json(nomor_aju):
             "tanggalDokumen": "tanggal_dokumen"
         })
         
+        # 6. Map Pengangkut (Mandatory for BC28)
+        payload["pengangkut"] = get_child_data(doc, "pengangkut", {
+            "kodeCaraAngkut": "kode_cara_angkut",
+            "seriPengangkut": "seri_pengangkut"
+        })
+        if not payload["pengangkut"]:
+            # Default if missing
+            payload["pengangkut"] = [{
+                "kodeCaraAngkut": doc.get("kode_cara_angkut") or "1",
+                "seriPengangkut": 1
+            }]
+
+        # 7. Map Barang
         payload["barang"] = []
         for brg in frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["*"], order_by="seri_barang asc"):
             brg_doc = frappe.get_doc("BARANG V1", brg.get("name"))
             brg_item = {
                 "cif": round_decimal(brg.get("cif"), 2),
-                "jumlahKemasan": round_decimal(brg.get("jumlah_kemasan"), 2),
+                "jumlahKemasan": cint(brg.get("jumlah_kemasan")),
                 "jumlahSatuan": round_decimal(brg.get("jumlah_satuan"), 4),
                 "kodeBarang": brg.get("kode_barang") or "",
                 "kodeJenisNilai": brg.get("kode_jenis_nilai") or "",
                 "kodeJenisKemasan": brg.get("kode_kemasan") or "",
-                "kodeNegaraAsal": brg.get("kode_negara_asal") or "",
-                "kodePerhitungan": brg.get("kode_perhitungan") or "",
+                "kodeNegaraAsal": brg.get("kode_negara_asal") or "ID",
+                "kodePerhitungan": brg.get("kode_perhitungan") or "1",
                 "kodeSatuanBarang": brg.get("kode_satuan") or "",
                 "merk": clean_merk_tipe(brg.get("merek")),
                 "netto": round_decimal(brg.get("netto"), 4),
@@ -1583,40 +2612,52 @@ def get_ceisa_bc28_json(nomor_aju):
                 "nilaiTambah": round_decimal(brg.get("nilai_tambah"), 2),
                 "persentaseImpor": round_decimal(brg.get("persentase_impor"), 2),
                 "posTarif": brg.get("hs") or "",
-                "seriBarang": cint(brg.get("seri_barang")) or 0,
-                "seriBarangDokAsal": cint(brg.get("seri_barang_asal")) or 0,
+                "seriBarang": cint(brg.get("seri_barang")) or 1,
+                "seriBarangDokAsal": cint(brg.get("seri_barang_asal")) or 1,
                 "spesifikasiLain": brg.get("spesifikasi_lain") or "",
                 "tipe": clean_merk_tipe(brg.get("tipe")),
                 "ukuran": brg.get("ukuran") or "",
                 "uraian": brg.get("uraian") or "",
                 "volume": round_decimal(brg.get("volume"), 4),
-                "ndpbm": round_decimal(brg.get("ndpbm"), 4),
+                "ndpbm": round_decimal(brg.get("ndpbm"), 4) or round_decimal(doc.get("ndpbm"), 4) or 1.0,
                 "cifRupiah": round_decimal(brg.get("cif_rupiah"), 2),
                 "hargaPerolehan": round_decimal(brg.get("harga_perolehan"), 2),
-                "kodeAsalBahanBaku": brg.get("kode_asal_bahan_baku") or "",
-                "kodeDokAsal": brg.get("kode_dokumen_asal") or "",
-                "kodeKantorAsal": brg.get("kode_kantor_asal") or "",
+                "kodeAsalBahanBaku": brg.get("kode_asal_bahan_baku") or "0",
+                "kodeDokAsal": brg.get("kode_dokumen_asal") or "16",
+                "kodeKantorAsal": brg.get("kode_kantor_asal") or doc.get("kode_kantor") or "",
                 "nomorAjuDokAsal": brg.get("nomor_aju_asal") or "",
                 "nomorDaftarDokAsal": brg.get("nomor_daftar_asal") or "",
-                "tanggalDaftarDokAsal": fmt_date(brg.get("tanggal_daftar_asal")),
             }
+            tgl_daftar = fmt_date(brg.get("tanggal_daftar_asal")) or fmt_date(doc.get("tanggal_tiba"))
+            if tgl_daftar:
+                 brg_item["tanggalDaftarDokAsal"] = tgl_daftar
             # BARANG TARIF
             brg_item["barangTarif"] = []
             for t in brg_doc.get("barang_tarif") or []:
                 brg_item["barangTarif"].append({
                     "kodeJenisTarif": t.get("kode_tarif") or "1",
                     "jumlahSatuan": round_decimal(t.get("jumlah_satuan"), 4),
-                    "kodeFasilitasTarif": t.get("kode_fasilitas") or "3",
+                    "kodeFasilitasTarif": t.get("kode_fasilitas") or "1",
                     "kodeSatuanBarang": t.get("kode_satuan") or "",
                     "kodeJenisPungutan": get_kode_pungutan(t.get("kode_pungutan")),
                     "nilaiBayar": round_decimal(t.get("nilai_bayar"), 2),
                     "nilaiFasilitas": round_decimal(t.get("nilai_fasilitas"), 2),
                     "nilaiSudahDilunasi": round_decimal(t.get("nilai_sudah_dilunasi"), 2) or 0,
-                    "seriBarang": cint(brg.get("seri_barang")) or 0,
+                    "seriBarang": cint(brg.get("seri_barang")) or 1,
                     "tarif": round_decimal(t.get("tarif"), 2),
                     "tarifFasilitas": round_decimal(t.get("tarif_fasilitas"), 2)
                 })
+            
+            # 8. barangDokumen (Mandatory in BC28)
+            brg_item["barangDokumen"] = []
+            for d in brg_doc.get("barang_dokumen") or []:
+                brg_item["barangDokumen"].append({
+                    "seriDokumen": cint(d.get("seri")) or 1,
+                    "seriIjin": cint(d.get("seri_ijin")) or 0
+                })
+
             payload["barang"].append(brg_item)
+
         return {"Declaration": payload}
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get CEISA BC28 JSON Error")
