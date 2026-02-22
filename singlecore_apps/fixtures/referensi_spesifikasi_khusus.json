@@ -1,0 +1,353 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": null,
+  "kode_spek_khusus": "1",
+  "modified": "2023-06-22 08:44:47.714220",
+  "nama_spek_khusus": "NOMOR MESIN",
+  "name": "1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": null,
+  "kode_spek_khusus": "2",
+  "modified": "2023-06-22 08:44:47.723689",
+  "nama_spek_khusus": "NOMOR RANGKA",
+  "name": "2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": null,
+  "kode_spek_khusus": "3",
+  "modified": "2023-06-22 08:44:47.728019",
+  "nama_spek_khusus": "SILINDER",
+  "name": "3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": null,
+  "kode_spek_khusus": "4",
+  "modified": "2023-06-22 08:44:47.731779",
+  "nama_spek_khusus": "TAHUN PEMBUATAN",
+  "name": "4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": null,
+  "kode_spek_khusus": "5",
+  "modified": "2023-06-22 08:44:47.735433",
+  "nama_spek_khusus": "JENIS KENDARAAN",
+  "name": "5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": null,
+  "kode_spek_khusus": "6",
+  "modified": "2023-06-22 08:44:47.739415",
+  "nama_spek_khusus": "MERK",
+  "name": "6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": null,
+  "kode_spek_khusus": "7",
+  "modified": "2023-06-22 08:44:47.743328",
+  "nama_spek_khusus": "MODEL",
+  "name": "7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": null,
+  "kode_spek_khusus": "8",
+  "modified": "2023-06-22 08:44:47.747052",
+  "nama_spek_khusus": "NOMOR BPKB",
+  "name": "8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": null,
+  "kode_spek_khusus": "9",
+  "modified": "2023-06-22 08:44:47.750815",
+  "nama_spek_khusus": "TANGGAL BPKB",
+  "name": "9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": null,
+  "kode_spek_khusus": "10",
+  "modified": "2023-06-22 08:44:47.754574",
+  "nama_spek_khusus": "NOMOR FORM A",
+  "name": "10"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": null,
+  "kode_spek_khusus": "11",
+  "modified": "2023-06-22 08:44:47.758121",
+  "nama_spek_khusus": "TANGGAL FORM A",
+  "name": "11"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": null,
+  "kode_spek_khusus": "12",
+  "modified": "2023-06-22 08:44:47.761957",
+  "nama_spek_khusus": "NOMOR STNK",
+  "name": "12"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": null,
+  "kode_spek_khusus": "13",
+  "modified": "2023-06-22 08:44:47.765706",
+  "nama_spek_khusus": "TANGGAL STNK",
+  "name": "13"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "KENDARAAN BERMOTOR",
+  "kode_spek_khusus": "14",
+  "modified": "2024-01-26 14:10:16.368183",
+  "nama_spek_khusus": "TIPE",
+  "name": "14"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "KENDARAAN BERMOTOR",
+  "kode_spek_khusus": "15",
+  "modified": "2024-01-26 14:03:58.268729",
+  "nama_spek_khusus": "NOMOR CAS",
+  "name": "15"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "CHEMICAL ABSTRACT SERVICE (CAS)",
+  "kode_spek_khusus": "16",
+  "modified": "2024-01-26 14:03:12.642326",
+  "nama_spek_khusus": "MUTU",
+  "name": "16"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "KENDARAAN BERMOTOR",
+  "kode_spek_khusus": "17",
+  "modified": "2024-01-26 14:08:17.924483",
+  "nama_spek_khusus": "DAYA",
+  "name": "17"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "ICUMSA",
+  "kode_spek_khusus": "18",
+  "modified": "2024-01-26 14:09:00.902103",
+  "nama_spek_khusus": "KUALITAS WARNA GULA",
+  "name": "18"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "KENDARAAN BERMOTOR",
+  "kode_spek_khusus": "19",
+  "modified": "2024-01-26 14:09:46.918898",
+  "nama_spek_khusus": "JENIS SPEK KHUSUS",
+  "name": "19"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1010",
+  "modified": "2025-12-27 14:46:13.915318",
+  "nama_spek_khusus": "KOMPUTER TABLET ATAU GENGGAM",
+  "name": "1010"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1011",
+  "modified": "2025-12-27 14:46:13.973524",
+  "nama_spek_khusus": "SMARTPHONE ATAU SMARTWATCH PHONE",
+  "name": "1011"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1012",
+  "modified": "2025-12-27 14:46:13.982561",
+  "nama_spek_khusus": "TELEPON SELULER ATAU SATELIT",
+  "name": "1012"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1013",
+  "modified": "2025-12-27 14:46:13.994305",
+  "nama_spek_khusus": "TELEPON ANALOG DAN PABX SYSTEM",
+  "name": "1013"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1014",
+  "modified": "2025-12-27 14:46:14.004431",
+  "nama_spek_khusus": "BASE TRANSCEIVER STATION",
+  "name": "1014"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1015",
+  "modified": "2025-12-27 14:46:14.014518",
+  "nama_spek_khusus": "ANTENA",
+  "name": "1015"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1016",
+  "modified": "2025-12-27 14:46:14.023891",
+  "nama_spek_khusus": "PENYIARAN",
+  "name": "1016"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1017",
+  "modified": "2025-12-27 14:46:14.034547",
+  "nama_spek_khusus": "RADAR MARITIM DAN PENERBANGAN",
+  "name": "1017"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1018",
+  "modified": "2025-12-27 14:46:14.044096",
+  "nama_spek_khusus": "RADAR KENDARAAN DAN CUACA",
+  "name": "1018"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1019",
+  "modified": "2025-12-27 14:46:14.054203",
+  "nama_spek_khusus": "RADAR SURVEILLANCE DAN GPS TRACKER",
+  "name": "1019"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1020",
+  "modified": "2025-12-27 14:46:14.063066",
+  "nama_spek_khusus": "RADIO MARITIM PENERBANGAN BEACON",
+  "name": "1020"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1001",
+  "modified": "2025-12-27 14:46:14.071552",
+  "nama_spek_khusus": "ALAT DAPUR",
+  "name": "1001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1002",
+  "modified": "2025-12-27 14:46:14.082224",
+  "nama_spek_khusus": "TINGKAT KEPECAHAN",
+  "name": "1002"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1003",
+  "modified": "2025-12-27 14:46:14.092584",
+  "nama_spek_khusus": "JENIS PREKURSOR",
+  "name": "1003"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1004",
+  "modified": "2025-12-27 14:46:14.101918",
+  "nama_spek_khusus": "KUALITAS WARNA GULA",
+  "name": "1004"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1005",
+  "modified": "2025-12-27 14:46:14.112571",
+  "nama_spek_khusus": "TPT BATIK MOTIF BATIK",
+  "name": "1005"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1006",
+  "modified": "2025-12-27 14:46:14.123781",
+  "nama_spek_khusus": "JENIS PERKAKAS TANGAN",
+  "name": "1006"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1007",
+  "modified": "2025-12-27 14:46:14.132754",
+  "nama_spek_khusus": "JENIS REFRIGERANT",
+  "name": "1007"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1008",
+  "modified": "2025-12-27 14:46:14.143514",
+  "nama_spek_khusus": "JENIS BATERAI LITHIUM TIDAK BARU",
+  "name": "1008"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus",
+  "group_spek_khusus": "LARTAS",
+  "kode_spek_khusus": "1009",
+  "modified": "2025-12-27 14:46:14.153350",
+  "nama_spek_khusus": "JENIS FITUR TELEKOMUNIKASI",
+  "name": "1009"
+ }
+]

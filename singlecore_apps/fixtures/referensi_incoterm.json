@@ -5,6 +5,126 @@
   "kode_incoterm": "CFR",
   "modified": "2023-06-21 14:02:53.263234",
   "nama_incoterm": "Cost and Freight",
+  "name": "CFR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "CIF",
+  "modified": "2023-06-21 14:02:53.277764",
+  "nama_incoterm": "Cost, Insurance and Freight",
+  "name": "CIF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "CIP",
+  "modified": "2023-06-21 14:02:53.282384",
+  "nama_incoterm": "Carriage and Insurance Paid to",
+  "name": "CIP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "CPT",
+  "modified": "2023-06-21 14:02:53.286678",
+  "nama_incoterm": "Carriage Paid To",
+  "name": "CPT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DAF",
+  "modified": "2023-06-21 14:02:53.290552",
+  "nama_incoterm": "Delivered At Frontier",
+  "name": "DAF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DAP",
+  "modified": "2023-06-21 14:02:53.294421",
+  "nama_incoterm": "Delivered At Place",
+  "name": "DAP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DAT",
+  "modified": "2023-06-21 14:02:53.298364",
+  "nama_incoterm": "Delivered At Terminal",
+  "name": "DAT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DDP",
+  "modified": "2023-06-21 14:02:53.302120",
+  "nama_incoterm": "Delivered Duty Paid",
+  "name": "DDP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DDU",
+  "modified": "2023-06-21 14:02:53.305774",
+  "nama_incoterm": "Delivered Duty Unpaid",
+  "name": "DDU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DEQ",
+  "modified": "2023-06-21 14:02:53.309759",
+  "nama_incoterm": "Delivered Ex Quay",
+  "name": "DEQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "DES",
+  "modified": "2023-06-21 14:02:53.313656",
+  "nama_incoterm": "Delivered Ex Ship",
+  "name": "DES"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "EXW",
+  "modified": "2023-06-21 14:02:53.317492",
+  "nama_incoterm": "Ex Works",
+  "name": "EXW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "FAS",
+  "modified": "2023-06-21 14:02:53.321304",
+  "nama_incoterm": "Free Alongside Ship",
+  "name": "FAS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "FCA",
+  "modified": "2023-06-21 14:02:53.325079",
+  "nama_incoterm": "Free Carrier",
+  "name": "FCA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "LAN",
+  "modified": "2023-06-21 14:02:53.333683",
+  "nama_incoterm": "LAINNYA",
+  "name": "LAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "CFR",
+  "modified": "2023-06-21 14:02:53.263234",
+  "nama_incoterm": "Cost and Freight",
   "name": "8fade3f2af"
  },
  {
@@ -126,5 +246,13 @@
   "modified": "2023-06-21 14:02:53.333683",
   "nama_incoterm": "LAINNYA",
   "name": "463ffbf57f"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Incoterm",
+  "kode_incoterm": "FOB",
+  "modified": "2023-06-21 14:02:53.329666",
+  "nama_incoterm": "Free on Board",
+  "name": "FOB"
  }
 ]

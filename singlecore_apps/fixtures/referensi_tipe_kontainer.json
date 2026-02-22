@@ -1,0 +1,82 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tipe Kontainer",
+  "kode_tipe_kontainer": "2",
+  "modified": "2023-06-22 08:52:39.331553",
+  "nama_tipe_kontainer": "Tunne Type",
+  "name": "2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tipe Kontainer",
+  "kode_tipe_kontainer": "3",
+  "modified": "2023-06-22 08:52:39.335938",
+  "nama_tipe_kontainer": "Open Top Steel",
+  "name": "3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tipe Kontainer",
+  "kode_tipe_kontainer": "4",
+  "modified": "2023-06-22 08:52:39.339730",
+  "nama_tipe_kontainer": "Flat Rack",
+  "name": "4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tipe Kontainer",
+  "kode_tipe_kontainer": "5",
+  "modified": "2023-06-22 08:52:39.343798",
+  "nama_tipe_kontainer": "Reefer/Refregete",
+  "name": "5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tipe Kontainer",
+  "kode_tipe_kontainer": "6",
+  "modified": "2023-06-22 08:52:39.347954",
+  "nama_tipe_kontainer": "Barge Container",
+  "name": "6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tipe Kontainer",
+  "kode_tipe_kontainer": "7",
+  "modified": "2023-06-22 08:52:39.351702",
+  "nama_tipe_kontainer": "Bulk Container",
+  "name": "7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tipe Kontainer",
+  "kode_tipe_kontainer": "99",
+  "modified": "2023-06-22 08:52:39.359335",
+  "nama_tipe_kontainer": "Lain-lain",
+  "name": "99"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tipe Kontainer",
+  "kode_tipe_kontainer": "999",
+  "modified": "2024-05-20 14:42:04.466970",
+  "nama_tipe_kontainer": "Undefined",
+  "name": "999"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tipe Kontainer",
+  "kode_tipe_kontainer": "8",
+  "modified": "2023-06-22 08:52:39.355392",
+  "nama_tipe_kontainer": "Isotank",
+  "name": "8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tipe Kontainer",
+  "kode_tipe_kontainer": "1",
+  "modified": "2023-06-22 08:52:39.317478",
+  "nama_tipe_kontainer": "General / Dry Cargo",
+  "name": "1"
+ }
+]

@@ -1,0 +1,34 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Komoditi Cukai",
+  "kode_komoditi_cukai": "1",
+  "modified": "2023-06-21 15:15:01.794667",
+  "nama_komoditi_cukai": "HASIL TEMBAKAU",
+  "name": "1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Komoditi Cukai",
+  "kode_komoditi_cukai": "2",
+  "modified": "2023-06-21 15:15:01.809325",
+  "nama_komoditi_cukai": "MMEA",
+  "name": "2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Komoditi Cukai",
+  "kode_komoditi_cukai": "3",
+  "modified": "2023-06-21 15:15:01.813979",
+  "nama_komoditi_cukai": "EA",
+  "name": "3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Komoditi Cukai",
+  "kode_komoditi_cukai": "4",
+  "modified": "2023-06-21 15:15:01.818401",
+  "nama_komoditi_cukai": "test",
+  "name": "4"
+ }
+]

@@ -1,0 +1,56 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pemasukan",
+  "kode_dokumen": "262",
+  "kode_tujuan_pemasukan": "1",
+  "modified": "2023-06-22 08:55:08.669454",
+  "nama_tujuan_pemasukan": "EKS-DIPERBAIKI",
+  "name": "2621"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pemasukan",
+  "kode_dokumen": "262",
+  "kode_tujuan_pemasukan": "2",
+  "modified": "2023-06-22 08:55:08.682991",
+  "nama_tujuan_pemasukan": "EKS-DISUBKONTRAKKAN",
+  "name": "2622"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pemasukan",
+  "kode_dokumen": "262",
+  "kode_tujuan_pemasukan": "3",
+  "modified": "2023-06-22 08:55:08.687063",
+  "nama_tujuan_pemasukan": "EKS-DIPINJAMKAN",
+  "name": "2623"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pemasukan",
+  "kode_dokumen": "262",
+  "kode_tujuan_pemasukan": "4",
+  "modified": "2023-06-22 08:55:08.690875",
+  "nama_tujuan_pemasukan": "RETURN BAHAN BAKU",
+  "name": "2624"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pemasukan",
+  "kode_dokumen": "262",
+  "kode_tujuan_pemasukan": "5",
+  "modified": "2023-06-22 08:55:08.694715",
+  "nama_tujuan_pemasukan": "PEMASUKAN MELEWATI JANGKA WAKTU",
+  "name": "2625"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pemasukan",
+  "kode_dokumen": "262",
+  "kode_tujuan_pemasukan": "6",
+  "modified": "2023-06-22 08:55:08.698436",
+  "nama_tujuan_pemasukan": "LAINNYA",
+  "name": "2626"
+ }
+]

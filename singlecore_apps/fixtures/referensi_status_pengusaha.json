@@ -1,0 +1,82 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status Pengusaha",
+  "kode_pengusaha": "1",
+  "modified": "2023-06-22 08:50:38.420341",
+  "name": "1",
+  "uraian_pengusaha": "Koperasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status Pengusaha",
+  "kode_pengusaha": "2",
+  "modified": "2023-06-22 08:50:38.430012",
+  "name": "2",
+  "uraian_pengusaha": "PMDN (Migas)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status Pengusaha",
+  "kode_pengusaha": "3",
+  "modified": "2023-06-22 08:50:38.434777",
+  "name": "3",
+  "uraian_pengusaha": "PMDN (Non Migas)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status Pengusaha",
+  "kode_pengusaha": "4",
+  "modified": "2023-06-22 08:50:38.439110",
+  "name": "4",
+  "uraian_pengusaha": "PMA (Migas)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status Pengusaha",
+  "kode_pengusaha": "5",
+  "modified": "2023-06-22 08:50:38.442781",
+  "name": "5",
+  "uraian_pengusaha": "PMA (Non Migas)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status Pengusaha",
+  "kode_pengusaha": "6",
+  "modified": "2023-06-22 08:50:38.446452",
+  "name": "6",
+  "uraian_pengusaha": "BUMN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status Pengusaha",
+  "kode_pengusaha": "7",
+  "modified": "2023-06-22 08:50:38.450077",
+  "name": "7",
+  "uraian_pengusaha": "BUMD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status Pengusaha",
+  "kode_pengusaha": "8",
+  "modified": "2023-06-22 08:50:38.453768",
+  "name": "8",
+  "uraian_pengusaha": "Perorangan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status Pengusaha",
+  "kode_pengusaha": "9",
+  "modified": "2023-06-22 08:50:38.457912",
+  "name": "9",
+  "uraian_pengusaha": "Usaha Kecil, Mikro, dan Menengah"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status Pengusaha",
+  "kode_pengusaha": "10",
+  "modified": "2023-06-22 08:50:38.461604",
+  "name": "LAINNYA",
+  "uraian_pengusaha": "Lainnya"
+ }
+]

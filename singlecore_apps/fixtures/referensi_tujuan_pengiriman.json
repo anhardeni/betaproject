@@ -1,0 +1,281 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "25",
+  "kode_tujuan_pengiriman": "5",
+  "modified": "2025-12-27 13:10:08.294931",
+  "nama_tujuan_pengiriman": "LAINNYA",
+  "name": "255"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "27",
+  "kode_tujuan_pengiriman": "5",
+  "modified": "2025-12-27 13:10:08.360038",
+  "nama_tujuan_pengiriman": "LAINNYA",
+  "name": "275"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "40",
+  "kode_tujuan_pengiriman": "5",
+  "modified": "2025-12-27 13:10:08.374565",
+  "nama_tujuan_pengiriman": "LAINNYA",
+  "name": "405"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "41",
+  "kode_tujuan_pengiriman": "5",
+  "modified": "2025-12-27 13:10:08.384266",
+  "nama_tujuan_pengiriman": "LAINNYA",
+  "name": "415"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "261",
+  "kode_tujuan_pengiriman": "5",
+  "modified": "2025-12-27 13:10:08.393568",
+  "nama_tujuan_pengiriman": "LAINNYA",
+  "name": "2615"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "25",
+  "kode_tujuan_pengiriman": "4",
+  "modified": "2025-12-27 13:10:08.405031",
+  "nama_tujuan_pengiriman": "NON PENYERAHAN",
+  "name": "254"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "27",
+  "kode_tujuan_pengiriman": "4",
+  "modified": "2025-12-27 13:10:08.417389",
+  "nama_tujuan_pengiriman": "NON PENYERAHAN",
+  "name": "274"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "40",
+  "kode_tujuan_pengiriman": "4",
+  "modified": "2025-12-27 13:10:08.428536",
+  "nama_tujuan_pengiriman": "NON PENYERAHAN",
+  "name": "404"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "41",
+  "kode_tujuan_pengiriman": "4",
+  "modified": "2025-12-27 13:10:08.438962",
+  "nama_tujuan_pengiriman": "NON PENYERAHAN",
+  "name": "414"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "261",
+  "kode_tujuan_pengiriman": "4",
+  "modified": "2025-12-27 13:10:08.449561",
+  "nama_tujuan_pengiriman": "BARANG RETURN",
+  "name": "2614"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "512",
+  "kode_tujuan_pengiriman": "4",
+  "modified": "2025-12-27 13:10:08.459717",
+  "nama_tujuan_pengiriman": "NON PENYERAHAN",
+  "name": "5124"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "513",
+  "kode_tujuan_pengiriman": "4",
+  "modified": "2025-12-27 13:10:08.469791",
+  "nama_tujuan_pengiriman": "NON PENYERAHAN ",
+  "name": "5134"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "522",
+  "kode_tujuan_pengiriman": "4",
+  "modified": "2025-12-27 13:10:08.480223",
+  "nama_tujuan_pengiriman": "NON PENYERAHAN",
+  "name": "5224"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "25",
+  "kode_tujuan_pengiriman": "3",
+  "modified": "2025-12-27 13:10:08.489936",
+  "nama_tujuan_pengiriman": "RETUR",
+  "name": "253"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "27",
+  "kode_tujuan_pengiriman": "3",
+  "modified": "2025-12-27 13:10:08.499920",
+  "nama_tujuan_pengiriman": "RETUR",
+  "name": "273"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "40",
+  "kode_tujuan_pengiriman": "3",
+  "modified": "2025-12-27 13:10:08.509456",
+  "nama_tujuan_pengiriman": "RETUR",
+  "name": "403"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "41",
+  "kode_tujuan_pengiriman": "3",
+  "modified": "2025-12-27 13:10:08.521877",
+  "nama_tujuan_pengiriman": "RETUR",
+  "name": "413"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "261",
+  "kode_tujuan_pengiriman": "3",
+  "modified": "2025-12-27 13:10:08.532050",
+  "nama_tujuan_pengiriman": "DIPINJAMKAN",
+  "name": "2613"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "25",
+  "kode_tujuan_pengiriman": "2",
+  "modified": "2025-12-27 13:10:08.541385",
+  "nama_tujuan_pengiriman": "PENYERAHAN JKP",
+  "name": "252"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "27",
+  "kode_tujuan_pengiriman": "2",
+  "modified": "2025-12-27 13:10:08.549446",
+  "nama_tujuan_pengiriman": "PENYERAHAN JKP",
+  "name": "272"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "40",
+  "kode_tujuan_pengiriman": "2",
+  "modified": "2025-12-27 13:10:08.560571",
+  "nama_tujuan_pengiriman": "PENYERAHAN JKP",
+  "name": "402"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "41",
+  "kode_tujuan_pengiriman": "2",
+  "modified": "2025-12-27 13:10:08.569963",
+  "nama_tujuan_pengiriman": "PENYERAHAN JKP",
+  "name": "412"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "261",
+  "kode_tujuan_pengiriman": "2",
+  "modified": "2025-12-27 13:10:08.579999",
+  "nama_tujuan_pengiriman": "DISUBKONTRAKKAN",
+  "name": "2612"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "25",
+  "kode_tujuan_pengiriman": "1",
+  "modified": "2025-12-27 13:10:08.589862",
+  "nama_tujuan_pengiriman": "PENYERAHAN BKP",
+  "name": "251"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "27",
+  "kode_tujuan_pengiriman": "1",
+  "modified": "2025-12-27 13:10:08.601278",
+  "nama_tujuan_pengiriman": "PENYERAHAN BKP",
+  "name": "271"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "40",
+  "kode_tujuan_pengiriman": "1",
+  "modified": "2025-12-27 13:10:08.610886",
+  "nama_tujuan_pengiriman": "PENYERAHAN BKP",
+  "name": "401"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "41",
+  "kode_tujuan_pengiriman": "1",
+  "modified": "2025-12-27 13:10:08.621284",
+  "nama_tujuan_pengiriman": "PENYERAHAN BKP",
+  "name": "411"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "261",
+  "kode_tujuan_pengiriman": "1",
+  "modified": "2025-12-27 13:10:08.629527",
+  "nama_tujuan_pengiriman": "DIPERBAIKI",
+  "name": "2611"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "512",
+  "kode_tujuan_pengiriman": "1",
+  "modified": "2025-12-27 13:10:08.640218",
+  "nama_tujuan_pengiriman": "PENYERAHAN BKP",
+  "name": "5121"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "513",
+  "kode_tujuan_pengiriman": "1",
+  "modified": "2025-12-27 13:10:08.650807",
+  "nama_tujuan_pengiriman": "PENYERAHAN BKP ",
+  "name": "5131"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "522",
+  "kode_tujuan_pengiriman": "1",
+  "modified": "2025-12-27 13:10:08.659839",
+  "nama_tujuan_pengiriman": "PENYERAHAN BKP",
+  "name": "5221"
+ }
+]

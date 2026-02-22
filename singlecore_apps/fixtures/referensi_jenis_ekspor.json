@@ -5,6 +5,54 @@
   "kode_jenis_ekspor": "1",
   "modified": "2023-06-21 14:07:55.337818",
   "nama_jenis_ekspor": "BIASA",
+  "name": "1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Ekspor",
+  "kode_jenis_ekspor": "2",
+  "modified": "2023-06-21 14:07:55.352574",
+  "nama_jenis_ekspor": "BERKALA",
+  "name": "2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Ekspor",
+  "kode_jenis_ekspor": "3",
+  "modified": "2023-06-21 14:07:55.358198",
+  "nama_jenis_ekspor": "FASILITAS",
+  "name": "3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Ekspor",
+  "kode_jenis_ekspor": "4",
+  "modified": "2023-06-21 14:07:55.362552",
+  "nama_jenis_ekspor": "RE-IMPOR",
+  "name": "4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Ekspor",
+  "kode_jenis_ekspor": "5",
+  "modified": "2023-06-21 14:07:55.367080",
+  "nama_jenis_ekspor": "RE-EKSPOR",
+  "name": "5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Ekspor",
+  "kode_jenis_ekspor": "6",
+  "modified": "2023-06-21 14:07:55.371082",
+  "nama_jenis_ekspor": "EX IMPOR SEMENTARA",
+  "name": "6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Ekspor",
+  "kode_jenis_ekspor": "1",
+  "modified": "2023-06-21 14:07:55.337818",
+  "nama_jenis_ekspor": "BIASA",
   "name": "146a74aa4a"
  },
  {

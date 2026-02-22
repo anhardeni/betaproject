@@ -1,0 +1,26 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tutup Pu",
+  "kode_tutup_pu": "11",
+  "modified": null,
+  "nama_tutup_pu": "BC 1.1",
+  "name": "11"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tutup Pu",
+  "kode_tutup_pu": "12",
+  "modified": null,
+  "nama_tutup_pu": "BC 1.2",
+  "name": "12"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tutup Pu",
+  "kode_tutup_pu": "14",
+  "modified": null,
+  "nama_tutup_pu": "BC 1.4",
+  "name": "14"
+ }
+]

@@ -1,0 +1,1634 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ADP",
+  "modified": "2023-06-22 10:05:08.967560",
+  "nama_valuta": "Andorran Peseta",
+  "name": "ADP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "AED",
+  "modified": "2023-06-22 10:05:08.981420",
+  "nama_valuta": "UAE Dirham",
+  "name": "AED"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "AFA",
+  "modified": "2023-06-22 10:05:08.985351",
+  "nama_valuta": "Afghani",
+  "name": "AFA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "AFN",
+  "modified": "2023-06-22 10:05:08.989210",
+  "nama_valuta": "Afghani",
+  "name": "AFN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ALL",
+  "modified": "2023-06-22 10:05:08.993316",
+  "nama_valuta": "Lek",
+  "name": "ALL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "AMD",
+  "modified": "2023-06-22 10:05:08.997281",
+  "nama_valuta": "Armenian Dram",
+  "name": "AMD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ANG",
+  "modified": "2023-06-22 10:05:09.000806",
+  "nama_valuta": "Netherlands Antillian Guilder",
+  "name": "ANG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "AOA",
+  "modified": "2023-06-22 10:05:09.004418",
+  "nama_valuta": "Kwanza",
+  "name": "AOA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "AON",
+  "modified": "2023-06-22 10:05:09.008152",
+  "nama_valuta": "New Kwanza",
+  "name": "AON"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ARS",
+  "modified": "2023-06-22 10:05:09.012065",
+  "nama_valuta": "Argentina Peso",
+  "name": "ARS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ATS",
+  "modified": "2023-06-22 10:05:09.015888",
+  "nama_valuta": "Schilling",
+  "name": "ATS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "AUD",
+  "modified": "2023-06-22 10:05:09.020109",
+  "nama_valuta": "Australian Dollar",
+  "name": "AUD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "AWG",
+  "modified": "2023-06-22 10:05:09.023932",
+  "nama_valuta": "Aruban Guilder",
+  "name": "AWG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "AZM",
+  "modified": "2023-06-22 10:05:09.027765",
+  "nama_valuta": "Azerbaijanian Manat",
+  "name": "AZM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "AZN",
+  "modified": "2023-06-22 10:05:09.031199",
+  "nama_valuta": "Azerbaijanian Manat",
+  "name": "AZN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BAM",
+  "modified": "2023-06-22 10:05:09.035073",
+  "nama_valuta": "Convertible Marks",
+  "name": "BAM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BBD",
+  "modified": "2023-06-22 10:05:09.038734",
+  "nama_valuta": "Barbados Dollar",
+  "name": "BBD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BDT",
+  "modified": "2023-06-22 10:05:09.042545",
+  "nama_valuta": "Taka",
+  "name": "BDT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BEF",
+  "modified": "2023-06-22 10:05:09.046251",
+  "nama_valuta": "Belgian Franc",
+  "name": "BEF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BGL",
+  "modified": "2023-06-22 10:05:09.050219",
+  "nama_valuta": "Lev",
+  "name": "BGL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BGN",
+  "modified": "2023-06-22 10:05:09.054041",
+  "nama_valuta": "Bulgarian Lev",
+  "name": "BGN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BHD",
+  "modified": "2023-06-22 10:05:09.057752",
+  "nama_valuta": "Bahraini Dinar",
+  "name": "BHD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BIF",
+  "modified": "2023-06-22 10:05:09.061388",
+  "nama_valuta": "Burundi Franc",
+  "name": "BIF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BMD",
+  "modified": "2023-06-22 10:05:09.065648",
+  "nama_valuta": "Bermudian Dollar",
+  "name": "BMD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BND",
+  "modified": "2023-06-22 10:05:09.069869",
+  "nama_valuta": "Brunei Dollar",
+  "name": "BND"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BOB",
+  "modified": "2023-06-22 10:05:09.075286",
+  "nama_valuta": "Boliaiano",
+  "name": "BOB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BOV",
+  "modified": "2023-06-22 10:05:09.079153",
+  "nama_valuta": "Mvdol",
+  "name": "BOV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BRL",
+  "modified": "2023-06-22 10:05:09.082717",
+  "nama_valuta": "Brazilian Real",
+  "name": "BRL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BSD",
+  "modified": "2023-06-22 10:05:09.086611",
+  "nama_valuta": "Bahamian Dollar",
+  "name": "BSD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BTN",
+  "modified": "2023-06-22 10:05:09.091140",
+  "nama_valuta": "Ngultrum",
+  "name": "BTN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BWP",
+  "modified": "2023-06-22 10:05:09.095254",
+  "nama_valuta": "Pula",
+  "name": "BWP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BYB",
+  "modified": "2023-06-22 10:05:09.099105",
+  "nama_valuta": "Belarussian Ruble",
+  "name": "BYB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BYR",
+  "modified": "2023-06-22 10:05:09.103073",
+  "nama_valuta": "Belarussian Ruble",
+  "name": "BYR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "BZD",
+  "modified": "2023-06-22 10:05:09.106950",
+  "nama_valuta": "Belize Dollar",
+  "name": "BZD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CAD",
+  "modified": "2023-06-22 10:05:09.110886",
+  "nama_valuta": "Canadian Dollar",
+  "name": "CAD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CDF",
+  "modified": "2023-06-22 10:05:09.114922",
+  "nama_valuta": "Congolese Franc",
+  "name": "CDF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CHE",
+  "modified": "2023-06-22 10:05:09.118768",
+  "nama_valuta": "WIR Euro",
+  "name": "CHE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CHF",
+  "modified": "2023-06-22 10:05:09.122586",
+  "nama_valuta": "Swiss Franc",
+  "name": "CHF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CHW",
+  "modified": "2023-06-22 10:05:09.126200",
+  "nama_valuta": "WIR Franc",
+  "name": "CHW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CLF",
+  "modified": "2023-06-22 10:05:09.130106",
+  "nama_valuta": "Unidades de fomento",
+  "name": "CLF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CLP",
+  "modified": "2023-06-22 10:05:09.133779",
+  "nama_valuta": "Chilean Peso",
+  "name": "CLP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CNY",
+  "modified": "2023-06-22 10:05:09.138332",
+  "nama_valuta": "Yuan Renminbi",
+  "name": "CNY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "COP",
+  "modified": "2023-06-22 10:05:09.142122",
+  "nama_valuta": "Colombian Peso",
+  "name": "COP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "COU",
+  "modified": "2023-06-22 10:05:09.146068",
+  "nama_valuta": "Unidad de Valor Real",
+  "name": "COU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CRC",
+  "modified": "2023-06-22 10:05:09.150067",
+  "nama_valuta": "Costa Rican Colon",
+  "name": "CRC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CUC",
+  "modified": "2023-06-22 10:05:09.153946",
+  "nama_valuta": "Peso Convertible",
+  "name": "CUC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CUP",
+  "modified": "2023-06-22 10:05:09.157779",
+  "nama_valuta": "Cuban Peso",
+  "name": "CUP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CVE",
+  "modified": "2023-06-22 10:05:09.161674",
+  "nama_valuta": "Cape Verde Escudo",
+  "name": "CVE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CYP",
+  "modified": "2023-06-22 10:05:09.165504",
+  "nama_valuta": "Cyprus Pound",
+  "name": "CYP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "CZK",
+  "modified": "2023-06-22 10:05:09.169492",
+  "nama_valuta": "Czech Koruna",
+  "name": "CZK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "DEM",
+  "modified": "2023-06-22 10:05:09.173222",
+  "nama_valuta": "Deustche Mark",
+  "name": "DEM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "DJF",
+  "modified": "2023-06-22 10:05:09.177169",
+  "nama_valuta": "Djibouti Franc",
+  "name": "DJF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "DKK",
+  "modified": "2023-06-22 10:05:09.180992",
+  "nama_valuta": "Danish Krone",
+  "name": "DKK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "DOP",
+  "modified": "2023-06-22 10:05:09.184747",
+  "nama_valuta": "Domincan Peso",
+  "name": "DOP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "DZD",
+  "modified": "2023-06-22 10:05:09.188574",
+  "nama_valuta": "Algerian Dinar",
+  "name": "DZD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ECS",
+  "modified": "2023-06-22 10:05:09.192271",
+  "nama_valuta": "Sucre",
+  "name": "ECS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "EEK",
+  "modified": "2023-06-22 10:05:09.195988",
+  "nama_valuta": "Kroon",
+  "name": "EEK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "EGP",
+  "modified": "2023-06-22 10:05:09.200141",
+  "nama_valuta": "Egyptian Pound",
+  "name": "EGP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ERN",
+  "modified": "2023-06-22 10:05:09.203888",
+  "nama_valuta": "Nakfa",
+  "name": "ERN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ESP",
+  "modified": "2023-06-22 10:05:09.207591",
+  "nama_valuta": "Spainish peseta",
+  "name": "ESP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ETB",
+  "modified": "2023-06-22 10:05:09.211212",
+  "nama_valuta": "Ethiopian Birr",
+  "name": "ETB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "FIM",
+  "modified": "2023-06-22 10:05:09.215100",
+  "nama_valuta": "Markka",
+  "name": "FIM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "FJD",
+  "modified": "2023-06-22 10:05:09.218931",
+  "nama_valuta": "Fiji Dollar",
+  "name": "FJD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "FKP",
+  "modified": "2023-06-22 10:05:09.222863",
+  "nama_valuta": "Falkland Islands Pound",
+  "name": "FKP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "FRF",
+  "modified": "2023-06-22 10:05:09.226517",
+  "nama_valuta": "Franch Franc",
+  "name": "FRF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "GBP",
+  "modified": "2023-06-22 10:05:09.230406",
+  "nama_valuta": "Pound Sterling",
+  "name": "GBP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "GEK",
+  "modified": "2023-06-22 10:05:09.234223",
+  "nama_valuta": "Georgian Coupon",
+  "name": "GEK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "GEL",
+  "modified": "2023-06-22 10:05:09.237882",
+  "nama_valuta": "Lari",
+  "name": "GEL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "GHC",
+  "modified": "2023-06-22 10:05:09.241618",
+  "nama_valuta": "Cedi",
+  "name": "GHC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "GHS",
+  "modified": "2023-06-22 10:05:09.245740",
+  "nama_valuta": "Cedi",
+  "name": "GHS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "GIP",
+  "modified": "2023-06-22 10:05:09.249873",
+  "nama_valuta": "Gibraltar Pound",
+  "name": "GIP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "GMD",
+  "modified": "2023-06-22 10:05:09.253630",
+  "nama_valuta": "Dalasi",
+  "name": "GMD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "GNF",
+  "modified": "2023-06-22 10:05:09.257076",
+  "nama_valuta": "Guinea Franc",
+  "name": "GNF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "GRD",
+  "modified": "2023-06-22 10:05:09.260691",
+  "nama_valuta": "Drachma",
+  "name": "GRD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "GTQ",
+  "modified": "2023-06-22 10:05:09.264229",
+  "nama_valuta": "Quetzal",
+  "name": "GTQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "GWP",
+  "modified": "2023-06-22 10:05:09.268089",
+  "nama_valuta": "Guinea-Bissau Peso",
+  "name": "GWP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "GYD",
+  "modified": "2023-06-22 10:05:09.271893",
+  "nama_valuta": "Guyana Dollar",
+  "name": "GYD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "HKD",
+  "modified": "2023-06-22 10:05:09.275818",
+  "nama_valuta": "Hong Kong Dollar",
+  "name": "HKD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "HNL",
+  "modified": "2023-06-22 10:05:09.279649",
+  "nama_valuta": "Lempira",
+  "name": "HNL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "HRD",
+  "modified": "2023-06-22 10:05:09.283548",
+  "nama_valuta": "Croatian Dinar",
+  "name": "HRD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "HRK",
+  "modified": "2023-06-22 10:05:09.287192",
+  "nama_valuta": "Kuna",
+  "name": "HRK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "HTG",
+  "modified": "2023-06-22 10:05:09.290813",
+  "nama_valuta": "Gourde",
+  "name": "HTG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "HUF",
+  "modified": "2023-06-22 10:05:09.295008",
+  "nama_valuta": "Forint",
+  "name": "HUF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "IDR",
+  "modified": "2023-06-22 10:05:09.299093",
+  "nama_valuta": "Rupiah",
+  "name": "IDR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "IEP",
+  "modified": "2023-06-22 10:05:09.303045",
+  "nama_valuta": "Irish Pound",
+  "name": "IEP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ILS",
+  "modified": "2023-06-22 10:05:09.306613",
+  "nama_valuta": "Shekel",
+  "name": "ILS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "INR",
+  "modified": "2023-06-22 10:05:09.310753",
+  "nama_valuta": "Indian Rupee",
+  "name": "INR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "IQD",
+  "modified": "2023-06-22 10:05:09.314702",
+  "nama_valuta": "Iraqi Dinar",
+  "name": "IQD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "IRR",
+  "modified": "2023-06-22 10:05:09.318379",
+  "nama_valuta": "Iranian Rial",
+  "name": "IRR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ISK",
+  "modified": "2023-06-22 10:05:09.322218",
+  "nama_valuta": "Iceland Krona",
+  "name": "ISK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ITL",
+  "modified": "2023-06-22 10:05:09.326387",
+  "nama_valuta": "Italian Lira",
+  "name": "ITL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "JMD",
+  "modified": "2023-06-22 10:05:09.330060",
+  "nama_valuta": "Jamaican Dollar",
+  "name": "JMD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "JOD",
+  "modified": "2023-06-22 10:05:09.333797",
+  "nama_valuta": "Jordanian Dinar",
+  "name": "JOD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "JPY",
+  "modified": "2023-06-22 10:05:09.337516",
+  "nama_valuta": "Yen",
+  "name": "JPY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "KES",
+  "modified": "2023-06-22 10:05:09.341390",
+  "nama_valuta": "Kenyan Shilling",
+  "name": "KES"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "KGS",
+  "modified": "2023-06-22 10:05:09.345057",
+  "nama_valuta": "Som",
+  "name": "KGS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "KHR",
+  "modified": "2023-06-22 10:05:09.348824",
+  "nama_valuta": "Riel",
+  "name": "KHR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "KMF",
+  "modified": "2023-06-22 10:05:09.352559",
+  "nama_valuta": "Comoro Franc",
+  "name": "KMF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "KPW",
+  "modified": "2023-06-22 10:05:09.356312",
+  "nama_valuta": "North Korean Won",
+  "name": "KPW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "KRW",
+  "modified": "2023-06-22 10:05:09.360219",
+  "nama_valuta": "Won",
+  "name": "KRW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "KWD",
+  "modified": "2023-06-22 10:05:09.364003",
+  "nama_valuta": "Kuwauti Dinar",
+  "name": "KWD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "KYD",
+  "modified": "2023-06-22 10:05:09.367827",
+  "nama_valuta": "Cayman Islands Dollar",
+  "name": "KYD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "KZT",
+  "modified": "2023-06-22 10:05:09.371491",
+  "nama_valuta": "Tenge",
+  "name": "KZT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "LAK",
+  "modified": "2023-06-22 10:05:09.374962",
+  "nama_valuta": "Kip",
+  "name": "LAK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "LBP",
+  "modified": "2023-06-22 10:05:09.378773",
+  "nama_valuta": "Lebanese Pound",
+  "name": "LBP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "LKR",
+  "modified": "2023-06-22 10:05:09.382365",
+  "nama_valuta": "Sri Langka Rupee",
+  "name": "LKR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "LRD",
+  "modified": "2023-06-22 10:05:09.386080",
+  "nama_valuta": "Liberian Dollar",
+  "name": "LRD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "LSL",
+  "modified": "2023-06-22 10:05:09.389809",
+  "nama_valuta": "Loli",
+  "name": "LSL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "LTL",
+  "modified": "2023-06-22 10:05:09.393301",
+  "nama_valuta": "Lithuanian Litas",
+  "name": "LTL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "LUF",
+  "modified": "2023-06-22 10:05:09.397028",
+  "nama_valuta": "Luxembourg Franc",
+  "name": "LUF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "LVL",
+  "modified": "2023-06-22 10:05:09.400566",
+  "nama_valuta": "Latvian Lats#",
+  "name": "LVL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "LVR",
+  "modified": "2023-06-22 10:05:09.404210",
+  "nama_valuta": "Latvian Ruble",
+  "name": "LVR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "LYD",
+  "modified": "2023-06-22 10:05:09.407873",
+  "nama_valuta": "Libyan Dinar",
+  "name": "LYD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MAD",
+  "modified": "2023-06-22 10:05:09.411596",
+  "nama_valuta": "Moroccoan Dirham",
+  "name": "MAD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MDL",
+  "modified": "2023-06-22 10:05:09.415369",
+  "nama_valuta": "Moldovan Leu",
+  "name": "MDL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MGA",
+  "modified": "2023-06-22 10:05:09.419787",
+  "nama_valuta": "Malagasy Ariary",
+  "name": "MGA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MGF",
+  "modified": "2023-06-22 10:05:09.423793",
+  "nama_valuta": "Malagasy Franc",
+  "name": "MGF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MKD",
+  "modified": "2023-06-22 10:05:09.427838",
+  "nama_valuta": "Denar",
+  "name": "MKD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MMK",
+  "modified": "2023-06-22 10:05:09.431952",
+  "nama_valuta": "Kyat",
+  "name": "MMK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MNT",
+  "modified": "2023-06-22 10:05:09.436106",
+  "nama_valuta": "Tugrik",
+  "name": "MNT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MOP",
+  "modified": "2023-06-22 10:05:09.439818",
+  "nama_valuta": "Pataca",
+  "name": "MOP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MRO",
+  "modified": "2023-06-22 10:05:09.443799",
+  "nama_valuta": "Ouguiya",
+  "name": "MRO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MTL",
+  "modified": "2023-06-22 10:05:09.447212",
+  "nama_valuta": "Mallese Lira",
+  "name": "MTL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MUR",
+  "modified": "2023-06-22 10:05:09.451000",
+  "nama_valuta": "Mauritius Pupee",
+  "name": "MUR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MVR",
+  "modified": "2023-06-22 10:05:09.454627",
+  "nama_valuta": "Rufiyaa",
+  "name": "MVR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MWK",
+  "modified": "2023-06-22 10:05:09.458481",
+  "nama_valuta": "Kwacha",
+  "name": "MWK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MXN",
+  "modified": "2023-06-22 10:05:09.462623",
+  "nama_valuta": "Mexican Nuevo Peso",
+  "name": "MXN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MXV",
+  "modified": "2023-06-22 10:05:09.466926",
+  "nama_valuta": "Mexican Unidad de Inversion (UDI)",
+  "name": "MXV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MYR",
+  "modified": "2023-06-22 10:05:09.470458",
+  "nama_valuta": "Malaysian Ringgit",
+  "name": "MYR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MZM",
+  "modified": "2023-06-22 10:05:09.474307",
+  "nama_valuta": "Metical",
+  "name": "MZM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "MZN",
+  "modified": "2023-06-22 10:05:09.478227",
+  "nama_valuta": "Metical",
+  "name": "MZN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "NAD",
+  "modified": "2023-06-22 10:05:09.482872",
+  "nama_valuta": "Namibia Dollar",
+  "name": "NAD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "NGN",
+  "modified": "2023-06-22 10:05:09.486923",
+  "nama_valuta": "Naira",
+  "name": "NGN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "NIO",
+  "modified": "2023-06-22 10:05:09.491168",
+  "nama_valuta": "Cordoba Oro",
+  "name": "NIO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "NLG",
+  "modified": "2023-06-22 10:05:09.498915",
+  "nama_valuta": "Netherlands Guilder",
+  "name": "NLG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "NOK",
+  "modified": "2023-06-22 10:05:09.503607",
+  "nama_valuta": "Norwegian Krone",
+  "name": "NOK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "NPR",
+  "modified": "2023-06-22 10:05:09.508001",
+  "nama_valuta": "Nepalese Rupee",
+  "name": "NPR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "NZD",
+  "modified": "2023-06-22 10:05:09.512432",
+  "nama_valuta": "New Zealand Dollar",
+  "name": "NZD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "OMR",
+  "modified": "2023-06-22 10:05:09.517473",
+  "nama_valuta": "Rial Omani",
+  "name": "OMR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "PAB",
+  "modified": "2023-06-22 10:05:09.521866",
+  "nama_valuta": "Balboa/US Dollar",
+  "name": "PAB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "PEN",
+  "modified": "2023-06-22 10:05:09.526146",
+  "nama_valuta": "Nuevo Sol",
+  "name": "PEN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "PGK",
+  "modified": "2023-06-22 10:05:09.530593",
+  "nama_valuta": "Kina",
+  "name": "PGK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "PHP",
+  "modified": "2023-06-22 10:05:09.534963",
+  "nama_valuta": "Philippines Peso",
+  "name": "PHP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "PKR",
+  "modified": "2023-06-22 10:05:09.539485",
+  "nama_valuta": "Pakistan Rupee",
+  "name": "PKR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "PLN",
+  "modified": "2023-06-22 10:05:09.544088",
+  "nama_valuta": "Zloty",
+  "name": "PLN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "PLZ",
+  "modified": "2023-06-22 10:05:09.548295",
+  "nama_valuta": "Zloty",
+  "name": "PLZ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "PTE",
+  "modified": "2023-06-22 10:05:09.552799",
+  "nama_valuta": "Portuguese Escudo",
+  "name": "PTE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "PYG",
+  "modified": "2023-06-22 10:05:09.556997",
+  "nama_valuta": "Guarani",
+  "name": "PYG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "QAR",
+  "modified": "2023-06-22 10:05:09.560891",
+  "nama_valuta": "Qatari Rial",
+  "name": "QAR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ROL",
+  "modified": "2023-06-22 10:05:09.565262",
+  "nama_valuta": "Leu",
+  "name": "ROL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "RON",
+  "modified": "2023-06-22 10:05:09.569419",
+  "nama_valuta": "New Leu",
+  "name": "RON"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "RSD",
+  "modified": "2023-06-22 10:05:09.573809",
+  "nama_valuta": "Serbian Dinar",
+  "name": "RSD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "RUB",
+  "modified": "2023-06-22 10:05:09.578046",
+  "nama_valuta": "Russian Ruble",
+  "name": "RUB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "RUR",
+  "modified": "2023-06-22 10:05:09.582220",
+  "nama_valuta": "Russian Ruble",
+  "name": "RUR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "RWF",
+  "modified": "2023-06-22 10:05:09.586326",
+  "nama_valuta": "Rwanda Franc",
+  "name": "RWF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SAR",
+  "modified": "2023-06-22 10:05:09.590481",
+  "nama_valuta": "Saudi Riyal",
+  "name": "SAR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SBD",
+  "modified": "2023-06-22 10:05:09.594671",
+  "nama_valuta": "Solomon Islands Dollar",
+  "name": "SBD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SCR",
+  "modified": "2023-06-22 10:05:09.598874",
+  "nama_valuta": "Seychelles Rupee",
+  "name": "SCR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SDD",
+  "modified": "2023-06-22 10:05:09.602943",
+  "nama_valuta": "Sudanase Dinar",
+  "name": "SDD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SDG",
+  "modified": "2023-06-22 10:05:09.606779",
+  "nama_valuta": "Sudanese Pound",
+  "name": "SDG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SDP",
+  "modified": "2023-06-22 10:05:09.610658",
+  "nama_valuta": "Sudanese Pound",
+  "name": "SDP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SEK",
+  "modified": "2023-06-22 10:05:09.614367",
+  "nama_valuta": "Swedish Krone",
+  "name": "SEK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SGD",
+  "modified": "2023-06-22 10:05:09.618036",
+  "nama_valuta": "Singapore Dollar",
+  "name": "SGD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SHP",
+  "modified": "2023-06-22 10:05:09.622135",
+  "nama_valuta": "St. Helena Pound",
+  "name": "SHP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SIT",
+  "modified": "2023-06-22 10:05:09.626171",
+  "nama_valuta": "Tolar",
+  "name": "SIT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SKK",
+  "modified": "2023-06-22 10:05:09.629854",
+  "nama_valuta": "Slovak Koruna",
+  "name": "SKK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SLL",
+  "modified": "2023-06-22 10:05:09.633623",
+  "nama_valuta": "Leone",
+  "name": "SLL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SOS",
+  "modified": "2023-06-22 10:05:09.637840",
+  "nama_valuta": "Somalia shilling",
+  "name": "SOS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SRD",
+  "modified": "2023-06-22 10:05:09.641664",
+  "nama_valuta": "Surinam Dollar",
+  "name": "SRD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SRG",
+  "modified": "2023-06-22 10:05:09.645433",
+  "nama_valuta": "Surinam Guilder",
+  "name": "SRG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "STD",
+  "modified": "2023-06-22 10:05:09.649341",
+  "nama_valuta": "Dobra",
+  "name": "STD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SVC",
+  "modified": "2023-06-22 10:05:09.653900",
+  "nama_valuta": "El Salvador Colon",
+  "name": "SVC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SYP",
+  "modified": "2023-06-22 10:05:09.657868",
+  "nama_valuta": "Syrian Pound",
+  "name": "SYP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "SZL",
+  "modified": "2023-06-22 10:05:09.661963",
+  "nama_valuta": "Lilangeni",
+  "name": "SZL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "THB",
+  "modified": "2023-06-22 10:05:09.666084",
+  "nama_valuta": "Baht",
+  "name": "THB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "TJS",
+  "modified": "2023-06-22 10:05:09.670180",
+  "nama_valuta": "Somoni",
+  "name": "TJS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "TMM",
+  "modified": "2023-06-22 10:05:09.674007",
+  "nama_valuta": "Manat",
+  "name": "TMM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "TMT",
+  "modified": "2023-06-22 10:05:09.677725",
+  "nama_valuta": "Manat",
+  "name": "TMT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "TND",
+  "modified": "2023-06-22 10:05:09.681562",
+  "nama_valuta": "Tunisian Dinar",
+  "name": "TND"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "TOP",
+  "modified": "2023-06-22 10:05:09.685794",
+  "nama_valuta": "Pa'anga",
+  "name": "TOP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "TRL",
+  "modified": "2023-06-22 10:05:09.689732",
+  "nama_valuta": "Turkish Lira",
+  "name": "TRL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "TRY",
+  "modified": "2023-06-22 10:05:09.693435",
+  "nama_valuta": "Turkish Lira",
+  "name": "TRY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "TTD",
+  "modified": "2023-06-22 10:05:09.697128",
+  "nama_valuta": "Trinidad and Tobago Dollar",
+  "name": "TTD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "TWD",
+  "modified": "2023-06-22 10:05:09.701171",
+  "nama_valuta": "New Taiwan Dollar",
+  "name": "TWD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "TZS",
+  "modified": "2023-06-22 10:05:09.705092",
+  "nama_valuta": "Tanzania Shilling",
+  "name": "TZS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "UAH",
+  "modified": "2023-06-22 10:05:09.708734",
+  "nama_valuta": "Hryvnia",
+  "name": "UAH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "UAK",
+  "modified": "2023-06-22 10:05:09.712498",
+  "nama_valuta": "Karbovanet",
+  "name": "UAK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "UGX",
+  "modified": "2023-06-22 10:05:09.716249",
+  "nama_valuta": "Uganda Shilling",
+  "name": "UGX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "UYI",
+  "modified": "2023-06-22 10:05:09.724183",
+  "nama_valuta": "Uruguay Peso en Unidades Indexadas",
+  "name": "UYI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "UYU",
+  "modified": "2023-06-22 10:05:09.728066",
+  "nama_valuta": "Peso Uruguayo",
+  "name": "UYU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "UZS",
+  "modified": "2023-06-22 10:05:09.732098",
+  "nama_valuta": "Ubekistan Sum",
+  "name": "UZS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "VEB",
+  "modified": "2023-06-22 10:05:09.735926",
+  "nama_valuta": "Bolivar",
+  "name": "VEB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "VEF",
+  "modified": "2023-06-22 10:05:09.739727",
+  "nama_valuta": "Bolivar Fuerte",
+  "name": "VEF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "VND",
+  "modified": "2023-06-22 10:05:09.743558",
+  "nama_valuta": "Dong",
+  "name": "VND"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "VUV",
+  "modified": "2023-06-22 10:05:09.747599",
+  "nama_valuta": "Vatu",
+  "name": "VUV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "WST",
+  "modified": "2023-06-22 10:05:09.751454",
+  "nama_valuta": "Tala",
+  "name": "WST"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "YER",
+  "modified": "2023-06-22 10:05:09.755192",
+  "nama_valuta": "Yemeni Rial",
+  "name": "YER"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "YUN",
+  "modified": "2023-06-22 10:05:09.759186",
+  "nama_valuta": "New Yugosslavian",
+  "name": "YUN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ZAL",
+  "modified": "2023-06-22 10:05:09.762922",
+  "nama_valuta": "Financial Rand",
+  "name": "ZAL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ZAR",
+  "modified": "2023-06-22 10:05:09.766478",
+  "nama_valuta": "Rand",
+  "name": "ZAR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ZMK",
+  "modified": "2023-06-22 10:05:09.770226",
+  "nama_valuta": "Kwacha",
+  "name": "ZMK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ZWD",
+  "modified": "2023-06-22 10:05:09.773790",
+  "nama_valuta": "Zimbabwe Dollar",
+  "name": "ZWD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "ZWL",
+  "modified": "2023-06-22 10:05:09.777719",
+  "nama_valuta": "Zimbabwe Dollar",
+  "name": "ZWL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Valuta",
+  "kode_valuta": "USD",
+  "modified": "2023-06-22 10:05:09.720155",
+  "nama_valuta": "US Dollar",
+  "name": "USD"
+ }
+]

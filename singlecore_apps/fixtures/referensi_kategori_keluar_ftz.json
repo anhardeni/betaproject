@@ -1,0 +1,82 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Keluar FTZ",
+  "kode_kategori_keluar": "1",
+  "modified": "2023-06-22 08:25:40.280688",
+  "name": "001",
+  "uraian_kategori_keluar": "Pengeluaran Biasa"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Keluar FTZ",
+  "kode_kategori_keluar": "2",
+  "modified": "2023-06-22 08:25:40.295204",
+  "name": "002",
+  "uraian_kategori_keluar": "Pengeluaran Khusus Barang Kiriman (Pos atau Jasa Titipan)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Keluar FTZ",
+  "kode_kategori_keluar": "3",
+  "modified": "2023-06-22 08:25:40.299991",
+  "name": "003",
+  "uraian_kategori_keluar": "Pengeluaran Khusus Barang Pindahan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Keluar FTZ",
+  "kode_kategori_keluar": "4",
+  "modified": "2023-06-22 08:25:40.303985",
+  "name": "004",
+  "uraian_kategori_keluar": "Pengeluaran Khusus Barang Perwakilan Negara Asing atau Badan Internasional"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Keluar FTZ",
+  "kode_kategori_keluar": "5",
+  "modified": "2023-06-22 08:25:40.308206",
+  "name": "005",
+  "uraian_kategori_keluar": "Pengeluaran Khusus Barang untuk Keperluan Ibadah untuk Umum, Sosial, Pendidikan, Kebudayaan, Olah Raga, atau Bencana Alam"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Keluar FTZ",
+  "kode_kategori_keluar": "6",
+  "modified": "2023-06-22 08:25:40.313002",
+  "name": "006",
+  "uraian_kategori_keluar": "Pengeluaran Khusus Barang Cinderamata"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Keluar FTZ",
+  "kode_kategori_keluar": "7",
+  "modified": "2023-06-22 08:25:40.317071",
+  "name": "007",
+  "uraian_kategori_keluar": "Pengeluaran Khusus Barang Contoh"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Keluar FTZ",
+  "kode_kategori_keluar": "8",
+  "modified": "2023-06-22 08:25:40.320968",
+  "name": "008",
+  "uraian_kategori_keluar": "Pengeluaran Khusus Barang untuk Keperluan Penelitian"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Keluar FTZ",
+  "kode_kategori_keluar": "9",
+  "modified": "2023-06-22 08:25:40.324833",
+  "name": "009",
+  "uraian_kategori_keluar": "Pengeluaran Sementara dari Kawasan Bebas"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Keluar FTZ",
+  "kode_kategori_keluar": "10",
+  "modified": "2023-06-22 08:25:40.329256",
+  "name": "010",
+  "uraian_kategori_keluar": "Pengeluaran Kembali dari Kawasan Bebas ke Luar Daerah Pabean atas Barang yang Nyata-nyata Berasal dari Luar Daerah Pabean"
+ }
+]

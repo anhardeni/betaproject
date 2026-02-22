@@ -2,6 +2,14 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Jenis API",
+  "kode_jenis_api": "4",
+  "modified": "2023-06-21 14:06:04.459501",
+  "nama_jenis_api": "ANGKA PENGENAL IMPORTIR TERBATAS (APIT)",
+  "name": "04"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis API",
   "kode_jenis_api": "1",
   "modified": "2023-06-21 14:06:04.444398",
   "nama_jenis_api": "ANGKA PENGENAL IMPORTIR UMUM (APIU)",
@@ -22,5 +30,21 @@
   "modified": "2023-06-21 14:06:04.459501",
   "nama_jenis_api": "ANGKA PENGENAL IMPORTIR TERBATAS (APIT)",
   "name": "18015dccc4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis API",
+  "kode_jenis_api": "1",
+  "modified": "2023-06-21 14:06:04.444398",
+  "nama_jenis_api": "ANGKA PENGENAL IMPORTIR UMUM (APIU)",
+  "name": "01"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis API",
+  "kode_jenis_api": "2",
+  "modified": "2023-06-21 14:06:04.454127",
+  "nama_jenis_api": "ANGKA PENGENAL IMPORTIR PERSEROAN (APIP)",
+  "name": "02"
  }
 ]

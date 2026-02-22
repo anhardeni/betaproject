@@ -1,0 +1,34 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Lokasi Bayar",
+  "kode_lokasi_bayar": "1",
+  "modified": "2023-06-22 08:31:19.288811",
+  "nama_lokasi_bayar": "BANK",
+  "name": "1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Lokasi Bayar",
+  "kode_lokasi_bayar": "2",
+  "modified": "2023-06-22 08:31:19.298577",
+  "nama_lokasi_bayar": "POS",
+  "name": "2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Lokasi Bayar",
+  "kode_lokasi_bayar": "3",
+  "modified": "2023-06-22 08:31:19.302656",
+  "nama_lokasi_bayar": "KANTOR PABEAN",
+  "name": "3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Lokasi Bayar",
+  "kode_lokasi_bayar": "4",
+  "modified": "2023-06-22 08:31:19.305878",
+  "nama_lokasi_bayar": "NTPN",
+  "name": "4"
+ }
+]

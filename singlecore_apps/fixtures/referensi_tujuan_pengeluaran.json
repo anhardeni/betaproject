@@ -1,0 +1,281 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "512",
+  "kode_tujuan_pengeluaran": "1",
+  "modified": "2023-06-22 08:57:14.044316",
+  "nama_tujuan_pengeluaran": "DIJUAL",
+  "name": "5121"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "512",
+  "kode_tujuan_pengeluaran": "2",
+  "modified": "2023-06-22 08:57:14.058159",
+  "nama_tujuan_pengeluaran": "DIPERBAIKI",
+  "name": "5122"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "512",
+  "kode_tujuan_pengeluaran": "3",
+  "modified": "2023-06-22 08:57:14.062545",
+  "nama_tujuan_pengeluaran": "DIREKONDISI",
+  "name": "5123"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "512",
+  "kode_tujuan_pengeluaran": "4",
+  "modified": "2023-06-22 08:57:14.066241",
+  "nama_tujuan_pengeluaran": "DIUJI",
+  "name": "5124"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "512",
+  "kode_tujuan_pengeluaran": "5",
+  "modified": "2023-06-22 08:57:14.070626",
+  "nama_tujuan_pengeluaran": "DIKALIBRASI",
+  "name": "5125"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "512",
+  "kode_tujuan_pengeluaran": "6",
+  "modified": "2023-06-22 08:57:14.075444",
+  "nama_tujuan_pengeluaran": "PENGERJAAN PROYEK",
+  "name": "5126"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "512",
+  "kode_tujuan_pengeluaran": "7",
+  "modified": "2023-06-22 08:57:14.079597",
+  "nama_tujuan_pengeluaran": "KEPERLUAN PERAGAAN ATAU DEMONSTRASI",
+  "name": "5127"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "512",
+  "kode_tujuan_pengeluaran": "8",
+  "modified": "2023-06-22 08:57:14.083810",
+  "nama_tujuan_pengeluaran": "DIKEMBALIKAN",
+  "name": "5128"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "512",
+  "kode_tujuan_pengeluaran": "9",
+  "modified": "2023-06-22 08:57:14.087622",
+  "nama_tujuan_pengeluaran": "LAINNYA",
+  "name": "5129"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "513",
+  "kode_tujuan_pengeluaran": "1",
+  "modified": "2023-06-22 08:57:14.091532",
+  "nama_tujuan_pengeluaran": "DIJUAL",
+  "name": "5131"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "513",
+  "kode_tujuan_pengeluaran": "2",
+  "modified": "2023-06-22 08:57:14.095204",
+  "nama_tujuan_pengeluaran": "DIPERGUNAKAN",
+  "name": "5132"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "513",
+  "kode_tujuan_pengeluaran": "3",
+  "modified": "2023-06-22 08:57:14.098957",
+  "nama_tujuan_pengeluaran": "DIOLAH",
+  "name": "5133"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "513",
+  "kode_tujuan_pengeluaran": "4",
+  "modified": "2023-06-22 08:57:14.102732",
+  "nama_tujuan_pengeluaran": "DIPERBAIKI",
+  "name": "5134"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "513",
+  "kode_tujuan_pengeluaran": "5",
+  "modified": "2023-06-22 08:57:14.106365",
+  "nama_tujuan_pengeluaran": "DIREKONDISI",
+  "name": "5135"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "513",
+  "kode_tujuan_pengeluaran": "6",
+  "modified": "2023-06-22 08:57:14.109977",
+  "nama_tujuan_pengeluaran": "DIUJI",
+  "name": "5136"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "513",
+  "kode_tujuan_pengeluaran": "7",
+  "modified": "2023-06-22 08:57:14.114255",
+  "nama_tujuan_pengeluaran": "DIKALIBRASI",
+  "name": "5137"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "513",
+  "kode_tujuan_pengeluaran": "8",
+  "modified": "2023-06-22 08:57:14.118239",
+  "nama_tujuan_pengeluaran": "PENGERJAAN PROYEK",
+  "name": "5138"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "513",
+  "kode_tujuan_pengeluaran": "9",
+  "modified": "2023-06-22 08:57:14.121967",
+  "nama_tujuan_pengeluaran": "KEPERLUAN PERAGAAN ATAU DEMONSTRASI",
+  "name": "5139"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "513",
+  "kode_tujuan_pengeluaran": "10",
+  "modified": "2023-06-22 08:57:14.125927",
+  "nama_tujuan_pengeluaran": "DIKEMBALIKAN",
+  "name": "51310"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "513",
+  "kode_tujuan_pengeluaran": "11",
+  "modified": "2023-06-22 08:57:14.129441",
+  "nama_tujuan_pengeluaran": "LAINNYA",
+  "name": "51311"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "522",
+  "kode_tujuan_pengeluaran": "1",
+  "modified": "2023-06-22 08:57:14.133271",
+  "nama_tujuan_pengeluaran": "DITIMBUN",
+  "name": "5221"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "522",
+  "kode_tujuan_pengeluaran": "2",
+  "modified": "2023-06-22 08:57:14.137030",
+  "nama_tujuan_pengeluaran": "DIJUAL",
+  "name": "5222"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "522",
+  "kode_tujuan_pengeluaran": "3",
+  "modified": "2023-06-22 08:57:14.140991",
+  "nama_tujuan_pengeluaran": "DIPROSES",
+  "name": "5223"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "522",
+  "kode_tujuan_pengeluaran": "4",
+  "modified": "2023-06-22 08:57:14.145011",
+  "nama_tujuan_pengeluaran": "DISUBKONTRAKAN",
+  "name": "5224"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "522",
+  "kode_tujuan_pengeluaran": "5",
+  "modified": "2023-06-22 08:57:14.149404",
+  "nama_tujuan_pengeluaran": "DIPINJAMKAN",
+  "name": "5225"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "522",
+  "kode_tujuan_pengeluaran": "6",
+  "modified": "2023-06-22 08:57:14.153085",
+  "nama_tujuan_pengeluaran": "DIPERBAIKI",
+  "name": "5226"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "522",
+  "kode_tujuan_pengeluaran": "7",
+  "modified": "2023-06-22 08:57:14.157702",
+  "nama_tujuan_pengeluaran": "DIPAMERKAN",
+  "name": "5227"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "522",
+  "kode_tujuan_pengeluaran": "8",
+  "modified": "2023-06-22 08:57:14.161382",
+  "nama_tujuan_pengeluaran": "PENGEMBALIAN SUBKONTRAK",
+  "name": "5228"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "522",
+  "kode_tujuan_pengeluaran": "9",
+  "modified": "2023-06-22 08:57:14.165402",
+  "nama_tujuan_pengeluaran": "PENGEMBALIAN PINJAMAN",
+  "name": "5229"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "522",
+  "kode_tujuan_pengeluaran": "10",
+  "modified": "2023-06-22 08:57:14.169327",
+  "nama_tujuan_pengeluaran": "PENGEMBALIAN PERBAIKAN",
+  "name": "52210"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengeluaran",
+  "kode_dokumen": "522",
+  "kode_tujuan_pengeluaran": "11",
+  "modified": "2023-06-22 08:57:14.173124",
+  "nama_tujuan_pengeluaran": "LAINNYA",
+  "name": "52211"
+ }
+]

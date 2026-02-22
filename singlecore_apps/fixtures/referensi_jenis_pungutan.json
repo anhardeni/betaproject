@@ -5,6 +5,150 @@
   "kode_jenis_pungutan": "BK",
   "modified": "2023-06-21 14:39:51.425010",
   "nama_jenis_pungutan": "Bea Keluar",
+  "name": "BK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "BM",
+  "modified": "2023-06-21 14:39:51.439573",
+  "nama_jenis_pungutan": "Bea Masuk",
+  "name": "BM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "BMAD",
+  "modified": "2023-06-21 14:39:51.444106",
+  "nama_jenis_pungutan": "Bea Masuk Anti Dumping",
+  "name": "BMAD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "BMI",
+  "modified": "2023-06-21 14:39:51.448383",
+  "nama_jenis_pungutan": "Bea Masuk Imbalan",
+  "name": "BMI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "BMKITE",
+  "modified": "2023-06-21 14:39:51.452570",
+  "nama_jenis_pungutan": "Bea Masuk KITE",
+  "name": "BMKITE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "BMP",
+  "modified": "2023-06-21 14:39:51.456541",
+  "nama_jenis_pungutan": "Bea Masuk Pembalasan",
+  "name": "BMP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "BMTP",
+  "modified": "2023-06-21 14:39:51.460325",
+  "nama_jenis_pungutan": "Bea Masuk Tindakan Pengamanan",
+  "name": "BMTP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "CEA",
+  "modified": "2023-06-21 14:39:51.464211",
+  "nama_jenis_pungutan": "Cukai Etil Alkohol",
+  "name": "CEA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "CMEA",
+  "modified": "2023-06-21 14:39:51.468069",
+  "nama_jenis_pungutan": "Cukai Minuman Mengandung Etil Alkohol",
+  "name": "CMEA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "CTEM",
+  "modified": "2023-06-21 14:39:51.471927",
+  "nama_jenis_pungutan": "Cukai Tembakau",
+  "name": "CTEM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "DENDA",
+  "modified": "2023-06-21 14:39:51.476023",
+  "nama_jenis_pungutan": "Denda Administrasi Pabean",
+  "name": "DENDA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "DS",
+  "modified": "2023-06-21 14:39:51.479943",
+  "nama_jenis_pungutan": "Dana Sawit",
+  "name": "DS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "PNBP",
+  "modified": "2023-06-21 14:39:51.483657",
+  "nama_jenis_pungutan": "Penerimaan Negara Bukan Pajak",
+  "name": "PNBP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "PPH",
+  "modified": "2023-06-21 14:39:51.487406",
+  "nama_jenis_pungutan": "PPh Impor",
+  "name": "PPH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "PPHEKSPOR",
+  "modified": "2023-06-21 14:39:51.491283",
+  "nama_jenis_pungutan": "PPh Ekspor",
+  "name": "PPHEKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "PPN",
+  "modified": "2023-06-21 14:39:51.495935",
+  "nama_jenis_pungutan": "PPN Impor",
+  "name": "PPN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "PPNBM",
+  "modified": "2023-06-21 14:39:51.499923",
+  "nama_jenis_pungutan": "PPnBM Impor",
+  "name": "PPNBM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "PPNLOKAL",
+  "modified": "2023-06-21 14:39:51.503932",
+  "nama_jenis_pungutan": "PPN Dalam Negeri / Hasil Tembakau",
+  "name": "PPNLOKAL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pungutan",
+  "kode_jenis_pungutan": "BK",
+  "modified": "2023-06-21 14:39:51.425010",
+  "nama_jenis_pungutan": "Bea Keluar",
   "name": "1d3edaf68e"
  },
  {

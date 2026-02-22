@@ -1,0 +1,34 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ukuran Kontainer",
+  "kode_ukuran_kontainer": "40",
+  "modified": "2023-06-22 09:51:51.561889",
+  "nama_ukuran_kontainer": "40 FEET",
+  "name": "40"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ukuran Kontainer",
+  "kode_ukuran_kontainer": "45",
+  "modified": "2023-06-22 09:51:51.566853",
+  "nama_ukuran_kontainer": "45 FEET",
+  "name": "45"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ukuran Kontainer",
+  "kode_ukuran_kontainer": "60",
+  "modified": "2023-06-22 09:51:51.570586",
+  "nama_ukuran_kontainer": "60 FEET",
+  "name": "60"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ukuran Kontainer",
+  "kode_ukuran_kontainer": "20",
+  "modified": "2023-06-22 09:51:51.552145",
+  "nama_ukuran_kontainer": "20 FEET",
+  "name": "20"
+ }
+]

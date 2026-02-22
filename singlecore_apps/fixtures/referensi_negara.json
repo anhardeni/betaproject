@@ -1,0 +1,1570 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "AN",
+  "modified": "2023-06-22 08:34:32.368506",
+  "nama_negara": "NETHERLANDS ANTILLES",
+  "name": "AN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "AZ",
+  "modified": "2023-06-22 08:34:32.379926",
+  "nama_negara": "AZERBAIJAN",
+  "name": "AZ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BE",
+  "modified": "2023-06-22 08:34:32.384098",
+  "nama_negara": "BELGIUM",
+  "name": "BE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BH",
+  "modified": "2023-06-22 08:34:32.388390",
+  "nama_negara": "BAHRAIN",
+  "name": "BH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BJ",
+  "modified": "2023-06-22 08:34:32.392308",
+  "nama_negara": "BENIN",
+  "name": "BJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CC",
+  "modified": "2023-06-22 08:34:32.396117",
+  "nama_negara": "COCOS (KEELING) ISLANDS",
+  "name": "CC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CI",
+  "modified": "2023-06-22 08:34:32.400128",
+  "nama_negara": "COTE D'IVOIRE",
+  "name": "CI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CK",
+  "modified": "2023-06-22 08:34:32.404243",
+  "nama_negara": "COOK ISLANDS",
+  "name": "CK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CU",
+  "modified": "2023-06-22 08:34:32.409726",
+  "nama_negara": "CUBA",
+  "name": "CU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CV",
+  "modified": "2023-06-22 08:34:32.414798",
+  "nama_negara": "CAPE VERDE",
+  "name": "CV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CX",
+  "modified": "2023-06-22 08:34:32.419202",
+  "nama_negara": "CHRISTMAS ISLAND",
+  "name": "CX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CZ",
+  "modified": "2023-06-22 08:34:32.423853",
+  "nama_negara": "CZECH REPUBLIC",
+  "name": "CZ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "DJ",
+  "modified": "2023-06-22 08:34:32.429511",
+  "nama_negara": "DJIBOUTI",
+  "name": "DJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "DK",
+  "modified": "2023-06-22 08:34:32.433679",
+  "nama_negara": "DENMARK",
+  "name": "DK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "DO",
+  "modified": "2023-06-22 08:34:32.438348",
+  "nama_negara": "DOMINICAN REPUBLIC",
+  "name": "DO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "ER",
+  "modified": "2023-06-22 08:34:32.442601",
+  "nama_negara": "ERITREA",
+  "name": "ER"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "FI",
+  "modified": "2023-06-22 08:34:32.447845",
+  "nama_negara": "FINLAND",
+  "name": "FI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "FR",
+  "modified": "2023-06-22 08:34:32.452777",
+  "nama_negara": "FRANCE",
+  "name": "FR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GE",
+  "modified": "2023-06-22 08:34:32.457122",
+  "nama_negara": "GEORGIA",
+  "name": "GE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "HM",
+  "modified": "2023-06-22 08:34:32.461560",
+  "nama_negara": "HEARD ISLAND AND MCDONALD ISLANDS",
+  "name": "HM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "HU",
+  "modified": "2023-06-22 08:34:32.466514",
+  "nama_negara": "HUNGARY",
+  "name": "HU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "IL",
+  "modified": "2023-06-22 08:34:32.471293",
+  "nama_negara": "ISRAEL",
+  "name": "IL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "IO",
+  "modified": "2023-06-22 08:34:32.475634",
+  "nama_negara": "BRITISH INDIAN OCEAN TERRITORY",
+  "name": "IO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "IR",
+  "modified": "2023-06-22 08:34:32.480624",
+  "nama_negara": "IRAN, ISLAMIC REPUBLIC OF",
+  "name": "IR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "JM",
+  "modified": "2023-06-22 08:34:32.485453",
+  "nama_negara": "JAMAICA",
+  "name": "JM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "JO",
+  "modified": "2023-06-22 08:34:32.489834",
+  "nama_negara": "JORDAN",
+  "name": "JO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "KH",
+  "modified": "2023-06-22 08:34:32.494150",
+  "nama_negara": "CAMBODIA",
+  "name": "KH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "KI",
+  "modified": "2023-06-22 08:34:32.498259",
+  "nama_negara": "KIRIBATI",
+  "name": "KI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "KM",
+  "modified": "2023-06-22 08:34:32.502467",
+  "nama_negara": "COMOROS",
+  "name": "KM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "LA",
+  "modified": "2023-06-22 08:34:32.506459",
+  "nama_negara": "LAO PEOPLE'S DEMOCRATIC REPUBLIC",
+  "name": "LA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "LK",
+  "modified": "2023-06-22 08:34:32.510730",
+  "nama_negara": "SRI LANKA",
+  "name": "LK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "LS",
+  "modified": "2023-06-22 08:34:32.515365",
+  "nama_negara": "LESOTHO",
+  "name": "LS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "LV",
+  "modified": "2023-06-22 08:34:32.519708",
+  "nama_negara": "LATVIA",
+  "name": "LV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "MQ",
+  "modified": "2023-06-22 08:34:32.524259",
+  "nama_negara": "MARTINIQUE",
+  "name": "MQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "MT",
+  "modified": "2023-06-22 08:34:32.528479",
+  "nama_negara": "MALTA",
+  "name": "MT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "MZ",
+  "modified": "2023-06-22 08:34:32.533099",
+  "nama_negara": "MOZAMBIQUE",
+  "name": "MZ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "NA",
+  "modified": "2023-06-22 08:34:32.537210",
+  "nama_negara": "NAMIBIA",
+  "name": "NA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "NG",
+  "modified": "2023-06-22 08:34:32.541172",
+  "nama_negara": "NIGERIA",
+  "name": "NG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "NP",
+  "modified": "2023-06-22 08:34:32.545804",
+  "nama_negara": "NEPAL",
+  "name": "NP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "NU",
+  "modified": "2023-06-22 08:34:32.549809",
+  "nama_negara": "NIUE",
+  "name": "NU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "Nh",
+  "modified": "2023-06-22 08:34:32.553728",
+  "nama_negara": "NASHTAx",
+  "name": "Nh"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "PA",
+  "modified": "2023-06-22 08:34:32.605158",
+  "nama_negara": "PANAMA",
+  "name": "PA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "PE",
+  "modified": "2023-06-22 08:34:32.609136",
+  "nama_negara": "PERU",
+  "name": "PE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "PG",
+  "modified": "2023-06-22 08:34:32.613297",
+  "nama_negara": "PAPUA NEW GUINEA",
+  "name": "PG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "PH",
+  "modified": "2023-06-22 08:34:32.617074",
+  "nama_negara": "PHILIPPINES",
+  "name": "PH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "PT",
+  "modified": "2023-06-22 08:34:32.620947",
+  "nama_negara": "PORTUGAL",
+  "name": "PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SB",
+  "modified": "2023-06-22 08:34:32.625186",
+  "nama_negara": "SOLOMON ISLANDS",
+  "name": "SB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SC",
+  "modified": "2023-06-22 08:34:32.629514",
+  "nama_negara": "SEYCHELLES",
+  "name": "SC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SE",
+  "modified": "2023-06-22 08:34:32.633433",
+  "nama_negara": "SWEDEN",
+  "name": "SE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SK",
+  "modified": "2023-06-22 08:34:32.637201",
+  "nama_negara": "SLOVAKIA",
+  "name": "SK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SS",
+  "modified": "2023-06-22 08:34:32.640777",
+  "nama_negara": "South Sudan",
+  "name": "SS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "TF",
+  "modified": "2023-06-22 08:34:32.644246",
+  "nama_negara": "FRENCH SOUTHERN TERRITORIES",
+  "name": "TF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "TG",
+  "modified": "2023-06-22 08:34:32.648416",
+  "nama_negara": "TOGO",
+  "name": "TG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "TO",
+  "modified": "2023-06-22 08:34:32.652617",
+  "nama_negara": "TONGA",
+  "name": "TO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "UA",
+  "modified": "2023-06-22 08:34:32.656367",
+  "nama_negara": "UKRAINE",
+  "name": "UA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "UG",
+  "modified": "2023-06-22 08:34:32.659868",
+  "nama_negara": "UGANDA",
+  "name": "UG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "AL",
+  "modified": "2023-06-22 08:34:32.663426",
+  "nama_negara": "ALBANIA",
+  "name": "AL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "AO",
+  "modified": "2023-06-22 08:34:32.667136",
+  "nama_negara": "ANGOLA",
+  "name": "AO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "AT",
+  "modified": "2023-06-22 08:34:32.671162",
+  "nama_negara": "AUSTRIA",
+  "name": "AT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BA",
+  "modified": "2023-06-22 08:34:32.675091",
+  "nama_negara": "BOSNIA AND HERZEGOVINA",
+  "name": "BA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BB",
+  "modified": "2023-06-22 08:34:32.680133",
+  "nama_negara": "BARBADOS",
+  "name": "BB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BO",
+  "modified": "2023-06-22 08:34:32.684812",
+  "nama_negara": "BOLIVIA",
+  "name": "BO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CD",
+  "modified": "2023-06-22 08:34:32.689628",
+  "nama_negara": "CONGO, THE DEMOCRATIC REPUBLIC OF THE",
+  "name": "CD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "DE",
+  "modified": "2023-06-22 08:34:32.693211",
+  "nama_negara": "GERMANY",
+  "name": "DE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "DM",
+  "modified": "2023-06-22 08:34:32.696778",
+  "nama_negara": "DOMINICA",
+  "name": "DM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "EH",
+  "modified": "2023-06-22 08:34:32.700904",
+  "nama_negara": "WESTERN SAHARA",
+  "name": "EH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "ET",
+  "modified": "2023-06-22 08:34:32.704849",
+  "nama_negara": "ETHIOPIA",
+  "name": "ET"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "FJ",
+  "modified": "2023-06-22 08:34:32.708815",
+  "nama_negara": "FIJI",
+  "name": "FJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "FM",
+  "modified": "2023-06-22 08:34:32.713824",
+  "nama_negara": "MICRONESIA, FEDERATED STATES OF",
+  "name": "FM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GA",
+  "modified": "2023-06-22 08:34:32.718443",
+  "nama_negara": "GABON",
+  "name": "GA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "HN",
+  "modified": "2023-06-22 08:34:32.722464",
+  "nama_negara": "HONDURAS",
+  "name": "HN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "IN",
+  "modified": "2023-06-22 08:34:32.726436",
+  "nama_negara": "INDIA",
+  "name": "IN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "IQ",
+  "modified": "2023-06-22 08:34:32.730186",
+  "nama_negara": "IRAQ",
+  "name": "IQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "IS",
+  "modified": "2023-06-22 08:34:32.734324",
+  "nama_negara": "ICELAND",
+  "name": "IS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "KN",
+  "modified": "2023-06-22 08:34:32.738597",
+  "nama_negara": "SAINT KITTS AND NEVIS",
+  "name": "KN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "LB",
+  "modified": "2023-06-22 08:34:32.742180",
+  "nama_negara": "LEBANON",
+  "name": "LB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "LR",
+  "modified": "2023-06-22 08:34:32.746749",
+  "nama_negara": "LIBERIA",
+  "name": "LR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "LT",
+  "modified": "2023-06-22 08:34:32.752288",
+  "nama_negara": "LITHUANIA",
+  "name": "LT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "MG",
+  "modified": "2023-06-22 08:34:32.756301",
+  "nama_negara": "MADAGASCAR",
+  "name": "MG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "ML",
+  "modified": "2023-06-22 08:34:32.760659",
+  "nama_negara": "MALI",
+  "name": "ML"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "MP",
+  "modified": "2023-06-22 08:34:32.765092",
+  "nama_negara": "NORTHERN MARIANA ISLANDS",
+  "name": "MP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "NF",
+  "modified": "2023-06-22 08:34:32.769398",
+  "nama_negara": "NORFOLK ISLAND",
+  "name": "NF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "NL",
+  "modified": "2023-06-22 08:34:32.773470",
+  "nama_negara": "NETHERLANDS",
+  "name": "NL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "NZ",
+  "modified": "2023-06-22 08:34:32.777304",
+  "nama_negara": "NEW ZEALAND",
+  "name": "NZ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "PL",
+  "modified": "2023-06-22 08:34:32.782073",
+  "nama_negara": "POLAND",
+  "name": "PL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "PN",
+  "modified": "2023-06-22 08:34:32.786170",
+  "nama_negara": "PITCAIRN",
+  "name": "PN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "PR",
+  "modified": "2023-06-22 08:34:32.789908",
+  "nama_negara": "PUERTO RICO",
+  "name": "PR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "PW",
+  "modified": "2023-06-22 08:34:32.794110",
+  "nama_negara": "PALAU",
+  "name": "PW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "RS",
+  "modified": "2023-06-22 08:34:32.798031",
+  "nama_negara": "SERBIA",
+  "name": "RS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SA",
+  "modified": "2023-06-22 08:34:32.801513",
+  "nama_negara": "SAUDI ARABIA",
+  "name": "SA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SD",
+  "modified": "2023-06-22 08:34:32.805576",
+  "nama_negara": "SUDAN",
+  "name": "SD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SG",
+  "modified": "2023-06-22 08:34:32.809697",
+  "nama_negara": "SINGAPORE",
+  "name": "SG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SH",
+  "modified": "2023-06-22 08:34:32.813969",
+  "nama_negara": "SAINT HELENA",
+  "name": "SH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SN",
+  "modified": "2023-06-22 08:34:32.818093",
+  "nama_negara": "SENEGAL",
+  "name": "SN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "ST",
+  "modified": "2023-06-22 08:34:32.821845",
+  "nama_negara": "SAO TOME AND PRINCIPE",
+  "name": "ST"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "TJ",
+  "modified": "2023-06-22 08:34:32.825918",
+  "nama_negara": "TAJIKISTAN",
+  "name": "TJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "TK",
+  "modified": "2023-06-22 08:34:32.830362",
+  "nama_negara": "TOKELAU",
+  "name": "TK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "TT",
+  "modified": "2023-06-22 08:34:32.834348",
+  "nama_negara": "TRINIDAD AND TOBAGO",
+  "name": "TT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "TZ",
+  "modified": "2023-06-22 08:34:32.838608",
+  "nama_negara": "TANZANIA, UNITED REPUBLIC OF",
+  "name": "TZ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "US",
+  "modified": "2023-06-22 08:34:32.842763",
+  "nama_negara": "UNITED STATES",
+  "name": "US"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "VE",
+  "modified": "2023-06-22 08:34:32.847507",
+  "nama_negara": "VENEZUELA",
+  "name": "VE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "VG",
+  "modified": "2023-06-22 08:34:32.851206",
+  "nama_negara": "VIRGIN ISLANDS, BRITISH",
+  "name": "VG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "VU",
+  "modified": "2023-06-22 08:34:32.855053",
+  "nama_negara": "VANUATU",
+  "name": "VU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "WF",
+  "modified": "2023-06-22 08:34:32.858985",
+  "nama_negara": "WALLIS AND FUTUNA",
+  "name": "WF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "YU",
+  "modified": "2023-06-22 08:34:32.863664",
+  "nama_negara": "YUGOSLAVIA",
+  "name": "YU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "AF",
+  "modified": "2023-06-22 08:34:32.867377",
+  "nama_negara": "AFGHANISTAN",
+  "name": "AF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "AQ",
+  "modified": "2023-06-22 08:34:32.871348",
+  "nama_negara": "ANTARCTICA",
+  "name": "AQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BL",
+  "modified": "2023-06-22 08:34:32.875474",
+  "nama_negara": "Saint Barthï¿½lemy",
+  "name": "BL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BT",
+  "modified": "2023-06-22 08:34:32.879756",
+  "nama_negara": "BHUTAN",
+  "name": "BT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BZ",
+  "modified": "2023-06-22 08:34:32.883697",
+  "nama_negara": "BELIZE",
+  "name": "BZ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CG",
+  "modified": "2023-06-22 08:34:32.887705",
+  "nama_negara": "CONGO",
+  "name": "CG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CN",
+  "modified": "2023-06-22 08:34:32.891636",
+  "nama_negara": "CHINA",
+  "name": "CN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CR",
+  "modified": "2023-06-22 08:34:32.895558",
+  "nama_negara": "COSTA RICA",
+  "name": "CR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CW",
+  "modified": "2023-06-22 08:34:32.899102",
+  "nama_negara": "Curaï¿½ao",
+  "name": "CW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CY",
+  "modified": "2023-06-22 08:34:32.903460",
+  "nama_negara": "CYPRUS",
+  "name": "CY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "DZ",
+  "modified": "2023-06-22 08:34:32.907563",
+  "nama_negara": "ALGERIA",
+  "name": "DZ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "EE",
+  "modified": "2023-06-22 08:34:32.911396",
+  "nama_negara": "ESTONIA",
+  "name": "EE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "ES",
+  "modified": "2023-06-22 08:34:32.915703",
+  "nama_negara": "SPAIN",
+  "name": "ES"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "FK",
+  "modified": "2023-06-22 08:34:32.920031",
+  "nama_negara": "FALKLAND ISLANDS (MALVINAS)",
+  "name": "FK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GF",
+  "modified": "2023-06-22 08:34:32.923772",
+  "nama_negara": "FRENCH GUIANA",
+  "name": "GF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GH",
+  "modified": "2023-06-22 08:34:32.927934",
+  "nama_negara": "GHANA",
+  "name": "GH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GI",
+  "modified": "2023-06-22 08:34:32.931860",
+  "nama_negara": "GIBRALTAR",
+  "name": "GI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GQ",
+  "modified": "2023-06-22 08:34:32.935765",
+  "nama_negara": "EQUATORIAL GUINEA",
+  "name": "GQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GR",
+  "modified": "2023-06-22 08:34:32.939591",
+  "nama_negara": "GREECE",
+  "name": "GR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GS",
+  "modified": "2023-06-22 08:34:32.943556",
+  "nama_negara": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISL",
+  "name": "GS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GY",
+  "modified": "2023-06-22 08:34:32.948651",
+  "nama_negara": "GUYANA",
+  "name": "GY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "HT",
+  "modified": "2023-06-22 08:34:32.952986",
+  "nama_negara": "HAITI",
+  "name": "HT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "IE",
+  "modified": "2023-06-22 08:34:32.961036",
+  "nama_negara": "IRELAND",
+  "name": "IE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "KP",
+  "modified": "2023-06-22 08:34:32.964642",
+  "nama_negara": "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF",
+  "name": "KP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "KW",
+  "modified": "2023-06-22 08:34:32.968931",
+  "nama_negara": "KUWAIT",
+  "name": "KW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "LY",
+  "modified": "2023-06-22 08:34:32.972675",
+  "nama_negara": "LIBYAN ARAB JAMAHIRIYA",
+  "name": "LY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "MR",
+  "modified": "2023-06-22 08:34:32.976470",
+  "nama_negara": "MAURITANIA",
+  "name": "MR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "NI",
+  "modified": "2023-06-22 08:34:32.984674",
+  "nama_negara": "NICARAGUA",
+  "name": "NI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "NO",
+  "modified": "2023-06-22 08:34:32.989165",
+  "nama_negara": "NORWAY",
+  "name": "NO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "PF",
+  "modified": "2023-06-22 08:34:32.997549",
+  "nama_negara": "FRENCH POLYNESIA",
+  "name": "PF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "QA",
+  "modified": "2023-06-22 08:34:33.001494",
+  "nama_negara": "QATAR",
+  "name": "QA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "RE",
+  "modified": "2023-06-22 08:34:33.005628",
+  "nama_negara": "REUNION",
+  "name": "RE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "RU",
+  "modified": "2023-06-22 08:34:33.009794",
+  "nama_negara": "RUSSIAN FEDERATION",
+  "name": "RU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SJ",
+  "modified": "2023-06-22 08:34:33.014573",
+  "nama_negara": "SVALBARD AND JAN MAYEN",
+  "name": "SJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SO",
+  "modified": "2023-06-22 08:34:33.018486",
+  "nama_negara": "SOMALIA",
+  "name": "SO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SR",
+  "modified": "2023-06-22 08:34:33.022355",
+  "nama_negara": "SURINAME",
+  "name": "SR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "SV",
+  "modified": "2023-06-22 08:34:33.026313",
+  "nama_negara": "EL SALVADOR",
+  "name": "SV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "TD",
+  "modified": "2023-06-22 08:34:33.030255",
+  "nama_negara": "CHAD",
+  "name": "TD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "TH",
+  "modified": "2023-06-22 08:34:33.034198",
+  "nama_negara": "THAILAND",
+  "name": "TH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "TP",
+  "modified": "2023-06-22 08:34:33.038627",
+  "nama_negara": "EAST TIMOR",
+  "name": "TP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "TW",
+  "modified": "2023-06-22 08:34:33.042344",
+  "nama_negara": "TAIWAN, PROVINCE OF CHINA",
+  "name": "TW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "UY",
+  "modified": "2023-06-22 08:34:33.046520",
+  "nama_negara": "URUGUAY",
+  "name": "UY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "VN",
+  "modified": "2023-06-22 08:34:33.050445",
+  "nama_negara": "VIET NAM",
+  "name": "VN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "WS",
+  "modified": "2023-06-22 08:34:33.053963",
+  "nama_negara": "SAMOA",
+  "name": "WS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "YE",
+  "modified": "2023-06-22 08:34:33.057638",
+  "nama_negara": "YEMEN",
+  "name": "YE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "YT",
+  "modified": "2023-06-22 08:34:33.061370",
+  "nama_negara": "MAYOTTE",
+  "name": "YT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "ZA",
+  "modified": "2023-06-22 08:34:33.064766",
+  "nama_negara": "SOUTH AFRICA",
+  "name": "ZA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "ZW",
+  "modified": "2023-06-22 08:34:33.068695",
+  "nama_negara": "ZIMBABWE",
+  "name": "ZW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "AE",
+  "modified": "2023-06-22 08:34:33.072533",
+  "nama_negara": "UNITED ARAB EMIRATES",
+  "name": "AE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "AG",
+  "modified": "2023-06-22 08:34:33.077008",
+  "nama_negara": "ANTIGUA AND BARBUDA",
+  "name": "AG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "AI",
+  "modified": "2023-06-22 08:34:33.081198",
+  "nama_negara": "ANGUILLA",
+  "name": "AI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "AM",
+  "modified": "2023-06-22 08:34:33.084952",
+  "nama_negara": "ARMENIA",
+  "name": "AM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "AR",
+  "modified": "2023-06-22 08:34:33.088790",
+  "nama_negara": "ARGENTINA",
+  "name": "AR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BD",
+  "modified": "2023-06-22 08:34:33.092861",
+  "nama_negara": "BANGLADESH",
+  "name": "BD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BF",
+  "modified": "2023-06-22 08:34:33.097140",
+  "nama_negara": "BURKINA FASO",
+  "name": "BF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BG",
+  "modified": "2023-06-22 08:34:33.101112",
+  "nama_negara": "BULGARIA",
+  "name": "BG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BI",
+  "modified": "2023-06-22 08:34:33.104929",
+  "nama_negara": "BURUNDI",
+  "name": "BI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BQ",
+  "modified": "2023-06-22 08:34:33.109228",
+  "nama_negara": "Bonaire, Sint Eustatius and Saba",
+  "name": "BQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BS",
+  "modified": "2023-06-22 08:34:33.113169",
+  "nama_negara": "BAHAMAS",
+  "name": "BS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "BV",
+  "modified": "2023-06-22 08:34:33.117255",
+  "nama_negara": "BOUVET ISLAND",
+  "name": "BV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CA",
+  "modified": "2023-06-22 08:34:33.121175",
+  "nama_negara": "CANADA",
+  "name": "CA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CH",
+  "modified": "2023-06-22 08:34:33.125239",
+  "nama_negara": "SWITZERLAND",
+  "name": "CH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CL",
+  "modified": "2023-06-22 08:34:33.129464",
+  "nama_negara": "CHILE",
+  "name": "CL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CM",
+  "modified": "2023-06-22 08:34:33.133456",
+  "nama_negara": "CAMEROON",
+  "name": "CM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "CO",
+  "modified": "2023-06-22 08:34:33.137760",
+  "nama_negara": "COLOMBIA",
+  "name": "CO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "EC",
+  "modified": "2023-06-22 08:34:33.141721",
+  "nama_negara": "ECUADOR",
+  "name": "EC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GB",
+  "modified": "2023-06-22 08:34:33.145336",
+  "nama_negara": "UNITED KINGDOM",
+  "name": "GB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GD",
+  "modified": "2023-06-22 08:34:33.148969",
+  "nama_negara": "GRENADA",
+  "name": "GD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GG",
+  "modified": "2023-06-22 08:34:33.152329",
+  "nama_negara": "Guernsey",
+  "name": "GG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GM",
+  "modified": "2023-06-22 08:34:33.157245",
+  "nama_negara": "GAMBIA",
+  "name": "GM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GP",
+  "modified": "2023-06-22 08:34:33.160870",
+  "nama_negara": "GUADELOUPE",
+  "name": "GP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "GW",
+  "modified": "2023-06-22 08:34:33.164615",
+  "nama_negara": "GUINEA-BISSAU",
+  "name": "GW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "HK",
+  "modified": "2023-06-22 08:34:33.168783",
+  "nama_negara": "HONG KONG",
+  "name": "HK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "IM",
+  "modified": "2023-06-22 08:34:33.172618",
+  "nama_negara": "Isle of Man",
+  "name": "IM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "KR",
+  "modified": "2023-06-22 08:34:33.176308",
+  "nama_negara": "KOREA, REPUBLIC OF",
+  "name": "KR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "KY",
+  "modified": "2023-06-22 08:34:33.181072",
+  "nama_negara": "CAYMAN ISLANDS",
+  "name": "KY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "KZ",
+  "modified": "2023-06-22 08:34:33.184618",
+  "nama_negara": "KAZAKSTAN",
+  "name": "KZ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "LC",
+  "modified": "2023-06-22 08:34:33.188205",
+  "nama_negara": "SAINT LUCIA",
+  "name": "LC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "LU",
+  "modified": "2023-06-22 08:34:33.191900",
+  "nama_negara": "LUXEMBOURG",
+  "name": "LU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "MA",
+  "modified": "2023-06-22 08:34:33.196203",
+  "nama_negara": "MOROCCO",
+  "name": "MA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "ME",
+  "modified": "2023-06-22 08:34:33.199751",
+  "nama_negara": "Montenegro",
+  "name": "ME"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "MF",
+  "modified": "2023-06-22 08:34:33.204278",
+  "nama_negara": "Saint Martin (French Part)",
+  "name": "MF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "MM",
+  "modified": "2023-06-22 08:34:33.208148",
+  "nama_negara": "MYANMAR",
+  "name": "MM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "MS",
+  "modified": "2023-06-22 08:34:33.212179",
+  "nama_negara": "MONTSERRAT",
+  "name": "MS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "MU",
+  "modified": "2023-06-22 08:34:33.216537",
+  "nama_negara": "MAURITIUS",
+  "name": "MU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "MY",
+  "modified": "2023-06-22 08:34:33.220605",
+  "nama_negara": "MALAYSIA",
+  "name": "MY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "NE",
+  "modified": "2023-06-22 08:34:33.224339",
+  "nama_negara": "NIGER",
+  "name": "NE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "NR",
+  "modified": "2023-06-22 08:34:33.228592",
+  "nama_negara": "NAURU",
+  "name": "NR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "OM",
+  "modified": "2023-06-22 08:34:33.236990",
+  "nama_negara": "OMAN",
+  "name": "OM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "PK",
+  "modified": "2023-06-22 08:34:33.240937",
+  "nama_negara": "PAKISTAN",
+  "name": "PK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Negara",
+  "kode_negara": "ID",
+  "modified": "2023-06-22 08:34:32.957277",
+  "nama_negara": "INDONESIA",
+  "name": "ID"
+ }
+]

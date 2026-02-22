@@ -1,0 +1,66 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kondisi Barang",
+  "kode_kondisi_barang": "2",
+  "modified": "2023-06-22 08:28:53.560189",
+  "nama_kondisi_barang": "Baru",
+  "name": "2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kondisi Barang",
+  "kode_kondisi_barang": "3",
+  "modified": "2023-06-22 08:28:53.564242",
+  "nama_kondisi_barang": "Bekas",
+  "name": "3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kondisi Barang",
+  "kode_kondisi_barang": "4",
+  "modified": "2023-06-22 08:28:53.567682",
+  "nama_kondisi_barang": "Segar",
+  "name": "4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kondisi Barang",
+  "kode_kondisi_barang": "5",
+  "modified": "2023-06-22 08:28:53.571035",
+  "nama_kondisi_barang": "Beku",
+  "name": "5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kondisi Barang",
+  "kode_kondisi_barang": "6",
+  "modified": "2023-06-22 08:28:53.575072",
+  "nama_kondisi_barang": "Baik/Baru",
+  "name": "6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kondisi Barang",
+  "kode_kondisi_barang": "7",
+  "modified": "2023-06-22 08:28:53.579288",
+  "nama_kondisi_barang": "Baik/Beku",
+  "name": "7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kondisi Barang",
+  "kode_kondisi_barang": "8",
+  "modified": "2023-06-22 08:28:53.583123",
+  "nama_kondisi_barang": "Baik/Bekas",
+  "name": "8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kondisi Barang",
+  "kode_kondisi_barang": "1",
+  "modified": "2023-06-22 08:28:53.545101",
+  "nama_kondisi_barang": "Baik",
+  "name": "1"
+ }
+]

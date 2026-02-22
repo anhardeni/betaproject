@@ -1,0 +1,5442 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAAS",
+  "modified": "2023-10-02 09:01:51.997624",
+  "nama_pelabuhan_dn": "Apalapsili",
+  "name": "IDAAS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDABU",
+  "modified": "2023-10-02 09:01:52.010067",
+  "nama_pelabuhan_dn": "Atambua",
+  "name": "IDABU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDADB",
+  "modified": "2023-10-02 09:01:52.014482",
+  "nama_pelabuhan_dn": "Adang Bay",
+  "name": "IDADB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAEG",
+  "modified": "2023-10-02 09:01:52.018762",
+  "nama_pelabuhan_dn": "Aekgodang",
+  "name": "IDAEG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAGD",
+  "modified": "2023-10-02 09:01:52.022479",
+  "nama_pelabuhan_dn": "Anggi",
+  "name": "IDAGD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAHI",
+  "modified": "2023-10-02 09:01:52.026735",
+  "nama_pelabuhan_dn": "Amahai",
+  "name": "IDAHI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAJN",
+  "modified": "2023-10-02 09:01:52.030524",
+  "nama_pelabuhan_dn": "Arjuna, Java",
+  "name": "IDAJN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAKE",
+  "modified": "2023-10-02 09:01:52.035059",
+  "nama_pelabuhan_dn": "Akeselaka",
+  "name": "IDAKE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAMA",
+  "modified": "2023-10-02 09:01:52.038981",
+  "nama_pelabuhan_dn": "Amamapare, Ij",
+  "name": "IDAMA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAMB",
+  "modified": "2023-10-02 09:01:52.042745",
+  "nama_pelabuhan_dn": "Ambon",
+  "name": "IDAMB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAMI",
+  "modified": "2023-10-02 09:01:52.046592",
+  "nama_pelabuhan_dn": "Mataram / Selaparang (u)",
+  "name": "IDAMI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAMP",
+  "modified": "2023-10-02 09:01:52.050487",
+  "nama_pelabuhan_dn": "Ampenan",
+  "name": "IDAMP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAMQ",
+  "modified": "2023-10-02 09:01:52.054204",
+  "nama_pelabuhan_dn": "Ambon / Pattimura/laha (u)",
+  "name": "IDAMQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAMU",
+  "modified": "2023-10-02 09:01:52.058111",
+  "nama_pelabuhan_dn": "Amurang",
+  "name": "IDAMU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDANG",
+  "modified": "2023-10-02 09:01:52.061778",
+  "nama_pelabuhan_dn": "Angar",
+  "name": "IDANG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDANR",
+  "modified": "2023-10-02 09:01:52.065095",
+  "nama_pelabuhan_dn": "Anyer Kidul",
+  "name": "IDANR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAPI",
+  "modified": "2023-10-02 09:01:52.069812",
+  "nama_pelabuhan_dn": "Apiapi",
+  "name": "IDAPI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAPN",
+  "modified": "2023-10-02 09:01:52.073631",
+  "nama_pelabuhan_dn": "Ampana",
+  "name": "IDAPN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDARB",
+  "modified": "2023-10-02 09:01:52.077503",
+  "nama_pelabuhan_dn": "Aroe Bay",
+  "name": "IDARB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDARD",
+  "modified": "2023-10-02 09:01:52.081344",
+  "nama_pelabuhan_dn": "Alor Island",
+  "name": "IDARD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDARJ",
+  "modified": "2023-10-02 09:01:52.085197",
+  "nama_pelabuhan_dn": "Arjuna, Java",
+  "name": "IDARJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDARO",
+  "modified": "2023-10-02 09:01:52.088940",
+  "nama_pelabuhan_dn": "Arosbaya",
+  "name": "IDARO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDASA",
+  "modified": "2023-10-02 09:01:52.092747",
+  "nama_pelabuhan_dn": "Asam Asam",
+  "name": "IDASA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDASI",
+  "modified": "2023-10-02 09:01:52.097135",
+  "nama_pelabuhan_dn": "Asike",
+  "name": "IDASI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDATA",
+  "modified": "2023-10-02 09:01:52.101159",
+  "nama_pelabuhan_dn": "Atapupu",
+  "name": "IDATA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAUN",
+  "modified": "2023-10-02 09:01:52.105035",
+  "nama_pelabuhan_dn": "Blang Lancang (arun)",
+  "name": "IDAUN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAUT",
+  "modified": "2023-10-02 09:01:52.108983",
+  "nama_pelabuhan_dn": "Atauro",
+  "name": "IDAUT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDAYW",
+  "modified": "2023-10-02 09:01:52.112544",
+  "nama_pelabuhan_dn": "Ayawasi",
+  "name": "IDAYW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBAA",
+  "modified": "2023-10-02 09:01:52.115870",
+  "nama_pelabuhan_dn": "Baa",
+  "name": "IDBAA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBAD",
+  "modified": "2023-10-02 09:01:52.119769",
+  "nama_pelabuhan_dn": "Banda Naira",
+  "name": "IDBAD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBAG",
+  "modified": "2023-10-02 09:01:52.123118",
+  "nama_pelabuhan_dn": "Bagan Siapi-api",
+  "name": "IDBAG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBAJ",
+  "modified": "2023-10-02 09:01:52.126769",
+  "nama_pelabuhan_dn": "Bajo'e",
+  "name": "IDBAJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBAK",
+  "modified": "2023-10-02 09:01:52.130294",
+  "nama_pelabuhan_dn": "Batu Kilat",
+  "name": "IDBAK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBAL",
+  "modified": "2023-10-02 09:01:52.133946",
+  "nama_pelabuhan_dn": "Balantang/malili",
+  "name": "IDBAL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBAN",
+  "modified": "2023-10-02 09:01:52.137405",
+  "nama_pelabuhan_dn": "Banjarmasin",
+  "name": "IDBAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBAO",
+  "modified": "2023-10-02 09:01:52.141481",
+  "nama_pelabuhan_dn": "Bakongan",
+  "name": "IDBAO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBAR",
+  "modified": "2023-10-02 09:01:52.145391",
+  "nama_pelabuhan_dn": "Bandar Khalipah",
+  "name": "IDBAR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBCH",
+  "modified": "2023-10-02 09:01:52.149335",
+  "nama_pelabuhan_dn": "Baucau (u)",
+  "name": "IDBCH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBDJ",
+  "modified": "2023-10-02 09:01:52.152738",
+  "nama_pelabuhan_dn": "Banjar Masin /samsudin Noor (u)",
+  "name": "IDBDJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBDL",
+  "modified": "2023-10-02 09:01:52.156553",
+  "nama_pelabuhan_dn": "Bandul",
+  "name": "IDBDL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBDO",
+  "modified": "2023-10-02 09:01:52.160671",
+  "nama_pelabuhan_dn": "Bandung / Husein Sastranegara (u)",
+  "name": "IDBDO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBDS",
+  "modified": "2023-10-02 09:01:52.163977",
+  "nama_pelabuhan_dn": "Badas Sumbawa",
+  "name": "IDBDS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBEJ",
+  "modified": "2023-10-02 09:01:52.167952",
+  "nama_pelabuhan_dn": "Berau",
+  "name": "IDBEJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBEK",
+  "modified": "2023-10-02 09:01:52.171822",
+  "nama_pelabuhan_dn": "Bekapai",
+  "name": "IDBEK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBEN",
+  "modified": "2023-10-02 09:01:52.175866",
+  "nama_pelabuhan_dn": "Benete",
+  "name": "IDBEN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBET",
+  "modified": "2023-10-02 09:01:52.179891",
+  "nama_pelabuhan_dn": "Belida Terminal",
+  "name": "IDBET"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBGA",
+  "modified": "2023-10-02 09:01:52.183860",
+  "nama_pelabuhan_dn": "Bosong Telaga",
+  "name": "IDBGA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBGG",
+  "modified": "2023-10-02 09:01:52.187800",
+  "nama_pelabuhan_dn": "Banggai",
+  "name": "IDBGG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBIK",
+  "modified": "2023-10-02 09:01:52.191512",
+  "nama_pelabuhan_dn": "Biak / Frans Kasiepo (u)",
+  "name": "IDBIK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBIN",
+  "modified": "2023-10-02 09:01:52.195129",
+  "nama_pelabuhan_dn": "Bintoro",
+  "name": "IDBIN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBIR",
+  "modified": "2023-10-02 09:01:52.198817",
+  "nama_pelabuhan_dn": "Biringkassi",
+  "name": "IDBIR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBIT",
+  "modified": "2023-10-02 09:01:52.202863",
+  "nama_pelabuhan_dn": "Bitung",
+  "name": "IDBIT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBJG",
+  "modified": "2023-10-02 09:01:52.206614",
+  "nama_pelabuhan_dn": "Bolaang",
+  "name": "IDBJG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBJU",
+  "modified": "2023-10-02 09:01:52.210527",
+  "nama_pelabuhan_dn": "Banyuwangi",
+  "name": "IDBJU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBJW",
+  "modified": "2023-10-02 09:01:52.214341",
+  "nama_pelabuhan_dn": "Bajawa",
+  "name": "IDBJW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBKA",
+  "modified": "2023-10-02 09:01:52.218104",
+  "nama_pelabuhan_dn": "Bekasi",
+  "name": "IDBKA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBKH",
+  "modified": "2023-10-02 09:01:52.221638",
+  "nama_pelabuhan_dn": "Bakauheni",
+  "name": "IDBKH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBKI",
+  "modified": "2023-10-02 09:01:52.225246",
+  "nama_pelabuhan_dn": "Biring Kassi",
+  "name": "IDBKI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBKL",
+  "modified": "2023-10-02 09:01:52.229219",
+  "nama_pelabuhan_dn": "Bangkalan",
+  "name": "IDBKL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBKM",
+  "modified": "2023-10-02 09:01:52.232885",
+  "nama_pelabuhan_dn": "Bulukumba",
+  "name": "IDBKM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBKS",
+  "modified": "2023-10-02 09:01:52.236577",
+  "nama_pelabuhan_dn": "Bengkulu / Padang Kemiling (u)",
+  "name": "IDBKS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBKU",
+  "modified": "2023-10-02 09:01:52.240615",
+  "nama_pelabuhan_dn": "Bengkulu",
+  "name": "IDBKU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBLC",
+  "modified": "2023-10-02 09:01:52.244201",
+  "nama_pelabuhan_dn": "Batu Licin",
+  "name": "IDBLC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBLG",
+  "modified": "2023-10-02 09:01:52.247420",
+  "nama_pelabuhan_dn": "Balongan",
+  "name": "IDBLG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBLI",
+  "modified": "2023-10-02 09:01:52.251294",
+  "nama_pelabuhan_dn": "Blinju, Banka",
+  "name": "IDBLI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBLJ",
+  "modified": "2023-10-02 09:01:52.254865",
+  "nama_pelabuhan_dn": "Belinju",
+  "name": "IDBLJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBLL",
+  "modified": "2023-10-02 09:01:52.258347",
+  "nama_pelabuhan_dn": "Blang Lancang, St",
+  "name": "IDBLL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBLS",
+  "modified": "2023-10-02 09:01:52.262181",
+  "nama_pelabuhan_dn": "Bengkalis",
+  "name": "IDBLS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBLT",
+  "modified": "2023-10-02 09:01:52.266193",
+  "nama_pelabuhan_dn": "Belitung",
+  "name": "IDBLT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBLV",
+  "modified": "2023-10-02 09:01:52.270404",
+  "nama_pelabuhan_dn": "Beliling",
+  "name": "IDBLV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBLW",
+  "modified": "2023-10-02 09:01:52.273964",
+  "nama_pelabuhan_dn": "Belawan",
+  "name": "IDBLW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBMT",
+  "modified": "2023-10-02 09:01:52.277556",
+  "nama_pelabuhan_dn": "Bima Terminal, Jv",
+  "name": "IDBMT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBMU",
+  "modified": "2023-10-02 09:01:52.281292",
+  "nama_pelabuhan_dn": "Bima",
+  "name": "IDBMU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBND",
+  "modified": "2023-10-02 09:01:52.284849",
+  "nama_pelabuhan_dn": "Bandung (ptt/gede Bage)",
+  "name": "IDBND"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBNG",
+  "modified": "2023-10-02 09:01:52.288609",
+  "nama_pelabuhan_dn": "Bonggala",
+  "name": "IDBNG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBNT",
+  "modified": "2023-10-02 09:01:52.292305",
+  "nama_pelabuhan_dn": "Banta Eng",
+  "name": "IDBNT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBOA",
+  "modified": "2023-10-02 09:01:52.296031",
+  "nama_pelabuhan_dn": "Benoa/loloan",
+  "name": "IDBOA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBOG",
+  "modified": "2023-10-02 09:01:52.299706",
+  "nama_pelabuhan_dn": "Bogor",
+  "name": "IDBOG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBPD",
+  "modified": "2023-10-02 09:01:52.303556",
+  "nama_pelabuhan_dn": "Belakang Padang",
+  "name": "IDBPD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBPN",
+  "modified": "2023-10-02 09:01:52.307248",
+  "nama_pelabuhan_dn": "Balikpapan /sepinggan (u)",
+  "name": "IDBPN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBPP",
+  "modified": "2023-10-02 09:01:52.310952",
+  "nama_pelabuhan_dn": "Balikpapan",
+  "name": "IDBPP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBTG",
+  "modified": "2023-10-02 09:01:52.314779",
+  "nama_pelabuhan_dn": "Bontang",
+  "name": "IDBTG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBTH",
+  "modified": "2023-10-02 09:01:52.318490",
+  "nama_pelabuhan_dn": "Batam / Hang Nadim (u)",
+  "name": "IDBTH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBTJ",
+  "modified": "2023-10-02 09:01:52.322153",
+  "nama_pelabuhan_dn": "Aceh / Blang Bintang (u)",
+  "name": "IDBTJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBTM",
+  "modified": "2023-10-02 09:01:52.325866",
+  "nama_pelabuhan_dn": "Batam Island",
+  "name": "IDBTM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBTN",
+  "modified": "2023-10-02 09:01:52.329471",
+  "nama_pelabuhan_dn": "Bintuhan",
+  "name": "IDBTN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBTU",
+  "modified": "2023-10-02 09:01:52.333424",
+  "nama_pelabuhan_dn": "Batu Ampar",
+  "name": "IDBTU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBTW",
+  "modified": "2023-10-02 09:01:52.336966",
+  "nama_pelabuhan_dn": "Batulicin",
+  "name": "IDBTW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBUA",
+  "modified": "2023-10-02 09:01:52.340872",
+  "nama_pelabuhan_dn": "Bula",
+  "name": "IDBUA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBUG",
+  "modified": "2023-10-02 09:01:52.344723",
+  "nama_pelabuhan_dn": "Buleleng, Bali",
+  "name": "IDBUG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBUI",
+  "modified": "2023-10-02 09:01:52.348526",
+  "nama_pelabuhan_dn": "Bokondini",
+  "name": "IDBUI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBUL",
+  "modified": "2023-10-02 09:01:52.352113",
+  "nama_pelabuhan_dn": "Buleleng",
+  "name": "IDBUL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBUN",
+  "modified": "2023-10-02 09:01:52.355606",
+  "nama_pelabuhan_dn": "Buatan",
+  "name": "IDBUN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBUR",
+  "modified": "2023-10-02 09:01:52.359604",
+  "nama_pelabuhan_dn": "Batu Ampal",
+  "name": "IDBUR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBUW",
+  "modified": "2023-10-02 09:01:52.363336",
+  "nama_pelabuhan_dn": "Bau-bau",
+  "name": "IDBUW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBXD",
+  "modified": "2023-10-02 09:01:52.367197",
+  "nama_pelabuhan_dn": "Bade, Irian Jaya",
+  "name": "IDBXD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBXT",
+  "modified": "2023-10-02 09:01:52.370900",
+  "nama_pelabuhan_dn": "Bonthan Bay, Sulawesi",
+  "name": "IDBXT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDBYQ",
+  "modified": "2023-10-02 09:01:52.374545",
+  "nama_pelabuhan_dn": "Bunyu",
+  "name": "IDBYQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCBN",
+  "modified": "2023-10-02 09:01:52.378111",
+  "nama_pelabuhan_dn": "Cirebon",
+  "name": "IDCBN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCBW",
+  "modified": "2023-10-02 09:01:52.381781",
+  "nama_pelabuhan_dn": "Celukan Bawang",
+  "name": "IDCBW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCDK",
+  "modified": "2023-10-02 09:01:52.385540",
+  "nama_pelabuhan_dn": "Cilandak",
+  "name": "IDCDK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCEB",
+  "modified": "2023-10-02 09:01:52.389114",
+  "nama_pelabuhan_dn": "Celukan Bawang, Bl",
+  "name": "IDCEB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCEN",
+  "modified": "2023-10-02 09:01:52.392920",
+  "nama_pelabuhan_dn": "Cengkareng",
+  "name": "IDCEN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCER",
+  "modified": "2023-10-02 09:01:52.396405",
+  "nama_pelabuhan_dn": "Cereweh",
+  "name": "IDCER"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCGD",
+  "modified": "2023-10-02 09:01:52.400198",
+  "nama_pelabuhan_dn": "Cigading",
+  "name": "IDCGD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCGK",
+  "modified": "2023-10-02 09:01:52.403663",
+  "nama_pelabuhan_dn": "Cengkareng / Sukarno Hatta (u)",
+  "name": "IDCGK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCIG",
+  "modified": "2023-10-02 09:01:52.406994",
+  "nama_pelabuhan_dn": "Cigading",
+  "name": "IDCIG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCIK",
+  "modified": "2023-10-02 09:01:52.410819",
+  "nama_pelabuhan_dn": "Cikampek",
+  "name": "IDCIK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCIN",
+  "modified": "2023-10-02 09:01:52.414544",
+  "nama_pelabuhan_dn": "Cinta, Java",
+  "name": "IDCIN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCIW",
+  "modified": "2023-10-02 09:01:52.418231",
+  "nama_pelabuhan_dn": "Ciwandan",
+  "name": "IDCIW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCLG",
+  "modified": "2023-10-02 09:01:52.421957",
+  "nama_pelabuhan_dn": "Calang",
+  "name": "IDCLG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCML",
+  "modified": "2023-10-02 09:01:52.425454",
+  "nama_pelabuhan_dn": "Cimalaya",
+  "name": "IDCML"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCOM",
+  "modified": "2023-10-02 09:01:52.429346",
+  "nama_pelabuhan_dn": "Comal",
+  "name": "IDCOM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCSA",
+  "modified": "2023-10-02 09:01:52.433072",
+  "nama_pelabuhan_dn": "Cape Sago",
+  "name": "IDCSA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCTT",
+  "modified": "2023-10-02 09:01:52.436713",
+  "nama_pelabuhan_dn": "Ciputat",
+  "name": "IDCTT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDCXP",
+  "modified": "2023-10-02 09:01:52.440723",
+  "nama_pelabuhan_dn": "Cilacap",
+  "name": "IDCXP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDAS",
+  "modified": "2023-10-02 09:01:52.444681",
+  "nama_pelabuhan_dn": "Singkep - Dabo",
+  "name": "IDDAS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDBO",
+  "modified": "2023-10-02 09:01:52.448426",
+  "nama_pelabuhan_dn": "Dobo",
+  "name": "IDDBO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDGG",
+  "modified": "2023-10-02 09:01:52.452122",
+  "nama_pelabuhan_dn": "Donggala",
+  "name": "IDDGG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDIL",
+  "modified": "2023-10-02 09:01:52.455997",
+  "nama_pelabuhan_dn": "Dilli / Komoro (u)",
+  "name": "IDDIL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDIV",
+  "modified": "2023-10-02 09:01:52.459830",
+  "nama_pelabuhan_dn": "Diviematra",
+  "name": "IDDIV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDJA",
+  "modified": "2023-10-02 09:01:52.463526",
+  "nama_pelabuhan_dn": "Djankar",
+  "name": "IDDJA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDJB",
+  "modified": "2023-10-02 09:01:52.467950",
+  "nama_pelabuhan_dn": "Jambi /palmerah/ Sulatan Taha (u)",
+  "name": "IDDJB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDJJ",
+  "modified": "2023-10-02 09:01:52.471884",
+  "nama_pelabuhan_dn": "Jayapura / Sentani (u)",
+  "name": "IDDJJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDJM",
+  "modified": "2023-10-02 09:01:52.475637",
+  "nama_pelabuhan_dn": "Jambi",
+  "name": "IDDJM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDMA",
+  "modified": "2023-10-02 09:01:52.479382",
+  "nama_pelabuhan_dn": "Demta",
+  "name": "IDDMA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDOB",
+  "modified": "2023-10-02 09:01:52.483065",
+  "nama_pelabuhan_dn": "Dobo",
+  "name": "IDDOB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDOG",
+  "modified": "2023-10-02 09:01:52.486828",
+  "nama_pelabuhan_dn": "Donggala (u)",
+  "name": "IDDOG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDPS",
+  "modified": "2023-10-02 09:01:52.490808",
+  "nama_pelabuhan_dn": "Denpasar / Ngurah Rai (u)",
+  "name": "IDDPS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDDUM",
+  "modified": "2023-10-02 09:01:52.494488",
+  "nama_pelabuhan_dn": "Dumai",
+  "name": "IDDUM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDELA",
+  "modified": "2023-10-02 09:01:52.498125",
+  "nama_pelabuhan_dn": "Elat",
+  "name": "IDELA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDEND",
+  "modified": "2023-10-02 09:01:52.501710",
+  "nama_pelabuhan_dn": "Ende/ipi",
+  "name": "IDEND"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDENE",
+  "modified": "2023-10-02 09:01:52.505417",
+  "nama_pelabuhan_dn": "Ende / H.hasan Aroeboesman(u)",
+  "name": "IDENE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDENO",
+  "modified": "2023-10-02 09:01:52.509340",
+  "nama_pelabuhan_dn": "Kuala Enok",
+  "name": "IDENO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDENT",
+  "modified": "2023-10-02 09:01:52.513213",
+  "nama_pelabuhan_dn": "Entikong",
+  "name": "IDENT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDERT",
+  "modified": "2023-10-02 09:01:52.517033",
+  "nama_pelabuhan_dn": "Eretan",
+  "name": "IDERT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDEWE",
+  "modified": "2023-10-02 09:01:52.520569",
+  "nama_pelabuhan_dn": "Ewer",
+  "name": "IDEWE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDEWI",
+  "modified": "2023-10-02 09:01:52.524228",
+  "nama_pelabuhan_dn": "Enarotali , Rian Jaya",
+  "name": "IDEWI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDFKQ",
+  "modified": "2023-10-02 09:01:52.527770",
+  "nama_pelabuhan_dn": "Fak-fak",
+  "name": "IDFKQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDFOO",
+  "modified": "2023-10-02 09:01:52.531518",
+  "nama_pelabuhan_dn": "Numfoor",
+  "name": "IDFOO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDFTG",
+  "modified": "2023-10-02 09:01:52.535553",
+  "nama_pelabuhan_dn": "Pelabuhan Futong Terminal",
+  "name": "IDFTG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDGAG",
+  "modified": "2023-10-02 09:01:52.539205",
+  "nama_pelabuhan_dn": "Gag Island",
+  "name": "IDGAG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDGAL",
+  "modified": "2023-10-02 09:01:52.543379",
+  "nama_pelabuhan_dn": "Galala",
+  "name": "IDGAL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDGEB",
+  "modified": "2023-10-02 09:01:52.547343",
+  "nama_pelabuhan_dn": "Gebe",
+  "name": "IDGEB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDGEE",
+  "modified": "2023-10-02 09:01:52.551263",
+  "nama_pelabuhan_dn": "Gee I.",
+  "name": "IDGEE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDGGT",
+  "modified": "2023-10-02 09:01:52.554896",
+  "nama_pelabuhan_dn": "Giligenteng",
+  "name": "IDGGT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDGIL",
+  "modified": "2023-10-02 09:01:52.558683",
+  "nama_pelabuhan_dn": "Gilimanuk",
+  "name": "IDGIL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDGLX",
+  "modified": "2023-10-02 09:01:52.562591",
+  "nama_pelabuhan_dn": "Galela , Maluku",
+  "name": "IDGLX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDGNS",
+  "modified": "2023-10-02 09:01:52.566390",
+  "nama_pelabuhan_dn": "Gunung Sitoli",
+  "name": "IDGNS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDGOR",
+  "modified": "2023-10-02 09:01:52.570143",
+  "nama_pelabuhan_dn": "Gorontalo",
+  "name": "IDGOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDGRE",
+  "modified": "2023-10-02 09:01:52.574034",
+  "nama_pelabuhan_dn": "Gresik",
+  "name": "IDGRE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDGSR",
+  "modified": "2023-10-02 09:01:52.578487",
+  "nama_pelabuhan_dn": "Geser",
+  "name": "IDGSR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDGTO",
+  "modified": "2023-10-02 09:01:52.582368",
+  "nama_pelabuhan_dn": "Gorontalo / Jalaluddin(u)",
+  "name": "IDGTO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDHIN",
+  "modified": "2023-10-02 09:01:52.586203",
+  "nama_pelabuhan_dn": "Hinako",
+  "name": "IDHIN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDHLA",
+  "modified": "2023-10-02 09:01:52.589855",
+  "nama_pelabuhan_dn": "Sukarnapura (western Irian)",
+  "name": "IDHLA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDHLP",
+  "modified": "2023-10-02 09:01:52.593584",
+  "nama_pelabuhan_dn": "Halim Perdana Kusuma (u)",
+  "name": "IDHLP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDHLS",
+  "modified": "2023-10-02 09:01:52.597390",
+  "nama_pelabuhan_dn": "Hulu Siau",
+  "name": "IDHLS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDIAM",
+  "modified": "2023-10-02 09:01:52.601488",
+  "nama_pelabuhan_dn": "Asam Asam",
+  "name": "IDIAM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDIBL",
+  "modified": "2023-10-02 09:01:52.605257",
+  "nama_pelabuhan_dn": "Bantul",
+  "name": "IDIBL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDIBT",
+  "modified": "2023-10-02 09:01:52.608747",
+  "nama_pelabuhan_dn": "Indonesia Bulk Terminal",
+  "name": "IDIBT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDICU",
+  "modified": "2023-10-02 09:01:52.616446",
+  "nama_pelabuhan_dn": "Cepu",
+  "name": "IDICU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDIDI",
+  "modified": "2023-10-02 09:01:52.619955",
+  "nama_pelabuhan_dn": "Idi",
+  "name": "IDIDI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDIGR",
+  "modified": "2023-10-02 09:01:52.623438",
+  "nama_pelabuhan_dn": "Gianyar",
+  "name": "IDIGR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDILA",
+  "modified": "2023-10-02 09:01:52.626988",
+  "nama_pelabuhan_dn": "Illaga",
+  "name": "IDILA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDINA",
+  "modified": "2023-10-02 09:01:52.630454",
+  "nama_pelabuhan_dn": "Inanwatan",
+  "name": "IDINA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDINO",
+  "modified": "2023-10-02 09:01:52.634395",
+  "nama_pelabuhan_dn": "Inobonto",
+  "name": "IDINO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDISO",
+  "modified": "2023-10-02 09:01:52.637981",
+  "nama_pelabuhan_dn": "Sawahlunto",
+  "name": "IDISO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDITN",
+  "modified": "2023-10-02 09:01:52.641670",
+  "nama_pelabuhan_dn": "Tanjung Uban",
+  "name": "IDITN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDJBG",
+  "modified": "2023-10-02 09:01:52.645802",
+  "nama_pelabuhan_dn": "Jatibarang",
+  "name": "IDJBG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDJBT",
+  "modified": "2023-10-02 09:01:52.649595",
+  "nama_pelabuhan_dn": "Jabung Terminal",
+  "name": "IDJBT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDJEM",
+  "modified": "2023-10-02 09:01:52.653572",
+  "nama_pelabuhan_dn": "Jember",
+  "name": "IDJEM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDJEP",
+  "modified": "2023-10-02 09:01:52.657333",
+  "nama_pelabuhan_dn": "Jepara",
+  "name": "IDJEP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDJKT",
+  "modified": "2023-10-02 09:01:52.660993",
+  "nama_pelabuhan_dn": "Jakarta / Pasar Ikan",
+  "name": "IDJKT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDJOG",
+  "modified": "2023-10-02 09:01:52.664603",
+  "nama_pelabuhan_dn": "Yogyakarta / Adi Sucipto (u)",
+  "name": "IDJOG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDJOK",
+  "modified": "2023-10-02 09:01:52.668298",
+  "nama_pelabuhan_dn": "Yogyakarta (ptt)",
+  "name": "IDJOK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDJTH",
+  "modified": "2023-10-02 09:01:52.671928",
+  "nama_pelabuhan_dn": "Jatitujuh",
+  "name": "IDJTH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDJUA",
+  "modified": "2023-10-02 09:01:52.675844",
+  "nama_pelabuhan_dn": "Juata Tarakan",
+  "name": "IDJUA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKAB",
+  "modified": "2023-10-02 09:01:52.679543",
+  "nama_pelabuhan_dn": "Kabil/panau",
+  "name": "IDKAB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKAH",
+  "modified": "2023-10-02 09:01:52.683264",
+  "nama_pelabuhan_dn": "Kahayan Bay",
+  "name": "IDKAH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKAM",
+  "modified": "2023-10-02 09:01:52.687225",
+  "nama_pelabuhan_dn": "Kambunong, Celebes",
+  "name": "IDKAM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKAR",
+  "modified": "2023-10-02 09:01:52.691192",
+  "nama_pelabuhan_dn": "Karosa, Sulawesi",
+  "name": "IDKAR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKAS",
+  "modified": "2023-10-02 09:01:52.694986",
+  "nama_pelabuhan_dn": "Kasim, Ij",
+  "name": "IDKAS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKAT",
+  "modified": "2023-10-02 09:01:52.698582",
+  "nama_pelabuhan_dn": "Kalianget",
+  "name": "IDKAT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKAU",
+  "modified": "2023-10-02 09:01:52.702264",
+  "nama_pelabuhan_dn": "Kau",
+  "name": "IDKAU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKBF",
+  "modified": "2023-10-02 09:01:52.705911",
+  "nama_pelabuhan_dn": "Karubaga",
+  "name": "IDKBF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKBH",
+  "modified": "2023-10-02 09:01:52.709711",
+  "nama_pelabuhan_dn": "Kalabahi",
+  "name": "IDKBH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKBU",
+  "modified": "2023-10-02 09:01:52.713479",
+  "nama_pelabuhan_dn": "Kotabaru",
+  "name": "IDKBU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKCI",
+  "modified": "2023-10-02 09:01:52.717092",
+  "nama_pelabuhan_dn": "Kon",
+  "name": "IDKCI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKDD",
+  "modified": "2023-10-02 09:01:52.720766",
+  "nama_pelabuhan_dn": "Kedindi/reo",
+  "name": "IDKDD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKDI",
+  "modified": "2023-10-02 09:01:52.724376",
+  "nama_pelabuhan_dn": "Kendari / Wolter Monginsidi (u)",
+  "name": "IDKDI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKDR",
+  "modified": "2023-10-02 09:01:52.727951",
+  "nama_pelabuhan_dn": "Kendari",
+  "name": "IDKDR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKDW",
+  "modified": "2023-10-02 09:01:52.731563",
+  "nama_pelabuhan_dn": "Kendawangan",
+  "name": "IDKDW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKEA",
+  "modified": "2023-10-02 09:01:52.735401",
+  "nama_pelabuhan_dn": "Keisah",
+  "name": "IDKEA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKEI",
+  "modified": "2023-10-02 09:01:52.739164",
+  "nama_pelabuhan_dn": "Kepi, Irian",
+  "name": "IDKEI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKEM",
+  "modified": "2023-10-02 09:01:52.742862",
+  "nama_pelabuhan_dn": "Kempo, Sb",
+  "name": "IDKEM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKEN",
+  "modified": "2023-10-02 09:01:52.746850",
+  "nama_pelabuhan_dn": "Kuala Enok",
+  "name": "IDKEN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKEQ",
+  "modified": "2023-10-02 09:01:52.750607",
+  "nama_pelabuhan_dn": "Kebar, Irian Jaya",
+  "name": "IDKEQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKGD",
+  "modified": "2023-10-02 09:01:52.754422",
+  "nama_pelabuhan_dn": "Kuala Gaung",
+  "name": "IDKGD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKGN",
+  "modified": "2023-10-02 09:01:52.758129",
+  "nama_pelabuhan_dn": "Kangean",
+  "name": "IDKGN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKHY",
+  "modified": "2023-10-02 09:01:52.761798",
+  "nama_pelabuhan_dn": "Kahyangan",
+  "name": "IDKHY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKID",
+  "modified": "2023-10-02 09:01:52.765416",
+  "nama_pelabuhan_dn": "Pulau Kijang",
+  "name": "IDKID"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKIJ",
+  "modified": "2023-10-02 09:01:52.769475",
+  "nama_pelabuhan_dn": "Kijang",
+  "name": "IDKIJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKJL",
+  "modified": "2023-10-02 09:01:52.773026",
+  "nama_pelabuhan_dn": "Kuala Jelai",
+  "name": "IDKJL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKJN",
+  "modified": "2023-10-02 09:01:52.776695",
+  "nama_pelabuhan_dn": "Kajang",
+  "name": "IDKJN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKKA",
+  "modified": "2023-10-02 09:01:52.780608",
+  "nama_pelabuhan_dn": "Kuala Kapuas, Kl",
+  "name": "IDKKA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKKB",
+  "modified": "2023-10-02 09:01:52.784578",
+  "nama_pelabuhan_dn": "Kunak, Borneo",
+  "name": "IDKKB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKKP",
+  "modified": "2023-10-02 09:01:52.788642",
+  "nama_pelabuhan_dn": "Kuala Kapuas",
+  "name": "IDKKP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKLA",
+  "modified": "2023-10-02 09:01:52.792080",
+  "nama_pelabuhan_dn": "Kamp. Laut",
+  "name": "IDKLA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKLB",
+  "modified": "2023-10-02 09:01:52.795763",
+  "nama_pelabuhan_dn": "Kalibaru",
+  "name": "IDKLB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKLD",
+  "modified": "2023-10-02 09:01:52.799456",
+  "nama_pelabuhan_dn": "Kolonedale (u)",
+  "name": "IDKLD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKLG",
+  "modified": "2023-10-02 09:01:52.803154",
+  "nama_pelabuhan_dn": "Kalianget",
+  "name": "IDKLG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKLP",
+  "modified": "2023-10-02 09:01:52.806829",
+  "nama_pelabuhan_dn": "Kuala Lipan",
+  "name": "IDKLP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKLQ",
+  "modified": "2023-10-02 09:01:52.810535",
+  "nama_pelabuhan_dn": "Keluang",
+  "name": "IDKLQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKLS",
+  "modified": "2023-10-02 09:01:52.814363",
+  "nama_pelabuhan_dn": "Kuala Langsa",
+  "name": "IDKLS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKLT",
+  "modified": "2023-10-02 09:01:52.818051",
+  "nama_pelabuhan_dn": "Kaltim",
+  "name": "IDKLT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKMA",
+  "modified": "2023-10-02 09:01:52.822258",
+  "nama_pelabuhan_dn": "Kuala Mandah",
+  "name": "IDKMA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKML",
+  "modified": "2023-10-02 09:01:52.825552",
+  "nama_pelabuhan_dn": "Kamal",
+  "name": "IDKML"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKMM",
+  "modified": "2023-10-02 09:01:52.829312",
+  "nama_pelabuhan_dn": "Kimam, Irian Jaya",
+  "name": "IDKMM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKND",
+  "modified": "2023-10-02 09:01:52.832795",
+  "nama_pelabuhan_dn": "Kalianda",
+  "name": "IDKND"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKNG",
+  "modified": "2023-10-02 09:01:52.836826",
+  "nama_pelabuhan_dn": "Kaimana",
+  "name": "IDKNG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKNL",
+  "modified": "2023-10-02 09:01:52.841192",
+  "nama_pelabuhan_dn": "Kolonodale",
+  "name": "IDKNL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKOD",
+  "modified": "2023-10-02 09:01:52.845304",
+  "nama_pelabuhan_dn": "Kotabangun",
+  "name": "IDKOD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKOE",
+  "modified": "2023-10-02 09:01:52.849299",
+  "nama_pelabuhan_dn": "Kupang / El-tari (u)",
+  "name": "IDKOE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKOJ",
+  "modified": "2023-10-02 09:01:52.853446",
+  "nama_pelabuhan_dn": "Koja",
+  "name": "IDKOJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKOK",
+  "modified": "2023-10-02 09:01:52.857751",
+  "nama_pelabuhan_dn": "Kokonau",
+  "name": "IDKOK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKOL",
+  "modified": "2023-10-02 09:01:52.861959",
+  "nama_pelabuhan_dn": "Kolaka",
+  "name": "IDKOL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKOX",
+  "modified": "2023-10-02 09:01:52.866335",
+  "nama_pelabuhan_dn": "Kokonao",
+  "name": "IDKOX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKPB",
+  "modified": "2023-10-02 09:01:52.871091",
+  "nama_pelabuhan_dn": "Kuala Pembuang",
+  "name": "IDKPB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKPN",
+  "modified": "2023-10-02 09:01:52.875224",
+  "nama_pelabuhan_dn": "Kotapinang, Baru",
+  "name": "IDKPN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKPT",
+  "modified": "2023-10-02 09:01:52.879662",
+  "nama_pelabuhan_dn": "Kuala Penet",
+  "name": "IDKPT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKRC",
+  "modified": "2023-10-02 09:01:52.884124",
+  "nama_pelabuhan_dn": "Kerinci",
+  "name": "IDKRC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKRG",
+  "modified": "2023-10-02 09:01:52.888940",
+  "nama_pelabuhan_dn": "Kariangau",
+  "name": "IDKRG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKRI",
+  "modified": "2023-10-02 09:01:52.893780",
+  "nama_pelabuhan_dn": "Krui",
+  "name": "IDKRI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKRU",
+  "modified": "2023-10-02 09:01:52.898243",
+  "nama_pelabuhan_dn": "Krueng Raja Malahayati",
+  "name": "IDKRU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKSE",
+  "modified": "2023-10-02 09:01:52.902992",
+  "nama_pelabuhan_dn": "Kassue",
+  "name": "IDKSE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKSO",
+  "modified": "2023-10-02 09:01:52.907326",
+  "nama_pelabuhan_dn": "Kalbut Situbondo",
+  "name": "IDKSO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKTA",
+  "modified": "2023-10-02 09:01:52.912157",
+  "nama_pelabuhan_dn": "Kota Agung",
+  "name": "IDKTA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKTB",
+  "modified": "2023-10-02 09:01:52.917145",
+  "nama_pelabuhan_dn": "Kotabaru",
+  "name": "IDKTB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKTG",
+  "modified": "2023-10-02 09:01:52.921630",
+  "nama_pelabuhan_dn": "Ketapang Kalimantan Barat",
+  "name": "IDKTG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKTJ",
+  "modified": "2023-10-02 09:01:52.926025",
+  "nama_pelabuhan_dn": "Kuala Tanjung",
+  "name": "IDKTJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKTK",
+  "modified": "2023-10-02 09:01:52.930288",
+  "nama_pelabuhan_dn": "Kuala Tungkal",
+  "name": "IDKTK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKTP",
+  "modified": "2023-10-02 09:01:52.935034",
+  "nama_pelabuhan_dn": "Ketapang Jawa Timur",
+  "name": "IDKTP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKUA",
+  "modified": "2023-10-02 09:01:52.939420",
+  "nama_pelabuhan_dn": "Kuandang",
+  "name": "IDKUA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKUM",
+  "modified": "2023-10-02 09:01:52.943746",
+  "nama_pelabuhan_dn": "Kumai",
+  "name": "IDKUM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDKWA",
+  "modified": "2023-10-02 09:01:52.947570",
+  "nama_pelabuhan_dn": "Kwanyar",
+  "name": "IDKWA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLAB",
+  "modified": "2023-10-02 09:01:52.951484",
+  "nama_pelabuhan_dn": "Labuha Maluku",
+  "name": "IDLAB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLAH",
+  "modified": "2023-10-02 09:01:52.955326",
+  "nama_pelabuhan_dn": "Labuhan, Java",
+  "name": "IDLAH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLAJ",
+  "modified": "2023-10-02 09:01:52.959133",
+  "nama_pelabuhan_dn": "Labuhan",
+  "name": "IDLAJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLAL",
+  "modified": "2023-10-02 09:01:52.963047",
+  "nama_pelabuhan_dn": "Labuhan Alas",
+  "name": "IDLAL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLAS",
+  "modified": "2023-10-02 09:01:52.967013",
+  "nama_pelabuhan_dn": "Langsa, Sumatra",
+  "name": "IDLAS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLAT",
+  "modified": "2023-10-02 09:01:52.971046",
+  "nama_pelabuhan_dn": "Lalang Terminal, St",
+  "name": "IDLAT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLBI",
+  "modified": "2023-10-02 09:01:52.974533",
+  "nama_pelabuhan_dn": "Labuhan Bilik",
+  "name": "IDLBI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLBJ",
+  "modified": "2023-10-02 09:01:52.978611",
+  "nama_pelabuhan_dn": "Labuanbajo",
+  "name": "IDLBJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLBM",
+  "modified": "2023-10-02 09:01:52.982467",
+  "nama_pelabuhan_dn": "Lobam",
+  "name": "IDLBM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLBW",
+  "modified": "2023-10-02 09:01:52.986490",
+  "nama_pelabuhan_dn": "Long Bawan",
+  "name": "IDLBW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLEI",
+  "modified": "2023-10-02 09:01:52.990466",
+  "nama_pelabuhan_dn": "Leidong",
+  "name": "IDLEI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLEM",
+  "modified": "2023-10-02 09:01:52.994295",
+  "nama_pelabuhan_dn": "Lembar",
+  "name": "IDLEM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLHA",
+  "modified": "2023-10-02 09:01:52.998234",
+  "nama_pelabuhan_dn": "Labuhan Haji, Ntb",
+  "name": "IDLHA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLHI",
+  "modified": "2023-10-02 09:01:53.002097",
+  "nama_pelabuhan_dn": "Lereh",
+  "name": "IDLHI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLHJ",
+  "modified": "2023-10-02 09:01:53.005901",
+  "nama_pelabuhan_dn": "Labuhan Haji Aceh",
+  "name": "IDLHJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLHK",
+  "modified": "2023-10-02 09:01:53.009647",
+  "nama_pelabuhan_dn": "Lhok Nga",
+  "name": "IDLHK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLHW",
+  "modified": "2023-10-02 09:01:53.013469",
+  "nama_pelabuhan_dn": "Lahewa",
+  "name": "IDLHW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLIF",
+  "modified": "2023-10-02 09:01:53.017225",
+  "nama_pelabuhan_dn": "Lifamatola",
+  "name": "IDLIF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLII",
+  "modified": "2023-10-02 09:01:53.021020",
+  "nama_pelabuhan_dn": "Mulia",
+  "name": "IDLII"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLIN",
+  "modified": "2023-10-02 09:01:53.024805",
+  "nama_pelabuhan_dn": "Lingkas Tarakan",
+  "name": "IDLIN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLIR",
+  "modified": "2023-10-02 09:01:53.028182",
+  "nama_pelabuhan_dn": "Lirung",
+  "name": "IDLIR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLKA",
+  "modified": "2023-10-02 09:01:53.031986",
+  "nama_pelabuhan_dn": "Larantuka",
+  "name": "IDLKA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLKI",
+  "modified": "2023-10-02 09:01:53.036127",
+  "nama_pelabuhan_dn": "Loki",
+  "name": "IDLKI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLKS",
+  "modified": "2023-10-02 09:01:53.039844",
+  "nama_pelabuhan_dn": "Lombok",
+  "name": "IDLKS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLLA",
+  "modified": "2023-10-02 09:01:53.043959",
+  "nama_pelabuhan_dn": "Lawe-Lawe, Kl",
+  "name": "IDLLA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLLN",
+  "modified": "2023-10-02 09:01:53.047667",
+  "nama_pelabuhan_dn": "Kelila",
+  "name": "IDLLN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLLY",
+  "modified": "2023-10-02 09:01:53.051454",
+  "nama_pelabuhan_dn": "Labuhan Layar",
+  "name": "IDLLY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLMA",
+  "modified": "2023-10-02 09:01:53.055178",
+  "nama_pelabuhan_dn": "Labuhan Maringgai",
+  "name": "IDLMA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLMB",
+  "modified": "2023-10-02 09:01:53.058926",
+  "nama_pelabuhan_dn": "Lombok Strait",
+  "name": "IDLMB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLOB",
+  "modified": "2023-10-02 09:01:53.062577",
+  "nama_pelabuhan_dn": "Lower Buchanan",
+  "name": "IDLOB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLOL",
+  "modified": "2023-10-02 09:01:53.066279",
+  "nama_pelabuhan_dn": "Loli",
+  "name": "IDLOL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLOM",
+  "modified": "2023-10-02 09:01:53.070184",
+  "nama_pelabuhan_dn": "Lombok",
+  "name": "IDLOM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLPU",
+  "modified": "2023-10-02 09:01:53.073828",
+  "nama_pelabuhan_dn": "Long Apung",
+  "name": "IDLPU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLRT",
+  "modified": "2023-10-02 09:01:53.077833",
+  "nama_pelabuhan_dn": "Larat",
+  "name": "IDLRT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLSW",
+  "modified": "2023-10-02 09:01:53.081472",
+  "nama_pelabuhan_dn": "Lhok Seumawe",
+  "name": "IDLSW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLSX",
+  "modified": "2023-10-02 09:01:53.085244",
+  "nama_pelabuhan_dn": "Lhok Sukon",
+  "name": "IDLSX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLUB",
+  "modified": "2023-10-02 09:01:53.088833",
+  "nama_pelabuhan_dn": "Lubuk Besar Bangka",
+  "name": "IDLUB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLUK",
+  "modified": "2023-10-02 09:01:53.092285",
+  "nama_pelabuhan_dn": "Labuhan Uki",
+  "name": "IDLUK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLUV",
+  "modified": "2023-10-02 09:01:53.095642",
+  "nama_pelabuhan_dn": "Tual",
+  "name": "IDLUV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLUW",
+  "modified": "2023-10-02 09:01:53.099430",
+  "nama_pelabuhan_dn": "Luwuk",
+  "name": "IDLUW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLWE",
+  "modified": "2023-10-02 09:01:53.103542",
+  "nama_pelabuhan_dn": "Lewoleba",
+  "name": "IDLWE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDLYK",
+  "modified": "2023-10-02 09:01:53.107264",
+  "nama_pelabuhan_dn": "Lunyuk",
+  "name": "IDLYK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMAD",
+  "modified": "2023-10-02 09:01:53.111028",
+  "nama_pelabuhan_dn": "Madiun / Iswahyudi (u)",
+  "name": "IDMAD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMAI",
+  "modified": "2023-10-02 09:01:53.114710",
+  "nama_pelabuhan_dn": "Mapia I.s",
+  "name": "IDMAI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMAJ",
+  "modified": "2023-10-02 09:01:53.118436",
+  "nama_pelabuhan_dn": "Majene",
+  "name": "IDMAJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMAK",
+  "modified": "2023-10-02 09:01:53.122227",
+  "nama_pelabuhan_dn": "Makassar",
+  "name": "IDMAK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMAL",
+  "modified": "2023-10-02 09:01:53.125944",
+  "nama_pelabuhan_dn": "Mangole",
+  "name": "IDMAL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMAN",
+  "modified": "2023-10-02 09:01:53.129688",
+  "nama_pelabuhan_dn": "Manggar",
+  "name": "IDMAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMAR",
+  "modified": "2023-10-02 09:01:53.133662",
+  "nama_pelabuhan_dn": "Marabahan",
+  "name": "IDMAR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMAU",
+  "modified": "2023-10-02 09:01:53.137413",
+  "nama_pelabuhan_dn": "Mau Hau (u)",
+  "name": "IDMAU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMBK",
+  "modified": "2023-10-02 09:01:53.141345",
+  "nama_pelabuhan_dn": "Muara Bangkong",
+  "name": "IDMBK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMBS",
+  "modified": "2023-10-02 09:01:53.145214",
+  "nama_pelabuhan_dn": "Muara Bungus",
+  "name": "IDMBS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMDC",
+  "modified": "2023-10-02 09:01:53.149056",
+  "nama_pelabuhan_dn": "Menado / Sam Ratulangi (u)",
+  "name": "IDMDC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMDP",
+  "modified": "2023-10-02 09:01:53.152923",
+  "nama_pelabuhan_dn": "Mindiptanah",
+  "name": "IDMDP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMDR",
+  "modified": "2023-10-02 09:01:53.156653",
+  "nama_pelabuhan_dn": "Madura Terminal",
+  "name": "IDMDR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMEM",
+  "modified": "2023-10-02 09:01:53.160378",
+  "nama_pelabuhan_dn": "Mempawah",
+  "name": "IDMEM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMEQ",
+  "modified": "2023-10-02 09:01:53.164108",
+  "nama_pelabuhan_dn": "Meulaboh",
+  "name": "IDMEQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMES",
+  "modified": "2023-10-02 09:01:53.167981",
+  "nama_pelabuhan_dn": "Medan / Polonia (u)",
+  "name": "IDMES"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMGB",
+  "modified": "2023-10-02 09:01:53.171808",
+  "nama_pelabuhan_dn": "Manggis",
+  "name": "IDMGB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMIT",
+  "modified": "2023-10-02 09:01:53.175454",
+  "nama_pelabuhan_dn": "Misool Terminal",
+  "name": "IDMIT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMJU",
+  "modified": "2023-10-02 09:01:53.179355",
+  "nama_pelabuhan_dn": "Mamuju",
+  "name": "IDMJU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMJY",
+  "modified": "2023-10-02 09:01:53.183208",
+  "nama_pelabuhan_dn": "Mangunjaya",
+  "name": "IDMJY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMKJ",
+  "modified": "2023-10-02 09:01:53.187072",
+  "nama_pelabuhan_dn": "Mangkajang",
+  "name": "IDMKJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMKQ",
+  "modified": "2023-10-02 09:01:53.190747",
+  "nama_pelabuhan_dn": "Merauke",
+  "name": "IDMKQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMKW",
+  "modified": "2023-10-02 09:01:53.194578",
+  "nama_pelabuhan_dn": "Manokwari",
+  "name": "IDMKW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMLG",
+  "modified": "2023-10-02 09:01:53.198290",
+  "nama_pelabuhan_dn": "Malang / Abdulrachman Saleh (u)",
+  "name": "IDMLG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMLI",
+  "modified": "2023-10-02 09:01:53.201893",
+  "nama_pelabuhan_dn": "Malili, Sulawesi",
+  "name": "IDMLI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMNA",
+  "modified": "2023-10-02 09:01:53.205478",
+  "nama_pelabuhan_dn": "Sangir Talaud / Melangguane (u)",
+  "name": "IDMNA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMND",
+  "modified": "2023-10-02 09:01:53.209443",
+  "nama_pelabuhan_dn": "Manado",
+  "name": "IDMND"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMNT",
+  "modified": "2023-10-02 09:01:53.213240",
+  "nama_pelabuhan_dn": "Mantang, Riau",
+  "name": "IDMNT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMOF",
+  "modified": "2023-10-02 09:01:53.221393",
+  "nama_pelabuhan_dn": "Maumere",
+  "name": "IDMOF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMOR",
+  "modified": "2023-10-02 09:01:53.225156",
+  "nama_pelabuhan_dn": "Moro Sulit",
+  "name": "IDMOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMPA",
+  "modified": "2023-10-02 09:01:53.228649",
+  "nama_pelabuhan_dn": "Muara Padang",
+  "name": "IDMPA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMPC",
+  "modified": "2023-10-02 09:01:53.232496",
+  "nama_pelabuhan_dn": "Muko-Muko",
+  "name": "IDMPC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMPS",
+  "modified": "2023-10-02 09:01:53.236236",
+  "nama_pelabuhan_dn": "Muara Pasir",
+  "name": "IDMPS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMPT",
+  "modified": "2023-10-02 09:01:53.240561",
+  "nama_pelabuhan_dn": "Maliana",
+  "name": "IDMPT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMRB",
+  "modified": "2023-10-02 09:01:53.244698",
+  "nama_pelabuhan_dn": "Merantibunting, Sumatra",
+  "name": "IDMRB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMRI",
+  "modified": "2023-10-02 09:01:53.248831",
+  "nama_pelabuhan_dn": "Musi River, Sumatra",
+  "name": "IDMRI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMRK",
+  "modified": "2023-10-02 09:01:53.252687",
+  "nama_pelabuhan_dn": "Merak",
+  "name": "IDMRK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMSA",
+  "modified": "2023-10-02 09:01:53.256547",
+  "nama_pelabuhan_dn": "Muara Sabak",
+  "name": "IDMSA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMSB",
+  "modified": "2023-10-02 09:01:53.260337",
+  "nama_pelabuhan_dn": "Muara Siberut",
+  "name": "IDMSB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMSI",
+  "modified": "2023-10-02 09:01:53.264017",
+  "nama_pelabuhan_dn": "Masalembo",
+  "name": "IDMSI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMTU",
+  "modified": "2023-10-02 09:01:53.267978",
+  "nama_pelabuhan_dn": "Muturi",
+  "name": "IDMTU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMUB",
+  "modified": "2023-10-02 09:01:53.275219",
+  "nama_pelabuhan_dn": "Muara Berau",
+  "name": "IDMUB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMUD",
+  "modified": "2023-10-02 09:01:53.278972",
+  "nama_pelabuhan_dn": "Muara Djawa",
+  "name": "IDMUD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMUF",
+  "modified": "2023-10-02 09:01:53.282823",
+  "nama_pelabuhan_dn": "Muting",
+  "name": "IDMUF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMUN",
+  "modified": "2023-10-02 09:01:53.286620",
+  "nama_pelabuhan_dn": "Muncar",
+  "name": "IDMUN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMUO",
+  "modified": "2023-10-02 09:01:53.290708",
+  "nama_pelabuhan_dn": "Muntok",
+  "name": "IDMUO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMUP",
+  "modified": "2023-10-02 09:01:53.294452",
+  "nama_pelabuhan_dn": "Muara Pegah",
+  "name": "IDMUP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMWK",
+  "modified": "2023-10-02 09:01:53.298494",
+  "nama_pelabuhan_dn": "Matak",
+  "name": "IDMWK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDMXB",
+  "modified": "2023-10-02 09:01:53.302270",
+  "nama_pelabuhan_dn": "Masamba",
+  "name": "IDMXB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNAF",
+  "modified": "2023-10-02 09:01:53.305903",
+  "nama_pelabuhan_dn": "Banaina",
+  "name": "IDNAF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNAH",
+  "modified": "2023-10-02 09:01:53.309633",
+  "nama_pelabuhan_dn": "Tahuna / Naha (u) - Sulut",
+  "name": "IDNAH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNAM",
+  "modified": "2023-10-02 09:01:53.313537",
+  "nama_pelabuhan_dn": "Namlea",
+  "name": "IDNAM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNAT",
+  "modified": "2023-10-02 09:01:53.317580",
+  "nama_pelabuhan_dn": "Natal",
+  "name": "IDNAT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNBX",
+  "modified": "2023-10-02 09:01:53.321254",
+  "nama_pelabuhan_dn": "Nabire , Irian Jaya",
+  "name": "IDNBX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNDA",
+  "modified": "2023-10-02 09:01:53.325035",
+  "nama_pelabuhan_dn": "Bandanaira",
+  "name": "IDNDA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNEG",
+  "modified": "2023-10-02 09:01:53.328826",
+  "nama_pelabuhan_dn": "Negara",
+  "name": "IDNEG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNIP",
+  "modified": "2023-10-02 09:01:53.332635",
+  "nama_pelabuhan_dn": "Nipah Panjang",
+  "name": "IDNIP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNKD",
+  "modified": "2023-10-02 09:01:53.336263",
+  "nama_pelabuhan_dn": "Sinak",
+  "name": "IDNKD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNNX",
+  "modified": "2023-10-02 09:01:53.340356",
+  "nama_pelabuhan_dn": "Nunukan",
+  "name": "IDNNX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNON",
+  "modified": "2023-10-02 09:01:53.344207",
+  "nama_pelabuhan_dn": "Nongsa",
+  "name": "IDNON"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNPL",
+  "modified": "2023-10-02 09:01:53.348162",
+  "nama_pelabuhan_dn": "North Pulau Laut",
+  "name": "IDNPL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNPO",
+  "modified": "2023-10-02 09:01:53.352011",
+  "nama_pelabuhan_dn": "Nangapinoh",
+  "name": "IDNPO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNRE",
+  "modified": "2023-10-02 09:01:53.355652",
+  "nama_pelabuhan_dn": "Namrole",
+  "name": "IDNRE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNTI",
+  "modified": "2023-10-02 09:01:53.359379",
+  "nama_pelabuhan_dn": "Bintuni, Irian Jaya",
+  "name": "IDNTI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDNTX",
+  "modified": "2023-10-02 09:01:53.362943",
+  "nama_pelabuhan_dn": "Natuna Ranai",
+  "name": "IDNTX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDOBD",
+  "modified": "2023-10-02 09:01:53.366619",
+  "nama_pelabuhan_dn": "Obano",
+  "name": "IDOBD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDOBI",
+  "modified": "2023-10-02 09:01:53.370597",
+  "nama_pelabuhan_dn": "Obi Island",
+  "name": "IDOBI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDOEC",
+  "modified": "2023-10-02 09:01:53.374404",
+  "nama_pelabuhan_dn": "Ocussi",
+  "name": "IDOEC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDOJA",
+  "modified": "2023-10-02 09:01:53.378423",
+  "nama_pelabuhan_dn": "Olah Jasa Andal/Jakarta",
+  "name": "IDOJA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDOKA",
+  "modified": "2023-10-02 09:01:53.382354",
+  "nama_pelabuhan_dn": "Karimun Besar Offshore",
+  "name": "IDOKA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDOKL",
+  "modified": "2023-10-02 09:01:53.386245",
+  "nama_pelabuhan_dn": "Oksibil",
+  "name": "IDOKL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDOKQ",
+  "modified": "2023-10-02 09:01:53.389983",
+  "nama_pelabuhan_dn": "Okaba, Irian Jaya",
+  "name": "IDOKQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDOLO",
+  "modified": "2023-10-02 09:01:53.393824",
+  "nama_pelabuhan_dn": "Ulee Lheue",
+  "name": "IDOLO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDONI",
+  "modified": "2023-10-02 09:01:53.397661",
+  "nama_pelabuhan_dn": "Moanamani",
+  "name": "IDONI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDORA",
+  "modified": "2023-10-02 09:01:53.401358",
+  "nama_pelabuhan_dn": "Oransbari",
+  "name": "IDORA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDOZI",
+  "modified": "2023-10-02 09:01:53.405402",
+  "nama_pelabuhan_dn": "Morotai I",
+  "name": "IDOZI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPAC",
+  "modified": "2023-10-02 09:01:53.409326",
+  "nama_pelabuhan_dn": "Pacitan",
+  "name": "IDPAC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPAD",
+  "modified": "2023-10-02 09:01:53.413107",
+  "nama_pelabuhan_dn": "Padang (ptt)",
+  "name": "IDPAD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPAG",
+  "modified": "2023-10-02 09:01:53.416920",
+  "nama_pelabuhan_dn": "Pegatan",
+  "name": "IDPAG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPAI",
+  "modified": "2023-10-02 09:01:53.420581",
+  "nama_pelabuhan_dn": "Panipahan",
+  "name": "IDPAI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPAJ",
+  "modified": "2023-10-02 09:01:53.424332",
+  "nama_pelabuhan_dn": "Panjalai",
+  "name": "IDPAJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPAK",
+  "modified": "2023-10-02 09:01:53.428305",
+  "nama_pelabuhan_dn": "Pekan Baru",
+  "name": "IDPAK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPAL",
+  "modified": "2023-10-02 09:01:53.431948",
+  "nama_pelabuhan_dn": "Palimanan",
+  "name": "IDPAL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPAO",
+  "modified": "2023-10-02 09:01:53.435941",
+  "nama_pelabuhan_dn": "Paloh",
+  "name": "IDPAO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPAP",
+  "modified": "2023-10-02 09:01:53.439819",
+  "nama_pelabuhan_dn": "Pare-pare",
+  "name": "IDPAP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPAR",
+  "modified": "2023-10-02 09:01:53.443540",
+  "nama_pelabuhan_dn": "Pangkalan Air (u)",
+  "name": "IDPAR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPAS",
+  "modified": "2023-10-02 09:01:53.447309",
+  "nama_pelabuhan_dn": "Pasir Panjang",
+  "name": "IDPAS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPAT",
+  "modified": "2023-10-02 09:01:53.451443",
+  "nama_pelabuhan_dn": "Pantoloan",
+  "name": "IDPAT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPAZ",
+  "modified": "2023-10-02 09:01:53.455248",
+  "nama_pelabuhan_dn": "Pasuruan",
+  "name": "IDPAZ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPBA",
+  "modified": "2023-10-02 09:01:53.459254",
+  "nama_pelabuhan_dn": "Pulau Baai",
+  "name": "IDPBA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPBG",
+  "modified": "2023-10-02 09:01:53.463007",
+  "nama_pelabuhan_dn": "Perbaungan",
+  "name": "IDPBG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPBJ",
+  "modified": "2023-10-02 09:01:53.466865",
+  "nama_pelabuhan_dn": "Pulo Bunju, Borneo",
+  "name": "IDPBJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPBL",
+  "modified": "2023-10-02 09:01:53.470562",
+  "nama_pelabuhan_dn": "Pulau Buluh",
+  "name": "IDPBL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPBN",
+  "modified": "2023-10-02 09:01:53.474252",
+  "nama_pelabuhan_dn": "Pulau Banyak",
+  "name": "IDPBN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPBW",
+  "modified": "2023-10-02 09:01:53.478252",
+  "nama_pelabuhan_dn": "Palibelo",
+  "name": "IDPBW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPCB",
+  "modified": "2023-10-02 09:01:53.482075",
+  "nama_pelabuhan_dn": "Pondok Cabe",
+  "name": "IDPCB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPDB",
+  "modified": "2023-10-02 09:01:53.486158",
+  "nama_pelabuhan_dn": "Padang Baai",
+  "name": "IDPDB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPDG",
+  "modified": "2023-10-02 09:01:53.490094",
+  "nama_pelabuhan_dn": "Padang / Tabing (u)",
+  "name": "IDPDG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPDJ",
+  "modified": "2023-10-02 09:01:53.493855",
+  "nama_pelabuhan_dn": "Tandjang",
+  "name": "IDPDJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPDO",
+  "modified": "2023-10-02 09:01:53.497720",
+  "nama_pelabuhan_dn": "Pangkalan Dode",
+  "name": "IDPDO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPDU",
+  "modified": "2023-10-02 09:01:53.501595",
+  "nama_pelabuhan_dn": "Pangkal Duri",
+  "name": "IDPDU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPEF",
+  "modified": "2023-10-02 09:01:53.505377",
+  "nama_pelabuhan_dn": "Penfui (u)",
+  "name": "IDPEF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPEK",
+  "modified": "2023-10-02 09:01:53.509076",
+  "nama_pelabuhan_dn": "Pekanbaru (rumbai)",
+  "name": "IDPEK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPEM",
+  "modified": "2023-10-02 09:01:53.512855",
+  "nama_pelabuhan_dn": "Pemangkat",
+  "name": "IDPEM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPEN",
+  "modified": "2023-10-02 09:01:53.516602",
+  "nama_pelabuhan_dn": "Pemanukan",
+  "name": "IDPEN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPER",
+  "modified": "2023-10-02 09:01:53.520715",
+  "nama_pelabuhan_dn": "Perawang",
+  "name": "IDPER"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPET",
+  "modified": "2023-10-02 09:01:53.524292",
+  "nama_pelabuhan_dn": "Petta",
+  "name": "IDPET"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPEU",
+  "modified": "2023-10-02 09:01:53.527828",
+  "nama_pelabuhan_dn": "Penuba",
+  "name": "IDPEU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPEX",
+  "modified": "2023-10-02 09:01:53.531506",
+  "nama_pelabuhan_dn": "Pekalongan",
+  "name": "IDPEX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPGA",
+  "modified": "2023-10-02 09:01:53.535494",
+  "nama_pelabuhan_dn": "Pagerungan",
+  "name": "IDPGA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPGE",
+  "modified": "2023-10-02 09:01:53.539344",
+  "nama_pelabuhan_dn": "Pulau Gebe",
+  "name": "IDPGE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPGK",
+  "modified": "2023-10-02 09:01:53.543064",
+  "nama_pelabuhan_dn": "Pangkal Pinang (u)",
+  "name": "IDPGK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPGM",
+  "modified": "2023-10-02 09:01:53.546868",
+  "nama_pelabuhan_dn": "Pagimana",
+  "name": "IDPGM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPGX",
+  "modified": "2023-10-02 09:01:53.550580",
+  "nama_pelabuhan_dn": "Pangkal Balam /pkl.pinang",
+  "name": "IDPGX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPIN",
+  "modified": "2023-10-02 09:01:53.554309",
+  "nama_pelabuhan_dn": "Pinrang",
+  "name": "IDPIN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPIR",
+  "modified": "2023-10-02 09:01:53.557946",
+  "nama_pelabuhan_dn": "Piru",
+  "name": "IDPIR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPJG",
+  "modified": "2023-10-02 09:01:53.561393",
+  "nama_pelabuhan_dn": "Panjang (lampung, Sumatra)",
+  "name": "IDPJG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPJM",
+  "modified": "2023-10-02 09:01:53.565025",
+  "nama_pelabuhan_dn": "Pandjung Mani",
+  "name": "IDPJM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPKN",
+  "modified": "2023-10-02 09:01:53.568411",
+  "nama_pelabuhan_dn": "Pangkalan Bun",
+  "name": "IDPKN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPKR",
+  "modified": "2023-10-02 09:01:53.572077",
+  "nama_pelabuhan_dn": "Pangkalan Brandan",
+  "name": "IDPKR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPKS",
+  "modified": "2023-10-02 09:01:53.575850",
+  "nama_pelabuhan_dn": "Pangkalan Susu, Sumatra",
+  "name": "IDPKS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPKU",
+  "modified": "2023-10-02 09:01:53.579513",
+  "nama_pelabuhan_dn": "Pekan Baru / Simpang Tiga (u)",
+  "name": "IDPKU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPKY",
+  "modified": "2023-10-02 09:01:53.583397",
+  "nama_pelabuhan_dn": "Palangkaraya/ Panarung (u)/ Tjilik Riwut (u)",
+  "name": "IDPKY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPLA",
+  "modified": "2023-10-02 09:01:53.587255",
+  "nama_pelabuhan_dn": "Palembang - Plaju",
+  "name": "IDPLA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPLM",
+  "modified": "2023-10-02 09:01:53.590981",
+  "nama_pelabuhan_dn": "Palembang /talang Betutu /sm.badaruddin (u)",
+  "name": "IDPLM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPLS",
+  "modified": "2023-10-02 09:01:53.594790",
+  "nama_pelabuhan_dn": "Palembang - Kertapati",
+  "name": "IDPLS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPLW",
+  "modified": "2023-10-02 09:01:53.598724",
+  "nama_pelabuhan_dn": "Palu / Mutiara (u)",
+  "name": "IDPLW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPMA",
+  "modified": "2023-10-02 09:01:53.602704",
+  "nama_pelabuhan_dn": "Pegatan Mendawai",
+  "name": "IDPMA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPMC",
+  "modified": "2023-10-02 09:01:53.606298",
+  "nama_pelabuhan_dn": "Pante Macassar",
+  "name": "IDPMC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPMG",
+  "modified": "2023-10-02 09:01:53.610337",
+  "nama_pelabuhan_dn": "Meneng",
+  "name": "IDPMG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPMK",
+  "modified": "2023-10-02 09:01:53.614045",
+  "nama_pelabuhan_dn": "Pomako",
+  "name": "IDPMK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPNG",
+  "modified": "2023-10-02 09:01:53.617914",
+  "nama_pelabuhan_dn": "Penuba",
+  "name": "IDPNG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPNJ",
+  "modified": "2023-10-02 09:01:53.621876",
+  "nama_pelabuhan_dn": "Panjang",
+  "name": "IDPNJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPNK",
+  "modified": "2023-10-02 09:01:53.625624",
+  "nama_pelabuhan_dn": "Pontianak / Supadio (u)",
+  "name": "IDPNK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPNN",
+  "modified": "2023-10-02 09:01:53.629317",
+  "nama_pelabuhan_dn": "Pamanukan, Java",
+  "name": "IDPNN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPNT",
+  "modified": "2023-10-02 09:01:53.633077",
+  "nama_pelabuhan_dn": "Prointal, Jv",
+  "name": "IDPNT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPOE",
+  "modified": "2023-10-02 09:01:53.636972",
+  "nama_pelabuhan_dn": "Polewali",
+  "name": "IDPOE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPOL",
+  "modified": "2023-10-02 09:01:53.640784",
+  "nama_pelabuhan_dn": "Poleng",
+  "name": "IDPOL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPON",
+  "modified": "2023-10-02 09:01:53.644590",
+  "nama_pelabuhan_dn": "Pontianak",
+  "name": "IDPON"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPOT",
+  "modified": "2023-10-02 09:01:53.648171",
+  "nama_pelabuhan_dn": "Poto Tano",
+  "name": "IDPOT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPPA",
+  "modified": "2023-10-02 09:01:53.651638",
+  "nama_pelabuhan_dn": "Pulau Palas",
+  "name": "IDPPA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPPJ",
+  "modified": "2023-10-02 09:01:53.655351",
+  "nama_pelabuhan_dn": "Pulau Panjang",
+  "name": "IDPPJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPPO",
+  "modified": "2023-10-02 09:01:53.659271",
+  "nama_pelabuhan_dn": "Palopo",
+  "name": "IDPPO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPPR",
+  "modified": "2023-10-02 09:01:53.663000",
+  "nama_pelabuhan_dn": "Pasir Pangarayan",
+  "name": "IDPPR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPPS",
+  "modified": "2023-10-02 09:01:53.666786",
+  "nama_pelabuhan_dn": "Pulang Pisau",
+  "name": "IDPPS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPRA",
+  "modified": "2023-10-02 09:01:53.670417",
+  "nama_pelabuhan_dn": "Perigi Raja",
+  "name": "IDPRA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPRG",
+  "modified": "2023-10-02 09:01:53.674181",
+  "nama_pelabuhan_dn": "Parigi",
+  "name": "IDPRG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPRN",
+  "modified": "2023-10-02 09:01:53.677928",
+  "nama_pelabuhan_dn": "Panarukan",
+  "name": "IDPRN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPRO",
+  "modified": "2023-10-02 09:01:53.681556",
+  "nama_pelabuhan_dn": "Probolinggo (kalibuntu)",
+  "name": "IDPRO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPSB",
+  "modified": "2023-10-02 09:01:53.685325",
+  "nama_pelabuhan_dn": "Jakarta / Pos Pasar Baru (ptt)",
+  "name": "IDPSB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPSE",
+  "modified": "2023-10-02 09:01:53.689058",
+  "nama_pelabuhan_dn": "Pulau Sembilan",
+  "name": "IDPSE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPSJ",
+  "modified": "2023-10-02 09:01:53.692726",
+  "nama_pelabuhan_dn": "Posso",
+  "name": "IDPSJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPSS",
+  "modified": "2023-10-02 09:01:53.696416",
+  "nama_pelabuhan_dn": "Pulau Sambu",
+  "name": "IDPSS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPSU",
+  "modified": "2023-10-02 09:01:53.700251",
+  "nama_pelabuhan_dn": "Pangkalan Susu",
+  "name": "IDPSU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPTE",
+  "modified": "2023-10-02 09:01:53.704230",
+  "nama_pelabuhan_dn": "Pulau Tello",
+  "name": "IDPTE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPTL",
+  "modified": "2023-10-02 09:01:53.707987",
+  "nama_pelabuhan_dn": "Pantoloan, Sv",
+  "name": "IDPTL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPTO",
+  "modified": "2023-10-02 09:01:53.711817",
+  "nama_pelabuhan_dn": "Port Okha",
+  "name": "IDPTO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPTR",
+  "modified": "2023-10-02 09:01:53.715477",
+  "nama_pelabuhan_dn": "Puteran",
+  "name": "IDPTR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPUM",
+  "modified": "2023-10-02 09:01:53.719306",
+  "nama_pelabuhan_dn": "Pomalaa",
+  "name": "IDPUM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPUR",
+  "modified": "2023-10-02 09:01:53.723213",
+  "nama_pelabuhan_dn": "Purwakarta",
+  "name": "IDPUR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPUT",
+  "modified": "2023-10-02 09:01:53.727124",
+  "nama_pelabuhan_dn": "Pulau Laut",
+  "name": "IDPUT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPWG",
+  "modified": "2023-10-02 09:01:53.730800",
+  "nama_pelabuhan_dn": "Perawang, Sumatra",
+  "name": "IDPWG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDPWL",
+  "modified": "2023-10-02 09:01:53.734130",
+  "nama_pelabuhan_dn": "Purwokerto",
+  "name": "IDPWL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRAA",
+  "modified": "2023-10-02 09:01:53.737544",
+  "nama_pelabuhan_dn": "Raas",
+  "name": "IDRAA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRAB",
+  "modified": "2023-10-02 09:01:53.741345",
+  "nama_pelabuhan_dn": "Raba",
+  "name": "IDRAB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRAM",
+  "modified": "2023-10-02 09:01:53.745177",
+  "nama_pelabuhan_dn": "Rambipuji Jember",
+  "name": "IDRAM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRAN",
+  "modified": "2023-10-02 09:01:53.749142",
+  "nama_pelabuhan_dn": "Ranai",
+  "name": "IDRAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRAQ",
+  "modified": "2023-10-02 09:01:53.753063",
+  "nama_pelabuhan_dn": "Raha, Sul.tengg.",
+  "name": "IDRAQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRDE",
+  "modified": "2023-10-02 09:01:53.756645",
+  "nama_pelabuhan_dn": "Merdey",
+  "name": "IDRDE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDREM",
+  "modified": "2023-10-02 09:01:53.760158",
+  "nama_pelabuhan_dn": "Rembang",
+  "name": "IDREM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDREO",
+  "modified": "2023-10-02 09:01:53.763879",
+  "nama_pelabuhan_dn": "Reo",
+  "name": "IDREO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRGA",
+  "modified": "2023-10-02 09:01:53.768037",
+  "nama_pelabuhan_dn": "Rengat",
+  "name": "IDRGA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRGT",
+  "modified": "2023-10-02 09:01:53.771435",
+  "nama_pelabuhan_dn": "Rengat/ Japura (u)",
+  "name": "IDRGT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRKI",
+  "modified": "2023-10-02 09:01:53.775062",
+  "nama_pelabuhan_dn": "Rokot",
+  "name": "IDRKI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRKO",
+  "modified": "2023-10-02 09:01:53.778913",
+  "nama_pelabuhan_dn": "Sipora",
+  "name": "IDRKO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRNI",
+  "modified": "2023-10-02 09:01:53.782762",
+  "nama_pelabuhan_dn": "Ranai",
+  "name": "IDRNI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRPA",
+  "modified": "2023-10-02 09:01:53.786970",
+  "nama_pelabuhan_dn": "Rantau Panjang",
+  "name": "IDRPA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRSK",
+  "modified": "2023-10-02 09:01:53.790752",
+  "nama_pelabuhan_dn": "Ransiki",
+  "name": "IDRSK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRTG",
+  "modified": "2023-10-02 09:01:53.794568",
+  "nama_pelabuhan_dn": "Ruteng, Flores",
+  "name": "IDRTG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRTI",
+  "modified": "2023-10-02 09:01:53.798447",
+  "nama_pelabuhan_dn": "Roti",
+  "name": "IDRTI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRUF",
+  "modified": "2023-10-02 09:01:53.802352",
+  "nama_pelabuhan_dn": "Yuruf",
+  "name": "IDRUF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDRUN",
+  "modified": "2023-10-02 09:01:53.806047",
+  "nama_pelabuhan_dn": "Rungkut",
+  "name": "IDRUN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSAB",
+  "modified": "2023-10-02 09:01:53.809394",
+  "nama_pelabuhan_dn": "Sabang - Sulawesi",
+  "name": "IDSAB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSAD",
+  "modified": "2023-10-02 09:01:53.812964",
+  "nama_pelabuhan_dn": "Sadau, Borneo",
+  "name": "IDSAD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSAE",
+  "modified": "2023-10-02 09:01:53.816625",
+  "nama_pelabuhan_dn": "Sangir",
+  "name": "IDSAE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSAG",
+  "modified": "2023-10-02 09:01:53.820623",
+  "nama_pelabuhan_dn": "Sangit",
+  "name": "IDSAG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSAK",
+  "modified": "2023-10-02 09:01:53.824449",
+  "nama_pelabuhan_dn": "Sangkapura / Bawean",
+  "name": "IDSAK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSAM",
+  "modified": "2023-10-02 09:01:53.828044",
+  "nama_pelabuhan_dn": "Sampang",
+  "name": "IDSAM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSAN",
+  "modified": "2023-10-02 09:01:53.831794",
+  "nama_pelabuhan_dn": "Sanang, Celebes",
+  "name": "IDSAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSAP",
+  "modified": "2023-10-02 09:01:53.835187",
+  "nama_pelabuhan_dn": "Sungai Apit",
+  "name": "IDSAP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSAR",
+  "modified": "2023-10-02 09:01:53.838917",
+  "nama_pelabuhan_dn": "Sarangan",
+  "name": "IDSAR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSAS",
+  "modified": "2023-10-02 09:01:53.842593",
+  "nama_pelabuhan_dn": "Sasayap",
+  "name": "IDSAS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSAT",
+  "modified": "2023-10-02 09:01:53.846422",
+  "nama_pelabuhan_dn": "Santan Terminal, Kl",
+  "name": "IDSAT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSAU",
+  "modified": "2023-10-02 09:01:53.850361",
+  "nama_pelabuhan_dn": "Sawu",
+  "name": "IDSAU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSBG",
+  "modified": "2023-10-02 09:01:53.854218",
+  "nama_pelabuhan_dn": "Aceh - Sabang",
+  "name": "IDSBG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSBJ",
+  "modified": "2023-10-02 09:01:53.857955",
+  "nama_pelabuhan_dn": "Semboja",
+  "name": "IDSBJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSBM",
+  "modified": "2023-10-02 09:01:53.861847",
+  "nama_pelabuhan_dn": "Subaim",
+  "name": "IDSBM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSBR",
+  "modified": "2023-10-02 09:01:53.865591",
+  "nama_pelabuhan_dn": "Sungai Brombang",
+  "name": "IDSBR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSBS",
+  "modified": "2023-10-02 09:01:53.869516",
+  "nama_pelabuhan_dn": "Sambas",
+  "name": "IDSBS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSDA",
+  "modified": "2023-10-02 09:01:53.873102",
+  "nama_pelabuhan_dn": "Sungai Danai",
+  "name": "IDSDA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSDJ",
+  "modified": "2023-10-02 09:01:53.876847",
+  "nama_pelabuhan_dn": "Sidoarjo",
+  "name": "IDSDJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSDU",
+  "modified": "2023-10-02 09:01:53.880268",
+  "nama_pelabuhan_dn": "Sungai Duri",
+  "name": "IDSDU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSEB",
+  "modified": "2023-10-02 09:01:53.884202",
+  "nama_pelabuhan_dn": "Sebangan Bay, Kalimantan",
+  "name": "IDSEB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSEG",
+  "modified": "2023-10-02 09:01:53.887862",
+  "nama_pelabuhan_dn": "Segama, Borneo",
+  "name": "IDSEG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSEH",
+  "modified": "2023-10-02 09:01:53.891420",
+  "nama_pelabuhan_dn": "Senggeh",
+  "name": "IDSEH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSEM",
+  "modified": "2023-10-02 09:01:53.895198",
+  "nama_pelabuhan_dn": "Sembakung",
+  "name": "IDSEM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSEN",
+  "modified": "2023-10-02 09:01:53.898920",
+  "nama_pelabuhan_dn": "Senipah",
+  "name": "IDSEN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSEQ",
+  "modified": "2023-10-02 09:01:53.902538",
+  "nama_pelabuhan_dn": "Sungai Pakning",
+  "name": "IDSEQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSER",
+  "modified": "2023-10-02 09:01:53.906178",
+  "nama_pelabuhan_dn": "Serang",
+  "name": "IDSER"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSGO",
+  "modified": "2023-10-02 09:01:53.910155",
+  "nama_pelabuhan_dn": "Port Segoro Fajar Satryo/Jakarta",
+  "name": "IDSGO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSGQ",
+  "modified": "2023-10-02 09:01:53.913870",
+  "nama_pelabuhan_dn": "Sanggata",
+  "name": "IDSGQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSGU",
+  "modified": "2023-10-02 09:01:53.917550",
+  "nama_pelabuhan_dn": "Sanggau",
+  "name": "IDSGU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSIA",
+  "modified": "2023-10-02 09:01:53.921289",
+  "nama_pelabuhan_dn": "Siak Yechil, Riau",
+  "name": "IDSIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSID",
+  "modified": "2023-10-02 09:01:53.924900",
+  "nama_pelabuhan_dn": "Sidangoli",
+  "name": "IDSID"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSIG",
+  "modified": "2023-10-02 09:01:53.928704",
+  "nama_pelabuhan_dn": "Sigli",
+  "name": "IDSIG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSIM",
+  "modified": "2023-10-02 09:01:53.933295",
+  "nama_pelabuhan_dn": "Simandulang",
+  "name": "IDSIM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSIN",
+  "modified": "2023-10-02 09:01:53.937065",
+  "nama_pelabuhan_dn": "Sinabang",
+  "name": "IDSIN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSIQ",
+  "modified": "2023-10-02 09:01:53.940777",
+  "nama_pelabuhan_dn": "Singkep/ Dabo (u)",
+  "name": "IDSIQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSIW",
+  "modified": "2023-10-02 09:01:53.944515",
+  "nama_pelabuhan_dn": "Sibisa",
+  "name": "IDSIW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSKE",
+  "modified": "2023-10-02 09:01:53.948341",
+  "nama_pelabuhan_dn": "Sungai Kembung",
+  "name": "IDSKE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSKI",
+  "modified": "2023-10-02 09:01:53.952638",
+  "nama_pelabuhan_dn": "Sangkulirang, Kalimantan",
+  "name": "IDSKI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSKK",
+  "modified": "2023-10-02 09:01:53.957318",
+  "nama_pelabuhan_dn": "Soengei Kolak",
+  "name": "IDSKK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSKL",
+  "modified": "2023-10-02 09:01:53.961951",
+  "nama_pelabuhan_dn": "Singkel",
+  "name": "IDSKL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSKP",
+  "modified": "2023-10-02 09:01:53.966361",
+  "nama_pelabuhan_dn": "Sekupang",
+  "name": "IDSKP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSKR",
+  "modified": "2023-10-02 09:01:53.970462",
+  "nama_pelabuhan_dn": "Sekura",
+  "name": "IDSKR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSKT",
+  "modified": "2023-10-02 09:01:53.974900",
+  "nama_pelabuhan_dn": "Surakarta",
+  "name": "IDSKT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSKW",
+  "modified": "2023-10-02 09:01:53.980141",
+  "nama_pelabuhan_dn": "Singkawang",
+  "name": "IDSKW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSLG",
+  "modified": "2023-10-02 09:01:53.984528",
+  "nama_pelabuhan_dn": "Sibolga",
+  "name": "IDSLG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSLI",
+  "modified": "2023-10-02 09:01:53.989049",
+  "nama_pelabuhan_dn": "Sungai Liat",
+  "name": "IDSLI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSLK",
+  "modified": "2023-10-02 09:01:53.993397",
+  "nama_pelabuhan_dn": "Selakau",
+  "name": "IDSLK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSLY",
+  "modified": "2023-10-02 09:01:53.997464",
+  "nama_pelabuhan_dn": "Selayar",
+  "name": "IDSLY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSMB",
+  "modified": "2023-10-02 09:01:54.001489",
+  "nama_pelabuhan_dn": "Semangka Bay, St",
+  "name": "IDSMB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSMD",
+  "modified": "2023-10-02 09:01:54.005800",
+  "nama_pelabuhan_dn": "Semuda",
+  "name": "IDSMD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSME",
+  "modified": "2023-10-02 09:01:54.010113",
+  "nama_pelabuhan_dn": "Simpang Empat",
+  "name": "IDSME"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSMK",
+  "modified": "2023-10-02 09:01:54.014157",
+  "nama_pelabuhan_dn": "Semplak",
+  "name": "IDSMK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSMQ",
+  "modified": "2023-10-02 09:01:54.018307",
+  "nama_pelabuhan_dn": "Sampit",
+  "name": "IDSMQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSMR",
+  "modified": "2023-10-02 09:01:54.022680",
+  "nama_pelabuhan_dn": "Semarang (ptt)",
+  "name": "IDSMR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSNB",
+  "modified": "2023-10-02 09:01:54.026628",
+  "nama_pelabuhan_dn": "Sinaboi",
+  "name": "IDSNB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSNG",
+  "modified": "2023-10-02 09:01:54.031119",
+  "nama_pelabuhan_dn": "Sinabang",
+  "name": "IDSNG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSNK",
+  "modified": "2023-10-02 09:01:54.035340",
+  "nama_pelabuhan_dn": "Simbur Naik",
+  "name": "IDSNK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSNN",
+  "modified": "2023-10-02 09:01:54.040568",
+  "nama_pelabuhan_dn": "Sanana",
+  "name": "IDSNN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSNR",
+  "modified": "2023-10-02 09:01:54.044981",
+  "nama_pelabuhan_dn": "Sanur",
+  "name": "IDSNR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSOC",
+  "modified": "2023-10-02 09:01:54.048992",
+  "nama_pelabuhan_dn": "Solo / Jebres / Adi Sumarmo (u)",
+  "name": "IDSOC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSOQ",
+  "modified": "2023-10-02 09:01:54.053396",
+  "nama_pelabuhan_dn": "Sorong / Jefman (u)",
+  "name": "IDSOQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSOR",
+  "modified": "2023-10-02 09:01:54.057437",
+  "nama_pelabuhan_dn": "Sorong",
+  "name": "IDSOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSPA",
+  "modified": "2023-10-02 09:01:54.061215",
+  "nama_pelabuhan_dn": "Selat Panjang",
+  "name": "IDSPA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSPD",
+  "modified": "2023-10-02 09:01:54.064994",
+  "nama_pelabuhan_dn": "Sapudi",
+  "name": "IDSPD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSPH",
+  "modified": "2023-10-02 09:01:54.068906",
+  "nama_pelabuhan_dn": "Sapeh",
+  "name": "IDSPH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSPI",
+  "modified": "2023-10-02 09:01:54.072606",
+  "nama_pelabuhan_dn": "Sungai Pinyuh",
+  "name": "IDSPI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSPK",
+  "modified": "2023-10-02 09:01:54.076555",
+  "nama_pelabuhan_dn": "Sepekan",
+  "name": "IDSPK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSPL",
+  "modified": "2023-10-02 09:01:54.080616",
+  "nama_pelabuhan_dn": "Sepulu",
+  "name": "IDSPL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSPT",
+  "modified": "2023-10-02 09:01:54.084585",
+  "nama_pelabuhan_dn": "Sapat",
+  "name": "IDSPT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSQG",
+  "modified": "2023-10-02 09:01:54.088492",
+  "nama_pelabuhan_dn": "Sintang",
+  "name": "IDSQG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSQN",
+  "modified": "2023-10-02 09:01:54.091862",
+  "nama_pelabuhan_dn": "Sanana",
+  "name": "IDSQN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSQR",
+  "modified": "2023-10-02 09:01:54.095784",
+  "nama_pelabuhan_dn": "Soroako",
+  "name": "IDSQR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSRD",
+  "modified": "2023-10-02 09:01:54.099218",
+  "nama_pelabuhan_dn": "Samarinda",
+  "name": "IDSRD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSRG",
+  "modified": "2023-10-02 09:01:54.103105",
+  "nama_pelabuhan_dn": "Semarang / Achmad Yani (u)",
+  "name": "IDSRG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSRI",
+  "modified": "2023-10-02 09:01:54.106965",
+  "nama_pelabuhan_dn": "Samarinda / Temindung (u)",
+  "name": "IDSRI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSRN",
+  "modified": "2023-10-02 09:01:54.110653",
+  "nama_pelabuhan_dn": "Serasan",
+  "name": "IDSRN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSSE",
+  "modified": "2023-10-02 09:01:54.114364",
+  "nama_pelabuhan_dn": "Sungai Selatan",
+  "name": "IDSSE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSSI",
+  "modified": "2023-10-02 09:01:54.118050",
+  "nama_pelabuhan_dn": "Siak Sri Indrapura",
+  "name": "IDSSI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSSO",
+  "modified": "2023-10-02 09:01:54.121943",
+  "nama_pelabuhan_dn": "Soe Soe/susu",
+  "name": "IDSSO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSST",
+  "modified": "2023-10-02 09:01:54.125740",
+  "nama_pelabuhan_dn": "Sunda Strait (penj)",
+  "name": "IDSST"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSTG",
+  "modified": "2023-10-02 09:01:54.129484",
+  "nama_pelabuhan_dn": "Salatiga Semarang",
+  "name": "IDSTG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSTT",
+  "modified": "2023-10-02 09:01:54.133302",
+  "nama_pelabuhan_dn": "Sintete",
+  "name": "IDSTT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSTU",
+  "modified": "2023-10-02 09:01:54.137083",
+  "nama_pelabuhan_dn": "Satui",
+  "name": "IDSTU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSUA",
+  "modified": "2023-10-02 09:01:54.140818",
+  "nama_pelabuhan_dn": "Suaran",
+  "name": "IDSUA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSUB",
+  "modified": "2023-10-02 09:01:54.145631",
+  "nama_pelabuhan_dn": "Surabaya /juanda (u)",
+  "name": "IDSUB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSUG",
+  "modified": "2023-10-02 09:01:54.149639",
+  "nama_pelabuhan_dn": "Sungai Gerong",
+  "name": "IDSUG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSUK",
+  "modified": "2023-10-02 09:01:54.153360",
+  "nama_pelabuhan_dn": "Sukamara",
+  "name": "IDSUK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSUM",
+  "modified": "2023-10-02 09:01:54.157140",
+  "nama_pelabuhan_dn": "Sumenep",
+  "name": "IDSUM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSUN",
+  "modified": "2023-10-02 09:01:54.161131",
+  "nama_pelabuhan_dn": "Sungsang",
+  "name": "IDSUN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSUP",
+  "modified": "2023-10-02 09:01:54.164894",
+  "nama_pelabuhan_dn": "Sumenep, Madura",
+  "name": "IDSUP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSUQ",
+  "modified": "2023-10-02 09:01:54.168813",
+  "nama_pelabuhan_dn": "Sungai Guntung",
+  "name": "IDSUQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSUR",
+  "modified": "2023-10-02 09:01:54.172550",
+  "nama_pelabuhan_dn": "Surabaya (ptt)",
+  "name": "IDSUR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSUS",
+  "modified": "2023-10-02 09:01:54.176191",
+  "nama_pelabuhan_dn": "Susoh",
+  "name": "IDSUS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSVP",
+  "modified": "2023-10-02 09:01:54.180039",
+  "nama_pelabuhan_dn": "Sevivara Point",
+  "name": "IDSVP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSWQ",
+  "modified": "2023-10-02 09:01:54.183738",
+  "nama_pelabuhan_dn": "Sumbawa/ Brang-biji (u)",
+  "name": "IDSWQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSWT",
+  "modified": "2023-10-02 09:01:54.188116",
+  "nama_pelabuhan_dn": "Salawati Terminal",
+  "name": "IDSWT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSXK",
+  "modified": "2023-10-02 09:01:54.191701",
+  "nama_pelabuhan_dn": "Saumlaki",
+  "name": "IDSXK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSYK",
+  "modified": "2023-10-02 09:01:54.195417",
+  "nama_pelabuhan_dn": "Surungyukung",
+  "name": "IDSYK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDSZH",
+  "modified": "2023-10-02 09:01:54.199205",
+  "nama_pelabuhan_dn": "Senipah",
+  "name": "IDSZH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTAB",
+  "modified": "2023-10-02 09:01:54.203018",
+  "nama_pelabuhan_dn": "Taboneo",
+  "name": "IDTAB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTAL",
+  "modified": "2023-10-02 09:01:54.206840",
+  "nama_pelabuhan_dn": "Tanah Laut",
+  "name": "IDTAL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTAN",
+  "modified": "2023-10-02 09:01:54.210583",
+  "nama_pelabuhan_dn": "Tanjung Uban",
+  "name": "IDTAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTAR",
+  "modified": "2023-10-02 09:01:54.217880",
+  "nama_pelabuhan_dn": "Tarjun",
+  "name": "IDTAR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTAX",
+  "modified": "2023-10-02 09:01:54.221876",
+  "nama_pelabuhan_dn": "Taliabu, Celebes",
+  "name": "IDTAX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTBA",
+  "modified": "2023-10-02 09:01:54.225611",
+  "nama_pelabuhan_dn": "Tanjung Bara, Kl",
+  "name": "IDTBA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTBG",
+  "modified": "2023-10-02 09:01:54.229209",
+  "nama_pelabuhan_dn": "Teluk Betung, Sumatra",
+  "name": "IDTBG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTBK",
+  "modified": "2023-10-02 09:01:54.232816",
+  "nama_pelabuhan_dn": "Tanjung Balai Karimun",
+  "name": "IDTBK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTBM",
+  "modified": "2023-10-02 09:01:54.236432",
+  "nama_pelabuhan_dn": "Tumbang Samba",
+  "name": "IDTBM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTBN",
+  "modified": "2023-10-02 09:01:54.240123",
+  "nama_pelabuhan_dn": "Tuban, Jv",
+  "name": "IDTBN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTBO",
+  "modified": "2023-10-02 09:01:54.244101",
+  "nama_pelabuhan_dn": "Tobelo",
+  "name": "IDTBO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTBR",
+  "modified": "2023-10-02 09:01:54.247897",
+  "nama_pelabuhan_dn": "Tanjung Beringin",
+  "name": "IDTBR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTBT",
+  "modified": "2023-10-02 09:01:54.251692",
+  "nama_pelabuhan_dn": "Tanjung Batu, Riau",
+  "name": "IDTBT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTBU",
+  "modified": "2023-10-02 09:01:54.255557",
+  "nama_pelabuhan_dn": "Tanjung Buli",
+  "name": "IDTBU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTBY",
+  "modified": "2023-10-02 09:01:54.259255",
+  "nama_pelabuhan_dn": "Padang/tl.bayur",
+  "name": "IDTBY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTDL",
+  "modified": "2023-10-02 09:01:54.262944",
+  "nama_pelabuhan_dn": "Teluk Dalam",
+  "name": "IDTDL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTEG",
+  "modified": "2023-10-02 09:01:54.266702",
+  "nama_pelabuhan_dn": "Tegal",
+  "name": "IDTEG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTEM",
+  "modified": "2023-10-02 09:01:54.270658",
+  "nama_pelabuhan_dn": "Tembilahan",
+  "name": "IDTEM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTEN",
+  "modified": "2023-10-02 09:01:54.274419",
+  "nama_pelabuhan_dn": "Tenau",
+  "name": "IDTEN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTER",
+  "modified": "2023-10-02 09:01:54.278156",
+  "nama_pelabuhan_dn": "Terempa",
+  "name": "IDTER"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTES",
+  "modified": "2023-10-02 09:01:54.281755",
+  "nama_pelabuhan_dn": "Tanjung Emas",
+  "name": "IDTES"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTGD",
+  "modified": "2023-10-02 09:01:54.285539",
+  "nama_pelabuhan_dn": "Tagulandang",
+  "name": "IDTGD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTGK",
+  "modified": "2023-10-02 09:01:54.289546",
+  "nama_pelabuhan_dn": "Tanjung Kedabu",
+  "name": "IDTGK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTGR",
+  "modified": "2023-10-02 09:01:54.293243",
+  "nama_pelabuhan_dn": "Pasir/tanah Grogot",
+  "name": "IDTGR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTIM",
+  "modified": "2023-10-02 09:01:54.297128",
+  "nama_pelabuhan_dn": "Amamapare",
+  "name": "IDTIM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTJA",
+  "modified": "2023-10-02 09:01:54.301414",
+  "nama_pelabuhan_dn": "Tanjung Aru",
+  "name": "IDTJA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTJB",
+  "modified": "2023-10-02 09:01:54.305312",
+  "nama_pelabuhan_dn": "Tanjung Balai Asahan",
+  "name": "IDTJB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTJG",
+  "modified": "2023-10-02 09:01:54.310103",
+  "nama_pelabuhan_dn": "Tanjung Warukin",
+  "name": "IDTJG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTJP",
+  "modified": "2023-10-02 09:01:54.314181",
+  "nama_pelabuhan_dn": "Tanjungperak",
+  "name": "IDTJP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTJQ",
+  "modified": "2023-10-02 09:01:54.318025",
+  "nama_pelabuhan_dn": "Tanjung Pandan / Buluh Tumbang (u)",
+  "name": "IDTJQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTJS",
+  "modified": "2023-10-02 09:01:54.321620",
+  "nama_pelabuhan_dn": "Tanjung Selor",
+  "name": "IDTJS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTKA",
+  "modified": "2023-10-02 09:01:54.325488",
+  "nama_pelabuhan_dn": "Telok Air",
+  "name": "IDTKA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTKB",
+  "modified": "2023-10-02 09:01:54.329312",
+  "nama_pelabuhan_dn": "Teluk Betung",
+  "name": "IDTKB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTKG",
+  "modified": "2023-10-02 09:01:54.333118",
+  "nama_pelabuhan_dn": "Tanjung Karang / Branti (u)",
+  "name": "IDTKG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTKS",
+  "modified": "2023-10-02 09:01:54.336837",
+  "nama_pelabuhan_dn": "Teluk Kasim/salawati",
+  "name": "IDTKS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTLI",
+  "modified": "2023-10-02 09:01:54.340577",
+  "nama_pelabuhan_dn": "Toli-toli",
+  "name": "IDTLI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTLL",
+  "modified": "2023-10-02 09:01:54.344148",
+  "nama_pelabuhan_dn": "Tanjung Lumba-lumba",
+  "name": "IDTLL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTLN",
+  "modified": "2023-10-02 09:01:54.347912",
+  "nama_pelabuhan_dn": "Tanjung Leneng",
+  "name": "IDTLN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTLS",
+  "modified": "2023-10-02 09:01:54.351849",
+  "nama_pelabuhan_dn": "Talise",
+  "name": "IDTLS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTMB",
+  "modified": "2023-10-02 09:01:54.355514",
+  "nama_pelabuhan_dn": "Tambak",
+  "name": "IDTMB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTMC",
+  "modified": "2023-10-02 09:01:54.359570",
+  "nama_pelabuhan_dn": "Tambolaka",
+  "name": "IDTMC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTMD",
+  "modified": "2023-10-02 09:01:54.363380",
+  "nama_pelabuhan_dn": "Tanjung Medang",
+  "name": "IDTMD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTME",
+  "modified": "2023-10-02 09:01:54.367248",
+  "nama_pelabuhan_dn": "Tanjung Merangas",
+  "name": "IDTME"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTMG",
+  "modified": "2023-10-02 09:01:54.370893",
+  "nama_pelabuhan_dn": "Tanjung Mangaidar",
+  "name": "IDTMG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTMH",
+  "modified": "2023-10-02 09:01:54.374620",
+  "nama_pelabuhan_dn": "Tanah Merah, Irian",
+  "name": "IDTMH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTMK",
+  "modified": "2023-10-02 09:01:54.378438",
+  "nama_pelabuhan_dn": "Tamako",
+  "name": "IDTMK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTMO",
+  "modified": "2023-10-02 09:01:54.382135",
+  "nama_pelabuhan_dn": "Telok Melano",
+  "name": "IDTMO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTMU",
+  "modified": "2023-10-02 09:01:54.385943",
+  "nama_pelabuhan_dn": "Teluk Mengkudu",
+  "name": "IDTMU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTMY",
+  "modified": "2023-10-02 09:01:54.389834",
+  "nama_pelabuhan_dn": "Tiom",
+  "name": "IDTMY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTNB",
+  "modified": "2023-10-02 09:01:54.393459",
+  "nama_pelabuhan_dn": "Tanah Grogot",
+  "name": "IDTNB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTNG",
+  "modified": "2023-10-02 09:01:54.397272",
+  "nama_pelabuhan_dn": "Tangerang",
+  "name": "IDTNG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTNJ",
+  "modified": "2023-10-02 09:01:54.401025",
+  "nama_pelabuhan_dn": "Tanjung Pinang / Kijang (u)",
+  "name": "IDTNJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTOB",
+  "modified": "2023-10-02 09:01:54.408877",
+  "nama_pelabuhan_dn": "Tobelo",
+  "name": "IDTOB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTOL",
+  "modified": "2023-10-02 09:01:54.412625",
+  "nama_pelabuhan_dn": "Toboali",
+  "name": "IDTOL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTPD",
+  "modified": "2023-10-02 09:01:54.416606",
+  "nama_pelabuhan_dn": "Tanjung Pandan",
+  "name": "IDTPD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTPE",
+  "modified": "2023-10-02 09:01:54.420301",
+  "nama_pelabuhan_dn": "Tanjung Perak",
+  "name": "IDTPE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTPK",
+  "modified": "2023-10-02 09:01:54.424167",
+  "nama_pelabuhan_dn": "Tapaktuan",
+  "name": "IDTPK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTPN",
+  "modified": "2023-10-02 09:01:54.427861",
+  "nama_pelabuhan_dn": "Tanjung Pinang",
+  "name": "IDTPN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTPP",
+  "modified": "2023-10-02 09:01:54.431562",
+  "nama_pelabuhan_dn": "Tanjung Priok",
+  "name": "IDTPP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTPR",
+  "modified": "2023-10-02 09:01:54.435295",
+  "nama_pelabuhan_dn": "Tanjung Pura",
+  "name": "IDTPR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTRD",
+  "modified": "2023-10-02 09:01:54.439158",
+  "nama_pelabuhan_dn": "Tanjung Redep",
+  "name": "IDTRD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTRG",
+  "modified": "2023-10-02 09:01:54.442710",
+  "nama_pelabuhan_dn": "Tangerang",
+  "name": "IDTRG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTRH",
+  "modified": "2023-10-02 09:01:54.446492",
+  "nama_pelabuhan_dn": "Tarahan",
+  "name": "IDTRH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTRK",
+  "modified": "2023-10-02 09:01:54.450475",
+  "nama_pelabuhan_dn": "Tarakan (u)",
+  "name": "IDTRK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTSB",
+  "modified": "2023-10-02 09:01:54.454231",
+  "nama_pelabuhan_dn": "Teluk Sebangau",
+  "name": "IDTSB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTSE",
+  "modified": "2023-10-02 09:01:54.457799",
+  "nama_pelabuhan_dn": "Tanjung Seliu",
+  "name": "IDTSE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTSG",
+  "modified": "2023-10-02 09:01:54.461425",
+  "nama_pelabuhan_dn": "Tanjung Sangata",
+  "name": "IDTSG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTSK",
+  "modified": "2023-10-02 09:01:54.464987",
+  "nama_pelabuhan_dn": "Tanjung Samalantakan",
+  "name": "IDTSK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTSM",
+  "modified": "2023-10-02 09:01:54.468812",
+  "nama_pelabuhan_dn": "Tanjung Samak",
+  "name": "IDTSM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTSO",
+  "modified": "2023-10-02 09:01:54.476059",
+  "nama_pelabuhan_dn": "Tanjung Sekong",
+  "name": "IDTSO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTST",
+  "modified": "2023-10-02 09:01:54.479872",
+  "nama_pelabuhan_dn": "Tanjung Santan",
+  "name": "IDTST"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTSX",
+  "modified": "2023-10-02 09:01:54.483608",
+  "nama_pelabuhan_dn": "Tanjung Santan",
+  "name": "IDTSX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTSY",
+  "modified": "2023-10-02 09:01:54.487436",
+  "nama_pelabuhan_dn": "Tasikmalaya",
+  "name": "IDTSY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTTE",
+  "modified": "2023-10-02 09:01:54.491392",
+  "nama_pelabuhan_dn": "Ternate",
+  "name": "IDTTE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTTG",
+  "modified": "2023-10-02 09:01:54.495122",
+  "nama_pelabuhan_dn": "Tebing Tinggi (ska)",
+  "name": "IDTTG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTTI",
+  "modified": "2023-10-02 09:01:54.502541",
+  "nama_pelabuhan_dn": "Tebingtinggi",
+  "name": "IDTTI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTTM",
+  "modified": "2023-10-02 09:01:54.506358",
+  "nama_pelabuhan_dn": "Tanjung Tiram",
+  "name": "IDTTM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTTR",
+  "modified": "2023-10-02 09:01:54.509915",
+  "nama_pelabuhan_dn": "Tana Toraja",
+  "name": "IDTTR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTUA",
+  "modified": "2023-10-02 09:01:54.513657",
+  "nama_pelabuhan_dn": "Tual",
+  "name": "IDTUA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTUB",
+  "modified": "2023-10-02 09:01:54.517303",
+  "nama_pelabuhan_dn": "Tuban",
+  "name": "IDTUB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTUL",
+  "modified": "2023-10-02 09:01:54.521082",
+  "nama_pelabuhan_dn": "Tulehu",
+  "name": "IDTUL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTWR",
+  "modified": "2023-10-02 09:01:54.524894",
+  "nama_pelabuhan_dn": "Tanjung/warukin (u)",
+  "name": "IDTWR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDTXM",
+  "modified": "2023-10-02 09:01:54.528665",
+  "nama_pelabuhan_dn": "Teminabuan",
+  "name": "IDTXM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDUAI",
+  "modified": "2023-10-02 09:01:54.532535",
+  "nama_pelabuhan_dn": "Suai",
+  "name": "IDUAI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDUBR",
+  "modified": "2023-10-02 09:01:54.536412",
+  "nama_pelabuhan_dn": "Ubrub",
+  "name": "IDUBR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDUGU",
+  "modified": "2023-10-02 09:01:54.539819",
+  "nama_pelabuhan_dn": "Zugapa",
+  "name": "IDUGU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDUJU",
+  "modified": "2023-10-02 09:01:54.543446",
+  "nama_pelabuhan_dn": "Ujungpandang",
+  "name": "IDUJU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDUNA",
+  "modified": "2023-10-02 09:01:54.547318",
+  "nama_pelabuhan_dn": "Udang Natuna",
+  "name": "IDUNA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDUOL",
+  "modified": "2023-10-02 09:01:54.551413",
+  "nama_pelabuhan_dn": "Buol",
+  "name": "IDUOL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDUPG",
+  "modified": "2023-10-02 09:01:54.555328",
+  "nama_pelabuhan_dn": "Ujung Pandang / Hasanuddin (u)",
+  "name": "IDUPG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDUTC",
+  "modified": "2023-10-02 09:01:54.559142",
+  "nama_pelabuhan_dn": "Jakarta UTC1",
+  "name": "IDUTC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDUTE",
+  "modified": "2023-10-02 09:01:54.563019",
+  "nama_pelabuhan_dn": "Jakarta UTC3",
+  "name": "IDUTE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDVIQ",
+  "modified": "2023-10-02 09:01:54.567120",
+  "nama_pelabuhan_dn": "Viqueque",
+  "name": "IDVIQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWAI",
+  "modified": "2023-10-02 09:01:54.570885",
+  "nama_pelabuhan_dn": "Wainibe",
+  "name": "IDWAI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWAN",
+  "modified": "2023-10-02 09:01:54.574688",
+  "nama_pelabuhan_dn": "Wani",
+  "name": "IDWAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWAR",
+  "modified": "2023-10-02 09:01:54.578588",
+  "nama_pelabuhan_dn": "Waris",
+  "name": "IDWAR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWBA",
+  "modified": "2023-10-02 09:01:54.582214",
+  "nama_pelabuhan_dn": "Wahai",
+  "name": "IDWBA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWED",
+  "modified": "2023-10-02 09:01:54.586024",
+  "nama_pelabuhan_dn": "Weda",
+  "name": "IDWED"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWET",
+  "modified": "2023-10-02 09:01:54.590020",
+  "nama_pelabuhan_dn": "Wagethe (u)",
+  "name": "IDWET"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWGP",
+  "modified": "2023-10-02 09:01:54.593538",
+  "nama_pelabuhan_dn": "Waingapu",
+  "name": "IDWGP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWKI",
+  "modified": "2023-10-02 09:01:54.597139",
+  "nama_pelabuhan_dn": "Kep. Wakai (togian)",
+  "name": "IDWKI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWKL",
+  "modified": "2023-10-02 09:01:54.601318",
+  "nama_pelabuhan_dn": "Waikelo",
+  "name": "IDWKL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWMX",
+  "modified": "2023-10-02 09:01:54.605047",
+  "nama_pelabuhan_dn": "Wamena (u)",
+  "name": "IDWMX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWON",
+  "modified": "2023-10-02 09:01:54.608884",
+  "nama_pelabuhan_dn": "Wonosari",
+  "name": "IDWON"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWSP",
+  "modified": "2023-10-02 09:01:54.612679",
+  "nama_pelabuhan_dn": "Way Seputih",
+  "name": "IDWSP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWSR",
+  "modified": "2023-10-02 09:01:54.616107",
+  "nama_pelabuhan_dn": "Wasior",
+  "name": "IDWSR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDWSS",
+  "modified": "2023-10-02 09:01:54.620096",
+  "nama_pelabuhan_dn": "Waisarisa",
+  "name": "IDWSS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDZEG",
+  "modified": "2023-10-02 09:01:54.623888",
+  "nama_pelabuhan_dn": "Senggo",
+  "name": "IDZEG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDZKL",
+  "modified": "2023-10-02 09:01:54.627594",
+  "nama_pelabuhan_dn": "Steenkool",
+  "name": "IDZKL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDZRI",
+  "modified": "2023-10-02 09:01:54.631307",
+  "nama_pelabuhan_dn": "Serui",
+  "name": "IDZRI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Dalam Negeri",
+  "kode_pelabuhan_dn": "IDZRM",
+  "modified": "2023-10-02 09:01:54.635128",
+  "nama_pelabuhan_dn": "Sarmi",
+  "name": "IDZRM"
+ }
+]

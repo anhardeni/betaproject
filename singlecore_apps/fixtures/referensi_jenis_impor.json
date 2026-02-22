@@ -1,0 +1,58 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Impor",
+  "kode_jenis_impor1": "2",
+  "modified": "2023-06-21 14:34:22.050455",
+  "nama_jenis_impor1": "SEMENTARA",
+  "name": "2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Impor",
+  "kode_jenis_impor1": "3",
+  "modified": "2023-06-21 14:34:22.054395",
+  "nama_jenis_impor1": "REIMPOR",
+  "name": "3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Impor",
+  "kode_jenis_impor1": "4",
+  "modified": "2023-06-21 14:34:22.058800",
+  "nama_jenis_impor1": "TPB",
+  "name": "4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Impor",
+  "kode_jenis_impor1": "5",
+  "modified": "2023-09-15 17:15:53.080096",
+  "nama_jenis_impor1": "PELAYANAN SEGERA ",
+  "name": "5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Impor",
+  "kode_jenis_impor1": "6",
+  "modified": "2023-06-21 14:34:22.066377",
+  "nama_jenis_impor1": "VOORUITSLAG",
+  "name": "6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Impor",
+  "kode_jenis_impor1": "7",
+  "modified": "2023-06-21 14:34:22.070094",
+  "nama_jenis_impor1": "GABUNGAN",
+  "name": "7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Impor",
+  "kode_jenis_impor1": "1",
+  "modified": "2023-06-21 14:34:22.046332",
+  "nama_jenis_impor1": "UNTUK DIPAKAI",
+  "name": "1"
+ }
+]

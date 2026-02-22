@@ -1,0 +1,3404 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G001",
+  "kode_kantor_bc": "0",
+  "modified": "2023-10-04 11:25:34.255186",
+  "name": "G001",
+  "uraian": "GUDANG PITA CUKAI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "1014",
+  "kode_kantor_bc": "010700",
+  "modified": "2023-10-04 11:25:34.272251",
+  "name": "1014",
+  "uraian": "GUDANG 101 - 104"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "1059",
+  "kode_kantor_bc": "010700",
+  "modified": "2023-10-04 11:25:34.277320",
+  "name": "1059",
+  "uraian": "GUDANG 105 -109"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "2030",
+  "kode_kantor_bc": "010700",
+  "modified": "2023-10-04 11:25:34.282404",
+  "name": "2030",
+  "uraian": "GUDANG 201 - 203 & 301 - 303"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G110",
+  "kode_kantor_bc": "010700",
+  "modified": "2023-10-04 11:25:34.288299",
+  "name": "G110",
+  "uraian": "GUDANG 110- 113"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GABI",
+  "kode_kantor_bc": "010700",
+  "modified": "2023-10-04 11:25:34.292712",
+  "name": "GABI",
+  "uraian": "LAP. PENUM. PETI KEMAS GABION"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MERA",
+  "kode_kantor_bc": "010700",
+  "modified": "2023-10-04 11:25:34.297456",
+  "name": "MERA",
+  "uraian": "GUDANG MERAH 001 - 008"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "ABDI",
+  "kode_kantor_bc": "010800",
+  "modified": "2023-10-04 11:25:34.301960",
+  "name": "ABDI",
+  "uraian": "GUDANG WAHANA ABADI KENCANA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "AERI",
+  "kode_kantor_bc": "010800",
+  "modified": "2023-10-04 11:25:34.306566",
+  "name": "AERI",
+  "uraian": "GUDANG GADING AERINDO SATIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "BUNA",
+  "kode_kantor_bc": "010800",
+  "modified": "2023-10-04 11:25:34.310260",
+  "name": "BUNA",
+  "uraian": "GUDANG BUANA TRANS SEANTERO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GARD",
+  "kode_kantor_bc": "010800",
+  "modified": "2023-10-04 11:25:34.314921",
+  "name": "GARD",
+  "uraian": "GUDANG GARUDA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "NATS",
+  "kode_kantor_bc": "010800",
+  "modified": "2023-10-04 11:25:34.320183",
+  "name": "NATS",
+  "uraian": "GUDANG NATS NUSANTARA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G103",
+  "kode_kantor_bc": "011500",
+  "modified": "2023-10-04 11:25:34.333910",
+  "name": "G103",
+  "uraian": "GUDANG 103"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G105",
+  "kode_kantor_bc": "011500",
+  "modified": "2023-10-04 11:25:34.342295",
+  "name": "G105",
+  "uraian": "GUDANG 105"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "KASA",
+  "kode_kantor_bc": "011500",
+  "modified": "2023-10-04 11:25:34.351743",
+  "name": "KASA",
+  "uraian": "GUDANG PT ANGKASA PURA TABING"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "YARD",
+  "kode_kantor_bc": "011500",
+  "modified": "2023-10-04 11:25:34.355530",
+  "name": "YARD",
+  "uraian": "LAP. PENIMB./CONTAINER YARD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PAYU",
+  "kode_kantor_bc": "020500",
+  "modified": "2023-10-04 11:25:34.359966",
+  "name": "PAYU",
+  "uraian": "TPS. PEL. SRI PAYUNG BATU VI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "ANGK",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.364039",
+  "name": "ANGK",
+  "uraian": "GD. IMPOR PT. ANGKASA PURA II"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GAFR",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.368198",
+  "name": "GAFR",
+  "uraian": "GUDANG IMPOR PT. AFR (PKU)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GBSP",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.372678",
+  "name": "GBSP",
+  "uraian": "GUDANG IMPOR PT BSP (KERINCI)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GCPI",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.377064",
+  "name": "GCPI",
+  "uraian": "GUDANG IMPOR PT CPI (RUMBAI)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GPEL",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.381622",
+  "name": "GPEL",
+  "uraian": "GD IMPOR PT. PELINDO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GPLI",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.386052",
+  "name": "GPLI",
+  "uraian": "GUDANG IMPOR PT PLI (PERAWANG)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GPPI",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.389870",
+  "name": "GPPI",
+  "uraian": "GUDANG IMPOR PT PPI (PERAWANG)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GRAK",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.394224",
+  "name": "GRAK",
+  "uraian": "GUDANG IMPOR PT RAK (KERINCI)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GSDI",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.398816",
+  "name": "GSDI",
+  "uraian": "GUDANG IMPOR PT SDI (PERAWANG)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GSGP",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.403001",
+  "name": "GSGP",
+  "uraian": "GUDANG IMPOR PT. SGP (PKU)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "IKPP",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.407044",
+  "name": "IKPP",
+  "uraian": "GUDANG IMPOR PT IKPP (PERAWANG)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LPEL",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.410805",
+  "name": "LPEL",
+  "uraian": "LAP.PENIM. CONTAINER PT. PELINDO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LSHK",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.415786",
+  "name": "LSHK",
+  "uraian": "LAP. PENIM. CONTAINER PT. SHK (PKU)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "RAPP",
+  "kode_kantor_bc": "021200",
+  "modified": "2023-10-04 11:25:34.420102",
+  "name": "RAPP",
+  "uraian": "GUDANG IMPOR PT RAPP (KERINCI)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PEL2",
+  "kode_kantor_bc": "030600",
+  "modified": "2023-10-04 11:25:34.423905",
+  "name": "PEL2",
+  "uraian": "TPS. PT PELINDO IITPD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PSUT",
+  "kode_kantor_bc": "030600",
+  "modified": "2023-10-04 11:25:34.428112",
+  "name": "PSUT",
+  "uraian": "PSUT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TIMB",
+  "kode_kantor_bc": "030600",
+  "modified": "2023-10-04 11:25:34.431901",
+  "name": "TIMB",
+  "uraian": "KB. PT. SUMATRA TIMBER UTAMA DAMAIGKB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GL01",
+  "kode_kantor_bc": "030700",
+  "modified": "2023-10-04 11:25:34.435939",
+  "name": "GL01",
+  "uraian": "GUDANG 001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GL02",
+  "kode_kantor_bc": "030700",
+  "modified": "2023-10-04 11:25:34.440388",
+  "name": "GL02",
+  "uraian": "GUDANG 002/003"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GL07",
+  "kode_kantor_bc": "030700",
+  "modified": "2023-10-04 11:25:34.445121",
+  "name": "GL07",
+  "uraian": "GUDANG 007"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GLPK",
+  "kode_kantor_bc": "030700",
+  "modified": "2023-10-04 11:25:34.449661",
+  "name": "GLPK",
+  "uraian": "GUDANG UTPK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "DWIP",
+  "kode_kantor_bc": "040200",
+  "modified": "2023-10-04 11:25:34.603893",
+  "name": "DWIP",
+  "uraian": "PT.DWIPA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "007X",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.662972",
+  "name": "007X",
+  "uraian": "GUDANG 007"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "402",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.667374",
+  "name": "402",
+  "uraian": "TPS/GD.KPBC TANJUNG PRIOK II"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "200X",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.671508",
+  "name": "200X",
+  "uraian": "GUDANG 200X"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "202X",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.675461",
+  "name": "202X",
+  "uraian": "LAPANGAN 202X"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "207X",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.679637",
+  "name": "207X",
+  "uraian": "GD/LAP.207X"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "209X",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.684041",
+  "name": "209X",
+  "uraian": "GD/LAP.209-210"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "213X",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.688699",
+  "name": "213X",
+  "uraian": "GUDANG 213X"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "214X",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.692420",
+  "name": "214X",
+  "uraian": "LAYANAN LANCAR LINTAS LOGISTINDO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "221X",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.696147",
+  "name": "221X",
+  "uraian": "LAP 221X PELINDO II"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "223X",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.700491",
+  "name": "223X",
+  "uraian": "LAPANGAN 223X"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "300X",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.704365",
+  "name": "300X",
+  "uraian": "GUDANG 300X"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "304X",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.708452",
+  "name": "304X",
+  "uraian": "GD/LAP.304-305"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "4104",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.712604",
+  "name": "4104",
+  "uraian": "GUDANG 104"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "7KAB",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.717196",
+  "name": "7KAB",
+  "uraian": "KABER PT. BONECOM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "ARN1",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.721657",
+  "name": "ARN1",
+  "uraian": "GD&LAP AIRIN UTARA/BARAT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "ARN3",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.726233",
+  "name": "ARN3",
+  "uraian": "EX.LAP BOLA (AIRIN, PT)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "ASRI",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.730230",
+  "name": "ASRI",
+  "uraian": "KABER PT. BRENTANINDO ASRI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "BAK1",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.734554",
+  "name": "BAK1",
+  "uraian": "GD&LAP BUANA AMANAH KARYA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "BAND",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.738545",
+  "name": "BAND",
+  "uraian": "GD & LAP CDC BANDA - MULTI TERMINAL INDONESIA, PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "BERD",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.742347",
+  "name": "BERD",
+  "uraian": "GD & LAP - BERDIKARI, PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "BINA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.746117",
+  "name": "BINA",
+  "uraian": "PT. BINA SINAR AMITY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CENT",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.750760",
+  "name": "CENT",
+  "uraian": "PT. CENTRAL SARANA (DP3)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "DHAR",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.754598",
+  "name": "DHAR",
+  "uraian": "KABER PT. DHARMA KARYA PERSADA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "DMK1",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.758744",
+  "name": "DMK1",
+  "uraian": "GD & LAP DWIPA MANUNGGAL POS 9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "EXPR",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.762655",
+  "name": "EXPR",
+  "uraian": "KABER PT. DUNIA EXPRES"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G114",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.770891",
+  "name": "G114",
+  "uraian": "GUDANG 114"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G115",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.774811",
+  "name": "G115",
+  "uraian": "GUDANG 115"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G201",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.778788",
+  "name": "G201",
+  "uraian": "GUDANG 201"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G203",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.782818",
+  "name": "G203",
+  "uraian": "GUDANG 203"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G813",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.786818",
+  "name": "G813",
+  "uraian": "GUDANG 108 -113"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GAPI",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.790618",
+  "name": "GAPI",
+  "uraian": "GUDANG TRISARI API"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GMS1",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.798972",
+  "name": "GMS1",
+  "uraian": "GUDANG MAS SATRIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "HMLA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.802997",
+  "name": "HMLA",
+  "uraian": "PT. HARJA MULTI LANGGENG (DP3)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "INFO",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.806868",
+  "name": "INFO",
+  "uraian": "KABER. PT. INFOPEN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "INTI",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.810947",
+  "name": "INTI",
+  "uraian": "KABER. PT.BENOLI INTI KARYA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "JAYA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.815502",
+  "name": "JAYA",
+  "uraian": "KABER. PT. LAUTAN JAYA KUMALA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "KARA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.819854",
+  "name": "KARA",
+  "uraian": "PT. KARAVAN (TPS)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "KOJA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.823762",
+  "name": "KOJA",
+  "uraian": "LAP KOJA - KSO TERMINAL PETIKEMAS KOJA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "KTM0",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.827674",
+  "name": "KTM0",
+  "uraian": "KODJA TERRAMARIN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LOKA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.832149",
+  "name": "LOKA",
+  "uraian": "KABER. PT. PESAKA LOKA KIRANA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MAPR",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.836388",
+  "name": "MAPR",
+  "uraian": "PT.MITRA ABADI PRATAMA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MARU",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.840551",
+  "name": "MARU",
+  "uraian": "KABER. MARUNDA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MBPU",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.844227",
+  "name": "MBPU",
+  "uraian": "PT. MULTI BINA PURA (DP3)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MKT1",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.848317",
+  "name": "MKT1",
+  "uraian": "GD & LAP 222X POS 9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MKT2",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.851876",
+  "name": "MKT2",
+  "uraian": "GD & LAP KALI BARU. MASAJI KARGOSENTRA TAMA."
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MORI",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.855542",
+  "name": "MORI",
+  "uraian": "PT.MORIS (DP3)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MSAP",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.859752",
+  "name": "MSAP",
+  "uraian": "PT.MSA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MTI1",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.863848",
+  "name": "MTI1",
+  "uraian": "EX DWIPA MTI1-MULTI TERMINAL INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "NCT1",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.867891",
+  "name": "NCT1",
+  "uraian": "NEW PRIOK CONTAINER TERMINAL 1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "NUSA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.871748",
+  "name": "NUSA",
+  "uraian": "KABER. NUSANTARA TANJUNG PRIOK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PESA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.875472",
+  "name": "PESA",
+  "uraian": "PT. PESAKA LOKA KIRANA (TPS)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PRJP",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.879821",
+  "name": "PRJP",
+  "uraian": "LAP PRIMANATA JASA PERSADA PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PUNI",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.884050",
+  "name": "PUNI",
+  "uraian": "PT. PUNINAR PACIFIC (DP3)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "RA33",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.887892",
+  "name": "RA33",
+  "uraian": "GUDANG RA-33"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "RAYA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.891709",
+  "name": "RAYA",
+  "uraian": "GD & LAP JL. BANGKA - AGUNG RAYA, PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "RUNA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.895279",
+  "name": "RUNA",
+  "uraian": "PT. BIMARUNA JAYA (DP3)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SENA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.899725",
+  "name": "SENA",
+  "uraian": "LAP. TIMBUN SENAWANGI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SGRO",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.903698",
+  "name": "SGRO",
+  "uraian": "SEGORO TERMINAL/214X"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SUPA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.907582",
+  "name": "SUPA",
+  "uraian": "GUDANG SUNDA KELAPA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "T002",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.911648",
+  "name": "T002",
+  "uraian": "GD & LAP 002"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "T003",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.915728",
+  "name": "T003",
+  "uraian": "GD. PELINDO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "T09X",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.920039",
+  "name": "T09X",
+  "uraian": "GUDANG DAN LAP. TIMBUN 009X"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "T106",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.923865",
+  "name": "T106",
+  "uraian": "GUDANG DAN LAP. TIMBUN 106"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "T208",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.927868",
+  "name": "T208",
+  "uraian": "GD/LAP.208"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "T303",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.931943",
+  "name": "T303",
+  "uraian": "GD/LAP303"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TER3",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.935761",
+  "name": "TER3",
+  "uraian": "LAP.XTBB. GD DAN LAP.300,301,302,303,304,305"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TIKA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.940019",
+  "name": "TIKA",
+  "uraian": "GD & LAP DHARMA KARTIKA BHAKTI, PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TJE1",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.944645",
+  "name": "TJE1",
+  "uraian": "GD & LAP JL. PENJALAI.TJETOT.PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TMAL",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.949039",
+  "name": "TMAL",
+  "uraian": "LAP 212_300-MUSTIKA ALAM LESTARI PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TMAR",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.952800",
+  "name": "TMAR",
+  "uraian": "PT. GLOBAL TERMINAL MARUNDA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TMKT",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.956606",
+  "name": "TMKT",
+  "uraian": "PT. MASAJI KARGOSENTRA TAMA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TMSI",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.960441",
+  "name": "TMSI",
+  "uraian": "LAP. TIMBUN MSI (BANDA)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TND2",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.964599",
+  "name": "TND2",
+  "uraian": "GD & LAP 2-TRANSPORINDO LIMA PERKASA, KEP-4483"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TNDO",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.968806",
+  "name": "TNDO",
+  "uraian": "PT. TRANSPORINDO LP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TPK1",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.972748",
+  "name": "TPK1",
+  "uraian": "UTPK I"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TPK2",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.976760",
+  "name": "TPK2",
+  "uraian": "UTPK II"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TRAN",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.981123",
+  "name": "TRAN",
+  "uraian": "TRANSPORTAMA S"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TRMA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.985184",
+  "name": "TRMA",
+  "uraian": "GD & LAP-LAUTAN TIRTA TRANSPORTAMA, PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "ULIM",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.990252",
+  "name": "ULIM",
+  "uraian": "PT. UJUNG LIMA (DP3)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "UTPK",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.994835",
+  "name": "UTPK",
+  "uraian": "UTPK III"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "WIRA",
+  "kode_kantor_bc": "040300",
+  "modified": "2023-10-04 11:25:34.999257",
+  "name": "WIRA",
+  "uraian": "PT. WIRA MITRA PRIMA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "1009",
+  "kode_kantor_bc": "040400",
+  "modified": "2023-10-04 11:25:35.004098",
+  "name": "1009",
+  "uraian": "GUDANG BERIKAT NITSULEMO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "1200",
+  "kode_kantor_bc": "040400",
+  "modified": "2023-10-04 11:25:35.008540",
+  "name": "1200",
+  "uraian": "GUDANG 1200"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "ADHI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.012711",
+  "name": "ADHI",
+  "uraian": "UNITRA ADHIJAYA PT."
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "APKI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.016793",
+  "name": "APKI",
+  "uraian": "ANGKASA PURA KARGO IMPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "APRI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.020741",
+  "name": "APRI",
+  "uraian": "GUDANG IMPOR ANGKASA PURA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "BML1",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.024665",
+  "name": "BML1",
+  "uraian": "TPS-TNS BERDIRI MATAHARI LOGISTIK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CEKS",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.028775",
+  "name": "CEKS",
+  "uraian": "GUDANG CARDIG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CIMP",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.033496",
+  "name": "CIMP",
+  "uraian": "GUDANG CARDIG IMPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CJGL",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.037334",
+  "name": "CJGL",
+  "uraian": "PT. CJGLS INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "COVR",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.041052",
+  "name": "COVR",
+  "uraian": "GUDANG OVERFLOW CARDIG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CSCS",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.045107",
+  "name": "CSCS",
+  "uraian": "ANGKASA CITRA SCS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "DJOE",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.049609",
+  "name": "DJOE",
+  "uraian": "DONG JOE INDONESIA PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "DOSO",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.053473",
+  "name": "DOSO",
+  "uraian": "DOSON INDONESIA PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "DS04",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.057580",
+  "name": "DS04",
+  "uraian": "PT. DSV TRANSPORT INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "DS06",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.061358",
+  "name": "DS06",
+  "uraian": "PT. DSV TRANSPORT INDONESIA TAMAN NIAGA SOEWARNA L"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "EDSG",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.065550",
+  "name": "EDSG",
+  "uraian": "EDS MANUFACTURING PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "FEDX",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.069748",
+  "name": "FEDX",
+  "uraian": "GUDANG FEDEX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GADI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.073755",
+  "name": "GADI",
+  "uraian": "ADI MULTI SARANA PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GBDL",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.077958",
+  "name": "GBDL",
+  "uraian": "PT. BANGUN DESA LOGISTINDO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GBGD",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.082452",
+  "name": "GBGD",
+  "uraian": "BANTEN GLOBAL DEVELOPMENT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GBGF",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.086803",
+  "name": "GBGF",
+  "uraian": "PT. BANTEN GLOBAL DEVELOPMENT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GDGT",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.090966",
+  "name": "GDGT",
+  "uraian": "GAJAH TUNGGAL PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GDHL",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.094682",
+  "name": "GDHL",
+  "uraian": "GUDANG DHL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GDOM",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.098909",
+  "name": "GDOM",
+  "uraian": "GUDANG GARUDA DOMESTIK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GDWD",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.102553",
+  "name": "GDWD",
+  "uraian": "PT. WAHANA DIRGANTARA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GDWF",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.106567",
+  "name": "GDWF",
+  "uraian": "PT. WAHANA DIRGANTARA FEDEX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GDWI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.110763",
+  "name": "GDWI",
+  "uraian": "PT. WAHANA DIRGANTARA INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GEKS",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.115035",
+  "name": "GEKS",
+  "uraian": "GUDANG GARUDA EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GGMF",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.119191",
+  "name": "GGMF",
+  "uraian": "GARUDA MAINTENANCE FACILITIES"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GGWI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.123151",
+  "name": "GGWI",
+  "uraian": "PT. GEODIS WILSON INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GIMP",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.127592",
+  "name": "GIMP",
+  "uraian": "GUDANG GARUDA IMPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GJDC",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.131933",
+  "name": "GJDC",
+  "uraian": "GUDANG DHL JDC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GOVE",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.135938",
+  "name": "GOVE",
+  "uraian": "GUDANG OVERFLOW GARUDA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GPPL",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.140120",
+  "name": "GPPL",
+  "uraian": "PT. PANAH PERDANA LOGISINDO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GPRA",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.144226",
+  "name": "GPRA",
+  "uraian": "PENIMBUNAN GUDANG GAPURA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GTAE",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.148891",
+  "name": "GTAE",
+  "uraian": "TA YUNG INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GTVM",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.152852",
+  "name": "GTVM",
+  "uraian": "TVM INDONESIA C. PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GUCT",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.156730",
+  "name": "GUCT",
+  "uraian": "PT. UNGGUL CIPTA TRANS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GWIN",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.160585",
+  "name": "GWIN",
+  "uraian": "STARWIN INDONESIA PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "HERA",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.164862",
+  "name": "HERA",
+  "uraian": "HERALD TRISTATE PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "HIDE",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.169146",
+  "name": "HIDE",
+  "uraian": "BALIHIDES INDONESIA PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "IBS2",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.173165",
+  "name": "IBS2",
+  "uraian": "INTI BANGUN SELARAS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "IPRT",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.177058",
+  "name": "IPRT",
+  "uraian": "IMPORT PERIGI RAJA TERPADU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "JAWA",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.181429",
+  "name": "JAWA",
+  "uraian": "JAWA PERDANA B.I PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "JGE2",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.185241",
+  "name": "JGE2",
+  "uraian": "PT. JUSTINDO GLOBAL EKSPRES"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "KENC",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.189403",
+  "name": "KENC",
+  "uraian": "KENCANA INDAH PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "KITA",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.193425",
+  "name": "KITA",
+  "uraian": "KAWAN KITA S. PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LEDI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.197969",
+  "name": "LEDI",
+  "uraian": "LEDIN PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LOGW",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.201473",
+  "name": "LOGW",
+  "uraian": "PT.LOGWIN AIR OCEAN INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MONI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.205593",
+  "name": "MONI",
+  "uraian": "C. MONITORINDO C.C PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MSA1",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.214088",
+  "name": "MSA1",
+  "uraian": "DI GUDANG TPS MSA KARGO TAMAN NIAGA SOEWARNA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MSA5",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.218913",
+  "name": "MSA5",
+  "uraian": "DI GUDANG TPS D10 MSA KARGO TAMAN NIAGA SOEWARNA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "NESI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.223731",
+  "name": "NESI",
+  "uraian": "STARNESIA GARMENT PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "NFII",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.228435",
+  "name": "NFII",
+  "uraian": "PT. NAKU FREIGHT INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "NRGL",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.233006",
+  "name": "NRGL",
+  "uraian": "PT.NNR RPX GLOBAL LOGISTICS INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PANB",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.237446",
+  "name": "PANB",
+  "uraian": "PAN BROTHERS PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PEAR",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.242109",
+  "name": "PEAR",
+  "uraian": "PEARLAND PT."
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PNMI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.246932",
+  "name": "PNMI",
+  "uraian": "GD. PT. PUNINAR MSE INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "POSI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.251904",
+  "name": "POSI",
+  "uraian": "GUDANG TPS POS IMPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PRAT",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.257291",
+  "name": "PRAT",
+  "uraian": "PRATAMA ABADI I PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PRIM",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.262199",
+  "name": "PRIM",
+  "uraian": "PRIMA INAREKSA I PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PRIN",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.267963",
+  "name": "PRIN",
+  "uraian": "PRINTEC PERKASA PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PSCD",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.273346",
+  "name": "PSCD",
+  "uraian": "PELAYANAN SEGERA CARDIG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PSGA",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.278118",
+  "name": "PSGA",
+  "uraian": "PELAYANAN SEGERA GARUDA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "REF2",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.285253",
+  "name": "REF2",
+  "uraian": "REFEX INTERNATIONALPT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "REFX",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.291523",
+  "name": "REFX",
+  "uraian": "REFEX INTERNATIONALPT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "RODA",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.296371",
+  "name": "RODA",
+  "uraian": "RODAMAS WIRASAKTIPT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SHIR",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.302713",
+  "name": "SHIR",
+  "uraian": "SHIRASUNA A.P.E PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TA01",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.307800",
+  "name": "TA01",
+  "uraian": "GD. NIPPON EXPRESS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TA02",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.312608",
+  "name": "TA02",
+  "uraian": "PT. SCHENKER PETROLOG UTAMA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TA03",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.318760",
+  "name": "TA03",
+  "uraian": "PT. UNIAIR INDOTAMA CARGO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TA04",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.323270",
+  "name": "TA04",
+  "uraian": "PT. DSV TRANSPORT INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TA05",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.327401",
+  "name": "TA05",
+  "uraian": "TPS-TNS PANALPINA NUSAJAYA TRANS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TA10",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.332119",
+  "name": "TA10",
+  "uraian": "GD. PT\"K\" LINE AIR SERVICE INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TA11",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.337904",
+  "name": "TA11",
+  "uraian": "PT. FIN LOGISTICS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TA12",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.341829",
+  "name": "TA12",
+  "uraian": "TPS-TNS PT. TABITHA EXPRESS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TABI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.346018",
+  "name": "TABI",
+  "uraian": "TTABITHAEXPRESS PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TARA",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.352060",
+  "name": "TARA",
+  "uraian": "TARA MULTI MANDIRI PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TB02",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.356202",
+  "name": "TB02",
+  "uraian": "PT. PRIMA INTERNATIONAL CARGO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TB05",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.360332",
+  "name": "TB05",
+  "uraian": "PT. DHL GLOBAL FORWARDING INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TB06",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.365474",
+  "name": "TB06",
+  "uraian": "GUDANG EXPEDITOR TB-06 JAKARTA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TB08",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.370944",
+  "name": "TB08",
+  "uraian": "PT. KN SIGMA TRANS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TB09",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.375102",
+  "name": "TB09",
+  "uraian": "DI GUDANG TPS MSA KARGO TAMAN NIAGA SOEWARNA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TB10",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.379224",
+  "name": "TB10",
+  "uraian": "RITRA CARGO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TB11",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.384513",
+  "name": "TB11",
+  "uraian": "TPS-TNS SKY PAK INTERNATIONAL (TNT)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TB12",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.389312",
+  "name": "TB12",
+  "uraian": "TPS - TNS GUDANG AGILITY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TB13",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.393254",
+  "name": "TB13",
+  "uraian": "PT. KWE INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TB15",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.398125",
+  "name": "TB15",
+  "uraian": "PT. CARDIG LOGISTICS INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TB21",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.403442",
+  "name": "TB21",
+  "uraian": "TPS-TNS SKYPAK INT. (TNT)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TE03",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.407771",
+  "name": "TE03",
+  "uraian": "TPS - TNS PRIMA INTERNATIONAL CARGO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TE08",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.411616",
+  "name": "TE08",
+  "uraian": "PT. YUSEN LOGISTICS INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TE11",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.416215",
+  "name": "TE11",
+  "uraian": "PT. BOLLORE LOGISTICS INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TSLM",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.421406",
+  "name": "TSLM",
+  "uraian": "PT. SKY LIGHT MULTITRADA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TUN2",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.425222",
+  "name": "TUN2",
+  "uraian": "TUNTEX GARMENT II PT."
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TUNT",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.429250",
+  "name": "TUNT",
+  "uraian": "TUNTEX GARMENT I PT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TUTI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.434282",
+  "name": "TUTI",
+  "uraian": "PT. UNION TRANS INTERNUSA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "UNEX",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.438853",
+  "name": "UNEX",
+  "uraian": "PT. UNEX INTI INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "VALI",
+  "kode_kantor_bc": "050100",
+  "modified": "2023-10-04 11:25:35.443115",
+  "name": "VALI",
+  "uraian": "PT. VINFLAIR LOGISTICS INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "200",
+  "kode_kantor_bc": "050400",
+  "modified": "2023-10-04 11:25:35.447346",
+  "name": "200",
+  "uraian": "GT. PETROCHEM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "4554",
+  "kode_kantor_bc": "050400",
+  "modified": "2023-10-04 11:25:35.452454",
+  "name": "4554",
+  "uraian": "GT. PETROCHEM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "JAT1",
+  "kode_kantor_bc": "050700",
+  "modified": "2023-10-04 11:25:35.456455",
+  "name": "JAT1",
+  "uraian": "LAP. PENIMBUNAN MUARA JATI I"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "JAT2",
+  "kode_kantor_bc": "050700",
+  "modified": "2023-10-04 11:25:35.460568",
+  "name": "JAT2",
+  "uraian": "LAP. PENIMBUNAN MUARA JATI II"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "JATI",
+  "kode_kantor_bc": "050700",
+  "modified": "2023-10-04 11:25:35.465226",
+  "name": "JATI",
+  "uraian": "GUDANG MUARA JATI I"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "KI21",
+  "kode_kantor_bc": "050700",
+  "modified": "2023-10-04 11:25:35.470375",
+  "name": "KI21",
+  "uraian": "TANKI D. 2101A DAN D. 2101B"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "KI40",
+  "kode_kantor_bc": "050700",
+  "modified": "2023-10-04 11:25:35.474444",
+  "name": "KI40",
+  "uraian": "TANKI 404 B DAN 404A"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "1011",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.478939",
+  "name": "1011",
+  "uraian": "GUDANG X/XI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "ACES",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.484350",
+  "name": "ACES",
+  "uraian": "KB. PT. ACCESSORY HOUSE IND."
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "AGRA",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.489160",
+  "name": "AGRA",
+  "uraian": "LAP. PENUMP. PT. AGRATAMA PACIFIC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "ANGG",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.492998",
+  "name": "ANGG",
+  "uraian": "KB PT. ANGGUN INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "APAC",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.497089",
+  "name": "APAC",
+  "uraian": "TPS. PT. APAC INTI CORPORA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "ARIS",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.502615",
+  "name": "ARIS",
+  "uraian": "KB. PT. ARISA MANDIRI PRATAMA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "ASIA",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.507020",
+  "name": "ASIA",
+  "uraian": "KB. PT. SANDANG ASIA MAJU ABADI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "ASTI",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.511188",
+  "name": "ASTI",
+  "uraian": "KB. PT. AST INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "BRAS",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.515910",
+  "name": "BRAS",
+  "uraian": "KB. PT. INTAC BRASS INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CEDR",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.521746",
+  "name": "CEDR",
+  "uraian": "KB. PT. CEDRATEKS INDAH BUSANA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CORP",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.525908",
+  "name": "CORP",
+  "uraian": "KB. PT. APAC INTI CORPORA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CRAF",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.530148",
+  "name": "CRAF",
+  "uraian": "TKB. PT. NOSTALGIA HANDCRAFT FUR. IND."
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "DAIA",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.535543",
+  "name": "DAIA",
+  "uraian": "KB. PT. DAIYAPLAS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "DMTN",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.539829",
+  "name": "DMTN",
+  "uraian": "DEPO CONTAINER SAMUDERA (MT CONT.)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "DSAM",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.543947",
+  "name": "DSAM",
+  "uraian": "DEPO CONTAINER SAMUDERA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G12A",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.557172",
+  "name": "G12A",
+  "uraian": "GUDANG XII"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GARM",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.562734",
+  "name": "GARM",
+  "uraian": "KB. PT. BETA PENATA GARMENT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GD12",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.568443",
+  "name": "GD12",
+  "uraian": "GUDANG XII A"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GD14",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.573353",
+  "name": "GD14",
+  "uraian": "GUDANG XIV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GD16",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.577452",
+  "name": "GD16",
+  "uraian": "GUDANG XVI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GD78",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.582835",
+  "name": "GD78",
+  "uraian": "GUDANG VII/VIII"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GDG1",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.588186",
+  "name": "GDG1",
+  "uraian": "GUDANG I"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GDG2",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.592314",
+  "name": "GDG2",
+  "uraian": "GUDANG II"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GDG6",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.596309",
+  "name": "GDG6",
+  "uraian": "GUDANG VI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GDG9",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.602551",
+  "name": "GDG9",
+  "uraian": "GUDANG IX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GEOI",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.606821",
+  "name": "GEOI",
+  "uraian": "KB. PT. GEOMED INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GNU2",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.610996",
+  "name": "GNU2",
+  "uraian": "GUDANG NUSANTARA II"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GNU3",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.615574",
+  "name": "GNU3",
+  "uraian": "GUDANG NUSANTARA III"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GOLF",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.621235",
+  "name": "GOLF",
+  "uraian": "KB. PT. GOLDEN FLOWER"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GSM1",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.625005",
+  "name": "GSM1",
+  "uraian": "GUDANG SAMUDERA 1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GSM2",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.628838",
+  "name": "GSM2",
+  "uraian": "GUDANG SAMUDERA 2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GSM3",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.633863",
+  "name": "GSM3",
+  "uraian": "GUDANG SAMUDERA 3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GTRI",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.639002",
+  "name": "GTRI",
+  "uraian": "GUDANG API"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "INAX",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.642923",
+  "name": "INAX",
+  "uraian": "KB. PT. INAX INTERNATIONAL CORP."
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "INDO",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.647200",
+  "name": "INDO",
+  "uraian": "KB. PT. EKSPORINDO TERUS MAJU JAYA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "INVS",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.651333",
+  "name": "INVS",
+  "uraian": "TPS. PT. MULTIKARSA INVESTAMA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "JOHN",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.655384",
+  "name": "JOHN",
+  "uraian": "KB. JOHN'S GLOVE FACTORY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "KAYU",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.659572",
+  "name": "KAYU",
+  "uraian": "TPS. PT. KAYU LAPIS INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "KORS",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.663499",
+  "name": "KORS",
+  "uraian": "KB. PT. KORINA SEMARANG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LG01",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.667454",
+  "name": "LG01",
+  "uraian": "LAPANGAN PENUMPUKAN GUDANG I"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LG02",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.671671",
+  "name": "LG02",
+  "uraian": "LAPANGAN PENUMPUKAN GUDANG II"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LG12",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.675354",
+  "name": "LG12",
+  "uraian": "LAPANGAN PENUMPUKAN GUDANG XII"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LG14",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.679462",
+  "name": "LG14",
+  "uraian": "LAPANGAN PENUMPUKAN GUDANG XIV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LG16",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.683579",
+  "name": "LG16",
+  "uraian": "LAPANGAN PENUMPUKAN GUDANG XVI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LNUS",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.687555",
+  "name": "LNUS",
+  "uraian": "LAPANGAN PENUMPUKAN NUSANTARA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LSAM",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.691700",
+  "name": "LSAM",
+  "uraian": "LAPANGAN PENUMPUKAN SAMUDERA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LUXN",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.695670",
+  "name": "LUXN",
+  "uraian": "KB. PT. LUXINDO NUSANTARA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "METE",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.699674",
+  "name": "METE",
+  "uraian": "KB. PT. METEC SEMARANG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "NESS",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.703628",
+  "name": "NESS",
+  "uraian": "KB. PT. TRUTHFULNESS & MODESTY IND."
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "POLY",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.707354",
+  "name": "POLY",
+  "uraian": "TPS. PT. POLYSINDO EKA PERKASA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PORK",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.711461",
+  "name": "PORK",
+  "uraian": "KB. PT. PORKKA INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SAIA",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.715782",
+  "name": "SAIA",
+  "uraian": "KB. PT. SAI APPAREL INDUSTRI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SANG",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.720025",
+  "name": "SANG",
+  "uraian": "KB. PT. SANGO CERAMICS INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SENT",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.723513",
+  "name": "SENT",
+  "uraian": "KB. PT. APAC SENTRATEX CORP."
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SMIT",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.727353",
+  "name": "SMIT",
+  "uraian": "KB. MAITLAND SMITH INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "STER",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.731423",
+  "name": "STER",
+  "uraian": "KB. PT. STERLINGWOOD PRIMA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SURY",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.735516",
+  "name": "SURY",
+  "uraian": "KB. PT. SURYA MULYA BANGUN INDO."
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SWOO",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.739708",
+  "name": "SWOO",
+  "uraian": "KB. PT. SAMWOO CORP."
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TANJ",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.743489",
+  "name": "TANJ",
+  "uraian": "KB. PT TANJUNG PERMAI LESTARI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TEKS",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.747262",
+  "name": "TEKS",
+  "uraian": "KB. PT. CEDRATEKS INDAH BUSANA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TEXM",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.751362",
+  "name": "TEXM",
+  "uraian": "TPS. PT. TEXMACO PERKASA ENG."
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TIWI",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.755220",
+  "name": "TIWI",
+  "uraian": "KB. PT. PERTIWI INDOMAS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "UNGA",
+  "kode_kantor_bc": "060100",
+  "modified": "2023-10-04 11:25:35.759157",
+  "name": "UNGA",
+  "uraian": "KB. PT. UNGARAN INDAH BUSANA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "KLPT",
+  "kode_kantor_bc": "060300",
+  "modified": "2023-10-04 11:25:35.763113",
+  "name": "KLPT",
+  "uraian": "PT. DJARUM JL.YOS SUDARSO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PKOL",
+  "kode_kantor_bc": "060300",
+  "modified": "2023-10-04 11:25:35.767214",
+  "name": "PKOL",
+  "uraian": "PT. DJARUM JL. NITISEMITO 218"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "JITU",
+  "kode_kantor_bc": "060600",
+  "modified": "2023-10-04 11:25:35.770909",
+  "name": "JITU",
+  "uraian": "GB PT. DJITOE ITC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PUR1",
+  "kode_kantor_bc": "060600",
+  "modified": "2023-10-04 11:25:35.774922",
+  "name": "PUR1",
+  "uraian": "TPS PT. ANGKASA PURA I"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SOCB",
+  "kode_kantor_bc": "060600",
+  "modified": "2023-10-04 11:25:35.778641",
+  "name": "SOCB",
+  "uraian": "SOCB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SOLO",
+  "kode_kantor_bc": "060600",
+  "modified": "2023-10-04 11:25:35.782740",
+  "name": "SOLO",
+  "uraian": "KB. PT. SOLO MURNI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SRII",
+  "kode_kantor_bc": "060600",
+  "modified": "2023-10-04 11:25:35.786620",
+  "name": "SRII",
+  "uraian": "KB. PT. SRI REJEKI ISMAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TPKJ",
+  "kode_kantor_bc": "060600",
+  "modified": "2023-10-04 11:25:35.790671",
+  "name": "TPKJ",
+  "uraian": "UTPK JEBRES"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "400A",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.794631",
+  "name": "400A",
+  "uraian": "GUDANG 400A"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CIJS",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.798691",
+  "name": "CIJS",
+  "uraian": "PT. INDRA JAYA SWASTIKA CONTAINER"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CLOG",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.802711",
+  "name": "CLOG",
+  "uraian": "PT. CITRA DERMAGA PERKASA LOGISTIK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CMBA",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.806672",
+  "name": "CMBA",
+  "uraian": "PT. MULTI BINTANG ABADI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CONT",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.810585",
+  "name": "CONT",
+  "uraian": "LAP. BONGKAR/TIMBUN CONTAINER"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CPSI",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.814450",
+  "name": "CPSI",
+  "uraian": "PT. PATRIOTS SAKTI INDONESIA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CPSU",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.818796",
+  "name": "CPSU",
+  "uraian": "PT. PRIMAMAS SEGARA UNGGUL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CTPS",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.822755",
+  "name": "CTPS",
+  "uraian": "TPS CONTAINER"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CTTL",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.826970",
+  "name": "CTTL",
+  "uraian": "PT. TERMINAL TELUK LAMONG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G100",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.831530",
+  "name": "G100",
+  "uraian": "GUDANG 100"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G101",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.836015",
+  "name": "G101",
+  "uraian": "GUDANG 101"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G102",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.840070",
+  "name": "G102",
+  "uraian": "GUDANG 102"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G104",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.843940",
+  "name": "G104",
+  "uraian": "GUDANG 104"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G106",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.847968",
+  "name": "G106",
+  "uraian": "GUDANG 106"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G107",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.852258",
+  "name": "G107",
+  "uraian": "GUDANG 107"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G108",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.856537",
+  "name": "G108",
+  "uraian": "GUDANG 108"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G109",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.860395",
+  "name": "G109",
+  "uraian": "GUDANG 109"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G119",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.864402",
+  "name": "G119",
+  "uraian": "GUDANG 119"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G121",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.868512",
+  "name": "G121",
+  "uraian": "GUDANG 121"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G123",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.872274",
+  "name": "G123",
+  "uraian": "GUDANG 123"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G124",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.876310",
+  "name": "G124",
+  "uraian": "GUDANG 124"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G125",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.880576",
+  "name": "G125",
+  "uraian": "GUDANG 125"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G200",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.884467",
+  "name": "G200",
+  "uraian": "GUDANG 200"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G300",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.888292",
+  "name": "G300",
+  "uraian": "GUDANG 300"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G301",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.892082",
+  "name": "G301",
+  "uraian": "GUDANG 301"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G302",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.895954",
+  "name": "G302",
+  "uraian": "GUDANG 302"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G303",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.899970",
+  "name": "G303",
+  "uraian": "GUDANG 303"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G400",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.903988",
+  "name": "G400",
+  "uraian": "GUDANG 400"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G401",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.908054",
+  "name": "G401",
+  "uraian": "GUDANG 401"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G402",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.912156",
+  "name": "G402",
+  "uraian": "GUDANG 402"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G405",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.916371",
+  "name": "G405",
+  "uraian": "GUDANG 405"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G406",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.920457",
+  "name": "G406",
+  "uraian": "GUDANG 406"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G500",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.924363",
+  "name": "G500",
+  "uraian": "GUDANG 500"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G501",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.928677",
+  "name": "G501",
+  "uraian": "GUDANG 501"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G502",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.932780",
+  "name": "G502",
+  "uraian": "GUDANG 502"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G503",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.936710",
+  "name": "G503",
+  "uraian": "GUDANG 503"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G504",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.940667",
+  "name": "G504",
+  "uraian": "GUDANG BOGASARI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "G505",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.944288",
+  "name": "G505",
+  "uraian": "TANKI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GBIS",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.948513",
+  "name": "GBIS",
+  "uraian": "GB. PT INDRA JAYA SWASTIKA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GCFS",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.952742",
+  "name": "GCFS",
+  "uraian": "GUDANG PENIMBUNAN CFS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GDIJ",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.956554",
+  "name": "GDIJ",
+  "uraian": "PT. INDRA JAYA SWASTIKA CFS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SSSC",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.960757",
+  "name": "SSSC",
+  "uraian": "PT. SURYA SEKAWAN SEJAHTERA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TPPI",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.964759",
+  "name": "TPPI",
+  "uraian": "TPP. PT INDRA JAYA SWASTIKA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TPSI",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.968829",
+  "name": "TPSI",
+  "uraian": "TPS. PT INDRA JAYA SWASTIKA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TPSJ",
+  "kode_kantor_bc": "070100",
+  "modified": "2023-10-04 11:25:35.972704",
+  "name": "TPSJ",
+  "uraian": "TPS PT JANGKAR PACIFIC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CAIR",
+  "kode_kantor_bc": "070500",
+  "modified": "2023-10-04 11:25:35.977088",
+  "name": "CAIR",
+  "uraian": "TPS. PT CARDIG AIR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GPUR",
+  "kode_kantor_bc": "070500",
+  "modified": "2023-10-04 11:25:35.981324",
+  "name": "GPUR",
+  "uraian": "TPS PT. GAPURA ANGKASA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "HARP",
+  "kode_kantor_bc": "070500",
+  "modified": "2023-10-04 11:25:35.985343",
+  "name": "HARP",
+  "uraian": "TPS. PT. MITRA HARAPAN PERTAMA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "AERO",
+  "kode_kantor_bc": "080100",
+  "modified": "2023-10-04 11:25:35.989336",
+  "name": "AERO",
+  "uraian": "GB. PT. AEROWISATA CATERING SERVICE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "BALI",
+  "kode_kantor_bc": "080100",
+  "modified": "2023-10-04 11:25:35.992963",
+  "name": "BALI",
+  "uraian": "TBB. PT. BALI DUFREE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "BANG",
+  "kode_kantor_bc": "080100",
+  "modified": "2023-10-04 11:25:35.996995",
+  "name": "BANG",
+  "uraian": "TPS. GUDANG GERBANG ANGKASA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CAT1",
+  "kode_kantor_bc": "080100",
+  "modified": "2023-10-04 11:25:36.000950",
+  "name": "CAT1",
+  "uraian": "GB I. PT. AEROWISATA CATERING SERVICE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CAT2",
+  "kode_kantor_bc": "080100",
+  "modified": "2023-10-04 11:25:36.008544",
+  "name": "CAT2",
+  "uraian": "GB II. PT. AEROWISATA CATERING SERVICE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "CONV",
+  "kode_kantor_bc": "080100",
+  "modified": "2023-10-04 11:25:36.012508",
+  "name": "CONV",
+  "uraian": "TBB. NUSA INDAH HOTEL & CONV. CENTRE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "DEWA",
+  "kode_kantor_bc": "080100",
+  "modified": "2023-10-04 11:25:36.016478",
+  "name": "DEWA",
+  "uraian": "TBB. PT. DEWATA AGUNG WIBAWA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "FREE",
+  "kode_kantor_bc": "080100",
+  "modified": "2023-10-04 11:25:36.025426",
+  "name": "FREE",
+  "uraian": "TBB. PT. INTI DUFREE PROMOSINDO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GCAR",
+  "kode_kantor_bc": "080100",
+  "modified": "2023-10-04 11:25:36.029284",
+  "name": "GCAR",
+  "uraian": "TPS. GUDANG CARDIG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GUNU",
+  "kode_kantor_bc": "080100",
+  "modified": "2023-10-04 11:25:36.033315",
+  "name": "GUNU",
+  "uraian": "TBB. PT. GUNUNG AGUNG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MARI",
+  "kode_kantor_bc": "080100",
+  "modified": "2023-10-04 11:25:36.037615",
+  "name": "MARI",
+  "uraian": "TBB. PT. MARINDA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PUTR",
+  "kode_kantor_bc": "080100",
+  "modified": "2023-10-04 11:25:36.042257",
+  "name": "PUTR",
+  "uraian": "TBB. PT. PUTRI BINTANG NEGARA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GNNT",
+  "kode_kantor_bc": "080400",
+  "modified": "2023-10-04 11:25:36.045974",
+  "name": "GNNT",
+  "uraian": "GUDANG GNNT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GE05",
+  "kode_kantor_bc": "090100",
+  "modified": "2023-10-04 11:25:36.050359",
+  "name": "GE05",
+  "uraian": "HANGGAR EKSPOR GUDANG 05"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GI02",
+  "kode_kantor_bc": "090100",
+  "modified": "2023-10-04 11:25:36.054332",
+  "name": "GI02",
+  "uraian": "HANGGAR IMPOR GUDANG 02"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "HP&G",
+  "kode_kantor_bc": "090100",
+  "modified": "2023-10-04 11:25:36.058308",
+  "name": "HP&G",
+  "uraian": "HANGGAR POS DAN GIRO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "HPPU",
+  "kode_kantor_bc": "090100",
+  "modified": "2023-10-04 11:25:36.062889",
+  "name": "HPPU",
+  "uraian": "HANGGAR PPU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "KBS1",
+  "kode_kantor_bc": "090100",
+  "modified": "2023-10-04 11:25:36.066861",
+  "name": "KBS1",
+  "uraian": "KANTOR BANTU SUPADIO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TRIS",
+  "kode_kantor_bc": "100100",
+  "modified": "2023-10-04 11:25:36.070686",
+  "name": "TRIS",
+  "uraian": "GUDANG A TRISAKTI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "BARU",
+  "kode_kantor_bc": "100300",
+  "modified": "2023-10-04 11:25:36.074509",
+  "name": "BARU",
+  "uraian": "KAMPUNG BARU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "BATU",
+  "kode_kantor_bc": "100300",
+  "modified": "2023-10-04 11:25:36.079106",
+  "name": "BATU",
+  "uraian": "TANJUNG BATU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GAPU",
+  "kode_kantor_bc": "100300",
+  "modified": "2023-10-04 11:25:36.083572",
+  "name": "GAPU",
+  "uraian": "GAPURA ANGKASA SEPINGAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GROG",
+  "kode_kantor_bc": "100300",
+  "modified": "2023-10-04 11:25:36.087269",
+  "name": "GROG",
+  "uraian": "TANAH GROGOT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "MINA",
+  "kode_kantor_bc": "100300",
+  "modified": "2023-10-04 11:25:36.091071",
+  "name": "MINA",
+  "uraian": "PERTAMINA BALIKPAPAN & LAWE-LAWE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PING",
+  "kode_kantor_bc": "100300",
+  "modified": "2023-10-04 11:25:36.094835",
+  "name": "PING",
+  "uraian": "INTI PRATAMA SEPINGGAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "SEMA",
+  "kode_kantor_bc": "100300",
+  "modified": "2023-10-04 11:25:36.099719",
+  "name": "SEMA",
+  "uraian": "SEMAYANG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "TARI",
+  "kode_kantor_bc": "100300",
+  "modified": "2023-10-04 11:25:36.104292",
+  "name": "TARI",
+  "uraian": "TANJUNG SANTAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "UNOC",
+  "kode_kantor_bc": "100300",
+  "modified": "2023-10-04 11:25:36.108734",
+  "name": "UNOC",
+  "uraian": "UNOCAL PENAJAM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "GPHT",
+  "kode_kantor_bc": "110100",
+  "modified": "2023-10-04 11:25:36.112461",
+  "name": "GPHT",
+  "uraian": "GPHT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LINI",
+  "kode_kantor_bc": "120300",
+  "modified": "2023-10-04 11:25:36.117370",
+  "name": "LINI",
+  "uraian": "GUDANG LINI I PT. PELINDO IV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "JYPR",
+  "kode_kantor_bc": "120600",
+  "modified": "2023-10-04 11:25:36.121208",
+  "name": "JYPR",
+  "uraian": "GUDANG PELABUHAN JAYAPURA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "LJYP",
+  "kode_kantor_bc": "120600",
+  "modified": "2023-10-04 11:25:36.124963",
+  "name": "LJYP",
+  "uraian": "LAP. PENIMBUNAN PELABUHAN JAYAPURA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "PLNJ",
+  "kode_kantor_bc": "120600",
+  "modified": "2023-10-04 11:25:36.128887",
+  "name": "PLNJ",
+  "uraian": "TEMPAT PENIMBUNAN PLNJ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Gudang",
+  "kode_gudang": "STNI",
+  "kode_kantor_bc": "120600",
+  "modified": "2023-10-04 11:25:36.133146",
+  "name": "STNI",
+  "uraian": "GUDANG BANDARA SENTANI"
+ }
+]

@@ -2,6 +2,1638 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Ijin",
+  "kode_ijin": "1000",
+  "modified": "2023-06-21 13:57:36.171203",
+  "nama_ijin": "Dilarang",
+  "name": "1000"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1001",
+  "modified": "2023-06-21 13:57:36.176047",
+  "nama_ijin": "NPIK Beras",
+  "name": "1001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1002",
+  "modified": "2023-06-21 13:57:36.180196",
+  "nama_ijin": "NPIK Gula",
+  "name": "1002"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1003",
+  "modified": "2023-06-21 13:57:36.184444",
+  "nama_ijin": "NPIK Kedelai",
+  "name": "1003"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1004",
+  "modified": "2023-06-21 13:57:36.188375",
+  "nama_ijin": "NPIK Jagung",
+  "name": "1004"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1005",
+  "modified": "2023-06-21 13:57:36.192891",
+  "nama_ijin": "NPIK TPT",
+  "name": "1005"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1006",
+  "modified": "2023-06-21 13:57:36.196872",
+  "nama_ijin": "NPIK Elektronik",
+  "name": "1006"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1007",
+  "modified": "2023-06-21 13:57:36.200803",
+  "nama_ijin": "NPIK Sepatu",
+  "name": "1007"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1008",
+  "modified": "2023-06-21 13:57:36.204772",
+  "nama_ijin": "NPIK Mainan Anak-anak",
+  "name": "1008"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1009",
+  "modified": "2023-06-21 13:57:36.209921",
+  "nama_ijin": "IT Cakram Optik",
+  "name": "1009"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1010",
+  "modified": "2023-06-21 13:57:36.214083",
+  "nama_ijin": "SPI Cakram Optik Isi/Kosong/Bahan Baku/Mesin dan Peralatan Mesin",
+  "name": "1010"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1011",
+  "modified": "2023-06-21 13:57:36.218175",
+  "nama_ijin": "IP Limbah Non B3",
+  "name": "1011"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1012",
+  "modified": "2023-06-21 13:57:36.222448",
+  "nama_ijin": "IP Bahan Berbahaya",
+  "name": "1012"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1013",
+  "modified": "2023-06-21 13:57:36.227107",
+  "nama_ijin": "IP Plastik",
+  "name": "1013"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1015",
+  "modified": "2023-06-21 13:57:36.231024",
+  "nama_ijin": "PI Cakram Optik Isi",
+  "name": "1015"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1016",
+  "modified": "2023-06-21 13:57:36.235166",
+  "nama_ijin": "PI Cakram Optik Kosong",
+  "name": "1016"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1017",
+  "modified": "2023-06-21 13:57:36.239304",
+  "nama_ijin": "PI Cakram Optik Mesin dan Peralatan Mesin",
+  "name": "1017"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1021",
+  "modified": "2023-06-21 13:57:36.244109",
+  "nama_ijin": "IP Bahan Baku Plastik",
+  "name": "1021"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1061",
+  "modified": "2023-06-21 13:57:36.248497",
+  "nama_ijin": "Surat Pendaftaran Barang",
+  "name": "1061"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1062",
+  "modified": "2023-06-21 13:57:36.252855",
+  "nama_ijin": "Nomor Pendaftaran Barang",
+  "name": "1062"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1099",
+  "modified": "2023-06-21 13:57:36.257577",
+  "nama_ijin": "Laporan Surveyor",
+  "name": "1099"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1203",
+  "modified": "2023-06-21 13:57:36.261765",
+  "nama_ijin": "IP Beras",
+  "name": "1203"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1204",
+  "modified": "2023-06-21 13:57:36.265567",
+  "nama_ijin": "IP BPO Non Metil Bromida",
+  "name": "1204"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1208",
+  "modified": "2023-06-21 13:57:36.269539",
+  "nama_ijin": "IP Nitrocellulose",
+  "name": "1208"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1209",
+  "modified": "2023-06-21 13:57:36.274036",
+  "nama_ijin": "IP Prekursor Non Farmasi",
+  "name": "1209"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1210",
+  "modified": "2023-06-21 13:57:36.278754",
+  "nama_ijin": "IP Tekstil",
+  "name": "1210"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1211",
+  "modified": "2023-06-21 13:57:36.282700",
+  "nama_ijin": "IP PCMX",
+  "name": "1211"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1212",
+  "modified": "2023-06-21 13:57:36.286703",
+  "nama_ijin": "IP Pelumas",
+  "name": "1212"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1213",
+  "modified": "2023-06-21 13:57:36.291315",
+  "nama_ijin": "IP Etilena",
+  "name": "1213"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1214",
+  "modified": "2023-06-21 13:57:36.295452",
+  "nama_ijin": "IP Garam Konsumsi",
+  "name": "1214"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1215",
+  "modified": "2023-06-21 13:57:36.299541",
+  "nama_ijin": "IP Garam Industri",
+  "name": "1215"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1216",
+  "modified": "2023-06-21 13:57:36.303758",
+  "nama_ijin": "IP Gula Kristal Rafinasi",
+  "name": "1216"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1217",
+  "modified": "2023-06-21 13:57:36.308343",
+  "nama_ijin": "IP BPO Metil Bromida",
+  "name": "1217"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1218",
+  "modified": "2023-06-21 13:57:36.312974",
+  "nama_ijin": "IP Gula Kristal Mentah",
+  "name": "1218"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1219",
+  "modified": "2023-06-21 13:57:36.317029",
+  "nama_ijin": "IP Besi atau Baja",
+  "name": "1219"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1291",
+  "modified": "2023-06-21 13:57:36.321072",
+  "nama_ijin": "IP / IT / SPI Garam Iodisasi / Non Iodisasi",
+  "name": "1291"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1292",
+  "modified": "2023-06-21 13:57:36.325600",
+  "nama_ijin": "PI Garam Industri/PI Garam Konsumsi",
+  "name": "1292"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1294",
+  "modified": "2023-06-21 13:57:36.331315",
+  "nama_ijin": "IP / IT / SPI BPO Metil atau Non Metil Bromida",
+  "name": "1294"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1295",
+  "modified": "2023-06-21 13:57:36.335341",
+  "nama_ijin": "IP/PI/IT Bahan Baku Plastik",
+  "name": "1295"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1296",
+  "modified": "2023-06-21 13:57:36.339547",
+  "nama_ijin": "IP / IT / SPI Prekursor Non Farmasi",
+  "name": "1296"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1297",
+  "modified": "2023-06-21 13:57:36.344265",
+  "nama_ijin": "IP / IT Besi Baja",
+  "name": "1297"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1302",
+  "modified": "2023-06-21 13:57:36.348516",
+  "nama_ijin": "IT Bahan Peledak Industri (Komersial)",
+  "name": "1302"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1304",
+  "modified": "2023-06-21 13:57:36.352352",
+  "nama_ijin": "IT BPO Non Metil Bromida",
+  "name": "1304"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1306",
+  "modified": "2023-06-21 13:57:36.356378",
+  "nama_ijin": "IT Garam",
+  "name": "1306"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1307",
+  "modified": "2023-06-21 13:57:36.360683",
+  "nama_ijin": "IT Intan Kasar",
+  "name": "1307"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1308",
+  "modified": "2023-06-21 13:57:36.364566",
+  "nama_ijin": "IT Mesin Multifungsi dan Printer Berwarna",
+  "name": "1308"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1309",
+  "modified": "2023-06-21 13:57:36.368552",
+  "nama_ijin": "IT Minuman Beralkohol",
+  "name": "1309"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1310",
+  "modified": "2023-06-21 13:57:36.372058",
+  "nama_ijin": "IT Nitro Cellulose",
+  "name": "1310"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1311",
+  "modified": "2023-06-21 13:57:36.376735",
+  "nama_ijin": "IT Prekursor Non Farmasi",
+  "name": "1311"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1312",
+  "modified": "2023-06-21 13:57:36.380593",
+  "nama_ijin": "IT Perkakas Tangan",
+  "name": "1312"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1313",
+  "modified": "2023-06-21 13:57:36.384475",
+  "nama_ijin": "IT Preparat Bau-bauan",
+  "name": "1313"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1314",
+  "modified": "2023-06-21 13:57:36.388640",
+  "nama_ijin": "IT Sakarin dan Garamnya",
+  "name": "1314"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1316",
+  "modified": "2023-06-21 13:57:36.392699",
+  "nama_ijin": "IT Besi atau Baja",
+  "name": "1316"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1321",
+  "modified": "2023-06-21 13:57:36.396618",
+  "nama_ijin": "PI Bahan Baku Plastik",
+  "name": "1321"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1399",
+  "modified": "2023-06-21 13:57:36.400643",
+  "nama_ijin": "IT Produk Tertentu",
+  "name": "1399"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1403",
+  "modified": "2023-06-21 13:57:36.404835",
+  "nama_ijin": "PI Bahan Berbahaya",
+  "name": "1403"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1405",
+  "modified": "2023-06-21 13:57:36.408862",
+  "nama_ijin": "PI Nitrocellulose",
+  "name": "1405"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1406",
+  "modified": "2023-06-21 13:57:36.412803",
+  "nama_ijin": "PI Prekursor Non Farmasi",
+  "name": "1406"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1407",
+  "modified": "2023-06-21 13:57:36.416646",
+  "nama_ijin": "PI Bahan Peledak Industri",
+  "name": "1407"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1408",
+  "modified": "2023-06-21 13:57:36.420847",
+  "nama_ijin": "PI Cengkeh",
+  "name": "1408"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1410",
+  "modified": "2023-06-21 13:57:36.425352",
+  "nama_ijin": "IP / SPI / IT Gula Kristal",
+  "name": "1410"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1411",
+  "modified": "2023-06-21 13:57:36.429876",
+  "nama_ijin": "PI Intan Kasar",
+  "name": "1411"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1412",
+  "modified": "2023-06-21 13:57:36.433690",
+  "nama_ijin": "SPI MMEA",
+  "name": "1412"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1413",
+  "modified": "2023-06-21 13:57:36.437690",
+  "nama_ijin": "PI Mesin Multi Fungsi dan Printer Berwarna",
+  "name": "1413"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1414",
+  "modified": "2023-06-21 13:57:36.442024",
+  "nama_ijin": "SPI Perkakas Tangan",
+  "name": "1414"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1415",
+  "modified": "2023-06-21 13:57:36.445918",
+  "nama_ijin": "SPI Preparat Bau-bauan",
+  "name": "1415"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1416",
+  "modified": "2023-06-21 13:57:36.449610",
+  "nama_ijin": "PI Sakarin",
+  "name": "1416"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1417",
+  "modified": "2023-06-21 13:57:36.453773",
+  "nama_ijin": "PI Preparat Campuran Mengandung Alkohol",
+  "name": "1417"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1418",
+  "modified": "2023-06-21 13:57:36.457604",
+  "nama_ijin": "PI Tabung gas 3 Kg",
+  "name": "1418"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1421",
+  "modified": "2023-06-21 13:57:36.461573",
+  "nama_ijin": "PI Siklamat",
+  "name": "1421"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1422",
+  "modified": "2023-06-21 13:57:36.465229",
+  "nama_ijin": "PI Beras",
+  "name": "1422"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1425",
+  "modified": "2023-06-21 13:57:36.469124",
+  "nama_ijin": "PI BPO Metil Bromida",
+  "name": "1425"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1426",
+  "modified": "2023-06-21 13:57:36.472781",
+  "nama_ijin": "PI BPO Non Metil Bromida",
+  "name": "1426"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1427",
+  "modified": "2023-06-21 13:57:36.476925",
+  "nama_ijin": "SPI Produk Kehutanan",
+  "name": "1427"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1501",
+  "modified": "2023-06-21 13:57:36.480807",
+  "nama_ijin": "Surat Pendaftaran Barang/Perkecualian SNI/NPB",
+  "name": "1501"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1502",
+  "modified": "2023-06-21 13:57:36.484710",
+  "nama_ijin": "PI Gula Kristal Putih",
+  "name": "1502"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1503",
+  "modified": "2023-06-21 13:57:36.489492",
+  "nama_ijin": "PI Barang Hibah",
+  "name": "1503"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1504",
+  "modified": "2023-06-21 13:57:36.494420",
+  "nama_ijin": "PI Barang Modal Bukan Baru Pemakai Langsung",
+  "name": "1504"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1505",
+  "modified": "2023-06-21 13:57:36.499839",
+  "nama_ijin": "PI Barang Impor Sementara",
+  "name": "1505"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1506",
+  "modified": "2023-06-21 13:57:36.504205",
+  "nama_ijin": "PI Barang Modal Bukan Baru Rekondisi",
+  "name": "1506"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1507",
+  "modified": "2023-06-21 13:57:36.508449",
+  "nama_ijin": "PI Pemasukan Barang Kembali",
+  "name": "1507"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1508",
+  "modified": "2023-06-21 13:57:36.512889",
+  "nama_ijin": "PI Tanpa API & NPIK",
+  "name": "1508"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1509",
+  "modified": "2023-06-21 13:57:36.517058",
+  "nama_ijin": "PI Tanpa NPIK",
+  "name": "1509"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1510",
+  "modified": "2023-06-21 13:57:36.522064",
+  "nama_ijin": "PI Cakram Otik Polycarbonat",
+  "name": "1510"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1511",
+  "modified": "2023-06-21 13:57:36.526186",
+  "nama_ijin": "PI Minyak dan Gas Bumi",
+  "name": "1511"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1512",
+  "modified": "2023-06-21 13:57:36.530267",
+  "nama_ijin": "PI Minuman Beralkohol",
+  "name": "1512"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1513",
+  "modified": "2023-06-21 13:57:36.534477",
+  "nama_ijin": "PI Pupuk Bersubsidi",
+  "name": "1513"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1514",
+  "modified": "2023-06-21 13:57:36.538725",
+  "nama_ijin": "PI Garam Industri",
+  "name": "1514"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1515",
+  "modified": "2023-06-21 13:57:36.543039",
+  "nama_ijin": "PI Barang Pindahan Duta Besar",
+  "name": "1515"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1516",
+  "modified": "2023-06-21 13:57:36.547516",
+  "nama_ijin": "PI Tidak Reekspor barang ex Impor Sementara",
+  "name": "1516"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1517",
+  "modified": "2023-06-21 13:57:36.551378",
+  "nama_ijin": "PI Tanpa API",
+  "name": "1517"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1518",
+  "modified": "2023-06-21 13:57:36.554978",
+  "nama_ijin": "IP Besi atau Baja K3S",
+  "name": "1518"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1519",
+  "modified": "2023-06-21 13:57:36.558934",
+  "nama_ijin": "IT Produk Tertentu - Alas Kaki",
+  "name": "1519"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1520",
+  "modified": "2023-06-21 13:57:36.562837",
+  "nama_ijin": "IT Produk Tertentu - Elektronika",
+  "name": "1520"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1521",
+  "modified": "2023-06-21 13:57:36.566839",
+  "nama_ijin": "IT Produk Tertentu - Mainan Anak-anak",
+  "name": "1521"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1522",
+  "modified": "2023-06-21 13:57:36.570829",
+  "nama_ijin": "IT Produk Tertentu - Pakaian Jadi",
+  "name": "1522"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1523",
+  "modified": "2023-06-21 13:57:36.575096",
+  "nama_ijin": "IT Produk Tertentu - Produk Makanan dan Minuman",
+  "name": "1523"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1524",
+  "modified": "2023-06-21 13:57:36.579524",
+  "nama_ijin": "IT Gula Kristal Putih",
+  "name": "1524"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1525",
+  "modified": "2023-06-21 13:57:36.583466",
+  "nama_ijin": "IT Non Cakram Optik",
+  "name": "1525"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1526",
+  "modified": "2023-06-21 13:57:36.587817",
+  "nama_ijin": "IT BPO Metil Bromida",
+  "name": "1526"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1527",
+  "modified": "2023-06-21 13:57:36.592419",
+  "nama_ijin": "PI Barang Modal Tidak Baru",
+  "name": "1527"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1530",
+  "modified": "2023-06-21 13:57:36.597580",
+  "nama_ijin": "PI Barang Modal Bukan Baru Pemakai Langsung / Rekondisi",
+  "name": "1530"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1531",
+  "modified": "2023-06-21 13:57:36.602067",
+  "nama_ijin": "Laporan Surveyor / Certificate Of Inspection",
+  "name": "1531"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1532",
+  "modified": "2023-06-21 13:57:36.605902",
+  "nama_ijin": "IT Cakram Optik / IT Non Cakram Optik",
+  "name": "1532"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1534",
+  "modified": "2023-06-21 13:57:36.609700",
+  "nama_ijin": "IP B2 /SPI B2",
+  "name": "1534"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1535",
+  "modified": "2023-06-21 13:57:36.613509",
+  "nama_ijin": "IP / IT / SPI Nitrocelulose",
+  "name": "1535"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1536",
+  "modified": "2023-06-21 13:57:36.617578",
+  "nama_ijin": "IP Beras / SPI Beras",
+  "name": "1536"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1537",
+  "modified": "2023-06-21 13:57:36.621584",
+  "nama_ijin": "Certificate Of Inspection",
+  "name": "1537"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1555",
+  "modified": "2023-06-21 13:57:36.625511",
+  "nama_ijin": "Surat Keterangan Label berbahasa Indonesia",
+  "name": "1555"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1557",
+  "modified": "2023-06-21 13:57:36.629604",
+  "nama_ijin": "SPI TPT",
+  "name": "1557"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1558",
+  "modified": "2023-06-21 13:57:36.633342",
+  "nama_ijin": "SPI Batik dan Motif Batik",
+  "name": "1558"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1560",
+  "modified": "2023-06-21 13:57:36.637381",
+  "nama_ijin": "PI Besi atau Baja, Baja Paduan, dan Produk Turunannya",
+  "name": "1560"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1601",
+  "modified": "2023-06-21 13:57:36.641950",
+  "nama_ijin": "PI Holtikultura",
+  "name": "1601"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1602",
+  "modified": "2023-06-21 13:57:36.646078",
+  "nama_ijin": "IP Holtikultura",
+  "name": "1602"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1603",
+  "modified": "2023-06-21 13:57:36.649836",
+  "nama_ijin": "IT Holtikultura",
+  "name": "1603"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1604",
+  "modified": "2023-06-21 13:57:36.653612",
+  "nama_ijin": "IP / IT / SPI Holtikultura",
+  "name": "1604"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1605",
+  "modified": "2023-06-21 13:57:36.657718",
+  "nama_ijin": "IT Telepon Seluler, Komputer Genggam (Handheld) dan Komputer Tablet",
+  "name": "1605"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1606",
+  "modified": "2023-06-21 13:57:36.661631",
+  "nama_ijin": "PI Telepon Seluler, Komputer Genggam (Handheld) dan Komputer Tablet",
+  "name": "1606"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1607",
+  "modified": "2023-06-21 13:57:36.665453",
+  "nama_ijin": "IT Hewan dan Produk Hewan",
+  "name": "1607"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1608",
+  "modified": "2023-06-21 13:57:36.669543",
+  "nama_ijin": "PI Hewan dan Produk Hewan",
+  "name": "1608"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1609",
+  "modified": "2023-06-21 13:57:36.677684",
+  "nama_ijin": "IT Kedelai",
+  "name": "1609"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1610",
+  "modified": "2023-06-21 13:57:36.681565",
+  "nama_ijin": "PI Kedelai",
+  "name": "1610"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1611",
+  "modified": "2023-06-21 13:57:36.685078",
+  "nama_ijin": "IP Semen",
+  "name": "1611"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1612",
+  "modified": "2023-06-21 13:57:36.689213",
+  "nama_ijin": "IT Semen",
+  "name": "1612"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1613",
+  "modified": "2023-06-21 13:57:36.693572",
+  "nama_ijin": "PI Semen",
+  "name": "1613"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1614",
+  "modified": "2023-06-21 13:57:36.698029",
+  "nama_ijin": "PPI Semen",
+  "name": "1614"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1615",
+  "modified": "2023-06-21 13:57:36.702212",
+  "nama_ijin": "IT Baja Paduan",
+  "name": "1615"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1616",
+  "modified": "2023-06-21 13:57:36.706783",
+  "nama_ijin": "PI Baja Paduan",
+  "name": "1616"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1619",
+  "modified": "2023-06-21 13:57:36.711190",
+  "nama_ijin": "IP Baja Paduan",
+  "name": "1619"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1621",
+  "modified": "2023-06-21 13:57:36.716167",
+  "nama_ijin": "IT Bahan Baku Plastik",
+  "name": "1621"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1623",
+  "modified": "2023-06-21 13:57:36.720987",
+  "nama_ijin": "Izin Tipe UTTP",
+  "name": "1623"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1627",
+  "modified": "2023-06-21 13:57:36.725310",
+  "nama_ijin": "IP/PI/SPI Ban",
+  "name": "1627"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1690",
+  "modified": "2023-06-21 13:57:36.729671",
+  "nama_ijin": "IP / IT / PI / PPI Semen",
+  "name": "1690"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1800",
+  "modified": "2023-06-21 13:57:36.734100",
+  "nama_ijin": "API-U / API-P",
+  "name": "1800"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "1803",
+  "modified": "2023-06-21 13:57:36.738584",
+  "nama_ijin": "Laporan Surveyor / Certificate Of Inspection / API-P",
+  "name": "1803"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "2001",
+  "modified": "2023-06-21 13:57:36.743113",
+  "nama_ijin": "Karantina Ikan KID 7",
+  "name": "2001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "2003",
+  "modified": "2023-06-21 13:57:36.747444",
+  "nama_ijin": "Karantina Ikan KID 3",
+  "name": "2003"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "2015",
+  "modified": "2023-06-21 13:57:36.751643",
+  "nama_ijin": "Karantina Ikan KID 15",
+  "name": "2015"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "2946",
+  "modified": "2023-06-21 13:57:36.755951",
+  "nama_ijin": "Karantina Ikan KID 3",
+  "name": "2946"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "2947",
+  "modified": "2023-06-21 13:57:36.760401",
+  "nama_ijin": "Karantina Ikan KID 5",
+  "name": "2947"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "2999",
+  "modified": "2023-06-21 13:57:36.764527",
+  "nama_ijin": "KI-D3, KI-D12, atau KI-D15",
+  "name": "2999"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "3004",
+  "modified": "2023-06-21 13:57:36.768996",
+  "nama_ijin": "Karantina Hewan KH 4",
+  "name": "3004"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "3005",
+  "modified": "2023-06-21 13:57:36.773085",
+  "nama_ijin": "Karantina Hewan KH 5",
+  "name": "3005"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "3007",
+  "modified": "2023-06-21 13:57:36.777954",
+  "nama_ijin": "Karantina Hewan KH 7",
+  "name": "3007"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "3012",
+  "modified": "2023-06-21 13:57:36.782961",
+  "nama_ijin": "Karantina Hewan KH 12",
+  "name": "3012"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "3999",
+  "modified": "2023-06-21 13:57:36.787352",
+  "nama_ijin": "KH.4, KH.5, KH.7,KH.8a, KH.8b, KH.8c, KH.9, KH.10,KH.11 atau KH.12",
+  "name": "3999"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "4001",
+  "modified": "2023-06-21 13:57:36.792145",
+  "nama_ijin": "KT 9 - Sertifikat Pelepasan",
+  "name": "4001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "4007",
+  "modified": "2023-06-21 13:57:36.796461",
+  "nama_ijin": "SP 7 - Surat Pemberitahuan Tidak Perlu Tindakan Karantina Tumbuhan",
+  "name": "4007"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "4016",
+  "modified": "2023-06-21 13:57:36.800757",
+  "nama_ijin": "KT 2 - Surat Persetujuan Pelaksanaan Tindakan",
+  "name": "4016"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "4019",
+  "modified": "2023-06-21 13:57:36.804886",
+  "nama_ijin": "KT 2 - Surat Persetujuan Pelaksanaan Tindakan",
+  "name": "4019"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "4942",
+  "modified": "2023-06-21 13:57:36.809068",
+  "nama_ijin": "KT.2 atau KT.9",
+  "name": "4942"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "5854",
+  "modified": "2023-06-21 13:57:36.812893",
+  "nama_ijin": "Surat Keterangan Impor",
+  "name": "5854"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "5855",
+  "modified": "2023-06-21 13:57:36.816856",
+  "nama_ijin": "Surat Keterangan Komoditas Non Obat dan Makanan",
+  "name": "5855"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "5856",
+  "modified": "2023-06-21 13:57:36.820814",
+  "nama_ijin": "Surat Keterangan Impor/Surat Keterangan Komoditas Non Obat dan Makanan",
+  "name": "5856"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "5857",
+  "modified": "2023-06-21 13:57:36.824579",
+  "nama_ijin": "Surat Keterangan Impor / Special Access Scheme (SAS)",
+  "name": "5857"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "6001",
+  "modified": "2023-06-21 13:57:36.828685",
+  "nama_ijin": "Nomor Pendaftaran Alat Kesehatan",
+  "name": "6001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "6002",
+  "modified": "2023-06-21 13:57:36.832561",
+  "nama_ijin": "Laporan Surveyor",
+  "name": "6002"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "6006",
+  "modified": "2023-06-21 13:57:36.836576",
+  "nama_ijin": "SPI Narkotika",
+  "name": "6006"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "6007",
+  "modified": "2023-06-21 13:57:36.840326",
+  "nama_ijin": "SPI Psikotropika",
+  "name": "6007"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "6008",
+  "modified": "2023-06-21 13:57:36.844397",
+  "nama_ijin": "Nomor Pendaftaran PKRT",
+  "name": "6008"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "6091",
+  "modified": "2023-06-21 13:57:36.848733",
+  "nama_ijin": "SPI-Prekursor Farmasi",
+  "name": "6091"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "6999",
+  "modified": "2023-06-21 13:57:36.852541",
+  "nama_ijin": "Izin Edar Alat Kesehatan, Alat Kesehatan Diagnostik In Vitro, dan PKRT",
+  "name": "6999"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "7001",
+  "modified": "2023-06-21 13:57:36.856400",
+  "nama_ijin": "Fasilitas Pertambangan",
+  "name": "7001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "8001",
+  "modified": "2023-06-21 13:57:36.860214",
+  "nama_ijin": "Persetujuan Impor bahan nuklir dari BAPETEN",
+  "name": "8001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "8002",
+  "modified": "2023-06-21 13:57:36.863715",
+  "nama_ijin": "Persetujuan Impor Sumber radiasi pengion dari BAPETEN",
+  "name": "8002"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "9001",
+  "modified": "2023-06-21 13:57:36.867665",
+  "nama_ijin": "Formulir Pemberitahuan kepada BI/PPATK",
+  "name": "9001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "9003",
+  "modified": "2023-06-21 13:57:36.871298",
+  "nama_ijin": "Persetujuan Pembawaan UKA",
+  "name": "9003"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "10001",
+  "modified": "2023-06-21 13:57:36.875542",
+  "nama_ijin": "Ijin Impor dari Dep. Kebudayaan dan Pariwisata",
+  "name": "10001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "11001",
+  "modified": "2023-06-21 13:57:36.879397",
+  "nama_ijin": "SATS LN dari DepHut dan Izin CITES dari negara pengekspor.",
+  "name": "11001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "12001",
+  "modified": "2023-06-21 13:57:36.883296",
+  "nama_ijin": "Sertifikasi",
+  "name": "12001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "13001",
+  "modified": "2023-06-21 13:57:36.887165",
+  "nama_ijin": "SNI Gula Kristal Mentah",
+  "name": "13001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "13002",
+  "modified": "2023-06-21 13:57:36.891176",
+  "nama_ijin": "Wajib izin impor dari Departemen Pertanian",
+  "name": "13002"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "13003",
+  "modified": "2023-06-21 13:57:36.894818",
+  "nama_ijin": "Wajib Izin dan/atau Pendaftaran Pestisida dari Menteri Pertanian",
+  "name": "13003"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "13604",
+  "modified": "2023-06-21 13:57:36.898805",
+  "nama_ijin": "Rekomendasi Impor Produk Holtikultura",
+  "name": "13604"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "14001",
+  "modified": "2023-06-21 13:57:36.902753",
+  "nama_ijin": "Sertifikat Produk Penggunaan Tanda SNI",
+  "name": "14001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "14003",
+  "modified": "2023-06-21 13:57:36.906706",
+  "nama_ijin": "Pengecualian SNI",
+  "name": "14003"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "14210",
+  "modified": "2023-06-21 13:57:36.910744",
+  "nama_ijin": "Rekomendasi IP Tekstil",
+  "name": "14210"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "15001",
+  "modified": "2023-06-21 13:57:36.914674",
+  "nama_ijin": "Wajib Izin Impor dari POLRI",
+  "name": "15001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "16000",
+  "modified": "2023-06-21 13:57:36.919205",
+  "nama_ijin": "Dilarang",
+  "name": "16000"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "16001",
+  "modified": "2023-06-21 13:57:36.923636",
+  "nama_ijin": "Surat Keterangan Registrasi Bahan Berbahaya dan Beracun (B3)",
+  "name": "16001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "17001",
+  "modified": "2023-06-21 13:57:36.927405",
+  "nama_ijin": "SNI",
+  "name": "17001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "17002",
+  "modified": "2023-06-21 13:57:36.931491",
+  "nama_ijin": "Nomor Pelumas Terdaftar",
+  "name": "17002"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "17003",
+  "modified": "2023-06-21 13:57:36.935828",
+  "nama_ijin": "Ijin Usaha Niaga Umum/Ijin Usaha Niaga Terbatas",
+  "name": "17003"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "17004",
+  "modified": "2023-06-21 13:57:36.939719",
+  "nama_ijin": "Izin pencantuman tanda SKEM dan Label Tanda Hemat Energi/Rekomendasi pengiriman sampel uji Piranti Pengkondisi Udara",
+  "name": "17004"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "21001",
+  "modified": "2023-06-21 13:57:36.943960",
+  "nama_ijin": "Nomor Pendaftaran Obat Ikan",
+  "name": "21001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22002",
+  "modified": "2023-06-21 13:57:36.947923",
+  "nama_ijin": "BP Kawasan Batam",
+  "name": "22002"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22009",
+  "modified": "2023-06-21 13:57:36.952135",
+  "nama_ijin": "IT Cakram Optik",
+  "name": "22009"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22013",
+  "modified": "2023-06-21 13:57:36.955971",
+  "nama_ijin": "IP Plastik",
+  "name": "22013"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22016",
+  "modified": "2023-06-21 13:57:36.959914",
+  "nama_ijin": "IP Cakram Optik",
+  "name": "22016"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22049",
+  "modified": "2023-06-21 13:57:36.963825",
+  "nama_ijin": "IT Kendaraan Bermotor",
+  "name": "22049"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22215",
+  "modified": "2023-06-21 13:57:36.967905",
+  "nama_ijin": "IP Garam Industri",
+  "name": "22215"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22306",
+  "modified": "2023-06-21 13:57:36.972762",
+  "nama_ijin": "IT Garam Yodium",
+  "name": "22306"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22308",
+  "modified": "2023-06-21 13:57:36.977672",
+  "nama_ijin": "IT Mesin Multi Fungsi Berwarna",
+  "name": "22308"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22309",
+  "modified": "2023-06-21 13:57:36.981555",
+  "nama_ijin": "IT Minuman Beralkohol",
+  "name": "22309"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22519",
+  "modified": "2023-06-21 13:57:36.985557",
+  "nama_ijin": "Alas Kaki",
+  "name": "22519"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22520",
+  "modified": "2023-06-21 13:57:36.989553",
+  "nama_ijin": "Elektronik",
+  "name": "22520"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22521",
+  "modified": "2023-06-21 13:57:36.993161",
+  "nama_ijin": "Mainan Anak-anak",
+  "name": "22521"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22522",
+  "modified": "2023-06-21 13:57:36.996985",
+  "nama_ijin": "Garment/Pakaian jadi",
+  "name": "22522"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22523",
+  "modified": "2023-06-21 13:57:37.000976",
+  "nama_ijin": "Makanan dan Minuman",
+  "name": "22523"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22603",
+  "modified": "2023-06-21 13:57:37.004656",
+  "nama_ijin": "IT Hortikultura",
+  "name": "22603"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22701",
+  "modified": "2023-06-21 13:57:37.008874",
+  "nama_ijin": "IT Alat Mesin dan Pertanian",
+  "name": "22701"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22850",
+  "modified": "2023-06-21 13:57:37.012935",
+  "nama_ijin": "Kosmetik (Kecantikan)",
+  "name": "22850"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "22851",
+  "modified": "2023-06-21 13:57:37.016834",
+  "nama_ijin": "Obat Tradisionil",
+  "name": "22851"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
+  "kode_ijin": "23001",
+  "modified": "2023-06-21 13:57:37.020990",
+  "nama_ijin": "Ijin BKPM",
+  "name": "23001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Ijin",
   "kode_ijin": "0",
   "modified": "2023-06-21 13:57:36.154165",
   "nama_ijin": "Dilarang",

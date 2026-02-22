@@ -2,6 +2,30 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Jenis Identitas",
+  "kode_jenis_identitas": "2",
+  "modified": "2023-06-21 14:09:58.325136",
+  "nama_jenis_identitas": "PASPOR",
+  "name": "2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Identitas",
+  "kode_jenis_identitas": "3",
+  "modified": "2023-06-21 14:09:58.329547",
+  "nama_jenis_identitas": "KTP",
+  "name": "3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Identitas",
+  "kode_jenis_identitas": "4",
+  "modified": "2023-06-21 14:09:58.333505",
+  "nama_jenis_identitas": "LAINNYA",
+  "name": "4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Identitas",
   "kode_jenis_identitas": "0",
   "modified": "2023-06-21 14:09:58.309324",
   "nama_jenis_identitas": "NPWP 12 DIGIT",
@@ -46,5 +70,21 @@
   "modified": "2023-06-21 14:09:58.337782",
   "nama_jenis_identitas": "NPWP 15 DIGIT",
   "name": "b17e49c5c0"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Identitas",
+  "kode_jenis_identitas": "5",
+  "modified": "2023-06-21 14:09:58.337782",
+  "nama_jenis_identitas": "NPWP 15 DIGIT",
+  "name": "5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Identitas",
+  "kode_jenis_identitas": "6",
+  "modified": "2023-06-21 14:09:58.319713",
+  "nama_jenis_identitas": "NPWP 16 DIGIT",
+  "name": "6"
  }
 ]
