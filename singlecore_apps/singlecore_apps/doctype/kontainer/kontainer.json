@@ -12,7 +12,8 @@
   "nomor_kontainer",
   "kode_ukuran_kontainer",
   "kode_jenis_kontainer",
-  "kode_tipe_kontainer"
+  "kode_tipe_kontainer",
+  "no_segel_kontainer"
  ],
  "fields": [
   {
@@ -48,17 +49,23 @@
    "fieldtype": "Link",
    "label": "KODE TIPE KONTAINER",
    "options": "Referensi Tipe Kontainer"
+  },
+  {
+   "fieldname": "no_segel_kontainer",
+   "fieldtype": "Data",
+   "label": "NOMOR SEGEL"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-09-21 08:14:26.763799",
+ "modified": "2026-03-01 10:51:41.502315",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "KONTAINER",
  "owner": "Administrator",
  "permissions": [],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

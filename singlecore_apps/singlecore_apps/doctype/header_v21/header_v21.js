@@ -5,23 +5,31 @@
 frappe.require('/assets/singlecore_apps/js/header_v2_barang_manager.js');
 
 const BC_SETTINGS = {
-	'16': { label: 'BC16', btn: 'btn-success', suffix: 'bc16' },
-	'20': { label: 'BC20', btn: 'btn-info', suffix: 'bc20' },
-	'23': { label: 'BC23', btn: 'btn-warning', suffix: 'bc23' },
-	'25': { label: 'BC25', btn: 'btn-secondary', suffix: 'bc25' },
-	'27': { label: 'BC27', btn: 'btn-success', suffix: 'bc27' },
-	'28': { label: 'BC28', btn: 'btn-success', suffix: 'bc28' },
-	'30': { label: 'BC30', btn: 'btn-info', suffix: 'bc30' },
-	'33': { label: 'BC33', btn: 'btn-primary', suffix: 'bc33' },
-	'40': { label: 'BC40', btn: 'btn-warning', suffix: 'bc40' },
-	'41': { label: 'BC41', btn: 'btn-secondary', suffix: 'bc41' },
-	'262': { label: 'BC262', btn: 'btn-info', suffix: 'bc262' },
-	'261': { label: 'BC261', btn: 'btn-info', suffix: 'bc261' },
-	'511': { label: 'FTZ01-1', btn: 'btn-success', suffix: 'ftz011' },
-	'512': { label: 'FTZ01-2', btn: 'btn-success', suffix: 'ftz012' },
-	'513': { label: 'FTZ01-3', btn: 'btn-success', suffix: 'ftz013' },
-	'331': { label: 'P3BET', btn: 'btn-success', suffix: 'p3bet' }
+	// 🔵 Import / Pemasukan group  — blues
+	'16': { label: 'BC16', style: 'background:#1565C0;color:#fff;border-color:#0D47A1;', suffix: 'bc16' },
+	'20': { label: 'BC20', style: 'background:#1976D2;color:#fff;border-color:#1565C0;', suffix: 'bc20' },
+	'27': { label: 'BC27', style: 'background:#0288D1;color:#fff;border-color:#01579B;', suffix: 'bc27' },
+	'28': { label: 'BC28', style: 'background:#006064;color:#fff;border-color:#004D40;', suffix: 'bc28' },
+	'40': { label: 'BC40', style: 'background:#283593;color:#fff;border-color:#1A237E;', suffix: 'bc40' },
+	// 🟢 Export / Pengeluaran group — greens
+	'30': { label: 'BC30', style: 'background:#2E7D32;color:#fff;border-color:#1B5E20;', suffix: 'bc30' },
+	'33': { label: 'BC33', style: 'background:#388E3C;color:#fff;border-color:#2E7D32;', suffix: 'bc33' },
+	// 🟣 Transfer internal TPB — purples
+	'25': { label: 'BC25', style: 'background:#6A1B9A;color:#fff;border-color:#4A148C;', suffix: 'bc25' },
+	'262': { label: 'BC262', style: 'background:#7B1FA2;color:#fff;border-color:#6A1B9A;', suffix: 'bc262' },
+	'261': { label: 'BC261', style: 'background:#8E24AA;color:#fff;border-color:#7B1FA2;', suffix: 'bc261' },
+	// 🟡 Cukai / Special — amber
+	'23': { label: 'BC23', style: 'background:#F57F17;color:#fff;border-color:#E65100;', suffix: 'bc23' },
+	// 🩵 BC41 — teal
+	'41': { label: 'BC41', style: 'background:#00695C;color:#fff;border-color:#004D40;', suffix: 'bc41' },
+	// 🔷 FTZ — cyan/dark
+	'511': { label: 'FTZ01-1', style: 'background:#00838F;color:#fff;border-color:#006064;', suffix: 'ftz011' },
+	'512': { label: 'FTZ01-2', style: 'background:#00796B;color:#fff;border-color:#004D40;', suffix: 'ftz012' },
+	'513': { label: 'FTZ01-3', style: 'background:#00695C;color:#fff;border-color:#004D40;', suffix: 'ftz013' },
+	// 🟠 P3BET — orange
+	'331': { label: 'P3BET', style: 'background:#E65100;color:#fff;border-color:#BF360C;', suffix: 'p3bet' }
 };
+
 
 frappe.ui.form.on('HEADER V21', {
 	refresh: function (frm) {
@@ -33,7 +41,7 @@ frappe.ui.form.on('HEADER V21', {
 			add_beacukai_actions(frm);
 			frm.add_custom_button(__('🛒 Manage Barang'), function () {
 				show_barang_manager(frm);
-			}, __('Actions')).addClass('btn-primary');
+			}, __('Actions')).attr('style', 'background:#1565C0;color:#fff;border-color:#0D47A1;font-weight:600;');
 
 			// Context-aware Export & Validation Buttons
 			const bc_type = frm.doc.kode_dokumen;
@@ -42,9 +50,10 @@ frappe.ui.form.on('HEADER V21', {
 				frm.add_custom_button(__(`📄 Export ${setting.label} JSON`), function () {
 					const url = `/api/method/singlecore_apps.api.get_ceisa_${setting.suffix}_json?nomor_aju=${frm.doc.nomoraju || frm.doc.name}`;
 					window.open(url, '_blank');
-				}, __('Actions')).addClass(setting.btn);
+				}, __('Actions')).attr('style', setting.style + 'font-weight:600;');
 
-				frm.add_custom_button(__(`✅ Check ${setting.label} Schema`), () => validate_bc_schema(frm, setting.label, setting.suffix), __('Actions')).addClass('btn-primary');
+				frm.add_custom_button(__(`✅ Check ${setting.label} Schema`), () => validate_bc_schema(frm, setting.label, setting.suffix), __('Actions'))
+					.attr('style', 'background:#1B5E20;color:#fff;border-color:#0A3D0A;font-weight:600;');
 			}
 
 			frm.add_custom_button(__("🌍 JSON Export TO Negara"), function () {
@@ -58,7 +67,7 @@ frappe.ui.form.on('HEADER V21', {
 						}
 					});
 				});
-			}, __('Actions')).addClass('btn-success');
+			}, __('Actions')).attr('style', 'background:#004D40;color:#fff;border-color:#00251A;font-weight:600;');
 
 			frm.add_custom_button(__('📥 Import Excel'), function () {
 				let d = new frappe.ui.Dialog({
@@ -138,7 +147,57 @@ frappe.ui.form.on('HEADER V21', {
 					}
 				});
 				d.show();
-			}, __('Actions')).addClass('btn-success');
+			}, __('Actions')).attr('style', 'background:#37474F;color:#fff;border-color:#263238;font-weight:600;');
+
+			// -------------------------------------------------------
+			// 📋 Duplicate as New
+			//    Deep-clones the current document (+ ALL child tables)
+			//    via the server method and redirects to the new doc.
+			//    Only shown for saved (non-new) documents.
+			// -------------------------------------------------------
+			frm.add_custom_button(__('📋 Duplicate as New'), function () {
+				frappe.confirm(
+					__('Duplicate <b>{0}</b> as a new document (all child tables will be copied)?',
+						[frm.doc.name]),
+					function () {
+						// User confirmed — call server method with spinner
+						frappe.call({
+							method: 'singlecore_apps.api.duplicate_doc.duplicate_as_new',
+							args: {
+								doctype: frm.doctype,
+								name: frm.doc.name
+							},
+							freeze: true,
+							freeze_message: __('Duplicating document… please wait'),
+							callback: function (r) {
+								if (r && r.message) {
+									const res = r.message;
+									// Show success summary (child table row counts etc.)
+									frappe.msgprint({
+										title: __('Duplicate Created'),
+										message: res.summary ||
+											__('New document <b>{0}</b> created successfully.', [res.name]),
+										indicator: 'green',
+										wide: false,
+									});
+									// Navigate to the new document
+									frappe.set_route('Form', res.doctype, res.name);
+								}
+							},
+							error: function (r) {
+								// frappe.call already shows a red banner; this is
+								// extra detail in case the server returns a message
+								const detail = (r && r.message) ? r.message : __('An unexpected error occurred.');
+								frappe.msgprint({
+									title: __('Duplication Failed'),
+									message: detail,
+									indicator: 'red',
+								});
+							}
+						});
+					}
+				);
+			}, __('Actions')).attr('style', 'background:#E65100;color:#fff;border-color:#BF360C;font-weight:600;');
 		}
 	}
 });
@@ -181,7 +240,11 @@ function add_beacukai_actions(frm) {
 			}
 		});
 		d.show();
-	}, __('Beacukai'));
+	}, __('Beacukai')).attr('style', 'background:#37474F;color:#fff;border-color:#263238;');
+
+	frm.add_custom_button(__('🔍 Check with CEISA'), function () {
+		check_with_ceisa(frm);
+	}, __('Beacukai')).attr('style', 'background:#F57F17;color:#fff;border-color:#E65100;font-weight:600;');
 
 	frm.add_custom_button(__('📤 Send Document'), function () {
 		const setting = BC_SETTINGS[frm.doc.kode_dokumen];
@@ -206,7 +269,7 @@ function add_beacukai_actions(frm) {
 				}
 			});
 		});
-	}, __('Beacukai'));
+	}, __('Beacukai')).attr('style', 'background:#B71C1C;color:#fff;border-color:#7F0000;font-weight:600;');
 
 	frm.add_custom_button(__('🔄 Check Status'), function () {
 		frappe.call({
@@ -226,7 +289,94 @@ function add_beacukai_actions(frm) {
 				}
 			}
 		});
-	}, __('Beacukai'));
+	}, __('Beacukai')).attr('style', 'background:#01579B;color:#fff;border-color:#0D47A1;');
+}
+
+// CEISA Live Document Check Handler
+function check_with_ceisa(frm) {
+	const bc_type = frm.doc.kode_dokumen;
+	const setting = BC_SETTINGS[bc_type];
+	if (!bc_type || !setting) {
+		frappe.msgprint({
+			title: __('Unsupported Document Type'),
+			message: __('kode_dokumen "{0}" is not supported by this validator.', [bc_type || '(empty)']),
+			indicator: 'orange'
+		});
+		return;
+	}
+
+	const nomor_aju = frm.doc.nomoraju || frm.doc.name;
+	const label = setting.label;
+
+	frappe.call({
+		method: 'singlecore_apps.api.ceisa_export.check_export_with_ceisa',
+		args: { nomor_aju: nomor_aju, bc_type: bc_type },
+		freeze: true,
+		freeze_message: __(`Checking ${label} document with CEISA API…`),
+		callback: function (r) {
+			const res = r.message;
+			if (!res) {
+				frappe.msgprint({ title: __('Error'), message: __('No response from server.'), indicator: 'red' });
+				return;
+			}
+
+			// ── Generation error (JSON build failed) ──────────────────────
+			if (res.valid === false && res.error) {
+				frappe.msgprint({
+					title: __('JSON Generation Error'),
+					message: '<strong>' + res.error + '</strong>',
+					indicator: 'red',
+					wide: true
+				});
+				return;
+			}
+
+			// ── Build display ─────────────────────────────────────────────
+			const http_code = res.http_code || '?';
+			const data = res.data || {};
+			const is_ok = res.status === 'success' && http_code == 200;
+
+			// Try to pull field-level errors from CEISA response structure
+			// CEISA typically returns: { status, message, data: { errors: [...] } }
+			let ceisa_errors = null;
+			if (!is_ok) {
+				const inner = data.data || data;
+				if (Array.isArray(inner)) ceisa_errors = inner;
+				else if (Array.isArray(inner.errors)) ceisa_errors = inner.errors;
+				else if (Array.isArray(inner.messages)) ceisa_errors = inner.messages;
+			}
+
+			let body = '';
+
+			if (is_ok) {
+				// ✅ CEISA accepted the document
+				const msg = data.message || data.status || JSON.stringify(data, null, 2);
+				body = `<div class="alert alert-success">✅ <strong>CEISA accepted the ${label} document.</strong><br>${msg}</div>`;
+			} else if (ceisa_errors && ceisa_errors.length) {
+				// ❌ Field-level error table
+				body = `<p><strong>HTTP ${http_code}</strong> — CEISA returned ${ceisa_errors.length} error(s):</p>
+				<table class="table table-bordered table-hover" style="font-size:0.9em;">
+					<thead><tr class="active"><th style="width:35%">${__('Field / Path')}</th><th>${__('Error Message')}</th></tr></thead>
+					<tbody>`;
+				ceisa_errors.forEach(function (e) {
+					const field = e.field || e.path || e.key || '—';
+					const msg = e.message || e.msg || e.description || JSON.stringify(e);
+					body += `<tr><td><code style="word-break:break-all">${field}</code></td><td>${msg}</td></tr>`;
+				});
+				body += '</tbody></table>';
+			} else {
+				// ❌ Generic error — show raw response
+				body = `<p><strong>HTTP ${http_code}</strong></p><pre style="white-space:pre-wrap;font-size:0.85em;">${JSON.stringify(data, null, 2)}</pre>`;
+			}
+
+			frappe.msgprint({
+				title: __(`CEISA Check — ${label} (HTTP ${http_code})`),
+				message: body,
+				indicator: is_ok ? 'green' : 'red',
+				wide: true
+			});
+		}
+	});
 }
 
 // Unified Validation Helper

@@ -86,17 +86,18 @@ def mcp_get_tarif_hs(kode_hs: str, tanggal: str = "2022-07-20") -> dict:
     return get_tarif_hs(kode_hs, tanggal)
 
 
-@mcp_tool(description="Get kurs valuta asing dari CEISA API")
+@mcp_tool(description="Get kurs valuta asing dari CEISA API (endpoint: /openapi/kurs/{currency})")
 @frappe.whitelist()
 def mcp_get_kurs(currency: str = "USD") -> dict:
     """
-    Query kurs valuta asing dari CEISA.
+    Query kurs valuta asing yang berlaku dari CEISA.
 
     Args:
-        currency: Kode mata uang (default: USD)
+        currency: Kode mata uang (default: USD). Contoh: "USD", "EUR", "SGD", "JPY", "CNY"
     """
     from singlecore_apps.api.ceisa_api.kurs import get_kurs
     return get_kurs(currency)
+
 
 
 @mcp_tool(description="Cek status dokumen CEISA by Nomor Aju")

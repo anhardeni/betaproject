@@ -67,6 +67,65 @@ def ensure_login():
     return get_cached_token()
 
 
+def refresh_token():
+    """Refresh the Bearer token using /v1/openapi-auth/user/update-token.
+
+    Called automatically when a 401 (token expired) is received.
+    Updates the token cache on success.
+
+    Returns:
+        str: New token, or None if refresh failed.
+    """
+    try:
+        settings = get_ceisa_settings()
+        base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
+        old_token = get_cached_token()
+
+        if not old_token:
+            # No token at all — attempt a full re-login
+            result = ensure_login()
+            return get_cached_token()
+
+        headers = build_auth_headers(old_token)
+        url = f"{base_url}/v1/openapi-auth/user/update-token"
+
+        response = requests.post(url, headers=headers)
+        data = response.json() if response.content else {}
+
+        # Extract new token from various possible response shapes
+        new_token = None
+        if data.get("item") and isinstance(data["item"], dict):
+            new_token = data["item"].get("access_token")
+        elif data.get("item") and isinstance(data["item"], str):
+            new_token = data["item"]
+        elif data.get("access_token"):
+            new_token = data["access_token"]
+
+        if new_token:
+            frappe.cache().hset("beacukai_token", frappe.session.user, new_token)
+            frappe.log_error(f"Token refreshed via update-token", "Token Refresh")
+            return new_token
+
+        # update-token failed — try full re-login with default credentials
+        frappe.log_error(
+            f"update-token returned no token (HTTP {response.status_code}): {data}",
+            "Token Refresh Warning"
+        )
+        settings = get_ceisa_settings()
+        username = settings.default_username
+        password = settings.get_password("default_password") if settings.default_password else None
+        if username and password:
+            result = login_beacukai(username, password)
+            if result.get("status") == "success":
+                return get_cached_token()
+
+        return None
+
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Token Refresh Error")
+        return None
+
+
 @frappe.whitelist()
 def login_beacukai(username, password):
     """Login to CEISA 4.0 API and obtain Bearer token.

@@ -8,16 +8,17 @@ Core API query functions are organized in the ceisa_api/ folder:
     ceisa_api/
     ├── __init__.py   - Package exports
     ├── auth.py       - Login, token caching, header building
-    ├── kurs.py       - Exchange rate (kurs) queries
-    └── status.py     - Document status queries (by Nomor Aju / NPWP)
+    ├── document.py   - check_document / send_document (with 401 auto-retry)
+    ├── kurs.py       - Exchange rate queries
+    └── status.py     - Document status queries
 
-This file retains the send_ceisa_document function and re-exports
-auth functions for backward compatibility.
+send_ceisa_document resolves the BC type from HEADER V21 and delegates
+everything (serialisation, auth, 401 retry) to send_document().
+The export-function mapping is imported from ceisa_export.CEISA_EXPORT_MAP
+— the single source of truth shared with check_export_with_ceisa.
 """
 
 import frappe
-import requests
-from . import ceisa_export
 
 # Re-export from ceisa_api for backward compatibility
 from .ceisa_api.auth import (
@@ -27,6 +28,7 @@ from .ceisa_api.auth import (
     ensure_login as _ensure_login,
     login_beacukai,
 )
+from .ceisa_api.document import send_document
 from .ceisa_api.kurs import get_kurs
 from .ceisa_api.status import get_status_by_nomor_aju, get_status_by_npwp
 
@@ -36,62 +38,35 @@ check_ceisa_status = get_status_by_nomor_aju
 
 @frappe.whitelist()
 def send_ceisa_document(docname):
-    """Dynamically sends the correct CEISA document based on kode_dokumen.
+    """Dynamically send the correct CEISA document based on kode_dokumen.
 
-    Endpoint: POST /openapi/document?isFinal=false
+    Resolves the BC type from HEADER V21, generates the JSON payload via
+    ceisa_export, then delegates send/retry/serialisation to send_document().
+
+    Endpoint (via send_document): POST /openapi/document?isFinal=false
     """
-    token = _ensure_login()
-    if not token:
-        return {"status": "error", "message": "Please login to Beacukai first."}
-
     try:
-        settings = get_ceisa_settings()
-        base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
+        # Import here to avoid circular imports at module level
+        from .ceisa_export import CEISA_EXPORT_MAP
 
-        # Get the document to determine its type
         doc = frappe.get_doc("HEADER V21", docname)
-        bc_type = doc.kode_dokumen
+        bc_type = str(doc.kode_dokumen or "")
 
-        # Mapping of document codes to their export functions
-        EXPORT_MAP = {
-            "16": ceisa_export.get_ceisa_bc16_json,
-            "20": ceisa_export.get_ceisa_bc20_json,
-            "23": ceisa_export.get_ceisa_bc23_json,
-            "25": ceisa_export.get_ceisa_bc25_json,
-            "27": ceisa_export.get_ceisa_bc27_json,
-            "28": ceisa_export.get_ceisa_bc28_json,
-            "30": ceisa_export.get_ceisa_bc30_json,
-            "33": ceisa_export.get_ceisa_bc33_json,
-            "40": ceisa_export.get_ceisa_bc40_json,
-            "41": ceisa_export.get_ceisa_bc41_json,
-            "261": ceisa_export.get_ceisa_bc261_json,
-            "262": ceisa_export.get_ceisa_bc262_json,
-            "331": ceisa_export.get_ceisa_p3bet_json,
-            "511": ceisa_export.get_ceisa_ftz011_json,
-            "512": ceisa_export.get_ceisa_ftz012_json,
-            "513": ceisa_export.get_ceisa_ftz013_json
-        }
-
-        export_func = EXPORT_MAP.get(str(bc_type))
+        export_func = CEISA_EXPORT_MAP.get(bc_type)
         if not export_func:
-            return {"status": "error", "message": f"Document type {bc_type} is not supported for automatic sending yet."}
+            return {"status": "error", "message": f"Document type '{bc_type}' is not supported for automatic sending."}
 
-        # Generate payload
         payload = export_func(docname)
-
         if isinstance(payload, dict) and payload.get("status") == "error":
             return payload
 
-        url = f"{base_url}/openapi/document?isFinal=false"
-        headers = _build_auth_headers(token)
+        # Delegate to send_document — handles token, serialisation, and 401 retry
+        result = send_document(payload, is_final=False)
 
-        response = requests.post(url, json=payload, headers=headers)
+        # Rename 'data' → 'response' for JS backward compatibility
+        result["response"] = result.pop("data", None)
+        return result
 
-        return {
-            "status": "success" if response.status_code == 200 else "error",
-            "http_code": response.status_code,
-            "response": response.json() if response.content else response.text
-        }
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Send CEISA Document Error")
         return {"status": "error", "message": str(e)}

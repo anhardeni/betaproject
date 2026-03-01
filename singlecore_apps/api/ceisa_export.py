@@ -12,9 +12,9 @@ def round_decimal(value, decimals=2):
     try:
         d = Decimal(str(flt(value)))
         if decimals == 2:
-            return float(d.get("quantize")(Decimal('0.01'), rounding=ROUND_HALF_UP))
+            return float(d.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP))
         elif decimals == 4:
-            return float(d.get("quantize")(Decimal('0.0001'), rounding=ROUND_HALF_UP))
+            return float(d.quantize(Decimal('0.0001'), rounding=ROUND_HALF_UP))
         else:
             return float(round(flt(value), decimals))
     except:
@@ -143,7 +143,7 @@ def get_ceisa_bc27_json(nomor_aju):
             "kotaTtd": doc.get("kota_pernyataan") or "",
             "namaTtd": doc.get("nama_pernyataan") or "",
             "ndpbm": round_decimal(doc.get("ndpbm"), 4),
-            "netto": round_decimal(doc.get("netto"), 4),
+            "netto": 0.0,  # Will be calculated from barang
             "nik": "",
             "nilaiBarang": round_decimal(doc.get("nilai_barang"), 2),
             "nilaiJasa": round_decimal(doc.get("nilai_jasa"), 2),
@@ -233,7 +233,7 @@ def get_ceisa_bc27_json(nomor_aju):
         # 8. Map Barang V1
         barang_list = []
         barangs = frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["*"], order_by="seri_barang asc")
-        
+        total_netto = 0.0
         for brg in barangs:
             brg_item = {
                 "cif": round_decimal(brg.get("cif"), 2),
@@ -315,11 +315,13 @@ def get_ceisa_bc27_json(nomor_aju):
                 
                 brg_item["bahanBaku"].append(bb_item)
 
+            total_netto += round_decimal(brg.get("netto"), 4)
             barang_list.append(brg_item)
 
         payload["barang"] = barang_list
+        payload["netto"] = round_decimal(total_netto, 4)
         
-        return {"Declaration": payload}
+        return payload
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get CEISA BC27 JSON Error")
         return {"status": "error", "message": str(e)}
@@ -635,7 +637,7 @@ def get_ceisa_bc20_json(nomor_aju):
         if payload.get("tanggalBc11") is None:
             payload.pop("tanggalBc11", None)
             
-        return {"Declaration": payload}
+        return payload
 
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get CEISA BC20 JSON Error")
@@ -853,7 +855,7 @@ def get_ceisa_bc23_json(nomor_aju):
         if payload.get("tanggalBc11") is None:
             payload.pop("tanggalBc11", None)
 
-        return {"Declaration": payload}
+        return payload
 
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get CEISA BC23 JSON Error")
@@ -887,7 +889,7 @@ def get_ceisa_bc25_json(nomor_aju):
             "kotaTtd": doc.get("kota_pernyataan") or "",
             "namaTtd": doc.get("nama_pernyataan") or "",
             "ndpbm": round_decimal(doc.get("ndpbm"), 4),
-            "netto": round_decimal(doc.get("netto"), 4),
+            "netto": 0.0,  # Will be calculated from barang
             "nomorAju": doc.get("nomoraju") or doc.name or "",
             "seri": 0,
             "tanggalAju": fmt_date(doc.get("tanggal_pernyataan")),
@@ -969,7 +971,7 @@ def get_ceisa_bc25_json(nomor_aju):
         # 7. Map Barang V1 (BC25 structure)
         barang_list = []
         barangs = frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["*"], order_by="seri_barang asc")
-        
+        total_netto = 0.0
         for brg in barangs:
             brg_item = {
                 "cif": round_decimal(brg.get("cif"), 2),
@@ -1079,11 +1081,13 @@ def get_ceisa_bc25_json(nomor_aju):
                 
                 brg_item["bahanBaku"].append(bb_item)
 
+            total_netto += round_decimal(brg.get("netto"), 4)
             barang_list.append(brg_item)
 
         payload["barang"] = barang_list
+        payload["netto"] = round_decimal(total_netto, 4)
         
-        return {"Declaration": payload}
+        return payload
 
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get CEISA BC25 JSON Error")
@@ -1323,7 +1327,7 @@ def get_ceisa_bc30_json(nomor_aju):
                 "seriPengangkut": cint(p.get("seri_pengangkut") or p.idx)
             })
             
-        return {"Declaration": payload}
+        return payload
 
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get CEISA BC30 JSON Error")
@@ -1852,7 +1856,7 @@ def get_ceisa_bc262_json(nomor_aju):
             "kotaTtd": doc.get("kota_pernyataan") or "",
             "namaTtd": doc.get("nama_pernyataan") or "",
             "ndpbm": round_decimal(doc.get("ndpbm"), 4) or 1.0,
-            "netto": round_decimal(doc.get("netto"), 4),
+            "netto": 0.0,  # Will be calculated from barang
             "nik": "",
             "nilaiBarang": round_decimal(doc.get("nilai_barang"), 2),
             "nomorAju": doc.get("nomoraju") or doc.name or "",
@@ -2055,7 +2059,8 @@ def get_ceisa_bc262_json(nomor_aju):
             barang_list.append(brg_item)
 
         payload["barang"] = barang_list
-        return {"Declaration": payload}
+        payload["netto"] = round_decimal(sum(round_decimal(b.get("netto", 0), 4) for b in payload["barang"]), 4)
+        return payload
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get CEISA BC262 JSON Error")
         return {"status": "error", "message": str(e)}
@@ -2088,7 +2093,7 @@ def get_ceisa_bc261_json(nomor_aju):
             "kotaTtd": doc.get("kota_pernyataan") or "",
             "namaTtd": doc.get("nama_pernyataan") or "",
             "ndpbm": round_decimal(doc.get("ndpbm"), 4) or 1.0,
-            "netto": round_decimal(doc.get("netto"), 4),
+            "netto": 0.0,  # Will be calculated from barang
             "nik": "",
             "nilaiBarang": round_decimal(doc.get("nilai_barang"), 2),
             "nomorAju": doc.get("nomoraju") or doc.name or "",
@@ -2298,7 +2303,8 @@ def get_ceisa_bc261_json(nomor_aju):
             barang_list.append(brg_item)
 
         payload["barang"] = barang_list
-        return {"Declaration": payload}
+        payload["netto"] = round_decimal(sum(round_decimal(b.get("netto", 0), 4) for b in payload["barang"]), 4)
+        return payload
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get CEISA BC261 JSON Error")
         return {"status": "error", "message": str(e)}
@@ -2477,7 +2483,7 @@ def get_ceisa_bc16_json(nomor_aju):
             if payload.get(field) is None:
                 payload.pop(field, None)
 
-        return {"Declaration": payload}
+        return payload
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get CEISA BC16 JSON Error")
         return {"status": "error", "message": str(e)}
@@ -2505,7 +2511,7 @@ def get_ceisa_bc28_json(nomor_aju):
             "namaTtd": doc.get("nama_pernyataan") or "",
             "jabatanTtd": doc.get("jabatan_pernyataan") or "",
             "ndpbm": round_decimal(doc.get("ndpbm"), 4) or 1.0,
-            "netto": round_decimal(doc.get("netto"), 4),
+            "netto": 0.0,  # Will be calculated from barang
             "nik": doc.get("nik_identitas") or "",
             "nilaiBarang": round_decimal(doc.get("nilai_barang"), 2),
             "nomorAju": doc.get("nomoraju") or doc.name or "",
@@ -2658,7 +2664,8 @@ def get_ceisa_bc28_json(nomor_aju):
 
             payload["barang"].append(brg_item)
 
-        return {"Declaration": payload}
+        payload["netto"] = round_decimal(sum(round_decimal(b.get("netto", 0), 4) for b in payload["barang"]), 4)
+        return payload
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get CEISA BC28 JSON Error")
         return {"status": "error", "message": str(e)}
@@ -3432,3 +3439,61 @@ def validate_ftz013_export(nomor_aju):
     return test_bc_json_schema(json.dumps(res, default=str), "513") if not (isinstance(res, dict) and res.get("status") == "error") else {"valid": False, "error": res.get("message")}
 
 
+# =====================================
+# CEISA Export Map (single source of truth)
+# Used by: check_export_with_ceisa (below)
+#          ceisa_integration.send_ceisa_document (imports this constant)
+# =====================================
+
+CEISA_EXPORT_MAP = {
+    "16":  get_ceisa_bc16_json,
+    "20":  get_ceisa_bc20_json,
+    "23":  get_ceisa_bc23_json,
+    "25":  get_ceisa_bc25_json,
+    "27":  get_ceisa_bc27_json,
+    "28":  get_ceisa_bc28_json,
+    "30":  get_ceisa_bc30_json,
+    "33":  get_ceisa_bc33_json,
+    "40":  get_ceisa_bc40_json,
+    "41":  get_ceisa_bc41_json,
+    "261": get_ceisa_bc261_json,
+    "262": get_ceisa_bc262_json,
+    "511": get_ceisa_ftz011_json,
+    "512": get_ceisa_ftz012_json,
+    "513": get_ceisa_ftz013_json,
+    "331": get_ceisa_p3bet_json,
+}
+
+
+# =====================================
+# CEISA Live Document Check (via API)
+# =====================================
+
+@frappe.whitelist()
+def check_export_with_ceisa(nomor_aju, bc_type):
+    """
+    Generate JSON for the given HEADER V21 document and validate it
+    against the live CEISA /openapi/document/check endpoint.
+
+    Args:
+        nomor_aju  : Name/ID of the HEADER V21 document
+        bc_type    : Document type code string, e.g. '20', '23', '25', '27',
+                     '28', '30', '33', '40', '41', '261', '262', '16',
+                     '511', '512', '513', '331'
+
+    Returns:
+        dict with keys: status, http_code, data  (from check_document)
+             or        : valid=False + error message on generation failure
+    """
+    from singlecore_apps.api.ceisa_api.document import check_document
+
+    bc_type = str(bc_type)
+    fn = CEISA_EXPORT_MAP.get(bc_type)
+    if not fn:
+        return {"valid": False, "error": f"Unsupported BC type: {bc_type}"}
+
+    res = fn(nomor_aju)
+    if isinstance(res, dict) and res.get("status") == "error":
+        return {"valid": False, "error": res.get("message", "Failed to generate JSON")}
+
+    return check_document(res)

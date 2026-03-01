@@ -12,14 +12,14 @@ from .auth import get_ceisa_settings, ensure_login, build_auth_headers
 
 
 @frappe.whitelist()
-def get_kurs(currency="EUR"):
+def get_kurs(currency="USD"):
     """Get exchange rate (kurs) from CEISA API.
 
     Endpoint: GET /openapi/kurs/{currency}
     Requires: Bearer token
 
     Args:
-        currency: Currency code (default: USD)
+        currency: Kode mata uang (default: USD). Contoh: "USD", "EUR", "SGD", "JPY"
 
     Returns:
         dict with kurs data, e.g.:

@@ -324,7 +324,8 @@ def import_ceisa_excel(file_data, dry_run=False):
             "KODE KEMASAN": "kode_kemasan",
             "JUMLAH KEMASAN": "jumlah_kemasan",
             "MERK KEMASAN": "merek_kemasan",
-            "MEREK": "merek_kemasan" # Alias
+            "MEREK": "merek_kemasan", 
+            "NOMOR SEGEL": "no_segel_kemasan"
         })
 
         # DOKUMEN
@@ -362,7 +363,8 @@ def import_ceisa_excel(file_data, dry_run=False):
             "NOMOR KONTINER": "nomor_kontainer", # Typo handling
             "KODE UKURAN KONTAINER": "kode_ukuran_kontainer",
             "KODE JENIS KONTAINER": "kode_jenis_kontainer",
-            "KODE TIPE KONTAINER": "kode_tipe_kontainer"
+            "KODE TIPE KONTAINER": "kode_tipe_kontainer",
+            "NOMOR SEGEL": "nomor_segel_kontainer"
         })
 
         # KOMPONEN BIAYA (Optional)

@@ -10,10 +10,69 @@ Endpoints:
     - POST /openapi/document?isFinal=true      - Submit document (final)
 """
 
+import json
+import datetime
 import frappe
 import requests
-from .auth import get_ceisa_settings, ensure_login, build_auth_headers
+from .auth import get_ceisa_settings, ensure_login, build_auth_headers, refresh_token
 
+
+# ── Shared helpers ─────────────────────────────────────────────────────────────
+
+def _date_serializer(obj):
+    """JSON serializer that converts date/datetime objects to ISO strings."""
+    if isinstance(obj, (datetime.date, datetime.datetime)):
+        return obj.isoformat()
+    raise TypeError(f"Object of type {type(obj)} is not JSON serializable")
+
+
+def _clean_payload(payload):
+    """Ensure payload is a plain JSON-safe dict (handles str input + date objects)."""
+    if isinstance(payload, str):
+        payload = json.loads(payload)
+    # Round-trip through JSON to coerce all date objects
+    return json.loads(json.dumps(payload, default=_date_serializer))
+
+
+def _post_with_retry(url, payload_clean, token, log_tag):
+    """POST to CEISA with automatic one-time 401 token-refresh retry.
+
+    Args:
+        url          : Full URL to POST to
+        payload_clean: Already-serialized dict payload
+        token        : Current Bearer token
+        log_tag      : Label used in frappe.log_error on 401
+
+    Returns:
+        requests.Response
+    """
+    headers = build_auth_headers(token)
+    response = requests.post(url, json=payload_clean, headers=headers)
+
+    if response.status_code == 401:
+        frappe.log_error(f"{log_tag}: 401 received, attempting token refresh", "Token Refresh")
+        new_token = refresh_token()
+        if new_token:
+            headers = build_auth_headers(new_token)
+            response = requests.post(url, json=payload_clean, headers=headers)
+
+    return response
+
+
+def _parse_response(response):
+    """Parse a requests.Response into our standard return dict."""
+    try:
+        data = response.json()
+    except Exception:
+        data = response.text
+    return {
+        "status": "success" if response.status_code == 200 else "error",
+        "http_code": response.status_code,
+        "data": data
+    }
+
+
+# ── Public API functions ────────────────────────────────────────────────────────
 
 @frappe.whitelist()
 def check_document(payload):
@@ -26,16 +85,8 @@ def check_document(payload):
         payload: JSON document payload (dict or JSON string)
 
     Returns:
-        dict with validation result
+        dict: { status, http_code, data }
     """
-    import json as _json
-    import datetime
-
-    def _serialize(obj):
-        if isinstance(obj, (datetime.date, datetime.datetime)):
-            return obj.isoformat()
-        raise TypeError(f"Object of type {type(obj)} is not JSON serializable")
-
     try:
         token = ensure_login()
         if not token:
@@ -43,30 +94,10 @@ def check_document(payload):
 
         settings = get_ceisa_settings()
         base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
-
-        # Handle string payload
-        if isinstance(payload, str):
-            payload = _json.loads(payload)
-
         url = f"{base_url}/openapi/document/check"
-        headers = build_auth_headers(token)
 
-        # Serialize with date handler, then parse back for requests
-        payload_str = _json.dumps(payload, default=_serialize)
-        payload_clean = _json.loads(payload_str)
-
-        response = requests.post(url, json=payload_clean, headers=headers)
-
-        try:
-            data = response.json()
-        except Exception:
-            data = response.text
-
-        return {
-            "status": "success" if response.status_code == 200 else "error",
-            "http_code": response.status_code,
-            "data": data
-        }
+        response = _post_with_retry(url, _clean_payload(payload), token, "check_document")
+        return _parse_response(response)
 
     except requests.exceptions.HTTPError as e:
         frappe.log_error(frappe.get_traceback(), "Check Document Error")
@@ -84,20 +115,12 @@ def send_document(payload, is_final=False):
     Requires: Bearer token
 
     Args:
-        payload: JSON document payload (dict or JSON string)
-        is_final: Boolean, set to True to submit as Final, False for Draft
+        payload : JSON document payload (dict or JSON string)
+        is_final: True = Final submission, False = Draft
 
     Returns:
-        dict with submission result
+        dict: { status, http_code, data }
     """
-    import json as _json
-    import datetime
-
-    def _serialize(obj):
-        if isinstance(obj, (datetime.date, datetime.datetime)):
-            return obj.isoformat()
-        raise TypeError(f"Object of type {type(obj)} is not JSON serializable")
-
     try:
         token = ensure_login()
         if not token:
@@ -105,32 +128,11 @@ def send_document(payload, is_final=False):
 
         settings = get_ceisa_settings()
         base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
-
-        # Handle string payload
-        if isinstance(payload, str):
-            payload = _json.loads(payload)
-
-        # Ensure is_final is string 'true' or 'false' for URL
         final_str = "true" if is_final else "false"
         url = f"{base_url}/openapi/document?isFinal={final_str}"
-        headers = build_auth_headers(token)
 
-        # Serialize with date handler, then parse back for requests
-        payload_str = _json.dumps(payload, default=_serialize)
-        payload_clean = _json.loads(payload_str)
-
-        response = requests.post(url, json=payload_clean, headers=headers)
-
-        try:
-            data = response.json()
-        except Exception:
-            data = response.text
-
-        return {
-            "status": "success" if response.status_code == 200 else "error",
-            "http_code": response.status_code,
-            "data": data
-        }
+        response = _post_with_retry(url, _clean_payload(payload), token, "send_document")
+        return _parse_response(response)
 
     except requests.exceptions.HTTPError as e:
         frappe.log_error(frappe.get_traceback(), "Send Document Error")
