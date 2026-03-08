@@ -574014,5 +574014,13 @@
   "modified": "2026-01-25 15:42:04.352137",
   "nama_pelabuhan_ln": "Tanjung Priok",
   "name": "IDTPP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Pelabuhan Luar Negeri",
+  "kode_pelabuhan_ln": "IDCGK",
+  "modified": "2026-03-01 11:47:09.896786",
+  "nama_pelabuhan_ln": "Cengkareng / Sukarno Hatta (u)",
+  "name": "IDCGK"
  }
 ]

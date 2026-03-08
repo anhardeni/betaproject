@@ -2,14 +2,6 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Status Pengusaha",
-  "kode_pengusaha": "1",
-  "modified": "2023-06-22 08:50:38.420341",
-  "name": "1",
-  "uraian_pengusaha": "Koperasi"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Status Pengusaha",
   "kode_pengusaha": "2",
   "modified": "2023-06-22 08:50:38.430012",
   "name": "2",
@@ -70,6 +62,14 @@
   "modified": "2023-06-22 08:50:38.457912",
   "name": "9",
   "uraian_pengusaha": "Usaha Kecil, Mikro, dan Menengah"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status Pengusaha",
+  "kode_pengusaha": "1",
+  "modified": "2023-06-22 08:50:38.420341",
+  "name": "1",
+  "uraian_pengusaha": "Koperasi"
  },
  {
   "docstatus": 0,

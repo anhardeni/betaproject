@@ -4,7 +4,7 @@
   "doctype": "Referensi Jenis Jaminan",
   "kode_jenis_jaminan": "1",
   "modified": "2023-06-21 14:32:25.965195",
-  "nama_jenis_jaminan": "Tunai",
+  "nama_jenis_jaminan": "1",
   "name": "1"
  },
  {
@@ -12,7 +12,7 @@
   "doctype": "Referensi Jenis Jaminan",
   "kode_jenis_jaminan": "3",
   "modified": "2023-06-21 14:32:25.984569",
-  "nama_jenis_jaminan": "Customs Bond",
+  "nama_jenis_jaminan": "3",
   "name": "3"
  },
  {
@@ -20,7 +20,7 @@
   "doctype": "Referensi Jenis Jaminan",
   "kode_jenis_jaminan": "4",
   "modified": "2023-06-21 14:32:25.988648",
-  "nama_jenis_jaminan": "Tertulis/CG",
+  "nama_jenis_jaminan": "4",
   "name": "4"
  },
  {
@@ -28,7 +28,7 @@
   "doctype": "Referensi Jenis Jaminan",
   "kode_jenis_jaminan": "5",
   "modified": "2023-06-21 14:32:25.992625",
-  "nama_jenis_jaminan": "STTJ",
+  "nama_jenis_jaminan": "5",
   "name": "5"
  },
  {
@@ -36,7 +36,7 @@
   "doctype": "Referensi Jenis Jaminan",
   "kode_jenis_jaminan": "6",
   "modified": "2023-06-21 14:32:25.996205",
-  "nama_jenis_jaminan": "Pusat",
+  "nama_jenis_jaminan": "6",
   "name": "6"
  },
  {
@@ -44,7 +44,7 @@
   "doctype": "Referensi Jenis Jaminan",
   "kode_jenis_jaminan": "7",
   "modified": "2023-06-21 14:32:26.000276",
-  "nama_jenis_jaminan": "Indonesia EximBank",
+  "nama_jenis_jaminan": "7",
   "name": "7"
  },
  {
@@ -52,7 +52,7 @@
   "doctype": "Referensi Jenis Jaminan",
   "kode_jenis_jaminan": "8",
   "modified": "2023-06-21 14:32:26.003970",
-  "nama_jenis_jaminan": "Perusahaan Penjaminan",
+  "nama_jenis_jaminan": "8",
   "name": "8"
  },
  {
@@ -124,7 +124,7 @@
   "doctype": "Referensi Jenis Jaminan",
   "kode_jenis_jaminan": "2",
   "modified": "2023-06-21 14:32:25.980242",
-  "nama_jenis_jaminan": "Bank Garansi",
+  "nama_jenis_jaminan": "2",
   "name": "2"
  }
 ]

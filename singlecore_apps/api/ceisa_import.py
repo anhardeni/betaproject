@@ -116,14 +116,41 @@ def import_ceisa_excel(file_data, dry_run=False):
             if isinstance(val, (datetime, date)): return val
             
             val_str = str(val).strip()
-            formats = ["%Y-%m-%d %H:%M:%S", "%Y-%m-%d", "%d-%m-%Y", 
-                      "%d/%m/%Y", "%m/%d/%Y"]
+            formats = [
+                "%Y-%m-%d %H:%M:%S", "%Y-%m-%d", 
+                "%d-%m-%Y %H:%M:%S", "%d-%m-%Y",
+                "%m-%d-%Y %H:%M:%S", "%m-%d-%Y",
+                "%d/%m/%Y %H:%M:%S", "%d/%m/%Y",
+                "%m/%d/%Y %H:%M:%S", "%m/%d/%Y",
+                "%Y/%m/%d %H:%M:%S", "%Y/%m/%d"
+            ]
             for fmt in formats:
                 try:
                     return datetime.strptime(val_str, fmt).date()
                 except ValueError:
                     continue
             return None
+
+        def clean_excel_val(doctype, fieldname, val):
+            if val is None or val == "": return None
+            
+            if fieldname in DATE_FIELDS:
+                return parse_excel_date(val)
+                
+            meta = frappe.get_meta(doctype)
+            field = meta.get_field(fieldname)
+            if not field: return val
+            
+            if field.fieldtype in ["Link", "Select"]:
+                # Clean numeric values from Excel (e.g. 1.0 -> "1")
+                if isinstance(val, (int, float)):
+                    return str(cint(val))
+                return str(val).strip()
+                
+            if field.fieldtype in ["Float", "Int", "Currency", "Percent"]:
+                return flt(val)
+                
+            return val
 
         # 1. HEADER MAPPING
         HEADER_MAPPING = {
@@ -266,11 +293,7 @@ def import_ceisa_excel(file_data, dry_run=False):
         # Map Header
         for excel_col, doc_field in HEADER_MAPPING.items():
             val = header_row.get(excel_col)
-            if val is not None and val != "":
-                if doc_field in DATE_FIELDS:
-                    doc.set(doc_field, parse_excel_date(val))
-                else:
-                    doc.set(doc_field, val)
+            doc.set(doc_field, clean_excel_val("HEADER V21", doc_field, val))
 
         # Helper for Child Tables
         def create_child(doctype, parent_field, sheet_name, mapping, optional=False):
@@ -284,11 +307,7 @@ def import_ceisa_excel(file_data, dry_run=False):
                 child_item = {}
                 for excel_col, doc_field in mapping.items():
                     val = row.get(excel_col)
-                    if val is not None and val != "":
-                         if doc_field in DATE_FIELDS:
-                             child_item[doc_field] = parse_excel_date(val)
-                         else:
-                             child_item[doc_field] = val
+                    child_item[doc_field] = clean_excel_val(doctype, doc_field, val)
                 child_list.append(child_item)
             
             doc.set(parent_field, child_list)
@@ -297,7 +316,7 @@ def import_ceisa_excel(file_data, dry_run=False):
         # CHILD TABLES IMPORT
         
         # ENTITAS
-        create_child("entitas", "entitas", "ENTITAS", {
+        create_child("ENTITAS", "entitas", "ENTITAS", {
             "NOMOR AJU": "nomoraju",
             "SERI": "seri",
             "KODE ENTITAS": "kode_entitas",
@@ -318,7 +337,7 @@ def import_ceisa_excel(file_data, dry_run=False):
         })
 
         # KEMASAN
-        create_child("kemasan", "kemasan", "KEMASAN", {
+        create_child("KEMASAN", "kemasan", "KEMASAN", {
             "NOMOR AJU": "nomoraju",
             "SERI": "seri",
             "KODE KEMASAN": "kode_kemasan",
@@ -329,7 +348,7 @@ def import_ceisa_excel(file_data, dry_run=False):
         })
 
         # DOKUMEN
-        create_child("dokumen", "dokumen", "DOKUMEN", {
+        create_child("DOKUMEN", "dokumen", "DOKUMEN", {
             "NOMOR AJU": "nomoraju",
             "SERI DOKUMEN": "seri",
             "SERI": "seri", # Alias
@@ -341,7 +360,7 @@ def import_ceisa_excel(file_data, dry_run=False):
         })
 
         # PENGANGKUT
-        create_child("pengangkut", "pengangkut", "PENGANGKUT", {
+        create_child("PENGANGKUT", "pengangkut", "PENGANGKUT", {
             "NOMOR AJU": "nomoraju",
             "SERI PENGANGKUT": "seri_pengangkut",
             "SERI": "seri_pengangkut", # Alias
@@ -355,7 +374,7 @@ def import_ceisa_excel(file_data, dry_run=False):
         })
         
         # KONTAINER
-        create_child("kontainer", "kontainer", "KONTAINER", {
+        create_child("KONTAINER", "kontainer", "KONTAINER", {
             "NOMOR AJU": "nomoraju",
             "SERI KONTAINER": "seri",
             "SERI": "seri", # Alias
@@ -538,13 +557,7 @@ def import_ceisa_excel(file_data, dry_run=False):
             # Map Barang
             for excel_col, doc_field in BARANG_MAPPING.items():
                 val = b_row.get(excel_col)
-                if val is not None and val != "":
-                     if doc_field in DATE_FIELDS:
-                         b_doc.set(doc_field, parse_excel_date(val))
-                     elif isinstance(val, (int, float)):
-                        b_doc.set(doc_field, flt(val))
-                     else:
-                        b_doc.set(doc_field, val)
+                b_doc.set(doc_field, clean_excel_val("BARANG V1", doc_field, val))
             
             # Child Tables for BARANG
             
@@ -554,18 +567,18 @@ def import_ceisa_excel(file_data, dry_run=False):
                 if cint(r.get("SERI BARANG")) == seri_barang:
                     child_bt.append({
                         "seri_barang": seri_barang,
-                        "kode_pungutan": r.get("KODE PUNGUTAN"),
-                        "kode_tarif": r.get("KODE TARIF"),
-                        "tarif": flt(r.get("TARIF")),
-                        "kode_fasilitas": r.get("KODE FASILITAS"),
-                        "tarif_fasilitas": flt(r.get("TARIF FASILITAS")),
-                        "nilai_bayar": flt(r.get("NILAI BAYAR")),
-                        "nilai_fasilitas": flt(r.get("NILAI FASILITAS")),
-                        "nilai_sudah_dilunasi": flt(r.get("NILAI SUDAH DILUNASI")),
-                        "kode_komoditi_cukai": r.get("KODE KOMODITI CUKAI"),
-                        "kode_sub_komoditi_cukai": r.get("KODE SUB KOMODITI CUKAI"),
-                        "jumlah_satuan": flt(r.get("JUMLAH SATUAN")),
-                        "kode_satuan": r.get("KODE SATUAN")
+                        "kode_pungutan": clean_excel_val("BARANG TARIF", "kode_pungutan", r.get("KODE PUNGUTAN")),
+                        "kode_tarif": clean_excel_val("BARANG TARIF", "kode_tarif", r.get("KODE TARIF")),
+                        "tarif": clean_excel_val("BARANG TARIF", "tarif", r.get("TARIF")),
+                        "kode_fasilitas": clean_excel_val("BARANG TARIF", "kode_fasilitas", r.get("KODE FASILITAS")),
+                        "tarif_fasilitas": clean_excel_val("BARANG TARIF", "tarif_fasilitas", r.get("TARIF FASILITAS")),
+                        "nilai_bayar": clean_excel_val("BARANG TARIF", "nilai_bayar", r.get("NILAI BAYAR")),
+                        "nilai_fasilitas": clean_excel_val("BARANG TARIF", "nilai_fasilitas", r.get("NILAI FASILITAS")),
+                        "nilai_sudah_dilunasi": clean_excel_val("BARANG TARIF", "nilai_sudah_dilunasi", r.get("NILAI SUDAH DILUNASI")),
+                        "kode_komoditi_cukai": clean_excel_val("BARANG TARIF", "kode_komoditi_cukai", r.get("KODE KOMODITI CUKAI")),
+                        "kode_sub_komoditi_cukai": clean_excel_val("BARANG TARIF", "kode_sub_komoditi_cukai", r.get("KODE SUB KOMODITI CUKAI")),
+                        "jumlah_satuan": clean_excel_val("BARANG TARIF", "jumlah_satuan", r.get("JUMLAH SATUAN")),
+                        "kode_satuan": clean_excel_val("BARANG TARIF", "kode_satuan", r.get("KODE SATUAN"))
                     })
             b_doc.set("barang_tarif", child_bt)
             
@@ -574,8 +587,8 @@ def import_ceisa_excel(file_data, dry_run=False):
             for r in bd_rows:
                  if cint(r.get("SERI BARANG")) == seri_barang:
                     child_bd.append({
-                        "seri_dokumen": r.get("SERI DOKUMEN"),
-                        "seri_izin": r.get("SERI IZIN")
+                        "seri_dokumen": clean_excel_val("BARANG DOKUMEN", "seri_dokumen", r.get("SERI DOKUMEN")),
+                        "seri_izin": clean_excel_val("BARANG DOKUMEN", "seri_izin", r.get("SERI IZIN"))
                     })
             b_doc.set("barang_dokumen", child_bd)
             
@@ -584,7 +597,7 @@ def import_ceisa_excel(file_data, dry_run=False):
             for r in be_rows:
                  if cint(r.get("SERI BARANG")) == seri_barang:
                     child_be.append({
-                        "seri_entitas": r.get("SERI ENTITAS")
+                        "seri_entitas": clean_excel_val("BARANG ENTITAS", "seri_entitas", r.get("SERI ENTITAS"))
                     })
             b_doc.set("barang_pemilik", child_be)
             
@@ -593,21 +606,21 @@ def import_ceisa_excel(file_data, dry_run=False):
             for r in bspe_rows:
                  if cint(r.get("SERI BARANG")) == seri_barang:
                     child_sp.append({
-                        "kode": r.get("KODE"),
-                        "uraian": r.get("URAIAN")
+                        "kode": clean_excel_val("BARANG SPEK KHUSUS", "kode", r.get("KODE")),
+                        "uraian": clean_excel_val("BARANG SPEK KHUSUS", "uraian", r.get("URAIAN"))
                     })
             b_doc.set("barang_spek_khusus", child_sp)
-
+ 
             # VD
             child_vd = []
             for r in bvd_rows:
                  if cint(r.get("SERI BARANG")) == seri_barang:
                     child_vd.append({
-                        "kode_jenis_vd": r.get("KODE VD"),
-                        "nilai_barang": flt(r.get("NILAI BARANG")),
-                        "biaya_tambahan": flt(r.get("BIAYA TAMBAHAN")),
-                        "biaya_pengurang": flt(r.get("BIAYA PENGURANG")),
-                        "jatuh_tempo": parse_excel_date(r.get("JATUH TEMPO"))
+                        "kode_jenis_vd": clean_excel_val("BARANG VD", "kode_jenis_vd", r.get("KODE VD")),
+                        "nilai_barang": clean_excel_val("BARANG VD", "nilai_barang", r.get("NILAI BARANG")),
+                        "biaya_tambahan": clean_excel_val("BARANG VD", "biaya_tambahan", r.get("BIAYA TAMBAHAN")),
+                        "biaya_pengurang": clean_excel_val("BARANG VD", "biaya_pengurang", r.get("BIAYA PENGURANG")),
+                        "jatuh_tempo": clean_excel_val("BARANG VD", "jatuh_tempo", r.get("JATUH TEMPO"))
                     })
             b_doc.set("barang_vd", child_vd)
 
@@ -645,40 +658,40 @@ def import_ceisa_excel(file_data, dry_run=False):
                     # Since we have many fields, let's map directly from row using generic logic?
                     # Or explicit for safety.
                     
-                    bb_doc.hs = bb_row.get("HS")
-                    bb_doc.kode_barang = bb_row.get("KODE BARANG")
-                    bb_doc.uraian = bb_row.get("URAIAN")
-                    bb_doc.merek = bb_row.get("MEREK")
-                    bb_doc.tipe = bb_row.get("TIPE")
-                    bb_doc.ukuran = bb_row.get("UKURAN")
-                    bb_doc.spesifikasi_lain = bb_row.get("SPESIFIKASI LAIN")
-                    bb_doc.kode_satuan = bb_row.get("KODE SATUAN")
-                    bb_doc.jumlah_satuan = flt(bb_row.get("JUMLAH SATUAN"))
-                    bb_doc.kode_asal_bahan_baku = bb_row.get("KODE ASAL BAHAN BAKU")
-                    bb_doc.cif = flt(bb_row.get("CIF"))
-                    bb_doc.cif_rupiah = flt(bb_row.get("CIF RUPIAH"))
-                    bb_doc.harga_penyerahan = flt(bb_row.get("HARGA PENYERAHAN"))
-                    bb_doc.harga_perolehan = flt(bb_row.get("HARGA PEROLEHAN"))
-                    bb_doc.ndpbm = flt(bb_row.get("NDPBM"))
-                    bb_doc.netto = flt(bb_row.get("NETTO"))
-                    bb_doc.bruto = flt(bb_row.get("BRUTO"))
-                    bb_doc.volume = flt(bb_row.get("VOLUME"))
+                    bb_doc.hs = clean_excel_val("BAHAN BAKU", "hs", bb_row.get("HS"))
+                    bb_doc.kode_barang = clean_excel_val("BAHAN BAKU", "kode_barang", bb_row.get("KODE BARANG"))
+                    bb_doc.uraian = clean_excel_val("BAHAN BAKU", "uraian", bb_row.get("URAIAN"))
+                    bb_doc.merek = clean_excel_val("BAHAN BAKU", "merek", bb_row.get("MEREK"))
+                    bb_doc.tipe = clean_excel_val("BAHAN BAKU", "tipe", bb_row.get("TIPE"))
+                    bb_doc.ukuran = clean_excel_val("BAHAN BAKU", "ukuran", bb_row.get("UKURAN"))
+                    bb_doc.spesifikasi_lain = clean_excel_val("BAHAN BAKU", "spesifikasi_lain", bb_row.get("SPESIFIKASI LAIN"))
+                    bb_doc.kode_satuan = clean_excel_val("BAHAN BAKU", "kode_satuan", bb_row.get("KODE SATUAN"))
+                    bb_doc.jumlah_satuan = clean_excel_val("BAHAN BAKU", "jumlah_satuan", bb_row.get("JUMLAH SATUAN"))
+                    bb_doc.kode_asal_bahan_baku = clean_excel_val("BAHAN BAKU", "kode_asal_bahan_baku", bb_row.get("KODE ASAL BAHAN BAKU"))
+                    bb_doc.cif = clean_excel_val("BAHAN BAKU", "cif", bb_row.get("CIF"))
+                    bb_doc.cif_rupiah = clean_excel_val("BAHAN BAKU", "cif_rupiah", bb_row.get("CIF RUPIAH"))
+                    bb_doc.harga_penyerahan = clean_excel_val("BAHAN BAKU", "harga_penyerahan", bb_row.get("HARGA PENYERAHAN"))
+                    bb_doc.harga_perolehan = clean_excel_val("BAHAN BAKU", "harga_perolehan", bb_row.get("HARGA PEROLEHAN"))
+                    bb_doc.ndpbm = clean_excel_val("BAHAN BAKU", "ndpbm", bb_row.get("NDPBM"))
+                    bb_doc.netto = clean_excel_val("BAHAN BAKU", "netto", bb_row.get("NETTO"))
+                    bb_doc.bruto = clean_excel_val("BAHAN BAKU", "bruto", bb_row.get("BRUTO"))
+                    bb_doc.volume = clean_excel_val("BAHAN BAKU", "volume", bb_row.get("VOLUME"))
                     
                     # New fields
-                    bb_doc.kode_bkc = bb_row.get("KODE BKC")
-                    bb_doc.kode_komoditi_bkc = bb_row.get("KODE KOMODITI BKC")
-                    bb_doc.kode_sub_komoditi_bkc = bb_row.get("KODE SUB KOMODITI BKC")
-                    bb_doc.flag_tis = bb_row.get("FLAG TIS")
-                    bb_doc.isi_per_kemasan = bb_row.get("ISI PER KEMASAN")
-                    bb_doc.jumlah_dilekatkan = bb_row.get("JUMLAH DILEKATKAN")
-                    bb_doc.jumlah_pita_cukai = bb_row.get("JUMLAH PITA CUKAI")
-                    bb_doc.hje_cukai = flt(bb_row.get("HJE CUKAI"))
-                    bb_doc.tarif_cukai = flt(bb_row.get("TARIF CUKAI"))
-                    bb_doc.nomor_aju_asal = bb_row.get("NOMOR AJU ASAL")
-                    bb_doc.nomor_daftar_asal = bb_row.get("NOMOR DAFTAR ASAL")
-                    bb_doc.tanggal_daftar_asal = parse_excel_date(bb_row.get("TANGGAL DAFTAR ASAL"))
-                    bb_doc.kode_dokumen_asal = bb_row.get("KODE DOKUMEN ASAL")
-                    bb_doc.kode_kantor_asal = bb_row.get("KODE KANTOR ASAL")
+                    bb_doc.kode_bkc = clean_excel_val("BAHAN BAKU", "kode_bkc", bb_row.get("KODE BKC"))
+                    bb_doc.kode_komoditi_bkc = clean_excel_val("BAHAN BAKU", "kode_komoditi_bkc", bb_row.get("KODE KOMODITI BKC"))
+                    bb_doc.kode_sub_komoditi_bkc = clean_excel_val("BAHAN BAKU", "kode_sub_komoditi_bkc", bb_row.get("KODE SUB KOMODITI BKC"))
+                    bb_doc.flag_tis = clean_excel_val("BAHAN BAKU", "flag_tis", bb_row.get("FLAG TIS"))
+                    bb_doc.isi_per_kemasan = clean_excel_val("BAHAN BAKU", "isi_per_kemasan", bb_row.get("ISI PER KEMASAN"))
+                    bb_doc.jumlah_dilekatkan = clean_excel_val("BAHAN BAKU", "jumlah_dilekatkan", bb_row.get("JUMLAH DILEKATKAN"))
+                    bb_doc.jumlah_pita_cukai = clean_excel_val("BAHAN BAKU", "jumlah_pita_cukai", bb_row.get("JUMLAH PITA CUKAI"))
+                    bb_doc.hje_cukai = clean_excel_val("BAHAN BAKU", "hje_cukai", bb_row.get("HJE CUKAI"))
+                    bb_doc.tarif_cukai = clean_excel_val("BAHAN BAKU", "tarif_cukai", bb_row.get("TARIF CUKAI"))
+                    bb_doc.nomor_aju_asal = clean_excel_val("BAHAN BAKU", "nomor_aju_asal", bb_row.get("NOMOR AJU ASAL"))
+                    bb_doc.nomor_daftar_asal = clean_excel_val("BAHAN BAKU", "nomor_daftar_asal", bb_row.get("NOMOR DAFTAR ASAL"))
+                    bb_doc.tanggal_daftar_asal = clean_excel_val("BAHAN BAKU", "tanggal_daftar_asal", bb_row.get("TANGGAL DAFTAR ASAL"))
+                    bb_doc.kode_dokumen_asal = clean_excel_val("BAHAN BAKU", "kode_dokumen_asal", bb_row.get("KODE DOKUMEN ASAL"))
+                    bb_doc.kode_kantor_asal = clean_excel_val("BAHAN BAKU", "kode_kantor_asal", bb_row.get("KODE KANTOR ASAL"))
                     
                     # Children of Bahan Baku
                     # BB Tarif
@@ -687,16 +700,16 @@ def import_ceisa_excel(file_data, dry_run=False):
                         if (cint(r.get("SERI BARANG")) == seri_barang and 
                             cint(r.get("SERI BAHAN BAKU")) == seri_bahan_baku):
                             child_bbt.append({
-                                "kode_pungutan": r.get("KODE PUNGUTAN"),
-                                "kode_tarif": r.get("KODE TARIF"),
-                                "tarif": flt(r.get("TARIF")),
-                                "kode_fasilitas": r.get("KODE FASILITAS"),
-                                "tarif_fasilitas": flt(r.get("TARIF FASILITAS")),
-                                "nilai_bayar": flt(r.get("NILAI BAYAR")),
-                                "nilai_fasilitas": flt(r.get("NILAI FASILITAS")),
-                                "kode_asal_bahan_baku": r.get("KODE ASAL BAHAN BAKU"),
-                                "jumlah_satuan": flt(r.get("JUMLAH SATUAN")),
-                                "kode_satuan": r.get("KODE SATUAN")
+                                "kode_pungutan": clean_excel_val("BAHAN BAKU TARIF", "kode_pungutan", r.get("KODE PUNGUTAN")),
+                                "kode_tarif": clean_excel_val("BAHAN BAKU TARIF", "kode_tarif", r.get("KODE TARIF")),
+                                "tarif": clean_excel_val("BAHAN BAKU TARIF", "tarif", r.get("TARIF")),
+                                "kode_fasilitas": clean_excel_val("BAHAN BAKU TARIF", "kode_fasilitas", r.get("KODE FASILITAS")),
+                                "tarif_fasilitas": clean_excel_val("BAHAN BAKU TARIF", "tarif_fasilitas", r.get("TARIF FASILITAS")),
+                                "nilai_bayar": clean_excel_val("BAHAN BAKU TARIF", "nilai_bayar", r.get("NILAI BAYAR")),
+                                "nilai_fasilitas": clean_excel_val("BAHAN BAKU TARIF", "nilai_fasilitas", r.get("NILAI FASILITAS")),
+                                "kode_asal_bahan_baku": clean_excel_val("BAHAN BAKU TARIF", "kode_asal_bahan_baku", r.get("KODE ASAL BAHAN BAKU")),
+                                "jumlah_satuan": clean_excel_val("BAHAN BAKU TARIF", "jumlah_satuan", r.get("JUMLAH SATUAN")),
+                                "kode_satuan": clean_excel_val("BAHAN BAKU TARIF", "kode_satuan", r.get("KODE SATUAN"))
                             })
                     bb_doc.set("bahan_tarif", child_bbt)
                     
@@ -706,9 +719,9 @@ def import_ceisa_excel(file_data, dry_run=False):
                          if (cint(r.get("SERI BARANG")) == seri_barang and 
                             cint(r.get("SERI BAHAN BAKU")) == seri_bahan_baku):
                              child_bbd.append({
-                                 "seri_dokumen": r.get("SERI DOKUMEN"),
-                                 "seri_izin": r.get("SERI IZIN"),
-                                 "kode_asal_bahan_baku": r.get("KODE_ASAL_BAHAN_BAKU")
+                                 "seri_dokumen": clean_excel_val("BAHAN BAKU DOKUMEN", "seri_dokumen", r.get("SERI DOKUMEN")),
+                                 "seri_izin": clean_excel_val("BAHAN BAKU DOKUMEN", "seri_izin", r.get("SERI IZIN")),
+                                 "kode_asal_bahan_baku": clean_excel_val("BAHAN BAKU DOKUMEN", "kode_asal_bahan_baku", r.get("KODE ASAL BAHAN BAKU"))
                              })
                     bb_doc.set("bahan_baku_dokumen", child_bbd)
                     
@@ -716,7 +729,7 @@ def import_ceisa_excel(file_data, dry_run=False):
                     
                     # Track BAHAN BAKU stats
                     audit_report["stats"]["BAHAN BAKU"] = audit_report["stats"].get("BAHAN BAKU", 0) + 1
-                    audit_report["stats"]["BAHAN TARIF"] = audit_report["stats"].get("BAHAN TARIF", 0) + len(child_bbt)
+                    audit_report["stats"]["BAHAN BAKU TARIF"] = audit_report["stats"].get("BAHAN BAKU TARIF", 0) + len(child_bbt)
                     audit_report["stats"]["BAHAN BAKU DOKUMEN"] = audit_report["stats"].get("BAHAN BAKU DOKUMEN", 0) + len(child_bbd)
         
         message = f"<b>Successfully processed {nomor_aju}</b>"

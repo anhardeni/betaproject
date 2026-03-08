@@ -1,5 +1,5 @@
 import frappe
 from frappe.model.document import Document
 
-class StatusHistory(Document):
-	pass
+class CustomsStatusLogResponse(Document):
+    pass

@@ -1,62 +1,147 @@
 {
     "actions": [],
-    "allow_rename": 1,
-    "autoname": "field:nomor_aju",
+    "allow_rename": 0,
+    "autoname": "field:no_aju",
     "creation": "2026-02-18 17:10:00.000000",
     "doctype": "DocType",
     "editable_grid": 1,
     "engine": "InnoDB",
     "field_order": [
-        "nomor_aju",
-        "npwp",
-        "fetched_at",
-        "last_status",
-        "status_history",
-        "respon_history"
+        "no_aju",
+        "doctype_type",
+        "company",
+        "linked_document_type",
+        "linked_document_name",
+        "column_break_1",
+        "bc_status",
+        "nopen",
+        "nopen_date",
+        "submission_datetime",
+        "last_pull_datetime",
+        "section_payload",
+        "payload_json",
+        "last_response_raw",
+        "section_status",
+        "statuses",
+        "section_response",
+        "responses"
     ],
     "fields": [
         {
-            "fieldname": "nomor_aju",
+            "fieldname": "no_aju",
             "fieldtype": "Data",
             "in_list_view": 1,
+            "in_standard_filter": 1,
             "label": "Nomor Aju",
             "reqd": 1,
-            "unique": 1
+            "unique": 1,
+            "bold": 1
         },
         {
-            "fieldname": "npwp",
-            "fieldtype": "Data",
+            "fieldname": "doctype_type",
+            "fieldtype": "Select",
             "in_list_view": 1,
-            "label": "NPWP Pemberitahu"
-        },
-        {
-            "fieldname": "fetched_at",
-            "fieldtype": "Datetime",
-            "in_list_view": 1,
-            "label": "Di-fetch Pada",
+            "label": "Jenis Dokumen",
+            "options": "\nPIB\nPEB\nBC23\nBC25\nBC27\nBC20\nBC30\nPPFTZ",
             "reqd": 1
         },
         {
-            "fieldname": "last_status",
+            "fieldname": "company",
+            "fieldtype": "Link",
+            "label": "Company",
+            "options": "Company"
+        },
+        {
+            "fieldname": "linked_document_type",
+            "fieldtype": "Data",
+            "label": "Tipe Dokumen Terkait",
+            "description": "Contoh: HEADER V21"
+        },
+        {
+            "fieldname": "linked_document_name",
+            "fieldtype": "Dynamic Link",
+            "label": "Dokumen Terkait",
+            "options": "linked_document_type"
+        },
+        {
+            "fieldname": "column_break_1",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "bc_status",
+            "fieldtype": "Select",
+            "in_list_view": 1,
+            "in_standard_filter": 1,
+            "label": "Status BC",
+            "options": "\nPending\nRegistered\nRejected\nCompleted\nOn Hold",
+            "default": "Pending",
+            "bold": 1
+        },
+        {
+            "fieldname": "nopen",
             "fieldtype": "Data",
             "in_list_view": 1,
-            "label": "Status Terakhir"
+            "label": "NOPEN (Nomor Pendaftaran)"
         },
         {
-            "fieldname": "status_history",
+            "fieldname": "nopen_date",
+            "fieldtype": "Date",
+            "label": "Tanggal NOPEN"
+        },
+        {
+            "fieldname": "submission_datetime",
+            "fieldtype": "Datetime",
+            "label": "Waktu Submit"
+        },
+        {
+            "fieldname": "last_pull_datetime",
+            "fieldtype": "Datetime",
+            "label": "Terakhir Tarik Status"
+        },
+        {
+            "fieldname": "section_payload",
+            "fieldtype": "Section Break",
+            "label": "Payload & Raw Response",
+            "collapsible": 1
+        },
+        {
+            "fieldname": "payload_json",
+            "fieldtype": "Long Text",
+            "label": "Payload JSON Submit",
+            "description": "JSON payload yang dikirim ke Bea Cukai"
+        },
+        {
+            "fieldname": "last_response_raw",
+            "fieldtype": "Long Text",
+            "label": "Raw Response Terakhir (Audit)",
+            "description": "Salinan raw response terakhir dari API /status/{nomorAju}"
+        },
+        {
+            "fieldname": "section_status",
+            "fieldtype": "Section Break",
+            "label": "Riwayat Status"
+        },
+        {
+            "fieldname": "statuses",
             "fieldtype": "Table",
             "label": "Status History",
-            "options": "Status History"
+            "options": "Customs Status Log Status"
         },
         {
-            "fieldname": "respon_history",
+            "fieldname": "section_response",
+            "fieldtype": "Section Break",
+            "label": "Riwayat Respon"
+        },
+        {
+            "fieldname": "responses",
             "fieldtype": "Table",
-            "label": "Respon History",
-            "options": "Respon History"
+            "label": "Response History",
+            "options": "Customs Status Log Response"
         }
     ],
     "index_web_pages_for_search": 1,
-    "modified": "2026-02-18 17:10:00.000000",
+    "is_submittable": 0,
+    "modified": "2026-03-06 14:26:00.000000",
     "modified_by": "Administrator",
     "module": "Singlecore Apps",
     "name": "Customs Status Log",
@@ -73,6 +158,30 @@
             "role": "System Manager",
             "share": 1,
             "write": 1
+        },
+        {
+            "create": 1,
+            "delete": 0,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "EXIM Manager",
+            "share": 1,
+            "write": 1
+        },
+        {
+            "create": 0,
+            "delete": 0,
+            "email": 0,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "EXIM Staff",
+            "share": 0,
+            "write": 0
         }
     ],
     "sort_field": "modified",

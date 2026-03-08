@@ -37,7 +37,9 @@ doctype_js = {
     "Sales Order": "public/js/erpnext_export_integration.js",
     "Sales Invoice": "public/js/erpnext_export_integration.js",
     # HEADER V21 - both integrations
-    "HEADER V21": ["public/js/erpnext_integration.js", "public/js/erpnext_export_integration.js"]
+    "HEADER V21": ["public/js/erpnext_integration.js", "public/js/erpnext_export_integration.js"],
+    # Customs Status Log - Pull Now button & status badge
+    "Customs Status Log": "public/js/customs_status_log.js"
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}

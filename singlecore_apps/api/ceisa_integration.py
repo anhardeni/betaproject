@@ -63,6 +63,42 @@ def send_ceisa_document(docname):
         # Delegate to send_document — handles token, serialisation, and 401 retry
         result = send_document(payload, is_final=False)
 
+        # ── Create / update Customs Status Log after successful submission ──
+        if result.get("status") == "success":
+            try:
+                response_data = result.get("data") or {}
+                if isinstance(response_data, str):
+                    import json as _json
+                    try:
+                        response_data = _json.loads(response_data)
+                    except Exception:
+                        response_data = {}
+
+                no_aju = (
+                    response_data.get("nomorAju")
+                    or response_data.get("nomor_aju")
+                    or doc.nomoraju
+                    or ""
+                )
+                no_aju = str(no_aju).strip()
+
+                if no_aju:
+                    from singlecore_apps.singlecore_apps.doctype.customs_status_log.customs_status_log import (
+                        create_or_update_log,
+                    )
+                    create_or_update_log(
+                        docname=docname,
+                        no_aju=no_aju,
+                        payload=payload,
+                        bc_type=bc_type,
+                    )
+            except Exception:
+                # Non-blocking — log the error but still return success to the caller
+                frappe.log_error(
+                    frappe.get_traceback(),
+                    f"send_ceisa_document: create_or_update_log failed [{docname}]"
+                )
+
         # Rename 'data' → 'response' for JS backward compatibility
         result["response"] = result.pop("data", None)
         return result

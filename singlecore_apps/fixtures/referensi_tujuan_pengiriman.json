@@ -218,15 +218,6 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Tujuan Pengiriman",
-  "kode_dokumen": "27",
-  "kode_tujuan_pengiriman": "1",
-  "modified": "2025-12-27 13:10:08.601278",
-  "nama_tujuan_pengiriman": "PENYERAHAN BKP",
-  "name": "271"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Tujuan Pengiriman",
   "kode_dokumen": "40",
   "kode_tujuan_pengiriman": "1",
   "modified": "2025-12-27 13:10:08.610886",
@@ -277,5 +268,14 @@
   "modified": "2025-12-27 13:10:08.659839",
   "nama_tujuan_pengiriman": "PENYERAHAN BKP",
   "name": "5221"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Tujuan Pengiriman",
+  "kode_dokumen": "27",
+  "kode_tujuan_pengiriman": "1",
+  "modified": "2025-12-27 13:10:08.601278",
+  "nama_tujuan_pengiriman": "PENYERAHAN BKP",
+  "name": "271"
  }
 ]

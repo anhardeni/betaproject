@@ -3,6 +3,150 @@
   "docstatus": 0,
   "doctype": "Referensi Kategori Ekspor",
   "kode_dokumen": "30",
+  "kode_kategori_ekspor": "10",
+  "modified": "2023-06-21 15:09:20.797688",
+  "nama_kategori_ekspor": "Umum",
+  "name": "1030"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "302",
+  "kode_kategori_ekspor": "41",
+  "modified": "2023-06-21 15:09:20.859129",
+  "nama_kategori_ekspor": "TPB dari kawasan berikat",
+  "name": "41302"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "302",
+  "kode_kategori_ekspor": "42",
+  "modified": "2023-06-21 15:09:20.864247",
+  "nama_kategori_ekspor": "TPB dari gudang berikat",
+  "name": "42302"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "302",
+  "kode_kategori_ekspor": "43",
+  "modified": "2023-06-21 15:09:20.869303",
+  "nama_kategori_ekspor": "TPB dari tempat pameran berikat",
+  "name": "43302"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "302",
+  "kode_kategori_ekspor": "44",
+  "modified": "2023-06-21 15:09:20.873699",
+  "nama_kategori_ekspor": "TPB dari toko bebas bea",
+  "name": "44302"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "302",
+  "kode_kategori_ekspor": "45",
+  "modified": "2023-06-21 15:09:20.878068",
+  "nama_kategori_ekspor": "TPB dari tempat lelang berikat",
+  "name": "45302"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "302",
+  "kode_kategori_ekspor": "46",
+  "modified": "2023-06-21 15:09:20.882738",
+  "nama_kategori_ekspor": "TPB dari kawasan daur ulang berikat",
+  "name": "46302"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "30",
+  "kode_kategori_ekspor": "51",
+  "modified": "2023-06-21 15:09:20.887423",
+  "nama_kategori_ekspor": "PLB",
+  "name": "5130"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "30",
+  "kode_kategori_ekspor": "61",
+  "modified": "2026-03-06 20:56:43.791695",
+  "nama_kategori_ekspor": "BKC Yang Belum Dilunasi Cukainya",
+  "name": "6130"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "30",
+  "kode_kategori_ekspor": "23",
+  "modified": "2023-06-21 15:09:20.896372",
+  "nama_kategori_ekspor": "KITE dengan pembebasan dan pengembalian",
+  "name": "2330"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "30",
+  "kode_kategori_ekspor": "42",
+  "modified": "2026-03-06 20:52:03.261154",
+  "nama_kategori_ekspor": "TPB Dari Gudang Berikat",
+  "name": "4230"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "30",
+  "kode_kategori_ekspor": "41",
+  "modified": "2026-03-06 20:52:58.055065",
+  "nama_kategori_ekspor": "TPB Dari Kawasan Berikat",
+  "name": "4130"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "30",
+  "kode_kategori_ekspor": "43",
+  "modified": "2026-03-06 20:53:42.436682",
+  "nama_kategori_ekspor": "TPB Dari Tempat Pameran Berikat",
+  "name": "4330"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "30",
+  "kode_kategori_ekspor": "44",
+  "modified": "2026-03-06 20:54:30.397759",
+  "nama_kategori_ekspor": "TPB Dari Toko Bebas Bea",
+  "name": "4430"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "30",
+  "kode_kategori_ekspor": "45",
+  "modified": "2026-03-06 20:55:14.131083",
+  "nama_kategori_ekspor": "TPB Dari Tempat Lelang Berikat",
+  "name": "4530"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "30",
+  "kode_kategori_ekspor": "46",
+  "modified": "2026-03-06 20:55:51.171346",
+  "nama_kategori_ekspor": "TPB Dari Kawasan Daur Ulang Berikat",
+  "name": "4630"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Ekspor",
+  "kode_dokumen": "30",
   "kode_kategori_ekspor": "22",
   "modified": "2025-12-27 12:44:25.267275",
   "nama_kategori_ekspor": "Yg pd saat imp mndpt fas pengembalian BM(NIPER dgn pengembalian)",

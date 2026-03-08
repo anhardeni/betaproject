@@ -6,26 +6,38 @@
     "editable_grid": 1,
     "engine": "InnoDB",
     "field_order": [
+        "nomor_aju",
         "kode_respon",
         "nomor_daftar",
         "tanggal_daftar",
+        "column_break_r1",
         "nomor_respon",
         "tanggal_respon",
         "waktu_respon",
+        "waktu_status",
         "keterangan",
+        "section_detail",
         "pesan_json",
-        "pdf_base64"
+        "pdf_file"
     ],
     "fields": [
         {
+            "fieldname": "nomor_aju",
+            "fieldtype": "Data",
+            "label": "Nomor Aju",
+            "in_list_view": 1
+        },
+        {
             "fieldname": "kode_respon",
             "fieldtype": "Data",
-            "label": "Kode Respon"
+            "label": "Kode Respon",
+            "in_list_view": 1
         },
         {
             "fieldname": "nomor_daftar",
             "fieldtype": "Data",
-            "label": "Nomor Daftar"
+            "label": "Nomor Daftar",
+            "in_list_view": 1
         },
         {
             "fieldname": "tanggal_daftar",
@@ -33,9 +45,14 @@
             "label": "Tanggal Daftar"
         },
         {
+            "fieldname": "column_break_r1",
+            "fieldtype": "Column Break"
+        },
+        {
             "fieldname": "nomor_respon",
             "fieldtype": "Data",
-            "label": "Nomor Respon"
+            "label": "Nomor Respon",
+            "in_list_view": 1
         },
         {
             "fieldname": "tanggal_respon",
@@ -48,26 +65,39 @@
             "label": "Waktu Respon"
         },
         {
+            "fieldname": "waktu_status",
+            "fieldtype": "Datetime",
+            "label": "Waktu Status"
+        },
+        {
             "fieldname": "keterangan",
-            "fieldtype": "Data",
+            "fieldtype": "Small Text",
             "label": "Keterangan"
         },
         {
-            "fieldname": "pesan_json",
-            "fieldtype": "JSON",
-            "label": "Pesan Array"
+            "fieldname": "section_detail",
+            "fieldtype": "Section Break",
+            "label": "Detail Pesan & PDF"
         },
         {
-            "fieldname": "pdf_base64",
-            "fieldtype": "Attach",
-            "label": "PDF File"
+            "fieldname": "pesan_json",
+            "fieldtype": "Long Text",
+            "label": "Pesan JSON",
+            "description": "Array pesan dari field 'pesan' dalam dataRespon"
+        },
+        {
+            "fieldname": "pdf_file",
+            "fieldtype": "Link",
+            "label": "PDF File",
+            "options": "File",
+            "description": "Private PDF file hasil decode base64 dari field 'Pdf'"
         }
     ],
     "istable": 1,
-    "modified": "2026-02-18 17:10:00.000000",
+    "modified": "2026-03-06 14:26:00.000000",
     "modified_by": "Administrator",
     "module": "Singlecore Apps",
-    "name": "Respon History",
+    "name": "Customs Status Log Response",
     "owner": "Administrator",
     "permissions": [],
     "sort_field": "modified",
