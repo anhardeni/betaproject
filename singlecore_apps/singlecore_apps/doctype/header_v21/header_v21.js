@@ -406,23 +406,23 @@ function validate_bc_schema(frm, label, suffix) {
 				});
 			} else if (result.errors) {
 				let error_html = `
-					<table class="table table-bordered table-hover" style="font-size: 0.9em;">
-						<thead>
-							<tr class="active">
-								<th style="width: 30%;">${__('Field Path')}</th>
-								<th>${__('Error')}</th>
-							</tr>
-						</thead>
-						<tbody>
-				`;
+ 					<table class="table table-bordered table-hover" style="font-size: 0.9em;">
+ 						<thead>
+ 							<tr class="active">
+ 								<th style="width: 30%;">${__('Field Path')}</th>
+ 								<th>${__('Error')}</th>
+ 							</tr>
+ 						</thead>
+ 						<tbody>
+ 				`;
 
 				result.errors.forEach(err => {
 					error_html += `
-						<tr>
-							<td><code style="word-break: break-all;">${err.path}</code></td>
-							<td>${err.message}</td>
-						</tr>
-					`;
+ 						<tr>
+ 							<td><code style="word-break: break-all;">${err.path}</code></td>
+ 							<td>${err.message}</td>
+ 						</tr>
+ 					`;
 				});
 
 				error_html += '</tbody></table>';
@@ -444,3 +444,4 @@ function validate_bc_schema(frm, label, suffix) {
 		}
 	});
 }
+

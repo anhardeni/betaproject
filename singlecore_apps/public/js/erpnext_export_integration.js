@@ -62,17 +62,17 @@ frappe.ui.form.on("HEADER V21", {
         // Show Export import buttons
         if (is_export || !frm.doc.kode_dokumen) {
             // Import from single SO
-            frm.add_custom_button(__("📦 Import dari SO"), function () {
+            frm.add_custom_button(__("📦 Import Sales Order"), function () {
                 ensure_saved_then(frm, () => show_so_picker_dialog(frm));
             }, __("Import from Sales Document"));
 
             // Import from single SI
-            frm.add_custom_button(__("🧾 Import dari SI"), function () {
+            frm.add_custom_button(__("🧾 Import Sales Invoice"), function () {
                 ensure_saved_then(frm, () => show_si_picker_dialog(frm));
             }, __("Import from Sales Document"));
 
             // Multi-source import for export
-            frm.add_custom_button(__("📦 Multi-Source Export"), function () {
+            frm.add_custom_button(__("📦 Multi-Source SO/SI"), function () {
                 ensure_saved_then(frm, () => show_multi_source_export_dialog(frm));
             }, __("Import from Sales Document"));
         }

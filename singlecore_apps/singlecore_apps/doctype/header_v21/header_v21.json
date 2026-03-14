@@ -9,7 +9,7 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{00}{kode_dokumen4digit}{BT0001}{YYYY}{MM}{DD}{######}",
- "creation": "2026-03-09 08:40:14.055768",
+ "creation": "2026-03-13 17:21:36.512464",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -54,6 +54,7 @@
   "kode_kategori_masuk_ftz",
   "kode_kategori_keluar_ftz",
   "kode_kategori_barang_ftz",
+  "column_break_lmpv",
   "kode_lokasi",
   "kode_lokasi_bayar",
   "lokasi_asal",
@@ -115,27 +116,33 @@
   "kode_jasa_kena_pajak",
   "nomor_bukti_bayar",
   "tanggal_bukti_bayar",
+  "column_break_gpie",
   "kode_jenis_nilai",
   "kode_kantor_muat",
   "nomor_daftar",
   "tanggal_daftar",
-  "column_break_aqxx",
   "kode_barang_asal_ftz",
   "kode_tujuan_pengeluaran",
+  "column_break_tzyl",
   "ppn_pajak",
   "ppnbm_pajak",
   "tarif_ppn_pajak",
   "tarif_ppnbm_pajak",
   "barang_tidak_berwujud",
-  "kode_jenis_pengeluaran",
   "data_3_tab",
+  "section_break_entitas",
   "entitas",
+  "section_break_komponen",
   "komponen_biaya",
   "data_4_tab",
+  "section_break_kemasan",
   "kemasan",
+  "section_break_dokumen",
   "dokumen",
   "data_5_tab",
+  "section_break_pengangkut",
   "pengangkut",
+  "section_break_kontainer",
   "kontainer",
   "section_break_sogf",
   "bank_devisa",
@@ -727,10 +734,6 @@
    "label": "TANGGAL DAFTAR"
   },
   {
-   "fieldname": "column_break_aqxx",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "kode_barang_asal_ftz",
    "fieldtype": "Data",
    "label": "KODE ASAL BARANG FTZ"
@@ -768,19 +771,25 @@
    "label": "BARANG TIDAK BERWUJUD"
   },
   {
-   "fieldname": "kode_jenis_pengeluaran",
-   "fieldtype": "Data"
-  },
-  {
    "fieldname": "data_3_tab",
    "fieldtype": "Tab Break",
    "label": "Data 3"
+  },
+  {
+   "fieldname": "section_break_entitas",
+   "fieldtype": "Section Break",
+   "label": "Entitas"
   },
   {
    "fieldname": "entitas",
    "fieldtype": "Table",
    "label": "ENTITAS",
    "options": "ENTITAS"
+  },
+  {
+   "fieldname": "section_break_komponen",
+   "fieldtype": "Section Break",
+   "label": "Komponen Biaya"
   },
   {
    "fieldname": "komponen_biaya",
@@ -794,10 +803,20 @@
    "label": "Data 4"
   },
   {
+   "fieldname": "section_break_kemasan",
+   "fieldtype": "Section Break",
+   "label": "Kemasan"
+  },
+  {
    "fieldname": "kemasan",
    "fieldtype": "Table",
    "label": "KEMASAN",
    "options": "KEMASAN"
+  },
+  {
+   "fieldname": "section_break_dokumen",
+   "fieldtype": "Section Break",
+   "label": "Dokumen"
   },
   {
    "fieldname": "dokumen",
@@ -811,10 +830,20 @@
    "label": "Data 5"
   },
   {
+   "fieldname": "section_break_pengangkut",
+   "fieldtype": "Section Break",
+   "label": "Pengangkut"
+  },
+  {
    "fieldname": "pengangkut",
    "fieldtype": "Table",
    "label": "PENGANGKUT",
    "options": "PENGANGKUT"
+  },
+  {
+   "fieldname": "section_break_kontainer",
+   "fieldtype": "Section Break",
+   "label": "Kontainer"
   },
   {
    "fieldname": "kontainer",
@@ -823,10 +852,20 @@
    "options": "KONTAINER"
   },
   {
+   "fieldname": "section_break_sogf",
+   "fieldtype": "Section Break",
+   "label": "Bank Devisa"
+  },
+  {
    "fieldname": "bank_devisa",
    "fieldtype": "Table",
    "label": "BANK DEVISA",
    "options": "BANK DEVISA"
+  },
+  {
+   "fieldname": "section_break_dtiu",
+   "fieldtype": "Section Break",
+   "label": "Kesiapan Barang"
   },
   {
    "fieldname": "kesiapan_barang",
@@ -841,12 +880,16 @@
    "label": "RESPON JSON"
   },
   {
-   "fieldname": "section_break_sogf",
-   "fieldtype": "Section Break"
+   "fieldname": "column_break_lmpv",
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_dtiu",
-   "fieldtype": "Section Break"
+   "fieldname": "column_break_gpie",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tzyl",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -856,7 +899,7 @@
    "link_fieldname": "nomoraju"
   }
  ],
- "modified": "2026-03-09 08:40:14.956478",
+ "modified": "2026-03-13 17:38:46.827159",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "HEADER V21",

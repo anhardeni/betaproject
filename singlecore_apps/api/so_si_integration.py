@@ -737,3 +737,5 @@ def get_available_sales_invoices():
 def get_kantor_list():
     """Get list of customs offices for dialog"""
     return frappe.get_all("Referensi Kantor", fields=["name", "uraian_kantor"], order_by="name asc")
+
+

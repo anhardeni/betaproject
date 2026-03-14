@@ -61,19 +61,24 @@ frappe.ui.form.on("HEADER V21", {
         // Show Import Data buttons always (even on new documents)
 
         // Import from single PO
-        frm.add_custom_button(__("🔗 Import dari PO"), function () {
+        frm.add_custom_button(__("🔗 Import Purchase Order"), function () {
             ensure_saved_then(frm, () => show_po_picker_dialog(frm));
-        }, __("Import from Purchase Document"));
+        }, __("Import Purchase/Delivery Note"));
 
         // Import from single PI
-        frm.add_custom_button(__("📋 Import dari PI"), function () {
+        frm.add_custom_button(__("📋 Import Purchase Invoice"), function () {
             ensure_saved_then(frm, () => show_pi_picker_dialog(frm));
-        }, __("Import from Purchase Document"));
+        }, __("Import Purchase/Delivery Note"));
 
         // Multi-source import
-        frm.add_custom_button(__("📦 Multi-Source Import"), function () {
+        frm.add_custom_button(__("📦 Multi-Source PO/PI"), function () {
             ensure_saved_then(frm, () => show_multi_source_dialog(frm));
-        }, __("Import from Purchase Document"));
+        }, __("Import Purchase/Delivery Note"));
+
+        // 📥 Import Delivery Note
+        frm.add_custom_button(__('📥 Import Delivery Note'), function () {
+            show_dn_picker(frm);
+        }, __('Import Purchase/Delivery Note')).attr('style', 'background: linear-gradient(135deg, #00B4DB 0%, #0083B0 100%); color: #fff; border: none; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,0.2); box-shadow: 0 4px 6px rgba(0,180,219,0.2);');
     }
 });
 
@@ -392,4 +397,129 @@ function handle_import_response(r, frm) {
             });
         }
     }
+}
+
+/**
+ * 🌊 AMBIENT DN PICKER
+ * Immersive UI to pull data from Delivery Notes
+ */
+function show_dn_picker(frm) {
+    let d = new frappe.ui.Dialog({
+        title: '<div style="background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; font-size: 1.25em;">🌊 Immersive DN Import</div>',
+        fields: [
+            {
+                fieldtype: 'HTML',
+                fieldname: 'intro',
+                options: `
+ 					<div style="padding: 15px; background: rgba(0, 180, 219, 0.05); border-radius: 12px; border: 1px solid rgba(0, 180, 219, 0.1); margin-bottom: 20px;">
+ 						<p style="margin: 0; color: #00796B; font-weight: 500;">Pilih Delivery Note dari list di bawah untuk melakukan sinkronisasi data ke <b>HEADER V21</b> ini secara cerdas.</p>
+ 					</div>
+ 				`
+            },
+            {
+                label: 'Select Delivery Note',
+                fieldname: 'dn_name',
+                fieldtype: 'Link',
+                options: 'Delivery Note',
+                reqd: 1,
+                get_query: () => {
+                    return { filters: { docstatus: 1 } };
+                },
+                description: 'Hanya DN yang sudah di-Submit yang akan muncul.'
+            },
+            {
+                label: 'Price List (Optional)',
+                fieldname: 'price_list',
+                fieldtype: 'Link',
+                options: 'Price List',
+                description: 'Digunakan jika rate di DN/SO/SI kosong.'
+            },
+            {
+                label: 'Advanced Settings',
+                fieldtype: 'Section Break',
+                collapsible: 1
+            },
+            {
+                label: 'Kode Dokumen Sumber (DOKUMEN)',
+                fieldname: 'kode_dokumen_sumber',
+                fieldtype: 'Data',
+                default: '999',
+                description: 'Kode CEISA untuk dokumen DN (default 999).'
+            },
+            {
+                label: 'Mode Import',
+                fieldname: 'mode',
+                fieldtype: 'Select',
+                options: [
+                    { label: 'Replace / New (Create New Header)', value: 'new' },
+                    { label: 'Append to Current Header', value: 'append' }
+                ],
+                default: 'append',
+            }
+        ],
+        primary_action_label: '✨ Sync Now',
+        primary_action: function (values) {
+            const method = values.mode === 'new' ?
+                'singlecore_apps.api.dn_so_si_integration.make_header_v21_from_dn' :
+                'singlecore_apps.api.dn_so_si_integration.populate_header_from_dn';
+
+            const args = {
+                dn_name: values.dn_name,
+                price_list: values.price_list,
+                kode_dokumen_sumber_dn: values.kode_dokumen_sumber
+            };
+
+            if (values.mode === 'append') {
+                args.header_name = frm.doc.name;
+            }
+
+            d.hide();
+
+            frappe.call({
+                method: method,
+                args: args,
+                freeze: true,
+                freeze_message: '🌊 Synchronizing Ambient Data...',
+                callback: function (r) {
+                    if (r.message && r.message.status === 'success') {
+                        frappe.msgprint({
+                            title: '<span style="color: #0083B0;">✨ Synchronization Successful</span>',
+                            message: r.message.message,
+                            indicator: 'green',
+                            wide: true
+                        });
+                        if (values.mode === 'new') {
+                            frappe.set_route('Form', 'HEADER V21', r.message.header_name);
+                        } else {
+                            frm.reload_doc();
+                        }
+                    } else {
+                        frappe.msgprint({
+                            title: '❌ Sync Failed',
+                            message: (r.message ? r.message.message : 'Unknown error'),
+                            indicator: 'red'
+                        });
+                    }
+                }
+            });
+        }
+    });
+
+    d.show();
+
+    // Inject some ambient CSS to the dialog
+    d.$wrapper.find('.modal-content').css({
+        'border-radius': '20px',
+        'overflow': 'hidden',
+        'box-shadow': '0 20px 50px rgba(0, 180, 219, 0.15)',
+        'border': '1px solid rgba(0, 180, 219, 0.1)'
+    });
+    d.$wrapper.find('.primary-action').css({
+        'background': 'linear-gradient(135deg, #00B4DB 0%, #0083B0 100%)',
+        'border': 'none',
+        'border-radius': '8px',
+        'padding': '8px 20px',
+        'font-weight': '700',
+        'box-shadow': '0 4px 15px rgba(0, 131, 176, 0.3)'
+    });
 }
