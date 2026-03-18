@@ -1,191 +1,212 @@
 {
-    "actions": [],
-    "allow_rename": 0,
-    "autoname": "field:no_aju",
-    "creation": "2026-02-18 17:10:00.000000",
-    "doctype": "DocType",
-    "editable_grid": 1,
-    "engine": "InnoDB",
-    "field_order": [
-        "no_aju",
-        "doctype_type",
-        "company",
-        "linked_document_type",
-        "linked_document_name",
-        "column_break_1",
-        "bc_status",
-        "nopen",
-        "nopen_date",
-        "submission_datetime",
-        "last_pull_datetime",
-        "section_payload",
-        "payload_json",
-        "last_response_raw",
-        "section_status",
-        "statuses",
-        "section_response",
-        "responses"
-    ],
-    "fields": [
-        {
-            "fieldname": "no_aju",
-            "fieldtype": "Data",
-            "in_list_view": 1,
-            "in_standard_filter": 1,
-            "label": "Nomor Aju",
-            "reqd": 1,
-            "unique": 1,
-            "bold": 1
-        },
-        {
-            "fieldname": "doctype_type",
-            "fieldtype": "Select",
-            "in_list_view": 1,
-            "label": "Jenis Dokumen",
-            "options": "\nPIB\nPEB\nBC23\nBC25\nBC27\nBC20\nBC30\nPPFTZ",
-            "reqd": 1
-        },
-        {
-            "fieldname": "company",
-            "fieldtype": "Link",
-            "label": "Company",
-            "options": "Company"
-        },
-        {
-            "fieldname": "linked_document_type",
-            "fieldtype": "Data",
-            "label": "Tipe Dokumen Terkait",
-            "description": "Contoh: HEADER V21"
-        },
-        {
-            "fieldname": "linked_document_name",
-            "fieldtype": "Dynamic Link",
-            "label": "Dokumen Terkait",
-            "options": "linked_document_type"
-        },
-        {
-            "fieldname": "column_break_1",
-            "fieldtype": "Column Break"
-        },
-        {
-            "fieldname": "bc_status",
-            "fieldtype": "Select",
-            "in_list_view": 1,
-            "in_standard_filter": 1,
-            "label": "Status BC",
-            "options": "\nPending\nRegistered\nRejected\nCompleted\nOn Hold",
-            "default": "Pending",
-            "bold": 1
-        },
-        {
-            "fieldname": "nopen",
-            "fieldtype": "Data",
-            "in_list_view": 1,
-            "label": "NOPEN (Nomor Pendaftaran)"
-        },
-        {
-            "fieldname": "nopen_date",
-            "fieldtype": "Date",
-            "label": "Tanggal NOPEN"
-        },
-        {
-            "fieldname": "submission_datetime",
-            "fieldtype": "Datetime",
-            "label": "Waktu Submit"
-        },
-        {
-            "fieldname": "last_pull_datetime",
-            "fieldtype": "Datetime",
-            "label": "Terakhir Tarik Status"
-        },
-        {
-            "fieldname": "section_payload",
-            "fieldtype": "Section Break",
-            "label": "Payload & Raw Response",
-            "collapsible": 1
-        },
-        {
-            "fieldname": "payload_json",
-            "fieldtype": "Long Text",
-            "label": "Payload JSON Submit",
-            "description": "JSON payload yang dikirim ke Bea Cukai"
-        },
-        {
-            "fieldname": "last_response_raw",
-            "fieldtype": "Long Text",
-            "label": "Raw Response Terakhir (Audit)",
-            "description": "Salinan raw response terakhir dari API /status/{nomorAju}"
-        },
-        {
-            "fieldname": "section_status",
-            "fieldtype": "Section Break",
-            "label": "Riwayat Status"
-        },
-        {
-            "fieldname": "statuses",
-            "fieldtype": "Table",
-            "label": "Status History",
-            "options": "Customs Status Log Status"
-        },
-        {
-            "fieldname": "section_response",
-            "fieldtype": "Section Break",
-            "label": "Riwayat Respon"
-        },
-        {
-            "fieldname": "responses",
-            "fieldtype": "Table",
-            "label": "Response History",
-            "options": "Customs Status Log Response"
-        }
-    ],
-    "index_web_pages_for_search": 1,
-    "is_submittable": 0,
-    "modified": "2026-03-06 14:26:00.000000",
-    "modified_by": "Administrator",
-    "module": "Singlecore Apps",
-    "name": "Customs Status Log",
-    "owner": "Administrator",
-    "permissions": [
-        {
-            "create": 1,
-            "delete": 1,
-            "email": 1,
-            "export": 1,
-            "print": 1,
-            "read": 1,
-            "report": 1,
-            "role": "System Manager",
-            "share": 1,
-            "write": 1
-        },
-        {
-            "create": 1,
-            "delete": 0,
-            "email": 1,
-            "export": 1,
-            "print": 1,
-            "read": 1,
-            "report": 1,
-            "role": "EXIM Manager",
-            "share": 1,
-            "write": 1
-        },
-        {
-            "create": 0,
-            "delete": 0,
-            "email": 0,
-            "export": 1,
-            "print": 1,
-            "read": 1,
-            "report": 1,
-            "role": "EXIM Staff",
-            "share": 0,
-            "write": 0
-        }
-    ],
-    "sort_field": "modified",
-    "sort_order": "DESC",
-    "states": [],
-    "track_changes": 1
+ "actions": [],
+ "autoname": "field:no_aju",
+ "creation": "2026-02-18 17:10:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "no_aju",
+  "doctype_type",
+  "company",
+  "linked_document_type",
+  "linked_document_name",
+  "last_response_hash",
+  "priority",
+  "polling_interval",
+  "column_break_1",
+  "bc_status",
+  "nopen",
+  "nopen_date",
+  "submission_datetime",
+  "last_pull_datetime",
+  "next_polling_time",
+  "section_payload",
+  "payload_json",
+  "last_response_raw",
+  "section_status",
+  "statuses",
+  "section_response",
+  "responses"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "no_aju",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nomor Aju",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "doctype_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Dokumen",
+   "options": "\nPIB\nPEB\nBC23\nBC25\nBC27\nBC20\nBC30\nPPFTZ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "description": "Contoh: HEADER V21",
+   "fieldname": "linked_document_type",
+   "fieldtype": "Data",
+   "label": "Tipe Dokumen Terkait"
+  },
+  {
+   "fieldname": "linked_document_name",
+   "fieldtype": "Link",
+   "label": "Dokumen Terkait",
+   "options": "Batch"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "default": "Pending",
+   "fieldname": "bc_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status BC",
+   "options": "\nPending\nRegistered\nRejected\nCompleted\nOn Hold"
+  },
+  {
+   "fieldname": "nopen",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NOPEN (Nomor Pendaftaran)"
+  },
+  {
+   "fieldname": "nopen_date",
+   "fieldtype": "Date",
+   "label": "Tanggal NOPEN"
+  },
+  {
+   "fieldname": "submission_datetime",
+   "fieldtype": "Datetime",
+   "label": "Waktu Submit"
+  },
+  {
+   "fieldname": "last_pull_datetime",
+   "fieldtype": "Datetime",
+   "label": "Tarik Status Terakhir"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_payload",
+   "fieldtype": "Section Break",
+   "label": "Payload & Raw Response"
+  },
+  {
+   "description": "JSON payload yang dikirim ke Bea Cukai",
+   "fieldname": "payload_json",
+   "fieldtype": "Long Text",
+   "label": "Payload JSON Submit"
+  },
+  {
+   "description": "Salinan raw response terakhir dari API /status/{nomorAju}",
+   "fieldname": "last_response_raw",
+   "fieldtype": "Long Text",
+   "label": "Raw Response Terakhir (Audit)"
+  },
+  {
+   "fieldname": "section_status",
+   "fieldtype": "Section Break",
+   "label": "Riwayat Status"
+  },
+  {
+   "fieldname": "statuses",
+   "fieldtype": "Table",
+   "label": "Status History",
+   "options": "Customs Status Log Status"
+  },
+  {
+   "fieldname": "section_response",
+   "fieldtype": "Section Break",
+   "label": "Riwayat Respon"
+  },
+  {
+   "fieldname": "responses",
+   "fieldtype": "Table",
+   "label": "Response History",
+   "options": "Customs Status Log Response"
+  },
+  {
+   "fieldname": "last_response_hash",
+   "fieldtype": "Data",
+   "label": "Last Response Hash"
+  },
+  {
+   "default": "Medium",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh"
+  },
+  {
+   "fieldname": "polling_interval",
+   "fieldtype": "Int",
+   "label": "Polling Interval"
+  },
+  {
+   "fieldname": "next_polling_time",
+   "fieldtype": "Datetime",
+   "label": "Tarik Status Berikutnya"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-15 23:58:27.466200",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Customs Status Log",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EXIM Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EXIM Staff"
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
 }

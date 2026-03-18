@@ -40,6 +40,8 @@
   "saldo_awal",
   "saldo_akhir",
   "jumlah_realisasi",
+  "metode_penentuan_nilai",
+  "statement_perbedaan_harga",
   "column_break_jsm4b",
   "cif",
   "cif_rupiah",
@@ -67,6 +69,7 @@
   "kode_kategori_barang",
   "kode_kondisi_barang",
   "kode_negara_asal",
+  "column_break_akqw",
   "kode_perhitungan",
   "pernyataan_lartas",
   "flag_4_tahun",
@@ -88,9 +91,7 @@
   "barang_pemilik",
   "spek_khusus_dan_value_declaration_tab",
   "barang_spek_khusus",
-  "barang_vd",
-  "metode_penentuan_nilai",
-  "statement_perbedaan_harga"
+  "barang_vd"
  ],
  "fields": [
   {
@@ -514,6 +515,10 @@
    "fieldname": "statement_perbedaan_harga",
    "fieldtype": "Data",
    "label": "STATEMENT PERBEDAAN HARGA"
+  },
+  {
+   "fieldname": "column_break_akqw",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -523,11 +528,11 @@
    "link_fieldname": "parent_barang"
   }
  ],
- "modified": "2026-01-25 13:54:35.445731",
+ "modified": "2026-03-14 14:30:57.496700",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG V1",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

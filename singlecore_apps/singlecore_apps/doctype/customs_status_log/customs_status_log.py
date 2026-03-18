@@ -16,18 +16,18 @@ All API calls are wrapped in try/except and logged via frappe.log_error.
 The scheduler is idempotent: running it multiple times must not create
 duplicate rows in the child tables.
 """
-
+import hashlib
 import json
 import base64
 import frappe
 from frappe.model.document import Document
-from frappe.utils import now_datetime, today
+from frappe.utils import now_datetime, today, add_minutes, get_datetime
 
 # ─── Master-status set that requires continued polling ──────────────────────
 ACTIVE_STATUSES = {"Pending", "Registered", "On Hold"}
 
 # ─── kodeRespon values that indicate final-release / completed ───────────────
-COMPLETED_RESPON_CODES = {"SPPB", "NPE", "SPBL"}  # adjust to real codes
+COMPLETED_RESPON_CODES = {"SPPB", "NPE", "SPBL", "SPPD"}  # adjust to real codes
 
 # ─── kodeStatus / keterangan patterns for rejection ─────────────────────────
 REJECTED_STATUS_CODES = {"TOLAK", "REJECT"}
@@ -134,7 +134,10 @@ def update_all_active_status():
     """
     logs = frappe.get_all(
         "Customs Status Log",
-        filters={"bc_status": ["in", list(ACTIVE_STATUSES)]},
+        filters={
+            "bc_status": ["in", list(ACTIVE_STATUSES)],
+            "creation": [">", add_days(nowdate(), -30)] # Hanya 30 hari terakhir
+        },
         fields=["name", "no_aju"]
     )
 
@@ -156,47 +159,75 @@ def update_all_active_status():
 # Core pull logic
 # ════════════════════════════════════════════════════════════════════════════
 
+
 def pull_status_for_log(log_name):
     """
-    Pull status from CEISA /status/{nomorAju}, parse dataStatus[] and
-    dataRespon[], append new rows idempotently, set NOPEN, sync linked doc.
-
-    Args:
-        log_name: name of Customs Status Log
-
-    Returns:
-        dict with status, added_statuses, added_responses
+    Expert Smart Polling Integration:
+    - Hash Comparison (Deteksi perubahan data)
+    - Adaptive Intervals (Jeda dinamis)
+    - Working Hours Awareness (Hemat API di malam hari)
+    - Tetap menjalankan fungsi asli: dataStatus, dataRespon, PDF, Nopen
     """
     from singlecore_apps.api.ceisa_api.status import get_status_by_nomor_aju
-
     log = frappe.get_doc("Customs Status Log", log_name)
     no_aju = log.no_aju
-
-    # ── Call API ─────────────────────────────────────────────────────────
+    now = now_datetime()
+    # --- 1. SCHEDULER CHECK ---
+    # Jika dipanggil otomatis (scheduler) dan belum waktunya, lewati.
+    is_manual = not frappe.flags.is_scheduler
+    if not is_manual and log.next_polling_time and log.next_polling_time > now:
+        return {"status": "skipped", "message": "Belum waktunya polling"}
+    # --- 2. CALL API CEISA ---
     result = get_status_by_nomor_aju(no_aju)
+    
+    # Handle Error API & Exponential Backoff
     if result.get("status") != "success":
-        frappe.log_error(
-            f"API error for no_aju={no_aju}: {result}",
-            "Customs Status Log — pull_status_for_log"
-        )
-        return {"status": "api_error", "message": result.get("message", str(result))}
-
+        # Jika error, lipat gandakan jeda (max 12 jam)
+        new_interval = min((log.polling_interval or 5) * 2, 720)
+        log.db_set({
+            "polling_interval": new_interval,
+            "next_polling_time": add_minutes(now, new_interval),
+            "retry_count": (log.retry_count or 0) + 1
+        })
+        return {"status": "api_error", "message": result.get("message")}
     data = result.get("data") or {}
     if isinstance(data, str):
-        try:
-            data = json.loads(data)
-        except Exception:
-            data = {}
-
-    # ── Save raw response for audit ───────────────────────────────────────
-    log.last_response_raw = json.dumps(data, ensure_ascii=False, default=str)
-    log.last_pull_datetime = now_datetime()
-
-    # ── Process dataStatus[] ─────────────────────────────────────────────
+        try: data = json.loads(data)
+        except: data = {}
+    # --- 3. DATA CHANGE DETECTION (HASHING) ---
+    raw_data_string = json.dumps(data, sort_keys=True, default=str)
+    current_hash = hashlib.md5(raw_data_string.encode('utf-8')).hexdigest()
+    # Logic Jeda Malam/Weekend
+    is_working_hour = 8 <= now.hour <= 18
+    is_weekend = now.weekday() >= 5
+    
+    if log.last_response_hash == current_hash:
+        # DATA SAMA: Tidak ada update dari Bea Cukai.
+        # Naikkan interval perlahan (perkalian 1.5x)
+        base_interval = log.polling_interval or 5
+        new_interval = min(base_interval * 1.5, 360) # Max 6 jam
+        
+        # Jika di luar jam kerja, paksa jeda minimal 2 jam
+        if (not is_working_hour or is_weekend) and log.polling_priority != "High":
+            new_interval = max(new_interval, 120)
+        log.db_set({
+            "last_pull_datetime": now,
+            "polling_interval": new_interval,
+            "next_polling_time": add_minutes(now, new_interval)
+        })
+        return {"status": "no_change", "no_aju": no_aju}
+    # --- 4. DATA BARU TERDETEKSI: LANJUT PROSES ASLI ---
+    # Simpan raw response & metadata baru
+    log.last_response_raw = raw_data_string
+    log.last_pull_datetime = now
+    log.last_response_hash = current_hash
+    log.polling_interval = 5 # Reset ke 5 menit karena sedang aktif
+    log.next_polling_time = add_minutes(now, 5)
+    log.retry_count = 0
+    # ── Process dataStatus[] (Logika Asli Anda) ──────────────────────────
     added_statuses = 0
     for row in (data.get("dataStatus") or []):
-        if _is_status_exist(log, row):
-            continue
+        if _is_status_exist(log, row): continue
         log.append("statuses", {
             "nomor_aju":    row.get("nomorAju"),
             "kode_status":  row.get("kodeStatus"),
@@ -206,18 +237,13 @@ def pull_status_for_log(log_name):
             "keterangan":   row.get("keterangan"),
         })
         added_statuses += 1
-
-    # ── Process dataRespon[] ─────────────────────────────────────────────
+    # ── Process dataRespon[] (Logika Asli Anda) ──────────────────────────
     added_responses = 0
     for row in (data.get("dataRespon") or []):
-        if _is_response_exist(log, row):
-            continue
-
+        if _is_response_exist(log, row): continue
         pdf_link = None
-        raw_pdf = row.get("Pdf") or ""
-        if raw_pdf:
-            pdf_link = _save_pdf(raw_pdf, no_aju, row, log.name)
-
+        if row.get("Pdf"):
+            pdf_link = _save_pdf(row.get("Pdf"), no_aju, row, log.name)
         log.append("responses", {
             "nomor_aju":     row.get("nomorAju"),
             "kode_respon":   row.get("kodeRespon"),
@@ -232,14 +258,32 @@ def pull_status_for_log(log_name):
             "pdf_file":      pdf_link,
         })
         added_responses += 1
-
         # Check for completed status
         kode_respon = str(row.get("kodeRespon") or "").upper()
         if kode_respon in COMPLETED_RESPON_CODES and log.bc_status not in ("Completed", "Rejected"):
             log.bc_status = "Completed"
+    # ── Finalizing (Nopen, Rejection, Sync) ──────────────────────────────
+    _try_set_nopen(log, data)
+    _try_set_rejected(log, data)
+    # Simpan Header (Akan memicu Server Script update Batch otomatis)
+    log.save(ignore_permissions=True)
+    frappe.db.commit()
+    _sync_linked_doc(log)
+    return {
+        "status": "success",
+        "no_aju": no_aju,
+        "added_statuses": added_statuses,
+        "added_responses": added_responses,
+        "bc_status": log.bc_status
+    }
 
     # ── Determine NOPEN from dataStatus ──────────────────────────────────
-    _try_set_nopen(log, data)
+def _try_set_nopen(log, data):
+    for row in (data.get("dataStatus") or []):
+        if row.get("nomorDaftar"):
+            log.nopen = row.get("nomorDaftar")
+            log.nopen_date = _parse_date(row.get("tanggalDaftar")) # Pastikan baris ini ada
+            break
 
     # ── Check rejection ───────────────────────────────────────────────────
     _try_set_rejected(log, data)

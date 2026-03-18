@@ -6,5 +6,30 @@ tags
 singlecore_apps/docs/current
 node_modules/
 
+# Python / Frappe Patterns
+__pycache__/
+*.log
+*.pyo
+*.pyd
+*.db
+*.xlsx
+*.csv
+
+# Sensitive & Backup Files (Audit Findings)
+*.sql
+* copy.py
+*copy.py
+*backup.py
+*_original.py
+test_*.py
+simulate_*.py
+dummy_*.py
+debug_*.py
+
+# Local Environment
+myenv/
+venv/
+.env
+
 # Schema files folder
 ../../base erp xls/

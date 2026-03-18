@@ -1,7 +1,6 @@
 {
  "actions": [],
  "allow_import": 1,
- "allow_rename": 1,
  "creation": "2023-06-22 08:46:25.653077",
  "default_view": "List",
  "doctype": "DocType",
@@ -27,10 +26,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-06 08:40:46.705785",
+ "modified": "2026-03-15 21:38:11.300390",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Referensi Status",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -46,6 +46,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

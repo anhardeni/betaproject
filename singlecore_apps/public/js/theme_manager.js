@@ -19,7 +19,7 @@ singlecore_apps.theme = {
         localStorage.setItem('singlecore_apps_theme', themeName);
 
         // Update body class for potential Frappe styling overrides
-        $('body').removeClass('theme-success theme-ocean').addClass('theme-' + themeName);
+        $('body').removeClass('theme-success theme-ocean theme-royal').addClass('theme-' + themeName);
 
         console.log(`[Singlecore Apps] Applied theme: ${themeName}`);
         frappe.show_alert({ message: `Theme changed to: ${themeName}`, indicator: 'green' }, 3);
@@ -46,6 +46,7 @@ singlecore_apps.theme = {
                             <a class="dropdown-item" href="javascript:singlecore_apps.theme.set_theme('default')">⬜ Standard</a>
                             <a class="dropdown-item" href="javascript:singlecore_apps.theme.set_theme('success')">🟢 Success (Green)</a>
                             <a class="dropdown-item" href="javascript:singlecore_apps.theme.set_theme('ocean')">🔵 Ocean (Blue)</a>
+                            <a class="dropdown-item" href="javascript:singlecore_apps.theme.set_theme('royal')">🔮 Royal (Purple-Blue)</a>
                         </div>
                     </div>
                 </div>
