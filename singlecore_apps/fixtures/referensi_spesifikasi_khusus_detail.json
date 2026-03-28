@@ -1,0 +1,5092 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "73239310AA",
+  "kode_hs": "73239310",
+  "kode_spek_khusus": "1001",
+  "modified": "2026-01-01 15:13:48.401980",
+  "name": "100173239310AA",
+  "uraian_spek_khusus": "Food tray"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "73239310AB",
+  "kode_hs": "73239310",
+  "kode_spek_khusus": "1001",
+  "modified": "2026-01-01 15:13:48.424291",
+  "name": "100173239310AB",
+  "uraian_spek_khusus": "Non food tray"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "73239390AA",
+  "kode_hs": "73239390",
+  "kode_spek_khusus": "1001",
+  "modified": "2026-01-01 15:13:48.434398",
+  "name": "100173239390AA",
+  "uraian_spek_khusus": "Food tray"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "73239390AB",
+  "kode_hs": "73239390",
+  "kode_spek_khusus": "1001",
+  "modified": "2026-01-01 15:13:48.443742",
+  "name": "100173239390AB",
+  "uraian_spek_khusus": "Non food tray"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063030AB",
+  "kode_hs": "10063030",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.453093",
+  "name": "100210063030AB",
+  "uraian_spek_khusus": "Beras ketan dengan tingkat kepecahan ≤ 10% untuk keperluan lain (BUMN pemilik API- U)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063030AA",
+  "kode_hs": "10063030",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.462748",
+  "name": "100210063030AA",
+  "uraian_spek_khusus": "\"Beras ketan dengan tingkat kepecahan > 10%\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063040AA",
+  "kode_hs": "10063040",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.472976",
+  "name": "100210063040AA",
+  "uraian_spek_khusus": "Beras Hom Mali dengan tingkat kepecahan > 5%"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063040AB",
+  "kode_hs": "10063040",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.481891",
+  "name": "100210063040AB",
+  "uraian_spek_khusus": "Beras Hom Mali dengan tingkat kepecahan ≤ 5% untuk keperluan lain (BUMN pemilik API- U)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063050AA",
+  "kode_hs": "10063050",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.492105",
+  "name": "100210063050AA",
+  "uraian_spek_khusus": "Beras Basmati dengan tingkat kepecahan > 25% untuk keperluan umum dan hibah, Beras Basmati dengan tingkat kepecahan > 5% untuk selain keperluan umum dan hibah"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063050AB",
+  "kode_hs": "10063050",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.501900",
+  "name": "100210063050AB",
+  "uraian_spek_khusus": "\"Beras Basmati dengan tingkat kepecahan > 25% untuk keperluan umum\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063060AA",
+  "kode_hs": "10063060",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.511867",
+  "name": "100210063060AA",
+  "uraian_spek_khusus": "Beras Malys dengan tingkat kepecahan > 25% untuk keperluan umum dan hibah, Beras Malys dengan tingkat kepecahan > 5% untuk selain keperluan umum dan hibah"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063050AC",
+  "kode_hs": "10063050",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.522738",
+  "name": "100210063050AC",
+  "uraian_spek_khusus": "Beras Basmati dengan tingkat kepecahan ≤ 5% untuk keperluan lain (BUMN pemilik API- U)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063060AB",
+  "kode_hs": "10063060",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.532606",
+  "name": "100210063060AB",
+  "uraian_spek_khusus": "Beras Malys dengan tingkat kepecahan ≤ 25% untuk keperluan umum"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063060AC",
+  "kode_hs": "10063060",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.542262",
+  "name": "100210063060AC",
+  "uraian_spek_khusus": "Beras Malys dengan tingkat kepecahan ≤ 5% untuk keperluan lain (BUMN pemilik API- U)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063070AA",
+  "kode_hs": "10063070",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.551637",
+  "name": "100210063070AA",
+  "uraian_spek_khusus": "\"Beras beraroma lainnya dengan tingkat kepecahan > 25% untuk keperluan umum dan hibah, dan Beras beraroma lainnya dengan tingkat kepecahan > 5% untuk selain keperluan umum dan hibah\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063070AB",
+  "kode_hs": "10063070",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.564055",
+  "name": "100210063070AB",
+  "uraian_spek_khusus": "Beras beraroma lainnya dengan tingkat kepecahan ≤ 25% untuk keperluan umum"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063070AC",
+  "kode_hs": "10063070",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.575234",
+  "name": "100210063070AC",
+  "uraian_spek_khusus": "Beras beraroma lainnya: Beras Jasmine dengan tingkat kepecahan ≤ 5%, Beras beraroma lainnya dengan tingkat kepecahan ≤ 5% untuk keperluan lain (BUMN pemilik API- U)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10064090AA",
+  "kode_hs": "10064090",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.587907",
+  "name": "100210064090AA",
+  "uraian_spek_khusus": "\"Beras pecah dengan tingkat keutuhan >15% dan Beras Ketan pecah dengan tingkat keutuhan >15%\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10064090AB",
+  "kode_hs": "10064090",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.597714",
+  "name": "100210064090AB",
+  "uraian_spek_khusus": "Beras pecah dengan tingkat keutuhan ≤15%, Beras Ketan pecah dengan tingkat keutuhan ≤15% untuk keperluan lain (API-P)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063099AA",
+  "kode_hs": "10063099",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.609120",
+  "name": "100210063099AA",
+  "uraian_spek_khusus": "\"Beras lainnya dengan tingkat kepecahan > 25% untuk keperluan umum dan hibah; Beras Japonica dengan tingkat kepecahan > 5% untuk selain keperluan umum dan hibah; Beras lainnya dengan tingkat kepecahan > 5% untuk selain keperluan umum dan hibah\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063099AB",
+  "kode_hs": "10063099",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.620120",
+  "name": "100210063099AB",
+  "uraian_spek_khusus": "Beras lainnya dengan tingkat kepecahan ≤ 25% untuk keperluan umum"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "10063099AC",
+  "kode_hs": "10063099",
+  "kode_spek_khusus": "1002",
+  "modified": "2026-01-01 15:13:48.629324",
+  "name": "100210063099AC",
+  "uraian_spek_khusus": "Beras lainnya: Beras Japonica dengan tingkat kepecahan ≤ 5%, Beras lainnya dengan tingkat kepecahan ≤ 5% untuk keperluan lain (BUMN pemilik API- U)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "28416100AA",
+  "kode_hs": "28416100",
+  "kode_spek_khusus": "1003",
+  "modified": "2026-01-01 15:13:48.641167",
+  "name": "100328416100AA",
+  "uraian_spek_khusus": "Prekursor Non Farmasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "28416100AB",
+  "kode_hs": "28416100",
+  "kode_spek_khusus": "1003",
+  "modified": "2026-01-01 15:13:48.651485",
+  "name": "100328416100AB",
+  "uraian_spek_khusus": "Prekursor Farmasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "17011200AA",
+  "kode_hs": "17011200",
+  "kode_spek_khusus": "1004",
+  "modified": "2026-01-01 15:13:48.661233",
+  "name": "100417011200AA",
+  "uraian_spek_khusus": "\"Dengan ICUMSA ≤ 600 IU\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "17011400AA",
+  "kode_hs": "17011400",
+  "kode_spek_khusus": "1004",
+  "modified": "2026-01-01 15:13:48.671221",
+  "name": "100417011400AA",
+  "uraian_spek_khusus": "\"Dengan ICUMSA ≤ 600 IU\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "17011400AB",
+  "kode_hs": "17011400",
+  "kode_spek_khusus": "1004",
+  "modified": "2026-01-01 15:13:48.679319",
+  "name": "100417011400AB",
+  "uraian_spek_khusus": "\"Dengan ICUMSA ≥ 600 IU\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "17019100AA",
+  "kode_hs": "17019100",
+  "kode_spek_khusus": "1004",
+  "modified": "2026-01-01 15:13:48.690097",
+  "name": "100417019100AA",
+  "uraian_spek_khusus": "\"Mengandung tambahan bahan perasa atau pewarna : Dengan ICUMSA ≤ 76 IU atau dengan ICUMSA ≤ 300 IU Mengandung tambahan bahan\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "17019100AB",
+  "kode_hs": "17019100",
+  "kode_spek_khusus": "1004",
+  "modified": "2026-01-01 15:13:48.698848",
+  "name": "100417019100AB",
+  "uraian_spek_khusus": "perasa atau pewarna : Dengan ICUMSA antara 76 IU - 300 IU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "17019910AA",
+  "kode_hs": "17019910",
+  "kode_spek_khusus": "1004",
+  "modified": "2026-01-01 15:13:48.708958",
+  "name": "100417019910AA",
+  "uraian_spek_khusus": "Gula dimurnikan : Dengan ICUMSA ≤ 75 IU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "17019910AB",
+  "kode_hs": "17019910",
+  "kode_spek_khusus": "1004",
+  "modified": "2026-01-01 15:13:48.719662",
+  "name": "100417019910AB",
+  "uraian_spek_khusus": "Gula dimurnikan : Dengan ICUMSA ≤ 75 IU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "17019990AA",
+  "kode_hs": "17019990",
+  "kode_spek_khusus": "1004",
+  "modified": "2026-01-01 15:13:48.728308",
+  "name": "100417019990AA",
+  "uraian_spek_khusus": "Dengan ICUMSA ≤ 76 IU atau dengan ICUMSA ≤ 300 IU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "17019990AB",
+  "kode_hs": "17019990",
+  "kode_spek_khusus": "1004",
+  "modified": "2026-01-01 15:13:48.737316",
+  "name": "100417019990AB",
+  "uraian_spek_khusus": "Dengan ICUMSA antara 76 IU - 300 IU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "17011200AB",
+  "kode_hs": "17011200",
+  "kode_spek_khusus": "1004",
+  "modified": "2026-01-01 15:13:48.744632",
+  "name": "100417011200AB",
+  "uraian_spek_khusus": "\"Dengan ICUMSA ≥ 600 IU\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "17011300AA",
+  "kode_hs": "17011300",
+  "kode_spek_khusus": "1004",
+  "modified": "2026-01-01 15:13:48.753306",
+  "name": "100417011300AA",
+  "uraian_spek_khusus": "\"Dengan ICUMSA ≤ 600 IU\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "17011300AB",
+  "kode_hs": "17011300",
+  "kode_spek_khusus": "1004",
+  "modified": "2026-01-01 15:13:48.760216",
+  "name": "100417011300AB",
+  "uraian_spek_khusus": "\"Dengan ICUMSA ≥ 600 IU\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62139099AA",
+  "kode_hs": "62139099",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.769291",
+  "name": "100562139099AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62139019AB",
+  "kode_hs": "62139019",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.776624",
+  "name": "100562139019AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62139099AB",
+  "kode_hs": "62139099",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.783805",
+  "name": "100562139099AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62151090AA",
+  "kode_hs": "62151090",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.790952",
+  "name": "100562151090AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62151090AB",
+  "kode_hs": "62151090",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.798249",
+  "name": "100562151090AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62152090AA",
+  "kode_hs": "62152090",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.805677",
+  "name": "100562152090AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62152090AB",
+  "kode_hs": "62152090",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.812021",
+  "name": "100562152090AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62159090AA",
+  "kode_hs": "62159090",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.819820",
+  "name": "100562159090AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62159090AB",
+  "kode_hs": "62159090",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.825758",
+  "name": "100562159090AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "63013090AB",
+  "kode_hs": "63013090",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.832691",
+  "name": "100563013090AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "63025190AB",
+  "kode_hs": "63025190",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.840812",
+  "name": "100563025190AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "63041910AB",
+  "kode_hs": "63041910",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.849258",
+  "name": "100563041910AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62031919AA",
+  "kode_hs": "62031919",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.857330",
+  "name": "100562031919AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62031929AA",
+  "kode_hs": "62031929",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.865441",
+  "name": "100562031929AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62031919AB",
+  "kode_hs": "62031919",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.873244",
+  "name": "100562031919AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62031929AB",
+  "kode_hs": "62031929",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.880429",
+  "name": "100562031929AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62031990AA",
+  "kode_hs": "62031990",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.888842",
+  "name": "100562031990AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62031990AB",
+  "kode_hs": "62031990",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.895313",
+  "name": "100562031990AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62032290AA",
+  "kode_hs": "62031990",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.904836",
+  "name": "100562032290AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62032290AB",
+  "kode_hs": "62032290",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.914508",
+  "name": "100562032290AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62033290AA",
+  "kode_hs": "62033290",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.924139",
+  "name": "100562033290AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62033290AB",
+  "kode_hs": "62033290",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.932497",
+  "name": "100562033290AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62041290AA",
+  "kode_hs": "62041290",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.939552",
+  "name": "100562041290AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62041290AB",
+  "kode_hs": "62041290",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.946582",
+  "name": "100562041290AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62041919AB",
+  "kode_hs": "62041919",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.956576",
+  "name": "100562041919AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62041919AA",
+  "kode_hs": "62041919",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.965352",
+  "name": "100562041919AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62041990AB",
+  "kode_hs": "62041990",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.974891",
+  "name": "100562041990AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62041990AA",
+  "kode_hs": "62041990",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.984297",
+  "name": "100562041990AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62042290AB",
+  "kode_hs": "62042290",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:48.992121",
+  "name": "100562042290AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62042290AA",
+  "kode_hs": "62042290",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.000949",
+  "name": "100562042290AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62043290AA",
+  "kode_hs": "62043290",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.008943",
+  "name": "100562043290AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62043290AB",
+  "kode_hs": "62043290",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.017767",
+  "name": "100562043290AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62043919AB",
+  "kode_hs": "62043919",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.026761",
+  "name": "100562043919AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62043919AA",
+  "kode_hs": "62043919",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.035556",
+  "name": "100562043919AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62043990AA",
+  "kode_hs": "62043990",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.043715",
+  "name": "100562043990AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62043990AB",
+  "kode_hs": "62043990",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.052505",
+  "name": "100562043990AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62045290AA",
+  "kode_hs": "62045290",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.060232",
+  "name": "100562045290AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62045290AB",
+  "kode_hs": "62045290",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.069038",
+  "name": "100562045290AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62045990AB",
+  "kode_hs": "62045990",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.075797",
+  "name": "100562045990AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62052020AA",
+  "kode_hs": "62052020",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.082681",
+  "name": "100562052020AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62045990AA",
+  "kode_hs": "62045990",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.091789",
+  "name": "100562045990AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62059092AA",
+  "kode_hs": "62059092",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.098953",
+  "name": "100562059092AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62059092AB",
+  "kode_hs": "62059092",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.107158",
+  "name": "100562059092AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62072190AA",
+  "kode_hs": "62072190",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.114741",
+  "name": "100562072190AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62052020AB",
+  "kode_hs": "62052020",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.124413",
+  "name": "100562052020AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62082190AA",
+  "kode_hs": "62072190",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.132954",
+  "name": "100562082190AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62072190AB",
+  "kode_hs": "62072190",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.141443",
+  "name": "100562072190AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62082190AB",
+  "kode_hs": "62072190",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.149041",
+  "name": "100562082190AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62082990AA",
+  "kode_hs": "62082990",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.157935",
+  "name": "100562082990AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62082990AB",
+  "kode_hs": "62082990",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.165162",
+  "name": "100562082990AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62089190AA",
+  "kode_hs": "62089190",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.174068",
+  "name": "100562089190AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62089190AB",
+  "kode_hs": "62089190",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.180550",
+  "name": "100562089190AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62089290AA",
+  "kode_hs": "62089290",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.188408",
+  "name": "100562089290AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62089290AB",
+  "kode_hs": "62089290",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.194726",
+  "name": "100562089290AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62132090AB",
+  "kode_hs": "62132090",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.206702",
+  "name": "100562132090AB",
+  "uraian_spek_khusus": "Selain Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62132090AA",
+  "kode_hs": "62132090",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.219006",
+  "name": "100562132090AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "62139019AA",
+  "kode_hs": "62139019",
+  "kode_spek_khusus": "1005",
+  "modified": "2026-01-01 15:13:49.229346",
+  "name": "100562139019AA",
+  "uraian_spek_khusus": "Batik Motif Batik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "82011000AA",
+  "kode_hs": "82011000",
+  "kode_spek_khusus": "1006",
+  "modified": "2026-01-01 15:13:49.240960",
+  "name": "100682011000AA",
+  "uraian_spek_khusus": "Perkakas Tangan Jadi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "82011000AB",
+  "kode_hs": "82011000",
+  "kode_spek_khusus": "1006",
+  "modified": "2026-01-01 15:13:49.249848",
+  "name": "100682011000AB",
+  "uraian_spek_khusus": "Perkakas Tangan Setengah Jadi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "82013010AA",
+  "kode_hs": "82013010",
+  "kode_spek_khusus": "1006",
+  "modified": "2026-01-01 15:13:49.260083",
+  "name": "100682013010AA",
+  "uraian_spek_khusus": "Perkakas Tangan Jadi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "82013090AA",
+  "kode_hs": "82013090",
+  "kode_spek_khusus": "1006",
+  "modified": "2026-01-01 15:13:49.270458",
+  "name": "100682013090AA",
+  "uraian_spek_khusus": "Perkakas Tangan Jadi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "82013090AB",
+  "kode_hs": "82013090",
+  "kode_spek_khusus": "1006",
+  "modified": "2026-01-01 15:13:49.281505",
+  "name": "100682013090AB",
+  "uraian_spek_khusus": "Perkakas Tangan Setengah Jadi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "82013010AB",
+  "kode_hs": "82013010",
+  "kode_spek_khusus": "1006",
+  "modified": "2026-01-01 15:13:49.292542",
+  "name": "100682013010AB",
+  "uraian_spek_khusus": "Perkakas Tangan Setengah Jadi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "82014000AA",
+  "kode_hs": "82014000",
+  "kode_spek_khusus": "1006",
+  "modified": "2026-01-01 15:13:49.301167",
+  "name": "100682014000AA",
+  "uraian_spek_khusus": "Perkakas Tangan Jadi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "82014000AB",
+  "kode_hs": "82014000",
+  "kode_spek_khusus": "1006",
+  "modified": "2026-01-01 15:13:49.311505",
+  "name": "100682014000AB",
+  "uraian_spek_khusus": "Perkakas Tangan Setengah Jadi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "82016000AA",
+  "kode_hs": "82016000",
+  "kode_spek_khusus": "1006",
+  "modified": "2026-01-01 15:13:49.322294",
+  "name": "100682016000AA",
+  "uraian_spek_khusus": "Perkakas Tangan Jadi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "82019000AA",
+  "kode_hs": "82019000",
+  "kode_spek_khusus": "1006",
+  "modified": "2026-01-01 15:13:49.332073",
+  "name": "100682019000AA",
+  "uraian_spek_khusus": "Perkakas Tangan Jadi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "82016000AB",
+  "kode_hs": "82016000",
+  "kode_spek_khusus": "1006",
+  "modified": "2026-01-01 15:13:49.341102",
+  "name": "100682016000AB",
+  "uraian_spek_khusus": "Perkakas Tangan Setengah Jadi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "82019000AB",
+  "kode_hs": "82019000",
+  "kode_spek_khusus": "1006",
+  "modified": "2026-01-01 15:13:49.349797",
+  "name": "100682019000AB",
+  "uraian_spek_khusus": "Perkakas Tangan Setengah Jadi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84151020AA",
+  "kode_hs": "84151020",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.363072",
+  "name": "100784151020AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84151020AB",
+  "kode_hs": "84151020",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.373533",
+  "name": "100784151020AB",
+  "uraian_spek_khusus": "\"Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84151030AA",
+  "kode_hs": "84151030",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.380948",
+  "name": "100784151030AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84151030AB",
+  "kode_hs": "84151030",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.390297",
+  "name": "100784151030AB",
+  "uraian_spek_khusus": "Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84151090AA",
+  "kode_hs": "84151090",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.398301",
+  "name": "100784151090AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84151090AB",
+  "kode_hs": "84151090",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.406934",
+  "name": "100784151090AB",
+  "uraian_spek_khusus": "\"Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181031AA",
+  "kode_hs": "84181031",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.415672",
+  "name": "100784181031AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181031AB",
+  "kode_hs": "84181031",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.424840",
+  "name": "100784181031AB",
+  "uraian_spek_khusus": "\"Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181032AA",
+  "kode_hs": "84181032",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.433106",
+  "name": "100784181032AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84182110AA",
+  "kode_hs": "84182110",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.444573",
+  "name": "100784182110AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181032AB",
+  "kode_hs": "84181032",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.454721",
+  "name": "100784181032AB",
+  "uraian_spek_khusus": "\"Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84182110AB",
+  "kode_hs": "84182110",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.462643",
+  "name": "100784182110AB",
+  "uraian_spek_khusus": "\"Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84182190AA",
+  "kode_hs": "84182190",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.473040",
+  "name": "100784182190AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84182190AB",
+  "kode_hs": "84182190",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.481960",
+  "name": "100784182190AB",
+  "uraian_spek_khusus": "\"Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84183010AA",
+  "kode_hs": "84183010",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.491570",
+  "name": "100784183010AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84182900AA",
+  "kode_hs": "84182900",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.499180",
+  "name": "100784182900AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84182900AB",
+  "kode_hs": "84182900",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.508668",
+  "name": "100784182900AB",
+  "uraian_spek_khusus": "\"Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84183090AA",
+  "kode_hs": "84183090",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.519563",
+  "name": "100784183090AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84183010AB",
+  "kode_hs": "84183010",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.528864",
+  "name": "100784183010AB",
+  "uraian_spek_khusus": "\"Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84183090AB",
+  "kode_hs": "84183090",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.547278",
+  "name": "100784183090AB",
+  "uraian_spek_khusus": "\"Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84184010AA",
+  "kode_hs": "84184010",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.559288",
+  "name": "100784184010AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84184010AB",
+  "kode_hs": "84184010",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.570144",
+  "name": "100784184010AB",
+  "uraian_spek_khusus": "\"Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84184090AA",
+  "kode_hs": "84184090",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.578936",
+  "name": "100784184090AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84184090AB",
+  "kode_hs": "84184090",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.590132",
+  "name": "100784184090AB",
+  "uraian_spek_khusus": "\"Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84185019AB",
+  "kode_hs": "84185019",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.599848",
+  "name": "100784185019AB",
+  "uraian_spek_khusus": "\"Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84185019AA",
+  "kode_hs": "84185019",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.610740",
+  "name": "100784185019AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84185099AA",
+  "kode_hs": "84185099",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.620471",
+  "name": "100784185099AA",
+  "uraian_spek_khusus": "\"Menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84185099AB",
+  "kode_hs": "84185099",
+  "kode_spek_khusus": "1007",
+  "modified": "2026-01-01 15:13:49.628698",
+  "name": "100784185099AB",
+  "uraian_spek_khusus": "\"Selain yang menggunakan Chlorofluorocarbon (CFC) atau HCFC-22\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491390AA",
+  "kode_hs": "85491390",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.639981",
+  "name": "100885491390AA",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara a. Baterai sekunder yang tidak dapat digunakan sebagaimana mestinya selain baterai lithium sekunder. b. Sisa dan skrap selain sisa dan skrap yang dihasilkan selama proses produksi baterai lithium sekunder. c. Baterai sekunder sebagaimana dimaksud dalam huruf a sisa dan skrap sebagaimana dimaksud dalam huruf b yang diimpor dalam keadaan sudah diolah terlebih dahulu menjadi bentuk cacahan, bubuk powder dan enriched powder).\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491420AA",
+  "kode_hs": "85491420",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.648549",
+  "name": "100885491420AA",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara a. Baterai sekunder yang tidak dapat digunakan sebagaimana mestinya selain baterai lithium sekunder. b. Sisa dan skrap selain sisa dan skrap yang dihasilkan selama proses produksi baterai lithium sekunder. c. Baterai sekunder sebagaimana dimaksud dalam huruf a sisa dan skrap sebagaimana dimaksud dalam huruf b yang diimpor dalam keadaan sudah diolah terlebih dahulu menjadi bentuk cacahan, bubuk powder dan enriched powder)\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491490AA",
+  "kode_hs": "85491490",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.658517",
+  "name": "100885491490AA",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara a. Baterai sekunder yang tidak dapat digunakan sebagaimana mestinya selain baterai lithium sekunder. b. Sisa dan skrap selain sisa dan skrap yang dihasilkan selama proses produksi baterai lithium sekunder. c. Baterai sekunder sebagaimana dimaksud dalam huruf a sisa dan skrap sebagaimana dimaksud dalam huruf b yang diimpor dalam keadaan sudah diolah terlebih dahulu menjadi bentuk cacahan, bubuk powder dan enriched powder).\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491220AA",
+  "kode_hs": "85491220",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.669269",
+  "name": "100885491220AA",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara a. Baterai sekunder yang tidak dapat digunakan sebagaimana mestinya selain baterai lithium sekunder. b. Sisa dan skrap selain sisa dan skrap yang dihasilkan selama proses produksi baterai lithium sekunder. c. Baterai sekunder sebagaimana dimaksud dalam huruf a sisa dan skrap sebagaimana dimaksud dalam huruf b yang diimpor dalam keadaan sudah diolah terlebih dahulu menjadi bentuk cacahan, bubuk powder dan enriched powder).\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491390AB",
+  "kode_hs": "85491390",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.678822",
+  "name": "100885491390AB",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara (Baterai Lithium tidak baru yang dapat diimpor adalah: 1. Baterai lithium sekunder tidak baru dalam keadaan utuh yang tidak dapat digunakan sebagaimana semestinya karena: a. kinerjanya tidak mencapai standar; b. kinerjanya mengalami penurunan; atau c. rusak atau tidak dapat diisi ulang. 2. Sisa dan skrap yang dihasilkan selama proses produksi baterai lithium.)\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491990AA",
+  "kode_hs": "85491990",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.689958",
+  "name": "100885491990AA",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara a. Baterai sekunder yang tidak dapat digunakan sebagaimana mestinya selain baterai lithium sekunder. b. Sisa dan skrap selain sisa dan skrap yang dihasilkan selama proses produksi baterai lithium sekunder. c. Baterai sekunder sebagaimana dimaksud dalam huruf a sisa dan skrap sebagaimana dimaksud dalam huruf b yang diimpor dalam keadaan sudah diolah terlebih dahulu menjadi bentuk cacahan, bubuk powder dan enriched powder).\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491290AA",
+  "kode_hs": "85491290",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.700516",
+  "name": "100885491290AA",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara a. Baterai sekunder yang tidak dapat digunakan sebagaimana mestinya selain baterai lithium sekunder. b. Sisa dan skrap selain sisa dan skrap yang dihasilkan selama proses produksi baterai lithium sekunder. c. Baterai sekunder sebagaimana dimaksud dalam huruf a sisa dan skrap sebagaimana dimaksud dalam huruf b yang diimpor dalam keadaan sudah diolah terlebih dahulu menjadi bentuk cacahan, bubuk powder dan enriched powder).\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491490AB",
+  "kode_hs": "85491490",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.711385",
+  "name": "100885491490AB",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara (Baterai Lithium tidak baru yang dapat diimpor adalah: 1. Baterai lithium sekunder tidak baru dalam keadaan utuh yang tidak dapat digunakan sebagaimana semestinya karena: a. kinerjanya tidak mencapai standar; b. kinerjanya mengalami penurunan; atau c. rusak atau tidak dapat diisi ulang. 2. Sisa dan skrap yang dihasilkan selama proses produksi baterai lithium.)\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491920AA",
+  "kode_hs": "85491920",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.726250",
+  "name": "100885491920AA",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara a. Baterai sekunder yang tidak dapat digunakan sebagaimana mestinya selain baterai lithium. b. Sisa dan skrap selain sisa dan skrap yang dihasilkan selama proses produksi baterai lithium sekunder. c. Baterai sekunder sebagaimana dimaksud dalam huruf a sisa dan skrap sebagaimana dimaksud dalam huruf b yang diimpor dalam keadaan sudah diolah terlebih dahulu menjadi bentuk cacahan, bubuk powder dan enriched powder).\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491990AB",
+  "kode_hs": "85491990",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.736427",
+  "name": "100885491990AB",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara (Baterai Lithium tidak baru yang dapat diimpor adalah: 1. Baterai lithium sekunder tidak baru dalam keadaan utuh yang tidak dapat digunakan sebagaimana semestinya karena: a. kinerjanya tidak mencapai standar; b. kinerjanya mengalami penurunan; atau c. rusak atau tidak dapat diisi ulang. 2. Sisa dan skrap yang dihasilkan selama proses produksi baterai lithium.)\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491320AA",
+  "kode_hs": "85491320",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.746514",
+  "name": "100885491320AA",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara a. Baterai sekunder yang tidak dapat digunakan sebagaimana mestinya selain baterai lithium sekunder. b. Sisa dan skrap selain sisa dan skrap yang dihasilkan selama proses produksi baterai lithium sekunder. c. Baterai sekunder sebagaimana dimaksud dalam huruf a sisa dan skrap sebagaimana dimaksud dalam huruf b yang diimpor dalam keadaan sudah diolah terlebih dahulu menjadi bentuk cacahan, bubuk powder dan enriched powder).\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491920AB",
+  "kode_hs": "85491920",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.757905",
+  "name": "100885491920AB",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara (Baterai Lithium tidak baru yang dapat diimpor adalah: 1. Baterai lithium sekunder tidak baru dalam keadaan utuh yang tidak dapat digunakan sebagaimana semestinya karena: a. kinerjanya tidak mencapai standar; b. kinerjanya mengalami penurunan; atau c. rusak atau tidak dapat diisi ulang. 2. Sisa dan skrap yang dihasilkan selama proses produksi baterai lithium.)\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491220AB",
+  "kode_hs": "85491220",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.772761",
+  "name": "100885491220AB",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara (Baterai Lithium tidak baru yang dapat diimpor adalah: 1. Baterai lithium sekunder tidak baru dalam keadaan utuh yang tidak dapat digunakan sebagaimana semestinya karena: a. kinerjanya tidak mencapai standar; b. kinerjanya mengalami penurunan; atau c. rusak atau tidak dapat diisi ulang. 2. Sisa dan skrap yang dihasilkan selama proses produksi baterai lithium.)\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491420AB",
+  "kode_hs": "85491420",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.790499",
+  "name": "100885491420AB",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara (Baterai Lithium tidak baru yang dapat diimpor adalah: 1. Baterai lithium sekunder tidak baru dalam keadaan utuh yang tidak dapat digunakan sebagaimana semestinya karena: a. kinerjanya tidak mencapai standar; b. kinerjanya mengalami penurunan; atau c. rusak atau tidak dapat diisi ulang. 2. Sisa dan skrap yang dihasilkan selama proses produksi baterai lithium.)\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491320AB",
+  "kode_hs": "85491320",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.800263",
+  "name": "100885491320AB",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara (Baterai Lithium tidak baru yang dapat diimpor adalah: 1. Baterai lithium sekunder tidak baru dalam keadaan utuh yang tidak dapat digunakan sebagaimana semestinya karena: a. kinerjanya tidak mencapai standar; b. kinerjanya mengalami penurunan; atau c. rusak atau tidak dapat diisi ulang. 2. Sisa dan skrap yang dihasilkan selama proses produksi baterai lithium.)\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85491290AB",
+  "kode_hs": "85491290",
+  "kode_spek_khusus": "1008",
+  "modified": "2026-01-01 15:13:49.810477",
+  "name": "100885491290AB",
+  "uraian_spek_khusus": "\"Dari akumulator listrik dari jenis yang digunakan dalam kendaraan udara (Baterai Lithium tidak baru yang dapat diimpor adalah: 1. Baterai lithium sekunder tidak baru dalam keadaan utuh yang tidak dapat digunakan sebagaimana semestinya karena: a. kinerjanya tidak mencapai standar; b. kinerjanya mengalami penurunan; atau c. rusak atau tidak dapat diisi ulang. 2. Sisa dan skrap yang dihasilkan selama proses produksi baterai lithium.)\""
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433131AB",
+  "kode_hs": "84433131",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.820110",
+  "name": "100984433131AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433139AA",
+  "kode_hs": "84433139",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.828663",
+  "name": "100984433139AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433139AB",
+  "kode_hs": "84433139",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.838014",
+  "name": "100984433139AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433191AA",
+  "kode_hs": "84433191",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.848145",
+  "name": "100984433191AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433191AB",
+  "kode_hs": "84433191",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.858513",
+  "name": "100984433191AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433199AA",
+  "kode_hs": "84433199",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.868624",
+  "name": "100984433199AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433199AB",
+  "kode_hs": "84433199",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.878104",
+  "name": "100984433199AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433211AA",
+  "kode_hs": "84433211",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.888838",
+  "name": "100984433211AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433211AB",
+  "kode_hs": "84433211",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.897718",
+  "name": "100984433211AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433219AA",
+  "kode_hs": "84433219",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.908357",
+  "name": "100984433219AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433219AB",
+  "kode_hs": "84433219",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.918790",
+  "name": "100984433219AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433221AA",
+  "kode_hs": "84433221",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.928062",
+  "name": "100984433221AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433221AB",
+  "kode_hs": "84433221",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.938401",
+  "name": "100984433221AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433229AA",
+  "kode_hs": "84433229",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.947477",
+  "name": "100984433229AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433229AB",
+  "kode_hs": "84433229",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.957670",
+  "name": "100984433229AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433231AA",
+  "kode_hs": "84433231",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.967085",
+  "name": "100984433231AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433231AB",
+  "kode_hs": "84433231",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.976857",
+  "name": "100984433231AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433239AA",
+  "kode_hs": "84433239",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.985958",
+  "name": "100984433239AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433239AB",
+  "kode_hs": "84433239",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:49.995047",
+  "name": "100984433239AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433240AA",
+  "kode_hs": "84433240",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.004666",
+  "name": "100984433240AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433240AB",
+  "kode_hs": "84433240",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.013977",
+  "name": "100984433240AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433260AA",
+  "kode_hs": "84433260",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.024099",
+  "name": "100984433260AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433260AB",
+  "kode_hs": "84433260",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.033024",
+  "name": "100984433260AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501110AA",
+  "kode_hs": "84501110",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.043288",
+  "name": "100984501110AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501110AB",
+  "kode_hs": "84501110",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.053183",
+  "name": "100984501110AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501190AA",
+  "kode_hs": "84501190",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.061669",
+  "name": "100984501190AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501190AB",
+  "kode_hs": "84501190",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.071278",
+  "name": "100984501190AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501210AA",
+  "kode_hs": "84501210",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.080195",
+  "name": "100984501210AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501210AB",
+  "kode_hs": "84501210",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.090859",
+  "name": "100984501210AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501290AA",
+  "kode_hs": "84501290",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.099696",
+  "name": "100984501290AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501290AB",
+  "kode_hs": "84501290",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.109640",
+  "name": "100984501290AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501911AA",
+  "kode_hs": "84501911",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.119034",
+  "name": "100984501911AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501911AB",
+  "kode_hs": "84501911",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.127242",
+  "name": "100984501911AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501919AA",
+  "kode_hs": "84501919",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.136495",
+  "name": "100984501919AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501919AB",
+  "kode_hs": "84501919",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.144708",
+  "name": "100984501919AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501991AA",
+  "kode_hs": "84501991",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.154079",
+  "name": "100984501991AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501991AB",
+  "kode_hs": "84501991",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.162453",
+  "name": "100984501991AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501999AA",
+  "kode_hs": "84501999",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.172854",
+  "name": "100984501999AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84501999AB",
+  "kode_hs": "84501999",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.181348",
+  "name": "100984501999AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84502000AA",
+  "kode_hs": "84502000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.189191",
+  "name": "100984502000AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84502000AB",
+  "kode_hs": "84502000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.194875",
+  "name": "100984502000AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84705000AA",
+  "kode_hs": "84705000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.203196",
+  "name": "100984705000AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84705000AB",
+  "kode_hs": "84705000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.211821",
+  "name": "100984705000AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84714110AA",
+  "kode_hs": "84714110",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.221571",
+  "name": "100984714110AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84714110AB",
+  "kode_hs": "84714110",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.229688",
+  "name": "100984714110AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84715010AA",
+  "kode_hs": "84715010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.240308",
+  "name": "100984715010AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84715010AB",
+  "kode_hs": "84715010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.248961",
+  "name": "100984715010AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84716030AA",
+  "kode_hs": "84716030",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.259150",
+  "name": "100984716030AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84716030AB",
+  "kode_hs": "84716030",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.269359",
+  "name": "100984716030AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84716040AA",
+  "kode_hs": "84716040",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.278425",
+  "name": "100984716040AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84716040AB",
+  "kode_hs": "84716040",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.288282",
+  "name": "100984716040AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84716090AA",
+  "kode_hs": "84716090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.296401",
+  "name": "100984716090AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84716090AB",
+  "kode_hs": "84716090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.306818",
+  "name": "100984716090AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85044019AA",
+  "kode_hs": "85044019",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.316092",
+  "name": "100985044019AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85044019AB",
+  "kode_hs": "85044019",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.325928",
+  "name": "100985044019AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85081100AA",
+  "kode_hs": "85081100",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.335892",
+  "name": "100985081100AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85081100AB",
+  "kode_hs": "85081100",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.345558",
+  "name": "100985081100AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85161011AA",
+  "kode_hs": "85161011",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.355907",
+  "name": "100985161011AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85161011AB",
+  "kode_hs": "85161011",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.364514",
+  "name": "100985161011AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85161019AA",
+  "kode_hs": "85161019",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.374489",
+  "name": "100985161019AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85161019AB",
+  "kode_hs": "85161019",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.383291",
+  "name": "100985161019AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85165000AA",
+  "kode_hs": "85165000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.393225",
+  "name": "100985165000AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85165000AB",
+  "kode_hs": "85165000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.402357",
+  "name": "100985165000AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85166010AA",
+  "kode_hs": "85166010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.411011",
+  "name": "100985166010AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85166010AB",
+  "kode_hs": "85166010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.421074",
+  "name": "100985166010AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85167100AA",
+  "kode_hs": "85167100",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.429923",
+  "name": "100985167100AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85167100AB",
+  "kode_hs": "85167100",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.440125",
+  "name": "100985167100AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85181011AA",
+  "kode_hs": "85181011",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.447916",
+  "name": "100985181011AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85181011AB",
+  "kode_hs": "85181011",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.459309",
+  "name": "100985181011AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85181019AA",
+  "kode_hs": "85181019",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.469251",
+  "name": "100985181019AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85181019AB",
+  "kode_hs": "85181019",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.478076",
+  "name": "100985181019AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85182110AA",
+  "kode_hs": "85182110",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.487598",
+  "name": "100985182110AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85182110AB",
+  "kode_hs": "85182110",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.496819",
+  "name": "100985182110AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85182190AA",
+  "kode_hs": "85182190",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.508371",
+  "name": "100985182190AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85182190AB",
+  "kode_hs": "85182190",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.517721",
+  "name": "100985182190AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85182210AA",
+  "kode_hs": "85182210",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.527432",
+  "name": "100985182210AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85182210AB",
+  "kode_hs": "85182210",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.541307",
+  "name": "100985182210AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85182290AA",
+  "kode_hs": "85182290",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.549983",
+  "name": "100985182290AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85182290AB",
+  "kode_hs": "85182290",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.560068",
+  "name": "100985182290AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85182920AA",
+  "kode_hs": "85182920",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.570265",
+  "name": "100985182920AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85182920AB",
+  "kode_hs": "85182920",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.580212",
+  "name": "100985182920AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85183010AA",
+  "kode_hs": "85183010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.595160",
+  "name": "100985183010AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85183010AB",
+  "kode_hs": "85183010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.606039",
+  "name": "100985183010AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85183020AA",
+  "kode_hs": "85183020",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.616379",
+  "name": "100985183020AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85183020AB",
+  "kode_hs": "85183020",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.627629",
+  "name": "100985183020AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85183051AA",
+  "kode_hs": "85183051",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.638572",
+  "name": "100985183051AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85183051AB",
+  "kode_hs": "85183051",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.649221",
+  "name": "100985183051AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85183059AA",
+  "kode_hs": "85183059",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.658977",
+  "name": "100985183059AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85183059AB",
+  "kode_hs": "85183059",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.669166",
+  "name": "100985183059AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85184090AA",
+  "kode_hs": "85184090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.680292",
+  "name": "100985184090AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85184090AB",
+  "kode_hs": "85184090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.691698",
+  "name": "100985184090AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85185010AA",
+  "kode_hs": "85185010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.701692",
+  "name": "100985185010AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85185010AB",
+  "kode_hs": "85185010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.711195",
+  "name": "100985185010AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85185020AA",
+  "kode_hs": "85185020",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.722544",
+  "name": "100985185020AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85185020AB",
+  "kode_hs": "85185020",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.732646",
+  "name": "100985185020AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85185090AA",
+  "kode_hs": "85185090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.742125",
+  "name": "100985185090AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85185090AB",
+  "kode_hs": "85185090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.751513",
+  "name": "100985185090AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85198130AA",
+  "kode_hs": "85198130",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.760604",
+  "name": "100985198130AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85198130AB",
+  "kode_hs": "85198130",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.769960",
+  "name": "100985198130AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85198199AA",
+  "kode_hs": "85198199",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.779487",
+  "name": "100985198199AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85198199AB",
+  "kode_hs": "85198199",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.790324",
+  "name": "100985198199AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85198920AA",
+  "kode_hs": "85198920",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.799597",
+  "name": "100985198920AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85198920AB",
+  "kode_hs": "85198920",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.809681",
+  "name": "100985198920AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85198940AA",
+  "kode_hs": "85198940",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.818754",
+  "name": "100985198940AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85198940AB",
+  "kode_hs": "85198940",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.827838",
+  "name": "100985198940AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85219019AA",
+  "kode_hs": "85219019",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.838213",
+  "name": "100985219019AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85219019AB",
+  "kode_hs": "85219019",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.848677",
+  "name": "100985219019AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85219099AA",
+  "kode_hs": "85219099",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.858694",
+  "name": "100985219099AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85219099AB",
+  "kode_hs": "85219099",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.866822",
+  "name": "100985219099AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85232971AA",
+  "kode_hs": "85232971",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.875340",
+  "name": "100985232971AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85232971AB",
+  "kode_hs": "85232971",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.883295",
+  "name": "100985232971AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85232979AA",
+  "kode_hs": "85232979",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.892700",
+  "name": "100985232979AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85232979AB",
+  "kode_hs": "85232979",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.900993",
+  "name": "100985232979AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85235111AA",
+  "kode_hs": "85235111",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.909033",
+  "name": "100985235111AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85235111AB",
+  "kode_hs": "85235111",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.918042",
+  "name": "100985235111AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85235119AA",
+  "kode_hs": "85235119",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.926329",
+  "name": "100985235119AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85235119AB",
+  "kode_hs": "85235119",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.936371",
+  "name": "100985235119AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258110AA",
+  "kode_hs": "85258110",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.945676",
+  "name": "100985258110AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258110AB",
+  "kode_hs": "85258110",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.955142",
+  "name": "100985258110AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258120AA",
+  "kode_hs": "85258120",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.962978",
+  "name": "100985258120AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258120AB",
+  "kode_hs": "85258120",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.972583",
+  "name": "100985258120AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258190AA",
+  "kode_hs": "85258190",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.981089",
+  "name": "100985258190AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258190AB",
+  "kode_hs": "85258190",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.990595",
+  "name": "100985258190AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258210AA",
+  "kode_hs": "85258210",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:50.999108",
+  "name": "100985258210AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258210AB",
+  "kode_hs": "85258210",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.007476",
+  "name": "100985258210AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258220AA",
+  "kode_hs": "85258220",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.015156",
+  "name": "100985258220AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258220AB",
+  "kode_hs": "85258220",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.024441",
+  "name": "100985258220AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258290AA",
+  "kode_hs": "85258290",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.033753",
+  "name": "100985258290AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258290AB",
+  "kode_hs": "85258290",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.043205",
+  "name": "100985258290AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258310AA",
+  "kode_hs": "85258310",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.053285",
+  "name": "100985258310AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258310AB",
+  "kode_hs": "85258310",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.061460",
+  "name": "100985258310AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258320AA",
+  "kode_hs": "85258320",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.071038",
+  "name": "100985258320AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258320AB",
+  "kode_hs": "85258320",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.079209",
+  "name": "100985258320AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258390AA",
+  "kode_hs": "85258390",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.088769",
+  "name": "100985258390AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258390AB",
+  "kode_hs": "85258390",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.097473",
+  "name": "100985258390AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258910AA",
+  "kode_hs": "85258910",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.106838",
+  "name": "100985258910AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258910AB",
+  "kode_hs": "85258910",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.115519",
+  "name": "100985258910AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258920AA",
+  "kode_hs": "85258920",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.125852",
+  "name": "100985258920AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258920AB",
+  "kode_hs": "85258920",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.135610",
+  "name": "100985258920AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258930AA",
+  "kode_hs": "85258930",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.145039",
+  "name": "100985258930AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258930AB",
+  "kode_hs": "85258930",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.154401",
+  "name": "100985258930AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258990AA",
+  "kode_hs": "85258990",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.162803",
+  "name": "100985258990AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85258990AB",
+  "kode_hs": "85258990",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.171546",
+  "name": "100985258990AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85269200AA",
+  "kode_hs": "85269200",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.179772",
+  "name": "100985269200AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85269200AB",
+  "kode_hs": "85269200",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.188435",
+  "name": "100985269200AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85272110AA",
+  "kode_hs": "85272110",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.194532",
+  "name": "100985272110AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85272110AB",
+  "kode_hs": "85272110",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.203149",
+  "name": "100985272110AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85286200AA",
+  "kode_hs": "85286200",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.210317",
+  "name": "100985286200AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85286200AB",
+  "kode_hs": "85286200",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.219386",
+  "name": "100985286200AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85286910AA",
+  "kode_hs": "85286910",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.227763",
+  "name": "100985286910AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85286910AB",
+  "kode_hs": "85286910",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.238728",
+  "name": "100985286910AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85286990AA",
+  "kode_hs": "85286990",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.247190",
+  "name": "100985286990AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85286990AB",
+  "kode_hs": "85286990",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.256887",
+  "name": "100985286990AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84151020AC",
+  "kode_hs": "84151020",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.265356",
+  "name": "100984151020AC",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84151020AD",
+  "kode_hs": "84151020",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.274775",
+  "name": "100984151020AD",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84151030AC",
+  "kode_hs": "84151030",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.282442",
+  "name": "100984151030AC",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84151030AD",
+  "kode_hs": "84151030",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.290914",
+  "name": "100984151030AD",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84151090AC",
+  "kode_hs": "84151090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.298798",
+  "name": "100984151090AC",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84151090AD",
+  "kode_hs": "84151090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.307545",
+  "name": "100984151090AD",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158195AA",
+  "kode_hs": "84158195",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.315773",
+  "name": "100984158195AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158195AB",
+  "kode_hs": "84158195",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.325238",
+  "name": "100984158195AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158196AA",
+  "kode_hs": "84158196",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.333022",
+  "name": "100984158196AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158196AB",
+  "kode_hs": "84158196",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.341718",
+  "name": "100984158196AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158197AA",
+  "kode_hs": "84158197",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.350708",
+  "name": "100984158197AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158197AB",
+  "kode_hs": "84158197",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.360043",
+  "name": "100984158197AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158198AA",
+  "kode_hs": "84158198",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.369094",
+  "name": "100984158198AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158198AB",
+  "kode_hs": "84158198",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.377100",
+  "name": "100984158198AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158199AA",
+  "kode_hs": "84158199",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.385579",
+  "name": "100984158199AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158199AB",
+  "kode_hs": "84158199",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.393092",
+  "name": "100984158199AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158291AA",
+  "kode_hs": "84158291",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.400563",
+  "name": "100984158291AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158291AB",
+  "kode_hs": "84158291",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.408163",
+  "name": "100984158291AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158299AA",
+  "kode_hs": "84158299",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.415347",
+  "name": "100984158299AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158299AB",
+  "kode_hs": "84158299",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.423031",
+  "name": "100984158299AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158391AA",
+  "kode_hs": "84158391",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.428531",
+  "name": "100984158391AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158391AB",
+  "kode_hs": "84158391",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.437084",
+  "name": "100984158391AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158399AA",
+  "kode_hs": "84158399",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.446089",
+  "name": "100984158399AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84158399AB",
+  "kode_hs": "84158399",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.456516",
+  "name": "100984158399AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181031AC",
+  "kode_hs": "84181031",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.465799",
+  "name": "100984181031AC",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181031AD",
+  "kode_hs": "84181031",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.474958",
+  "name": "100984181031AD",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181032AC",
+  "kode_hs": "84181032",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.482745",
+  "name": "100984181032AC",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181032AD",
+  "kode_hs": "84181032",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.491429",
+  "name": "100984181032AD",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181039AA",
+  "kode_hs": "84181039",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.498882",
+  "name": "100984181039AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181039AB",
+  "kode_hs": "84181039",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.508319",
+  "name": "100984181039AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181091AA",
+  "kode_hs": "84181091",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.517007",
+  "name": "100984181091AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181091AB",
+  "kode_hs": "84181091",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.528637",
+  "name": "100984181091AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181099AA",
+  "kode_hs": "84181099",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.539287",
+  "name": "100984181099AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84181099AB",
+  "kode_hs": "84181099",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.548342",
+  "name": "100984181099AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84182110AC",
+  "kode_hs": "84182110",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.557936",
+  "name": "100984182110AC",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84182110AD",
+  "kode_hs": "84182110",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.567067",
+  "name": "100984182110AD",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84182190AC",
+  "kode_hs": "84182190",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.576091",
+  "name": "100984182190AC",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84182190AD",
+  "kode_hs": "84182190",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.584044",
+  "name": "100984182190AD",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84183010AC",
+  "kode_hs": "84183010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.592372",
+  "name": "100984183010AC",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84183010AD",
+  "kode_hs": "84183010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.600771",
+  "name": "100984183010AD",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84183090AC",
+  "kode_hs": "84183090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.609758",
+  "name": "100984183090AC",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84183090AD",
+  "kode_hs": "84183090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.619561",
+  "name": "100984183090AD",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84184010AC",
+  "kode_hs": "84184010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.628745",
+  "name": "100984184010AC",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84184010AD",
+  "kode_hs": "84184010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.638757",
+  "name": "100984184010AD",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84184090AC",
+  "kode_hs": "84184090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.648196",
+  "name": "100984184090AC",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84184090AD",
+  "kode_hs": "84184090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.658748",
+  "name": "100984184090AD",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84186910AA",
+  "kode_hs": "84186910",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.668111",
+  "name": "100984186910AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84186910AB",
+  "kode_hs": "84186910",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.677324",
+  "name": "100984186910AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84186930AA",
+  "kode_hs": "84186930",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.687880",
+  "name": "100984186930AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84186930AB",
+  "kode_hs": "84186930",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.697536",
+  "name": "100984186930AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84186950AA",
+  "kode_hs": "84186950",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.707763",
+  "name": "100984186950AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84186950AB",
+  "kode_hs": "84186950",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.717988",
+  "name": "100984186950AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84213920AA",
+  "kode_hs": "84213920",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.727681",
+  "name": "100984213920AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84213920AB",
+  "kode_hs": "84213920",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.739604",
+  "name": "100984213920AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84287000AA",
+  "kode_hs": "84287000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.748653",
+  "name": "100984287000AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84287000AB",
+  "kode_hs": "84287000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.759117",
+  "name": "100984287000AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84289090AA",
+  "kode_hs": "84289090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.769596",
+  "name": "100984289090AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84289090AB",
+  "kode_hs": "84289090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.780015",
+  "name": "100984289090AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433111AA",
+  "kode_hs": "84433111",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.790724",
+  "name": "100984433111AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433111AB",
+  "kode_hs": "84433111",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.800267",
+  "name": "100984433111AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433119AA",
+  "kode_hs": "84433119",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.811239",
+  "name": "100984433119AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433119AB",
+  "kode_hs": "84433119",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.823300",
+  "name": "100984433119AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433121AA",
+  "kode_hs": "84433121",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.832817",
+  "name": "100984433121AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433121AB",
+  "kode_hs": "84433121",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.843898",
+  "name": "100984433121AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433129AA",
+  "kode_hs": "84433129",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.855974",
+  "name": "100984433129AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433129AB",
+  "kode_hs": "84433129",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.865775",
+  "name": "100984433129AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84433131AA",
+  "kode_hs": "84433131",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.876594",
+  "name": "100984433131AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85287292AA",
+  "kode_hs": "85287292",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.887088",
+  "name": "100985287292AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85287292AB",
+  "kode_hs": "85287292",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.895954",
+  "name": "100985287292AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85287299AA",
+  "kode_hs": "85287299",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.907610",
+  "name": "100985287299AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85287299AB",
+  "kode_hs": "85287299",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.918150",
+  "name": "100985287299AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85318011AA",
+  "kode_hs": "85318011",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.928023",
+  "name": "100985318011AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85318011AB",
+  "kode_hs": "85318011",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.939909",
+  "name": "100985318011AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85365051AA",
+  "kode_hs": "85365051",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.948950",
+  "name": "100985365051AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85365051AB",
+  "kode_hs": "85365051",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.959449",
+  "name": "100985365051AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85365059AA",
+  "kode_hs": "85365059",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.969885",
+  "name": "100985365059AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85365059AB",
+  "kode_hs": "85365059",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.979314",
+  "name": "100985365059AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85365096AA",
+  "kode_hs": "85365096",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:51.990531",
+  "name": "100985365096AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85365096AB",
+  "kode_hs": "85365096",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.000640",
+  "name": "100985365096AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85365099AA",
+  "kode_hs": "85365099",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.010902",
+  "name": "100985365099AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85365099AB",
+  "kode_hs": "85365099",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.020576",
+  "name": "100985365099AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85366992AA",
+  "kode_hs": "85366992",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.030364",
+  "name": "100985366992AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85366992AB",
+  "kode_hs": "85366992",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.041013",
+  "name": "100985366992AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85366999AA",
+  "kode_hs": "85366999",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.050977",
+  "name": "100985366999AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85366999AB",
+  "kode_hs": "85366999",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.060612",
+  "name": "100985366999AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85395100AA",
+  "kode_hs": "85395100",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.070816",
+  "name": "100985395100AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85395100AB",
+  "kode_hs": "85395100",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.079665",
+  "name": "100985395100AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85395210AA",
+  "kode_hs": "85395210",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.090475",
+  "name": "100985395210AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85395210AB",
+  "kode_hs": "85395210",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.098926",
+  "name": "100985395210AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85395290AA",
+  "kode_hs": "85395290",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.108288",
+  "name": "100985395290AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85395290AB",
+  "kode_hs": "85395290",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.117188",
+  "name": "100985395290AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88061000AA",
+  "kode_hs": "88061000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.125631",
+  "name": "100988061000AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88061000AB",
+  "kode_hs": "88061000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.135015",
+  "name": "100988061000AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88062100AA",
+  "kode_hs": "88062100",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.145079",
+  "name": "100988062100AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88062100AB",
+  "kode_hs": "88062100",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.155844",
+  "name": "100988062100AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88062200AA",
+  "kode_hs": "88062200",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.164576",
+  "name": "100988062200AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88062200AB",
+  "kode_hs": "88062200",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.177152",
+  "name": "100988062200AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88062300AA",
+  "kode_hs": "88062300",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.187826",
+  "name": "100988062300AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88062300AB",
+  "kode_hs": "88062300",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.195455",
+  "name": "100988062300AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88062400AA",
+  "kode_hs": "88062400",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.205588",
+  "name": "100988062400AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88062400AB",
+  "kode_hs": "88062400",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.214053",
+  "name": "100988062400AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88062900AA",
+  "kode_hs": "88062900",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.225058",
+  "name": "100988062900AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88062900AB",
+  "kode_hs": "88062900",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.234307",
+  "name": "100988062900AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88069100AA",
+  "kode_hs": "88069100",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.243327",
+  "name": "100988069100AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88069100AB",
+  "kode_hs": "88069100",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.252605",
+  "name": "100988069100AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88069200AA",
+  "kode_hs": "88069200",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.261324",
+  "name": "100988069200AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88069200AB",
+  "kode_hs": "88069200",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.271138",
+  "name": "100988069200AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88069300AA",
+  "kode_hs": "88069300",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.279106",
+  "name": "100988069300AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88069300AB",
+  "kode_hs": "88069300",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.288958",
+  "name": "100988069300AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88069400AA",
+  "kode_hs": "88069400",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.297681",
+  "name": "100988069400AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88069400AB",
+  "kode_hs": "88069400",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.307437",
+  "name": "100988069400AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88069900AA",
+  "kode_hs": "88069900",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.315968",
+  "name": "100988069900AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "88069900AB",
+  "kode_hs": "88069900",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.325706",
+  "name": "100988069900AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "90189039AA",
+  "kode_hs": "90189039",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.336212",
+  "name": "100990189039AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "90189039AB",
+  "kode_hs": "90189039",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.344663",
+  "name": "100990189039AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "90191010AA",
+  "kode_hs": "90191010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.354153",
+  "name": "100990191010AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "90191010AB",
+  "kode_hs": "90191010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.362649",
+  "name": "100990191010AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "90214000AA",
+  "kode_hs": "90214000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.373263",
+  "name": "100990214000AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "90214000AB",
+  "kode_hs": "90214000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.381554",
+  "name": "100990214000AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "90292090AA",
+  "kode_hs": "90292090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.390340",
+  "name": "100990292090AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "90292090AB",
+  "kode_hs": "90292090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.396605",
+  "name": "100990292090AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "90321000AA",
+  "kode_hs": "90321000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.405177",
+  "name": "100990321000AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "90321000AB",
+  "kode_hs": "90321000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.413841",
+  "name": "100990321000AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "91011900AA",
+  "kode_hs": "91011900",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.423493",
+  "name": "100991011900AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "91011900AB",
+  "kode_hs": "91011900",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.431952",
+  "name": "100991011900AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "91021200AA",
+  "kode_hs": "91021200",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.442513",
+  "name": "100991021200AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "91021200AB",
+  "kode_hs": "91021200",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.452081",
+  "name": "100991021200AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "92071000AA",
+  "kode_hs": "92071000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.460590",
+  "name": "100992071000AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "92071000AB",
+  "kode_hs": "92071000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.470252",
+  "name": "100992071000AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "92079000AA",
+  "kode_hs": "92079000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.479263",
+  "name": "100992079000AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "92079000AB",
+  "kode_hs": "92079000",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.489658",
+  "name": "100992079000AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "94051199AA",
+  "kode_hs": "94051199",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.498840",
+  "name": "100994051199AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "94051199AB",
+  "kode_hs": "94051199",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.508714",
+  "name": "100994051199AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "94052190AA",
+  "kode_hs": "94052190",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.518066",
+  "name": "100994052190AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "94052190AB",
+  "kode_hs": "94052190",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.527753",
+  "name": "100994052190AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "94054220AA",
+  "kode_hs": "94054220",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.537236",
+  "name": "100994054220AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "94054220AB",
+  "kode_hs": "94054220",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.547059",
+  "name": "100994054220AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "94054290AA",
+  "kode_hs": "94054290",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.557438",
+  "name": "100994054290AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "94054290AB",
+  "kode_hs": "94054290",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.567166",
+  "name": "100994054290AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "95030010AA",
+  "kode_hs": "95030010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.577095",
+  "name": "100995030010AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "95030010AB",
+  "kode_hs": "95030010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.587149",
+  "name": "100995030010AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "95030099AA",
+  "kode_hs": "95030099",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.600276",
+  "name": "100995030099AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "95030099AB",
+  "kode_hs": "95030099",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.609933",
+  "name": "100995030099AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "95045010AA",
+  "kode_hs": "95045010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.619243",
+  "name": "100995045010AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "95045010AB",
+  "kode_hs": "95045010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.628290",
+  "name": "100995045010AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "95045090AA",
+  "kode_hs": "95045090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.638217",
+  "name": "100995045090AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "95045090AB",
+  "kode_hs": "95045090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.648393",
+  "name": "100995045090AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "95069100AA",
+  "kode_hs": "95069100",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.658651",
+  "name": "100995069100AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "95069100AB",
+  "kode_hs": "95069100",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.667550",
+  "name": "100995069100AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "96200010AA",
+  "kode_hs": "96200010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.676810",
+  "name": "100996200010AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "96200010AB",
+  "kode_hs": "96200010",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.685298",
+  "name": "100996200010AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "96200020AA",
+  "kode_hs": "96200020",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.693568",
+  "name": "100996200020AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "96200020AB",
+  "kode_hs": "96200020",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.703436",
+  "name": "100996200020AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "96200030AA",
+  "kode_hs": "96200030",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.712099",
+  "name": "100996200030AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "96200030AB",
+  "kode_hs": "96200030",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.722014",
+  "name": "100996200030AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "96200040AA",
+  "kode_hs": "96200040",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.730422",
+  "name": "100996200040AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "96200040AB",
+  "kode_hs": "96200040",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.741578",
+  "name": "100996200040AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "96200050AA",
+  "kode_hs": "96200050",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.751677",
+  "name": "100996200050AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "96200050AB",
+  "kode_hs": "96200050",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.761252",
+  "name": "100996200050AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "96200090AA",
+  "kode_hs": "96200090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.771293",
+  "name": "100996200090AA",
+  "uraian_spek_khusus": "Tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "96200090AB",
+  "kode_hs": "96200090",
+  "kode_spek_khusus": "1009",
+  "modified": "2026-01-01 15:13:52.780961",
+  "name": "100996200090AB",
+  "uraian_spek_khusus": "Memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84713090AA",
+  "kode_hs": "84713090",
+  "kode_spek_khusus": "1010",
+  "modified": "2026-01-01 15:13:52.790461",
+  "name": "101084713090AA",
+  "uraian_spek_khusus": "Komputer Tablet -- Komputer tablet, computer layar sentuh datar dan penggunaan layar sebagai piranti masukan dengan menggunakan stilus, pena digital atau ujung jari selain menggunakan papan ketik atau tetikus, mesin pengolah data otomatis portabel lainnya"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84713090AB",
+  "kode_hs": "84713090",
+  "kode_spek_khusus": "1010",
+  "modified": "2026-01-01 15:13:52.798552",
+  "name": "101084713090AB",
+  "uraian_spek_khusus": "Komputer Genggam -- Komputer genggam (handheld) termasuk palmtop dan personal digital assistant (PDA)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84713090AC",
+  "kode_hs": "84713090",
+  "kode_spek_khusus": "1010",
+  "modified": "2026-01-01 15:13:52.806546",
+  "name": "101084713090AC",
+  "uraian_spek_khusus": "Lainnya, memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "84713090AD",
+  "kode_hs": "84713090",
+  "kode_spek_khusus": "1010",
+  "modified": "2026-01-01 15:13:52.813523",
+  "name": "101084713090AD",
+  "uraian_spek_khusus": "Lainnya, tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85171300AA",
+  "kode_hs": "85171300",
+  "kode_spek_khusus": "1011",
+  "modified": "2026-01-01 15:13:52.822682",
+  "name": "101185171300AA",
+  "uraian_spek_khusus": "Pesawat Telepon Seluler (Smartphone) -- Pesawat telepon seluler dengan sistem operasi yang memungkinkan pengguna untuk menjalankan berbagai aplikasi, mengakses internet, serta melakukan berbagai fungsi lain yang lebih kompleks daripada telepon seluler biasa (feature phone)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85171300AB",
+  "kode_hs": "85171300",
+  "kode_spek_khusus": "1011",
+  "modified": "2026-01-01 15:13:52.830926",
+  "name": "101185171300AB",
+  "uraian_spek_khusus": "Arloji Pintar (Smartwatch Phone) -- Arloji tangan, arloji saku dan arloji lainnya yang memiliki fitur telepon untuk jaringan seluler, dengan sistem operasi seluler terpasang yang didesain untuk melakukan fungsi dari mesin pengolah data otomatis seperti mengunduh dan menjalankan bermacam aplikasi secara simultan, termasuk aplikasi pihak ketiga"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85171400AA",
+  "kode_hs": "85171400",
+  "kode_spek_khusus": "1012",
+  "modified": "2026-01-01 15:13:52.840966",
+  "name": "101285171400AA",
+  "uraian_spek_khusus": "Pesawat Telepon Seluler (Feature Phone) -- Pesawat telepon seluler yang hanya memiliki fungsi dasar komunikasi, seperti menelepon dan mengirim pesan teks (SMS)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85171400AB",
+  "kode_hs": "85171400",
+  "kode_spek_khusus": "1012",
+  "modified": "2026-01-01 15:13:52.851455",
+  "name": "101285171400AB",
+  "uraian_spek_khusus": "Telepon Satelit -- Pesawat telepon yang menggunakan satelit untuk mengirim dan menerima sinyal"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85171400AC",
+  "kode_hs": "85171400",
+  "kode_spek_khusus": "1012",
+  "modified": "2026-01-01 15:13:52.861283",
+  "name": "101285171400AC",
+  "uraian_spek_khusus": "Terminal GMPCS -- Perangkat yang digunakan untuk melakukan komunikasi suara, data, dan pesan melalui satelit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85171400AD",
+  "kode_hs": "85171400",
+  "kode_spek_khusus": "1012",
+  "modified": "2026-01-01 15:13:52.872529",
+  "name": "101285171400AD",
+  "uraian_spek_khusus": "Terminal GMDSS -- Perangkat komunikasi dikapal yang digunakan untuk komunikasi dengan stasiun pantai atau kapal lain, terutama dalam situasi darurat"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85171800AA",
+  "kode_hs": "85171800",
+  "kode_spek_khusus": "1013",
+  "modified": "2026-01-01 15:13:52.881995",
+  "name": "101385171800AA",
+  "uraian_spek_khusus": "Pesawat Telepon Analog -- Telepon yang menggunakan sinyal analog untuk mentransmisikan suara melalui jaringan telepon"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85171800AB",
+  "kode_hs": "85171800",
+  "kode_spek_khusus": "1013",
+  "modified": "2026-01-01 15:13:52.891443",
+  "name": "101385171800AB",
+  "uraian_spek_khusus": "Telepon Umum Koin/Kartu -- Telepon yang digunakan untuk menelepon dengan membayar menggunakan koin atau kartu prabayar"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85171800AC",
+  "kode_hs": "85171800",
+  "kode_spek_khusus": "1013",
+  "modified": "2026-01-01 15:13:52.900129",
+  "name": "101385171800AC",
+  "uraian_spek_khusus": "Pesawat Key Telephone System (KTS) -- Telepon yang terhubung ke sistem telepon pusat yang memungkinkan pengguna untuk mengakses beberapa saluran telepon, mengalihkan panggilan, dan melakukan fungsi lainnya secara langsung menggunakan tombol-tombol khusus"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85171800AD",
+  "kode_hs": "85171800",
+  "kode_spek_khusus": "1013",
+  "modified": "2026-01-01 15:13:52.909165",
+  "name": "101385171800AD",
+  "uraian_spek_khusus": "Pesawat PBX / PABX -- Telepon yang terhubung ke sistem private branch exchange (PBX) atau private automatic branch exchange (PABX)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85171800AE",
+  "kode_hs": "85171800",
+  "kode_spek_khusus": "1013",
+  "modified": "2026-01-01 15:13:52.919226",
+  "name": "101385171800AE",
+  "uraian_spek_khusus": "IP Phone -- Telepon yang menggunakan jaringan internet (IP) untuk melakukan dan menerima panggilan dengan mengubah suara menjadi data digital yang dikirim melalui internet menggunakan protokol suara seperti VoIP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85176100AA",
+  "kode_hs": "85176100",
+  "kode_spek_khusus": "1014",
+  "modified": "2026-01-01 15:13:52.928065",
+  "name": "101485176100AA",
+  "uraian_spek_khusus": "Base Transceiver Station Radio Seluler -- Stasiun pemancar yang digunakan untuk mentransmisikan dan menerima sinyal radio antara telepon seluler dan jaringan telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85176100AB",
+  "kode_hs": "85176100",
+  "kode_spek_khusus": "1014",
+  "modified": "2026-01-01 15:13:52.937237",
+  "name": "101485176100AB",
+  "uraian_spek_khusus": "Base Transceiver Station Radio Trunking -- Stasiun pemancar yang digunakan dalam sistem radio trunking untuk menghubungkan komunikasi antara berbagai perangkat radio"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85177100AA",
+  "kode_hs": "85177100",
+  "kode_spek_khusus": "1015",
+  "modified": "2026-01-01 15:13:52.945826",
+  "name": "101585177100AA",
+  "uraian_spek_khusus": "Antena Pemancar Indoor -- Perangkat yang memancarkan dan/atau menerima gelombang radio untuk berbagai aplikasi komunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85177100AB",
+  "kode_hs": "85177100",
+  "kode_spek_khusus": "1015",
+  "modified": "2026-01-01 15:13:52.956131",
+  "name": "101585177100AB",
+  "uraian_spek_khusus": "Antena Analog -- Perangkat yang memancarkan dan/atau menerima gelombang radio untuk berbagai aplikasi komunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85177100AC",
+  "kode_hs": "85177100",
+  "kode_spek_khusus": "1015",
+  "modified": "2026-01-01 15:13:52.965048",
+  "name": "101585177100AC",
+  "uraian_spek_khusus": "Antena Digital Radio Link Terrestrial -- Perangkat yang memancarkan dan/atau menerima gelombang radio untuk berbagai aplikasi komunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85177100AD",
+  "kode_hs": "85177100",
+  "kode_spek_khusus": "1015",
+  "modified": "2026-01-01 15:13:52.974520",
+  "name": "101585177100AD",
+  "uraian_spek_khusus": "Antena Microwave -- Perangkat yang memancarkan dan/atau menerima gelombang radio untuk berbagai aplikasi komunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85177100AE",
+  "kode_hs": "85177100",
+  "kode_spek_khusus": "1015",
+  "modified": "2026-01-01 15:13:52.984014",
+  "name": "101585177100AE",
+  "uraian_spek_khusus": "Antena Radio Local Area Network (RLAN) -- Perangkat yang memancarkan dan/atau menerima gelombang radio untuk berbagai aplikasi komunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85177100AF",
+  "kode_hs": "85177100",
+  "kode_spek_khusus": "1015",
+  "modified": "2026-01-01 15:13:52.993883",
+  "name": "101585177100AF",
+  "uraian_spek_khusus": "Antena Broadband Wireless Access (BWA) -- Perangkat yang memancarkan dan/atau menerima gelombang radio untuk berbagai aplikasi komunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85177100AG",
+  "kode_hs": "85177100",
+  "kode_spek_khusus": "1015",
+  "modified": "2026-01-01 15:13:53.003978",
+  "name": "101585177100AG",
+  "uraian_spek_khusus": "Antena Base Station -- Perangkat yang memancarkan dan/atau menerima gelombang radio untuk berbagai aplikasi komunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85177100AH",
+  "kode_hs": "85177100",
+  "kode_spek_khusus": "1015",
+  "modified": "2026-01-01 15:13:53.014322",
+  "name": "101585177100AH",
+  "uraian_spek_khusus": "Lainnya, memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85177100AI",
+  "kode_hs": "85177100",
+  "kode_spek_khusus": "1015",
+  "modified": "2026-01-01 15:13:53.024285",
+  "name": "101585177100AI",
+  "uraian_spek_khusus": "Lainnya, tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85255000AA",
+  "kode_hs": "85255000",
+  "kode_spek_khusus": "1016",
+  "modified": "2026-01-01 15:13:53.036412",
+  "name": "101685255000AA",
+  "uraian_spek_khusus": "Video Distribution Modulator -- Perangkat yang mengubah sinyal video menjadi sinyal RF untuk distribusi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85255000AB",
+  "kode_hs": "85255000",
+  "kode_spek_khusus": "1016",
+  "modified": "2026-01-01 15:13:53.046083",
+  "name": "101685255000AB",
+  "uraian_spek_khusus": "TV Kabel Modulator -- Perangkat yang mengubah sinyal video/audio menjadi sinyal RF untuk jaringan kabel televisi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85255000AC",
+  "kode_hs": "85255000",
+  "kode_spek_khusus": "1016",
+  "modified": "2026-01-01 15:13:53.057199",
+  "name": "101685255000AC",
+  "uraian_spek_khusus": "Pemancar TV Siaran Digital (DVB-T2, DVB-S) -- Perangkat untuk mengirimkan sinyal siaran televisi digital; dan Pemancar Radio Siaran Analog"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85255000AD",
+  "kode_hs": "85255000",
+  "kode_spek_khusus": "1016",
+  "modified": "2026-01-01 15:13:53.067610",
+  "name": "101685255000AD",
+  "uraian_spek_khusus": "Pemancar Radio Siaran Analog (AM, FM) -- Perangkat yang digunakan untuk mentransmisikan sinyal radio dalam format analog"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85255000AE",
+  "kode_hs": "85255000",
+  "kode_spek_khusus": "1016",
+  "modified": "2026-01-01 15:13:53.077489",
+  "name": "101685255000AE",
+  "uraian_spek_khusus": "Pemancar Radio Siaran Digital (DAB+) -- Perangkat yang digunakan untuk mentransmisikan sinyal radio dalam format digital"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85261010AA",
+  "kode_hs": "85261010",
+  "kode_spek_khusus": "1017",
+  "modified": "2026-01-01 15:13:53.087366",
+  "name": "101785261010AA",
+  "uraian_spek_khusus": "Radar Maritim -- Radar bergerak yang ditempatkan di atas kapal laut"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85261010AB",
+  "kode_hs": "85261010",
+  "kode_spek_khusus": "1017",
+  "modified": "2026-01-01 15:13:53.096731",
+  "name": "101785261010AB",
+  "uraian_spek_khusus": "Radar Penerbangan -- Perangkat yang menggunakan gelombang elektromagnetik untuk keperluan penerbangan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85261090AA",
+  "kode_hs": "85261090",
+  "kode_spek_khusus": "1018",
+  "modified": "2026-01-01 15:13:53.107116",
+  "name": "101885261090AA",
+  "uraian_spek_khusus": "Radar Kendaraan -- Perangkat radar pada kendaraan untuk mitigasi tabrakan dan keselamatan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85261090AB",
+  "kode_hs": "85261090",
+  "kode_spek_khusus": "1018",
+  "modified": "2026-01-01 15:13:53.116419",
+  "name": "101885261090AB",
+  "uraian_spek_khusus": "Radar Cuaca -- Perangkat radar untuk keperluan cuaca"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85261090AC",
+  "kode_hs": "85261090",
+  "kode_spek_khusus": "1018",
+  "modified": "2026-01-01 15:13:53.126397",
+  "name": "101885261090AC",
+  "uraian_spek_khusus": "Lainnya, memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85261090AD",
+  "kode_hs": "85261090",
+  "kode_spek_khusus": "1018",
+  "modified": "2026-01-01 15:13:53.136083",
+  "name": "101885261090AD",
+  "uraian_spek_khusus": "Lainnya, tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85269190AA",
+  "kode_hs": "85269190",
+  "kode_spek_khusus": "1019",
+  "modified": "2026-01-01 15:13:53.145147",
+  "name": "101985269190AA",
+  "uraian_spek_khusus": "Radar Surveillance -- Stasiun radar tetap untuk pengawasan dan/atau eksplorasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85269190AB",
+  "kode_hs": "85269190",
+  "kode_spek_khusus": "1019",
+  "modified": "2026-01-01 15:13:53.156972",
+  "name": "101985269190AB",
+  "uraian_spek_khusus": "Pelacak Lokasi (GPS Tracker) -- Perangkat untuk menentukan dan memantau lokasi secara real-time yang memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85269190AC",
+  "kode_hs": "85269190",
+  "kode_spek_khusus": "1019",
+  "modified": "2026-01-01 15:13:53.167285",
+  "name": "101985269190AC",
+  "uraian_spek_khusus": "Lainnya, memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85269190AD",
+  "kode_hs": "85269190",
+  "kode_spek_khusus": "1019",
+  "modified": "2026-01-01 15:13:53.177629",
+  "name": "101985269190AD",
+  "uraian_spek_khusus": "Lainnya, tidak memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85269110AA",
+  "kode_hs": "85269110",
+  "kode_spek_khusus": "1020",
+  "modified": "2026-01-01 15:13:53.188784",
+  "name": "102085269110AA",
+  "uraian_spek_khusus": "Pemancar Radio Maritim -- Perangkat untuk mentransmisikan sinyal komunikasi radio di laut"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85269110AB",
+  "kode_hs": "85269110",
+  "kode_spek_khusus": "1020",
+  "modified": "2026-01-01 15:13:53.199135",
+  "name": "102085269110AB",
+  "uraian_spek_khusus": "Pemancar Radio Penerbangan -- Perangkat untuk mentransmisikan sinyal komunikasi antara pesawat dan stasiun darat atau pesawat lainnya"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85269110AC",
+  "kode_hs": "85269110",
+  "kode_spek_khusus": "1020",
+  "modified": "2026-01-01 15:13:53.208488",
+  "name": "102085269110AC",
+  "uraian_spek_khusus": "Radio Beacon -- Rambu radio penunjuk posisi darurat (ELT, EPIRB)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85269110AD",
+  "kode_hs": "85269110",
+  "kode_spek_khusus": "1020",
+  "modified": "2026-01-01 15:13:53.218575",
+  "name": "102085269110AD",
+  "uraian_spek_khusus": "Lainnya, memiliki fitur telekomunikasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Spesifikasi Khusus Detail",
+  "kode_detail_spek_khusus": "85269110AE",
+  "kode_hs": "85269110",
+  "kode_spek_khusus": "1020",
+  "modified": "2026-01-01 15:13:53.227874",
+  "name": "102085269110AE",
+  "uraian_spek_khusus": "Lainnya, tidak memiliki fitur telekomunikasi"
+ }
+]

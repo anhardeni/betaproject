@@ -1,106 +1,109 @@
 {
-    "actions": [],
-    "allow_rename": 1,
-    "creation": "2026-02-18 17:10:00.000000",
-    "doctype": "DocType",
-    "editable_grid": 1,
-    "engine": "InnoDB",
-    "field_order": [
-        "nomor_aju",
-        "kode_respon",
-        "nomor_daftar",
-        "tanggal_daftar",
-        "column_break_r1",
-        "nomor_respon",
-        "tanggal_respon",
-        "waktu_respon",
-        "waktu_status",
-        "keterangan",
-        "section_detail",
-        "pesan_json",
-        "pdf_file"
-    ],
-    "fields": [
-        {
-            "fieldname": "nomor_aju",
-            "fieldtype": "Data",
-            "label": "Nomor Aju",
-            "in_list_view": 1
-        },
-        {
-            "fieldname": "kode_respon",
-            "fieldtype": "Data",
-            "label": "Kode Respon",
-            "in_list_view": 1
-        },
-        {
-            "fieldname": "nomor_daftar",
-            "fieldtype": "Data",
-            "label": "Nomor Daftar",
-            "in_list_view": 1
-        },
-        {
-            "fieldname": "tanggal_daftar",
-            "fieldtype": "Date",
-            "label": "Tanggal Daftar"
-        },
-        {
-            "fieldname": "column_break_r1",
-            "fieldtype": "Column Break"
-        },
-        {
-            "fieldname": "nomor_respon",
-            "fieldtype": "Data",
-            "label": "Nomor Respon",
-            "in_list_view": 1
-        },
-        {
-            "fieldname": "tanggal_respon",
-            "fieldtype": "Date",
-            "label": "Tanggal Respon"
-        },
-        {
-            "fieldname": "waktu_respon",
-            "fieldtype": "Datetime",
-            "label": "Waktu Respon"
-        },
-        {
-            "fieldname": "waktu_status",
-            "fieldtype": "Datetime",
-            "label": "Waktu Status"
-        },
-        {
-            "fieldname": "keterangan",
-            "fieldtype": "Small Text",
-            "label": "Keterangan"
-        },
-        {
-            "fieldname": "section_detail",
-            "fieldtype": "Section Break",
-            "label": "Detail Pesan & PDF"
-        },
-        {
-            "fieldname": "pesan_json",
-            "fieldtype": "Long Text",
-            "label": "Pesan JSON",
-            "description": "Array pesan dari field 'pesan' dalam dataRespon"
-        },
-        {
-            "fieldname": "pdf_file",
-            "fieldtype": "Link",
-            "label": "PDF File",
-            "options": "File",
-            "description": "Private PDF file hasil decode base64 dari field 'Pdf'"
-        }
-    ],
-    "istable": 1,
-    "modified": "2026-03-06 14:26:00.000000",
-    "modified_by": "Administrator",
-    "module": "Singlecore Apps",
-    "name": "Customs Status Log Response",
-    "owner": "Administrator",
-    "permissions": [],
-    "sort_field": "modified",
-    "sort_order": "DESC",
-    "states": []
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-18 17:10:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nomor_aju",
+  "kode_respon",
+  "nomor_daftar",
+  "tanggal_daftar",
+  "column_break_r1",
+  "nomor_respon",
+  "tanggal_respon",
+  "waktu_respon",
+  "waktu_status",
+  "section_detail",
+  "pdf_file",
+  "keterangan",
+  "pesan_json"
+ ],
+ "fields": [
+  {
+   "fieldname": "nomor_aju",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nomor Aju"
+  },
+  {
+   "fieldname": "kode_respon",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kode Respon",
+   "options": "Referensi Respon"
+  },
+  {
+   "fieldname": "nomor_daftar",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nomor Daftar"
+  },
+  {
+   "fieldname": "tanggal_daftar",
+   "fieldtype": "Date",
+   "label": "Tanggal Daftar"
+  },
+  {
+   "fieldname": "column_break_r1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nomor_respon",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nomor Respon"
+  },
+  {
+   "fieldname": "tanggal_respon",
+   "fieldtype": "Date",
+   "label": "Tanggal Respon"
+  },
+  {
+   "fieldname": "waktu_respon",
+   "fieldtype": "Datetime",
+   "label": "Waktu Respon"
+  },
+  {
+   "fieldname": "waktu_status",
+   "fieldtype": "Datetime",
+   "label": "Waktu Status"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "section_detail",
+   "fieldtype": "Section Break",
+   "label": "Detail Pesan & PDF"
+  },
+  {
+   "description": "Array pesan dari field 'pesan' dalam dataRespon",
+   "fieldname": "pesan_json",
+   "fieldtype": "Long Text",
+   "label": "Pesan JSON"
+  },
+  {
+   "description": "Private PDF file hasil decode base64 dari field 'Pdf'",
+   "fieldname": "pdf_file",
+   "fieldtype": "Link",
+   "label": "PDF File",
+   "options": "File"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-18 10:23:30.632818",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Customs Status Log Response",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
 }

@@ -1,7 +1,7 @@
 {
  "actions": [],
  "autoname": "field:no_aju",
- "creation": "2026-02-18 17:10:00",
+ "creation": "2026-03-26 08:10:56.698531",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -21,6 +21,9 @@
   "submission_datetime",
   "last_pull_datetime",
   "next_polling_time",
+  "is_external_doc",
+  "kode_kantor",
+  "linked_purchase_order",
   "section_payload",
   "payload_json",
   "last_response_raw",
@@ -45,7 +48,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Jenis Dokumen",
-   "options": "\nPIB\nPEB\nBC23\nBC25\nBC27\nBC20\nBC30\nPPFTZ",
+   "options": "\n16\n28\n23\n25\n261\n262\n27\n20\n30\n40\n41\n521",
    "reqd": 1
   },
   {
@@ -120,25 +123,26 @@
    "label": "Raw Response Terakhir (Audit)"
   },
   {
+   "bold": 1,
    "fieldname": "section_status",
    "fieldtype": "Section Break",
-   "label": "Riwayat Status"
+   "label": "LOG STATUS"
   },
   {
    "fieldname": "statuses",
    "fieldtype": "Table",
-   "label": "Status History",
+   "label": "LOG STATUS",
    "options": "Customs Status Log Status"
   },
   {
    "fieldname": "section_response",
    "fieldtype": "Section Break",
-   "label": "Riwayat Respon"
+   "label": "LOG Respon"
   },
   {
    "fieldname": "responses",
    "fieldtype": "Table",
-   "label": "Response History",
+   "label": "LOG Response",
    "options": "Customs Status Log Response"
   },
   {
@@ -162,11 +166,30 @@
    "fieldname": "next_polling_time",
    "fieldtype": "Datetime",
    "label": "Tarik Status Berikutnya"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "is_external_doc",
+   "fieldtype": "Check",
+   "label": "Is External Dokumen ( BC23 PJT / BC27 In)"
+  },
+  {
+   "fieldname": "kode_kantor",
+   "fieldtype": "Link",
+   "label": "KODE KANTOR DAFTAR",
+   "options": "Referensi Kantor"
+  },
+  {
+   "fieldname": "linked_purchase_order",
+   "fieldtype": "Link",
+   "label": "Link ke PO",
+   "options": "Purchase Order"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-15 23:58:27.466200",
+ "modified": "2026-03-26 11:10:08.307910",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Customs Status Log",

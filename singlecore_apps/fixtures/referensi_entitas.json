@@ -2,6 +2,46 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Entitas",
+  "kode_entitas": "16",
+  "modified": null,
+  "nama_entitas": "KONSOLIDATOR",
+  "name": "16"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "12",
+  "modified": null,
+  "nama_entitas": "PENANDATANGAN",
+  "name": "12"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "13",
+  "modified": null,
+  "nama_entitas": "VENDOR",
+  "name": "13"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "14",
+  "modified": null,
+  "nama_entitas": "PENGANGKUT",
+  "name": "14"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
+  "kode_entitas": "15",
+  "modified": null,
+  "nama_entitas": "AGEN PENGANGKUT",
+  "name": "15"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Entitas",
   "kode_entitas": "1",
   "modified": "2023-06-16 15:13:31.429306",
   "nama_entitas": "IMPORTIR",

@@ -7,26 +7,26 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "kode_proses",
-  "nama_proses"
+  "kode_status",
+  "nama_status"
  ],
  "fields": [
   {
-   "fieldname": "kode_proses",
+   "fieldname": "kode_status",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "KODE PROSES",
+   "label": "KODE STATUS",
    "reqd": 1
   },
   {
-   "fieldname": "nama_proses",
+   "fieldname": "nama_status",
    "fieldtype": "Data",
-   "label": "NAMA PROSES"
+   "label": "NAMA STATUS"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-15 21:38:11.300390",
+ "modified": "2026-03-28 09:33:47.720911",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Referensi Status",
@@ -44,6 +44,33 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Lv.2",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Lv.1",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EXIM Staff",
+   "share": 1
   }
  ],
  "row_format": "Dynamic",

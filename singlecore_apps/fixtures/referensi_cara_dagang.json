@@ -5,6 +5,126 @@
   "kode_cara_dagang": "1",
   "modified": "2023-06-16 14:14:39.624246",
   "nama_cara_dagang": "Biasa",
+  "name": "1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "2",
+  "modified": "2023-06-16 14:14:39.638098",
+  "nama_cara_dagang": "IMB - Imbal Dagang",
+  "name": "2"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "3",
+  "modified": "2023-06-16 14:14:39.645164",
+  "nama_cara_dagang": "PMK - Pembayaran dimuka / Advance Payment",
+  "name": "3"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "4",
+  "modified": "2023-06-16 14:14:39.648918",
+  "nama_cara_dagang": "KMD Bertahap - Pembayaran Kemudian / Open Account Tunai",
+  "name": "4"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "5",
+  "modified": "2023-06-16 14:14:39.652962",
+  "nama_cara_dagang": "KMD Tunai - Pembayaran Kemudian / Open Account Tunai",
+  "name": "5"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "6",
+  "modified": "2023-06-16 14:14:39.656769",
+  "nama_cara_dagang": "SLC - Sight Letter of Credit",
+  "name": "6"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "7",
+  "modified": "2023-06-16 14:14:39.660522",
+  "nama_cara_dagang": "ULC - Usance Letter of Credit",
+  "name": "7"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "8",
+  "modified": "2023-06-16 14:14:39.664280",
+  "nama_cara_dagang": "RLC - Red Clause Letter of Credit",
+  "name": "8"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "9",
+  "modified": "2023-06-16 14:14:39.668195",
+  "nama_cara_dagang": "WSI - Wessel Inkaso / Collection Draft",
+  "name": "9"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "10",
+  "modified": "2023-06-16 14:14:39.671810",
+  "nama_cara_dagang": "KON - Konsinyasi / Consignment",
+  "name": "10"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "11",
+  "modified": "2023-06-16 14:14:39.675683",
+  "nama_cara_dagang": "ICA - Inter Company Account",
+  "name": "11"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "12",
+  "modified": "2023-06-16 14:14:39.679608",
+  "nama_cara_dagang": "PDN Tunai - Pembayaran di Dalam Negeri Tunai",
+  "name": "12"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "13",
+  "modified": "2023-06-16 14:14:39.683381",
+  "nama_cara_dagang": "TT - Pembayaran di Dalam Negeri melalui Telegraph Transfer",
+  "name": "13"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "14",
+  "modified": "2023-06-16 14:14:39.687198",
+  "nama_cara_dagang": "NCV - Dilakukan tanpa pembayaran",
+  "name": "14"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "15",
+  "modified": "2023-06-16 14:14:39.691339",
+  "nama_cara_dagang": "Lainnya",
+  "name": "15"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Dagang",
+  "kode_cara_dagang": "1",
+  "modified": "2023-06-16 14:14:39.624246",
+  "nama_cara_dagang": "Biasa",
   "name": "e9ffc4d9e1"
  },
  {

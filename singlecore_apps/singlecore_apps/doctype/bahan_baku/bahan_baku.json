@@ -19,6 +19,7 @@
   "tipe",
   "ukuran",
   "spesifikasi_lain",
+  "column_break_cfyz",
   "kode_satuan",
   "jumlah_satuan",
   "kode_dokumen_asal",
@@ -30,6 +31,7 @@
   "netto",
   "bruto",
   "volume",
+  "column_break_pwjt",
   "cif",
   "cif_rupiah",
   "ndpbm",
@@ -188,7 +190,8 @@
   {
    "fieldname": "harga_penyerahan",
    "fieldtype": "Float",
-   "label": "HARGA PENYERAHAN"
+   "label": "HARGA PENYERAHAN",
+   "precision": "4"
   },
   {
    "fieldname": "harga_perolehan",
@@ -266,11 +269,19 @@
    "fieldname": "tab_2_tab",
    "fieldtype": "Tab Break",
    "label": "Tab 2"
+  },
+  {
+   "fieldname": "column_break_cfyz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pwjt",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-14 14:38:11.241208",
+ "modified": "2026-03-28 09:33:35.321207",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BAHAN BAKU",
@@ -285,6 +296,39 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Lv.2",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Lv.1",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EXIM Staff",
    "share": 1,
    "write": 1
   }

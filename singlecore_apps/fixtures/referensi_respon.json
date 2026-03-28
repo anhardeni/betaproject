@@ -1,1 +1,362 @@
-[]
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "1",
+  "modified": "2026-03-15 21:46:33.450498",
+  "name": "1",
+  "uraian_respon": "Perekaman Dokumen"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "100",
+  "modified": "2026-03-15 21:46:33.507744",
+  "name": "100",
+  "uraian_respon": "Penerimaan Data"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "104",
+  "modified": "2026-03-15 21:46:33.518274",
+  "name": "104",
+  "uraian_respon": "Kirim Dokumen Ke INSW"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "105",
+  "modified": "2026-03-15 21:46:33.529354",
+  "name": "105",
+  "uraian_respon": "LNSW - Penerimaan Dokumen"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "106",
+  "modified": "2026-03-15 21:46:33.541275",
+  "name": "106",
+  "uraian_respon": "LNSW - Cek Mandatory Content"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "107",
+  "modified": "2026-03-15 21:46:33.551208",
+  "name": "107",
+  "uraian_respon": "LNSW - Analyzing Point"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "108",
+  "modified": "2026-03-15 21:46:33.561813",
+  "name": "108",
+  "uraian_respon": "LNSW - Konfirmasi Skep"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "110",
+  "modified": "2026-03-15 21:46:33.572081",
+  "name": "110",
+  "uraian_respon": "Validasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "111",
+  "modified": "2026-03-15 21:46:33.581579",
+  "name": "111",
+  "uraian_respon": "Proses Validasi"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "120",
+  "modified": "2026-03-15 21:46:33.590909",
+  "name": "120",
+  "uraian_respon": "Reject"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "130",
+  "modified": "2026-03-15 21:46:33.600989",
+  "name": "130",
+  "uraian_respon": "Penerimaan Dokumen"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "200",
+  "modified": "2026-03-15 21:46:33.612649",
+  "name": "200",
+  "uraian_respon": "Analyzing Point"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "205",
+  "modified": "2026-03-15 21:46:33.625181",
+  "name": "205",
+  "uraian_respon": "Pengecekan Jaminan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "210",
+  "modified": "2026-03-15 21:46:33.635008",
+  "name": "210",
+  "uraian_respon": "Payment Verification"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "220",
+  "modified": "2026-03-15 21:46:33.647638",
+  "name": "220",
+  "uraian_respon": "Pre-Notification"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "225",
+  "modified": "2026-03-15 21:46:33.658026",
+  "name": "225",
+  "uraian_respon": "Approval Similarity"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "230",
+  "modified": "2026-03-15 21:46:33.669271",
+  "name": "230",
+  "uraian_respon": "Siap Jalur"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "240",
+  "modified": "2026-03-15 21:46:33.683213",
+  "name": "240",
+  "uraian_respon": "Penjaluran"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "300",
+  "modified": "2026-03-15 21:46:33.693622",
+  "name": "300",
+  "uraian_respon": "Pemeriksaan Fisik"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "330",
+  "modified": "2026-03-15 21:46:33.701799",
+  "name": "330",
+  "uraian_respon": "Pemeriksaan Barang"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "400",
+  "modified": "2026-03-15 21:46:33.712521",
+  "name": "400",
+  "uraian_respon": "Pemeriksaan Dokumen"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "410",
+  "modified": "2026-03-15 21:46:33.722703",
+  "name": "410",
+  "uraian_respon": "INP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "415",
+  "modified": "2026-03-15 21:46:33.731304",
+  "name": "415",
+  "uraian_respon": "LAB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "440",
+  "modified": "2026-03-15 21:46:33.739070",
+  "name": "440",
+  "uraian_respon": "SPTNP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "500",
+  "modified": "2026-03-15 21:46:33.746841",
+  "name": "500",
+  "uraian_respon": "Gate In TPS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "501",
+  "modified": "2026-03-15 21:46:33.754727",
+  "name": "501",
+  "uraian_respon": "Gate Out TPS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "502",
+  "modified": "2026-03-15 21:46:33.762699",
+  "name": "502",
+  "uraian_respon": "Pelekatan Segel"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "503",
+  "modified": "2026-03-15 21:46:33.769910",
+  "name": "503",
+  "uraian_respon": "Pembukaan Segel"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "510",
+  "modified": "2026-03-15 21:46:33.778618",
+  "name": "510",
+  "uraian_respon": "Gate In TPB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "511",
+  "modified": "2026-03-15 21:46:33.784486",
+  "name": "511",
+  "uraian_respon": "Pembongkaran"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "512",
+  "modified": "2026-03-15 21:46:33.793565",
+  "name": "512",
+  "uraian_respon": "Stuffing"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "513",
+  "modified": "2026-03-15 21:46:33.801447",
+  "name": "513",
+  "uraian_respon": "Area Transit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "514",
+  "modified": "2026-03-15 21:46:33.809878",
+  "name": "514",
+  "uraian_respon": "Gate Out TPB"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "800",
+  "modified": "2026-03-15 21:46:33.816447",
+  "name": "800",
+  "uraian_respon": "Selesai Proses"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "900",
+  "modified": "2026-03-15 21:46:33.826234",
+  "name": "900",
+  "uraian_respon": "Pembatalan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "981",
+  "modified": "2026-03-15 21:46:33.832455",
+  "name": "981",
+  "uraian_respon": "Penelitian Unit Pengawas"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "960",
+  "modified": "2026-03-15 21:46:33.840850",
+  "name": "960",
+  "uraian_respon": "Perekaman Perbaikan Portal"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "961",
+  "modified": "2026-03-15 21:46:33.847953",
+  "name": "961",
+  "uraian_respon": "Penelitian Perbaikan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "962",
+  "modified": "2026-03-15 21:46:33.855903",
+  "name": "962",
+  "uraian_respon": "Perekaman Perbaikan Inhouse"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "963",
+  "modified": "2026-03-15 21:46:33.863953",
+  "name": "963",
+  "uraian_respon": "Validasi Perbaikan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "965",
+  "modified": "2026-03-15 21:46:33.871092",
+  "name": "965",
+  "uraian_respon": "Penolakan Perbaikan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "966",
+  "modified": "2026-03-15 21:46:33.881355",
+  "name": "966",
+  "uraian_respon": "Persetujuan Perbaikan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "969",
+  "modified": "2026-03-15 21:46:33.890382",
+  "name": "969",
+  "uraian_respon": "Pembatalan Perbaikan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "970",
+  "modified": "2026-03-15 21:46:33.901214",
+  "name": "970",
+  "uraian_respon": "Perbaikan RH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Respon",
+  "kode_respon": "971",
+  "modified": "2026-03-15 21:46:33.910225",
+  "name": "971",
+  "uraian_respon": "Perbaikan RH Selesai"
+ }
+]

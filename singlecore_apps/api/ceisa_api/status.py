@@ -190,3 +190,106 @@ def cetak_formulir(nomor_aju):
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Cetak Formulir Error")
         return {"status": "error", "message": str(e)}
+
+def send_completion_notification(log, response):
+    """
+    Mengirimkan email notifikasi ke Pembuat (Owner) dokumen dan Manajer
+    ketika dokumen menerima respon SPPB atau NPE.
+    
+    Args:
+        log (Document): Objek Customs Status Log
+        response (dict/str): Baris respon terakhir dari CEISA
+    """
+    # 1. Menyiapkan Data Dokumen
+    no_aju = log.no_aju
+    nomor_daftar = response.get("nomorDaftar") or log.nopen
+    waktu_respon = response.get("waktuRespon")
+    kode_respon = response.get("kodeRespon")
+    keterangan = response.get("keterangan") or "Selesai"
+    
+    # 2. Mendapatkan URL Dokumen untuk link (Memudahkan user langsung klik)
+    from frappe.utils import get_url
+    doc_link = get_url(f"/app/customs-status-log/{log.name}")
+    
+    # 3. Mendapatkan Daftar Email Penerima
+    recipients = []
+    
+    # A. Email Pembuat (Owner)
+    owner_email = frappe.db.get_value("User", log.owner, "email")
+    if owner_email:
+        recipients.append(owner_email)
+        
+    # B. Email Manajer (Optimal Decision: Ambil dari Role tertentu)
+    # Contoh: Mengirim ke semua user yang memiliki role "System Manager" atau "Customs Manager"
+    manager_roles = ["System Manager", "Customs Manager"] # Sesuaikan dengan Role di perusahaan Anda
+    managers = frappe.get_all("Has Role", 
+        filters={"role": ["in", manager_roles], "parenttype": "User"}, 
+        fields=["parent"]
+    )
+    
+    for mgr in managers:
+        mgr_email = frappe.db.get_value("User", mgr.parent, "email")
+        if mgr_email and mgr_email not in recipients:
+            recipients.append(mgr_email)
+            
+    # Jika tidak ada email satupun yang ditemukan, hentikan fungsi
+    if not recipients:
+        frappe.logger("customs_status_log").warning(f"Tidak ada email penerima untuk notifikasi Aju {no_aju}")
+        return
+    # 4. Menyusun Template Email (HTML)
+    subject = f"Pemberitahuan: Respon {kode_respon} untuk No Aju {no_aju}"
+    
+    message = f"""
+    <h3>Pemberitahuan Status Dokumen Bea Cukai</h3>
+    <p>Dokumen Anda telah menerima respon akhir (<b>{kode_respon}</b>) dari sistem CEISA.</p>
+    
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 600px;">
+        <tr>
+            <th style="background-color: #f8f9fa; text-align: left; width: 30%;">Nomor Aju</th>
+            <td>{no_aju}</td>
+        </tr>
+        <tr>
+            <th style="background-color: #f8f9fa; text-align: left;">Nomor Daftar</th>
+            <td>{nomor_daftar}</td>
+        </tr>
+        <tr>
+            <th style="background-color: #f8f9fa; text-align: left;">Respon</th>
+            <td><strong>{kode_respon}</strong> - {keterangan}</td>
+        </tr>
+        <tr>
+            <th style="background-color: #f8f9fa; text-align: left;">Waktu Respon</th>
+            <td>{waktu_respon}</td>
+        </tr>
+    </table>
+    
+    <br>
+    <p>Silakan klik tombol di bawah ini untuk melihat detail dokumen (dan mendownload file PDF jika tersedia):</p>
+    <a href="{doc_link}" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">Lihat Dokumen di ERPNext</a>
+    <br><br>
+    <p><i>Email ini dikirim secara otomatis oleh sistem.</i></p>
+    """
+    # 5. Menyiapkan Lampiran (Attachment) PDF jika ada
+    attachments = []
+    pdf_link = response.get("pdf_file")
+    if pdf_link:
+        # Menambahkan URL file lokal ke dalam daftar lampiran email frappe
+        attachments.append({"file_url": pdf_link})
+    # 6. Mengambil Email Pengirim dari Profil Perusahaan (Jika di-set)
+    sender_email = None
+    if log.get("company"):
+        company_email = frappe.db.get_value("Company", log.get("company"), "email")
+        if company_email:
+            sender_email = company_email
+    # 7. Mengirim Email (Gunakan background worker agar API stabil)
+    frappe.sendmail(
+        sender=sender_email, # Akan menggunakan email sistem default jika ini None
+        recipients=recipients,
+        subject=subject,
+        message=message,
+        attachments=attachments,
+        now=False
+    )
+    
+    frappe.logger("customs_status_log").info(f"Email notifikasi {kode_respon} dikirim ke {len(recipients)} penerima untuk Aju {no_aju}")
+    log.add_comment("Comment", f"Notifikasi email {kode_respon} telah dikirimkan secara otomatis.")
+

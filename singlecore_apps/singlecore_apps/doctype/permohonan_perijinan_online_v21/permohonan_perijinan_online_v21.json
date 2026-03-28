@@ -80,8 +80,6 @@
   "no_polis",
   "tanggal_polis",
   "upload_polis",
-  "penelitian_putusan_tab",
-  "penelitian_dan_keputusan",
   "amended_from"
  ],
  "fields": [
@@ -485,44 +483,25 @@
    "label": "Upload Polis"
   },
   {
-   "fieldname": "penelitian_putusan_tab",
-   "fieldtype": "Tab Break",
-   "label": "Penelitian Putusan"
-  },
-  {
-   "fieldname": "penelitian_dan_keputusan",
-   "fieldtype": "Table",
-   "label": "Penelitian Dan Keputusan",
-   "options": "Penelitian dan Keputusan"
-  },
-  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
    "options": "PERMOHONAN PERIJINAN ONLINE V21",
    "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "PERMOHONAN PERIJINAN ONLINE V21",
-   "print_hide": 1,
-   "read_only": 1
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2023-11-17 14:52:44.717858",
+ "modified": "2026-03-28 09:33:29.487968",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "PERMOHONAN PERIJINAN ONLINE V21",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -541,16 +520,17 @@
    "create": 1,
    "email": 1,
    "export": 1,
-   "if_owner": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "User Lv.1",
+   "role": "User Analis",
    "share": 1,
    "write": 1
   },
   {
+   "cancel": 1,
    "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
@@ -558,20 +538,39 @@
    "report": 1,
    "role": "User Lv.2",
    "share": 1,
+   "submit": 1,
    "write": 1
   },
   {
+   "cancel": 1,
    "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "User Analis",
+   "role": "User Lv.1",
    "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EXIM Staff",
+   "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

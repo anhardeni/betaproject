@@ -39,7 +39,8 @@ doctype_js = {
     # HEADER V21 - both integrations
     "HEADER V21": ["public/js/erpnext_integration.js", "public/js/erpnext_export_integration.js"],
     # Customs Status Log - Pull Now button & status badge
-    "Customs Status Log": "public/js/customs_status_log.js"
+    "Customs Status Log": "public/js/customs_status_log.js", 
+    "Role": "public/js/custom_role.js"
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
@@ -126,7 +127,8 @@ doctype_js = {
 
 scheduler_events = {
 	"hourly": [
-		"singlecore_apps.singlecore_apps.doctype.customs_status_log.customs_status_log.update_all_active_status"
+		"singlecore_apps.singlecore_apps.doctype.customs_status_log.customs_status_log.update_all_active_status",
+        "singlecore_apps.api.ceisa_api.external_sync.smart_ceisa_polling"
 	],
 }
 
@@ -202,7 +204,23 @@ scheduler_events = {
 fixtures = [
     {"dt": "Custom Field", "filters": [["module", "=", "Singlecore Apps"]]},
     {"dt": "Workspace", "filters": [["module", "=", "Singlecore Apps"]]},
+    {"dt": "Role", "filters": [["is_custom", "=", 1]]},
+    "Referensi Asal Barang",
+    "Referensi Asal Barang FTZ",
+    "Referensi Bank",
+    "Referensi Cara Angkut",
+    "Referensi Cara Bayar",
+    "Referensi Cara Dagang",
+    "Referensi Catatan Petugas",
+    "Referensi Catatan Petugas1",
+    "Referensi Daerah Asal",
+    "Referensi Dokumen",
+    "Referensi Entitas",
+    "Referensi Fasilitas",
+    "Referensi Fasilitas Tarif",
+    "Referensi Fasilitas Tarif Baru",
     "Referensi Gudang",
+    "Referensi HS 2022 v1",
     "Referensi Ijin",
     "Referensi Incoterm",
     "Referensi Jenis API",
@@ -212,11 +230,11 @@ fixtures = [
     "Referensi Jenis Jaminan",
     "Referensi Jenis Kemasan",
     "Referensi Jenis Kontainer",
-    "Referensi Layanan Fix",
+    "Referensi Jenis Pengangkutan",
     "Referensi Jenis Pib",
     "Referensi Jenis Pungutan",
-    "Referensi Jenis TPB",
     "Referensi Jenis Tarif",
+    "Referensi Jenis TPB",
     "Referensi Jenis Transaksi Perdagangan",
     "Referensi Jenis VD",
     "Referensi Kantor",
@@ -224,8 +242,11 @@ fixtures = [
     "Referensi Kategori Barang",
     "Referensi Kategori Ekspor",
     "Referensi Kategori Keluar FTZ",
+    "Referensi Kategori Konsolidator",
     "Referensi Komoditi Cukai",
     "Referensi Kondisi Barang",
+    "Referensi Layanan",
+    "Referensi Layanan Fix",
     "Referensi Lokasi Bayar",
     "Referensi Negara",
     "Referensi Pelabuhan Dalam Negeri",
@@ -234,6 +255,7 @@ fixtures = [
     "Referensi Respon",
     "Referensi Satuan Barang",
     "Referensi Spesifikasi Khusus",
+    "Referensi Spesifikasi Khusus Detail",
     "Referensi Status",
     "Referensi Status Pengusaha",
     "Referensi Tipe Kontainer",

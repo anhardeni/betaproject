@@ -132,7 +132,39 @@ def send_document(payload, is_final=False):
         url = f"{base_url}/openapi/document?isFinal={final_str}"
 
         response = _post_with_retry(url, _clean_payload(payload), token, "send_document")
-        return _parse_response(response)
+        result = _parse_response(response) # hasil: {status, http_code, data}
+        
+        # -------------------------------------------------------------------
+        # 2. FILTER "BEBAS ERROR" (Di sinilah kail otomasi kita pasang)
+        # -------------------------------------------------------------------
+        # Pastikan kita hanya membuat Log Status JIKA dokumen ini adalah FINAL
+        # dan respons dari CEISA menyatakan sukses (status == 'success' atau http_code == 200)
+        
+        if is_final and result.get("http_code") in [200, 201] and result.get("status") != "error":
+            
+            # Kita harus ekstrak Nomor Aju dari payload karena kita tidak melempar header_doc
+            payload_dict = payload if isinstance(payload, dict) else json.loads(payload)
+            no_aju_dikirim = payload_dict.get("nomorAju")
+            
+            if no_aju_dikirim:
+                # Ambil dokumen HEADER V21 asli dari database untuk mendapatkan 'company' dan 'kode_dokumen'
+                if frappe.db.exists("HEADER V21", no_aju_dikirim):
+                    header_doc = frappe.get_doc("HEADER V21", no_aju_dikirim)
+                    
+                    # PANGGIL FUNGSI THE HANDOFF 
+                    from singlecore_apps.singlecore_apps.doctype.header_v21.header_v21 import auto_create_customs_log
+                    
+                    # Lempar objek dokumen, string payload asli, dan balasan utuh CEISA
+                    payload_str = payload if isinstance(payload, str) else json.dumps(payload)
+                    response_raw_str = json.dumps(result)
+                    
+                    # Panggil Pembuatan Log Pabean
+                    auto_create_customs_log(header_doc, payload_str, response_raw_str)
+        # -------------------------------------------------------------------
+
+        # Kembalikan response normal ke UI
+        return result    
+        
 
     except requests.exceptions.HTTPError as e:
         frappe.log_error(frappe.get_traceback(), "Send Document Error")

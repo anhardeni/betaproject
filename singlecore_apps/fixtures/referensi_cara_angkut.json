@@ -2,6 +2,30 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Cara Angkut",
+  "kode_cara_angkut": "11",
+  "modified": null,
+  "nama_cara_angkut": " PIPA",
+  "name": "11"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Angkut",
+  "kode_cara_angkut": "12",
+  "modified": null,
+  "nama_cara_angkut": "TRANSMISI",
+  "name": "12"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Angkut",
+  "kode_cara_angkut": "10",
+  "modified": "2026-01-01 21:30:39.325504",
+  "nama_cara_angkut": "INSTALASI",
+  "name": "10"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Cara Angkut",
   "kode_cara_angkut": "1",
   "modified": "2023-06-08 14:07:42.439378",
   "nama_cara_angkut": "LAUT",

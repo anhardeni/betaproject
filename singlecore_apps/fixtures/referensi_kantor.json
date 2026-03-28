@@ -1498,14 +1498,6 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Kantor",
-  "kode_kantor": "10100",
-  "modified": "2023-06-21 14:53:38.529295",
-  "nama_kantor_pendek": "KPPBC KUALANAMU",
-  "name": "411400e339"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
   "kode_kantor": "10700",
   "modified": "2023-06-21 14:53:38.533121",
   "nama_kantor_pendek": "KPPBC ELAWAN",
@@ -1542,14 +1534,6 @@
   "modified": "2023-06-21 14:53:38.548381",
   "nama_kantor_pendek": "KPPBC TELUK NIBUNG",
   "name": "032f295d71"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
-  "kode_kantor": "11200",
-  "modified": "2023-06-21 14:53:38.552245",
-  "nama_kantor_pendek": "KPPBC KUALA TANJUNG",
-  "name": "10d42e1543"
  },
  {
   "docstatus": 0,
@@ -1614,14 +1598,6 @@
   "modified": "2023-06-21 14:53:38.583567",
   "nama_kantor_pendek": "KPU BATAM",
   "name": "0c61cd9b0f"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
-  "kode_kantor": "20500",
-  "modified": "2023-06-21 14:53:38.587654",
-  "nama_kantor_pendek": "KPPBC TANJUNG PINANG",
-  "name": "73d5a290ca"
  },
  {
   "docstatus": 0,
@@ -1738,14 +1714,6 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Kantor",
-  "kode_kantor": "30500",
-  "modified": "2023-06-21 14:53:38.648096",
-  "nama_kantor_pendek": "KPPBC TANJUNGPANDAN",
-  "name": "705e7ff5dc"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
   "kode_kantor": "30600",
   "modified": "2023-06-21 14:53:38.652113",
   "nama_kantor_pendek": "KPPBC JAMBI",
@@ -1770,26 +1738,10 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Kantor",
-  "kode_kantor": "40300",
-  "modified": "2023-06-21 14:53:38.664359",
-  "nama_kantor_pendek": "KPU TANJUNG PRIOK",
-  "name": "e3cfaddd94"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
   "kode_kantor": "40400",
   "modified": "2023-06-21 14:53:38.668225",
   "nama_kantor_pendek": "KPPBC JAKARTA",
   "name": "55c60f3784"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
-  "kode_kantor": "40500",
-  "modified": "2023-06-21 14:53:38.672197",
-  "nama_kantor_pendek": "BLBC KELAS I JAKARTA",
-  "name": "3d36ca57b3"
  },
  {
   "docstatus": 0,
@@ -1802,14 +1754,6 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Kantor",
-  "kode_kantor": "40700",
-  "modified": "2023-06-21 14:53:38.680498",
-  "nama_kantor_pendek": "PANGSAROP TANJUNG PRIOK",
-  "name": "6fee93a244"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
   "kode_kantor": "50000",
   "modified": "2023-06-21 14:53:38.684250",
   "nama_kantor_pendek": "KANWIL JABAR",
@@ -1818,34 +1762,10 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Kantor",
-  "kode_kantor": "50100",
-  "modified": "2023-06-21 14:53:38.688282",
-  "nama_kantor_pendek": "KPU SOEKARNO-HATTA",
-  "name": "b5ddd6cb22"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
   "kode_kantor": "50300",
   "modified": "2023-06-21 14:53:38.692194",
   "nama_kantor_pendek": "KPPBC BOGOR",
   "name": "ea0e7f4e5b"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
-  "kode_kantor": "50400",
-  "modified": "2023-06-21 14:53:38.696138",
-  "nama_kantor_pendek": "KPPBC TMP MERAK",
-  "name": "235e847eea"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
-  "kode_kantor": "50500",
-  "modified": "2023-06-21 14:53:38.699987",
-  "nama_kantor_pendek": "KPPBC BANDUNG",
-  "name": "9429c739de"
  },
  {
   "docstatus": 0,
@@ -1894,14 +1814,6 @@
   "modified": "2023-06-21 14:53:38.726967",
   "nama_kantor_pendek": "KANWIL JATENG DIY",
   "name": "3815ebdcbb"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
-  "kode_kantor": "60100",
-  "modified": "2023-06-21 14:53:38.731628",
-  "nama_kantor_pendek": "KPPBC TMP TANJUNG EMAS",
-  "name": "2005672d19"
  },
  {
   "docstatus": 0,
@@ -1982,14 +1894,6 @@
   "modified": "2023-06-21 14:53:38.776963",
   "nama_kantor_pendek": "KANWIL JATIM I",
   "name": "d8ec95ae2b"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
-  "kode_kantor": "70100",
-  "modified": "2023-06-21 14:53:38.781684",
-  "nama_kantor_pendek": "KPPBC TMP TANJUNG PERAK",
-  "name": "fe1cff3bc6"
  },
  {
   "docstatus": 0,
@@ -2098,14 +2002,6 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Kantor",
-  "kode_kantor": "71500",
-  "modified": "2023-06-21 14:53:38.843652",
-  "nama_kantor_pendek": "KPPBC SIDOARJO",
-  "name": "72b6b7d96d"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
   "kode_kantor": "80000",
   "modified": "2023-06-21 14:53:38.847984",
   "nama_kantor_pendek": "KANWIL BALI, NTB DAN NTT",
@@ -2142,14 +2038,6 @@
   "modified": "2023-06-21 14:53:38.865449",
   "nama_kantor_pendek": "KPPBC SUMBAWA",
   "name": "eb803fea60"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
-  "kode_kantor": "80500",
-  "modified": "2023-06-21 14:53:38.870819",
-  "nama_kantor_pendek": "KPPBC KUPANG",
-  "name": "36247ec91d"
  },
  {
   "docstatus": 0,
@@ -2218,14 +2106,6 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Kantor",
-  "kode_kantor": "90500",
-  "modified": "2023-06-21 14:53:38.925090",
-  "nama_kantor_pendek": "KPPBC SINTETE",
-  "name": "b73af6cfae"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
   "kode_kantor": "90700",
   "modified": "2023-06-21 14:53:38.934967",
   "nama_kantor_pendek": "KPPBC SAMPIT",
@@ -2290,22 +2170,6 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Kantor",
-  "kode_kantor": "100300",
-  "modified": "2023-06-21 14:53:38.987016",
-  "nama_kantor_pendek": "KPPBC BALIKPAPAN",
-  "name": "9584c008f7"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
-  "kode_kantor": "100500",
-  "modified": "2023-06-21 14:53:38.991857",
-  "nama_kantor_pendek": "KPPBC SAMARINDA",
-  "name": "49fff190b9"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
   "kode_kantor": "100600",
   "modified": "2023-06-21 14:53:38.996516",
   "nama_kantor_pendek": "KPPBC BONTANG",
@@ -2366,14 +2230,6 @@
   "modified": "2023-06-21 14:53:39.030978",
   "nama_kantor_pendek": "KPPBC MALILI",
   "name": "eb12a6c0ac"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
-  "kode_kantor": "110500",
-  "modified": "2023-06-21 14:53:39.035918",
-  "nama_kantor_pendek": "KPPBC BAJOE",
-  "name": "23a479399b"
  },
  {
   "docstatus": 0,
@@ -2490,14 +2346,6 @@
  {
   "docstatus": 0,
   "doctype": "Referensi Kantor",
-  "kode_kantor": "120500",
-  "modified": "2023-06-21 14:53:39.110547",
-  "nama_kantor_pendek": "KPPBC FAK-FAK",
-  "name": "4e9451a33e"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
   "kode_kantor": "120600",
   "modified": "2023-06-21 14:53:39.115620",
   "nama_kantor_pendek": "KPPBC JAYAPURA",
@@ -2606,22 +2454,6 @@
   "modified": "2023-06-21 14:53:39.169907",
   "nama_kantor_pendek": "KPPBC MEULABOH",
   "name": "50b3a78220"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
-  "kode_kantor": "130500",
-  "modified": "2023-06-21 14:53:39.173875",
-  "nama_kantor_pendek": "KPPBC LHOKSEUMAWE",
-  "name": "5e2e64b14b"
- },
- {
-  "docstatus": 0,
-  "doctype": "Referensi Kantor",
-  "kode_kantor": "130600",
-  "modified": "2023-06-21 14:53:39.178358",
-  "nama_kantor_pendek": "KPPBC KUALA LANGSA",
-  "name": "235dda7841"
  },
  {
   "docstatus": 0,

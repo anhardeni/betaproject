@@ -274,7 +274,7 @@ def get_ceisa_bc27_json(nomor_aju):
                 bb_item = {
                     "cif": round_decimal(bb.get("cif"), 2),
                     "cifRupiah": round_decimal(bb.get("cif_rupiah"), 2),
-                    "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 4),
+                    "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 2),
                     "hargaPerolehan": round_decimal(bb.get("harga_perolehan"), 2),
                     "jumlahSatuan": round_decimal(bb.get("jumlah_satuan"), 4),
                     "kodeAsalBahanBaku": bb.get("kode_asal_bahan_baku") or "0",
@@ -1071,7 +1071,7 @@ def get_ceisa_bc25_json(nomor_aju):
                 bb_item = {
                     "cif": round_decimal(bb.get("cif"), 2),
                     "cifRupiah": round_decimal(bb.get("cif_rupiah"), 2),
-                    "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 4),
+                    "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 2),
                     "hargaPerolehan": round_decimal(bb.get("harga_perolehan"), 2),
                     "jumlahSatuan": round_decimal(bb.get("jumlah_satuan"), 4),
                     "kodeSatuanBarang": bb.get("kode_satuan") or "",
@@ -1708,7 +1708,7 @@ def get_ceisa_bc41_json(nomor_aju):
                 bb_item = {
                     "cif": round_decimal(bb.get("cif"), 2),
                     "cifRupiah": round_decimal(bb.get("cif_rupiah"), 2),
-                    "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 4),
+                    "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 2),
                     "hargaPerolehan": round_decimal(bb.get("harga_perolehan"), 2),
                     "jumlahSatuan": round_decimal(bb.get("jumlah_satuan"), 4),
                     "kodeSatuanBarang": bb.get("kode_satuan") or "",
@@ -2066,7 +2066,7 @@ def get_ceisa_bc262_json(nomor_aju):
                 bb_item = {
                     "cif": round_decimal(bb.get("cif"), 2),
                     "cifRupiah": round_decimal(bb.get("cif_rupiah"), 2),
-                    "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 4),
+                    "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 2),
                     "hargaPerolehan": round_decimal(bb.get("harga_perolehan"), 2),
                     "jumlahSatuan": round_decimal(bb.get("jumlah_satuan"), 4),
                     "kodeAsalBahanBaku": bb.get("kode_asal_bahan_baku") or "0",
@@ -2308,7 +2308,7 @@ def get_ceisa_bc261_json(nomor_aju):
                     "cif": round_decimal(bb.get("cif"), 2),
                     "cifRupiah": round_decimal(bb.get("cif_rupiah"), 2),
                     "flagTis": "0", # Required
-                    "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 4),
+                    "hargaPenyerahan": round_decimal(bb.get("harga_penyerahan"), 2),
                     "hargaPerolehan": round_decimal(bb.get("harga_perolehan"), 2),
                     "isiPerKemasan": 0, # Required, default
                     "jumlahSatuan": round_decimal(bb.get("jumlah_satuan"), 4),

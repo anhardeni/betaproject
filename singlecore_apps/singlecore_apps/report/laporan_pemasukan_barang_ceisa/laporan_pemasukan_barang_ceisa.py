@@ -1,16 +1,11 @@
 # Copyright (c) 2026, AnharDeni and contributors
 # For license information, please see license.txt
-
 import frappe
 from frappe import _
-
-
 def execute(filters=None):
 	columns = get_columns()
 	data = get_data(filters)
 	return columns, data
-
-
 def get_columns():
 	return [
 		{
@@ -46,7 +41,8 @@ def get_columns():
 		{
 			"label": _("Bukti Penerimaan / GRN"),
 			"fieldname": "grn",
-			"fieldtype": "Data",
+			"fieldtype": "Link",
+            "options": "HEADER V21", # Menambahkan link ke dokumen aslinya
 			"width": 150,
 		},
 		{
@@ -98,8 +94,6 @@ def get_columns():
 			"width": 120,
 		},
 	]
-
-
 def get_data(filters):
 	filters = filters or {}
 	from_date = filters.get("from_date")
@@ -107,37 +101,46 @@ def get_data(filters):
 	bc_type = filters.get("bc_type")
 	supplier = filters.get("supplier")
 	item_code = filters.get("item_code")
-
 	bc_map = {
 		"BC23": "23",
 		"BC40": "40",
 		"BC16": "16",
 		"BC262": "262",
 		"BC20": "20",
-			}
-
+	}
 	conditions = "1=1"
 	if from_date:
 		conditions += " AND h.tanggal_pernyataan >= %(from_date)s"
 	if to_date:
 		conditions += " AND h.tanggal_pernyataan <= %(to_date)s"
+	
 	if bc_type and bc_type != "Semua":
 		if bc_type in bc_map:
 			conditions += " AND h.kode_dokumen = %(kode_dokumen)s"
 		elif bc_type == "Lainnya":
 			conditions += " AND h.kode_dokumen NOT IN ('23', '40', '16', '262')"
-
 	if supplier:
 		conditions += " AND ent.nama_entitas LIKE %(supplier)s"
 	if item_code:
 		conditions += " AND b.kode_barang LIKE %(item_code)s"
-
+	# =====================================================================
+	# PERBAIKAN FATAL: INTEGRASI NOPEN DARI CUSTOMS STATUS LOG
+	# Kita join ke tabCustoms Status Log (csl) menggunakan nomoraju h.name
+	# csl.nopen menjadi No Daftar, dan csl.nopen_date menjadi Tgl Daftar
+	# =====================================================================
+    
 	query = f"""
 		SELECT
-			h.tanggal_pernyataan AS tanggal,
+			IFNULL(csl.nopen_date, h.tanggal_pernyataan) AS tanggal,
 			CONCAT('BC', h.kode_dokumen) AS data_dok_pabean,
-			h.nomoraju AS no_daftar,
-			h.tanggal_pernyataan AS tgl_daftar,
+			
+            -- PERBAIKAN: Mengambil Nopen dari Log.
+            -- Jika masih proses, tampilkan teks placeholder (opsional) atau kosongkan
+			IFNULL(csl.nopen, 'Belum Ada Nopen') AS no_daftar,
+			
+            -- PERBAIKAN: Mengambil Tgl Daftar dari Log.
+			csl.nopen_date AS tgl_daftar,
+			
 			h.name AS grn,
 			ent.nama_entitas AS pengirim_barang,
 			b.kode_barang AS item_code,
@@ -152,13 +155,16 @@ def get_data(filters):
 		INNER JOIN
 			`tabBARANG V1` b ON b.nomoraju = h.name
 		LEFT JOIN
-			`tabENTITAS` ent ON ent.nomoraju = h.name AND ent.kode_entitas IN ('1', '2')
+			`tabENTITAS` ent ON ent.nomoraju = h.name AND ent.kode_entitas = '1' /* Catatan: '1' biasanya Importir, pastikan ini Pemasok */
+		
+        -- PERBAIKAN: LEFT JOIN ke Customs Status Log untuk menarik data Bea Cukai ASLI
+        LEFT JOIN
+            `tabCustoms Status Log` csl ON csl.no_aju = h.nomoraju
 		WHERE
 			{conditions}
 		ORDER BY
-			h.tanggal_pernyataan DESC, h.name ASC
+			csl.nopen_date DESC, h.name ASC
 	"""
-
 	data = frappe.db.sql(query, {
 		"from_date": from_date,
 		"to_date": to_date,
@@ -166,9 +172,7 @@ def get_data(filters):
 		"supplier": f"%{supplier}%" if supplier else None,
 		"item_code": f"%{item_code}%" if item_code else None
 	}, as_dict=True)
-
 	# Add running number
 	for idx, row in enumerate(data, start=1):
 		row["no"] = idx
-
 	return data

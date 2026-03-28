@@ -33,7 +33,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-06 18:03:51.932006",
+ "modified": "2026-03-28 09:33:45.598770",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Referensi Kategori Ekspor",
@@ -50,6 +50,33 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Lv.2",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Lv.1",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EXIM Staff",
+   "share": 1
   }
  ],
  "row_format": "Dynamic",

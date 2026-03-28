@@ -528,7 +528,7 @@
    "link_fieldname": "parent_barang"
   }
  ],
- "modified": "2026-03-14 14:30:57.496700",
+ "modified": "2026-03-28 09:33:30.484434",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "BARANG V1",
@@ -556,6 +556,39 @@
    "read": 1,
    "report": 1,
    "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Lv.2",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "User Lv.1",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EXIM Staff",
    "share": 1,
    "write": 1
   }

@@ -21,13 +21,13 @@ import json
 import base64
 import frappe
 from frappe.model.document import Document
-from frappe.utils import now_datetime, today, add_minutes, get_datetime
+from frappe.utils import now_datetime, today, add_to_date, get_datetime, add_days, nowdate
 
 # ─── Master-status set that requires continued polling ──────────────────────
 ACTIVE_STATUSES = {"Pending", "Registered", "On Hold"}
 
 # ─── kodeRespon values that indicate final-release / completed ───────────────
-COMPLETED_RESPON_CODES = {"SPPB", "NPE", "SPBL", "SPPD"}  # adjust to real codes
+COMPLETED_RESPON_CODES = {"SPPB", "NPE", "SPPD"}  # adjust to real codes, SPBL dihapus karena statusnya belum pasti/final
 
 # ─── kodeStatus / keterangan patterns for rejection ─────────────────────────
 REJECTED_STATUS_CODES = {"TOLAK", "REJECT"}
@@ -186,7 +186,7 @@ def pull_status_for_log(log_name):
         new_interval = min((log.polling_interval or 5) * 2, 720)
         log.db_set({
             "polling_interval": new_interval,
-            "next_polling_time": add_minutes(now, new_interval),
+            "next_polling_time": add_to_date(now, minutes=new_interval),
             "retry_count": (log.retry_count or 0) + 1
         })
         return {"status": "api_error", "message": result.get("message")}
@@ -213,7 +213,7 @@ def pull_status_for_log(log_name):
         log.db_set({
             "last_pull_datetime": now,
             "polling_interval": new_interval,
-            "next_polling_time": add_minutes(now, new_interval)
+            "next_polling_time": add_to_date(now, minutes=new_interval)
         })
         return {"status": "no_change", "no_aju": no_aju}
     # --- 4. DATA BARU TERDETEKSI: LANJUT PROSES ASLI ---
@@ -222,15 +222,20 @@ def pull_status_for_log(log_name):
     log.last_pull_datetime = now
     log.last_response_hash = current_hash
     log.polling_interval = 5 # Reset ke 5 menit karena sedang aktif
-    log.next_polling_time = add_minutes(now, 5)
+    log.next_polling_time = add_to_date(now, minutes=5)
     log.retry_count = 0
     # ── Process dataStatus[] (Logika Asli Anda) ──────────────────────────
     added_statuses = 0
     for row in (data.get("dataStatus") or []):
         if _is_status_exist(log, row): continue
+        
+        # Pastikan kode status ada di master referensi
+        kode = row.get("kodeStatus")
+        ensure_status_code_exists("BC Status Code", kode)
+
         log.append("statuses", {
             "nomor_aju":    row.get("nomorAju"),
-            "kode_status":  row.get("kodeStatus"),
+            "kode_status":  kode,
             "nomor_daftar": row.get("nomorDaftar"),
             "tanggal_daftar": _parse_date(row.get("tanggalDaftar")),
             "waktu_status": _parse_datetime(row.get("waktuStatus")),
@@ -241,12 +246,17 @@ def pull_status_for_log(log_name):
     added_responses = 0
     for row in (data.get("dataRespon") or []):
         if _is_response_exist(log, row): continue
+
+        kode = row.get("kodeRespon")
+        # Jika Anda ingin memastikan kode respon juga ada (misal di DocType "BC Response Code")
+        # ensure_status_code_exists("BC Response Code", kode) 
+
         pdf_link = None
         if row.get("Pdf"):
             pdf_link = _save_pdf(row.get("Pdf"), no_aju, row, log.name)
         log.append("responses", {
             "nomor_aju":     row.get("nomorAju"),
-            "kode_respon":   row.get("kodeRespon"),
+            "kode_respon":   kode,
             "nomor_daftar":  row.get("nomorDaftar"),
             "tanggal_daftar": _parse_date(row.get("tanggalDaftar")),
             "nomor_respon":  row.get("nomorRespon"),
@@ -262,6 +272,21 @@ def pull_status_for_log(log_name):
         kode_respon = str(row.get("kodeRespon") or "").upper()
         if kode_respon in COMPLETED_RESPON_CODES and log.bc_status not in ("Completed", "Rejected"):
             log.bc_status = "Completed"
+        # --- START INSERT LOGIKA EMAIL DI SINI ---
+            try:
+                    # 'row' berisi dictionary respons API dari perulangan for,
+                    # yang di dalamnya sudah terdapat url 'pdf_link' yang akan dikirim via email.
+                    from singlecore_apps.api.ceisa_api.status import send_completion_notification
+                    
+                    # Agar baris ini tahu di mana pdf_link untuk attachment-nya
+                    row["pdf_file"] = pdf_link 
+                    send_completion_notification(log, row)
+                    frappe.logger("customs_status_log").info(f"Trigger Email SPPB untuk Aju {no_aju} berhasil dipanggil.")
+                
+            except Exception as e:
+                    # Amankan scheduler dari error jika gagal kirim email (misal: setting SMTP belum diatur)
+                    frappe.log_error(title="Gagal Mengirim Email SPPB/NPE", message=str(e))
+        # --- END LOGIKA EMAIL DI SINI ---
     # ── Finalizing (Nopen, Rejection, Sync) ──────────────────────────────
     _try_set_nopen(log, data)
     _try_set_rejected(log, data)
@@ -269,43 +294,13 @@ def pull_status_for_log(log_name):
     log.save(ignore_permissions=True)
     frappe.db.commit()
     _sync_linked_doc(log)
+
     return {
         "status": "success",
         "no_aju": no_aju,
         "added_statuses": added_statuses,
         "added_responses": added_responses,
         "bc_status": log.bc_status
-    }
-
-    # ── Determine NOPEN from dataStatus ──────────────────────────────────
-def _try_set_nopen(log, data):
-    for row in (data.get("dataStatus") or []):
-        if row.get("nomorDaftar"):
-            log.nopen = row.get("nomorDaftar")
-            log.nopen_date = _parse_date(row.get("tanggalDaftar")) # Pastikan baris ini ada
-            break
-
-    # ── Check rejection ───────────────────────────────────────────────────
-    _try_set_rejected(log, data)
-
-    # ── Save header ───────────────────────────────────────────────────────
-    log.save(ignore_permissions=True)
-    frappe.db.commit()
-
-    # ── Sync to linked document ───────────────────────────────────────────
-    _sync_linked_doc(log)
-
-    frappe.logger("customs_status_log").info(
-        f"pull_status_for_log [{no_aju}]: +{added_statuses} status, +{added_responses} respon"
-    )
-
-    return {
-        "status": "success",
-        "no_aju": no_aju,
-        "added_statuses": added_statuses,
-        "added_responses": added_responses,
-        "bc_status": log.bc_status,
-        "nopen": log.nopen,
     }
 
 
@@ -490,6 +485,28 @@ def _sync_linked_doc(log_doc):
 # ════════════════════════════════════════════════════════════════════════════
 # Utility / parse helpers
 # ════════════════════════════════════════════════════════════════════════════
+
+def ensure_status_code_exists(doctype, code):
+    """
+    Mengecek apakah kode ada di referensi, jika tidak ada, buat otomatis
+    agar log.save() tidak error.
+    """
+    if not code: return
+    
+    try:
+        # Pengecekan aman apakah doctype itu sendiri ada, agar tidak TypeError/ImportError
+        if not frappe.db.exists("DocType", doctype):
+            return
+            
+        if not frappe.db.exists(doctype, {"name": code}):
+            frappe.get_doc({
+                "doctype": doctype,
+                "code": code,
+                "description": "Auto-created from API"
+            }).insert(ignore_permissions=True)
+    except Exception as e:
+        frappe.logger("customs_status_log").warning(f"Gagal memastikan status code {code} di {doctype}: {e}")
+
 
 def _parse_date(val):
     """

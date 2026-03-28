@@ -1,1 +1,1826 @@
-[]
+[
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "16",
+  "modified": "2026-03-18 13:38:54.596431",
+  "nama_status": "PENERBITAN NOMOR DAFTAR",
+  "name": "16"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:54.680664",
+  "nama_status": "PENERBITAN NOMOR DAFTAR",
+  "name": "20"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:54.700737",
+  "nama_status": "PENERBITAN NOMOR DAFTAR",
+  "name": "23"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:54.721055",
+  "nama_status": "PENERBITAN NOMOR DAFTAR",
+  "name": "25"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "261",
+  "modified": "2026-03-18 13:38:54.734952",
+  "nama_status": "PENERBITAN NOMOR DAFTAR",
+  "name": "261"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "262",
+  "modified": "2026-03-18 13:38:54.752671",
+  "nama_status": "PENERBITAN NOMOR DAFTAR",
+  "name": "262"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "27",
+  "modified": "2026-03-18 13:38:54.773047",
+  "nama_status": "PENERBITAN NOMOR DAFTAR",
+  "name": "27"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:54.788688",
+  "nama_status": "PENERBITAN NOMOR DAFTAR",
+  "name": "28"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:54.804777",
+  "nama_status": "PENERBITAN NOMOR DAFTAR",
+  "name": "30"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:54.820634",
+  "nama_status": "PENERBITAN NOMOR DAFTAR",
+  "name": "33"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "331",
+  "modified": "2026-03-18 13:38:54.844579",
+  "nama_status": "PENERBITAN NOMOR DAFTAR",
+  "name": "331"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "511",
+  "modified": "2026-03-18 13:38:54.862590",
+  "nama_status": "PENERBITAN NOMOR DAFTAR",
+  "name": "511"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:54.879974",
+  "nama_status": "PENERBITAN NOMOR DAFTAR",
+  "name": "513"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "16",
+  "modified": "2026-03-18 13:38:54.893896",
+  "nama_status": "RESPON PENERIMAAN",
+  "name": "1600"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:54.908189",
+  "nama_status": "RESPON PENERIMAAN",
+  "name": "2000"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:54.922263",
+  "nama_status": "RESPON PENERIMAAN",
+  "name": "2300"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:54.934751",
+  "nama_status": "RESPON PENERIMAAN",
+  "name": "2500"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "261",
+  "modified": "2026-03-18 13:38:54.949069",
+  "nama_status": "RESPON PENERIMAAN",
+  "name": "26100"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "262",
+  "modified": "2026-03-18 13:38:54.958197",
+  "nama_status": "RESPON PENERIMAAN",
+  "name": "26200"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "27",
+  "modified": "2026-03-18 13:38:54.967424",
+  "nama_status": "RESPON PENERIMAAN",
+  "name": "2700"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:54.976190",
+  "nama_status": "RESPON PENERIMAAN",
+  "name": "2800"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:54.985334",
+  "nama_status": "RESPON PENERIMAAN",
+  "name": "3300"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "331",
+  "modified": "2026-03-18 13:38:54.994455",
+  "nama_status": "RESPON PENERIMAAN",
+  "name": "33100"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "16",
+  "modified": "2026-03-18 13:38:55.001181",
+  "nama_status": "NOTA PEMBERITAHUAN PENOLAKAN (REJECT)",
+  "name": "1601"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:55.009726",
+  "nama_status": "NOTA PEMBERITAHUAN PENOLAKAN (REJECT)",
+  "name": "2001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:55.016974",
+  "nama_status": "NOTA PEMBERITAHUAN PENOLAKAN (REJECT)",
+  "name": "2301"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:55.025853",
+  "nama_status": "NOTA PEMBERITAHUAN PENOLAKAN (REJECT)",
+  "name": "2501"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "261",
+  "modified": "2026-03-18 13:38:55.036902",
+  "nama_status": "NOTA PEMBERITAHUAN PENOLAKAN (REJECT)",
+  "name": "26101"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "262",
+  "modified": "2026-03-18 13:38:55.045529",
+  "nama_status": "NOTA PEMBERITAHUAN PENOLAKAN (REJECT)",
+  "name": "26201"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "27",
+  "modified": "2026-03-18 13:38:55.054844",
+  "nama_status": "NOTA PEMBERITAHUAN PENOLAKAN (REJECT)",
+  "name": "2701"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:55.062879",
+  "nama_status": "NOTA PEMBERITAHUAN PENOLAKAN (REJECT)",
+  "name": "2801"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:55.073266",
+  "nama_status": "NOTA PEMBERITAHUAN PENOLAKAN (REJECT)",
+  "name": "3001"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:55.086192",
+  "nama_status": "NOTA PEMBERITAHUAN PENOLAKAN (REJECT)",
+  "name": "3301"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "331",
+  "modified": "2026-03-18 13:38:55.097104",
+  "nama_status": "NOTA PEMBERITAHUAN PENOLAKAN (REJECT)",
+  "name": "33101"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "511",
+  "modified": "2026-03-18 13:38:55.110264",
+  "nama_status": "NOTA PEMBERITAHUAN PENOLAKAN (REJECT)",
+  "name": "51101"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:55.118685",
+  "nama_status": "NOTA PEMBERITAHUAN PENOLAKAN (REJECT)",
+  "name": "51301"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:55.129276",
+  "nama_status": "PEMBERITAHUAN PENERIMAAN PIB PENYELESAIAN (P4)",
+  "name": "2002"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:55.142152",
+  "nama_status": "PEMBERITAHUAN PENERIMAAN PIB PENYELESAIAN (P4)",
+  "name": "2302"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:55.155572",
+  "nama_status": "PEMBERITAHUAN PENERIMAAN PIB PENYELESAIAN (P4)",
+  "name": "2502"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "261",
+  "modified": "2026-03-18 13:38:55.165368",
+  "nama_status": "PEMBERITAHUAN PENERIMAAN PIB PENYELESAIAN (P4)",
+  "name": "26102"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "262",
+  "modified": "2026-03-18 13:38:55.181610",
+  "nama_status": "PEMBERITAHUAN PENERIMAAN PIB PENYELESAIAN (P4)",
+  "name": "26202"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "27",
+  "modified": "2026-03-18 13:38:55.194801",
+  "nama_status": "PEMBERITAHUAN PENERIMAAN PIB PENYELESAIAN (P4)",
+  "name": "2702"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:55.210422",
+  "nama_status": "PEMBERITAHUAN PENERIMAAN PIB PENYELESAIAN (P4)",
+  "name": "2802"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:55.224268",
+  "nama_status": "PEMBERITAHUAN PENERIMAAN PIB PENYELESAIAN (P4)",
+  "name": "3302"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "331",
+  "modified": "2026-03-18 13:38:55.238127",
+  "nama_status": "PEMBERITAHUAN PENERIMAAN PIB PENYELESAIAN (P4)",
+  "name": "33102"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "511",
+  "modified": "2026-03-18 13:38:55.249442",
+  "nama_status": "PEMBERITAHUAN PENERIMAAN PIB PENYELESAIAN (P4)",
+  "name": "51102"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:55.263012",
+  "nama_status": "PEMBERITAHUAN PENERIMAAN PIB PENYELESAIAN (P4)",
+  "name": "51302"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "16",
+  "modified": "2026-03-18 13:38:55.276473",
+  "nama_status": "SURAT PERSETUJUAN PENGELUARAN BARANG (SPPB)",
+  "name": "1603"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:55.294781",
+  "nama_status": "SURAT PERSETUJUAN PENGELUARAN BARANG (SPPB)",
+  "name": "2003"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:55.310875",
+  "nama_status": "SURAT PERSETUJUAN PENGELUARAN BARANG (SPPB)",
+  "name": "2303"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:55.326154",
+  "nama_status": "SURAT PERSETUJUAN PENGELUARAN BARANG (SPPB)",
+  "name": "2503"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "27",
+  "modified": "2026-03-18 13:38:55.340246",
+  "nama_status": "SURAT PERSETUJUAN PENGELUARAN BARANG (SPPB)",
+  "name": "2703"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:55.355634",
+  "nama_status": "SURAT PERSETUJUAN PENGELUARAN BARANG (SPPB)",
+  "name": "2803"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "511",
+  "modified": "2026-03-18 13:38:55.368652",
+  "nama_status": "SURAT PERSETUJUAN PENGELUARAN BARANG (SPPB)",
+  "name": "51103"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:55.380158",
+  "nama_status": "SURAT PERSETUJUAN PENGELUARAN BARANG (SPPB)",
+  "name": "51303"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "261",
+  "modified": "2026-03-18 13:38:55.396085",
+  "nama_status": "SURAT PERINTAH PEMERIKSAAN FISIK",
+  "name": "26103"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "262",
+  "modified": "2026-03-18 13:38:55.407847",
+  "nama_status": "SURAT PERINTAH PEMERIKSAAN FISIK",
+  "name": "26203"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:55.419910",
+  "nama_status": "NOTA PERSETUJUAN PEMASUKAN BARANG EKSPOR (NPPBE)",
+  "name": "3303"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "16",
+  "modified": "2026-03-18 13:38:55.435931",
+  "nama_status": "FORMULIR SURAT PERSETUJUAN PENYELESAIAN DOKUMEN (SPPD)",
+  "name": "1604"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:55.451429",
+  "nama_status": "SURAT PEMBERITAHUAN JALUR KUNING (SPJK)",
+  "name": "2004"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:55.465921",
+  "nama_status": "SURAT PEMBERITAHUAN JALUR KUNING (SPJK)",
+  "name": "2504"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "261",
+  "modified": "2026-03-18 13:38:55.486275",
+  "nama_status": "LAPORAN HASIL PEMERIKSAAN",
+  "name": "26104"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "262",
+  "modified": "2026-03-18 13:38:55.502348",
+  "nama_status": "LAPORAN HASIL PEMERIKSAAN",
+  "name": "26204"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:55.515791",
+  "nama_status": "SURAT PEMBERITAHUAN PEMERIKSAAN FISIK (SPPF)",
+  "name": "2804"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:55.531076",
+  "nama_status": "[KHUSUS 33] NOTA PELAYANAN EKSPOR (NPE)",
+  "name": "3304"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "16",
+  "modified": "2026-03-18 13:38:55.544930",
+  "nama_status": "FORMULIR SURAT PERSETUJUAN PERUBAHAN BC 1.6",
+  "name": "1605"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:55.567187",
+  "nama_status": "SURAT PEMBERITAHUAN JALUR MERAH (SPJM)",
+  "name": "2005"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:55.585190",
+  "nama_status": "SURAT PEMBERITAHUAN JALUR MERAH (SPJM)",
+  "name": "2505"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:55.609850",
+  "nama_status": "SURAT PERSETUJUAN PENYELESAIAN DOKUMEN (SPPD)",
+  "name": "2305"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "27",
+  "modified": "2026-03-18 13:38:55.628374",
+  "nama_status": "SURAT PERSETUJUAN PENYELESAIAN DOKUMEN (SPPD)",
+  "name": "2705"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "261",
+  "modified": "2026-03-18 13:38:55.643667",
+  "nama_status": "BERITA ACARA HASIL PEMERIKSAAN",
+  "name": "26105"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "262",
+  "modified": "2026-03-18 13:38:55.661051",
+  "nama_status": "BERITA ACARA HASIL PEMERIKSAAN",
+  "name": "26205"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:55.675212",
+  "nama_status": "INSTRUKSI PEMERIKSAAN",
+  "name": "2805"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:55.691303",
+  "nama_status": "PEMBERITAHUAN KESIAPAN BARANG (PKB)",
+  "name": "3305"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "511",
+  "modified": "2026-03-18 13:38:55.707996",
+  "nama_status": "SURAT PEMERIKSAAN FISIK",
+  "name": "51105"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:55.723874",
+  "nama_status": "SURAT PEMERIKSAAN FISIK",
+  "name": "51305"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "16",
+  "modified": "2026-03-18 13:38:55.743009",
+  "nama_status": "FORMULIR SURAT PERSETUJUAN PEMBATALAN BC 1.6",
+  "name": "1606"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:55.758563",
+  "nama_status": "SURAT PERINTAH PEMERIKSAAN FISIK (SPPF)",
+  "name": "2006"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:55.773721",
+  "nama_status": "SURAT PERINTAH PEMERIKSAAN FISIK (SPPF)",
+  "name": "2506"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:55.788130",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PERUBAHAN",
+  "name": "2306"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "27",
+  "modified": "2026-03-18 13:38:55.808641",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PERUBAHAN",
+  "name": "2706"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "261",
+  "modified": "2026-03-18 13:38:55.823594",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PERUBAHAN",
+  "name": "26106"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "262",
+  "modified": "2026-03-18 13:38:55.837811",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PERUBAHAN",
+  "name": "26206"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:55.854283",
+  "nama_status": "INSTRUKSI PEMERIKSAAN FISIK MELALUI PEMINDAI",
+  "name": "2806"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:55.869779",
+  "nama_status": "PEMBERITAHUAN PEMERIKSAAN BARANG (PPB)",
+  "name": "3306"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "511",
+  "modified": "2026-03-18 13:38:55.884107",
+  "nama_status": "INSTRUKSI PEMERIKSAAN",
+  "name": "51106"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:55.897947",
+  "nama_status": "INSTRUKSI PEMERIKSAAN",
+  "name": "51306"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "16",
+  "modified": "2026-03-18 13:38:55.913397",
+  "nama_status": "SURAT PEMBERITAHUAN PENGAWASAN PEMBONGKARAN DAN PENIMBUNAN (SP4) PLB",
+  "name": "1607"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:55.927167",
+  "nama_status": "LAPORAN HASIL PEMERIKSAAN",
+  "name": "2007"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:55.942980",
+  "nama_status": "LAPORAN HASIL PEMERIKSAAN",
+  "name": "2507"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:55.973621",
+  "nama_status": "LAPORAN HASIL PEMERIKSAAN",
+  "name": "2807"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "511",
+  "modified": "2026-03-18 13:38:55.986453",
+  "nama_status": "LAPORAN HASIL PEMERIKSAAN",
+  "name": "51107"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:55.999109",
+  "nama_status": "LAPORAN HASIL PEMERIKSAAN",
+  "name": "51307"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:56.014321",
+  "nama_status": "SURAT PERSETUJUAN PEMBATALAN",
+  "name": "2307"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "27",
+  "modified": "2026-03-18 13:38:56.027637",
+  "nama_status": "SURAT PERSETUJUAN PEMBATALAN",
+  "name": "2707"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "261",
+  "modified": "2026-03-18 13:38:56.042937",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PEMBATALAN",
+  "name": "26107"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "262",
+  "modified": "2026-03-18 13:38:56.059017",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PEMBATALAN",
+  "name": "26207"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:56.072714",
+  "nama_status": "NOTA PEMBETULAN",
+  "name": "3307"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "16",
+  "modified": "2026-03-18 13:38:56.084989",
+  "nama_status": "TANDA TERIMA PENYERAHAN KELENGKAPAN DOKUMEN",
+  "name": "1608"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:56.099533",
+  "nama_status": "BERITA ACARA HASIL PEMERIKSAAN",
+  "name": "2008"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:56.118337",
+  "nama_status": "BERITA ACARA HASIL PEMERIKSAAN",
+  "name": "2508"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:56.130998",
+  "nama_status": "BERITA ACARA HASIL PEMERIKSAAN",
+  "name": "51308"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "511",
+  "modified": "2026-03-18 13:38:56.145172",
+  "nama_status": "BERITA ACARA HASIL PEMERIKSAAN",
+  "name": "51108"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:56.159908",
+  "nama_status": "SURAT PERINTAH PEMERIKSAAN FISIK (SPPF)",
+  "name": "2308"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "27",
+  "modified": "2026-03-18 13:38:56.175307",
+  "nama_status": "SURAT PERINTAH PEMERIKSAAN FISIK (SPPF)",
+  "name": "2708"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "261",
+  "modified": "2026-03-18 13:38:56.190179",
+  "nama_status": "SURAT PERSETUJUAN PENGELUARAN BARANG (SPPB)",
+  "name": "26108"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "262",
+  "modified": "2026-03-18 13:38:56.203564",
+  "nama_status": "SURAT PERSETUJUAN PENYELESAIAN DOKUMEN (SPPD)",
+  "name": "26208"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:56.222010",
+  "nama_status": "LAPORAN HASIL ANALISIS TAMPILAN (LHAT)",
+  "name": "2808"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "331",
+  "modified": "2026-03-18 13:38:56.236783",
+  "nama_status": "PEMBERITAHUAN PENGGABUNGAN DAN PEMECAHAN BARANG EKSPOR DAN TRANSHIPMENT (P3BET)",
+  "name": "33108"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:56.251773",
+  "nama_status": "TANDA TERIMA PENYERAHAN KELENGKAPAN DOKUMEN",
+  "name": "2009"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:56.265182",
+  "nama_status": "TANDA TERIMA PENYERAHAN KELENGKAPAN DOKUMEN",
+  "name": "2509"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:56.279492",
+  "nama_status": "BERITA ACARA HASIL PEMERIKSAAN / LAPORAN HASIL PEMERIKSAAN FISIK (LHP)",
+  "name": "2309"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "27",
+  "modified": "2026-03-18 13:38:56.293296",
+  "nama_status": "BERITA ACARA HASIL PEMERIKSAAN / LAPORAN HASIL PEMERIKSAAN FISIK (LHP)",
+  "name": "2709"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:56.309679",
+  "nama_status": "BERITA ACARA HASIL PEMERIKSAAN / LAPORAN HASIL PEMERIKSAAN FISIK (LHP)",
+  "name": "2809"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "261",
+  "modified": "2026-03-18 13:38:56.327402",
+  "nama_status": "SURAT PERSETUJUAN PENYELESAIAN DOKUMEN(SPPD)",
+  "name": "26109"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "262",
+  "modified": "2026-03-18 13:38:56.342088",
+  "nama_status": "SURAT PERSETUJUAN PEMASUKAN KEMBALI BARANG (SPPKB)",
+  "name": "26209"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "331",
+  "modified": "2026-03-18 13:38:56.356045",
+  "nama_status": "NOTA PERSETUJUAN P3BET",
+  "name": "33109"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:56.372833",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PERUBAHAN",
+  "name": "2010"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:56.388113",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PERUBAHAN",
+  "name": "2510"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "511",
+  "modified": "2026-03-18 13:38:56.401803",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PERUBAHAN",
+  "name": "51110"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:56.415072",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PERUBAHAN",
+  "name": "51310"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "27",
+  "modified": "2026-03-18 13:38:56.432935",
+  "nama_status": "BERITA ACARA PEMERIKSAAN FISIK BARANG (BAPFB)",
+  "name": "2710"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:56.448650",
+  "nama_status": "TANDA TERIMA PENYERAHAN KELENGKAPAN DOKUMEN",
+  "name": "2810"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:56.461969",
+  "nama_status": "RESPON REJECT PEB",
+  "name": "3010"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "331",
+  "modified": "2026-03-18 13:38:56.477410",
+  "nama_status": "PEMBERITAHUAN PENGAWASAN STUFFING (PPS)",
+  "name": "33110"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "16",
+  "modified": "2026-03-18 13:38:56.492098",
+  "nama_status": "SURAT PERSETUJUAN PELAYANAN BC 1.6 OLEH PENYELENGGARA POS",
+  "name": "1611"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:56.506102",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PEMBATALAN",
+  "name": "2011"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:56.520224",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PEMBATALAN",
+  "name": "2511"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:56.535949",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PEMBATALAN",
+  "name": "2811"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:56.549259",
+  "nama_status": "NOTA PEMBETULAN BC 2.3",
+  "name": "2311"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "261",
+  "modified": "2026-03-18 13:38:56.562865",
+  "nama_status": "RESPON ERROR AUTENTIFIKASI BC261",
+  "name": "26111"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:56.577044",
+  "nama_status": "PEMBERITAHUAN PEMBETULAN BC 3.3 (PP-BC 3.3)",
+  "name": "3311"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:56.590759",
+  "nama_status": "LAPORAN HASIL PEMERIKSAAN",
+  "name": "2312"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "262",
+  "modified": "2026-03-18 13:38:56.604595",
+  "nama_status": "RESPON ERROR AUTENTIFIKASI BC262",
+  "name": "26212"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:56.618217",
+  "nama_status": "SURAT PERSETUJUAN/PENOLAKAN PEMBATALAN BC 28",
+  "name": "2812"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:56.634253",
+  "nama_status": "RESPON REJECT PKBE",
+  "name": "3012"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "331",
+  "modified": "2026-03-18 13:38:56.647736",
+  "nama_status": "PEMBERITAHUAN PEMBETULAN P3BET (PP-P3BET)",
+  "name": "33112"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:56.664242",
+  "nama_status": "SURAT PENETAPAN BARANG LARANGAN/PEMBATASAN (SPBL)",
+  "name": "2813"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:56.707377",
+  "nama_status": "SURAT PENETAPAN BARANG LARANGAN/PEMBATASAN (SPBL)",
+  "name": "2013"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "511",
+  "modified": "2026-03-18 13:38:56.722893",
+  "nama_status": "SURAT PENETAPAN BARANG LARANGAN/PEMBATASAN (SPBL)",
+  "name": "51113"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:56.738044",
+  "nama_status": "SURAT PENETAPAN BARANG LARANGAN/PEMBATASAN (SPBL)",
+  "name": "51313"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "331",
+  "modified": "2026-03-18 13:38:56.752440",
+  "nama_status": "SURAT PERSETUJUAN PENGELUARAN BARANG EKSPOR DAN TRANSHIPMENT (SPPBET)",
+  "name": "33113"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:56.768979",
+  "nama_status": "SURAT PENETAPAN PENYESUAIAN JAMINAN (SPPJ)",
+  "name": "2014"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:56.782804",
+  "nama_status": "SURAT PENETAPAN PENYESUAIAN JAMINAN (SPPJ)",
+  "name": "2814"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:56.796879",
+  "nama_status": "RESPON PPB",
+  "name": "3014"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:56.834881",
+  "nama_status": "NOTA PERMINTAAN DATA DAN/ATAU DOKUMEN (NPD)",
+  "name": "2015"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:56.847889",
+  "nama_status": "NOTA PERMINTAAN DATA DAN/ATAU DOKUMEN (NPD)",
+  "name": "2515"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:56.860957",
+  "nama_status": "NOTA PERMINTAAN DATA DAN/ATAU DOKUMEN (NPD)",
+  "name": "2815"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "511",
+  "modified": "2026-03-18 13:38:56.875696",
+  "nama_status": "NOTA PERMINTAAN DATA DAN/ATAU DOKUMEN (NPD)",
+  "name": "51115"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:56.889420",
+  "nama_status": "NOTA PERMINTAAN DATA DAN/ATAU DOKUMEN (NPD)",
+  "name": "51315"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:56.904886",
+  "nama_status": "RESPON NOTA PELAYANAN EKSPOR",
+  "name": "3015"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:56.927723",
+  "nama_status": "NOTA PERMINTAAN JAMINAN (NPJ)",
+  "name": "2016"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:56.946878",
+  "nama_status": "NOTA PERMINTAAN JAMINAN (NPJ)",
+  "name": "2816"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:56.960652",
+  "nama_status": "RESPON NOTA PELAYANAN EKSPOR PEB MERAH",
+  "name": "3016"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:56.974246",
+  "nama_status": "INSTRUKSI PEMERIKSAAN (IP)",
+  "name": "3316"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:56.988667",
+  "nama_status": "SURAT PERSETUJUAN PENYELESAIAN DOKUMEN (SPPD)",
+  "name": "2817"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:57.003029",
+  "nama_status": "RESPON SPPBK",
+  "name": "3017"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:57.019752",
+  "nama_status": "INSTRUKSI PEMERIKSAAN MELALUI PEMINDAI",
+  "name": "3317"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:57.038562",
+  "nama_status": "LAPORAN HASIL PEMERIKSAAN (LHP)",
+  "name": "3318"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:57.055913",
+  "nama_status": "LAPORAN HASIL ANALISIS TAMPILAN (LHAT)",
+  "name": "3319"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:57.071745",
+  "nama_status": "KONFIRMASI BAYAR (BILLING)",
+  "name": "2020"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:57.087146",
+  "nama_status": "KONFIRMASI BAYAR (BILLING)",
+  "name": "2520"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:57.102003",
+  "nama_status": "KONFIRMASI BAYAR (BILLING)",
+  "name": "2820"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:57.439579",
+  "nama_status": "KONFIRMASI BAYAR (BILLING)",
+  "name": "51320"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:57.453381",
+  "nama_status": "RESPON PROSES PEB",
+  "name": "3020"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:57.466248",
+  "nama_status": "BERITA ACARA PEMERIKSAAN FISIK BARANG",
+  "name": "3320"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:57.476490",
+  "nama_status": "INFORMASI NILAI PABEAN",
+  "name": "2021"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:57.487414",
+  "nama_status": "INFORMASI NILAI PABEAN",
+  "name": "2321"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:57.497452",
+  "nama_status": "INFORMASI NILAI PABEAN",
+  "name": "2521"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:57.513092",
+  "nama_status": "INFORMASI NILAI PABEAN",
+  "name": "2821"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:57.525952",
+  "nama_status": "TANDA TERIMA PENYERAHAN KELENGKAPAN DOKUMEN",
+  "name": "3321"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:57.540404",
+  "nama_status": "UNDANGAN KONSULTASI",
+  "name": "2022"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:57.558221",
+  "nama_status": "UNDANGAN KONSULTASI",
+  "name": "2322"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:57.572581",
+  "nama_status": "UNDANGAN KONSULTASI",
+  "name": "2522"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:57.586584",
+  "nama_status": "UNDANGAN KONSULTASI",
+  "name": "2822"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:57.601752",
+  "nama_status": "RESPON PROSES PKBE",
+  "name": "3022"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "331",
+  "modified": "2026-03-18 13:38:57.615120",
+  "nama_status": "PERMOHONAN PENGELUARAN BARANG EKSPOR DAN TRANSHIPMENT",
+  "name": "33122"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:57.630006",
+  "nama_status": "KIRIM BARANG LABORATORIUM",
+  "name": "2023"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:57.643383",
+  "nama_status": "KIRIM BARANG LABORATORIUM",
+  "name": "2323"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:57.660299",
+  "nama_status": "KIRIM BARANG LABORATORIUM",
+  "name": "2523"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:57.677796",
+  "nama_status": "KIRIM BARANG LABORATORIUM",
+  "name": "2823"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:57.697811",
+  "nama_status": "KONFIRMASI BARANG",
+  "name": "2024"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:57.713207",
+  "nama_status": "KONFIRMASI BARANG",
+  "name": "2324"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:57.727752",
+  "nama_status": "KONFIRMASI BARANG",
+  "name": "2524"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:57.743501",
+  "nama_status": "KONFIRMASI BARANG",
+  "name": "2824"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:57.761049",
+  "nama_status": "SURAT PENETAPAN TARIF DAN/ATAU NILAI PABEAN (SPTNP)",
+  "name": "2026"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:57.777039",
+  "nama_status": "SURAT PENETAPAN TARIF DAN/ATAU NILAI PABEAN (SPTNP)",
+  "name": "2326"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:57.789633",
+  "nama_status": "SURAT PENETAPAN TARIF DAN/ATAU NILAI PABEAN (SPTNP)",
+  "name": "2526"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:57.803415",
+  "nama_status": "SURAT PENETAPAN TARIF DAN/ATAU NILAI PABEAN (SPTNP)",
+  "name": "2826"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:57.816324",
+  "nama_status": "KONFIRMASI BAYAR (SPTNP)",
+  "name": "2027"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:57.830154",
+  "nama_status": "KONFIRMASI BAYAR (SPTNP)",
+  "name": "2327"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:57.842924",
+  "nama_status": "KONFIRMASI BAYAR (SPTNP)",
+  "name": "2527"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:57.859752",
+  "nama_status": "KONFIRMASI BAYAR (SPTNP)",
+  "name": "2827"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:57.872707",
+  "nama_status": "KONFIRMASI BAYAR (BILLING SPTNP/SPPBK)",
+  "name": "2028"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:57.885013",
+  "nama_status": "KONFIRMASI BAYAR (BILLING SPTNP/SPPBK)",
+  "name": "2328"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:57.898674",
+  "nama_status": "KONFIRMASI BAYAR (BILLING SPTNP/SPPBK)",
+  "name": "2528"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:57.912969",
+  "nama_status": "KONFIRMASI BAYAR (BILLING SPTNP/SPPBK)",
+  "name": "2828"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:57.927018",
+  "nama_status": "KONFIRMASI BAYAR (BILLING SPTNP/SPPBK)",
+  "name": "3028"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:57.940015",
+  "nama_status": "KONFIRMASI BAYAR (BILLING SPTNP/SPPBK)",
+  "name": "51328"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:57.953878",
+  "nama_status": "RESPON REJECT PERBAIKAN PEB",
+  "name": "3030"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:57.967412",
+  "nama_status": "SURAT PENETAPAN PERHITUNGAN BEA KELUAR (SPPBK)",
+  "name": "3330"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:57.980923",
+  "nama_status": "LPPT",
+  "name": "2050"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:57.993961",
+  "nama_status": "INSTRUKSI PEMERIKSAAN (IP)",
+  "name": "2066"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:58.008302",
+  "nama_status": "RESPON RUSH HANDLING (P4)",
+  "name": "2080"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:58.022617",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PERUBAHAN BC33",
+  "name": "3380"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "331",
+  "modified": "2026-03-18 13:38:58.035213",
+  "nama_status": "SURAT PERSETUJUAN / PENOLAKAN PERUBAHAN P3BET",
+  "name": "33180"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "16",
+  "modified": "2026-03-18 13:38:58.048128",
+  "nama_status": "RESPON UMUM",
+  "name": "1690"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:58.061869",
+  "nama_status": "RESPON UMUM",
+  "name": "2090"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:58.077010",
+  "nama_status": "RESPON UMUM",
+  "name": "2390"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:58.090583",
+  "nama_status": "RESPON UMUM",
+  "name": "2590"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "261",
+  "modified": "2026-03-18 13:38:58.103630",
+  "nama_status": "RESPON UMUM",
+  "name": "26190"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "262",
+  "modified": "2026-03-18 13:38:58.116497",
+  "nama_status": "RESPON UMUM",
+  "name": "26290"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "27",
+  "modified": "2026-03-18 13:38:58.129817",
+  "nama_status": "RESPON UMUM",
+  "name": "2790"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:58.144671",
+  "nama_status": "RESPON UMUM",
+  "name": "2890"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:58.158127",
+  "nama_status": "RESPON UMUM",
+  "name": "3090"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "33",
+  "modified": "2026-03-18 13:38:58.173425",
+  "nama_status": "RESPON UMUM",
+  "name": "3390"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "331",
+  "modified": "2026-03-18 13:38:58.185956",
+  "nama_status": "RESPON UMUM",
+  "name": "33190"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:58.198679",
+  "nama_status": "RESPON UMUM NPPD",
+  "name": "3091"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:58.212531",
+  "nama_status": "RESPON REKON MANIFES",
+  "name": "3092"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "16",
+  "modified": "2026-03-18 13:38:58.226937",
+  "nama_status": "RESPON ERROR AUTENTIFIKASI (ERROR)",
+  "name": "1699"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "20",
+  "modified": "2026-03-18 13:38:58.240593",
+  "nama_status": "RESPON ERROR AUTENTIFIKASI (ERROR)",
+  "name": "2099"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "23",
+  "modified": "2026-03-18 13:38:58.253971",
+  "nama_status": "RESPON ERROR AUTENTIFIKASI (ERROR)",
+  "name": "2399"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "25",
+  "modified": "2026-03-18 13:38:58.267017",
+  "nama_status": "RESPON ERROR AUTENTIFIKASI (ERROR)",
+  "name": "2599"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "28",
+  "modified": "2026-03-18 13:38:58.282811",
+  "nama_status": "RESPON ERROR AUTENTIFIKASI (ERROR)",
+  "name": "2899"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "511",
+  "modified": "2026-03-18 13:38:58.296208",
+  "nama_status": "RESPON ERROR AUTENTIFIKASI (ERROR)",
+  "name": "51199"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "513",
+  "modified": "2026-03-18 13:38:58.310844",
+  "nama_status": "RESPON ERROR AUTENTIFIKASI (ERROR)",
+  "name": "51399"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:58.324996",
+  "nama_status": "RESPON LHPRE",
+  "name": "30360"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Status",
+  "kode_status": "30",
+  "modified": "2026-03-18 13:38:58.339439",
+  "nama_status": "PERSETUJUAN PERUBAHAN",
+  "name": "30966"
+ }
+]
