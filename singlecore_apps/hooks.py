@@ -130,6 +130,11 @@ scheduler_events = {
 		"singlecore_apps.singlecore_apps.doctype.customs_status_log.customs_status_log.update_all_active_status",
         "singlecore_apps.api.ceisa_api.external_sync.smart_ceisa_polling"
 	],
+    "daily": [
+        # Fase 2: Early Warning System - Subkontrak Deadline Monitor
+        # Kirim email alert H-14, H-7, H-3, H-0 & Expired untuk BC 261
+        "singlecore_apps.api.subcontract_monitor.check_subcontract_deadlines",
+    ],
 }
 
 # Testing

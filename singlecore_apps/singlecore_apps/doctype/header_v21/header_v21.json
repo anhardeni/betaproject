@@ -9,7 +9,7 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{00}{kode_dokumen4digit}{BT0001}{YYYY}{MM}{DD}{######}",
- "creation": "2026-03-20 09:48:09.017072",
+ "creation": "2026-04-06 09:49:58.753208",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -25,6 +25,8 @@
   "tanggal_pernyataan",
   "nama_pernyataan",
   "jabatan_pernyataan",
+  "column_break_wcdc",
+  "tgl_jatuh_tempo_subkon",
   "tab_break_isokh",
   "kode_kantor_bongkar",
   "kode_kantor_periksa",
@@ -218,6 +220,13 @@
    "fieldname": "jabatan_pernyataan",
    "fieldtype": "Data",
    "label": "JABATAN PERNYATAAN"
+  },
+  {
+   "depends_on": "eval:doc.kode_dokumen==='261'",
+   "fieldname": "tgl_jatuh_tempo_subkon",
+   "fieldtype": "Date",
+   "label": "TGL JATUH TEMPO SUBKON",
+   "mandatory_depends_on": "eval:doc.kode_dokumen==='261'"
   },
   {
    "fieldname": "tab_break_isokh",
@@ -890,6 +899,10 @@
   {
    "fieldname": "column_break_tzyl",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wcdc",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -899,7 +912,7 @@
    "link_fieldname": "nomoraju"
   }
  ],
- "modified": "2026-03-28 09:33:27.422290",
+ "modified": "2026-04-06 10:42:36.098234",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "HEADER V21",

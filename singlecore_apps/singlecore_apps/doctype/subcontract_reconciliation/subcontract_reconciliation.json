@@ -1,0 +1,247 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:REKON-{skenario_kode}-{YYYY}{MM}{DD}-{######}",
+ "creation": "2026-04-06 13:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "skenario",
+  "skenario_kode",
+  "status_rekon",
+  "column_break_header",
+  "header_keluar",
+  "no_aju_keluar",
+  "tgl_jatuh_tempo_subkon",
+  "column_break_header2",
+  "header_masuk",
+  "no_aju_masuk",
+  "tgl_masuk",
+  "section_break_items",
+  "items",
+  "section_break_summary",
+  "total_qty_keluar",
+  "total_qty_masuk",
+  "total_qty_scrap",
+  "total_qty_outstanding",
+  "column_break_summary2",
+  "persentase_selesai",
+  "catatan",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "skenario",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Skenario Subkontrak",
+   "options": "BC 261 → BC 262 (Subkontrak Umum)\nBC 27 → BC 27 (Subkontrak Antar KB)",
+   "reqd": 1
+  },
+  {
+   "default": "261",
+   "fieldname": "skenario_kode",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Skenario Kode"
+  },
+  {
+   "default": "Outstanding",
+   "fieldname": "status_rekon",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status Rekonsiliasi",
+   "options": "Outstanding\nPartially Settled\nSettled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_header",
+   "fieldtype": "Section Break",
+   "label": "Dokumen Keluar (Outbound)"
+  },
+  {
+   "fieldname": "header_keluar",
+   "fieldtype": "Link",
+   "label": "HEADER V21 Keluar",
+   "options": "HEADER V21",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "header_keluar.nomoraju",
+   "fieldname": "no_aju_keluar",
+   "fieldtype": "Data",
+   "label": "No. Aju Keluar",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "header_keluar.tgl_jatuh_tempo_subkon",
+   "fieldname": "tgl_jatuh_tempo_subkon",
+   "fieldtype": "Date",
+   "label": "Tgl Jatuh Tempo (SKEP)",
+   "read_only": 1,
+   "depends_on": "eval:doc.skenario && doc.skenario.includes('261')"
+  },
+  {
+   "fieldname": "column_break_header2",
+   "fieldtype": "Column Break",
+   "label": "Dokumen Masuk (Inbound)"
+  },
+  {
+   "fieldname": "header_masuk",
+   "fieldtype": "Link",
+   "label": "HEADER V21 Masuk / Kembali",
+   "options": "HEADER V21"
+  },
+  {
+   "fetch_from": "header_masuk.nomoraju",
+   "fieldname": "no_aju_masuk",
+   "fieldtype": "Data",
+   "label": "No. Aju Masuk",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "header_masuk.tanggal_daftar",
+   "fieldname": "tgl_masuk",
+   "fieldtype": "Date",
+   "label": "Tgl Daftar Masuk",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_items",
+   "fieldtype": "Section Break",
+   "label": "Rincian Barang"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Baris Material",
+   "options": "Subcontract Reconciliation Item"
+  },
+  {
+   "fieldname": "section_break_summary",
+   "fieldtype": "Section Break",
+   "label": "Ringkasan Saldo"
+  },
+  {
+   "fieldname": "total_qty_keluar",
+   "fieldtype": "Float",
+   "label": "Total Qty Keluar",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_qty_masuk",
+   "fieldtype": "Float",
+   "label": "Total Qty Masuk",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_qty_scrap",
+   "fieldtype": "Float",
+   "label": "Total Qty Scrap",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_qty_outstanding",
+   "fieldtype": "Float",
+   "label": "Total Qty Outstanding",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_summary2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "persentase_selesai",
+   "fieldtype": "Percent",
+   "label": "% Selesai",
+   "read_only": 1
+  },
+  {
+   "fieldname": "catatan",
+   "fieldtype": "Small Text",
+   "label": "Catatan"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Subcontract Reconciliation",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-06 13:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Subcontract Reconciliation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Customs Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Orange",
+   "title": "Outstanding"
+  },
+  {
+   "color": "Yellow",
+   "title": "Partially Settled"
+  },
+  {
+   "color": "Green",
+   "title": "Settled"
+  }
+ ],
+ "title_field": "no_aju_keluar",
+ "track_changes": 1
+}
