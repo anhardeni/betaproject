@@ -151,6 +151,15 @@ def get_items_from_header(header_name):
             frappe.throw(_(f"HEADER V21 '{header_name}' tidak ditemukan."))
 
         # Ambil dari child table BARANG (nama child table sesuai DocType Anda)
+        # Tarik Nomor Kontrak (kode 315) dari tabel DOKUMEN
+        contract_doc = frappe.get_all(
+            "DOKUMEN",
+            filters={"parent": header_name, "parenttype": "HEADER V21", "kode_dokumen": "315"},
+            fields=["nomor_dokumen"],
+            limit=1
+        )
+        nomor_kontrak = contract_doc[0].nomor_dokumen if contract_doc else ""
+
         # Ambil dari child table BARANG di HEADER V21
         # field nyata: kode_barang, uraian, kode_satuan, jumlah_satuan
         items = frappe.get_all(
@@ -173,8 +182,46 @@ def get_items_from_header(header_name):
                 "qty_outstanding": qty
             })
 
-        return result
+        return {
+            "items": result,
+            "nomor_kontrak": nomor_kontrak
+        }
 
     except Exception:
         frappe.log_error(frappe.get_traceback(), "get_items_from_header Error")
         return []
+
+
+# ─── API: Registrasi Aju Subkon (External) ───────────────────────────────────
+@frappe.whitelist()
+def register_external_subcon_aju(no_aju, kode_kantor, doc_type, recon_name=None):
+    """
+    Memasukkan nomor aju pihak ketiga ke Customs Status Log agar ditarik oleh
+    smart_ceisa_polling secara otomatis.
+    """
+    try:
+        if frappe.db.exists("Customs Status Log", {"no_aju": no_aju}):
+            return {"status": "success", "message": "Nomor Aju sudah terdaftar."}
+
+        log = frappe.get_doc({
+            "doctype": "Customs Status Log",
+            "no_aju": no_aju,
+            "kode_kantor": kode_kantor,
+            "doctype_type": doc_type,
+            "is_external_doc": 1,
+            "bc_status": "Pending",
+            "polling_interval": 1,
+            "next_polling_time": frappe.utils.now_datetime()
+        })
+        log.insert(ignore_permissions=True)
+
+        if recon_name:
+            # Beri komentar di rekonsiliasi bahwa kita sedang menunggu dokumen subkon ditarik
+            recon = frappe.get_doc("Subcontract Reconciliation", recon_name)
+            recon.add_comment("Comment", f"⏳ Mencoba menarik Dokumen Subkon {no_aju} dari CEISA...")
+
+        return {"status": "success", "message": "Berhasil didaftarkan."}
+
+    except Exception:
+        frappe.log_error(frappe.get_traceback(), "register_external_subcon_aju Error")
+        frappe.throw(_("Gagal mendaftarkan nomor aju eksternal. Silakan cek Error Log."))

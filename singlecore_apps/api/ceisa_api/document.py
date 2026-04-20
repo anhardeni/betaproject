@@ -66,7 +66,7 @@ def _parse_response(response):
     except Exception:
         data = response.text
     return {
-        "status": "success" if response.status_code == 200 else "error",
+        "status": "success" if response.status_code in [200, 201] else "error",
         "http_code": response.status_code,
         "data": data
     }
@@ -89,9 +89,6 @@ def check_document(payload):
     """
     try:
         token = ensure_login()
-        if not token:
-            return {"status": "error", "message": "Tidak bisa mendapatkan token. Silakan login terlebih dahulu."}
-
         settings = get_ceisa_settings()
         base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
         url = f"{base_url}/openapi/document/check"
@@ -123,9 +120,6 @@ def send_document(payload, is_final=False):
     """
     try:
         token = ensure_login()
-        if not token:
-            return {"status": "error", "message": "Tidak bisa mendapatkan token. Silakan login terlebih dahulu."}
-
         settings = get_ceisa_settings()
         base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
         final_str = "true" if is_final else "false"
@@ -140,7 +134,7 @@ def send_document(payload, is_final=False):
         # Pastikan kita hanya membuat Log Status JIKA dokumen ini adalah FINAL
         # dan respons dari CEISA menyatakan sukses (status == 'success' atau http_code == 200)
         
-        if is_final and result.get("http_code") in [200, 201] and result.get("status") != "error":
+        if result.get("http_code") in [200, 201] and result.get("status") != "error":
             
             # Kita harus ekstrak Nomor Aju dari payload karena kita tidak melempar header_doc
             payload_dict = payload if isinstance(payload, dict) else json.loads(payload)

@@ -6,19 +6,23 @@ from frappe.utils import now_datetime
 
 def auto_create_customs_log(header_doc, payload_json, response_raw):
     """
-    Fungsi Pemicu: Dipanggil saat dokumen berhasil terkirim ke server CEISA API (HTTP 200).
+    Fungsi Pemicu: Dipanggil saat dokumen berhasil terkirim ke server CEISA API (HTTP 200/201).
     Mencegah No Aju Ganda (Duplikasi) dengan logika Upsert.
     """
-    no_aju = header_doc.nomoraju
+    import json
+    try:
+        p = json.loads(payload_json)
+    except:
+        p = {}
+
+    no_aju = header_doc.get("nomoraju") or p.get("nomorAju") or p.get("nomor_aju")
     
     if not no_aju:
-        frappe.log_error("Auto Create Log Gagal", "Nomor Aju Kosong pada HEADER V21")
+        frappe.log_error("Auto Create Log Gagal", "Nomor Aju tidak ditemukan di Doc maupun Payload")
         return
 
     # 1. Cek Cerdas (Anti Duplikasi & Revisi)
     if frappe.db.exists("Customs Status Log", no_aju):
-        # Jika dokumen log aslinya sudah ada, kita hanya "menimpa" update terbarunya
-        # dan membangunkan robot polling lagi agar mencari status barunya ke CEISA.
         log = frappe.get_doc("Customs Status Log", no_aju)
         log.submission_datetime = now_datetime()
         log.payload_json = payload_json
@@ -26,11 +30,10 @@ def auto_create_customs_log(header_doc, payload_json, response_raw):
         
         # Bangunkan Robot Polling
         log.bc_status = "Pending"
-        log.polling_interval = 1
+        log.polling_interval = 5 # Reset ke 5 menit
         log.next_polling_time = now_datetime()
         
         log.save(ignore_permissions=True)
-        frappe.logger("customs_integration").info(f"Log BC Updated (Revisi) untuk Aju: {no_aju}")
         return
 
     # 2. Pembuatan Dokumen Baru
@@ -38,29 +41,23 @@ def auto_create_customs_log(header_doc, payload_json, response_raw):
         log = frappe.get_doc({
             "doctype": "Customs Status Log",
             "no_aju": no_aju,
-            "doctype_type": header_doc.kode_dokumen, # Pastikan formatnya "BC23" dll
-            "company": frappe.defaults.get_user_default("Company") or "Nama Perusahaan Anda",
-            
-            # Tali Pusar ke Dokumen Induk (Traceability Audit)
+            "doctype_type": header_doc.get("kode_dokumen"),
+            "company": header_doc.get("company") or frappe.defaults.get_user_default("Company"),
             "linked_document_type": "HEADER V21",
             "linked_document_name": header_doc.name,
-            
-            # Status Awal
             "bc_status": "Pending",
             "submission_datetime": now_datetime(),
             "payload_json": payload_json,
             "last_response_raw": response_raw,
-            
-            # Jadwal Robot Polling Pertama Kali
             "priority": "Medium",
-            "polling_interval": 1,
+            "polling_interval": 5,
             "next_polling_time": now_datetime()
         })
         log.insert(ignore_permissions=True)
-        frappe.logger("customs_integration").info(f"Log BC Baru Diciptakan untuk Aju: {no_aju}")
+        frappe.db.commit() # Pastikan tersimpan agar polling bisa jalan
         
     except Exception as e:
-        frappe.log_error(f"Gagal Membuat Log BC Otomatis: {no_aju}", str(e))
+        frappe.log_error(f"Gagal Membuat Log BC Otomatis: {no_aju}", frappe.get_traceback())
 
 
 class HEADERV21(Document):

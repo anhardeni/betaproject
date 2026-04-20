@@ -31,9 +31,6 @@ def get_status_by_nomor_aju(nomor_aju):
     """
     try:
         token = ensure_login()
-        if not token:
-            return {"status": "error", "message": "Tidak bisa mendapatkan token. Silakan login terlebih dahulu."}
-
         settings = get_ceisa_settings()
         base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
 
@@ -71,9 +68,6 @@ def get_status_by_npwp(npwp):
     """
     try:
         token = ensure_login()
-        if not token:
-            return {"status": "error", "message": "Tidak bisa mendapatkan token. Silakan login terlebih dahulu."}
-
         settings = get_ceisa_settings()
         base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
 
@@ -115,9 +109,6 @@ def download_respon(path):
     """
     try:
         token = ensure_login()
-        if not token:
-            return {"status": "error", "message": "Tidak bisa mendapatkan token. Silakan login terlebih dahulu."}
-
         settings = get_ceisa_settings()
         base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
 
@@ -161,9 +152,6 @@ def cetak_formulir(nomor_aju):
     """
     try:
         token = ensure_login()
-        if not token:
-            return {"status": "error", "message": "Tidak bisa mendapatkan token. Silakan login terlebih dahulu."}
-
         settings = get_ceisa_settings()
         base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
 

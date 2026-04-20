@@ -230,10 +230,14 @@ function add_beacukai_actions(frm) {
 					},
 					callback: function (r) {
 						if (r.message && r.message.status === 'success') {
-							frappe.msgprint('Login Successful');
+							frappe.msgprint(r.message.message || 'Login Successful');
 							d.hide();
 						} else {
-							frappe.msgprint('Login Failed: ' + (r.message ? r.message.message : 'Unknown error'));
+							frappe.msgprint({
+								title: 'Login Failed',
+								message: r.message ? r.message.message : 'Unknown error',
+								indicator: 'red'
+							});
 						}
 					}
 				});
@@ -366,7 +370,8 @@ function check_with_ceisa(frm) {
 				body += '</tbody></table>';
 			} else {
 				// ❌ Generic error — show raw response
-				body = `<p><strong>HTTP ${http_code}</strong></p><pre style="white-space:pre-wrap;font-size:0.85em;">${JSON.stringify(data, null, 2)}</pre>`;
+				const error_msg = res.message ? `<p style="color: red; margin-bottom: 10px;"><strong>Error:</strong> ${res.message}</p>` : '';
+				body = `<p><strong>HTTP ${http_code}</strong></p>\n\t\t\t\t${error_msg}\n\t\t\t\t<pre style="white-space:pre-wrap;font-size:0.85em;">${JSON.stringify(data, null, 2)}</pre>`;
 			}
 
 			frappe.msgprint({

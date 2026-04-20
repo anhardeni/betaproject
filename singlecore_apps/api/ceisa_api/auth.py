@@ -6,6 +6,7 @@ Shared authentication functions used by all CEISA API modules.
 Handles login, token caching, and header construction.
 """
 
+import json
 import frappe
 import requests
 
@@ -46,7 +47,7 @@ def ensure_login():
         str: Bearer token
 
     Raises:
-        frappe.ValidationError if login fails
+        frappe.ValidationError if login fails or token is missing
     """
     token = get_cached_token()
     if token:
@@ -58,13 +59,21 @@ def ensure_login():
     password = settings.get_password("default_password") if settings.default_password else None
 
     if not username or not password:
-        frappe.throw("Tidak ada session aktif. Silakan login terlebih dahulu atau isi Default Username/Password di CEISA Settings.")
+        frappe.throw("Sesi CEISA habis. Silakan Login manual atau lengkapi Default Username/Password di CEISA Settings.")
 
     result = login_beacukai(username, password)
-    if result.get("status") != "success":
-        frappe.throw(f"Auto-login gagal: {result.get('message')}")
+    
+    if result.get("status") == "success":
+        new_token = get_cached_token()
+        if new_token:
+            return new_token
+        
+        # Succeeded but no token cached (case where API says success but no token in response)
+        msg = result.get("note") or "Login berhasil tapi token tidak ditemukan dalam respons CEISA."
+        frappe.throw(msg)
 
-    return get_cached_token()
+    # Login failed
+    frappe.throw(f"Auto-login CEISA gagal: {result.get('message')}")
 
 
 def refresh_token():
@@ -94,12 +103,19 @@ def refresh_token():
 
         # Extract new token from various possible response shapes
         new_token = None
-        if data.get("item") and isinstance(data["item"], dict):
-            new_token = data["item"].get("access_token")
-        elif data.get("item") and isinstance(data["item"], str):
-            new_token = data["item"]
-        elif data.get("access_token"):
-            new_token = data["access_token"]
+        item = data.get("item")
+
+        if item:
+            if isinstance(item, dict):
+                new_token = item.get("access_token") or item.get("token") or item.get("accessToken")
+            elif isinstance(item, str):
+                new_token = item
+        
+        if not new_token:
+            new_token = data.get("access_token") or data.get("token") or data.get("accessToken")
+        
+        if not new_token and isinstance(data.get("data"), dict):
+            new_token = data["data"].get("access_token") or data["data"].get("token") or data["data"].get("accessToken")
 
         if new_token:
             frappe.cache().hset("beacukai_token", frappe.session.user, new_token)
@@ -144,32 +160,44 @@ def login_beacukai(username, password):
 
         payload = {
             "username": username,
-            "password": password
+            "password": password,
+            "client_id": settings.client_id,
+            "client_secret": settings.get_password("client_secret") if settings.client_secret else None
         }
 
         response = requests.post(url, json=payload, headers=headers)
         response.raise_for_status()
         data = response.json()
 
-        # Extract token from response
+        # Extract token from response (handle various CEISA response formats)
         token = None
-        if data.get("item") and isinstance(data["item"], dict):
-            token = data["item"].get("access_token")
-        elif data.get("item") and isinstance(data["item"], str):
-            token = data["item"]
-        elif data.get("access_token"):
-            token = data["access_token"]
+        item = data.get("item")
+
+        if item:
+            if isinstance(item, dict):
+                token = item.get("access_token") or item.get("token") or item.get("accessToken")
+            elif isinstance(item, str):
+                token = item
+        
+        if not token:
+            token = data.get("access_token") or data.get("token") or data.get("accessToken")
+        
+        # Check in a 'data' field as some endpoints wrap it there
+        if not token and isinstance(data.get("data"), dict):
+            token = data["data"].get("access_token") or data["data"].get("token") or data["data"].get("accessToken")
 
         if token:
             frappe.cache().hset("beacukai_token", frappe.session.user, token)
-            return {"status": "success", "message": "Login successful"}
+            masked_token = f"{str(token)[:8]}...{str(token)[-8:]}" if len(str(token)) > 16 else str(token)
+            return {"status": "success", "message": f"Login successful. Token: {masked_token}"}
 
-        # Login success but no token returned
-        if data.get("status") == "success":
+        # Login success but no token returned — log for debugging
+        if data.get("status") == "success" or response.status_code == 200:
+            frappe.log_error(f"CEISA Login success but no token found in JSON: {json.dumps(data)}", "CEISA Auth Debug")
             return {
                 "status": "success",
-                "message": data.get("message", "Login successful"),
-                "note": "Login berhasil tapi belum ada token.",
+                "message": data.get("message", "Login successful (No Token)"),
+                "note": "Login berhasil tapi token tidak ditemukan dalam respons API.",
                 "response": data
             }
 

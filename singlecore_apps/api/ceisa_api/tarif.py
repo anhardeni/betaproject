@@ -30,9 +30,6 @@ def get_tarif_hs(kode_hs, tanggal=None):
     """
     try:
         token = ensure_login()
-        if not token:
-            return {"status": "error", "message": "Tidak bisa mendapatkan token. Silakan login terlebih dahulu."}
-
         settings = get_ceisa_settings()
         base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
 
@@ -75,9 +72,6 @@ def get_lartas_hscode(kode_hs):
     """
     try:
         token = ensure_login()
-        if not token:
-            return {"status": "error", "message": "Tidak bisa mendapatkan token. Silakan login terlebih dahulu."}
-
         settings = get_ceisa_settings()
         base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
 

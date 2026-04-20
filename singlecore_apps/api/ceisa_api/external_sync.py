@@ -3,140 +3,134 @@
 
 import frappe
 import requests
-from frappe.utils import now_datetime, add_to_date
+import json
+from frappe.utils import now_datetime, add_to_date, flt
+from singlecore_apps.api.ceisa_api.auth import get_ceisa_settings, ensure_login, build_auth_headers
 
 def smart_ceisa_polling():
-    """Fungsi Penjadwal Otomatis (Anti-DDoS) berjalan via Frappe Scheduler"""
-    
-    # 1. Mencari log eksternal (PPJK/Subkon) yang statusnya belum selesai, 
-    # dan waktu jadwal polling-nya (next_polling_time) sudah terlewati.
+    """
+    Fungsi Penjadwal Otomatis (Anti-DDoS)
+    Berjalan via Frappe Scheduler (Hourly)
+    """
+    # Mencari dokumen eksternal (Subkon/PPJK) yang belum selesai
     pending_logs = frappe.get_all("Customs Status Log", 
         filters={
             "is_external_doc": 1,
             "bc_status": ["in", ["Pending", "Registered", "On Hold"]],
             "next_polling_time": ["<=", now_datetime()]
         }, 
-        fields=["name", "no_aju", "kode_kantor", "polling_interval"]
+        fields=["name", "no_aju"]
     )
 
-    # 2. Eksekusi penarikan data satu per satu
     for entry in pending_logs:
-        success, message = trigger_sync_now(entry.name)
-        frappe.logger("customs_sync").info(f"Sync Polling {entry.no_aju}: {message}")
+        try:
+            # Menggunakan background worker agar satu dokumen gagal tidak mematikan antrean lain
+            frappe.enqueue(
+                "singlecore_apps.api.ceisa_api.external_sync.trigger_sync_now",
+                log_name=entry.name,
+                now=frappe.flags.in_test
+            )
+        except Exception:
+            frappe.log_error(f"Failed to enqueue sync for {entry.no_aju}")
 
 
 @frappe.whitelist()
 def trigger_sync_now(log_name):
     """
-    Fungsi Penarik API Eksternal (API GET /document/detail).
-    Bisa dipanggil manual via tombol UI (JS) atau dari fungsi smart_ceisa_polling di atas.
+    Penarik Data Detail Dokumen (API GET /document/detail).
+    Pilar utama untuk menarik data dokumen yang diajukan pihak Subkon.
     """
     log = frappe.get_doc("Customs Status Log", log_name)
-    
     no_aju = log.no_aju
-    kode_kantor = log.kode_kantor
-    doc_type = log.doctype_type
     
-    # Validasi Dasar
-    if not no_aju or not kode_kantor:
-        return False, "Nomor Aju dan Kode Kantor Wajib Diisi untuk Dokumen Eksternal!"
-
-    # -------------------------------------------------------------
-    # 3. PANGGIL API CEISA
-    # -------------------------------------------------------------
-    # url = f"https://api.beacukai.go.id/document/detail/{doc_type}/{no_aju}/{kode_kantor}"
-    # headers = {"Authorization": "Bearer ...", "beacukai-api-key": "..."}
-    # response = requests.get(url, headers=headers)
-    
-    # SIMULASI response.json() dari API aslinya:
-    api_response = {
-        "status": "OK", # Anggap API membalas sukses
-        "data": {
-            "header": {
-                "nomorAju": no_aju,
-                "nomorDaftar": "REG-991122",
-                "tanggalDaftar": "2026-03-25",
-                "entitas_pemasok": "PT PEMASOK LUAR NEGERI"
-            },
-            "barang": [
-                {"kodeBarang": "ITEM-01", "uraian": "Raw Material A", "jumlah": 150, "harga": 10}
-            ]
-        }
-    }
-    
-    is_data_available = (api_response.get("status") == "OK")
-    
-    if is_data_available:
-        try:
-            # 4. DATA DITEMUKAN: Jalankan Fungsi Mapping ke Tabel Internal
-            process_ceisa_detail_to_db(log, api_response["data"])
+    try:
+        # 1. AUTH & SETTINGS
+        token = ensure_login()
+        settings = get_ceisa_settings()
+        base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
+        
+        # Mapping endpoint sesuai tipe dokumen
+        # Format API biasanya: /openapi/document/{tipe}/{no_aju}/{kantor}
+        url = f"{base_url}/openapi/document/{log.doctype_type or 'BC27'}/{no_aju}/{log.kode_kantor}"
+        headers = build_auth_headers(token)
+        
+        # 2. CALL API
+        response = requests.get(url, headers=headers, timeout=30)
+        
+        if response.status_code == 200:
+            api_data = response.json()
+            # 3. PROSES DATA KE DATABASE
+            process_ceisa_detail_to_db(log, api_data.get("data") or api_data)
             
-            # 5. Update Status Log menjadi Selesai agar polling terhenti
-            log.bc_status = "Completed"
-            log.polling_interval = 0
-            log.next_polling_time = None 
+            # Jika data detail berhasil ditarik, hentikan polling terjadwal
+            log.bc_status = "Completed" if not log.nopen else "Registered"
+            log.next_polling_time = None
             log.save(ignore_permissions=True)
+            frappe.db.commit()
             
-            return True, "Berhasil Menarik Data Pabean Eksternal dari CEISA."
-            
-        except Exception as e:
-            error_msg = f"Gagal Memproses Data JSON API: {str(e)}"
-            frappe.log_error(title=f"Error Sync Eksternal {no_aju}", message=error_msg)
-            return False, error_msg
+            return True, f"Data {no_aju} berhasil ditarik dan di-sync."
+        
+        else:
+            # 4. DATA BELUM TERBIT / ERROR (SMART BACKOFF)
+            _handle_polling_error(log)
+            return False, f"API Response {response.status_code}: Data belum tersedia."
 
-    else:
-        # 6. DATA BELUM ADA (PPJK BELUM SUBMIT): Jalankan Logika Smart Backoff
-        interval = log.polling_interval or 1 # Default jeda 1 Jam
-        
-        # Tiap gagal, jeda ditambah 2 jam (Maksimal jeda penarikan adalah 24 jam)
-        new_interval = interval + 2 
-        if new_interval > 24:
-            new_interval = 24 
-            
-        log.polling_interval = new_interval
-        log.next_polling_time = add_to_date(now_datetime(), hours=new_interval)
-        log.bc_status = "Pending"
-        
-        log.save(ignore_permissions=True)
-        return False, f"Data CEISA Kosong. Reschedule ke: {log.next_polling_time}"
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), f"Sync External Error: {no_aju}")
+        return False, str(e)
+
+
+def _handle_polling_error(log):
+    """Meningkatkan jeda polling secara bertahap jika data tidak ditemukan"""
+    interval = log.polling_interval or 1
+    new_interval = min(interval + 2, 24) # Maksimal 24 jam sekali
+    
+    log.db_set({
+        "polling_interval": new_interval,
+        "next_polling_time": add_to_date(now_datetime(), hours=new_interval),
+        "bc_status": "Pending"
+    })
 
 
 def process_ceisa_detail_to_db(log, data):
     """
-    Memasukkan hasil JSON API CEISA ke dalam tabel internal (HEADER V21 & BARANG V1).
-    Sehingga dokumen PPJK "menetas" (tercipta) di sistem ERP Anda secara otomatis.
+    Pemetaan (Mapping) Detail Dokumen dari JSON API ke Dokumen Internal.
     """
-    no_aju = log.no_aju
     header_data = data.get("header", {})
     barang_data = data.get("barang", [])
     
-    # Update Nomor Daftar di Log Utama (Jembatan Integrasi Laporan IT Inventory)
-    log.nopen = header_data.get("nomorDaftar")
-    log.nopen_date = header_data.get("tanggalDaftar")
+    # Update Nopen di Log agar Laporan IT Inventory Sinkron
+    log.nopen = header_data.get("nomorDaftar") or log.nopen
+    log.nopen_date = header_data.get("tanggalDaftar") or log.nopen_date
     
-    # 1. Buat Dokumen HEADER V21 (Hanya jika belum ada sebelumnya)
-    if not frappe.db.exists("HEADER V21", no_aju):
-        
-        frappe.get_doc({
-            "doctype": "HEADER V21",
-            "nomoraju": no_aju,
-            "kode_dokumen": log.doctype_type.replace("BC", ""),
-            "nama_entitas": header_data.get("entitas_pemasok", "Nama Pemasok Eksternal"),
-            "linked_purchase_order": log.linked_purchase_order, # Menyambungkan ke PO Gudang
-            "custom_is_external": 1
-        }).insert(ignore_permissions=True)
-        
-        # 2. Buat Detail BARANG V1
-        for idx, item in enumerate(barang_data, start=1):
-            frappe.get_doc({
-                "doctype": "BARANG V1",
-                "nomoraju": no_aju,
-                "seri": idx,
+    # 1. UPSERT HEADER V21
+    if not frappe.db.exists("HEADER V21", log.no_aju):
+        h = frappe.new_doc("HEADER V21")
+        h.nomoraju = log.no_aju
+        h.kode_dokumen = (log.doctype_type or "").replace("BC", "")
+        h.nama_entitas = header_data.get("namaEntitas") or "External Partner"
+        h.nomor_daftar = log.nopen
+        h.tanggal_daftar = log.nopen_date
+        h.custom_is_external = 1
+        h.insert(ignore_permissions=True)
+    else:
+        h = frappe.get_doc("HEADER V21", log.no_aju)
+        h.nomor_daftar = log.nopen
+        h.tanggal_daftar = log.nopen_date
+        h.save(ignore_permissions=True)
+
+    # 2. UPSERT BARANG
+    for item in barang_data:
+        seri = item.get("seriBarang") or item.get("seri")
+        if not frappe.db.exists("BARANG", {"parent": h.name, "seri_barang": seri}):
+            h.append("barang", {
+                "seri_barang": seri,
                 "kode_barang": item.get("kodeBarang"),
                 "uraian": item.get("uraian"),
-                "jumlah_satuan": item.get("jumlah"),
-                "harga_satuan": item.get("harga")
-            }).insert(ignore_permissions=True)
-            
-    # Commit perubahan struktur Database
+                "jumlah_satuan": flt(item.get("jumlahSatuan") or item.get("jumlah")),
+                "kode_satuan": item.get("kodeSatuan"),
+                "harga_satuan": flt(item.get("hargaSatuan") or item.get("harga"))
+            })
+    
+    h.save(ignore_permissions=True)
     frappe.db.commit()

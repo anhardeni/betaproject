@@ -67,7 +67,7 @@
    "fieldname": "linked_document_name",
    "fieldtype": "Link",
    "label": "Dokumen Terkait",
-   "options": "Batch"
+   "options": "linked_document_type"
   },
   {
    "fieldname": "column_break_1",

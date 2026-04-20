@@ -231,7 +231,7 @@ def pull_status_for_log(log_name):
         
         # Pastikan kode status ada di master referensi
         kode = row.get("kodeStatus")
-        ensure_status_code_exists("BC Status Code", kode)
+        ensure_status_code_exists("Referensi Status", kode)
 
         log.append("statuses", {
             "nomor_aju":    row.get("nomorAju"),
@@ -248,8 +248,8 @@ def pull_status_for_log(log_name):
         if _is_response_exist(log, row): continue
 
         kode = row.get("kodeRespon")
-        # Jika Anda ingin memastikan kode respon juga ada (misal di DocType "BC Response Code")
-        # ensure_status_code_exists("BC Response Code", kode) 
+        # Pastikan kode respon ada di master referensi (Referensi Respon)
+        ensure_status_code_exists("Referensi Respon", kode) 
 
         pdf_link = None
         if row.get("Pdf"):
@@ -489,21 +489,49 @@ def _sync_linked_doc(log_doc):
 def ensure_status_code_exists(doctype, code):
     """
     Mengecek apakah kode ada di referensi, jika tidak ada, buat otomatis
-    agar log.save() tidak error.
+    agar log.save() tidak error (terutama untuk Link field).
     """
     if not code: return
     
     try:
-        # Pengecekan aman apakah doctype itu sendiri ada, agar tidak TypeError/ImportError
         if not frappe.db.exists("DocType", doctype):
             return
             
-        if not frappe.db.exists(doctype, {"name": code}):
-            frappe.get_doc({
-                "doctype": doctype,
-                "code": code,
-                "description": "Auto-created from API"
-            }).insert(ignore_permissions=True)
+        # 1. Cek berdasarkan Name (Primary Key)
+        if frappe.db.exists(doctype, code):
+            return
+            
+        # 2. Cek berdasarkan Field (kode_respon / kode_status / code)
+        meta = frappe.get_meta(doctype)
+        field_to_check = None
+        if meta.get_field("kode_respon"): field_to_check = "kode_respon"
+        elif meta.get_field("code"): field_to_check = "code"
+        elif meta.get_field("kode_status"): field_to_check = "kode_status"
+        
+        if field_to_check and frappe.db.exists(doctype, {field_to_check: code}):
+            return
+
+        # 3. Buat Baru jika benar-benar tidak ada
+        new_doc = frappe.new_doc(doctype)
+        
+        # Map code ke field yang sesuai
+        if field_to_check:
+            new_doc.set(field_to_check, code)
+        
+        # Map deskripsi default
+        if meta.get_field("uraian_respon"):
+            new_doc.uraian_respon = "Diatur Otomatis Sistem"
+        elif meta.get_field("nama_status"):
+            new_doc.nama_status = "Diatur Otomatis Sistem"
+        elif meta.get_field("description"):
+            new_doc.description = "Auto-created from API"
+        
+        # Gunakan code sebagai name jika autoname mengizinkan
+        if not new_doc.name:
+            new_doc.name = code
+            
+        new_doc.insert(ignore_permissions=True)
+        frappe.db.commit()
     except Exception as e:
         frappe.logger("customs_status_log").warning(f"Gagal memastikan status code {code} di {doctype}: {e}")
 

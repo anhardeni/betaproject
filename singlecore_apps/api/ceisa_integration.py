@@ -64,7 +64,8 @@ def send_ceisa_document(docname):
         result = send_document(payload, is_final=False)
 
         # ── Create / update Customs Status Log after successful submission ──
-        if result.get("status") == "success":
+        # Support both 200 and 201 as success
+        if result.get("status") == "success" or result.get("http_code") in [200, 201]:
             try:
                 response_data = result.get("data") or {}
                 if isinstance(response_data, str):
@@ -74,9 +75,11 @@ def send_ceisa_document(docname):
                     except Exception:
                         response_data = {}
 
+                # Ambil nomor aju dari respon API atau payload atau dari dokumen langsung
                 no_aju = (
                     response_data.get("nomorAju")
                     or response_data.get("nomor_aju")
+                    or (isinstance(payload, dict) and payload.get("nomorAju"))
                     or doc.nomoraju
                     or ""
                 )
@@ -87,13 +90,12 @@ def send_ceisa_document(docname):
                         create_or_update_log,
                     )
                     create_or_update_log(
-                        docname=docname,
-                        no_aju=no_aju,
+                        docname=docname, # ID dokumen asli (misal SC-HDR-...)
+                        no_aju=no_aju,    # Nomor Aju dari Bea Cukai
                         payload=payload,
                         bc_type=bc_type,
                     )
             except Exception:
-                # Non-blocking — log the error but still return success to the caller
                 frappe.log_error(
                     frappe.get_traceback(),
                     f"send_ceisa_document: create_or_update_log failed [{docname}]"
