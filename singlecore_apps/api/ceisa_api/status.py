@@ -175,3 +175,33 @@ def send_completion_notification(log_doc, api_row):
 
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Email Notification Error")
+
+
+@frappe.whitelist()
+def cetak_formulir(nomor_aju):
+    """
+    Cetak formulir respon dari CEISA.
+    Shortcut ke endpoint /openapi/respon/cetak-formulir/{nomor_aju}
+    """
+    try:
+        from .auth import ensure_login, build_auth_headers
+        token = ensure_login()
+        settings = get_ceisa_settings()
+        base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
+
+        url = f"{base_url}/openapi/respon/cetak-formulir/{nomor_aju}"
+        headers = build_auth_headers(token)
+
+        response = requests.get(url, headers=headers)
+        
+        if response.status_code == 200:
+            return {
+                "status": "success",
+                "data": response.content if "pdf" in response.headers.get("Content-Type", "") else response.json()
+            }
+        else:
+            return {"status": "error", "message": f"Cetak gagal: {response.status_code}"}
+            
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Cetak Formulir Error")
+        return {"status": "error", "message": str(e)}
