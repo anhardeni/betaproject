@@ -242,6 +242,18 @@ def pull_status_for_log(log_name):
             "keterangan":   row.get("keterangan"),
         })
         added_statuses += 1
+    # ── Header Information ───────────────────────────────────────────────
+    no_aju = data.get("nomorAju")
+    if not no_aju:
+        return {"status": "error", "message": "Respon API tidak memiliki nomorAju"}
+
+    # Cleansing Jenis Dokumen (Hilangkan "BC" jika ada agar valid dengan Select options)
+    jenis_dok = data.get("kodeDokumen") or ""
+    if jenis_dok.startswith("BC"):
+        jenis_dok = jenis_dok.replace("BC", "", 1)
+    
+    log.jenis_dokumen = jenis_dok
+    log.entitas_pemberitahu = data.get("namaEntitas")
     # ── Process dataRespon[] ─────────────────────────────────────────────
     added_responses = 0
     for row in (data.get("dataRespon") or []):
