@@ -290,6 +290,21 @@ def pull_status_for_log(log_name):
                 if pdf_link:
                     existing_row.pdf_file = pdf_link
                     frappe.logger("customs_status_log").info(f"PDF ditambahkan ke respon eksisting: {no_aju}")
+                    
+                    # Jika ini adalah status SPPB/NPE, kirim email sekarang karena PDF baru saja tersedia
+                    kode_respon = existing_row.kode_respon
+                    if kode_respon in COMPLETED_RESPON_CODES:
+                        try:
+                            from singlecore_apps.api.ceisa_api.status import send_completion_notification
+                            # Buat dict row tiruan untuk helper email
+                            api_row = {
+                                "kodeRespon": kode_respon,
+                                "pdf_file": pdf_link
+                            }
+                            send_completion_notification(log, api_row)
+                            frappe.logger("customs_status_log").info(f"Email susulan dikirim untuk {no_aju} karena PDF baru tersedia.")
+                        except Exception as e:
+                            frappe.log_error(title="Gagal Mengirim Email Susulan", message=str(e))
             continue
 
         kode = row.get("kodeRespon")
