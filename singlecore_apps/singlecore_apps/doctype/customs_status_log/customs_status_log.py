@@ -194,6 +194,12 @@ def pull_status_for_log(log_name):
     if isinstance(data, str):
         try: data = json.loads(data)
         except: data = {}
+    
+    # Unwrap jika dibungkus 'item' atau 'data'
+    if not data.get("dataStatus") and isinstance(data.get("item"), dict):
+        data = data.get("item")
+    elif not data.get("dataStatus") and isinstance(data.get("data"), dict):
+        data = data.get("data")
     # --- 3. DATA CHANGE DETECTION (HASHING) ---
     raw_data_string = json.dumps(data, sort_keys=True, default=str)
     current_hash = hashlib.md5(raw_data_string.encode('utf-8')).hexdigest()
@@ -243,17 +249,34 @@ def pull_status_for_log(log_name):
         })
         added_statuses += 1
     # ── Header Information ───────────────────────────────────────────────
-    no_aju = data.get("nomorAju")
+    # Cari nomorAju di root, atau di dalam 'item', atau 'data'
+    no_aju = data.get("nomorAju") or data.get("nomor_aju")
+    if not no_aju and isinstance(data.get("item"), dict):
+        no_aju = data.get("item", {}).get("nomorAju")
+    if not no_aju and isinstance(data.get("data"), dict):
+        no_aju = data.get("data", {}).get("nomorAju")
+        
     if not no_aju:
-        return {"status": "error", "message": "Respon API tidak memiliki nomorAju"}
+        # Jika masih tidak ketemu, gunakan no_aju dari log dokumen sebagai fallback
+        no_aju = log.nomor_aju
+        frappe.logger("ceisa_api").warning(f"nomorAju tidak ditemukan di respon API, menggunakan fallback: {no_aju}")
 
-    # Cleansing Jenis Dokumen (Hilangkan "BC" jika ada agar valid dengan Select options)
-    jenis_dok = data.get("kodeDokumen") or ""
+    # Cleansing Jenis Dokumen
+    # Coba cari kodeDokumen di root atau di item
+    kode_dok = data.get("kodeDokumen")
+    if not kode_dok and isinstance(data.get("item"), dict):
+        kode_dok = data.get("item", {}).get("kodeDokumen")
+        
+    jenis_dok = str(kode_dok or "").strip()
     if jenis_dok.startswith("BC"):
         jenis_dok = jenis_dok.replace("BC", "", 1)
     
-    log.jenis_dokumen = jenis_dok
-    log.entitas_pemberitahu = data.get("namaEntitas")
+    if jenis_dok:
+        log.jenis_dokumen = jenis_dok
+        
+    entitas = data.get("namaEntitas") or (data.get("item", {}) if isinstance(data.get("item"), dict) else {}).get("namaEntitas")
+    if entitas:
+        log.entitas_pemberitahu = entitas
     # ── Process dataRespon[] ─────────────────────────────────────────────
     added_responses = 0
     for row in (data.get("dataRespon") or []):
