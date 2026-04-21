@@ -15,7 +15,7 @@
   "tanggal_respon",
   "waktu_respon",
   "waktu_status",
-  "section_detail",
+  "column_break_knnc",
   "pdf_file",
   "keterangan",
   "pesan_json"
@@ -29,10 +29,9 @@
   },
   {
    "fieldname": "kode_respon",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Kode Respon",
-   "options": "Referensi Respon"
+   "label": "Kode Respon"
   },
   {
    "fieldname": "nomor_daftar",
@@ -76,11 +75,6 @@
    "label": "Keterangan"
   },
   {
-   "fieldname": "section_detail",
-   "fieldtype": "Section Break",
-   "label": "Detail Pesan & PDF"
-  },
-  {
    "description": "Array pesan dari field 'pesan' dalam dataRespon",
    "fieldname": "pesan_json",
    "fieldtype": "Long Text",
@@ -92,11 +86,15 @@
    "fieldtype": "Link",
    "label": "PDF File",
    "options": "File"
+  },
+  {
+   "fieldname": "column_break_knnc",
+   "fieldtype": "Column Break"
   }
  ],
  "istable": 1,
  "links": [],
- "modified": "2026-03-18 10:23:30.632818",
+ "modified": "2026-04-21 10:42:11.847524",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Customs Status Log Response",

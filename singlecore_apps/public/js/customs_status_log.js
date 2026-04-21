@@ -82,6 +82,32 @@ function _add_pull_button(frm) {
             __("Bea Cukai")
         );
     }
+    
+    // Download Raw JSON button
+    frm.add_custom_button(
+        __("Download Raw JSON"),
+        function () {
+            if (!frm.doc.last_response_raw) {
+                frappe.msgprint(__("Belum ada data raw. Klik 'Pull Status Now' terlebih dahulu."));
+                return;
+            }
+            const filename = `Status_${frm.doc.no_aju}.json`;
+            const data = frm.doc.last_response_raw;
+            _download_json(data, filename);
+        },
+        __("Bea Cukai")
+    );
+}
+
+function _download_json(data, filename) {
+    const jsonStr = typeof data === "string" ? data : JSON.stringify(data, null, 2);
+    const blob = new Blob([jsonStr], { type: "application/json" });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    a.click();
+    window.URL.revokeObjectURL(url);
 }
 
 function _do_pull(frm) {
@@ -108,6 +134,12 @@ function _do_pull(frm) {
                         indicator: "green"
                     }, 8);
                     frm.reload_doc();
+                } else if (msg.status === "no_change") {
+                    frappe.msgprint({
+                        title: __("Tidak Ada Perubahan"),
+                        indicator: "blue",
+                        message: __("Data dari Bea Cukai masih sama dengan data terakhir di sistem.")
+                    });
                 } else {
                     frappe.msgprint({
                         title: __("Pull Status Gagal"),

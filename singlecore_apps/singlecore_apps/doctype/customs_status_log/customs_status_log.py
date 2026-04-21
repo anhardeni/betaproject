@@ -93,12 +93,13 @@ def create_or_update_log(docname, no_aju, payload, bc_type=""):
 
         return {"status": "success", "log_name": log.name}
 
-    except Exception:
+    except Exception as e:
+        msg = str(e)
         frappe.log_error(
             frappe.get_traceback(),
             f"Customs Status Log — create_or_update_log [{no_aju}]"
         )
-        return {"status": "error", "message": frappe.get_last_doc("Error Log").error if True else "Lihat Error Log"}
+        return {"status": "error", "message": msg}
 
 
 @frappe.whitelist()
@@ -187,7 +188,6 @@ def pull_status_for_log(log_name):
         log.db_set({
             "polling_interval": new_interval,
             "next_polling_time": add_to_date(now, minutes=new_interval),
-            "retry_count": (log.retry_count or 0) + 1
         })
         return {"status": "api_error", "message": result.get("message")}
     data = result.get("data") or {}
@@ -201,8 +201,8 @@ def pull_status_for_log(log_name):
     is_working_hour = 8 <= now.hour <= 18
     is_weekend = now.weekday() >= 5
     
-    if log.last_response_hash == current_hash:
-        # DATA SAMA: Tidak ada update dari Bea Cukai.
+    if log.last_response_hash == current_hash and not is_manual:
+        # DATA SAMA & Scheduler mode: Tidak ada update dari Bea Cukai.
         # Naikkan interval perlahan (perkalian 1.5x)
         base_interval = log.polling_interval or 5
         new_interval = min(base_interval * 1.5, 360) # Max 6 jam
@@ -242,18 +242,30 @@ def pull_status_for_log(log_name):
             "keterangan":   row.get("keterangan"),
         })
         added_statuses += 1
-    # ── Process dataRespon[] (Logika Asli Anda) ──────────────────────────
+    # ── Process dataRespon[] ─────────────────────────────────────────────
     added_responses = 0
     for row in (data.get("dataRespon") or []):
-        if _is_response_exist(log, row): continue
+        existing_row = _get_response_row(log, row)
+        
+        # Jika baris sudah ada, cek apakah PDF-nya masih kosong dan API punya PDF baru
+        if existing_row:
+            api_pdf = row.get("Pdf") or row.get("pdf")
+            if not existing_row.pdf_file and api_pdf:
+                pdf_link = _save_pdf(api_pdf, no_aju, row, log.name)
+                if pdf_link:
+                    existing_row.pdf_file = pdf_link
+                    frappe.logger("customs_status_log").info(f"PDF ditambahkan ke respon eksisting: {no_aju}")
+            continue
 
         kode = row.get("kodeRespon")
         # Pastikan kode respon ada di master referensi (Referensi Respon)
         ensure_status_code_exists("Referensi Respon", kode) 
 
+        pdf_data = row.get("Pdf") or row.get("pdf")
         pdf_link = None
-        if row.get("Pdf"):
-            pdf_link = _save_pdf(row.get("Pdf"), no_aju, row, log.name)
+        if pdf_data:
+            pdf_link = _save_pdf(pdf_data, no_aju, row, log.name)
+        
         log.append("responses", {
             "nomor_aju":     row.get("nomorAju"),
             "kode_respon":   kode,
@@ -321,9 +333,10 @@ def _is_status_exist(log_doc, api_row):
     return False
 
 
-def _is_response_exist(log_doc, api_row):
+def _get_response_row(log_doc, api_row):
     """
-    Return True if a matching row already exists in log_doc.responses.
+    Return the existing Row object from log_doc.responses if it matches api_row.
+    Otherwise return None.
     Unique key: nomor_respon + tanggal_respon (or kode_respon+waktu_respon fallback).
     """
     nomor  = str(api_row.get("nomorRespon") or "")
@@ -334,56 +347,77 @@ def _is_response_exist(log_doc, api_row):
     for row in (log_doc.responses or []):
         if nomor and tgl:
             if str(row.nomor_respon or "") == nomor and str(row.tanggal_respon or "") == tgl:
-                return True
+                return row
         else:
             # fallback: kode_respon + waktu_respon
             if str(row.kode_respon or "") == kode and str(row.waktu_respon or "") == waktu:
-                return True
-    return False
+                return row
+    return None
 
 
 # ════════════════════════════════════════════════════════════════════════════
 # PDF helper
 # ════════════════════════════════════════════════════════════════════════════
 
-def _save_pdf(base64_data, nomor_aju, api_row, doc_name):
+def _save_pdf(base64_or_path, nomor_aju, api_row, doc_name):
     """
-    Decode base64 PDF data and save as a private Frappe File.
-
-    Args:
-        base64_data: raw base64 string from API 'Pdf' field
-        nomor_aju  : used in file naming
-        api_row    : dict from dataRespon, used for naming
-        doc_name   : Customs Status Log name (for attachment metadata)
-
-    Returns:
-        file_url (str) or None on failure
+    Automatic detection: if it's a path, download it. If it's base64, decode it.
     """
     try:
-        kode   = api_row.get("kodeRespon") or "RESPON"
-        nomor  = api_row.get("nomorRespon") or frappe.generate_hash(length=6)
+        if not base64_or_path:
+            return None
+
+        kode   = str(api_row.get("kodeRespon") or "RESPON").replace("/", "-")
+        nomor  = str(api_row.get("nomorRespon") or frappe.generate_hash(length=6)).replace("/", "-")
         fname  = f"CEISA_{nomor_aju}_{kode}_{nomor}.pdf"
 
-        # Remove data-URL prefix if present
-        if "," in base64_data:
-            base64_data = base64_data.split(",", 1)[1]
+        # Hilangkan karakter ilegal lainnya untuk nama file
+        fname = "".join(x for x in fname if x.isalnum() or x in "._-")
 
-        _file = frappe.get_doc({
-            "doctype": "File",
-            "file_name": fname,
-            "attached_to_doctype": "Customs Status Log",
-            "attached_to_name": doc_name,
-            "content": base64.b64decode(base64_data),
-            "is_private": 1,
-        })
-        _file.insert(ignore_permissions=True)
+        field_value = str(base64_or_path).strip()
+        pdf_bytes = None
+
+        # 1. Check if it's a Path (e.g. 'respon/2026/4/20/...xxx.pdf')
+        if "/" in field_value and field_value.endswith(".pdf"):
+            from singlecore_apps.api.ceisa_api.status import download_respon
+            frappe.logger("customs_status_log").info(f"Downloading PDF from path: {field_value}")
+            res = download_respon(field_value)
+            
+            if res.get("status") == "success":
+                pdf_bytes = res.get("data")
+            else:
+                err_ext = res.get("message") or "Unknown"
+                # Simpan error ke DB agar user bisa baca di baris tersebut
+                frappe.db.set_value("Customs Status Log Response", api_row.get("name"), "keterangan", f"ERR: {err_ext[:200]}")
+                frappe.db.commit()
+                return None
+        
+        # 2. Otherwise treat as Base64
+        else:
+            if "," in field_value:
+                field_value = field_value.split(",", 1)[1]
+            pdf_bytes = base64.b64decode(field_value)
+
+        if not pdf_bytes:
+            return None
+
+        from frappe.utils.file_manager import save_file
+        _file = save_file(
+            fname, 
+            pdf_bytes, 
+            "Customs Status Log", 
+            doc_name, 
+            is_private=1,
+            decode=False
+        )
+        
         frappe.db.commit()
-        return _file.name  # Link → File uses doc name
+        return _file.name
 
-    except Exception:
+    except Exception as e:
         frappe.log_error(
             frappe.get_traceback(),
-            f"Customs Status Log — _save_pdf [{nomor_aju}]"
+            f"PDF Save Error [{nomor_aju[:20]}]"
         )
         return None
 
