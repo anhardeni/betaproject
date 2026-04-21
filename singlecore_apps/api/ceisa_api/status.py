@@ -120,3 +120,58 @@ def download_respon(path):
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "download_respon System Error")
         return {"status": "error", "message": f"System Error: {str(e)}"}
+
+
+def send_completion_notification(log_doc, api_row):
+    """
+    Kirim email notifikasi jika status SPPB/NPE tercapai.
+    Attachment: PDF yang barusan didownload.
+    """
+    try:
+        # Tentukan recipient (bisa dari setting atau owner dokumen)
+        settings = get_ceisa_settings()
+        recipient = settings.notification_email or log_doc.owner
+        
+        if not recipient or recipient == "Administrator":
+            # Fallback ke email user yang sedang aktif jika administrator
+            recipient = frappe.session.user
+            
+        if not recipient or "@" not in recipient:
+            frappe.logger("ceisa_api").warning("Email skip: No valid recipient found.")
+            return
+
+        kode = api_row.get("kodeRespon") or "RESPON"
+        no_aju = log_doc.nomor_aju
+        pdf_file = api_row.get("pdf_file") # Ini adalah file path (id File)
+
+        subject = f"NOTIFIKASI CEISA: {kode} - {no_aju}"
+        message = f"""
+        <p>Halo,</p>
+        <p>Dokumen dengan Nomor Aju <b>{no_aju}</b> telah mendapatkan respon <b>{kode}</b> dari Bea Cukai.</p>
+        <p>Terlampir adalah dokumen PDF respon tersebut.</p>
+        <br>
+        <p>Salam,<br>Sistem CEISA Auto-Sync</p>
+        """
+
+        attachments = []
+        if pdf_file:
+            # pdf_file di sini adalah nama dokumen 'File' di Frappe (misal: "private/files/...")
+            # Kita perlu mendapatkan path aslinya
+            file_doc = frappe.get_doc("File", pdf_file)
+            attachments.append({
+                "fname": file_doc.file_name,
+                "fcontent": file_doc.get_content()
+            })
+
+        frappe.sendmail(
+            recipients=[recipient],
+            subject=subject,
+            content=message,
+            attachments=attachments
+            if attachments else None
+        )
+        
+        frappe.logger("ceisa_api").info(f"Email notifikasi dikirim ke {recipient}")
+
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Email Notification Error")
