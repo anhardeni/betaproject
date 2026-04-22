@@ -1,100 +1,109 @@
 {
-    "actions": [],
-    "allow_rename": 1,
-    "creation": "2026-02-08 19:30:00.000000",
-    "doctype": "DocType",
-    "editable_grid": 1,
-    "engine": "InnoDB",
-    "field_order": [
-        "section_api_configuration",
-        "base_url",
-        "api_key",
-        "section_oauth2",
-        "client_id",
-        "client_secret",
-        "column_break_credentials",
-        "default_username",
-        "default_password"
-    ],
-    "fields": [
-        {
-            "fieldname": "section_api_configuration",
-            "fieldtype": "Section Break",
-            "label": "API Configuration"
-        },
-        {
-            "default": "https://apis-gw.beacukai.go.id",
-            "description": "Base URL untuk CEISA API. Default: https://apis-gw.beacukai.go.id",
-            "fieldname": "base_url",
-            "fieldtype": "Data",
-            "in_list_view": 1,
-            "label": "Base URL",
-            "reqd": 1
-        },
-        {
-            "description": "beacukai-api-key yang diperoleh dari portal CEISA",
-            "fieldname": "api_key",
-            "fieldtype": "Password",
-            "in_list_view": 1,
-            "label": "API Key",
-            "reqd": 1
-        },
-        {
-            "fieldname": "section_oauth2",
-            "fieldtype": "Section Break",
-            "label": "OAuth2 Configuration"
-        },
-        {
-            "description": "Client ID untuk OAuth2 CEISA",
-            "fieldname": "client_id",
-            "fieldtype": "Data",
-            "label": "Client ID"
-        },
-        {
-            "description": "Client Secret untuk OAuth2 CEISA",
-            "fieldname": "client_secret",
-            "fieldtype": "Password",
-            "label": "Client Secret"
-        },
-        {
-            "fieldname": "column_break_credentials",
-            "fieldtype": "Column Break"
-        },
-        {
-            "description": "Username default untuk login CEISA (opsional)",
-            "fieldname": "default_username",
-            "fieldtype": "Data",
-            "label": "Default Username"
-        },
-        {
-            "description": "Password default untuk login CEISA (opsional)",
-            "fieldname": "default_password",
-            "fieldtype": "Password",
-            "label": "Default Password"
-        }
-    ],
-    "index_web_pages_for_search": 1,
-    "issingle": 1,
-    "links": [],
-    "modified": "2026-02-08 19:30:00.000000",
-    "modified_by": "Administrator",
-    "module": "Singlecore Apps",
-    "name": "CEISA Settings",
-    "owner": "Administrator",
-    "permissions": [
-        {
-            "create": 1,
-            "delete": 1,
-            "email": 1,
-            "print": 1,
-            "read": 1,
-            "role": "System Manager",
-            "share": 1,
-            "write": 1
-        }
-    ],
-    "sort_field": "modified",
-    "sort_order": "DESC",
-    "states": [],
-    "track_changes": 1
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-08 19:30:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_api_configuration",
+  "base_url",
+  "api_key",
+  "section_oauth2",
+  "client_id",
+  "client_secret",
+  "column_break_credentials",
+  "default_username",
+  "default_password",
+  "notification_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_api_configuration",
+   "fieldtype": "Section Break",
+   "label": "API Configuration"
+  },
+  {
+   "default": "https://apis-gw.beacukai.go.id",
+   "description": "Base URL untuk CEISA API. Default: https://apis-gw.beacukai.go.id",
+   "fieldname": "base_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Base URL",
+   "reqd": 1
+  },
+  {
+   "description": "beacukai-api-key yang diperoleh dari portal CEISA",
+   "fieldname": "api_key",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "API Key",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_oauth2",
+   "fieldtype": "Section Break",
+   "label": "OAuth2 Configuration"
+  },
+  {
+   "description": "Client ID untuk OAuth2 CEISA",
+   "fieldname": "client_id",
+   "fieldtype": "Data",
+   "label": "Client ID"
+  },
+  {
+   "description": "Client Secret untuk OAuth2 CEISA",
+   "fieldname": "client_secret",
+   "fieldtype": "Password",
+   "label": "Client Secret"
+  },
+  {
+   "fieldname": "column_break_credentials",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Username default untuk login CEISA (opsional)",
+   "fieldname": "default_username",
+   "fieldtype": "Data",
+   "label": "Default Username"
+  },
+  {
+   "description": "Password default untuk login CEISA (opsional)",
+   "fieldname": "default_password",
+   "fieldtype": "Password",
+   "label": "Default Password"
+  },
+  {
+   "bold": 1,
+   "fieldname": "notification_email",
+   "fieldtype": "Data",
+   "label": "NOTIFICATION Email",
+   "options": "Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-04-22 15:00:01.872032",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "CEISA Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
 }

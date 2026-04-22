@@ -48,7 +48,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Jenis Dokumen",
-   "options": "\nBC16\nBC28\nBC23\nBC25\nBC261\nBC262\nBC27\nBC20\nBC30\nBC40\nBC41\n521",
+   "options": "\n16\n28\n23\n25\n261\n262\n27\n20\n30\n40\n41\n521",
    "reqd": 1
   },
   {
@@ -67,7 +67,7 @@
    "fieldname": "linked_document_name",
    "fieldtype": "Link",
    "label": "Dokumen Terkait",
-   "options": "HEADER V21"
+   "options": "Batch"
   },
   {
    "fieldname": "column_break_1",
@@ -189,7 +189,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-22 10:32:35.588043",
+ "modified": "2026-04-22 14:04:17.231963",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "Customs Status Log",

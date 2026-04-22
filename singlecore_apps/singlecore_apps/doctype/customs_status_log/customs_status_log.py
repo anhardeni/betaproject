@@ -27,7 +27,7 @@ from frappe.utils import now_datetime, today, add_to_date, get_datetime, add_day
 ACTIVE_STATUSES = {"Pending", "Registered", "On Hold"}
 
 # ─── kodeRespon values that indicate final-release / completed ───────────────
-COMPLETED_RESPON_CODES = {"SPPB", "NPE", "SPPD", "2703", "2803", "3003", "2003"}
+COMPLETED_RESPON_CODES = {"SPPB", "NPE", "SPPD", "NPD", "2703", "2803", "3003", "2003", "2303", "4003"}
 
 # ─── kodeStatus / keterangan patterns for rejection ─────────────────────────
 REJECTED_STATUS_CODES = {"TOLAK", "REJECT"}
