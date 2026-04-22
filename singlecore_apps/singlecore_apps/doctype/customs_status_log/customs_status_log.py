@@ -80,8 +80,14 @@ def create_or_update_log(docname, no_aju, payload, bc_type=""):
 
         # Map kode_dokumen → doctype_type select option
         log.doctype_type    = _map_bc_type(bc_type)
-        log.linked_document_type = "HEADER V21"
-        log.linked_document_name = docname
+        log.linked_document_type = "Header V21"
+        
+        # Defensive check for link existence
+        if frappe.db.exists("Header V21", docname):
+            log.linked_document_name = docname
+        else:
+            log.linked_document_name = None
+            
         log.submission_datetime  = now_datetime()
         log.payload_json         = payload_str
 
