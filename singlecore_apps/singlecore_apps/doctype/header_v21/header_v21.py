@@ -53,7 +53,7 @@ def auto_create_customs_log(header_doc, payload_json, response_raw):
             "polling_interval": 5,
             "next_polling_time": now_datetime()
         })
-        log.insert(ignore_permissions=True)
+        log.insert(ignore_permissions=True, ignore_links=True)
         frappe.db.commit() # Pastikan tersimpan agar polling bisa jalan
         
     except Exception as e:

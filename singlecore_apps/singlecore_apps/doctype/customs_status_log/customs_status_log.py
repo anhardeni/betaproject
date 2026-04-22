@@ -93,8 +93,10 @@ def create_or_update_log(docname, no_aju, payload, bc_type=""):
 
         if not log.bc_status:
             log.bc_status = "Pending"
-
-        log.save(ignore_permissions=True)
+            
+        # Gunakan ignore_links=True karena kita sudah cek manual di atas
+        # Ini mencegah error validasi jika record induk masih dalam antrian transaksi DB
+        log.save(ignore_permissions=True, ignore_links=True)
         frappe.db.commit()
 
         return {"status": "success", "log_name": log.name}
