@@ -67,7 +67,7 @@
    "fieldname": "linked_document_name",
    "fieldtype": "Link",
    "label": "Dokumen Terkait",
-   "options": "Header V21"
+   "options": "HEADER V21"
   },
   {
    "fieldname": "column_break_1",

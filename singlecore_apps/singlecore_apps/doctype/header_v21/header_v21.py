@@ -44,7 +44,7 @@ def auto_create_customs_log(header_doc, payload_json, response_raw):
             "doctype_type": header_doc.get("kode_dokumen"),
             "company": header_doc.get("company") or frappe.defaults.get_user_default("Company"),
             "linked_document_type": "HEADER V21",
-            "linked_document_name": header_doc.name,
+            "linked_document_name": header_doc.name if frappe.db.exists("HEADER V21", header_doc.name) else None,
             "bc_status": "Pending",
             "submission_datetime": now_datetime(),
             "payload_json": payload_json,

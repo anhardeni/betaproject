@@ -27,7 +27,7 @@ from frappe.utils import now_datetime, today, add_to_date, get_datetime, add_day
 ACTIVE_STATUSES = {"Pending", "Registered", "On Hold"}
 
 # ─── kodeRespon values that indicate final-release / completed ───────────────
-COMPLETED_RESPON_CODES = {"SPPB", "NPE", "SPPD"}  # adjust to real codes, SPBL dihapus karena statusnya belum pasti/final
+COMPLETED_RESPON_CODES = {"SPPB", "NPE", "SPPD", "2703", "2803", "3003", "2003"}
 
 # ─── kodeStatus / keterangan patterns for rejection ─────────────────────────
 REJECTED_STATUS_CODES = {"TOLAK", "REJECT"}
@@ -80,10 +80,10 @@ def create_or_update_log(docname, no_aju, payload, bc_type=""):
 
         # Map kode_dokumen → doctype_type select option
         log.doctype_type    = _map_bc_type(bc_type)
-        log.linked_document_type = "Header V21"
+        log.linked_document_type = "HEADER V21"
         
         # Defensive check for link existence
-        if frappe.db.exists("Header V21", docname):
+        if frappe.db.exists("HEADER V21", docname):
             log.linked_document_name = docname
         else:
             log.linked_document_name = None
