@@ -198,9 +198,48 @@ frappe.ui.form.on('HEADER V21', {
 					}
 				);
 			}, __('Actions')).attr('style', 'background:#E65100;color:#fff;border-color:#BF360C;font-weight:600;');
+
+			// ── H2H Upload Orchestration ────────────────────────────────
+			frm.fields_dict['dokumen'].grid.add_custom_button(__('📤 Upload to CEISA'), function () {
+				let selected = frm.fields_dict['dokumen'].grid.get_selected();
+				if (selected.length === 0) {
+					frappe.msgprint(__('Please select at least one document row to upload.'));
+					return;
+				}
+				
+				frappe.confirm(__('Are you sure you want to upload {0} document(s) to CEISA via H2H?', [selected.length]), function () {
+					selected.forEach(row_name => {
+						upload_h2h_row(frm, row_name);
+					});
+				});
+			});
 		}
 	}
 });
+
+/**
+ * Trigger H2H upload for a specific DOKUMEN row.
+ */
+function upload_h2h_row(frm, row_name) {
+	frappe.call({
+		method: 'singlecore_apps.api.ceisa_api.h2h_upload.trigger_h2h_upload',
+		args: { dokumen_row_name: row_name },
+		freeze: true,
+		freeze_message: __('Uploading document to Beacukai...'),
+		callback: function (r) {
+			if (r.message && r.message.status === 'success') {
+				frappe.show_alert({
+					message: __('Document {0} uploaded successfully.', [row_name]),
+					indicator: 'green'
+				});
+			} else {
+				// Errors are already logged and stored in the row by the server
+				console.error("H2H Upload Error:", r.message);
+			}
+			frm.reload_doc();
+		}
+	});
+}
 
 function add_beacukai_actions(frm) {
 	frm.add_custom_button(__('🔐 Login Beacukai'), function () {

@@ -16,6 +16,7 @@
   "polling_interval",
   "column_break_1",
   "bc_status",
+  "jalur",
   "nopen",
   "nopen_date",
   "submission_datetime",
@@ -82,6 +83,13 @@
    "in_standard_filter": 1,
    "label": "Status BC",
    "options": "\nPending\nRegistered\nRejected\nCompleted\nOn Hold"
+  },
+  {
+   "fieldname": "jalur",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jalur",
+   "options": "\nHijau\nKuning\nMerah"
   },
   {
    "fieldname": "nopen",

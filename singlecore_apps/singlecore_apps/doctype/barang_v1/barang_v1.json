@@ -91,7 +91,11 @@
   "barang_pemilik",
   "spek_khusus_dan_value_declaration_tab",
   "barang_spek_khusus",
-  "barang_vd"
+  "barang_vd",
+  "gambar_barang",
+  "h2h_status",
+  "h2h_upload_datetime",
+  "h2h_error_message"
  ],
  "fields": [
   {
@@ -519,6 +523,28 @@
   {
    "fieldname": "column_break_akqw",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gambar_barang",
+   "fieldtype": "Attach Image",
+   "label": "GAMBAR BARANG"
+  },
+  {
+   "default": "Not Uploaded",
+   "fieldname": "h2h_status",
+   "fieldtype": "Select",
+   "label": "H2H STATUS",
+   "options": "Not Uploaded\nUploading\nSuccess\nError"
+  },
+  {
+   "fieldname": "h2h_upload_datetime",
+   "fieldtype": "Datetime",
+   "label": "H2H UPLOAD DATETIME"
+  },
+  {
+   "fieldname": "h2h_error_message",
+   "fieldtype": "Small Text",
+   "label": "H2H ERROR MESSAGE"
   }
  ],
  "index_web_pages_for_search": 1,

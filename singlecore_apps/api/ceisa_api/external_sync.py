@@ -49,9 +49,11 @@ def trigger_sync_now(log_name):
         settings = get_ceisa_settings()
         base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
         
-        # Mapping endpoint sesuai tipe dokumen
-        # Format API biasanya: /openapi/document/{tipe}/{no_aju}/{kantor}
-        url = f"{base_url}/openapi/document/{log.doctype_type or 'BC27'}/{no_aju}/{log.kode_kantor}"
+        # Clean doc_type to get a clean number (e.g. BC27 -> 27)
+        doc_type_clean = str(log.doctype_type or '27').upper().replace("BC", "").strip()
+        
+        # Format API: /openapi/document/detail/{jenisDokumen}/{no_aju}/{kantor}
+        url = f"{base_url}/openapi/document/detail/{doc_type_clean}/{no_aju}/{log.kode_kantor}"
         headers = build_auth_headers(token)
         
         # 2. CALL API
@@ -96,19 +98,35 @@ def process_ceisa_detail_to_db(log, data):
     """
     Pemetaan (Mapping) Detail Dokumen dari JSON API ke Dokumen Internal.
     """
-    header_data = data.get("header", {})
-    barang_data = data.get("barang", [])
+    # Normalize data (it is a list of one item from the live API)
+    if isinstance(data, list) and len(data) > 0:
+        doc_data = data[0]
+    elif isinstance(data, dict):
+        doc_data = data
+    else:
+        doc_data = {}
+
+    barang_data = doc_data.get("barang", [])
     
     # Update Nopen di Log agar Laporan IT Inventory Sinkron
-    log.nopen = header_data.get("nomorDaftar") or log.nopen
-    log.nopen_date = header_data.get("tanggalDaftar") or log.nopen_date
+    log.nopen = doc_data.get("nomorDaftar") or log.nopen
+    log.nopen_date = doc_data.get("tanggalDaftar") or log.nopen_date
     
     # 1. UPSERT HEADER V21
     if not frappe.db.exists("HEADER V21", log.no_aju):
         h = frappe.new_doc("HEADER V21")
         h.nomoraju = log.no_aju
-        h.kode_dokumen = (log.doctype_type or "").replace("BC", "")
-        h.nama_entitas = header_data.get("namaEntitas") or "External Partner"
+        h.kode_dokumen = str(log.doctype_type or "").upper().replace("BC", "").strip()
+        
+        # Get entity name from 'entitas' list
+        entitas_list = doc_data.get("entitas", [])
+        nama_entitas = "External Partner"
+        for ent in entitas_list:
+            if ent.get("namaEntitas"):
+                nama_entitas = ent.get("namaEntitas")
+                break
+        h.nama_entitas = nama_entitas
+        
         h.nomor_daftar = log.nopen
         h.tanggal_daftar = log.nopen_date
         h.custom_is_external = 1
@@ -128,9 +146,10 @@ def process_ceisa_detail_to_db(log, data):
                 "kode_barang": item.get("kodeBarang"),
                 "uraian": item.get("uraian"),
                 "jumlah_satuan": flt(item.get("jumlahSatuan") or item.get("jumlah")),
-                "kode_satuan": item.get("kodeSatuan"),
+                "kode_satuan": item.get("kodeSatuanBarang") or item.get("kodeSatuan"),
                 "harga_satuan": flt(item.get("hargaSatuan") or item.get("harga"))
             })
     
     h.save(ignore_permissions=True)
     frappe.db.commit()
+

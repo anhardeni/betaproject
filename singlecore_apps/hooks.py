@@ -126,7 +126,8 @@ doctype_js = {
 # ---------------
 
 scheduler_events = {
-	"hourly": [
+	#"hourly": [
+    "hourly_long": [
 		"singlecore_apps.singlecore_apps.doctype.customs_status_log.customs_status_log.update_all_active_status",
         "singlecore_apps.api.ceisa_api.external_sync.smart_ceisa_polling"
 	],
@@ -248,6 +249,7 @@ fixtures = [
     "Referensi Kategori Ekspor",
     "Referensi Kategori Keluar FTZ",
     "Referensi Kategori Konsolidator",
+    "Komponen Biaya",
     "Referensi Komoditi Cukai",
     "Referensi Kondisi Barang",
     "Referensi Layanan",
@@ -257,11 +259,13 @@ fixtures = [
     "Referensi Pelabuhan Dalam Negeri",
     "Referensi Pelabuhan Luar Negeri",
     "Referensi Putusan Petugas",
-    "Referensi Respon",
+    #"Referensi Respon",
+    "Referensi Respon1",
     "Referensi Satuan Barang",
     "Referensi Spesifikasi Khusus",
     "Referensi Spesifikasi Khusus Detail",
-    "Referensi Status",
+    #"Referensi Status",
+    "Referensi Status1",
     "Referensi Status Pengusaha",
     "Referensi Tipe Kontainer",
     "Referensi Tujuan Pemasukan",
@@ -269,7 +273,9 @@ fixtures = [
     "Referensi Tujuan Pengiriman",
     "Referensi Tutup Pu",
     "Referensi Ukuran Kontainer",
-    "Referensi Valuta"
+    "Referensi Valuta",
+    "Subcontract Reconciliation",
+    "Subcontract Reconciliation Item"
 ]
 
 import singlecore_apps.mcp

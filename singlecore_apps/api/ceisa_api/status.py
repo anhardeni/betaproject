@@ -27,7 +27,8 @@ def get_status_by_nomor_aju(nomor_aju):
         url = f"{base_url}/openapi/status/{nomor_aju}"
         headers = build_auth_headers(token)
 
-        response = requests.get(url, headers=headers)
+        #response = requests.get(url, headers=headers)
+        response = requests.get(url, headers=headers, timeout=(5, 15))
 
         return {
             "status": "success" if response.status_code == 200 else "error",
@@ -51,7 +52,9 @@ def get_status_by_npwp(npwp):
         headers = build_auth_headers(token)
         params = {"idPerusahaan": npwp}
 
-        response = requests.get(url, headers=headers, params=params)
+        #response = requests.get(url, headers=headers, params=params)
+        response = requests.get(url, headers=headers, params=params, timeout=(5, 15))
+
 
         return {
             "status": "success" if response.status_code == 200 else "error",
@@ -172,6 +175,11 @@ def send_completion_notification(log_doc, api_row):
         )
         
         frappe.logger("ceisa_api").info(f"Email notifikasi dikirim ke {recipient}")
+
+        row_name = api_row.get("name")
+        if row_name:
+            frappe.db.set_value("Customs Status Log Response", row_name, "is_email_sent", 1, update_modified=False)
+            frappe.db.commit()
 
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Email Notification Error")

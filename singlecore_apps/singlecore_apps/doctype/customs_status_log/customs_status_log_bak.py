@@ -33,7 +33,7 @@ ACTION_RESPON_CODES = {
 }
 REJECTED_STATUS_CODES = {"TOLAK", "REJECT"}
 
-# Lane Mapping (Jalur) - Sticky
+# Lane Mapping (Jalur)
 HIJAU_CODES = {"SPPB", "2703", "NPE", "2803"}
 KUNING_CODES = {"SPJK"}
 MERAH_CODES = {"SPJM", "SPTNP", "440", "51328", "SPBL", "51313"}
@@ -74,8 +74,7 @@ def create_or_update_log(docname, no_aju, payload, bc_type=""):
         if not log.bc_status:
             log.bc_status = "Pending"
             
-        log.flags.ignore_links = True
-        log.save(ignore_permissions=True)
+        log.save(ignore_permissions=True, ignore_links=True)
         
         # Perlindungan ACID: Hanya commit jika tidak dipanggil dari dalam siklus on_submit dokumen lain
         if not (frappe.flags.in_insert or frappe.flags.in_save or frappe.flags.in_test):
@@ -212,154 +211,114 @@ def pull_status_for_log(log_name):
         "bc_status": log.bc_status # default
     })
 
-    # ── Timeline Analysis (STATE MACHINE) ──
-    # Build a unified stream of events sorted by timestamp
-    events = []
+    # ── Process dataStatus[] (APPEND-ONLY PATTERN) ──
     added_statuses = 0
-    added_responses = 0
-    
-    # Process Statuses
     for row in (data.get("dataStatus") or []):
-        if not _is_status_exist(log, row):
-            kode = row.get("kodeStatus")
-            ensure_status_code_exists("Referensi Status1", kode)
-            _append_child_row(log_name, "Customs Status Log Status", "statuses", {
-                "nomor_aju": row.get("nomorAju"),
-                "kode_status": kode,
-                "nomor_daftar": row.get("nomorDaftar"),
-                "tanggal_daftar": _parse_date(row.get("tanggalDaftar")),
-                "waktu_status": _parse_datetime(row.get("waktuStatus")),
-                "keterangan": row.get("keterangan"),
-            })
-            added_statuses += 1
-        
-        events.append({
-            "type": "status",
-            "code": str(row.get("kodeStatus") or "").upper(),
-            "time": _parse_datetime(row.get("waktuStatus")),
-            "desc": row.get("keterangan")
-        })
+        if _is_status_exist(log, row): continue
+        kode = row.get("kodeStatus")
+        ensure_status_code_exists("Referensi Status1", kode)
 
-    # Process Responses
+        # Suntik baris baru tanpa memanggil log.save()
+        _append_child_row(log_name, "Customs Status Log Status", "statuses", {
+            "nomor_aju": row.get("nomorAju"),
+            "kode_status": kode,
+            "nomor_daftar": row.get("nomorDaftar"),
+            "tanggal_daftar": _parse_date(row.get("tanggalDaftar")),
+            "waktu_status": _parse_datetime(row.get("waktuStatus")),
+            "keterangan": row.get("keterangan"),
+        })
+        added_statuses += 1
+        
+        # STATE MACHINE: Update Status from status codes
+        kode_status = str(kode or "").upper()
+        if kode_status in ACTION_RESPON_CODES:
+            updates["bc_status"] = "Action Required: NPD"
+
+    # Header Data Fallbacks
+    no_aju = data.get("nomorAju") or data.get("nomor_aju") or log.no_aju
+    kode_dok = data.get("kodeDokumen") or str(log.doctype_type or "")
+    if str(kode_dok).startswith("BC"): kode_dok = str(kode_dok).replace("BC", "", 1)
+    updates["doctype_type"] = kode_dok
+
+    # ── Process dataRespon[] (APPEND-ONLY PATTERN) ──
+    added_responses = 0
     for row in (data.get("dataRespon") or []):
         existing_row = _get_response_row(log, row)
         kode = row.get("kodeRespon")
-        kode_upper = str(kode or "").upper()
         
         if existing_row:
             api_pdf = row.get("Pdf") or row.get("pdf")
             if not existing_row.pdf_file and api_pdf:
                 pdf_link = _save_pdf(api_pdf, no_aju, row, log_name)
                 if pdf_link:
+                    # Update child specific field only
                     frappe.db.set_value("Customs Status Log Response", existing_row.name, "pdf_file", pdf_link)
                     if existing_row.kode_respon in COMPLETED_RESPON_CODES:
-                        _trigger_email_async(log, existing_row.kode_respon, pdf_link, existing_row.name)
-        else:
-            ensure_status_code_exists("Referensi Respon1", kode) 
-            pdf_data = row.get("Pdf") or row.get("pdf")
-            pdf_link = _save_pdf(pdf_data, no_aju, row, log_name) if pdf_data else None
-            
-            row_name = _append_child_row(log_name, "Customs Status Log Response", "responses", {
-                "nomor_aju": row.get("nomorAju"),
-                "kode_respon": kode,
-                "nomor_respon": row.get("nomorRespon"),
-                "tanggal_respon": _parse_date(row.get("tanggalRespon")),
-                "waktu_respon": _parse_datetime(row.get("waktuRespon")),
-                "waktu_status": _parse_datetime(row.get("waktuStatus")),
-                "keterangan": row.get("keterangan"),
-                "pesan_json": json.dumps(row.get("pesan") or [], ensure_ascii=False),
-                "pdf_file": pdf_link,
-            })
-            added_responses += 1
-            if kode_upper in COMPLETED_RESPON_CODES:
-                _trigger_email_async(log, kode_upper, pdf_link, row_name)
+                        _trigger_email_async(log, existing_row.kode_respon, pdf_link)
+            continue
 
-        events.append({
-            "type": "response",
-            "code": kode_upper,
-            "time": _parse_datetime(row.get("waktuRespon") or row.get("waktuStatus")),
-            "desc": row.get("keterangan")
+        kode = row.get("kodeRespon")
+        ensure_status_code_exists("Referensi Respon1", kode) 
+
+        pdf_data = row.get("Pdf") or row.get("pdf")
+        pdf_link = _save_pdf(pdf_data, no_aju, row, log_name) if pdf_data else None
+        
+        _append_child_row(log_name, "Customs Status Log Response", "responses", {
+            "nomor_aju": row.get("nomorAju"),
+            "kode_respon": kode,
+            "nomor_respon": row.get("nomorRespon"),
+            "tanggal_respon": _parse_date(row.get("tanggalRespon")),
+            "waktu_respon": _parse_datetime(row.get("waktuRespon")),
+            "waktu_status": _parse_datetime(row.get("waktuStatus")),
+            "keterangan": row.get("keterangan"),
+            "pesan_json": json.dumps(row.get("pesan") or [], ensure_ascii=False),
+            "pdf_file": pdf_link,
         })
+        added_responses += 1
 
-    # Replay timeline to find final State and Lane
-    # Sort events by time. If time is identical, respect original list order.
-    events.sort(key=lambda x: (x["time"] or "0000-00-00", 0)) 
-    
-    current_status = "Registered" if (log.nopen or data.get("nomorDaftar")) else "Pending"
-    current_lane = log.jalur
-    
-    for ev in events:
-        code = ev["code"]
-        # Status Transitions
-        if code in COMPLETED_RESPON_CODES:
-            current_status = "Completed"
-        elif code in ACTION_RESPON_CODES:
-            current_status = "Action Required: NPD"
-        elif code in REJECTED_STATUS_CODES or "TOLAK" in str(ev["desc"] or "").upper():
-            current_status = "Rejected"
+        # STATE MACHINE: Update Status
+        kode_respon = str(kode or "").upper()
+        if kode_respon in COMPLETED_RESPON_CODES and updates.get("bc_status") not in ("Completed", "Rejected"):
+            updates["bc_status"] = "Completed"
+            _trigger_email_async(log, kode_respon, pdf_link)
             
-        # Lane Mapping (Sticky: Only updates when a lane code is found)
-        if code in MERAH_CODES:
-            current_lane = "Merah"
-        elif code in KUNING_CODES:
-            current_lane = "Kuning"
-        elif code in HIJAU_CODES:
-            current_lane = "Hijau"
+        elif kode_respon in ACTION_RESPON_CODES:
+            updates["bc_status"] = "Action Required: NPD"
 
-    updates["bc_status"] = current_status
-    if current_lane:
-        updates["jalur"] = current_lane
-
-    # Header Data Fallbacks (Nopen, etc)
+    # ── Finalizing ──
     _try_set_nopen(log, data, updates)
+    _try_set_rejected(log, data, updates)
+
+    # ── Lane Mapping (Jalur) ──
+    found_jalur = None
+    # Gabungkan respon dan status untuk mencari 'Jalur' terbaru
+    combined_rows = (data.get("dataRespon") or []) + (data.get("dataStatus") or [])
     
-    # DocType Type Cleanup (e.g. BC20 -> 20)
-    kode_dok = data.get("kodeDokumen") or str(log.doctype_type or "")
-    if str(kode_dok).startswith("BC"): 
-        kode_dok = str(kode_dok).replace("BC", "", 1)
-    updates["doctype_type"] = kode_dok
-    
-    # Finalizing
+    # Ambil kode terakhir yang cocok dengan pemetaan jalur (asumsi urutan kronologis)
+    for row in reversed(combined_rows):
+        code = str(row.get("kodeRespon") or row.get("kodeStatus") or "").upper()
+        if code in MERAH_CODES:
+            found_jalur = "Merah"
+            break
+        elif code in KUNING_CODES:
+            found_jalur = "Kuning"
+            break
+        elif code in HIJAU_CODES:
+            found_jalur = "Hijau"
+            break
+            
+    if found_jalur:
+        updates["jalur"] = found_jalur
+
+    # Terapkan update Parent secara simultan (Anti-Deadlock)
     frappe.db.set_value("Customs Status Log", log_name, updates, update_modified=True)
-    frappe.db.commit()
+    frappe.db.commit() # Aman, dipanggil mandiri oleh worker
     
+    # Reload log memory state for doc syncing
     log.reload()
     _sync_linked_doc(log)
 
-    # NPD Orchestration: If NPD, trigger document requirement analysis
-    if current_status == "Action Required: NPD":
-        latest_npd = None
-        for r in sorted(log.responses, key=lambda x: x.waktu_respon or "", reverse=True):
-            if r.kode_respon == "NPD":
-                latest_npd = r
-                break
-        if latest_npd:
-            _process_npd_requirements(log, latest_npd)
-
     return {"status": "success", "no_aju": no_aju, "added_responses": added_responses}
-
-
-def _process_npd_requirements(log_doc, npd_row):
-    """
-    Analyzes NPD message and updates the linked Header V21 document.
-    """
-    if not (log_doc.linked_document_name and frappe.db.exists("HEADER V21", log_doc.linked_document_name)):
-        return
-    
-    try:
-        header = frappe.get_doc("HEADER V21", log_doc.linked_document_name)
-        pesan_list = json.loads(npd_row.pesan_json or "[]")
-        
-        # Simple Logic: Mark Header for NPD Action
-        header.add_comment("Comment", f"<b>NPD RECEIVED</b>: Please check the following requirements: <br> " + 
-                           "<br>".join([p.get('keterangan', '') for p in pesan_list]))
-        
-        # Optional: Auto-populate DOKUMEN rows if "Seri" is mentioned
-        # This is complex because "pesan" is often free-text. 
-        # For now, we ensure the user knows action is needed.
-        
-    except Exception as e:
-        frappe.log_error(str(e), "NPD Requirement Sync Error")
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -376,7 +335,6 @@ def _append_child_row(parent_name, doctype_name, parentfield, payload):
     new_doc.parentfield = parentfield
     new_doc.idx = last_idx + 1
     new_doc.insert(ignore_permissions=True)
-    return new_doc.name
 
 
 def _save_pdf(base64_or_path, nomor_aju, api_row, doc_name):
@@ -407,7 +365,7 @@ def _save_pdf(base64_or_path, nomor_aju, api_row, doc_name):
         return None
 
 
-def _trigger_email_async(log, kode_respon, pdf_link, row_name=None):
+def _trigger_email_async(log, kode_respon, pdf_link):
     """Gunakan modul pengirim yang sudah memiliki mekanisme sendmail antrean (now=False)"""
     try:
         from singlecore_apps.api.ceisa_api.status import send_completion_notification
@@ -416,29 +374,10 @@ def _trigger_email_async(log, kode_respon, pdf_link, row_name=None):
             send_completion_notification,
             queue="short",
             log=log,
-            row={"kodeRespon": kode_respon, "pdf_file": pdf_link, "name": row_name}
+            row={"kodeRespon": kode_respon, "pdf_file": pdf_link}
         )
     except Exception as e:
         frappe.log_error(str(e), "Async Email Error")
-
-
-@frappe.whitelist()
-def manual_poll_status(log_name):
-    """Triggered from Report dashboard to check CEISA status immediately."""
-    # This calls the same logic used by the scheduler
-    pull_status_for_log(log_name)
-    return True
-
-
-@frappe.whitelist()
-def resend_notification(row_name):
-    """Resend email notification for a specific response row."""
-    row = frappe.get_doc("Customs Status Log Response", row_name)
-    parent_log = frappe.get_doc("Customs Status Log", row.parent)
-    
-    # Re-trigger the same async logic that uses frappe.enqueue
-    _trigger_email_async(parent_log, row.kode_respon, row.pdf_file, row.name)
-    return True
 
 def _is_status_exist(log_doc, api_row):
     kode, waktu = str(api_row.get("kodeStatus") or ""), str(api_row.get("waktuStatus") or "")
@@ -531,5 +470,5 @@ def _parse_datetime(val):
     except Exception: return None
 
 def _map_bc_type(kode_dokumen):
-    # The Select field expects numeric codes ("20", "30", etc.)
-    return str(kode_dokumen) if kode_dokumen else ""
+    mapping = {"20": "PIB", "200": "PIB", "30": "PEB", "300": "PEB", "23": "BC23", "25": "BC25", "27": "BC27", "261": "PIB", "262": "PIB"}
+    return mapping.get(str(kode_dokumen), str(kode_dokumen)[:5] if kode_dokumen else "")

@@ -14,4 +14,4 @@ from .kurs import get_kurs
 from .status import get_status_by_npwp, get_status_by_nomor_aju, download_respon, cetak_formulir
 from .tarif import get_tarif_hs, get_lartas_hscode
 from .manifes import get_manifes
-from .document import check_document, send_document
+from .document import check_document, send_document, get_document_detail
