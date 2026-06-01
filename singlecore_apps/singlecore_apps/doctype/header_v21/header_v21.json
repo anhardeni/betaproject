@@ -9,7 +9,7 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{00}{kode_dokumen4digit}{BT0001}{YYYY}{MM}{DD}{######}",
- "creation": "2026-05-17 07:53:26.556913",
+ "creation": "2026-05-23 01:08:58.500886",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -912,7 +912,7 @@
    "link_fieldname": "nomoraju"
   }
  ],
- "modified": "2026-05-17 07:53:27.797074",
+ "modified": "2026-05-23 01:08:59.310014",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "HEADER V21",

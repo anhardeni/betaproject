@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-30 06:19:51.267262",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nomor_invoice",
+  "kode_billing",
+  "jumlah_bayar",
+  "is_qq_transaction",
+  "customer",
+  "npwp_qq",
+  "api_response",
+  "column_break_ifoe",
+  "approval_status",
+  "ntpn",
+  "waktu_bayar",
+  "waktu_kadaluarsa",
+  "partner_reference_no",
+  "otp_code",
+  "otp_expiry",
+  "section_break_fdud",
+  "status_pembayaran",
+  "rincian_pajak"
+ ],
+ "fields": [
+  {
+   "fieldname": "nomor_invoice",
+   "fieldtype": "Data",
+   "label": "Nomor Invoice"
+  },
+  {
+   "fieldname": "kode_billing",
+   "fieldtype": "Data",
+   "label": "Kode Billing"
+  },
+  {
+   "fieldname": "jumlah_bayar",
+   "fieldtype": "Currency",
+   "label": "Jumlah Bayar",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_qq_transaction",
+   "fieldtype": "Check",
+   "label": "Transaksi Atas Nama / Impor QQ"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Partner / Customer QQ",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "npwp_qq",
+   "fieldtype": "Data",
+   "label": "NPWP Partner QQ"
+  },
+  {
+   "fieldname": "column_break_ifoe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "Status Otorisasi (Maker-Checker)",
+   "options": "Draft\nApproved\nPaid\nExpired",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status_pembayaran",
+   "fieldtype": "Select",
+   "label": "Status Respon Bank",
+   "options": "Draft\nPending\nBerhasil\nGagal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ntpn",
+   "fieldtype": "Data",
+   "label": "Nomor NTPN",
+   "read_only": 1
+  },
+  {
+   "fieldname": "waktu_bayar",
+   "fieldtype": "Datetime",
+   "label": "Waktu Bayar",
+   "read_only": 1
+  },
+  {
+   "fieldname": "waktu_kadaluarsa",
+   "fieldtype": "Datetime",
+   "label": "Waktu Kadaluarsa Billing"
+  },
+  {
+   "fieldname": "partner_reference_no",
+   "fieldtype": "Data",
+   "label": "Nomor Referensi Transaksi",
+   "read_only": 1
+  },
+  {
+   "fieldname": "otp_code",
+   "fieldtype": "Password",
+   "hidden": 1,
+   "label": "OTP Hash Code"
+  },
+  {
+   "fieldname": "otp_expiry",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Waktu Kadaluarsa OTP"
+  },
+  {
+   "fieldname": "rincian_pajak",
+   "fieldtype": "Table",
+   "label": "Rincian Pungutan Pajak",
+   "options": "Pajak Billing Detail"
+  },
+  {
+   "fieldname": "api_response",
+   "fieldtype": "Small Text",
+   "label": "Respon API Bank",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_fdud",
+   "fieldtype": "Section Break",
+   "label": "DETAIL "
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-05-30 06:24:20.586811",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Pajak Billing MPN",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

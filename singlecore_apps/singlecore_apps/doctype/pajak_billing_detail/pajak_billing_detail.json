@@ -1,0 +1,68 @@
+{
+ "creation": "2026-05-30 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "keterangan",
+  "kap",
+  "ksp",
+  "column_break_1",
+  "account",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Keterangan / Jenis Pajak",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kap",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kode Akun Pajak (KAP)"
+  },
+  {
+   "fieldname": "ksp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kode Setoran Pajak (KSP)"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Akun Buku Besar (Account)",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Nominal Pungutan (Amount)",
+   "non_negative": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-30 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "Pajak Billing Detail",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

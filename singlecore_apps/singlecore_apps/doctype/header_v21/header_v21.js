@@ -30,15 +30,242 @@ const BC_SETTINGS = {
 	'331': { label: 'P3BET', style: 'background:#E65100;color:#fff;border-color:#BF360C;', suffix: 'p3bet' }
 };
 
+const ALWAYS_VISIBLE_FIELDS = [
+	"nomoraju",
+	"disclaimer",
+	"kode_dokumen",
+	"kode_dokumen4digit",
+	"kode_kantor",
+	"kota_pernyataan",
+	"tanggal_pernyataan",
+	"nama_pernyataan",
+	"jabatan_pernyataan",
+	"tgl_jatuh_tempo_subkon",
+	"respon_json"
+];
+
+const SCHEMA_FIELDS = {
+	"20": [ // BC20 - PIB
+		"asuransi", "biaya_pengurang", "biaya_tambahan", "bruto", "cif", "disclaimer", "fob", "freight",
+		"harga_penyerahan", "jabatan_pernyataan", "jumlah_tanda_pengaman", "kode_asuransi", "kode_cara_bayar",
+		"kode_incoterm", "kode_jenis_ekspor", "kode_jenis_impor", "kode_jenis_nilai", "kode_jenis_pib",
+		"kode_kantor", "kode_pelabuhan_muat", "kode_pelabuhan_tujuan", "kode_tps", "kode_tutup_pu",
+		"kode_valuta", "kota_pernyataan", "nama_pernyataan", "ndpbm", "nilai_barang", "nilai_incoterm",
+		"nilai_maklon", "nomor_bc11", "nomor_pos", "nomor_sub_pos", "nomoraju", "tanggal_bc11",
+		"tanggal_pernyataan", "tanggal_tiba", "total_dana_sawit", "vd", "volume",
+		"entitas", "kemasan", "kontainer", "komponen_biaya", "dokumen"
+	],
+	"27": [ // BC27 - TPB TPB
+		"asuransi", "biaya_pengurang", "biaya_tambahan", "bruto", "cif", "dasar_pengenaan_pajak",
+		"disclaimer", "freight", "harga_penyerahan", "jabatan_pernyataan", "kode_jenis_tpb", "kode_kantor",
+		"kode_kantor_tujuan", "kode_tps", "kode_tujuan_pengiriman", "kode_tujuan_tpb", "kode_valuta",
+		"kota_pernyataan", "nama_pernyataan", "ndpbm", "nilai_barang", "nilai_jasa", "nomoraju",
+		"ppn_pajak", "ppnbm_pajak", "tanggal_pernyataan", "tarif_ppn_pajak", "tarif_ppnbm_pajak",
+		"uang_muka", "vd", "entitas", "kemasan", "kontainer", "pengangkut", "dokumen"
+	],
+	"23": [ // BC23 - PIB TPB
+		"asuransi", "biaya_pengurang", "biaya_tambahan", "bruto", "cif", "fob", "freight",
+		"harga_penyerahan", "jabatan_pernyataan", "kode_asuransi", "kode_incoterm", "kode_jasa_kena_pajak",
+		"kode_kantor", "kode_kantor_bongkar", "kode_pelabuhan_bongkar", "kode_pelabuhan_muat",
+		"kode_pelabuhan_transit", "kode_tps", "kode_tujuan_tpb", "kode_tutup_pu", "kode_valuta",
+		"kota_pernyataan", "nama_pernyataan", "ndpbm", "nilai_barang", "nomor_bc11", "nomor_pos",
+		"nomor_sub_pos", "nomoraju", "tanggal_bc11", "tanggal_pernyataan", "tanggal_tiba",
+		"entitas", "kemasan", "kontainer", "dokumen"
+	],
+	"25": [ // BC25 - TPB Lokalan
+		"bruto", "cif", "dasar_pengenaan_pajak", "disclaimer", "harga_penyerahan", "jabatan_pernyataan",
+		"kode_cara_bayar", "kode_jenis_tpb", "kode_kantor", "kode_lokasi_bayar", "kode_tujuan_pengiriman",
+		"kode_valuta", "kota_pernyataan", "nama_pernyataan", "ndpbm", "nomoraju", "ppn_pajak",
+		"ppnbm_pajak", "tanggal_pernyataan", "tarif_ppn_pajak", "tarif_ppnbm_pajak", "volume",
+		"entitas", "kemasan", "kontainer", "pengangkut", "dokumen"
+	],
+	"30": [ // BC30 - PEB
+		"asuransi", "bruto", "cif", "disclaimer", "flag_curah", "flag_migas", "fob", "freight",
+		"jabatan_pernyataan", "kode_asuransi", "kode_cara_bayar", "kode_cara_dagang", "kode_incoterm",
+		"kode_jenis_ekspor", "kode_jenis_nilai", "kode_jenis_pengangkutan", "kode_jenis_prosedur",
+		"kode_kantor", "kode_kantor_ekspor", "kode_kantor_muat", "kode_kantor_periksa",
+		"kode_kategori_ekspor", "kode_lokasi", "kode_negara_tujuan", "kode_pelabuhan_ekspor",
+		"kode_pelabuhan_muat", "kode_pelabuhan_tujuan", "kode_tps", "kode_valuta", "kota_pernyataan",
+		"nama_pernyataan", "ndpbm", "netto", "nilai_maklon", "nomoraju", "tanggal_ekspor",
+		"tanggal_periksa", "tanggal_pernyataan", "total_dana_sawit", "entitas", "kemasan",
+		"kontainer", "pengangkut", "bank_devisa", "kesiapan_barang", "dokumen"
+	],
+	"40": [ // BC40 - TPB Masuk
+		"asuransi", "biaya_pengurang", "biaya_tambahan", "bruto", "cif", "freight", "harga_penyerahan",
+		"jabatan_pernyataan", "kode_jenis_tpb", "kode_kantor", "kode_tujuan_pengiriman", "kota_pernyataan",
+		"nama_pernyataan", "netto", "nilai_jasa", "nomoraju", "tanggal_pernyataan", "uang_muka",
+		"vd", "volume", "entitas", "kemasan", "kontainer", "dokumen"
+	],
+	"41": [ // BC41 - TPB Keluar
+		"asuransi", "biaya_pengurang", "biaya_tambahan", "bruto", "cif", "freight", "harga_penyerahan",
+		"jabatan_pernyataan", "kode_jenis_tpb", "kode_kantor", "kode_lokasi_bayar", "kode_tujuan_pengiriman",
+		"kota_pernyataan", "nama_pernyataan", "netto", "nilai_barang", "nomoraju", "ppn_pajak",
+		"ppnbm_pajak", "tanggal_pernyataan", "uang_muka", "vd", "volume", "entitas", "kemasan",
+		"kontainer", "pengangkut", "dokumen"
+	],
+	"33": [ // BC33 - FTZ Ekspor
+		"asuransi", "bruto", "cif", "flag_curah", "freight", "jabatan_pernyataan", "kode_asuransi",
+		"kode_cara_angkut", "kode_cara_bayar", "kode_cara_dagang", "kode_jenis_ekspor",
+		"kode_jenis_prosedur", "kode_kantor", "kode_kategori_ekspor", "kode_pelabuhan_bongkar",
+		"kode_pelabuhan_muat", "kode_pelabuhan_tujuan", "kode_valuta", "kota_pernyataan",
+		"nama_pernyataan", "ndpbm", "netto", "nomoraju", "tanggal_pernyataan", "volume",
+		"entitas", "kemasan", "kontainer", "pengangkut", "dokumen"
+	],
+	"262": [ // BC262 - TPB Keluar ke TLDDP
+		"asuransi", "biaya_pengurang", "biaya_tambahan", "bruto", "cif", "disclaimer", "freight",
+		"harga_penyerahan", "jabatan_pernyataan", "kode_kantor", "kode_tujuan_pemasukan",
+		"kode_tujuan_pengiriman", "kode_valuta", "kota_pernyataan", "nama_pernyataan", "ndpbm",
+		"nilai_barang", "nomoraju", "tanggal_pernyataan", "uang_muka", "vd", "entitas", "kemasan",
+		"pengangkut", "dokumen"
+	],
+	"261": [ // BC261 - TPB Masuk dari TLDDP
+		"asuransi", "biaya_pengurang", "biaya_tambahan", "bruto", "cif", "disclaimer", "freight",
+		"harga_penyerahan", "jabatan_pernyataan", "kode_kantor", "kode_tujuan_pengiriman",
+		"kode_valuta", "kota_pernyataan", "nama_pernyataan", "ndpbm", "nilai_barang", "nomoraju",
+		"tanggal_pernyataan", "uang_muka", "vd", "entitas", "kemasan", "kontainer", "pengangkut", "dokumen"
+	],
+	"16": [ // BC16 - FTZ Masuk
+		"bruto", "cif", "jabatan_pernyataan", "kode_incoterm", "kode_jenis_nilai", "kode_kantor",
+		"kode_kantor_bongkar", "kode_pelabuhan_bongkar", "kode_pelabuhan_muat", "kode_pelabuhan_transit",
+		"kode_tps", "kode_tutup_pu", "kode_valuta", "kota_pernyataan", "nama_pernyataan", "ndpbm",
+		"nomor_bc11", "nomor_pos", "nomor_sub_pos", "nomoraju", "tanggal_bc11", "tanggal_pernyataan",
+		"tanggal_tiba", "entitas", "kemasan", "pengangkut", "dokumen"
+	],
+	"28": [ // BC28 - Impor PLB
+		"bruto", "cif", "jabatan_pernyataan", "kode_cara_angkut", "kode_cara_bayar", "kode_incoterm",
+		"kode_jenis_impor", "kode_jenis_nilai", "kode_jenis_prosedur", "kode_kantor", "kode_tps",
+		"kode_valuta", "kota_pernyataan", "nama_pernyataan", "ndpbm", "nilai_barang", "nomoraju",
+		"tanggal_pernyataan", "tanggal_tiba", "volume", "entitas", "kemasan", "dokumen"
+	],
+	"331": [ // BC331 - P3BET
+		"asuransi", "bruto", "cif", "disclaimer", "freight", "jabatan_pernyataan", "jumlah_tanda_pengaman",
+		"kode_asuransi", "kode_tps", "kode_tanda_pengaman", "kode_jenis_tanda_pengaman", "kode_kantor",
+		"kode_kantor_muat", "kode_negara_tujuan", "kode_pelabuhan_bongkar", "kode_pelabuhan_muat",
+		"kode_pelabuhan_tujuan", "kota_pernyataan", "nama_pernyataan", "netto", "nilai_barang", "nomoraju",
+		"tanggal_muat", "tanggal_pernyataan", "tempat_stuffing",
+		"entitas", "kemasan", "kontainer", "dokumen", "pengangkut"
+	],
+	"511": [ // FTZ01-1
+		"asuransi", "biaya_pengurang", "biaya_tambahan", "bruto", "cif", "dokumen", "entitas", "fob", "freight",
+		"jabatan_pernyataan", "kemasan", "kode_asal_barang_ftz", "kode_asuransi", "kode_cara_bayar",
+		"kode_cara_dagang", "kode_incoterm", "kode_jenis_pib", "kode_kantor", "kode_kategori_barang_ftz",
+		"kode_kategori_masuk_ftz", "kode_pelabuhan_muat", "kode_pelabuhan_transit", "kode_pelabuhan_tujuan",
+		"kode_tps", "kode_tujuan_pemasukan", "kode_tujuan_pengiriman", "kode_tutup_pu", "kode_valuta",
+		"kontainer", "kota_pernyataan", "nama_pernyataan", "nama_transaksi_lainnya_ftz", "ndpbm", "netto",
+		"nomor_bc11", "nomor_pos", "nomor_sub_pos", "nomoraju", "pengangkut", "tanggal_bc11",
+		"tanggal_pernyataan", "tanggal_tiba", "volume"
+	],
+	"512": [ // FTZ01-2
+		"asuransi", "bank_devisa", "biaya_pengurang", "biaya_tambahan", "bruto", "cif", "dokumen", "entitas",
+		"flag_curah", "fob", "freight", "harga_penyerahan", "jabatan_pernyataan", "jumlah_tanda_pengaman",
+		"kemasan", "kode_asal_barang_ftz", "kode_asuransi", "kode_cara_bayar", "kode_cara_dagang",
+		"kode_incoterm", "kode_jenis_pib", "kode_kantor", "kode_kategori_keluar_ftz", "kode_negara_tujuan",
+		"kode_pelabuhan_muat", "kode_pelabuhan_transit", "kode_pelabuhan_tujuan", "kode_tps",
+		"kode_tujuan_pengiriman", "kode_valuta", "kontainer", "kota_pernyataan", "nama_pernyataan", "ndpbm",
+		"netto", "nilai_barang", "nilai_incoterm", "nilai_maklon", "nomoraju", "pengangkut",
+		"tanggal_berangkat", "tanggal_pernyataan", "total_dana_sawit", "volume"
+	],
+	"513": [ // FTZ01-3
+		"asuransi", "biaya_pengurang", "biaya_tambahan", "bruto", "cif", "dokumen", "entitas", "fob", "freight",
+		"jabatan_pernyataan", "kemasan", "kode_asal_barang_ftz", "kode_asuransi", "kode_cara_bayar",
+		"kode_cara_dagang", "kode_incoterm", "kode_kantor", "kode_kategori_barang_ftz", "kode_kategori_keluar_ftz",
+		"kode_pelabuhan_muat", "kode_pelabuhan_transit", "kode_pelabuhan_tujuan", "kode_tps",
+		"kode_tujuan_pengeluaran", "kode_tujuan_pengiriman", "kode_tutup_pu", "kode_valuta",
+		"kontainer", "kota_pernyataan", "nama_pernyataan", "nama_transaksi_lainnya_ftz", "ndpbm", "netto",
+		"nomor_bc11", "nomor_pos", "nomor_sub_pos", "nomoraju", "pengangkut", "tanggal_bc11",
+		"tanggal_pernyataan", "tanggal_tiba", "volume"
+	]
+};
+
+function toggle_fields_by_schema(frm) {
+	const doc_type = frm.doc.kode_dokumen;
+	
+	// Show all fields if no document type is chosen to prevent blocking user
+	if (!doc_type || !SCHEMA_FIELDS[doc_type]) {
+		frm.meta.fields.forEach(field => {
+			frm.set_df_property(field.fieldname, 'hidden', 0);
+		});
+		return;
+	}
+
+	const allowed_fields = SCHEMA_FIELDS[doc_type];
+
+	// Mapping of child table fieldnames to their respective section breaks
+	const child_table_sections = {
+		"entitas": "section_break_entitas",
+		"komponen_biaya": "section_break_komponen",
+		"kemasan": "section_break_kemasan",
+		"dokumen": "section_break_dokumen",
+		"pengangkut": "section_break_pengangkut",
+		"kontainer": "section_break_kontainer",
+		"bank_devisa": "section_break_sogf",
+		"kesiapan_barang": "section_break_dtiu"
+	};
+
+	// Iterate through all fields of the DocType and show/hide
+	frm.meta.fields.forEach(field => {
+		const fname = field.fieldname;
+		const ftype = field.fieldtype;
+
+		// 1. Structural Layout Breaks (Tabs and Columns) should always be active
+		if (ftype === 'Tab Break' || ftype === 'Column Break') {
+			frm.set_df_property(fname, 'hidden', 0);
+			return;
+		}
+
+		// 2. Always Visible Fields
+		if (ALWAYS_VISIBLE_FIELDS.includes(fname)) {
+			frm.set_df_property(fname, 'hidden', 0);
+			return;
+		}
+
+		// 3. Child Table Section Breaks
+		let is_child_section = false;
+		for (const [table_field, section_field] of Object.entries(child_table_sections)) {
+			if (fname === section_field) {
+				const show_section = allowed_fields.includes(table_field);
+				frm.set_df_property(fname, 'hidden', show_section ? 0 : 1);
+				is_child_section = true;
+				break;
+			}
+		}
+		if (is_child_section) return;
+
+		// Generic Section Breaks should remain visible to maintain formatting
+		if (ftype === 'Section Break') {
+			frm.set_df_property(fname, 'hidden', 0);
+			return;
+		}
+
+		// 4. Regular fields & child table fields
+		const should_show = allowed_fields.includes(fname);
+		frm.set_df_property(fname, 'hidden', should_show ? 0 : 1);
+	});
+
+	// Always hide asaldata as it is a system/metadata field
+	frm.set_df_property('asaldata', 'hidden', 1);
+}
+
 
 frappe.ui.form.on('HEADER V21', {
+	onload: function (frm) {
+		toggle_fields_by_schema(frm);
+	},
 	refresh: function (frm) {
+		toggle_fields_by_schema(frm);
+		frm.clear_custom_buttons();
+
 		// Change background color
 		frm.page.wrapper.find('.layout-main-section').css('background-color', '#F3F4F6');
 
 		// Add Barang Manager Button
 		if (frm.doc.name) {
 			add_beacukai_actions(frm);
+			try {
+				render_ceisa_pdf_dashboard(frm);
+			} catch (err) {
+				console.error("Error rendering CEISA PDF Dashboard:", err);
+			}
 			frm.add_custom_button(__('🛒 Manage Barang'), function () {
 				show_barang_manager(frm);
 			}, __('Actions')).attr('style', 'background:#1565C0;color:#fff;border-color:#0D47A1;font-weight:600;');
@@ -214,6 +441,9 @@ frappe.ui.form.on('HEADER V21', {
 				});
 			});
 		}
+	},
+	kode_dokumen: function (frm) {
+		frm.trigger('refresh');
 	}
 });
 
@@ -484,6 +714,578 @@ function validate_bc_schema(frm, label, suffix) {
 					indicator: 'red',
 					wide: true
 				});
+			}
+		}
+	});
+}
+
+function render_ceisa_pdf_dashboard(frm) {
+	const nomor_aju = frm.doc.nomoraju || frm.doc.name;
+	if (!nomor_aju) return;
+
+	// Resolve dashboard wrapper element with multiple fallbacks
+	let $jq_wrapper = null;
+	if (frm.dashboard && (frm.dashboard.wrapper || frm.dashboard.$wrapper)) {
+		$jq_wrapper = $(frm.dashboard.wrapper || frm.dashboard.$wrapper);
+	} else if (frm.dashboard_area && frm.dashboard_area.length) {
+		$jq_wrapper = frm.dashboard_area;
+	} else {
+		$jq_wrapper = frm.page && frm.page.wrapper ? frm.page.wrapper.find('.form-dashboard') : null;
+	}
+
+	if (!$jq_wrapper || !$jq_wrapper.length) {
+		console.warn("CEISA Dashboard: Could not find any form dashboard container element.");
+		return;
+	}
+
+	// Inject styles
+	if (!$('#ceisa-dashboard-styles').length) {
+		$('<style id="ceisa-dashboard-styles">').prop('type', 'text/css').html(`
+			.ceisa-pdf-dashboard {
+				background: rgba(255, 255, 255, 0.7);
+				backdrop-filter: blur(20px) saturate(190%);
+				-webkit-backdrop-filter: blur(20px) saturate(190%);
+				border: 1px solid rgba(209, 213, 219, 0.3);
+				border-radius: 16px;
+				padding: 20px;
+				margin: 15px 0 25px 0;
+				box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.04);
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+				transition: all 0.3s ease;
+			}
+			.ceisa-pdf-dashboard:hover {
+				box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.08);
+				border-color: rgba(209, 213, 219, 0.5);
+			}
+			.ceisa-dashboard-header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 16px;
+				border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+				padding-bottom: 12px;
+			}
+			.ceisa-dashboard-title {
+				font-size: 15px;
+				font-weight: 700;
+				color: #1F2937;
+				display: flex;
+				align-items: center;
+				gap: 8px;
+			}
+			.ceisa-dashboard-title i {
+				color: #2563EB;
+			}
+			.ceisa-dashboard-subtitle {
+				font-size: 11px;
+				color: #6B7280;
+				font-weight: 500;
+			}
+			.ceisa-actions-row {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 12px;
+				margin-bottom: 18px;
+			}
+			.ceisa-btn {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				gap: 8px;
+				padding: 10px 18px;
+				font-size: 13px;
+				font-weight: 600;
+				border-radius: 10px;
+				cursor: pointer;
+				transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+				user-select: none;
+				text-decoration: none !important;
+			}
+			.ceisa-btn-draft {
+				background: hsla(210, 60%, 45%, 0.06);
+				color: hsla(210, 70%, 35%, 1);
+				border: 1px solid hsla(210, 60%, 45%, 0.2);
+			}
+			.ceisa-btn-draft:hover {
+				background: hsla(210, 60%, 45%, 0.12);
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(59, 130, 246, 0.12);
+			}
+			.ceisa-btn-final {
+				background: hsla(150, 60%, 40%, 0.06);
+				color: hsla(150, 65%, 28%, 1);
+				border: 1px solid hsla(150, 60%, 40%, 0.2);
+			}
+			.ceisa-btn-final:hover {
+				background: hsla(150, 60%, 40%, 0.12);
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(16, 185, 129, 0.12);
+			}
+			.ceisa-btn-billing {
+				background: hsla(35, 85%, 45%, 0.06);
+				color: hsla(35, 90%, 30%, 1);
+				border: 1px solid hsla(35, 85%, 45%, 0.2);
+			}
+			.ceisa-btn-billing:hover {
+				background: hsla(35, 85%, 45%, 0.12);
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(245, 158, 11, 0.12);
+			}
+			.ceisa-btn-check {
+				background: hsla(275, 60%, 45%, 0.06);
+				color: hsla(275, 70%, 35%, 1);
+				border: 1px solid hsla(275, 60%, 45%, 0.2);
+			}
+			.ceisa-btn-check:hover {
+				background: hsla(275, 60%, 45%, 0.12);
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(139, 92, 246, 0.12);
+			}
+			.ceisa-btn-upload {
+				background: hsla(200, 75%, 45%, 0.06);
+				color: hsla(200, 80%, 32%, 1);
+				border: 1px solid hsla(200, 75%, 45%, 0.2);
+			}
+			.ceisa-btn-upload:hover {
+				background: hsla(200, 75%, 45%, 0.12);
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(14, 165, 233, 0.12);
+			}
+			.ceisa-btn:active {
+				transform: translateY(0);
+			}
+			.ceisa-spinner {
+				width: 13px;
+				height: 13px;
+				border: 2px solid currentColor;
+				border-top-color: transparent;
+				border-radius: 50%;
+				animation: ceisa-spin 0.7s linear infinite;
+				display: inline-block;
+			}
+			@keyframes ceisa-spin {
+				to { transform: rotate(360deg); }
+			}
+			.ceisa-response-section {
+				border-top: 1px dashed rgba(209, 213, 219, 0.5);
+				padding-top: 16px;
+			}
+			.ceisa-response-section-title {
+				font-size: 11px;
+				font-weight: 700;
+				color: #4B5563;
+				margin-bottom: 12px;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+				display: flex;
+				align-items: center;
+				gap: 6px;
+			}
+			.ceisa-response-grid {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 8px;
+			}
+			.ceisa-pill {
+				display: inline-flex;
+				align-items: center;
+				gap: 6px;
+				padding: 6px 14px;
+				font-size: 11.5px;
+				font-weight: 600;
+				border-radius: 20px;
+				cursor: pointer;
+				transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+				user-select: none;
+			}
+			.ceisa-pill-success {
+				background: hsla(150, 60%, 45%, 0.05);
+				color: hsla(150, 70%, 28%, 1);
+				border: 1px solid hsla(150, 60%, 45%, 0.15);
+			}
+			.ceisa-pill-success:hover {
+				background: hsla(150, 60%, 45%, 0.12);
+				transform: translateY(-2px);
+				box-shadow: 0 4px 10px rgba(16, 185, 129, 0.1);
+			}
+			.ceisa-pill-action {
+				background: hsla(5, 75%, 45%, 0.05);
+				color: hsla(5, 80%, 35%, 1);
+				border: 1px solid hsla(5, 75%, 45%, 0.15);
+			}
+			.ceisa-pill-action:hover {
+				background: hsla(5, 75%, 45%, 0.12);
+				transform: translateY(-2px);
+				box-shadow: 0 4px 10px rgba(239, 68, 68, 0.1);
+			}
+			.ceisa-pill-info {
+				background: hsla(200, 65%, 45%, 0.05);
+				color: hsla(200, 75%, 32%, 1);
+				border: 1px solid hsla(200, 65%, 45%, 0.15);
+			}
+			.ceisa-pill-info:hover {
+				background: hsla(200, 65%, 45%, 0.12);
+				transform: translateY(-2px);
+				box-shadow: 0 4px 10px rgba(59, 130, 246, 0.1);
+			}
+			.ceisa-pill-cached {
+				border-style: solid;
+				border-width: 1.5px;
+				background: rgba(255, 255, 255, 0.85) !important;
+			}
+			.ceisa-pill-cached.ceisa-pill-success {
+				border-color: hsla(150, 60%, 45%, 0.45);
+			}
+			.ceisa-pill-cached.ceisa-pill-action {
+				border-color: hsla(5, 75%, 45%, 0.45);
+			}
+			.ceisa-pill-cached.ceisa-pill-info {
+				border-color: hsla(200, 65%, 45%, 0.45);
+			}
+			.ceisa-pill-cached-badge {
+				font-size: 9px;
+				margin-left: 2px;
+				color: hsla(150, 70%, 28%, 0.8);
+			}
+		`).appendTo('head');
+	}
+
+	// Ensure the dashboard wrapper container is visible
+	$jq_wrapper.show();
+	if (frm.dashboard && typeof frm.dashboard.show === 'function') {
+		try {
+			frm.dashboard.show();
+		} catch (e) {
+			console.warn("Could not call frm.dashboard.show():", e);
+		}
+	}
+
+	// Remove old wrapper if it exists to prevent duplication on multiple refreshes
+	$jq_wrapper.find('.ceisa-pdf-dashboard').remove();
+
+	// Construct the premium dashboard card
+	const html = `
+		<div class="ceisa-pdf-dashboard">
+			<div class="ceisa-dashboard-header">
+				<div class="ceisa-dashboard-title">
+					<i class="fa fa-cloud-download"></i> 
+					<span>CEISA 4.0 PDF Workspace</span>
+				</div>
+				<div class="ceisa-dashboard-subtitle">Nomor Aju: ${nomor_aju}</div>
+			</div>
+			
+			<div class="ceisa-actions-row">
+				<div class="ceisa-btn ceisa-btn-draft" id="ceisa-btn-draft" data-nomor-aju="${nomor_aju}">
+					<i class="fa fa-file-text-o"></i> <span>Draft Formulir</span>
+				</div>
+				<div class="ceisa-btn ceisa-btn-final" id="ceisa-btn-final" data-nomor-aju="${nomor_aju}">
+					<i class="fa fa-file-pdf-o"></i> <span>Final Formulir</span>
+				</div>
+				<div class="ceisa-btn ceisa-btn-billing" id="ceisa-btn-billing" data-nomor-aju="${nomor_aju}">
+					<i class="fa fa-credit-card"></i> <span>Billing PDF</span>
+				</div>
+				<div class="ceisa-btn ceisa-btn-check" id="ceisa-btn-check" data-nomor-aju="${nomor_aju}">
+					<i class="fa fa-refresh"></i> <span>Cek Status CEISA</span>
+				</div>
+				<div class="ceisa-btn ceisa-btn-upload" id="ceisa-btn-upload" data-nomor-aju="${nomor_aju}">
+					<i class="fa fa-upload"></i> <span>Upload Dok-Pelengkap</span>
+				</div>
+			</div>
+			
+			<div class="ceisa-response-section" style="display: none;">
+				<div class="ceisa-response-section-title">
+					<i class="fa fa-tags"></i> <span>Daftar Respon Kepabeanan</span>
+				</div>
+				<div class="ceisa-response-grid" id="ceisa-response-grid">
+					<!-- Pills will be dynamically loaded here -->
+				</div>
+			</div>
+		</div>
+	`;
+
+	// Append to dashboard wrapper
+	$jq_wrapper.prepend(html);
+
+	const wrapper = $jq_wrapper.find('.ceisa-pdf-dashboard');
+	setup_ceisa_dashboard_actions(frm, wrapper);
+	load_ceisa_response_pills(frm, wrapper);
+}
+
+function setup_ceisa_dashboard_actions(frm, wrapper) {
+	const nomor_aju = frm.doc.nomoraju || frm.doc.name;
+
+	// 1. DRAFT FORMULIR
+	wrapper.find('#ceisa-btn-draft').on('click', function() {
+		const $btn = $(this);
+		if ($btn.hasClass('disabled')) return;
+		
+		$btn.addClass('disabled').find('i').removeClass('fa-file-text-o').addClass('ceisa-spinner');
+		
+		frappe.call({
+			method: 'singlecore_apps.api.ceisa_api.status.get_cetak_formulir_draft',
+			args: { nomor_aju: nomor_aju },
+			callback: function(r) {
+				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-file-text-o');
+				if (r.message && r.message.status === 'success') {
+					window.open(r.message.data, '_blank');
+				} else {
+					frappe.msgprint({
+						title: 'Gagal Mengunduh Draft',
+						message: r.message ? r.message.message : 'Terjadi kesalahan sistem saat menghubungi CEISA.',
+						indicator: 'red'
+					});
+				}
+			},
+			error: function() {
+				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-file-text-o');
+			}
+		});
+	});
+
+	// 2. FINAL FORMULIR
+	wrapper.find('#ceisa-btn-final').on('click', function() {
+		const $btn = $(this);
+		if ($btn.hasClass('disabled')) return;
+		
+		$btn.addClass('disabled').find('i').removeClass('fa-file-pdf-o').addClass('ceisa-spinner');
+		
+		frappe.call({
+			method: 'singlecore_apps.api.ceisa_api.status.get_cetak_formulir_final',
+			args: { nomor_aju: nomor_aju },
+			callback: function(r) {
+				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-file-pdf-o');
+				if (r.message && r.message.status === 'success') {
+					window.open(r.message.data, '_blank');
+				} else {
+					frappe.msgprint({
+						title: 'Gagal Mengunduh Final',
+						message: r.message ? r.message.message : 'Terjadi kesalahan sistem saat menghubungi CEISA.',
+						indicator: 'red'
+					});
+				}
+			},
+			error: function() {
+				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-file-pdf-o');
+			}
+		});
+	});
+
+	// 3. BILLING PDF WITH AUTO SCAN & VERIFICATION DIALOG
+	wrapper.find('#ceisa-btn-billing').on('click', function() {
+		const $btn = $(this);
+		if ($btn.hasClass('disabled')) return;
+		
+		$btn.addClass('disabled').find('i').removeClass('fa-credit-card').addClass('ceisa-spinner');
+		
+		frappe.call({
+			method: 'singlecore_apps.api.ceisa_api.status.get_active_billing_code',
+			args: { nomor_aju: nomor_aju },
+			callback: function(r) {
+				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-credit-card');
+				if (r.message && r.message.status === 'success') {
+					const detected_code = r.message.billing_code;
+					
+					// Show premium verification dialog
+					let d = new frappe.ui.Dialog({
+						title: 'Verifikasi Kode Billing CEISA',
+						fields: [
+							{
+								label: 'Nomor Aju',
+								fieldname: 'nomor_aju',
+								fieldtype: 'Data',
+								default: nomor_aju,
+								read_only: 1
+							},
+							{
+								label: 'Kode Billing (15 Digit)',
+								fieldname: 'billing_code',
+								fieldtype: 'Data',
+								default: detected_code || '',
+								reqd: 1,
+								description: detected_code ? 
+									'<span style="color: #10B981; font-weight: 600;"><i class="fa fa-check-circle"></i> Kode billing terdeteksi otomatis dari respon CEISA.</span>' : 
+									'<span style="color: #F59E0B; font-weight: 600;"><i class="fa fa-warning"></i> Kode billing tidak terdeteksi. Silakan ketik manual.</span>'
+							}
+						],
+						primary_action_label: 'Download Billing PDF',
+						primary_action: function(values) {
+							let code = (values.billing_code || '').trim();
+							if (code.length !== 15 || !/^\d+$/.test(code)) {
+								frappe.msgprint({
+									title: 'Validasi Gagal',
+									message: 'Kode billing harus terdiri dari tepat 15 digit angka.',
+									indicator: 'orange'
+								});
+								return;
+							}
+							d.hide();
+							
+							// Trigger billing download with loading spinner state on the dialog trigger
+							$btn.addClass('disabled').find('i').removeClass('fa-credit-card').addClass('ceisa-spinner');
+							
+							frappe.call({
+								method: 'singlecore_apps.api.ceisa_api.status.get_billing_pdf',
+								args: { nomor_aju: nomor_aju, billing_code: code },
+								callback: function(res) {
+									$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-credit-card');
+									if (res.message && res.message.status === 'success') {
+										window.open(res.message.data, '_blank');
+									} else {
+										frappe.msgprint({
+											title: 'Gagal Mengunduh Billing',
+											message: res.message ? res.message.message : 'Terjadi kesalahan saat mengunduh PDF Billing.',
+											indicator: 'red'
+										});
+									}
+								},
+								error: function() {
+									$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-credit-card');
+								}
+							});
+						}
+					});
+					d.show();
+				} else {
+					frappe.msgprint({
+						title: 'Error Pemindaian',
+						message: 'Gagal memindai log respon untuk kode billing.',
+						indicator: 'red'
+					});
+				}
+			},
+			error: function() {
+				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-credit-card');
+			}
+		});
+	});
+
+	// 4. CEK STATUS CEISA
+	wrapper.find('#ceisa-btn-check').on('click', function() {
+		const $btn = $(this);
+		if ($btn.hasClass('disabled')) return;
+		
+		$btn.addClass('disabled').find('i').removeClass('fa-refresh').addClass('ceisa-spinner');
+		
+		frappe.call({
+			method: 'singlecore_apps.api.check_ceisa_status',
+			args: { nomor_aju: nomor_aju },
+			callback: function(r) {
+				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-refresh');
+				if (r.message && r.message.status === 'success') {
+					frappe.show_alert({
+						message: __('Status CEISA berhasil disinkronisasi.'),
+						indicator: 'green'
+					});
+					frm.reload_doc();
+				} else {
+					frappe.msgprint({
+						title: 'Gagal Cek Status',
+						message: r.message ? (r.message.message || JSON.stringify(r.message)) : 'Terjadi kesalahan sistem saat menghubungi CEISA.',
+						indicator: 'red'
+					});
+				}
+			},
+			error: function() {
+				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-refresh');
+			}
+		});
+	});
+
+	// 5. UPLOAD DOKUMEN PELENGKAP (NAVIGASI KE TAB DATA 4)
+	wrapper.find('#ceisa-btn-upload').on('click', function() {
+		if (!frm.scroll_to_field('dokumen')) {
+			if (!frm.scroll_to_field('kemasan')) {
+				frm.scroll_to_field('data_4_tab');
+			}
+		}
+	});
+}
+
+function load_ceisa_response_pills(frm, wrapper) {
+	const nomor_aju = frm.doc.nomoraju || frm.doc.name;
+	const $grid = wrapper.find('#ceisa-response-grid');
+	const $section = wrapper.find('.ceisa-response-section');
+
+	frappe.call({
+		method: 'singlecore_apps.api.ceisa_api.status.get_active_responses',
+		args: { nomor_aju: nomor_aju },
+		callback: function(r) {
+			if (r.message && r.message.status === 'success' && r.message.data && r.message.data.length > 0) {
+				$grid.empty();
+				
+				// Show the response section as we have responses
+				$section.show();
+				
+				r.message.data.forEach(function(resp) {
+					const code = resp.kode_respon || 'RESPON';
+					const is_cached = resp.is_cached === 1;
+					const date_str = resp.tanggal_respon ? ` (${resp.tanggal_respon})` : '';
+					
+					// Determine pill style based on response code status category
+					let category_class = 'ceisa-pill-info';
+					if (['SPPB', 'NPE'].includes(code.toUpperCase())) {
+						category_class = 'ceisa-pill-success';
+					} else if (['NPD', 'SPJM', 'TOLAK'].includes(code.toUpperCase())) {
+						category_class = 'ceisa-pill-action';
+					}
+					
+					const cached_class = is_cached ? 'ceisa-pill-cached' : '';
+					const checkmark = is_cached ? '<span class="ceisa-pill-cached-badge"><i class="fa fa-check-circle"></i></span>' : '';
+					
+					const tooltip = resp.keterangan ? `${code}: ${resp.keterangan}${date_str}` : `${code}${date_str}`;
+					
+					const pill_html = `
+						<div class="ceisa-pill ${category_class} ${cached_class}" 
+							 data-code="${code}" 
+							 data-cached="${is_cached ? '1' : '0'}"
+							 title="${tooltip}">
+							<i class="fa fa-file-text-o"></i>
+							<span>${code}</span>
+							${checkmark}
+						</div>
+					`;
+					
+					const $pill = $(pill_html);
+					
+					// Handle click on response pill
+					$pill.on('click', function() {
+						const $this = $(this);
+						if ($this.hasClass('disabled')) return;
+						
+						$this.addClass('disabled').find('i').removeClass('fa-file-text-o').addClass('ceisa-spinner');
+						
+						frappe.call({
+							method: 'singlecore_apps.api.ceisa_api.status.get_response_pdf',
+							args: { nomor_aju: nomor_aju, kode_respon: code },
+							callback: function(res) {
+								$this.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-file-text-o');
+								if (res.message && res.message.status === 'success') {
+									window.open(res.message.data, '_blank');
+									// Make pill cached on successful download if not already cached
+									if (!$this.hasClass('ceisa-pill-cached')) {
+										$this.addClass('ceisa-pill-cached');
+										if (!$this.find('.ceisa-pill-cached-badge').length) {
+											$this.append('<span class="ceisa-pill-cached-badge"><i class="fa fa-check-circle"></i></span>');
+										}
+									}
+								} else {
+									frappe.msgprint({
+										title: `Gagal Mengunduh ${code}`,
+										message: res.message ? res.message.message : 'Terjadi kesalahan sistem saat menghubungi CEISA.',
+										indicator: 'red'
+									});
+								}
+							},
+							error: function() {
+								$this.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-file-text-o');
+							}
+						});
+					});
+					
+					$grid.append($pill);
+				});
+			} else {
+				$section.hide();
 			}
 		}
 	});

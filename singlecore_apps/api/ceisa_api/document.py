@@ -289,4 +289,3 @@ def sync_ceisa_detail_bg(nomor_aju, jenis_dokumen, kode_kantor, api_data):
         except Exception:
             pass
 
-

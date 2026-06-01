@@ -213,3 +213,232 @@ def cetak_formulir(nomor_aju):
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Cetak Formulir Error")
         return {"status": "error", "message": str(e)}
+
+
+def _get_or_download_pdf(nomor_aju, file_prefix, api_endpoint, params=None):
+    """Central cache manager helper that gets locally cached PDF or downloads it from CEISA API."""
+    try:
+        file_name = f"CEISA_{nomor_aju}_{file_prefix}.pdf"
+        
+        # 1. Cache hit check: Look up existing private file attachment linked to the parent document
+        cached_file_url = frappe.db.get_value(
+            "File",
+            {
+                "attached_to_doctype": "Customs Status Log",
+                "attached_to_name": nomor_aju,
+                "file_name": ["like", f"CEISA_{nomor_aju}_{file_prefix}%.pdf"]
+            },
+            "file_url"
+        )
+        if cached_file_url:
+            return {"status": "success", "data": cached_file_url}
+            
+        # 2. Cache miss: Request PDF from CEISA API
+        token = ensure_login()
+        settings = get_ceisa_settings()
+        base_url = settings.base_url or "https://apis-gw.beacukai.go.id"
+        url = f"{base_url}{api_endpoint}"
+        headers = build_auth_headers(token)
+        
+        response = requests.get(url, headers=headers, params=params, timeout=(10, 30))
+        
+        # Handle 401 token refresh once
+        if response.status_code == 401:
+            from .auth import refresh_token
+            new_token = refresh_token()
+            if new_token:
+                headers = build_auth_headers(new_token)
+                response = requests.get(url, headers=headers, params=params, timeout=(10, 30))
+                
+        if response.status_code == 200:
+            # 3. Create private local file attachment in Frappe file manager
+            from frappe.utils.file_manager import save_file
+            file_doc = save_file(
+                fname=file_name,
+                content=response.content,
+                dt="Customs Status Log",
+                dn=nomor_aju,
+                is_private=1
+            )
+            return {"status": "success", "data": file_doc.file_url}
+        else:
+            error_msg = f"Download failed: HTTP {response.status_code} - {response.text}"
+            frappe.log_error(error_msg, "CEISA PDF Cache Helper Error")
+            return {"status": "error", "message": error_msg}
+            
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "CEISA PDF Cache Helper System Error")
+        return {"status": "error", "message": str(e)}
+
+
+@frappe.whitelist()
+def get_cetak_formulir_draft(nomor_aju):
+    """Retrieve Draft Formulir PDF by Nomor Aju (utilizing local hybrid caching)."""
+    return _get_or_download_pdf(
+        nomor_aju=nomor_aju,
+        file_prefix="draft",
+        api_endpoint="/openapi/respon/cetak-formulir",
+        params={"nomorAju": nomor_aju}
+    )
+
+
+@frappe.whitelist()
+def get_cetak_formulir_final(nomor_aju):
+    """Retrieve Final Formulir PDF by Nomor Aju (utilizing local hybrid caching)."""
+    return _get_or_download_pdf(
+        nomor_aju=nomor_aju,
+        file_prefix="final",
+        api_endpoint="/openapi/respon/cetak-formulir",
+        params={"nomorAju": nomor_aju}
+    )
+
+
+@frappe.whitelist()
+def get_active_billing_code(nomor_aju):
+    """Scan response logs for a given nomor_aju and return the first detected billing code."""
+    try:
+        import json
+        import re
+        
+        # Find all responses linked to the nomor_aju
+        responses = frappe.get_all(
+            "Customs Status Log Response",
+            filters={"nomor_aju": nomor_aju},
+            fields=["keterangan", "pesan_json"]
+        )
+        
+        # Compile a regex for 15-digit numeric string
+        billing_regex = re.compile(r"\b\d{15}\b")
+        
+        # Check in each response record
+        for r in responses:
+            # 1. Check in keterangan field
+            if r.keterangan:
+                match = billing_regex.search(r.keterangan)
+                if match:
+                    return {"status": "success", "billing_code": match.group(0)}
+                    
+            # 2. Check in pesan_json field
+            if r.pesan_json:
+                # Direct regex search on the raw JSON string first
+                match = billing_regex.search(r.pesan_json)
+                if match:
+                    return {"status": "success", "billing_code": match.group(0)}
+                
+                # Nested JSON key-value parse search
+                try:
+                    data = json.loads(r.pesan_json)
+                    detected = _scan_json_for_billing(data)
+                    if detected:
+                        return {"status": "success", "billing_code": detected}
+                except Exception:
+                    pass
+                    
+        return {"status": "success", "billing_code": None}
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Get Active Billing Code Error")
+        return {"status": "error", "message": str(e)}
+
+
+def _scan_json_for_billing(obj):
+    """Helper to recursively scan JSON objects for billing codes."""
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            # Check key names
+            if k.lower() in ["kodebilling", "kode_billing", "billingcode", "billing_code"]:
+                if isinstance(v, str) and v.strip().isdigit() and len(v.strip()) == 15:
+                    return v.strip()
+                elif isinstance(v, (int, float)):
+                    s = str(v)
+                    if len(s) == 15:
+                        return s
+            
+            # Recurse
+            res = _scan_json_for_billing(v)
+            if res:
+                return res
+    elif isinstance(obj, list):
+        for item in obj:
+            res = _scan_json_for_billing(item)
+            if res:
+                return res
+    elif isinstance(obj, str):
+        # Check if the string itself is a 15-digit number
+        s = obj.strip()
+        if s.isdigit() and len(s) == 15:
+            return s
+    return None
+
+
+@frappe.whitelist()
+def get_billing_pdf(nomor_aju, billing_code):
+    """Retrieve Billing PDF by Nomor Aju and Billing Code (utilizing local hybrid caching)."""
+    return _get_or_download_pdf(
+        nomor_aju=nomor_aju,
+        file_prefix="billing",
+        api_endpoint=f"/openapi/respon/billing/{billing_code}"
+    )
+
+
+@frappe.whitelist()
+def get_active_responses(nomor_aju):
+    """Return all active responses for a given nomor_aju, including their local caching state."""
+    try:
+        responses = frappe.get_all(
+            "Customs Status Log Response",
+            filters={"nomor_aju": nomor_aju},
+            fields=["name", "kode_respon", "tanggal_respon", "waktu_respon", "keterangan", "pdf_file"]
+        )
+        
+        for r in responses:
+            r.is_cached = 0
+            r.file_url = None
+            
+            # 1. If pdf_file link is already set, fetch its url
+            if r.pdf_file:
+                file_url = frappe.db.get_value("File", r.pdf_file, "file_url")
+                if file_url:
+                    r.is_cached = 1
+                    r.file_url = file_url
+                    continue
+            
+            # 2. Check if a cached private file exists matching the prefix
+            prefix = r.kode_respon.lower()
+            cached_file_url = frappe.db.get_value(
+                "File",
+                {
+                    "attached_to_doctype": "Customs Status Log",
+                    "attached_to_name": nomor_aju,
+                    "file_name": ["like", f"CEISA_{nomor_aju}_{prefix}%.pdf"]
+                },
+                "file_url"
+            )
+            if cached_file_url:
+                r.is_cached = 1
+                r.file_url = cached_file_url
+                # Update pdf_file link in DB for future lookup
+                file_name = frappe.db.get_value("File", {"file_url": cached_file_url}, "name")
+                if file_name:
+                    frappe.db.set_value("Customs Status Log Response", r.name, "pdf_file", file_name, update_modified=False)
+                    frappe.db.commit()
+                    
+        return {"status": "success", "data": responses}
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Get Active Responses Error")
+        return {"status": "error", "message": str(e)}
+
+
+@frappe.whitelist()
+def get_response_pdf(nomor_aju, kode_respon):
+    """Retrieve general Response PDF (e.g. SPPB, NPE) by Nomor Aju and Kode Respon (utilizing local hybrid caching)."""
+    prefix = kode_respon.lower()
+    return _get_or_download_pdf(
+        nomor_aju=nomor_aju,
+        file_prefix=prefix,
+        api_endpoint="/openapi/respon/pdf",
+        params={"nomorAju": nomor_aju, "kodeRespon": kode_respon}
+    )
+
+
+
+

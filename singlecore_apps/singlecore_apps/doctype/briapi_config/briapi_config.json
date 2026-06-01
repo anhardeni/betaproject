@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-29 23:06:21.947104",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "client_id",
+  "client_secret",
+  "environment",
+  "column_break_cywf",
+  "company",
+  "default_tax_expense_account",
+  "qq_receivable_account",
+  "rounding_adjustment_account",
+  "exchange_gain_loss_account",
+  "approver_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "client_id",
+   "fieldtype": "Data",
+   "label": "client_id"
+  },
+  {
+   "fieldname": "client_secret",
+   "fieldtype": "Password",
+   "label": "client_secret"
+  },
+  {
+   "fieldname": "environment",
+   "fieldtype": "Select",
+   "label": "environment",
+   "options": "Sandbox\nProduction"
+  },
+  {
+   "fieldname": "column_break_cywf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "company"
+  },
+  {
+   "fieldname": "default_tax_expense_account",
+   "fieldtype": "Link",
+   "label": "default_tax_expense_account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "qq_receivable_account",
+   "fieldtype": "Link",
+   "label": "Akun Piutang Talangan QQ",
+   "options": "Account"
+  },
+  {
+   "fieldname": "rounding_adjustment_account",
+   "fieldtype": "Link",
+   "label": "Akun Selisih Pembulatan",
+   "options": "Account"
+  },
+  {
+   "fieldname": "exchange_gain_loss_account",
+   "fieldtype": "Link",
+   "label": "Akun Selisih Kurs Valas",
+   "options": "Account"
+  },
+  {
+   "fieldname": "approver_email",
+   "fieldtype": "Data",
+   "label": "Email Approver Utama (OTP)"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-05-29 23:10:30.555011",
+ "modified_by": "Administrator",
+ "module": "Singlecore Apps",
+ "name": "BRIAPI Config",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

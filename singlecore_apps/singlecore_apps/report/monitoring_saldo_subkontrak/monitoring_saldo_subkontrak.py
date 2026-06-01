@@ -36,6 +36,9 @@ def get_data(filters):
         conditions += f" AND h.tanggal_daftar >= '{filters.get('from_date')}' "
     if filters.get("to_date"):
         conditions += f" AND h.tanggal_daftar <= '{filters.get('to_date')}' "
+    if filters.get("vendor"):
+        supplier_name = frappe.db.get_value("Supplier", filters.get("vendor"), "supplier_name") or filters.get("vendor")
+        conditions += f" AND EXISTS (SELECT 1 FROM `tabENTITAS` WHERE parent = h.name AND kode_entitas = '4' AND nama_entitas = {frappe.db.escape(supplier_name)}) "
     
     # Ambil semua BC 261 dan BC 27 (Tujuan 4/Disubkon)
     # Kita join dengan ENTITAS untuk dapat nama penerima
@@ -59,27 +62,37 @@ def get_data(filters):
     outbound_docs = frappe.db.sql(raw_query, as_dict=1)
 
     for row in outbound_docs:
-        # 2. Cek apakah sudah ada Rekonsiliasi untuk item ini
-        # Kita cari di Subcontract Reconciliation Item yang parent-nya memilih header_keluar ini
+        # 2. Cek apakah sudah ada Rekonsiliasi untuk item ini (dengan agregasi SUM untuk partial return)
         recon_data = frappe.db.sql(f"""
             SELECT 
-                ri.qty_masuk, ri.qty_scrap, ri.qty_outstanding, r.name as recon_id, r.status_rekon
+                SUM(ri.qty_masuk) as total_masuk, 
+                SUM(ri.qty_scrap) as total_scrap,
+                GROUP_CONCAT(r.status_rekon) as statuses
             FROM `tabSubcontract Reconciliation Item` ri
             JOIN `tabSubcontract Reconciliation` r ON r.name = ri.parent
             WHERE r.header_keluar = '{row.header_id}' 
             AND ri.item_code = '{row.item_code}'
-            AND r.docstatus < 2
-            LIMIT 1
+            AND r.docstatus = 1
         """, as_dict=1)
 
         qty_masuk = 0
-        qty_outstanding = row.qty_keluar
+        qty_scrap = 0
+        
+        if recon_data and recon_data[0].get("total_masuk") is not None:
+            qty_masuk = flt(recon_data[0].total_masuk)
+            qty_scrap = flt(recon_data[0].total_scrap)
+            
+        total_returned = qty_masuk + qty_scrap
+        qty_outstanding = flt(row.qty_keluar) - total_returned
         status_label = "Outstanding"
         
-        if recon_data:
-            qty_masuk = flt(recon_data[0].qty_masuk) + flt(recon_data[0].qty_scrap)
-            qty_outstanding = flt(recon_data[0].qty_outstanding)
-            status_label = recon_data[0].status_rekon
+        if qty_outstanding <= 0:
+            status_label = "Settled"
+        else:
+            if recon_data and recon_data[0].get("statuses"):
+                states = [s.strip() for s in recon_data[0].statuses.split(",") if s]
+                if "Under Reconciliation" in states:
+                    status_label = "Under Reconciliation"
         
         # 3. Hitung Aging (Sisa Hari)
         aging = 0
@@ -111,7 +124,7 @@ def get_data(filters):
             "item_code": row.item_code,
             "item_name": row.item_name,
             "qty_keluar": row.qty_keluar,
-            "qty_masuk": qty_masuk,
+            "qty_masuk": qty_masuk + qty_scrap,
             "qty_outstanding": qty_outstanding,
             "tgl_jatuh_tempo": jatuh_tempo,
             "aging": aging,
@@ -119,3 +132,4 @@ def get_data(filters):
         })
 
     return data
+

@@ -1,66 +1,52 @@
-# Add CEISA Document Detail Staging Table and API Endpoint
+# Implementation Plan - Optimasi Laporan Monitoring Saldo Subkontrak
 
-We are adding a whitelisted API endpoint `/api/method/singlecore_apps.api.ceisa_api.document.get_document_detail` that calls the CEISA 4.0 document detail API, and a new staging DocType `Ceisa Document Detail` to store the raw nested JSON results in a `raw_json` field with elevated search columns in the background.
+Rencana ini bertujuan untuk menyempurnakan dan mengoptimalkan laporan pabean eksisting **Monitoring Saldo Subkontrak** (`monitoring_saldo_subkontrak`) agar lebih akurat, responsif terhadap filter, dan memiliki visualisasi antarmuka (*rich styling*) yang premium sesuai kebutuhan operasional.
 
-## User Review Required
-
-> [!IMPORTANT]
-> The new `Ceisa Document Detail` DocType acts as a staging table. In the background, when `sync_to_db` is set to `True`, we will asynchronously save the staging record using `frappe.enqueue`.
-> This avoids blocking the live API request, ensuring a highly responsive frontend while background workers safely write to the database.
-
-## Open Questions
-
-There are no remaining open questions as we resolved the design decisions interactively during the `/grill-me` session.
+### ⚠️ Poin Koreksi Bisnis & Logika Kritis:
+1. **Perbaikan Filter Vendor (Broken Filter):** Laporan eksisting memiliki filter `Vendor/Partner` di UI, namun nilai filter tersebut sama sekali tidak diproses di dalam query Python (`monitoring_saldo_subkontrak.py`). Kita akan memperbaikinya dengan mencocokkan field `nama_entitas` (dengan kode entitas `4` / Penerima) pada data pabean.
+2. **Kalkulasi Rekonsiliasi Parsial (Logic Bug):** Query eksisting menggunakan `LIMIT 1` saat menarik data pengembalian subkontrak. Jika satu dokumen jalan keluar (BC 2.6.1) dicicil pemulangan/rekonsiliasinya dalam beberapa tahap (dokumen BC 2.6.2 parsial), maka kalkulasi saldo gantung (*outstanding*) menjadi salah. Kita akan mengubahnya menjadi fungsi agregasi `SUM`.
+3. **Penyempurnaan Tampilan Visual (Aesthetics):** Kita akan menambahkan fungsi `formatter` JavaScript di sisi klien untuk mengubah teks status dan durasi jatuh tempo menjadi badge berwarna dinamis (Hijau, Kuning, Merah) agar pengguna dapat langsung mengidentifikasi stok yang kritis/terlambat.
 
 ---
 
-## Proposed Changes
+## Usulan Perubahan Kode
 
-### CEISA API Module
-
-#### [MODIFY] [document.py](file:///wsl.localhost/Ubuntu-24.04/home/acer25/frappe-bench/apps/singlecore_apps/singlecore_apps/api/ceisa_api/document.py)
-- Import `frappe.enqueue` or define a background job handler to save staging records.
-- Implement `@frappe.whitelist() def get_document_detail(jenis_dokumen, nomor_aju, kode_kantor, sync_to_db=False)`.
-- Make a GET request to CEISA's `GET /openapi/document/{jenis_dokumen}/{nomor_aju}/{kode_kantor}` using the credentials stored in the `Ceisa Settings` singleton.
-- Return a structured response: `{ "status": "success" / "error", "http_code": response.status_code, "data": ... }`.
-- If `sync_to_db` is `True`, queue a background worker task using `frappe.enqueue` to create/update the `Ceisa Document Detail` DocType record.
-
-#### [MODIFY] [__init__.py](file:///wsl.localhost/Ubuntu-24.04/home/acer25/frappe-bench/apps/singlecore_apps/singlecore_apps/api/ceisa_api/__init__.py)
-- Expose the new `get_document_detail` method.
-
----
-
-### Doctype: Ceisa Document Detail [NEW]
-
-We will create a new directory `ceisa_document_detail` under the `doctype/` package.
-
-#### [NEW] [__init__.py](file:///wsl.localhost/Ubuntu-24.04/home/acer25/frappe-bench/apps/singlecore_apps/singlecore_apps/singlecore_apps/doctype/ceisa_document_detail/__init__.py)
-- Empty init file.
-
-#### [NEW] [ceisa_document_detail.py](file:///wsl.localhost/Ubuntu-24.04/home/acer25/frappe-bench/apps/singlecore_apps/singlecore_apps/singlecore_apps/doctype/ceisa_document_detail/ceisa_document_detail.py)
-- Python class controller for `Ceisa Document Detail`.
-
-#### [NEW] [ceisa_document_detail.json](file:///wsl.localhost/Ubuntu-24.04/home/acer25/frappe-bench/apps/singlecore_apps/singlecore_apps/singlecore_apps/doctype/ceisa_document_detail/ceisa_document_detail.json)
-- DocType JSON schema containing:
-  - Autoname: `field:nomor_aju` (to use the unique Nomor Aju as the document ID).
-  - Fields:
-    - `nomor_aju` (Data, bold, unique, required)
-    - `jenis_dokumen` (Data, required)
-    - `kode_kantor` (Data)
-    - `nomor_daftar` (Data)
-    - `tanggal_daftar` (Date)
-    - `raw_json` (Long Text)
-    - `status` (Select: Success, Error, Pending)
-    - `message` (Small Text)
-    - `retrieved_at` (Datetime)
+### 1. File Backend Python: `monitoring_saldo_subkontrak.py`
+* **Filter Vendor**: Kita tambahkan pengecekan filter vendor di query SQL utama:
+  ```python
+  if filters.get("vendor"):
+      supplier_name = frappe.db.get_value("Supplier", filters.get("vendor"), "supplier_name") or filters.get("vendor")
+      conditions += f" AND EXISTS (SELECT 1 FROM `tabENTITAS` WHERE parent = h.name AND kode_entitas = '4' AND nama_entitas = {frappe.db.escape(supplier_name)}) "
+  ```
+* **Kombinasi Pengembalian Parsial**: Kita ubah pengambilan data dari child table rekonsiliasi agar menjumlahkan (`SUM`) seluruh pengembalian yang valid daripada membatasinya ke `LIMIT 1`:
+  ```python
+  recon_data = frappe.db.sql(f"""
+      SELECT 
+          SUM(ri.qty_masuk) as total_masuk, 
+          SUM(ri.qty_scrap) as total_scrap
+      FROM `tabSubcontract Reconciliation Item` ri
+      JOIN `tabSubcontract Reconciliation` r ON r.name = ri.parent
+      WHERE r.header_keluar = '{row.header_id}' 
+      AND ri.item_code = '{row.item_code}'
+      AND r.docstatus = 1
+  """, as_dict=1)
+  ```
 
 ---
 
-## Verification Plan
+### 2. File Frontend JavaScript: `monitoring_saldo_subkontrak.js`
+Kita akan menambahkan fungsi `formatter` visual pada grid laporan:
+* **Kolom Status**:
+  * `🔴 Overdue` jika ada saldo gantung & tanggal jatuh tempo sudah terlewati (aging < 0).
+  * `🟡 Kritis` jika ada saldo gantung & waktu tersisa ≤ 7 hari.
+  * `🔵 Outstanding` jika masih berjalan normal > 7 hari.
+  * `🟢 Settled` jika barang sudah kembali penuh.
+* **Kolom Aging**: Otomatis berwarna merah jika expired, oranye jika kritis, abu-abu jika sudah selesai (`Settled`), dan hijau jika aman.
 
-### Automated Tests
-- Create a test file `test_ceisa_document_detail.py` or run a manual test script inside the workspace to execute the endpoint.
-- Verify status codes and check if the database records are created and populated properly in background tasks.
+---
 
-### Manual Verification
-- We can verify the endpoint response directly from a python bench console run or by executing the whitelisted API through curl or postman.
+## Rencana Pengujian
+1. Membuka laporan **Monitoring Saldo Subkontrak** di desk ERPNext.
+2. Memastikan filter **Vendor/Partner** dapat menyaring data subkontraktor secara akurat.
+3. Memastikan kalkulasi saldo *BAL* tetap akurat meskipun satu pengiriman dicicil pengembaliannya 2-3 kali.
+4. Memverifikasi badge warna visual (Merah/Oranye/Hijau) tampil dengan indah dan intuitif.

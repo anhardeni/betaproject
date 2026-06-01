@@ -136,6 +136,9 @@ scheduler_events = {
         # Kirim email alert H-14, H-7, H-3, H-0 & Expired untuk BC 261
         "singlecore_apps.api.subcontract_monitor.check_subcontract_deadlines",
     ],
+    "weekly": [
+        "singlecore_apps.api.ceisa_api.kurs_scheduler.fetch_and_update_ceisa_kurs"
+    ]
 }
 
 # Testing

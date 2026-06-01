@@ -19,6 +19,7 @@ Functions:
 import frappe
 from frappe import _
 from frappe.utils import today, flt, cint, getdate
+from singlecore_apps.api.bom_lineage_integration import populate_raw_materials_from_bom
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -544,12 +545,25 @@ def make_header_v21_multi_sources(sources, source_type="so", kode_dokumen="30", 
         header.cif = flt(total_value, 2)  # FOB for export
         header.netto = flt(total_netto, 4)
         header.bruto = flt(total_netto * 1.05, 4)  # Bruto = Netto + 5%
+        
+        # Relasikan dokumen asal jika ada field custom di HEADER V21
+        meta_h = frappe.get_meta("HEADER V21")
+        if source_type == "so" and meta_h.has_field("custom_so_asal"):
+            header.custom_so_asal = first_doc.name
+        elif source_type == "si" and meta_h.has_field("custom_si_asal"):
+            header.custom_si_asal = first_doc.name
+            
         header.save(ignore_permissions=True)
+        
+        # PENGISIAN BAHAN BAKU OTOMATIS BERDASARKAN BOM & FIFO
+        bom_res = populate_raw_materials_from_bom(header_name)
         
         frappe.db.commit()
         
         # Build message with warnings if any
         message = _("HEADER V21 berhasil dibuat dengan {0} barang").format(len(total_items))
+        if bom_res and bom_res.get("status") == "success" and bom_res.get("warnings"):
+            message += "<br><br><strong>⚠️ Notifikasi BOM & FIFO:</strong><br>" + "<br>".join(bom_res["warnings"][:5])
         if hs_warnings:
             message += "<br><br><strong>⚠️ Peringatan HS Code:</strong><br>" + "<br>".join(hs_warnings[:5])
             if len(hs_warnings) > 5:
@@ -682,12 +696,25 @@ def populate_header_from_source(header_name, source_name, source_type):
         header.cif = flt(header.cif or 0) + flt(total_value, 2)
         header.netto = flt(header.netto or 0) + flt(total_netto, 4)
         header.bruto = flt(header.netto * 1.05, 4)
+        
+        # Relasikan dokumen asal jika ada field custom di HEADER V21
+        meta_h = frappe.get_meta("HEADER V21")
+        if source_type == "so" and meta_h.has_field("custom_so_asal") and not header.custom_so_asal:
+            header.custom_so_asal = source_doc.name
+        elif source_type == "si" and meta_h.has_field("custom_si_asal") and not header.custom_si_asal:
+            header.custom_si_asal = source_doc.name
+            
         header.save(ignore_permissions=True)
+        
+        # PENGISIAN BAHAN BAKU OTOMATIS BERDASARKAN BOM & FIFO
+        bom_res = populate_raw_materials_from_bom(header_name)
         
         frappe.db.commit()
         
         # Build message with warnings if any
         message = _("{0} barang ditambahkan dari {1}").format(barang_added, source_name)
+        if bom_res and bom_res.get("status") == "success" and bom_res.get("warnings"):
+            message += "<br><br><strong>⚠️ Notifikasi BOM & FIFO:</strong><br>" + "<br>".join(bom_res["warnings"][:5])
         if hs_warnings:
             message += "<br><br><strong>⚠️ Peringatan HS Code:</strong><br>" + "<br>".join(hs_warnings[:5])
             if len(hs_warnings) > 5:

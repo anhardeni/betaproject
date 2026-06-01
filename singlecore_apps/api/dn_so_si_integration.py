@@ -13,6 +13,7 @@ from singlecore_apps.api.so_si_integration import (
     get_ceisa_uom,
     generate_nomor_aju
 )
+from singlecore_apps.api.bom_lineage_integration import populate_raw_materials_from_bom
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -423,6 +424,9 @@ def make_header_v21_from_dn(
         header.bruto = flt(total_netto * 1.05, 4)  # default 5% di atas netto
         header.save(ignore_permissions=True)
 
+        # PENGISIAN BAHAN BAKU OTOMATIS BERDASARKAN BOM & FIFO
+        bom_res = populate_raw_materials_from_bom(header_name)
+
         # (Opsional) Lock DN ke HEADER jika ada custom field 'custom_header_v21'
         if frappe.db.has_column("Delivery Note", "custom_header_v21"):
             frappe.db.set_value("Delivery Note", dn_name, "custom_header_v21", header_name, update_modified=False)
@@ -549,6 +553,9 @@ def populate_header_from_dn(
         header.netto = flt(header.netto or 0) + flt(total_netto, 4)
         header.bruto = flt(header.netto * 1.05, 4)
         header.save(ignore_permissions=True)
+
+        # PENGISIAN BAHAN BAKU OTOMATIS BERDASARKAN BOM & FIFO
+        bom_res = populate_raw_materials_from_bom(header_name)
 
         # (Opsional) Lock DN ke HEADER jika ada custom field
         if frappe.db.has_column("Delivery Note", "custom_header_v21"):

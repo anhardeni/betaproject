@@ -326,6 +326,27 @@ def pull_status_for_log(log_name):
     log.reload()
     _sync_linked_doc(log)
 
+    # Memicu Pre-fetching Latar Belakang jika berstatus 'Completed'
+    if current_status == "Completed":
+        has_draft = frappe.db.exists("File", {
+            "attached_to_doctype": "Customs Status Log",
+            "attached_to_name": log_name,
+            "file_name": ["like", f"CEISA_{log_name}_draft%.pdf"]
+        })
+        has_final = frappe.db.exists("File", {
+            "attached_to_doctype": "Customs Status Log",
+            "attached_to_name": log_name,
+            "file_name": ["like", f"CEISA_{log_name}_final%.pdf"]
+        })
+        if not (has_draft and has_final):
+            frappe.enqueue(
+                "singlecore_apps.singlecore_apps.doctype.customs_status_log.customs_status_log.enqueue_pdf_prefetch",
+                queue="long",
+                nomor_aju=log_name,
+                job_id=f"ceisa_pdf_prefetch_{log_name}",
+                enqueue_after_commit=True
+            )
+
     # NPD Orchestration: If NPD, trigger document requirement analysis
     if current_status == "Action Required: NPD":
         latest_npd = None
@@ -533,3 +554,73 @@ def _parse_datetime(val):
 def _map_bc_type(kode_dokumen):
     # The Select field expects numeric codes ("20", "30", etc.)
     return str(kode_dokumen) if kode_dokumen else ""
+
+
+def enqueue_pdf_prefetch(nomor_aju):
+    """
+    Background job to pre-fetch and cache CEISA Draft & Final formulir PDFs.
+    Uses progressive delays (time.sleep) in the background thread to handle Bea Cukai's latency.
+    """
+    import frappe
+    import time
+    
+    if not nomor_aju:
+        return
+        
+    frappe.logger("ceisa_prefetch").info(f"Starting pre-fetch for Nomor Aju: {nomor_aju}")
+    
+    # Jeda waktu cerdas (Exponential Backoff): 0s, 1m, 3m, 5m, 10m
+    delays = [0, 60, 180, 300, 600]
+    
+    for attempt, delay in enumerate(delays):
+        if delay > 0:
+            frappe.logger("ceisa_prefetch").info(f"Attempt {attempt + 1}: Waiting {delay}s before requesting CEISA PDFs...")
+            time.sleep(delay)
+            
+        # Periksa apakah berkas sudah di-cache secara lokal
+        has_draft = frappe.db.exists("File", {
+            "attached_to_doctype": "Customs Status Log",
+            "attached_to_name": nomor_aju,
+            "file_name": ["like", f"CEISA_{nomor_aju}_draft%.pdf"]
+        })
+        
+        has_final = frappe.db.exists("File", {
+            "attached_to_doctype": "Customs Status Log",
+            "attached_to_name": nomor_aju,
+            "file_name": ["like", f"CEISA_{nomor_aju}_final%.pdf"]
+        })
+        
+        if has_draft and has_final:
+            frappe.logger("ceisa_prefetch").info(f"Both Draft & Final PDFs successfully cached for {nomor_aju}. Pre-fetch complete!")
+            return
+            
+        # Jalankan pengunduhan dengan timeout ketat
+        from singlecore_apps.api.ceisa_api.status import get_cetak_formulir_draft, get_cetak_formulir_final
+        
+        success_draft = bool(has_draft)
+        success_final = bool(has_final)
+        
+        if not has_draft:
+            try:
+                res_draft = get_cetak_formulir_draft(nomor_aju)
+                if res_draft.get("status") == "success":
+                    success_draft = True
+                    frappe.logger("ceisa_prefetch").info(f"Draft PDF successfully cached for {nomor_aju}")
+            except Exception as e:
+                frappe.logger("ceisa_prefetch").warning(f"Error pre-fetching Draft PDF: {e}")
+                
+        if not has_final:
+            try:
+                res_final = get_cetak_formulir_final(nomor_aju)
+                if res_final.get("status") == "success":
+                    success_final = True
+                    frappe.logger("ceisa_prefetch").info(f"Final PDF successfully cached for {nomor_aju}")
+            except Exception as e:
+                frappe.logger("ceisa_prefetch").warning(f"Error pre-fetching Final PDF: {e}")
+                
+        if success_draft and success_final:
+            frappe.logger("ceisa_prefetch").info(f"Successfully cached both PDFs on attempt {attempt + 1}!")
+            return
+            
+    frappe.logger("ceisa_prefetch").warning(f"Failed to cache both PDFs for {nomor_aju} after 5 attempts. Stopping.")
+

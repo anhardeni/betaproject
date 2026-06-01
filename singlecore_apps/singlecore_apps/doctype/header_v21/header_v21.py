@@ -1,6 +1,7 @@
 # Copyright (c) 2024, AnharDeni and contributors
 # For license information, please see license.txt
 import frappe
+from frappe import _
 from frappe.model.document import Document
 from frappe.utils import now_datetime
 
@@ -61,6 +62,46 @@ def auto_create_customs_log(header_doc, payload_json, response_raw):
 
 
 class HEADERV21(Document):
+	def before_submit(self):
+		self._validate_bahan_baku_dokumen_asal()
+
+	def _validate_bahan_baku_dokumen_asal(self):
+		"""
+		Opsi C (Hibrida): Memastikan seluruh bahan baku pabean untuk dokumen pengeluaran
+		(BC 2.5, BC 2.7, BC 2.6.1) memiliki dokumen asal pabean yang lengkap sebelum di-submit.
+		"""
+		if self.kode_dokumen not in ("25", "27", "261"):
+			return
+
+		# Ambil seluruh bahan baku yang berasosiasi dengan barang di header ini
+		sql = """
+			SELECT
+				bb.name, bb.kode_barang, bb.seri_barang, bb.seri_bahan_baku, bb.nomor_aju_asal
+			FROM
+				`tabBAHAN BAKU` bb
+				INNER JOIN `tabBARANG V1` b ON b.name = bb.parent_barang
+			WHERE
+				b.nomoraju = %(header_name)s
+		"""
+		raw_materials = frappe.db.sql(sql, {"header_name": self.name}, as_dict=True)
+
+		if not raw_materials:
+			return
+
+		unallocated = []
+		for rm in raw_materials:
+			if not rm.nomor_aju_asal or rm.nomor_aju_asal.strip() == "" or "TIDAK CUKUP" in str(rm.nomor_aju_asal).upper():
+				unallocated.append(f"- Seri {rm.seri_barang} Bahan Baku {rm.kode_barang} (Seri BB {rm.seri_bahan_baku})")
+
+		if unallocated:
+			msg = _("<b>Gagal Submit: Kepatuhan Dokumen Asal Pabean (Opsi C)</b><br>"
+					"Ditemukan bahan baku hasil konversi BOM yang belum teralokasi dokumen asal masuknya (BC 2.3 / BC 4.0 / BC 2.7 Masuk). "
+					"Silakan lengkapi dokumen asal secara manual atau sinkronkan data pabean masuk Anda:<br><br>")
+			msg += "<br>".join(unallocated[:10])
+			if len(unallocated) > 10:
+				msg += f"<br>...dan {len(unallocated) - 10} item lainnya."
+			frappe.throw(msg, title=_("Stok Pabean Kurang"))
+
 	def on_cancel(self):
 		"""Mematikan jadwal pencarian robot saat dokumen dibatalkan"""
 		no_aju = self.nomoraju
