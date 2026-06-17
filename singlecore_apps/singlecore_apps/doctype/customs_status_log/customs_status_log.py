@@ -219,9 +219,11 @@ def pull_status_for_log(log_name):
     added_responses = 0
     
     # Process Statuses
+    # Catatan: API DJBC menggunakan "kodeProses" pada dataStatus.
+    # Field lokal (kode_status) hanya nama internal Frappe — bukan nama dari API.
     for row in (data.get("dataStatus") or []):
         if not _is_status_exist(log, row):
-            kode = row.get("kodeStatus")
+            kode = row.get("kodeProses")
             ensure_status_code_exists("Referensi Status1", kode)
             _append_child_row(log_name, "Customs Status Log Status", "statuses", {
                 "nomor_aju": row.get("nomorAju"),
@@ -235,7 +237,7 @@ def pull_status_for_log(log_name):
         
         events.append({
             "type": "status",
-            "code": str(row.get("kodeStatus") or "").upper(),
+            "code": str(row.get("kodeProses") or "").upper(),
             "time": _parse_datetime(row.get("waktuStatus")),
             "desc": row.get("keterangan")
         })
@@ -248,7 +250,7 @@ def pull_status_for_log(log_name):
         
         if existing_row:
             api_pdf = row.get("Pdf") or row.get("pdf")
-            if not existing_row.pdf_file and api_pdf:
+            if not existing_row.pdf_file:
                 pdf_link = _save_pdf(api_pdf, no_aju, row, log_name)
                 if pdf_link:
                     frappe.db.set_value("Customs Status Log Response", existing_row.name, "pdf_file", pdf_link)
@@ -257,7 +259,7 @@ def pull_status_for_log(log_name):
         else:
             ensure_status_code_exists("Referensi Respon1", kode) 
             pdf_data = row.get("Pdf") or row.get("pdf")
-            pdf_link = _save_pdf(pdf_data, no_aju, row, log_name) if pdf_data else None
+            pdf_link = _save_pdf(pdf_data, no_aju, row, log_name)
             
             row_name = _append_child_row(log_name, "Customs Status Log Response", "responses", {
                 "nomor_aju": row.get("nomorAju"),
@@ -321,7 +323,10 @@ def pull_status_for_log(log_name):
     
     # Finalizing
     frappe.db.set_value("Customs Status Log", log_name, updates, update_modified=True)
-    frappe.db.commit()
+    
+    # Hanya lakukan commit jika tidak berada dalam transaksi penyimpanan dokumen lain
+    if not (frappe.flags.in_insert or frappe.flags.in_save or frappe.flags.in_test or frappe.flags.in_submit):
+        frappe.db.commit()
     
     log.reload()
     _sync_linked_doc(log)
@@ -412,7 +417,28 @@ def _save_pdf(base64_or_path, nomor_aju, api_row, doc_name):
         if existing_file:
             return existing_file
 
-        field_value = str(base64_or_path).strip()
+        field_value = str(base64_or_path).strip() if base64_or_path else ""
+        if not field_value or field_value.lower() in ("none", "false"):
+            # Cegah loop tak terbatas (infinite recursion/loop) jika fungsi ini dipanggil
+            # dari dalam get_response_pdf itu sendiri
+            if getattr(frappe.flags, "in_pdf_download", False):
+                return None
+                
+            # Auto-download from api if no pdf data is present in the status response
+            kode_resp = api_row.get("kodeRespon")
+            if kode_resp:
+                frappe.flags.in_pdf_download = True
+                try:
+                    from singlecore_apps.api.ceisa_api.status import get_response_pdf
+                    res = get_response_pdf(nomor_aju, kode_resp)
+                    if res.get("status") == "success" and res.get("data"):
+                        file_url = res.get("data")
+                        file_name_db = frappe.db.get_value("File", {"file_url": file_url}, "name")
+                        return file_name_db
+                finally:
+                    frappe.flags.in_pdf_download = False
+            return None
+
         if "/" in field_value and field_value.endswith(".pdf"):
             from singlecore_apps.api.ceisa_api.status import download_respon
             res = download_respon(field_value)
@@ -436,8 +462,8 @@ def _trigger_email_async(log, kode_respon, pdf_link, row_name=None):
         frappe.enqueue(
             send_completion_notification,
             queue="short",
-            log=log,
-            row={"kodeRespon": kode_respon, "pdf_file": pdf_link, "name": row_name}
+            log_doc=log,
+            api_row={"kodeRespon": kode_respon, "pdf_file": pdf_link, "name": row_name}
         )
     except Exception as e:
         frappe.log_error(str(e), "Async Email Error")
@@ -462,15 +488,23 @@ def resend_notification(row_name):
     return True
 
 def _is_status_exist(log_doc, api_row):
-    kode, waktu = str(api_row.get("kodeStatus") or ""), str(api_row.get("waktuStatus") or "")
+    """Cek apakah baris status sudah ada berdasarkan kodeProses (format API DJBC) + waktu."""
+    kode = str(api_row.get("kodeProses") or "")
+    waktu = str(api_row.get("waktuStatus") or "")
     return any(str(r.kode_status or "") == kode and str(r.waktu_status or "") == waktu for r in (log_doc.statuses or []))
 
 def _get_response_row(log_doc, api_row):
-    nomor, tgl = str(api_row.get("nomorRespon") or ""), str(api_row.get("tanggalRespon") or "")
-    kode, waktu = str(api_row.get("kodeRespon") or ""), str(api_row.get("waktuRespon") or "")
+    nomor = str(api_row.get("nomorRespon") or "").strip()
+    tgl = _parse_date(api_row.get("tanggalRespon"))
+    kode = str(api_row.get("kodeRespon") or "").strip()
+    waktu = _parse_datetime(api_row.get("waktuRespon") or api_row.get("waktuStatus"))
     for r in (log_doc.responses or []):
-        if nomor and tgl and str(r.nomor_respon or "") == nomor and str(r.tanggal_respon or "") == tgl: return r
-        if not (nomor and tgl) and str(r.kode_respon or "") == kode and str(r.waktu_respon or "") == waktu: return r
+        db_nomor = str(r.nomor_respon or "").strip()
+        db_tgl = _parse_date(r.tanggal_respon)
+        db_kode = str(r.kode_respon or "").strip()
+        db_waktu = _parse_datetime(r.waktu_respon or r.waktu_status)
+        if nomor and tgl and db_nomor == nomor and db_tgl == tgl: return r
+        if not (nomor and tgl) and db_kode == kode and db_waktu == waktu: return r
     return None
 
 def _try_set_nopen(log_doc, api_data, updates):
@@ -487,7 +521,7 @@ def _try_set_nopen(log_doc, api_data, updates):
 def _try_set_rejected(log_doc, api_data, updates):
     if updates.get("bc_status", log_doc.bc_status) in ("Completed", "Rejected"): return
     for row in (api_data.get("dataStatus") or []):
-        if str(row.get("kodeStatus") or "").upper() in REJECTED_STATUS_CODES or "TOLAK" in str(row.get("keterangan") or "").upper():
+        if str(row.get("kodeProses") or "").upper() in REJECTED_STATUS_CODES or "TOLAK" in str(row.get("keterangan") or "").upper():
             updates["bc_status"] = "Rejected"
             return
 
@@ -526,7 +560,8 @@ def ensure_status_code_exists(doctype, code):
         elif meta.get_field("description"): new_doc.description = "Auto-created from API"
         if not new_doc.name: new_doc.name = code
         new_doc.insert(ignore_permissions=True)
-        frappe.db.commit()
+        if not (frappe.flags.in_insert or frappe.flags.in_save or frappe.flags.in_test or frappe.flags.in_submit):
+            frappe.db.commit()
     except Exception as e:
         frappe.logger("customs_status_log").warning(f"Gagal memastikan status code {code} di {doctype}: {e}")
 

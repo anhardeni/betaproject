@@ -754,10 +754,10 @@ def import_ceisa_excel(file_data, dry_run=False):
         
         if cint(dry_run):
             frappe.db.rollback()
-            return {"status": "success", "message": "[DRY RUN] " + message, "audit": audit_report}
+            return {"status": "success", "message": "[DRY RUN] " + message, "audit": audit_report, "nomor_aju": nomor_aju}
         
         frappe.db.commit()
-        return {"status": "success", "message": message, "audit": audit_report}
+        return {"status": "success", "message": message, "audit": audit_report, "nomor_aju": nomor_aju}
 
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Import CEISA Excel Refactored Error")

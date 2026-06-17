@@ -8,9 +8,6 @@ frappe.ui.form.on('BARANG V1', {
 				frappe.set_route("Form", "HEADER V21", frm.doc.nomoraju);
 			});
 
-			frm.add_custom_button(__('Back to Barang V1'), function () {
-				frappe.set_route("Form", "BARANG V1", frm.doc.nomoraju);
-			});
 
 			if (frm.doc.gambar_barang) {
 				frm.add_custom_button(__('📤 Upload Photo to CEISA'), function () {

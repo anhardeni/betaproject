@@ -343,7 +343,7 @@ frappe.ui.form.on('HEADER V21', {
 															indicator: 'green',
 															wide: true
 														});
-														frm.reload_doc();
+														frappe.set_route('Form', 'HEADER V21', r2.message.nomor_aju);
 													} else {
 														frappe.msgprint({
 															title: __('Save Failed'),
@@ -519,6 +519,12 @@ function add_beacukai_actions(frm) {
 		check_with_ceisa(frm);
 	}, __('Beacukai')).attr('style', 'background:#F57F17;color:#fff;border-color:#E65100;font-weight:600;');
 
+	if (frm.doc.docstatus === 0) {
+		frm.add_custom_button(__('📋 Cek Manifest & Kurs'), function () {
+			check_manifest_and_kurs(frm);
+		}, __('Beacukai')).attr('style', 'background:#00897B;color:#fff;border-color:#00695C;font-weight:600;');
+	}
+
 	frm.add_custom_button(__('📤 Send Document'), function () {
 		const setting = BC_SETTINGS[frm.doc.kode_dokumen];
 		const label = setting ? setting.label : 'this';
@@ -566,6 +572,26 @@ function add_beacukai_actions(frm) {
 }
 
 // CEISA Live Document Check Handler
+function check_manifest_and_kurs(frm) {
+	frappe.call({
+		method: 'singlecore_apps.singlecore_apps.doctype.header_v21.header_v21.validate_manifest_and_kurs_endpoint',
+		args: {
+			docname: frm.doc.name
+		},
+		freeze: true,
+		freeze_message: __('Melakukan validasi & sinkronisasi Manifest dan Kurs via CEISA API...'),
+		callback: function (r) {
+			if (r.message && r.message.status === 'success') {
+				frappe.show_alert({
+					message: __('Validasi & sinkronisasi sukses! Data manifest & kurs telah diperbarui.'),
+					indicator: 'green'
+				});
+				frm.reload_doc();
+			}
+		}
+	});
+}
+
 function check_with_ceisa(frm) {
 	const bc_type = frm.doc.kode_dokumen;
 	const setting = BC_SETTINGS[bc_type];

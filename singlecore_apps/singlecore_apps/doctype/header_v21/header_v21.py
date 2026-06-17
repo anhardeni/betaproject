@@ -61,9 +61,116 @@ def auto_create_customs_log(header_doc, payload_json, response_raw):
         frappe.log_error(f"Gagal Membuat Log BC Otomatis: {no_aju}", frappe.get_traceback())
 
 
+@frappe.whitelist()
+def validate_manifest_and_kurs_endpoint(docname):
+	doc = frappe.get_doc("HEADER V21", docname)
+	doc._validate_and_sync_manifest_and_kurs()
+	if doc.docstatus == 0:
+		doc.save(ignore_permissions=True)
+		frappe.db.commit()
+	return {"status": "success", "message": _("Validasi Manifest & Kurs berhasil dijalankan dan data diperbarui.")}
+
+
 class HEADERV21(Document):
 	def before_submit(self):
 		self._validate_bahan_baku_dokumen_asal()
+		self._validate_and_sync_manifest_and_kurs()
+
+	def _validate_and_sync_manifest_and_kurs(self):
+		# 1. Validasi & Sinkronisasi Kurs (Exchange Rate)
+		valuta = self.kode_valuta
+		if valuta and valuta != "IDR":
+			from singlecore_apps.api.ceisa_api.kurs import get_kurs
+			res = get_kurs(valuta)
+			if res.get("status") == "success":
+				data_ceisa = res.get("data", {})
+				rows = data_ceisa.get("data", []) if isinstance(data_ceisa, dict) else []
+				if rows and len(rows) > 0:
+					nilai_kurs = rows[0].get("nilaiKurs")
+					if nilai_kurs:
+						self.ndpbm = float(nilai_kurs)
+					else:
+						frappe.throw(_("Gagal Validasi Kurs: Field 'nilaiKurs' tidak ditemukan dalam respon CEISA API."))
+				else:
+					frappe.throw(_("Gagal Validasi Kurs: Respon data kurs kosong untuk mata uang {0}.").format(valuta))
+			else:
+				frappe.throw(_("Gagal memanggil API Kurs CEISA: {0}").format(res.get("message")))
+		elif valuta == "IDR":
+			self.ndpbm = 1.0
+
+		# 2. Validasi & Sinkronisasi Manifest (Hanya Dokumen Impor: 20, 23, 16)
+		if self.kode_dokumen in ["20", "23", "16"]:
+			# Ambil data BL / AWB dari child table dokumen
+			no_host_bl = None
+			tgl_host_bl = None
+			for d in self.get("dokumen"):
+				if d.kode_dokumen in ["705", "740", "704"]:
+					no_host_bl = d.nomor_dokumen
+					tgl_host_bl = d.tanggal_dokumen
+					break
+
+			if not no_host_bl or not tgl_host_bl:
+				frappe.throw(_("Gagal Validasi: Dokumen pendukung Bill of Lading (705) atau Air Waybill (740) wajib diisi untuk dokumen impor."))
+
+			# Ambil nama_perusahaan dari child table entitas (kode_entitas = 1 atau 5)
+			nama_perusahaan = None
+			for ent in self.get("entitas"):
+				if ent.kode_entitas in ["1", "5"]:
+					nama_perusahaan = ent.nama_entitas
+					break
+
+			if not nama_perusahaan:
+				# Fallback ke nama company
+				nama_perusahaan = frappe.db.get_value("Company", self.company, "company_name") or self.company
+
+			if not nama_perusahaan:
+				frappe.throw(_("Gagal Validasi Manifest: Nama Penerima / Importir tidak ditemukan pada entitas dokumen."))
+
+			kode_kantor = self.kode_kantor
+			if not kode_kantor:
+				frappe.throw(_("Gagal Validasi Manifest: Kode Kantor wajib diisi."))
+
+			from singlecore_apps.api.ceisa_api.manifes import get_manifes
+			res_man = get_manifes(no_host_bl, tgl_host_bl, kode_kantor, nama_perusahaan)
+
+			if res_man.get("status") == "success":
+				data_man = res_man.get("data", {})
+				man_item = None
+				if isinstance(data_man, dict):
+					inner_data = data_man.get("data")
+					if isinstance(inner_data, list) and len(inner_data) > 0:
+						man_item = inner_data[0]
+					elif isinstance(inner_data, dict):
+						man_item = inner_data
+					else:
+						man_item = data_man
+
+				if not man_item or not (man_item.get("noBc11") or man_item.get("noPos")):
+					frappe.throw(_("Manifest tidak ditemukan di CEISA untuk BL {0} dan Kantor {1}. Silakan periksa kembali kecocokan data Anda.").format(no_host_bl, kode_kantor))
+
+				# Validasi Nama Importir
+				ceisa_name = man_item.get("namaPenerima")
+				if ceisa_name:
+					def clean_name(n):
+						import re
+						s = str(n).lower()
+						# Hapus singkatan badan usaha umum sebagai kata (boundaries)
+						s = re.sub(r'\b(pt|cv|ud|tbk|persero|corp|co|ltd|gmbh)\b', '', s)
+						# Hapus semua karakter non-alfanumerik
+						s = re.sub(r'[^a-zA-Z0-9]', '', s)
+						return s.strip()
+
+					if clean_name(ceisa_name) != clean_name(nama_perusahaan):
+						frappe.throw(_("Gagal Submit: Nama Penerima di Manifest CEISA ({0}) tidak cocok dengan Nama Importir di dokumen ({1}).").format(ceisa_name, nama_perusahaan))
+
+				# Update field manifest
+				self.nomor_bc11 = man_item.get("noBc11")
+				self.tanggal_bc11 = man_item.get("tglBc11")
+				self.nomor_pos = man_item.get("noPos")
+				if man_item.get("noSubPos"):
+					self.nomor_sub_pos = man_item.get("noSubPos")
+			else:
+				frappe.throw(_("Gagal memanggil API Manifest CEISA: {0}").format(res_man.get("message")))
 
 	def _validate_bahan_baku_dokumen_asal(self):
 		"""

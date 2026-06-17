@@ -135,17 +135,29 @@ def send_completion_notification(log_doc, api_row):
         settings = get_ceisa_settings()
         recipient = settings.notification_email or log_doc.owner
         
+        # Di background worker, frappe.session.user sering kali adalah "Administrator" atau None.
+        # Kita perlu mencari user yang berhak menerima email atau fallback logis yang valid.
         if not recipient or recipient == "Administrator":
-            # Fallback ke email user yang sedang aktif jika administrator
-            recipient = frappe.session.user
-            
+            # Cari user terakhir yang memodifikasi dokumen atau pemilik asli
+            recipient = log_doc.modified_by or log_doc.owner
+            if not recipient or recipient == "Administrator":
+                # Fallback terakhir ke user aktif (jika ada) atau cari System Manager pertama
+                recipient = frappe.session.user
+                if not recipient or recipient == "Administrator":
+                    system_managers = frappe.get_all("User", filters={"enabled": 1}, fields=["email"])
+                    # Cari yang bukan Administrator
+                    for u in system_managers:
+                        if u.email and u.email != "Administrator" and "@" in u.email:
+                            recipient = u.email
+                            break
+
         if not recipient or "@" not in recipient:
             frappe.logger("ceisa_api").warning("Email skip: No valid recipient found.")
             return
 
         kode = api_row.get("kodeRespon") or "RESPON"
-        no_aju = log_doc.nomor_aju
-        pdf_file = api_row.get("pdf_file") # Ini adalah file path (id File)
+        no_aju = log_doc.no_aju
+        pdf_file = api_row.get("pdf_file") # Ini adalah file path atau name (ID File)
 
         subject = f"NOTIFIKASI CEISA: {kode} - {no_aju}"
         message = f"""
@@ -158,13 +170,25 @@ def send_completion_notification(log_doc, api_row):
 
         attachments = []
         if pdf_file:
-            # pdf_file di sini adalah nama dokumen 'File' di Frappe (misal: "private/files/...")
-            # Kita perlu mendapatkan path aslinya
-            file_doc = frappe.get_doc("File", pdf_file)
-            attachments.append({
-                "fname": file_doc.file_name,
-                "fcontent": file_doc.get_content()
-            })
+            # pdf_file di sini bisa berupa name/ID dokumen 'File' (misal: "FL00001")
+            # atau langsung berupa URL/path (misal: "/private/files/...")
+            file_doc = None
+            if frappe.db.exists("File", pdf_file):
+                file_doc = frappe.get_doc("File", pdf_file)
+            else:
+                # Jika pdf_file berupa path, coba cari berdasarkan file_url atau file_name
+                file_name_db = frappe.db.get_value("File", {"file_url": pdf_file}, "name")
+                if not file_name_db:
+                    file_name_db = frappe.db.get_value("File", {"file_name": pdf_file.split("/")[-1]}, "name")
+                
+                if file_name_db:
+                    file_doc = frappe.get_doc("File", file_name_db)
+
+            if file_doc:
+                attachments.append({
+                    "fname": file_doc.file_name,
+                    "fcontent": file_doc.get_content()
+                })
 
         frappe.sendmail(
             recipients=[recipient],
@@ -263,7 +287,7 @@ def _get_or_download_pdf(nomor_aju, file_prefix, api_endpoint, params=None):
             return {"status": "success", "data": file_doc.file_url}
         else:
             error_msg = f"Download failed: HTTP {response.status_code} - {response.text}"
-            frappe.log_error(error_msg, "CEISA PDF Cache Helper Error")
+            frappe.log_error(title="CEISA PDF Cache Helper Error", message=error_msg)
             return {"status": "error", "message": error_msg}
             
     except Exception as e:

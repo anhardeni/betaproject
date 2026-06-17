@@ -34,7 +34,7 @@ def run_expert_simulation():
     log = frappe.get_doc({
         "doctype": "Customs Status Log",
         "no_aju": no_aju,
-        "doctype_type": "BC25", # Wajib diisi
+        "doctype_type": "25", # Gunakan kode numerik sesuai Select field yang valid
         "bc_status": "Pending"
     }).insert(ignore_permissions=True)
 
@@ -62,9 +62,10 @@ def run_expert_simulation():
     print("\n⏳ [TEST CASE A] Simulasi Race Condition (Kirim 5 Respon Serentak)...")
     
     # Data status yang sama dikirim berulang kali
+    # Menggunakan kodeProses sesuai format API DJBC asli
     status_payload = {
         "nomorAju": no_aju,
-        "kodeStatus": "201",
+        "kodeProses": "201",
         "nomorDaftar": "REG-889900",
         "tanggalDaftar": "2023-10-15",
         "keterangan": "NOMOR PENDAFTARAN"
@@ -77,7 +78,7 @@ def run_expert_simulation():
         if not _is_status_exist(log, status_payload):
              log.append("statuses", {
                  "nomor_aju": status_payload["nomorAju"],
-                 "kode_status": status_payload["kodeStatus"],
+                 "kode_status": status_payload["kodeProses"],
                  "nomor_daftar": status_payload["nomorDaftar"],
                  "tanggal_daftar": status_payload["tanggalDaftar"],
                  "keterangan": status_payload["keterangan"]
@@ -153,10 +154,11 @@ def run_expert_simulation():
     # -------------------------------------------------------------------------
     print("\n⏳ [TEST CASE C] Simulasi Update Full (dataStatus & dataRespon)...")
     
+    # Mock data menggunakan kodeProses sesuai format API DJBC asli
     mock_api_data = {
         "dataStatus": [
-            {"kodeStatus": "200", "nomorAju": no_aju, "waktuStatus": "2023-10-15T10:00:00Z", "keterangan": "Satu"},
-            {"kodeStatus": "201", "nomorAju": no_aju, "waktuStatus": "2023-10-15T10:10:00Z", "keterangan": "Dua", "nomorDaftar": "REG-889900", "tanggalDaftar": "2023-10-15"}
+            {"kodeProses": "200", "nomorAju": no_aju, "waktuStatus": "2023-10-15T10:00:00Z", "keterangan": "Satu"},
+            {"kodeProses": "201", "nomorAju": no_aju, "waktuStatus": "2023-10-15T10:10:00Z", "keterangan": "Dua", "nomorDaftar": "REG-889900", "tanggalDaftar": "2023-10-15"}
         ],
         "dataRespon": [
             {
@@ -172,12 +174,12 @@ def run_expert_simulation():
 
     # Kita simulasikan pemanggilan pull_status_for_log dengan data mock
     # Karena kita tidak ingin memanggil API CEISA sungguhan, kita menyuntikkan data
-    from singlecore_apps.singlecore_apps.doctype.customs_status_log.customs_status_log import _is_status_exist, _is_response_exist, _parse_date, _parse_datetime, ensure_status_code_exists
+    from singlecore_apps.singlecore_apps.doctype.customs_status_log.customs_status_log import _is_status_exist, _get_response_row, _parse_date, _parse_datetime, ensure_status_code_exists
 
     # PROSES STATUS
     for row in mock_api_data["dataStatus"]:
         if not _is_status_exist(log, row):
-            kode = row.get("kodeStatus")
+            kode = row.get("kodeProses")  # API DJBC menggunakan kodeProses
             ensure_status_code_exists("BC Status Code", kode)
             log.append("statuses", {
                 "nomor_aju": row.get("nomorAju"),
@@ -191,7 +193,7 @@ def run_expert_simulation():
     # PROSES RESPON
     from singlecore_apps.api.ceisa_api.status import send_completion_notification
     for row in mock_api_data["dataRespon"]:
-        if not _is_response_exist(log, row):
+        if not _get_response_row(log, row):  # None = belum ada, perlu ditambahkan
             log.append("responses", {
                 "nomor_aju": row.get("nomorAju"),
                 "kode_respon": row.get("kodeRespon"),
