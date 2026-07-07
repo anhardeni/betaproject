@@ -4,47 +4,815 @@
   "doctype": "Referensi Jenis Pengangkutan",
   "jenis_pengangkutan": "SATU SARANA ANGKUT",
   "kode_jenis_pengangkutan": 1,
-  "modified": "2026-01-01 18:14:30.319404",
-  "name": 1
+  "modified": "2026-04-06 10:51:00.804743",
+  "name": 7
  },
  {
   "docstatus": 0,
   "doctype": "Referensi Jenis Pengangkutan",
   "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
   "kode_jenis_pengangkutan": 2,
-  "modified": "2026-01-01 18:15:03.936544",
-  "name": 2
+  "modified": "2026-04-06 10:51:00.825680",
+  "name": 8
  },
  {
   "docstatus": 0,
   "doctype": "Referensi Jenis Pengangkutan",
   "jenis_pengangkutan": "ANGKUT LANJUT",
   "kode_jenis_pengangkutan": 3,
-  "modified": "2026-01-01 18:15:28.049402",
-  "name": 3
+  "modified": "2026-04-06 10:51:00.841469",
+  "name": 9
  },
  {
   "docstatus": 0,
   "doctype": "Referensi Jenis Pengangkutan",
   "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
   "kode_jenis_pengangkutan": 4,
-  "modified": "2026-01-01 18:15:53.713354",
-  "name": 4
+  "modified": "2026-04-06 10:51:00.858290",
+  "name": 10
  },
  {
   "docstatus": 0,
   "doctype": "Referensi Jenis Pengangkutan",
   "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
   "kode_jenis_pengangkutan": 5,
-  "modified": "2026-01-01 18:16:10.200655",
-  "name": 5
+  "modified": "2026-04-06 10:51:00.875488",
+  "name": 11
  },
  {
   "docstatus": 0,
   "doctype": "Referensi Jenis Pengangkutan",
   "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
   "kode_jenis_pengangkutan": 6,
-  "modified": "2026-01-01 18:16:31.792579",
-  "name": 6
+  "modified": "2026-04-06 10:51:00.894113",
+  "name": 12
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-04-06 20:16:24.795342",
+  "name": 13
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-04-06 20:16:24.806116",
+  "name": 14
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-04-06 20:16:24.812525",
+  "name": 15
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-04-06 20:16:24.817314",
+  "name": 16
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-04-06 20:16:24.822877",
+  "name": 17
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-04-06 20:16:24.826982",
+  "name": 18
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-04-06 20:36:03.786960",
+  "name": 19
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-04-06 20:36:03.794599",
+  "name": 20
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-04-06 20:36:03.801372",
+  "name": 21
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-04-06 20:36:03.808882",
+  "name": 22
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-04-06 20:36:03.815954",
+  "name": 23
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-04-06 20:36:03.822345",
+  "name": 24
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-04-22 14:26:53.161732",
+  "name": 25
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-04-22 14:26:53.168643",
+  "name": 26
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-04-22 14:26:53.172469",
+  "name": 27
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-04-22 14:26:53.177626",
+  "name": 28
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-04-22 14:26:53.183546",
+  "name": 29
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-04-22 14:26:53.188255",
+  "name": 30
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-05-05 11:30:32.320288",
+  "name": 31
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-05-05 11:30:32.327641",
+  "name": 32
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-05-05 11:30:32.331838",
+  "name": 33
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-05-05 11:30:32.335942",
+  "name": 34
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-05-05 11:30:32.341986",
+  "name": 35
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-05-05 11:30:32.347007",
+  "name": 36
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-05-05 12:04:06.344225",
+  "name": 37
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-05-05 12:04:06.350217",
+  "name": 38
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-05-05 12:04:06.354891",
+  "name": 39
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-05-05 12:04:06.360236",
+  "name": 40
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-05-05 12:04:06.365786",
+  "name": 41
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-05-05 12:04:06.374827",
+  "name": 42
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-05-05 17:33:19.309427",
+  "name": 43
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-05-05 17:33:19.319894",
+  "name": 44
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-05-05 17:33:19.325302",
+  "name": 45
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-05-05 17:33:19.332752",
+  "name": 46
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-05-05 17:33:19.339358",
+  "name": 47
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-05-05 17:33:19.346889",
+  "name": 48
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-05-12 10:48:48.957113",
+  "name": 49
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-05-12 10:48:48.964299",
+  "name": 50
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-05-12 10:48:48.968307",
+  "name": 51
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-05-12 10:48:48.971876",
+  "name": 52
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-05-12 10:48:48.976561",
+  "name": 53
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-05-12 10:48:48.982271",
+  "name": 54
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-05-13 13:23:05.177552",
+  "name": 55
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-05-13 13:23:05.189278",
+  "name": 56
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-05-13 13:23:05.195933",
+  "name": 57
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-05-13 13:23:05.202636",
+  "name": 58
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-05-13 13:23:05.208626",
+  "name": 59
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-05-13 13:23:05.216730",
+  "name": 60
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-05-13 13:45:33.258306",
+  "name": 61
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-05-13 13:45:33.268452",
+  "name": 62
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-05-13 13:45:33.273932",
+  "name": 63
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-05-13 13:45:33.278257",
+  "name": 64
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-05-13 13:45:33.282019",
+  "name": 65
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-05-13 13:45:33.285733",
+  "name": 66
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-05-14 20:35:15.195002",
+  "name": 67
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-05-14 20:35:15.209854",
+  "name": 68
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-05-14 20:35:15.216963",
+  "name": 69
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-05-14 20:35:15.225106",
+  "name": 70
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-05-14 20:35:15.232298",
+  "name": 71
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-05-14 20:35:15.240777",
+  "name": 72
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-05-22 21:27:18.257117",
+  "name": 73
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-05-22 21:27:18.265722",
+  "name": 74
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-05-22 21:27:18.271333",
+  "name": 75
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-05-22 21:27:18.275783",
+  "name": 76
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-05-22 21:27:18.279706",
+  "name": 77
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-05-22 21:27:18.285772",
+  "name": 78
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-06-01 14:34:49.300638",
+  "name": 79
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-06-01 14:34:49.316352",
+  "name": 80
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-06-01 14:34:49.323996",
+  "name": 81
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-06-01 14:34:49.331649",
+  "name": 82
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-06-01 14:34:49.338627",
+  "name": 83
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-06-01 14:34:49.348011",
+  "name": 84
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-06-01 14:55:00.639055",
+  "name": 85
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-06-01 14:55:00.644809",
+  "name": 86
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-06-01 14:55:00.648740",
+  "name": 87
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-06-01 14:55:00.653520",
+  "name": 88
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-06-01 14:55:00.660365",
+  "name": 89
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-06-01 14:55:00.665328",
+  "name": 90
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-06-01 15:11:35.910537",
+  "name": 91
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-06-01 15:11:35.916401",
+  "name": 92
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-06-01 15:11:35.922226",
+  "name": 93
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-06-01 15:11:35.927307",
+  "name": 94
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-06-01 15:11:35.932159",
+  "name": 95
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-06-01 15:11:35.936904",
+  "name": 96
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-06-01 15:40:18.911283",
+  "name": 97
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-06-01 15:40:18.918713",
+  "name": 98
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-06-01 15:40:18.922418",
+  "name": 99
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-06-01 15:40:18.926261",
+  "name": 100
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-06-01 15:40:18.932327",
+  "name": 101
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-06-01 15:40:18.936229",
+  "name": 102
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SATU SARANA ANGKUT",
+  "kode_jenis_pengangkutan": 1,
+  "modified": "2026-06-26 22:17:53.908960",
+  "name": 103
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "INSTALASI/PIPA/TRANSMISI",
+  "kode_jenis_pengangkutan": 2,
+  "modified": "2026-06-26 22:17:53.917029",
+  "name": 104
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT",
+  "kode_jenis_pengangkutan": 3,
+  "modified": "2026-06-26 22:17:53.925742",
+  "name": 105
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "ANGKUT LANJUT MULTIMODA ",
+  "kode_jenis_pengangkutan": 4,
+  "modified": "2026-06-26 22:17:53.930610",
+  "name": 106
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "BARANG BAWAAN PENUMPANG / AWAK SARKUT",
+  "kode_jenis_pengangkutan": 5,
+  "modified": "2026-06-26 22:17:53.939556",
+  "name": 107
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Jenis Pengangkutan",
+  "jenis_pengangkutan": "SARANA ANGKUT LAINNYA",
+  "kode_jenis_pengangkutan": 6,
+  "modified": "2026-06-26 22:17:53.945420",
+  "name": 108
  }
 ]

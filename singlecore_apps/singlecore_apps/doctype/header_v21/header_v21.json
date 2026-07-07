@@ -9,7 +9,7 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{00}{kode_dokumen4digit}{BT0001}{YYYY}{MM}{DD}{######}",
- "creation": "2026-05-23 01:08:58.500886",
+ "creation": "2024-05-03 14:33:28.196685",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -25,8 +25,6 @@
   "tanggal_pernyataan",
   "nama_pernyataan",
   "jabatan_pernyataan",
-  "column_break_wcdc",
-  "tgl_jatuh_tempo_subkon",
   "tab_break_isokh",
   "kode_kantor_bongkar",
   "kode_kantor_periksa",
@@ -39,7 +37,6 @@
   "kode_jenis_impor",
   "kode_tujuan_pemasukan",
   "kode_tujuan_pengiriman",
-  "kode_tujuan_pengiriman_",
   "kode_tujuan_tpb",
   "kode_cara_dagang",
   "kode_cara_bayar",
@@ -48,15 +45,10 @@
   "kode_gudang_tujuan",
   "kode_jenis_kirim",
   "kode_jenis_pengiriman",
-  "kode_jenis_pengangkutan",
-  "kode_jenis_prosedur",
-  "barang_kiriman",
-  "kode_afiliasi",
   "kode_kategori_ekspor",
   "kode_kategori_masuk_ftz",
   "kode_kategori_keluar_ftz",
   "kode_kategori_barang_ftz",
-  "column_break_lmpv",
   "kode_lokasi",
   "kode_lokasi_bayar",
   "lokasi_asal",
@@ -90,8 +82,6 @@
   "flag_sda",
   "flag_vd",
   "flag_migas",
-  "flag_konsol",
-  "flag_proporsional_netto",
   "kode_asuransi",
   "asuransi",
   "nilai_barang",
@@ -118,39 +108,29 @@
   "kode_jasa_kena_pajak",
   "nomor_bukti_bayar",
   "tanggal_bukti_bayar",
-  "column_break_gpie",
   "kode_jenis_nilai",
   "kode_kantor_muat",
   "nomor_daftar",
   "tanggal_daftar",
   "kode_barang_asal_ftz",
   "kode_tujuan_pengeluaran",
-  "column_break_tzyl",
   "ppn_pajak",
   "ppnbm_pajak",
   "tarif_ppn_pajak",
   "tarif_ppnbm_pajak",
   "barang_tidak_berwujud",
   "data_3_tab",
-  "section_break_entitas",
   "entitas",
-  "section_break_komponen",
-  "komponen_biaya",
   "data_4_tab",
-  "section_break_kemasan",
   "kemasan",
-  "section_break_dokumen",
   "dokumen",
   "data_5_tab",
-  "section_break_pengangkut",
   "pengangkut",
-  "section_break_kontainer",
   "kontainer",
-  "section_break_sogf",
+  "data_6_tab",
   "bank_devisa",
-  "section_break_dtiu",
-  "kesiapan_barang",
-  "respon_json"
+  "data_7_tab",
+  "kesiapan_barang"
  ],
  "fields": [
   {
@@ -220,13 +200,6 @@
    "fieldname": "jabatan_pernyataan",
    "fieldtype": "Data",
    "label": "JABATAN PERNYATAAN"
-  },
-  {
-   "depends_on": "eval:doc.kode_dokumen==='261'",
-   "fieldname": "tgl_jatuh_tempo_subkon",
-   "fieldtype": "Date",
-   "label": "TGL JATUH TEMPO SUBKON",
-   "mandatory_depends_on": "eval:doc.kode_dokumen==='261'"
   },
   {
    "fieldname": "tab_break_isokh",
@@ -299,14 +272,7 @@
   {
    "fieldname": "kode_tujuan_pengiriman",
    "fieldtype": "Link",
-   "hidden": 1,
    "label": "KODE TUJUAN PENGIRIMAN",
-   "options": "Referensi Tujuan Pengiriman"
-  },
-  {
-   "fieldname": "kode_tujuan_pengiriman_",
-   "fieldtype": "Link",
-   "label": "KODE TUJUAN PENGIRIMAN_",
    "options": "Referensi Tujuan Pengiriman"
   },
   {
@@ -352,27 +318,6 @@
    "fieldname": "kode_jenis_pengiriman",
    "fieldtype": "Data",
    "label": "KODE JENIS PENGIRIMAN"
-  },
-  {
-   "fieldname": "kode_jenis_pengangkutan",
-   "fieldtype": "Link",
-   "label": "KODE JENIS PENGANGKUTAN",
-   "options": "Referensi Jenis Pengangkutan"
-  },
-  {
-   "fieldname": "kode_jenis_prosedur",
-   "fieldtype": "Data",
-   "label": "KODE JENIS PROSEDUR"
-  },
-  {
-   "fieldname": "barang_kiriman",
-   "fieldtype": "Data",
-   "label": "BARANG KIRIMAN"
-  },
-  {
-   "fieldname": "kode_afiliasi",
-   "fieldtype": "Data",
-   "label": "KODE AFILIASI"
   },
   {
    "fieldname": "kode_kategori_ekspor",
@@ -571,18 +516,6 @@
    "fieldname": "flag_migas",
    "fieldtype": "Select",
    "label": "FLAG MIGAS",
-   "options": "1\n2"
-  },
-  {
-   "fieldname": "flag_konsol",
-   "fieldtype": "Select",
-   "label": "FLAG KONSOL",
-   "options": "1\n2"
-  },
-  {
-   "fieldname": "flag_proporsional_netto",
-   "fieldtype": "Select",
-   "label": "FLAG PROPORSIONAL NETTO",
    "options": "1\n2"
   },
   {
@@ -785,26 +718,10 @@
    "label": "Data 3"
   },
   {
-   "fieldname": "section_break_entitas",
-   "fieldtype": "Section Break",
-   "label": "Entitas"
-  },
-  {
    "fieldname": "entitas",
    "fieldtype": "Table",
    "label": "ENTITAS",
    "options": "ENTITAS"
-  },
-  {
-   "fieldname": "section_break_komponen",
-   "fieldtype": "Section Break",
-   "label": "Komponen Biaya"
-  },
-  {
-   "fieldname": "komponen_biaya",
-   "fieldtype": "Table",
-   "label": "KOMPONEN BIAYA",
-   "options": "KOMPONEN BIAYA"
   },
   {
    "fieldname": "data_4_tab",
@@ -812,20 +729,10 @@
    "label": "Data 4"
   },
   {
-   "fieldname": "section_break_kemasan",
-   "fieldtype": "Section Break",
-   "label": "Kemasan"
-  },
-  {
    "fieldname": "kemasan",
    "fieldtype": "Table",
    "label": "KEMASAN",
    "options": "KEMASAN"
-  },
-  {
-   "fieldname": "section_break_dokumen",
-   "fieldtype": "Section Break",
-   "label": "Dokumen"
   },
   {
    "fieldname": "dokumen",
@@ -839,20 +746,10 @@
    "label": "Data 5"
   },
   {
-   "fieldname": "section_break_pengangkut",
-   "fieldtype": "Section Break",
-   "label": "Pengangkut"
-  },
-  {
    "fieldname": "pengangkut",
    "fieldtype": "Table",
    "label": "PENGANGKUT",
    "options": "PENGANGKUT"
-  },
-  {
-   "fieldname": "section_break_kontainer",
-   "fieldtype": "Section Break",
-   "label": "Kontainer"
   },
   {
    "fieldname": "kontainer",
@@ -861,20 +758,10 @@
    "options": "KONTAINER"
   },
   {
-   "fieldname": "section_break_sogf",
-   "fieldtype": "Section Break",
-   "label": "Bank Devisa"
-  },
-  {
    "fieldname": "bank_devisa",
    "fieldtype": "Table",
    "label": "BANK DEVISA",
    "options": "BANK DEVISA"
-  },
-  {
-   "fieldname": "section_break_dtiu",
-   "fieldtype": "Section Break",
-   "label": "Kesiapan Barang"
   },
   {
    "fieldname": "kesiapan_barang",
@@ -883,26 +770,14 @@
    "options": "KESIAPAN BARANG"
   },
   {
-   "fieldname": "respon_json",
-   "fieldtype": "Long Text",
-   "hidden": 1,
-   "label": "RESPON JSON"
+   "fieldname": "data_6_tab",
+   "fieldtype": "Tab Break",
+   "label": "Data 6"
   },
   {
-   "fieldname": "column_break_lmpv",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_gpie",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_tzyl",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_wcdc",
-   "fieldtype": "Column Break"
+   "fieldname": "data_7_tab",
+   "fieldtype": "Tab Break",
+   "label": "Data 7"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -912,7 +787,7 @@
    "link_fieldname": "nomoraju"
   }
  ],
- "modified": "2026-05-23 01:08:59.310014",
+ "modified": "2026-06-26 17:07:42.948228",
  "modified_by": "Administrator",
  "module": "Singlecore Apps",
  "name": "HEADER V21",
@@ -939,31 +814,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "User Lv.2",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "User Lv.1",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "EXIM Staff",
+   "role": "_Test Role",
    "share": 1,
    "write": 1
   }

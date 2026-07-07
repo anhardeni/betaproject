@@ -3,24 +3,408 @@
   "docstatus": 0,
   "doctype": "Referensi Kategori Konsolidator",
   "kode_kategori_konsolidator": "1",
-  "modified": "2026-01-01 17:55:49.464825",
-  "name": 1,
+  "modified": "2026-04-06 10:51:10.574402",
+  "name": 4,
   "uraian_kategori_konsolidator": "KONSOLIDATOR"
  },
  {
   "docstatus": 0,
   "doctype": "Referensi Kategori Konsolidator",
   "kode_kategori_konsolidator": "2",
-  "modified": "2026-01-01 17:56:31.714179",
-  "name": 2,
+  "modified": "2026-04-06 10:51:10.594220",
+  "name": 5,
   "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
  },
  {
   "docstatus": 0,
   "doctype": "Referensi Kategori Konsolidator",
   "kode_kategori_konsolidator": "3",
-  "modified": "2026-01-01 17:57:24.603539",
-  "name": 3,
+  "modified": "2026-04-06 10:51:10.610674",
+  "name": 6,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-04-06 20:16:33.324855",
+  "name": 7,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-04-06 20:16:33.333171",
+  "name": 8,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-04-06 20:16:33.339929",
+  "name": 9,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-04-06 20:36:12.131756",
+  "name": 10,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-04-06 20:36:12.139636",
+  "name": 11,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-04-06 20:36:12.146089",
+  "name": 12,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-04-22 14:27:02.174146",
+  "name": 13,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-04-22 14:27:02.183849",
+  "name": 14,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-04-22 14:27:02.189503",
+  "name": 15,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-05-05 11:30:41.373658",
+  "name": 16,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-05-05 11:30:41.382584",
+  "name": 17,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-05-05 11:30:41.386050",
+  "name": 18,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-05-05 12:04:16.448589",
+  "name": 19,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-05-05 12:04:16.455525",
+  "name": 20,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-05-05 12:04:16.460724",
+  "name": 21,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-05-05 17:33:29.342307",
+  "name": 22,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-05-05 17:33:29.355099",
+  "name": 23,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-05-05 17:33:29.360988",
+  "name": 24,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-05-12 10:48:57.712841",
+  "name": 25,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-05-12 10:48:57.721130",
+  "name": 26,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-05-12 10:48:57.725470",
+  "name": 27,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-05-13 13:23:18.233395",
+  "name": 28,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-05-13 13:23:18.242659",
+  "name": 29,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-05-13 13:23:18.250761",
+  "name": 30,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-05-13 13:45:41.869590",
+  "name": 31,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-05-13 13:45:41.878230",
+  "name": 32,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-05-13 13:45:41.882818",
+  "name": 33,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-05-14 20:35:26.537423",
+  "name": 34,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-05-14 20:35:26.545509",
+  "name": 35,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-05-14 20:35:26.550027",
+  "name": 36,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-05-22 21:27:25.849673",
+  "name": 37,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-05-22 21:27:25.857014",
+  "name": 38,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-05-22 21:27:25.861021",
+  "name": 39,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-06-01 14:34:58.324308",
+  "name": 40,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-06-01 14:34:58.330943",
+  "name": 41,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-06-01 14:34:58.336211",
+  "name": 42,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-06-01 14:55:08.360753",
+  "name": 43,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-06-01 14:55:08.368732",
+  "name": 44,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-06-01 14:55:08.373982",
+  "name": 45,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-06-01 15:11:43.472497",
+  "name": 46,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-06-01 15:11:43.481207",
+  "name": 47,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-06-01 15:11:43.487620",
+  "name": 48,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-06-01 15:40:26.404851",
+  "name": 49,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-06-01 15:40:26.414534",
+  "name": 50,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-06-01 15:40:26.419070",
+  "name": 51,
+  "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "1",
+  "modified": "2026-06-26 22:18:02.262737",
+  "name": 52,
+  "uraian_kategori_konsolidator": "KONSOLIDATOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "2",
+  "modified": "2026-06-26 22:18:02.271446",
+  "name": 53,
+  "uraian_kategori_konsolidator": "EKSPORTIR YANG MELAKUKAN SENDIRI KONSOLIDASI BARANG EKSPOR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Referensi Kategori Konsolidator",
+  "kode_kategori_konsolidator": "3",
+  "modified": "2026-06-26 22:18:02.276801",
+  "name": 54,
   "uraian_kategori_konsolidator": "EKSPORTIR DALAM SATU KELOMPOK PERUSAHAAN"
  }
 ]
