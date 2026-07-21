@@ -115,7 +115,23 @@ def import_ceisa_excel(file_data, dry_run=False):
             if not val: return None
             if isinstance(val, (datetime, date)): return val
             
+            # Handle Excel date serial numbers
+            if isinstance(val, (int, float)):
+                try:
+                    from openpyxl.utils.datetime import from_excel
+                    return from_excel(val).date()
+                except Exception:
+                    pass
+            
             val_str = str(val).strip()
+            # If it's a float/int string representing excel date number (e.g. "45293.0")
+            try:
+                float_val = float(val_str)
+                from openpyxl.utils.datetime import from_excel
+                return from_excel(float_val).date()
+            except ValueError:
+                pass
+
             formats = [
                 "%Y-%m-%d %H:%M:%S", "%Y-%m-%d", 
                 "%d-%m-%Y %H:%M:%S", "%d-%m-%Y",
@@ -141,10 +157,12 @@ def import_ceisa_excel(file_data, dry_run=False):
             field = meta.get_field(fieldname)
             if not field: return val
             
-            if field.fieldtype in ["Link", "Select"]:
+            if field.fieldtype in ["Link", "Select", "Data", "Text", "Small Text", "Long Text"]:
                 # Clean numeric values from Excel (e.g. 1.0 -> "1")
                 if isinstance(val, (int, float)):
-                    return str(cint(val))
+                    if isinstance(val, float) and val.is_integer():
+                        return str(cint(val))
+                    return str(val)
                 return str(val).strip()
                 
             if field.fieldtype in ["Float", "Int", "Currency", "Percent"]:
@@ -586,6 +604,9 @@ def import_ceisa_excel(file_data, dry_run=False):
         audit_report["stats"]["BARANG V1"] = 0
         
         for b_row in barang_rows:
+            row_nomor_aju = str(b_row.get("NOMOR AJU") or "").strip()
+            if row_nomor_aju and row_nomor_aju != nomor_aju: continue
+
             seri_barang = cint(b_row.get("SERI BARANG"))
             if not seri_barang: continue  # Skip rows with no seri_barang
             
@@ -598,13 +619,15 @@ def import_ceisa_excel(file_data, dry_run=False):
                 b_doc = frappe.get_doc("BARANG V1", existing_b[0].name)
             else:
                 b_doc = frappe.new_doc("BARANG V1")
-                b_doc.nomoraju = doc.name  # Link to HEADER V21 by document name
             
             # Map Barang
             for excel_col, doc_field in BARANG_MAPPING.items():
                 if excel_col in b_row:
                     val = b_row.get(excel_col)
                     b_doc.set(doc_field, clean_excel_val("BARANG V1", doc_field, val))
+            
+            # Ensure b_doc is linked to correct HEADER V21 (in case Excel has mismatched nomoraju)
+            b_doc.nomoraju = doc.name
             
             # Child Tables for BARANG
             

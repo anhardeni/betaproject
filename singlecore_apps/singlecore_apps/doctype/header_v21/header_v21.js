@@ -179,7 +179,7 @@ const SCHEMA_FIELDS = {
 
 function toggle_fields_by_schema(frm) {
 	const doc_type = frm.doc.kode_dokumen;
-	
+
 	// Show all fields if no document type is chosen to prevent blocking user
 	if (!doc_type || !SCHEMA_FIELDS[doc_type]) {
 		frm.meta.fields.forEach(field => {
@@ -297,83 +297,7 @@ frappe.ui.form.on('HEADER V21', {
 			}, __('Actions')).attr('style', 'background:#004D40;color:#fff;border-color:#00251A;font-weight:600;');
 
 			frm.add_custom_button(__('📥 Import Excel'), function () {
-				let d = new frappe.ui.Dialog({
-					title: 'Import CEISA Excel',
-					fields: [
-						{
-							label: 'Select Excel File',
-							fieldname: 'file',
-							fieldtype: 'Attach',
-							reqd: 1
-						}
-					],
-					primary_action_label: 'Start Check (Simulation)',
-					primary_action: function (values) {
-						d.hide();
-						// Step 1: DRY RUN
-						frappe.call({
-							method: 'singlecore_apps.api.import_ceisa_excel',
-							args: {
-								file_data: values.file,
-								dry_run: 1
-							},
-							freeze: true,
-							freeze_message: __('Unpacking and Verifying Data...'),
-							callback: function (r) {
-								if (r.message && r.message.status === 'success') {
-									// Step 2: Confirmation
-									let msg = r.message.message;
-									frappe.confirm(
-										msg + '<div class="alert alert-warning">Do you want to PROCEED and SAVE this data?</div>',
-										function () {
-											// Step 3: REAL RUN
-											frappe.call({
-												method: 'singlecore_apps.api.import_ceisa_excel',
-												args: {
-													file_data: values.file,
-													dry_run: 0
-												},
-												freeze: true,
-												freeze_message: __('Saving Data...'),
-												callback: function (r2) {
-													if (r2.message && r2.message.status === 'success') {
-														frappe.msgprint({
-															title: __('Import Complete'),
-															message: r2.message.message,
-															indicator: 'green',
-															wide: true
-														});
-														frappe.set_route('Form', 'HEADER V21', r2.message.nomor_aju);
-													} else {
-														frappe.msgprint({
-															title: __('Save Failed'),
-															message: r2.message ? r2.message.message : 'Unknown error',
-															indicator: 'red',
-															wide: true
-														});
-													}
-												}
-											});
-										},
-										function () {
-											// Cancelled
-											frappe.show_alert('Import Cancelled by User');
-										}
-									).find('.modal-dialog').css('max-width', '800px'); // Widen the confirm modal
-								} else {
-									// Dry Run Failed (Validation Error or similar)
-									frappe.msgprint({
-										title: __('Verification Failed'),
-										message: r.message ? r.message.message : 'Unknown error',
-										indicator: 'red',
-										wide: true
-									});
-								}
-							}
-						});
-					}
-				});
-				d.show();
+				open_ceisa_import_dialog(frm);
 			}, __('Actions')).attr('style', 'background:#37474F;color:#fff;border-color:#263238;font-weight:600;');
 
 			// -------------------------------------------------------
@@ -433,7 +357,7 @@ frappe.ui.form.on('HEADER V21', {
 					frappe.msgprint(__('Please select at least one document row to upload.'));
 					return;
 				}
-				
+
 				frappe.confirm(__('Are you sure you want to upload {0} document(s) to CEISA via H2H?', [selected.length]), function () {
 					selected.forEach(row_name => {
 						upload_h2h_row(frm, row_name);
@@ -877,6 +801,16 @@ function render_ceisa_pdf_dashboard(frm) {
 				transform: translateY(-2px);
 				box-shadow: 0 4px 12px rgba(14, 165, 233, 0.12);
 			}
+			.ceisa-btn-import {
+				background: hsla(120, 60%, 40%, 0.06);
+				color: hsla(44, 72%, 48%, 1.00);
+				border: 1px solid hsla(120, 60%, 40%, 0.2);
+			}
+			.ceisa-btn-import:hover {
+				background: hsla(120, 60%, 40%, 0.12);
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(34, 197, 94, 0.12);
+			}
 			.ceisa-btn:active {
 				transform: translateY(0);
 			}
@@ -1016,6 +950,9 @@ function render_ceisa_pdf_dashboard(frm) {
 				<div class="ceisa-btn ceisa-btn-upload" id="ceisa-btn-upload" data-nomor-aju="${nomor_aju}">
 					<i class="fa fa-upload"></i> <span>Upload Dok-Pelengkap</span>
 				</div>
+				<div class="ceisa-btn ceisa-btn-import" id="ceisa-btn-import" data-nomor-aju="${nomor_aju}">
+					<i class="fa fa-file-excel-o"></i> <span>Import Excel</span>
+				</div>
 			</div>
 			
 			<div class="ceisa-response-section" style="display: none;">
@@ -1041,16 +978,16 @@ function setup_ceisa_dashboard_actions(frm, wrapper) {
 	const nomor_aju = frm.doc.nomoraju || frm.doc.name;
 
 	// 1. DRAFT FORMULIR
-	wrapper.find('#ceisa-btn-draft').on('click', function() {
+	wrapper.find('#ceisa-btn-draft').on('click', function () {
 		const $btn = $(this);
 		if ($btn.hasClass('disabled')) return;
-		
+
 		$btn.addClass('disabled').find('i').removeClass('fa-file-text-o').addClass('ceisa-spinner');
-		
+
 		frappe.call({
 			method: 'singlecore_apps.api.ceisa_api.status.get_cetak_formulir_draft',
 			args: { nomor_aju: nomor_aju },
-			callback: function(r) {
+			callback: function (r) {
 				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-file-text-o');
 				if (r.message && r.message.status === 'success') {
 					window.open(r.message.data, '_blank');
@@ -1062,23 +999,23 @@ function setup_ceisa_dashboard_actions(frm, wrapper) {
 					});
 				}
 			},
-			error: function() {
+			error: function () {
 				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-file-text-o');
 			}
 		});
 	});
 
 	// 2. FINAL FORMULIR
-	wrapper.find('#ceisa-btn-final').on('click', function() {
+	wrapper.find('#ceisa-btn-final').on('click', function () {
 		const $btn = $(this);
 		if ($btn.hasClass('disabled')) return;
-		
+
 		$btn.addClass('disabled').find('i').removeClass('fa-file-pdf-o').addClass('ceisa-spinner');
-		
+
 		frappe.call({
 			method: 'singlecore_apps.api.ceisa_api.status.get_cetak_formulir_final',
 			args: { nomor_aju: nomor_aju },
-			callback: function(r) {
+			callback: function (r) {
 				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-file-pdf-o');
 				if (r.message && r.message.status === 'success') {
 					window.open(r.message.data, '_blank');
@@ -1090,27 +1027,27 @@ function setup_ceisa_dashboard_actions(frm, wrapper) {
 					});
 				}
 			},
-			error: function() {
+			error: function () {
 				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-file-pdf-o');
 			}
 		});
 	});
 
 	// 3. BILLING PDF WITH AUTO SCAN & VERIFICATION DIALOG
-	wrapper.find('#ceisa-btn-billing').on('click', function() {
+	wrapper.find('#ceisa-btn-billing').on('click', function () {
 		const $btn = $(this);
 		if ($btn.hasClass('disabled')) return;
-		
+
 		$btn.addClass('disabled').find('i').removeClass('fa-credit-card').addClass('ceisa-spinner');
-		
+
 		frappe.call({
 			method: 'singlecore_apps.api.ceisa_api.status.get_active_billing_code',
 			args: { nomor_aju: nomor_aju },
-			callback: function(r) {
+			callback: function (r) {
 				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-credit-card');
 				if (r.message && r.message.status === 'success') {
 					const detected_code = r.message.billing_code;
-					
+
 					// Show premium verification dialog
 					let d = new frappe.ui.Dialog({
 						title: 'Verifikasi Kode Billing CEISA',
@@ -1128,13 +1065,13 @@ function setup_ceisa_dashboard_actions(frm, wrapper) {
 								fieldtype: 'Data',
 								default: detected_code || '',
 								reqd: 1,
-								description: detected_code ? 
-									'<span style="color: #10B981; font-weight: 600;"><i class="fa fa-check-circle"></i> Kode billing terdeteksi otomatis dari respon CEISA.</span>' : 
+								description: detected_code ?
+									'<span style="color: #10B981; font-weight: 600;"><i class="fa fa-check-circle"></i> Kode billing terdeteksi otomatis dari respon CEISA.</span>' :
 									'<span style="color: #F59E0B; font-weight: 600;"><i class="fa fa-warning"></i> Kode billing tidak terdeteksi. Silakan ketik manual.</span>'
 							}
 						],
 						primary_action_label: 'Download Billing PDF',
-						primary_action: function(values) {
+						primary_action: function (values) {
 							let code = (values.billing_code || '').trim();
 							if (code.length !== 15 || !/^\d+$/.test(code)) {
 								frappe.msgprint({
@@ -1145,14 +1082,14 @@ function setup_ceisa_dashboard_actions(frm, wrapper) {
 								return;
 							}
 							d.hide();
-							
+
 							// Trigger billing download with loading spinner state on the dialog trigger
 							$btn.addClass('disabled').find('i').removeClass('fa-credit-card').addClass('ceisa-spinner');
-							
+
 							frappe.call({
 								method: 'singlecore_apps.api.ceisa_api.status.get_billing_pdf',
 								args: { nomor_aju: nomor_aju, billing_code: code },
-								callback: function(res) {
+								callback: function (res) {
 									$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-credit-card');
 									if (res.message && res.message.status === 'success') {
 										window.open(res.message.data, '_blank');
@@ -1164,7 +1101,7 @@ function setup_ceisa_dashboard_actions(frm, wrapper) {
 										});
 									}
 								},
-								error: function() {
+								error: function () {
 									$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-credit-card');
 								}
 							});
@@ -1179,23 +1116,23 @@ function setup_ceisa_dashboard_actions(frm, wrapper) {
 					});
 				}
 			},
-			error: function() {
+			error: function () {
 				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-credit-card');
 			}
 		});
 	});
 
 	// 4. CEK STATUS CEISA
-	wrapper.find('#ceisa-btn-check').on('click', function() {
+	wrapper.find('#ceisa-btn-check').on('click', function () {
 		const $btn = $(this);
 		if ($btn.hasClass('disabled')) return;
-		
+
 		$btn.addClass('disabled').find('i').removeClass('fa-refresh').addClass('ceisa-spinner');
-		
+
 		frappe.call({
 			method: 'singlecore_apps.api.check_ceisa_status',
 			args: { nomor_aju: nomor_aju },
-			callback: function(r) {
+			callback: function (r) {
 				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-refresh');
 				if (r.message && r.message.status === 'success') {
 					frappe.show_alert({
@@ -1211,19 +1148,25 @@ function setup_ceisa_dashboard_actions(frm, wrapper) {
 					});
 				}
 			},
-			error: function() {
+			error: function () {
 				$btn.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-refresh');
 			}
 		});
 	});
 
 	// 5. UPLOAD DOKUMEN PELENGKAP (NAVIGASI KE TAB DATA 4)
-	wrapper.find('#ceisa-btn-upload').on('click', function() {
+	wrapper.find('#ceisa-btn-upload').on('click', function () {
 		if (!frm.scroll_to_field('dokumen')) {
 			if (!frm.scroll_to_field('kemasan')) {
 				frm.scroll_to_field('data_4_tab');
 			}
 		}
+	});
+
+	// 6. IMPORT EXCEL
+	wrapper.find('#ceisa-btn-import').on('click', function () {
+		// Trigger the custom button's click handler for Import Excel
+		frm.page.wrapper.find('.page-actions button:contains("Import Excel")').click();
 	});
 }
 
@@ -1235,18 +1178,18 @@ function load_ceisa_response_pills(frm, wrapper) {
 	frappe.call({
 		method: 'singlecore_apps.api.ceisa_api.status.get_active_responses',
 		args: { nomor_aju: nomor_aju },
-		callback: function(r) {
+		callback: function (r) {
 			if (r.message && r.message.status === 'success' && r.message.data && r.message.data.length > 0) {
 				$grid.empty();
-				
+
 				// Show the response section as we have responses
 				$section.show();
-				
-				r.message.data.forEach(function(resp) {
+
+				r.message.data.forEach(function (resp) {
 					const code = resp.kode_respon || 'RESPON';
 					const is_cached = resp.is_cached === 1;
 					const date_str = resp.tanggal_respon ? ` (${resp.tanggal_respon})` : '';
-					
+
 					// Determine pill style based on response code status category
 					let category_class = 'ceisa-pill-info';
 					if (['SPPB', 'NPE'].includes(code.toUpperCase())) {
@@ -1254,12 +1197,12 @@ function load_ceisa_response_pills(frm, wrapper) {
 					} else if (['NPD', 'SPJM', 'TOLAK'].includes(code.toUpperCase())) {
 						category_class = 'ceisa-pill-action';
 					}
-					
+
 					const cached_class = is_cached ? 'ceisa-pill-cached' : '';
 					const checkmark = is_cached ? '<span class="ceisa-pill-cached-badge"><i class="fa fa-check-circle"></i></span>' : '';
-					
+
 					const tooltip = resp.keterangan ? `${code}: ${resp.keterangan}${date_str}` : `${code}${date_str}`;
-					
+
 					const pill_html = `
 						<div class="ceisa-pill ${category_class} ${cached_class}" 
 							 data-code="${code}" 
@@ -1270,20 +1213,20 @@ function load_ceisa_response_pills(frm, wrapper) {
 							${checkmark}
 						</div>
 					`;
-					
+
 					const $pill = $(pill_html);
-					
+
 					// Handle click on response pill
-					$pill.on('click', function() {
+					$pill.on('click', function () {
 						const $this = $(this);
 						if ($this.hasClass('disabled')) return;
-						
+
 						$this.addClass('disabled').find('i').removeClass('fa-file-text-o').addClass('ceisa-spinner');
-						
+
 						frappe.call({
 							method: 'singlecore_apps.api.ceisa_api.status.get_response_pdf',
 							args: { nomor_aju: nomor_aju, kode_respon: code },
-							callback: function(res) {
+							callback: function (res) {
 								$this.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-file-text-o');
 								if (res.message && res.message.status === 'success') {
 									window.open(res.message.data, '_blank');
@@ -1302,12 +1245,12 @@ function load_ceisa_response_pills(frm, wrapper) {
 									});
 								}
 							},
-							error: function() {
+							error: function () {
 								$this.removeClass('disabled').find('i').removeClass('ceisa-spinner').addClass('fa-file-text-o');
 							}
 						});
 					});
-					
+
 					$grid.append($pill);
 				});
 			} else {
@@ -1315,5 +1258,85 @@ function load_ceisa_response_pills(frm, wrapper) {
 			}
 		}
 	});
+}
+
+function open_ceisa_import_dialog(frm) {
+	let d = new frappe.ui.Dialog({
+		title: 'Import CEISA Excel',
+		fields: [
+			{
+				label: 'Select Excel File',
+				fieldname: 'file',
+				fieldtype: 'Attach',
+				reqd: 1
+			}
+		],
+		primary_action_label: 'Start Check (Simulation)',
+		primary_action: function (values) {
+			d.hide();
+			// Step 1: DRY RUN
+			frappe.call({
+				method: 'singlecore_apps.api.import_ceisa_excel',
+				args: {
+					file_data: values.file,
+					dry_run: 1
+				},
+				freeze: true,
+				freeze_message: __('Unpacking and Verifying Data...'),
+				callback: function (r) {
+					if (r.message && r.message.status === 'success') {
+						// Step 2: Confirmation
+						let msg = r.message.message;
+						frappe.confirm(
+							msg + '<div class="alert alert-warning">Do you want to PROCEED and SAVE this data?</div>',
+							function () {
+								// Step 3: REAL RUN
+								frappe.call({
+									method: 'singlecore_apps.api.import_ceisa_excel',
+									args: {
+										file_data: values.file,
+										dry_run: 0
+									},
+									freeze: true,
+									freeze_message: __('Saving Data...'),
+									callback: function (r2) {
+										if (r2.message && r2.message.status === 'success') {
+											frappe.msgprint({
+												title: __('Import Complete'),
+												message: r2.message.message,
+												indicator: 'green',
+												wide: true
+											});
+											frappe.set_route('Form', 'HEADER V21', r2.message.nomor_aju);
+										} else {
+											frappe.msgprint({
+												title: __('Save Failed'),
+												message: r2.message ? r2.message.message : 'Unknown error',
+												indicator: 'red',
+												wide: true
+											});
+										}
+									}
+								});
+							},
+							function () {
+								// Cancelled
+								frappe.show_alert('Import Cancelled by User');
+							}
+						).find('.modal-dialog').css('max-width', '800px'); // Widen the confirm modal
+					} else {
+						// Dry Run Failed (Validation Error or similar)
+						frappe.msgprint({
+							title: __('Verification Failed'),
+							message: r.message ? r.message.message : 'Unknown error',
+							indicator: 'red',
+							wide: true
+						});
+					}
+				}
+			});
+		}
+	});
+	d.show();
 }
 
