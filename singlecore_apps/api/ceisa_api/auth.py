@@ -28,6 +28,17 @@ def get_cached_token():
     if not token and user != "Administrator":
         token = frappe.cache().hget("beacukai_token", "Administrator")
         
+    # Fallback to ANY cached token if we still have none (useful for background workers)
+    if not token:
+        all_tokens = frappe.cache().hgetall("beacukai_token") or {}
+        for u, t in all_tokens.items():
+            if t:
+                token = t
+                # If we are in a background job, cache it for Administrator too to speed up next check
+                if user == "Administrator":
+                    frappe.cache().hset("beacukai_token", "Administrator", t)
+                break
+                
     return token
 
 
@@ -133,6 +144,12 @@ def refresh_token():
 
         # update-token failed — try full re-login with default credentials
         frappe.logger("ceisa_api").warning(f"update-token returned no token (HTTP {response.status_code}): {data}")
+        
+        # Clear the invalid token from cache so we don't keep reuse it
+        user = frappe.session.user or "Administrator"
+        frappe.cache().hdel("beacukai_token", user)
+        if user != "Administrator":
+            frappe.cache().hdel("beacukai_token", "Administrator")
         
         settings = get_ceisa_settings()
         username = settings.default_username

@@ -30,11 +30,21 @@ def get_status_by_nomor_aju(nomor_aju):
         #response = requests.get(url, headers=headers)
         response = requests.get(url, headers=headers, timeout=(5, 15))
 
+        # Handle 401 token refresh once
+        if response.status_code == 401:
+            from .auth import refresh_token
+            new_token = refresh_token()
+            if new_token:
+                headers = build_auth_headers(new_token)
+                response = requests.get(url, headers=headers, timeout=(5, 15))
+
         return {
             "status": "success" if response.status_code == 200 else "error",
             "http_code": response.status_code,
             "data": response.json() if response.content else response.text
         }
+    except frappe.ValidationError as e:
+        return {"status": "error", "message": str(e)}
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get Status by Nomor Aju Error")
         return {"status": "error", "message": str(e)}
@@ -55,12 +65,22 @@ def get_status_by_npwp(npwp):
         #response = requests.get(url, headers=headers, params=params)
         response = requests.get(url, headers=headers, params=params, timeout=(5, 15))
 
+        # Handle 401 token refresh once
+        if response.status_code == 401:
+            from .auth import refresh_token
+            new_token = refresh_token()
+            if new_token:
+                headers = build_auth_headers(new_token)
+                response = requests.get(url, headers=headers, params=params, timeout=(5, 15))
+
 
         return {
             "status": "success" if response.status_code == 200 else "error",
             "http_code": response.status_code,
             "data": response.json() if response.content else response.text
         }
+    except frappe.ValidationError as e:
+        return {"status": "error", "message": str(e)}
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Get Status by NPWP Error")
         return {"status": "error", "message": str(e)}
@@ -120,6 +140,8 @@ def download_respon(path):
             "message": f"Download Gagal. Terakhir: {last_error_info}"
         }
 
+    except frappe.ValidationError as e:
+        return {"status": "error", "message": f"System Error: {str(e)}"}
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "download_respon System Error")
         return {"status": "error", "message": f"System Error: {str(e)}"}
@@ -234,6 +256,8 @@ def cetak_formulir(nomor_aju):
         else:
             return {"status": "error", "message": f"Cetak gagal: {response.status_code}"}
             
+    except frappe.ValidationError as e:
+        return {"status": "error", "message": str(e)}
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Cetak Formulir Error")
         return {"status": "error", "message": str(e)}
@@ -290,6 +314,8 @@ def _get_or_download_pdf(nomor_aju, file_prefix, api_endpoint, params=None):
             frappe.log_error(title="CEISA PDF Cache Helper Error", message=error_msg)
             return {"status": "error", "message": error_msg}
             
+    except frappe.ValidationError as e:
+        return {"status": "error", "message": str(e)}
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "CEISA PDF Cache Helper System Error")
         return {"status": "error", "message": str(e)}

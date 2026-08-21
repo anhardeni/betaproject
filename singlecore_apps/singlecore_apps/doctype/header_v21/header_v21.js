@@ -1269,14 +1269,22 @@ function open_ceisa_import_dialog(frm) {
 				fieldname: 'file',
 				fieldtype: 'Attach',
 				reqd: 1
+			},
+			{
+				label: 'Use Optimized Engine (V2)',
+				fieldname: 'use_v2',
+				fieldtype: 'Check',
+				default: 1
 			}
 		],
 		primary_action_label: 'Start Check (Simulation)',
 		primary_action: function (values) {
 			d.hide();
+			let method_name = values.use_v2 ? 'singlecore_apps.api.import_ceisa_excel_v2' : 'singlecore_apps.api.import_ceisa_excel';
+			
 			// Step 1: DRY RUN
 			frappe.call({
-				method: 'singlecore_apps.api.import_ceisa_excel',
+				method: method_name,
 				args: {
 					file_data: values.file,
 					dry_run: 1
@@ -1292,7 +1300,7 @@ function open_ceisa_import_dialog(frm) {
 							function () {
 								// Step 3: REAL RUN
 								frappe.call({
-									method: 'singlecore_apps.api.import_ceisa_excel',
+									method: method_name,
 									args: {
 										file_data: values.file,
 										dry_run: 0

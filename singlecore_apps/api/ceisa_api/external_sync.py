@@ -4,7 +4,7 @@
 import frappe
 import requests
 import json
-from frappe.utils import now_datetime, add_to_date, flt
+from frappe.utils import now_datetime, add_to_date, flt, cint
 from singlecore_apps.api.ceisa_api.auth import get_ceisa_settings, ensure_login, build_auth_headers
 
 def smart_ceisa_polling():
@@ -59,6 +59,14 @@ def trigger_sync_now(log_name):
         # 2. CALL API
         response = requests.get(url, headers=headers, timeout=30)
         
+        # Handle 401 token refresh once
+        if response.status_code == 401:
+            from .auth import refresh_token
+            new_token = refresh_token()
+            if new_token:
+                headers = build_auth_headers(new_token)
+                response = requests.get(url, headers=headers, timeout=30)
+
         if response.status_code == 200:
             api_data = response.json()
             # 3. PROSES DATA KE DATABASE
@@ -77,6 +85,9 @@ def trigger_sync_now(log_name):
             _handle_polling_error(log)
             return False, f"API Response {response.status_code}: Data belum tersedia."
 
+    except frappe.ValidationError as e:
+        _handle_polling_error(log)
+        return False, str(e)
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), f"Sync External Error: {no_aju}")
         return False, str(e)
@@ -97,6 +108,7 @@ def _handle_polling_error(log):
 def process_ceisa_detail_to_db(log, data):
     """
     Pemetaan (Mapping) Detail Dokumen dari JSON API ke Dokumen Internal.
+    Optimized to upsert stand-alone BARANG V1 with bulk pre-fetching and dirty-checking.
     """
     # Normalize data (it is a list of one item from the live API)
     if isinstance(data, list) and len(data) > 0:
@@ -116,6 +128,8 @@ def process_ceisa_detail_to_db(log, data):
     if not frappe.db.exists("HEADER V21", log.no_aju):
         h = frappe.new_doc("HEADER V21")
         h.nomoraju = log.no_aju
+        h.name = log.no_aju
+        h.flags.name_set = True
         h.kode_dokumen = str(log.doctype_type or "").upper().replace("BC", "").strip()
         
         # Get entity name from 'entitas' list
@@ -137,19 +151,41 @@ def process_ceisa_detail_to_db(log, data):
         h.tanggal_daftar = log.nopen_date
         h.save(ignore_permissions=True)
 
-    # 2. UPSERT BARANG
-    for item in barang_data:
-        seri = item.get("seriBarang") or item.get("seri")
-        if not frappe.db.exists("BARANG", {"parent": h.name, "seri_barang": seri}):
-            h.append("barang", {
-                "seri_barang": seri,
-                "kode_barang": item.get("kodeBarang"),
-                "uraian": item.get("uraian"),
-                "jumlah_satuan": flt(item.get("jumlahSatuan") or item.get("jumlah")),
-                "kode_satuan": item.get("kodeSatuanBarang") or item.get("kodeSatuan"),
-                "harga_satuan": flt(item.get("hargaSatuan") or item.get("harga"))
-            })
+    # 2. UPSERT BARANG V1 (STANDALONE)
+    # Pre-fetch existing BARANG V1 records to avoid N+1 DB queries
+    existing_barang = frappe.get_all("BARANG V1", filters={"nomoraju": h.name}, fields=["name", "seri_barang"])
+    barang_map = {cint(b.seri_barang): b.name for b in existing_barang}
     
-    h.save(ignore_permissions=True)
-    frappe.db.commit()
+    for item in barang_data:
+        seri = cint(item.get("seriBarang") or item.get("seri"))
+        if not seri: continue
+        
+        existing_name = barang_map.get(seri)
+        if existing_name:
+            b_doc = frappe.get_doc("BARANG V1", existing_name)
+        else:
+            b_doc = frappe.new_doc("BARANG V1")
+            b_doc.nomoraju = h.name
+            b_doc.seri_barang = seri
 
+        # Map fields and check if dirty
+        is_dirty = False
+        fields_to_map = {
+            "kode_barang": item.get("kodeBarang"),
+            "uraian": item.get("uraian"),
+            "jumlah_satuan": flt(item.get("jumlahSatuan") or item.get("jumlah")),
+            "kode_satuan": item.get("kodeSatuanBarang") or item.get("kodeSatuan"),
+            "harga_satuan": flt(item.get("hargaSatuan") or item.get("harga"))
+        }
+        
+        for fieldname, val in fields_to_map.items():
+            if str(b_doc.get(fieldname) if b_doc.get(fieldname) is not None else "") != str(val if val is not None else ""):
+                b_doc.set(fieldname, val)
+                is_dirty = True
+                
+        if is_dirty or b_doc.is_new():
+            b_doc.flags.ignore_links = True
+            b_doc.flags.ignore_permissions = True
+            b_doc.save(ignore_permissions=True)
+            
+    frappe.db.commit()

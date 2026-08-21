@@ -829,3 +829,727 @@ def import_ceisa_excel(file_data, dry_run=False):
                 error_msg += f"- {k}: {v}<br>"
                 
         return {"status": "error", "message": error_msg, "audit": audit_report}
+
+
+@frappe.whitelist(allow_guest=True)
+def import_ceisa_excel_v2(file_data, dry_run=False):
+    """
+    Optimized Version 2 of CEISA Excel Importer.
+    Uses bulk pre-fetching and dirty-checking to eliminate N+1 DB queries and unnecessary writes.
+    """
+    audit_report = {
+        "unmapped_columns": {},
+        "missing_columns": {},
+        "empty_fields": {},
+        "stats": {
+            "BARANG V1": 0,
+            "BARANG TARIF": 0,
+            "BARANG DOKUMEN": 0,
+            "BARANG PEMILIK": 0,
+            "BARANG SPEK KHUSUS": 0,
+            "BARANG VD": 0,
+            "BAHAN BAKU": 0,
+            "BAHAN BAKU TARIF": 0,
+            "BAHAN BAKU DOKUMEN": 0,
+            "saves_skipped": 0,
+            "saves_performed": 0
+        }
+    }
+
+    def save_doc(d):
+        d.flags.ignore_links = True
+        d.flags.ignore_permissions = True
+        d.save(ignore_permissions=True)
+
+    def are_child_tables_identical(child_list, doc_child_table, fields):
+        if len(child_list) != len(doc_child_table):
+            return False
+        for idx, item in enumerate(child_list):
+            db_item = doc_child_table[idx]
+            for f in fields:
+                val_new = str(item.get(f) if item.get(f) is not None else "")
+                val_old = str(db_item.get(f) if db_item.get(f) is not None else "")
+                if val_new != val_old:
+                    return False
+        return True
+
+    try:
+        # Decode file
+        if file_data.startswith("/private/files/") or file_data.startswith("/files/"):
+            if file_data.startswith("/private/"):
+                file_path = frappe.get_site_path(file_data.strip("/"))
+            else:
+                file_path = frappe.get_site_path("public", file_data.strip("/"))
+            with open(file_path, "rb") as f:
+                decoded_file = f.read()
+        else:
+            if "," in file_data:
+                file_data = file_data.split(",")[1]
+            decoded_file = base64.b64decode(file_data)
+
+        wb = openpyxl.load_workbook(io.BytesIO(decoded_file), data_only=True)
+        
+        # Helper: Get Sheet Data
+        def get_sheet_data(sheet_name, optional=False, expected_columns=None):
+            if sheet_name not in wb.sheetnames:
+                if not optional:
+                    frappe.throw(f"Sheet {sheet_name} not found")
+                return []
+            
+            ws = wb[sheet_name]
+            rows = list(ws.values)
+            if not rows: return []
+            
+            def normalize(h):
+                if not h: return ""
+                return " ".join(str(h).strip().upper().split())
+
+            headers = [normalize(c) for c in rows[0]]
+            
+            if expected_columns:
+                present = {x for x in headers if x}
+                if isinstance(expected_columns, dict):
+                    mapping = expected_columns
+                    expected_keys = set(mapping.keys())
+                    unmapped = [h for h in present if h not in expected_keys]
+                    found_targets = {mapping[h] for h in present if h in mapping}
+                    all_targets = set(mapping.values())
+                    missing_targets = all_targets - found_targets
+                    reverse_map = {}
+                    for k, v in mapping.items():
+                        reverse_map.setdefault(v, []).append(k)
+                    missing = [reverse_map[mt][0] for mt in missing_targets]
+                else:
+                    expected = set(expected_columns)
+                    unmapped = [ue for ue in present if ue not in expected]
+                    missing = [mex for mex in expected if mex not in present]
+                
+                if unmapped:
+                    audit_report["unmapped_columns"][sheet_name] = list(unmapped)
+                if missing:
+                    audit_report["missing_columns"][sheet_name] = missing
+
+            data_list = []
+            for row in rows[1:]:
+                row_dict = {}
+                has_data = False
+                for idx, val in enumerate(row):
+                    if idx < len(headers):
+                        row_dict[headers[idx]] = val
+                        if val: has_data = True
+                if has_data:
+                    data_list.append(row_dict)
+            return data_list
+
+        DATE_FIELDS = [
+            "tanggal_bc11", "tanggal_berangkat", "tanggal_ekspor", "tanggal_masuk",
+            "tanggal_muat", "tanggal_tiba", "tanggal_periksa", "tanggal_stuffing",
+            "tanggal_pernyataan", "tanggal_bukti_bayar", "tanggal_daftar",
+            "tanggal_ijin_entitas", "tanggal_dokumen", "tanggal_jaminan", 
+            "tanggal_jatuh_tempo", "tanggal_bpj", "tanggal_daftar_asal",
+            "jatuh_tempo_royalti", "tanggal_respon"
+        ]
+
+        def parse_excel_date(val):
+            if not val: return None
+            if isinstance(val, (datetime, date)): return val
+            if isinstance(val, (int, float)):
+                try:
+                    from openpyxl.utils.datetime import from_excel
+                    return from_excel(val).date()
+                except Exception:
+                    pass
+            
+            val_str = str(val).strip()
+            try:
+                float_val = float(val_str)
+                from openpyxl.utils.datetime import from_excel
+                return from_excel(float_val).date()
+            except ValueError:
+                pass
+
+            formats = [
+                "%Y-%m-%d %H:%M:%S", "%Y-%m-%d", 
+                "%d-%m-%Y %H:%M:%S", "%d-%m-%Y",
+                "%m-%d-%Y %H:%M:%S", "%m-%d-%Y",
+                "%d/%m/%Y %H:%M:%S", "%d/%m/%Y",
+                "%m/%d/%Y %H:%M:%S", "%m/%d/%Y",
+                "%Y/%m/%d %H:%M:%S", "%Y/%m/%d"
+            ]
+            for fmt in formats:
+                try:
+                    return datetime.strptime(val_str, fmt).date()
+                except ValueError:
+                    continue
+            return None
+
+        def clean_excel_val(doctype, fieldname, val):
+            if val is None or val == "": return None
+            if fieldname in DATE_FIELDS:
+                return parse_excel_date(val)
+                
+            meta = frappe.get_meta(doctype)
+            field = meta.get_field(fieldname)
+            if not field: return val
+            
+            if field.fieldtype in ["Link", "Select", "Data", "Text", "Small Text", "Long Text"]:
+                if isinstance(val, (int, float)):
+                    if isinstance(val, float) and val.is_integer():
+                        return str(cint(val))
+                    return str(val)
+                return str(val).strip()
+                
+            if field.fieldtype in ["Float", "Int", "Currency", "Percent"]:
+                return flt(val)
+                
+            return val
+
+        # 1. HEADER MAPPING
+        HEADER_MAPPING = {
+            "NOMOR AJU": "nomoraju",
+            "KODE DOKUMEN": "kode_dokumen",
+            "KODE KANTOR": "kode_kantor",
+            "KOTA PERNYATAAN": "kota_pernyataan",
+            "TANGGAL PERNYATAAN": "tanggal_pernyataan",
+            "NAMA PERNYATAAN": "nama_pernyataan",
+            "JABATAN PERNYATAAN": "jabatan_pernyataan",
+            "KODE KANTOR BONGKAR": "kode_kantor_bongkar",
+            "KODE KANTOR PERIKSA": "kode_kantor_periksa",
+            "KODE KANTOR TUJUAN": "kode_kantor_tujuan",
+            "KODE KANTOR EKSPOR": "kode_kantor_ekspor",
+            "KODE JENIS EKSPOR": "kode_jenis_ekspor",
+            "KODE JENIS TPB": "kode_jenis_tpb",
+            "KODE JENIS PLB": "kode_jenis_plb",
+            "KODE JENIS IMPOR": "kode_jenis_impor",
+            "KODE TUJUAN PEMASUKAN": "kode_tujuan_pemasukan",
+            "KODE TUJUAN PENGIRIMAN": "kode_tujuan_pengiriman",
+            "KODE TUJUAN TPB": "kode_tujuan_tpb",
+            "KODE CARA DAGANG": "kode_cara_dagang",
+            "KODE CARA BAYAR": "kode_cara_bayar",
+            "KODE CARA BAYAR LAINNYA": "kode_cara_bayar_lainnya",
+            "KODE GUDANG ASAL": "kode_gudang_asal",
+            "KODE GUDANG TUJUAN": "kode_gudang_tujuan",
+            "KODE JENIS KIRIM": "kode_jenis_kirim",
+            "KODE JENIS PENGIRIMAN": "kode_jenis_pengiriman",
+            "KODE KATEGORI EKSPOR": "kode_kategori_ekspor",
+            "KODE KATEGORI MASUK FTZ": "kode_kategori_masuk_ftz",
+            "KODE KATEGORI KELUAR FTZ": "kode_kategori_keluar_ftz",
+            "KODE KATEGORI BARANG FTZ": "kode_kategori_barang_ftz",
+            "KODE LOKASI": "kode_lokasi",
+            "KODE LOKASI BAYAR": "kode_lokasi_bayar",
+            "LOKASI ASAL": "lokasi_asal",
+            "LOKASI TUJUAN": "lokasi_tujuan",
+            "KODE DAERAH ASAL": "kode_daerah_asal",
+            "KODE NEGARA TUJUAN": "kode_negara_tujuan",
+            "KODE TUTUP PU": "kode_tutup_pu",
+            "NOMOR BC11": "nomor_bc11",
+            "NOMOR BC 11": "nomor_bc11",
+            "NO BC11": "nomor_bc11",
+            "TANGGAL BC11": "tanggal_bc11",
+            "TANGGAL BC 11": "tanggal_bc11",
+            "TGL BC11": "tanggal_bc11",
+            "NOMOR POS": "nomor_pos",
+            "NO POS": "nomor_pos",
+            "NOMOR SUB POS": "nomor_sub_pos",
+            "NO SUB POS": "nomor_sub_pos",
+            "NOMOR SUBPOS": "nomor_sub_pos",
+            "KODE PELABUHAN BONGKAR": "kode_pelabuhan_bongkar",
+            "KODE PELABUHAN MUAT": "kode_pelabuhan_muat",
+            "KODE PELABUHAN MUAT AKHIR": "kode_pelabuhan_muat_akhir",
+            "KODE PELABUHAN TRANSIT": "kode_pelabuhan_transit",
+            "KODE PELABUHAN TUJUAN": "kode_pelabuhan_tujuan",
+            "KODE PELABUHAN EKSPOR": "kode_pelabuhan_ekspor",
+            "KODE TPS": "kode_tps",
+            "TANGGAL BERANGKAT": "tanggal_berangkat",
+            "TANGGAL EKSPOR": "tanggal_ekspor",
+            "TANGGAL MASUK": "tanggal_masuk",
+            "TANGGAL MUAT": "tanggal_muat",
+            "TANGGAL TIBA": "tanggal_tiba",
+            "TANGGAL PERIKSA": "tanggal_periksa",
+            "TEMPAT STUFFING": "tempat_stuffing",
+            "TANGGAL STUFFING": "tanggal_stuffing",
+            "KODE TANDA PENGAMAN": "kode_tanda_pengaman",
+            "JUMLAH TANDA PENGAMAN": "jumlah_tanda_pengaman",
+            "FLAG CURAH": "flag_curah",
+            "FLAG SDA": "flag_sda",
+            "FLAG VD": "flag_vd",
+            "FLAG MIGAS": "flag_migas",
+            "KODE ASURANSI": "kode_asuransi",
+            "ASURANSI": "asuransi",
+            "NILAI BARANG": "nilai_barang",
+            "NILAI INCOTERM": "nilai_incoterm",
+            "NILAI MAKLON": "nilai_maklon",
+            "FREIGHT": "freight",
+            "FOB": "fob",
+            "BIAYA TAMBAHAN": "biaya_tambahan",
+            "BIAYA PENGURANG": "biaya_pengurang",
+            "VD": "vd",
+            "CIF": "cif",
+            "HARGA_PENYERAHAN": "harga_penyerahan",
+            "NDPBM": "ndpbm",
+            "TOTAL DANA SAWIT": "total_dana_sawit",
+            "DASAR PENGENAAN PAJAK": "dasar_pengenaan_pajak",
+            "NILAI JASA": "nilai_jasa",
+            "UANG MUKA": "uang_muka",
+            "BRUTO": "bruto",
+            "NETTO": "netto",
+            "VOLUME": "volume",
+            "KODE VALUTA": "kode_valuta",
+            "KODE INCOTERM": "kode_incoterm",
+            "KODE JASA KENA PAJAK": "kode_jasa_kena_pajak",
+            "NOMOR BUKTI BAYAR": "nomor_bukti_bayar",
+            "TANGGAL BUKTI BAYAR": "tanggal_bukti_bayar",
+            "KODE JENIS NILAI": "kode_jenis_nilai",
+            "KODE KANTOR MUAT": "kode_kantor_muat",
+            "NOMOR DAFTAR": "nomor_daftar",
+            "TANGGAL DAFTAR": "tanggal_daftar",
+            "KODE ASAL BARANG FTZ": "kode_barang_asal_ftz",
+            "KODE TUJUAN PENGELUARAN": "kode_tujuan_pengeluaran",
+            "PPN PAJAK": "ppn_pajak",
+            "PPNBM PAJAK": "ppnbm_pajak",
+            "TARIF PPN PAJAK": "tarif_ppn_pajak",
+            "TARIF PPNBM PAJAK": "tarif_ppnbm_pajak",
+            "BARANG TIDAK BERWUJUD": "barang_tidak_berwujud",
+            "FLAG KONSOL": "flag_konsol",
+            "FLAG PROPORSIONAL NETTO": "flag_proporsional_netto",
+            "FLAG AP BK": "flag_ap_bk",
+            "KODE JENIS PENGELUARAN": "kode_jenis_pengeluaran",
+            "KODE JENIS PROSEDUR": "kode_jenis_prosedur",
+            "KODE JENIS PENGANGKUTAN": "kode_jenis_pengangkutan",
+            "BARANG KIRIMAN": "barang_kiriman"
+        }
+
+        # Fetch HEADER data
+        header_rows = get_sheet_data("HEADER", expected_columns=HEADER_MAPPING)
+        if not header_rows:
+            frappe.throw("No data in HEADER sheet")
+        
+        header_row = header_rows[0]
+        nomor_aju = header_row.get("NOMOR AJU")
+        if not nomor_aju:
+            frappe.throw("NOMOR AJU is missing in HEADER")
+        nomor_aju = str(nomor_aju).strip()
+
+        # Get/Create Header Doc
+        if frappe.db.exists("HEADER V21", {"nomoraju": nomor_aju}):
+            doc = frappe.get_doc("HEADER V21", {"nomoraju": nomor_aju})
+        else:
+            doc = frappe.new_doc("HEADER V21")
+            doc.nomoraju = nomor_aju
+            doc.name = nomor_aju
+            doc.flags.name_set = True
+
+        # Map Header
+        for excel_col, doc_field in HEADER_MAPPING.items():
+            if excel_col in header_row:
+                val = header_row.get(excel_col)
+                doc.set(doc_field, clean_excel_val("HEADER V21", doc_field, val))
+
+        # Helper for Child Tables
+        def create_child(doctype, parent_field, sheet_name, mapping, optional=False):
+            rows = get_sheet_data(sheet_name, optional, expected_columns=mapping)
+            if not rows and optional: return
+            
+            child_list = []
+            for row in rows:
+                row_nomor_aju = str(row.get("NOMOR AJU") or "").strip()
+                if row_nomor_aju != nomor_aju: continue
+                child_item = {}
+                for excel_col, doc_field in mapping.items():
+                    if excel_col in row:
+                        val = row.get(excel_col)
+                        child_item[doc_field] = clean_excel_val(doctype, doc_field, val)
+                child_list.append(child_item)
+            
+            doc.set(parent_field, child_list)
+            audit_report["stats"][doctype] = len(child_list)
+
+        # CHILD TABLES IMPORT
+        create_child("ENTITAS", "entitas", "ENTITAS", {
+            "NOMOR AJU": "nomoraju", "SERI": "seri", "KODE ENTITAS": "kode_entitas",
+            "NOMOR IDENTITAS": "nomor_identitas", "NAMA ENTITAS": "nama_entitas",
+            "ALAMAT ENTITAS": "alamat_entitas", "NIB ENTITAS": "nib_entitas",
+            "KODE JENIS API": "kode_jenis_api", "KODE STATUS": "kode_status",
+            "KODE NEGARA": "kode_negara", "NOMOR IJIN ENTITAS": "nomor_ijin_entitas",
+            "TANGGAL IJIN ENTITAS": "tanggal_ijin_entitas", "KODE JENIS IDENTITAS": "kode_jenis_identitas",
+            "NIPER ENTITAS": "niper_entitas", "KODE AFILIASI": "kode_afiliasi",
+            "KODE KATEGORI KONSOLIDATOR": "kode_kategori_konsolidator"
+        })
+
+        create_child("KEMASAN", "kemasan", "KEMASAN", {
+            "NOMOR AJU": "nomoraju", "SERI": "seri", "KODE KEMASAN": "kode_kemasan",
+            "JUMLAH KEMASAN": "jumlah_kemasan", "MERK KEMASAN": "merek_kemasan",
+            "MEREK": "merek_kemasan", "NOMOR SEGEL": "no_segel_kemasan"
+        })
+
+        create_child("DOKUMEN", "dokumen", "DOKUMEN", {
+            "NOMOR AJU": "nomoraju", "SERI DOKUMEN": "seri", "SERI": "seri",
+            "KODE DOKUMEN": "kode_dokumen", "NOMOR DOKUMEN": "nomor_dokumen",
+            "TANGGAL DOKUMEN": "tanggal_dokumen", "KODE FASILITAS": "kode_fasilitas",
+            "KODE IJIN": "kode_ijin"
+        })
+
+        create_child("PENGANGKUT", "pengangkut", "PENGANGKUT", {
+            "NOMOR AJU": "nomoraju", "SERI PENGANGKUT": "seri_pengangkut", "SERI": "seri_pengangkut",
+            "KODE CARA ANGKUT": "kode_cara_angkut", "NAMA PENGANGKUT": "nama_pengangkut",
+            "NOMOR PENGANGKUT": "nomor_pengangkut", "KODE BENDERA": "kode_bendera",
+            "CALL SIGN": "call_sign", "FLAG ANGKUT PLB": "flag_angkut_plb",
+            "CARA PENGANGKUTAN LAINNYA": "cara_pengangkutan_lainnya"
+        })
+        
+        create_child("KONTAINER", "kontainer", "KONTAINER", {
+            "NOMOR AJU": "nomoraju", "SERI KONTAINER": "seri", "SERI": "seri",
+            "NOMOR KONTAINER": "nomor_kontainer", "NOMOR KONTINER": "nomor_kontainer",
+            "KODE UKURAN KONTAINER": "kode_ukuran_kontainer", "KODE JENIS KONTAINER": "kode_jenis_kontainer",
+            "KODE TIPE KONTAINER": "kode_tipe_kontainer", "NOMOR SEGEL": "nomor_segel_kontainer"
+        })
+
+        create_child("komponen_biaya", "komponen_biaya", "KOMPONENBIAYA", {
+            "NOMOR AJU": "nomoraju", "JENIS NILAI": "jenisnilai", "HARGA INVOICE": "hargainvoice",
+            "PEMBAYARAN TIDAK LANGSUNG": "pembayarantidaklangsung", "DISKON": "diskon",
+            "KOMISI PENJUALAN": "komisipenjualan", "BIAYA PENGEMASAN": "biayapengemasan",
+            "BIAYA PENGEPAKAN": "biayapengepakan", "ASSIST": "assist", "ROYALTI": "royalti",
+            "PROCEEDS": "proceeds", "BIAYA TRANSPORTASI": "biayatransportasi",
+            "BIAYA PEMUATAN": "biayapemuatan", "ASURANSI": "asuransi", "GARANSI": "garansi",
+            "BIAYA KEPENTINGAN SENDIRI": "biayakepentingansendiri", "BIAYA PASCA IMPOR": "biayapascaimpor",
+            "BIAYA PAJAK INTERNAL": "biayapajakinternal", "BUNGA": "bunga", "DEVIDEN": "deviden"
+        }, optional=True)
+
+        create_child("pungutan", "pungutan", "PUNGUTAN", {
+            "NOMOR AJU": "nomoraju", "KODE FASILITAS TARIF": "kode_fasilitas_tarif",
+            "KODE JENIS PUNGUTAN": "kode_jenis_pungutan", "NILAI PUNGUTAN": "nilai_pungutan",
+            "NPWP BILLING": "npwp_billing"
+        })
+
+        create_child("jaminan", "jaminan", "JAMINAN", {
+            "NOMOR AJU": "nomoraju", "KODE JAMINAN": "kode_jaminan", "NOMOR BPJ": "nomor_bpj",
+            "TANGGAL BPJ": "tanggal_bpj", "NILAI JAMINAN": "nilai_jaminan",
+            "TANGGAL JATUH TEMPO": "tanggal_jatuh_tempo", "PENJAMIN": "penjamin",
+            "NOMOR JAMINAN": "nomor_jaminan", "TANGGAL JAMINAN": "tanggal_jaminan",
+            "KODE KANTOR": "kode_kantor" 
+        })
+
+        create_child("bank_devisa", "bank_devisa", "BANKDEVISA", {
+            "NOMOR AJU": "nomoraju", "KODE": "kode", "NAMA": "nama", "SERI": "seri"
+        })
+
+        respon_rows = get_sheet_data("RESPON", optional=True)
+        if respon_rows:
+            import json
+            doc.respon_json = json.dumps(respon_rows, default=str)
+
+        # --- BARANG PROCESSING ---
+        barang_rows = get_sheet_data("BARANG")
+        bt_rows = get_sheet_data("BARANGTARIF")
+        bd_rows = get_sheet_data("BARANGDOKUMEN")
+        be_rows = get_sheet_data("BARANGENTITAS")
+        bvd_rows = get_sheet_data("BARANGVD")
+        bspe_rows = get_sheet_data("BARANGSPEKKHUSUS")
+        
+        # BAHAN BAKU Sheets
+        bb_rows = get_sheet_data("BAHANBAKU")
+        bbt_rows = get_sheet_data("BAHANBAKUTARIF")
+        bbd_rows = get_sheet_data("BAHANBAKUDOKUMEN")
+
+        wb.close()
+
+        # Save Header V21 first
+        save_doc(doc)
+
+        # Pre-group child rows for O(1) lookups
+        bt_by_seri = {}
+        for r in bt_rows:
+            bt_by_seri.setdefault(cint(r.get("SERI BARANG")), []).append(r)
+
+        bd_by_seri = {}
+        for r in bd_rows:
+            bd_by_seri.setdefault(cint(r.get("SERI BARANG")), []).append(r)
+
+        be_by_seri = {}
+        for r in be_rows:
+            be_by_seri.setdefault(cint(r.get("SERI BARANG")), []).append(r)
+
+        bspe_by_seri = {}
+        for r in bspe_rows:
+            bspe_by_seri.setdefault(cint(r.get("SERI BARANG")), []).append(r)
+
+        bvd_by_seri = {}
+        for r in bvd_rows:
+            bvd_by_seri.setdefault(cint(r.get("SERI BARANG")), []).append(r)
+
+        bb_by_seri = {}
+        for r in bb_rows:
+            bb_by_seri.setdefault(cint(r.get("SERI BARANG")), []).append(r)
+
+        bbt_by_key = {}
+        for r in bbt_rows:
+            key = (cint(r.get("SERI BARANG")), cint(r.get("SERI BAHAN BAKU")))
+            bbt_by_key.setdefault(key, []).append(r)
+
+        bbd_by_key = {}
+        for r in bbd_rows:
+            key = (cint(r.get("SERI BARANG")), cint(r.get("SERI BAHAN BAKU")))
+            bbd_by_key.setdefault(key, []).append(r)
+
+        # OPTIMIZATION: Bulk pre-fetch existing records to avoid N+1 DB hits
+        existing_barang = frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["name", "seri_barang"])
+        barang_map = {cint(b.seri_barang): b.name for b in existing_barang}
+
+        existing_bahan = frappe.get_all("BAHAN BAKU", filters={"nomoraju": nomor_aju}, fields=["name", "seri_barang", "seri_bahan_baku"])
+        bahan_map = {(cint(b.seri_barang), cint(b.seri_bahan_baku)): b.name for b in existing_bahan}
+
+        BARANG_MAPPING = {
+            "NOMOR AJU": "nomoraju", "SERI BARANG": "seri_barang", "HS": "hs",
+            "KODE BARANG": "kode_barang", "URAIAN": "uraian", "MEREK": "merek",
+            "MERK": "merek", "TIPE": "tipe", "UKURAN": "ukuran", "SPESIFIKASI LAIN": "spesifikasi_lain",
+            "KODE SATUAN": "kode_satuan", "JUMLAH SATUAN": "jumlah_satuan",
+            "JUMLAH BAHAN BAKU": "jumlah_bahan_baku", "KODE KEMASAN": "kode_kemasan",
+            "JUMLAH KEMASAN": "jumlah_kemasan", "NETTO": "netto", "BRUTO": "bruto",
+            "VOLUME": "volume", "CIF": "cif", "CIF RUPIAH": "cif_rupiah", "NDPBM": "ndpbm",
+            "FOB": "fob", "ASURANSI": "asuransi", "FREIGHT": "freight", "NILAI BARANG": "nilai_barang",
+            "NILAI JASA": "nilai_jasa", "NILAI DANA SAWIT": "nilai_dana_sawit",
+            "NILAI DEVISA": "nilai_devisa", "PERSENTASE IMPOR": "persentase_impor", "DISKON": "diskon",
+            "HARGA PENYERAHAN": "harga_penyerahan", "HARGA PEROLEHAN": "harga_perolehan",
+            "HARGA SATUAN": "harga_satuan", "HARGA EKSPOR": "harga_ekspor", "HARGA PATOKAN": "harga_patokan",
+            "NILAI TAMBAH": "nilai_tambah", "PERNYATAAN LARTAS": "pernyataan_lartas",
+            "TAHUN PEMBUATAN": "tahun_pembuatan", "KODE JENIS EKSPOR": "kode_jenis_ekspor",
+            "KODE KATEGORI BARANG": "kode_kategori_barang", "KODE KONDISI BARANG": "kode_kondisi_barang",
+            "SERI IZIN": "seri_izin", "KODE ASAL BARANG": "kode_asal_barang",
+            "KODE NEGARA ASAL": "kode_negara_asal", "KODE DAERAH ASAL": "kode_daerah_asal",
+            "STATEMENT PERBEDAAN HARGA": "statement_perbedaan_harga", "SALDO AWAL": "saldo_awal",
+            "KAPASITAS SILINDER": "kapasitas_silinder", "JATUH TEMPO ROYALTI": "jatuh_tempo_royalti",
+            "FLAG TIS": "flag_tis", "KODE KANTOR ASAL": "kode_kantor_asal", "ISI PER KEMASAN": "isi_per_kemasan",
+            "FLAG 4 TAHUN": "flag_4_tahun", "KODE DOKUMEN ASAL": "kode_dokumen_asal", "KODE BKC": "kode_bkc",
+            "KODE SUB KOMODITI BKC": "kode_sub_komoditi_bkc", "NOMOR AJU ASAL": "nomor_aju_asal",
+            "KODE GUNA BARANG": "kode_guna_barang", "SERI BARANG ASAL": "seri_barang_asal",
+            "SALDO AKHIR": "saldo_akhir", "KODE PERHITUNGAN": "kode_perhitungan",
+            "KODE JENIS NILAI": "kode_jenis_nilai", "KODE KOMODITI BKC": "kode_komoditi_bkc",
+            "NOMOR DAFTAR ASAL": "nomor_daftar_asal", "JUMLAH REALISASI": "jumlah_realisasi",
+            "TANGGAL DAFTAR ASAL": "tanggal_daftar_asal", "METODE PENENTUAN NILAI": "metode_penentuan_nilai",
+            "HJE CUKAI": "hje_cukai", "TARIF CUKAI": "tarif_cukai", "JUMLAH PITA CUKAI": "jumlah_pita_cukai",
+            "JUMLAH DILEKATKAN": "jumlah_dilekatkan"
+        }
+
+        for b_row in barang_rows:
+            row_nomor_aju = str(b_row.get("NOMOR AJU") or "").strip()
+            if row_nomor_aju and row_nomor_aju != nomor_aju: continue
+
+            seri_barang = cint(b_row.get("SERI BARANG"))
+            if not seri_barang: continue
+
+            existing_name = barang_map.get(seri_barang)
+            if existing_name:
+                b_doc = frappe.get_doc("BARANG V1", existing_name)
+            else:
+                b_doc = frappe.new_doc("BARANG V1")
+                b_doc.nomoraju = doc.name
+                b_doc.seri_barang = seri_barang
+
+            # Map & Dirty Check Barang fields
+            barang_dirty = False
+            for excel_col, doc_field in BARANG_MAPPING.items():
+                if excel_col in b_row:
+                    new_val = clean_excel_val("BARANG V1", doc_field, b_row.get(excel_col))
+                    old_val = b_doc.get(doc_field)
+                    if str(new_val if new_val is not None else "") != str(old_val if old_val is not None else ""):
+                        b_doc.set(doc_field, new_val)
+                        barang_dirty = True
+
+            # Child Tables for BARANG
+            child_bt = []
+            for r in bt_by_seri.get(seri_barang, []):
+                child_bt.append({
+                    "seri_barang": seri_barang,
+                    "kode_pungutan": clean_excel_val("BARANG TARIF", "kode_pungutan", r.get("KODE PUNGUTAN")),
+                    "kode_tarif": clean_excel_val("BARANG TARIF", "kode_tarif", r.get("KODE TARIF")),
+                    "tarif": clean_excel_val("BARANG TARIF", "tarif", r.get("TARIF")),
+                    "kode_fasilitas": clean_excel_val("BARANG TARIF", "kode_fasilitas", r.get("KODE FASILITAS")),
+                    "tarif_fasilitas": clean_excel_val("BARANG TARIF", "tarif_fasilitas", r.get("TARIF FASILITAS")),
+                    "nilai_bayar": clean_excel_val("BARANG TARIF", "nilai_bayar", r.get("NILAI BAYAR")),
+                    "nilai_fasilitas": clean_excel_val("BARANG TARIF", "nilai_fasilitas", r.get("NILAI FASILITAS")),
+                    "nilai_sudah_dilunasi": clean_excel_val("BARANG TARIF", "nilai_sudah_dilunasi", r.get("NILAI SUDAH DILUNASI")),
+                    "kode_komoditi_cukai": clean_excel_val("BARANG TARIF", "kode_komoditi_cukai", r.get("KODE KOMODITI CUKAI")),
+                    "kode_sub_komoditi_cukai": clean_excel_val("BARANG TARIF", "kode_sub_komoditi_cukai", r.get("KODE SUB KOMODITI CUKAI")),
+                    "jumlah_satuan": clean_excel_val("BARANG TARIF", "jumlah_satuan", r.get("JUMLAH SATUAN")),
+                    "kode_satuan": clean_excel_val("BARANG TARIF", "kode_satuan", r.get("KODE SATUAN"))
+                })
+            bt_fields = ["seri_barang", "kode_pungutan", "kode_tarif", "tarif", "kode_fasilitas", "tarif_fasilitas", "nilai_bayar", "nilai_fasilitas", "nilai_sudah_dilunasi", "kode_komoditi_cukai", "kode_sub_komoditi_cukai", "jumlah_satuan", "kode_satuan"]
+            if not are_child_tables_identical(child_bt, b_doc.barang_tarif, bt_fields):
+                b_doc.set("barang_tarif", child_bt)
+                barang_dirty = True
+
+            child_bd = []
+            for r in bd_by_seri.get(seri_barang, []):
+                child_bd.append({
+                    "seri_dokumen": clean_excel_val("BARANG DOKUMEN", "seri_dokumen", r.get("SERI DOKUMEN")),
+                    "seri_izin": clean_excel_val("BARANG DOKUMEN", "seri_izin", r.get("SERI IZIN"))
+                })
+            bd_fields = ["seri_dokumen", "seri_izin"]
+            if not are_child_tables_identical(child_bd, b_doc.barang_dokumen, bd_fields):
+                b_doc.set("barang_dokumen", child_bd)
+                barang_dirty = True
+
+            child_be = []
+            for r in be_by_seri.get(seri_barang, []):
+                child_be.append({
+                    "seri_entitas": clean_excel_val("BARANG ENTITAS", "seri_entitas", r.get("SERI ENTITAS"))
+                })
+            be_fields = ["seri_entitas"]
+            if not are_child_tables_identical(child_be, b_doc.barang_pemilik, be_fields):
+                b_doc.set("barang_pemilik", child_be)
+                barang_dirty = True
+
+            child_sp = []
+            for r in bspe_by_seri.get(seri_barang, []):
+                child_sp.append({
+                    "kode": clean_excel_val("BARANG SPEK KHUSUS", "kode", r.get("KODE")),
+                    "uraian": clean_excel_val("BARANG SPEK KHUSUS", "uraian", r.get("URAIAN"))
+                })
+            sp_fields = ["kode", "uraian"]
+            if not are_child_tables_identical(child_sp, b_doc.barang_spek_khusus, sp_fields):
+                b_doc.set("barang_spek_khusus", child_sp)
+                barang_dirty = True
+
+            child_vd = []
+            for r in bvd_by_seri.get(seri_barang, []):
+                child_vd.append({
+                    "kode_jenis_vd": clean_excel_val("BARANG VD", "kode_jenis_vd", r.get("KODE VD")),
+                    "nilai_barang": clean_excel_val("BARANG VD", "nilai_barang", r.get("NILAI BARANG")),
+                    "biaya_tambahan": clean_excel_val("BARANG VD", "biaya_tambahan", r.get("BIAYA TAMBAHAN")),
+                    "biaya_pengurang": clean_excel_val("BARANG VD", "biaya_pengurang", r.get("BIAYA PENGURANG")),
+                    "jatuh_tempo": clean_excel_val("BARANG VD", "jatuh_tempo", r.get("JATUH TEMPO"))
+                })
+            vd_fields = ["kode_jenis_vd", "nilai_barang", "biaya_tambahan", "biaya_pengurang", "jatuh_tempo"]
+            if not are_child_tables_identical(child_vd, b_doc.barang_vd, vd_fields):
+                b_doc.set("barang_vd", child_vd)
+                barang_dirty = True
+
+            if barang_dirty or b_doc.is_new():
+                save_doc(b_doc)
+                audit_report["stats"]["saves_performed"] += 1
+            else:
+                audit_report["stats"]["saves_skipped"] += 1
+
+            audit_report["stats"]["BARANG V1"] += 1
+            audit_report["stats"]["BARANG TARIF"] += len(child_bt)
+            audit_report["stats"]["BARANG DOKUMEN"] += len(child_bd)
+            audit_report["stats"]["BARANG PEMILIK"] += len(child_be)
+            audit_report["stats"]["BARANG SPEK KHUSUS"] += len(child_sp)
+            audit_report["stats"]["BARANG VD"] += len(child_vd)
+
+            # --- BAHAN BAKU ---
+            for bb_row in bb_by_seri.get(seri_barang, []):
+                seri_bahan_baku = cint(bb_row.get("SERI BAHAN BAKU"))
+                if not seri_bahan_baku: continue
+
+                existing_bb_name = bahan_map.get((seri_barang, seri_bahan_baku))
+                if existing_bb_name:
+                    bb_doc = frappe.get_doc("BAHAN BAKU", existing_bb_name)
+                else:
+                    bb_doc = frappe.new_doc("BAHAN BAKU")
+                    bb_doc.nomoraju = nomor_aju
+                    bb_doc.seri_barang = seri_barang
+                    bb_doc.seri_bahan_baku = seri_bahan_baku
+                    bb_doc.parent_barang = b_doc.name
+
+                # Map & Dirty Check Bahan Baku fields
+                bahan_dirty = False
+                bb_mapping = {
+                    "hs": bb_row.get("HS"), "kode_barang": bb_row.get("KODE BARANG"), "uraian": bb_row.get("URAIAN"),
+                    "merek": bb_row.get("MEREK"), "tipe": bb_row.get("TIPE"), "ukuran": bb_row.get("UKURAN"),
+                    "spesifikasi_lain": bb_row.get("SPESIFIKASI LAIN"), "kode_satuan": bb_row.get("KODE SATUAN"),
+                    "jumlah_satuan": bb_row.get("JUMLAH SATUAN"), "kode_asal_bahan_baku": bb_row.get("KODE ASAL BAHAN BAKU"),
+                    "cif": bb_row.get("CIF"), "cif_rupiah": bb_row.get("CIF RUPIAH"),
+                    "harga_penyerahan": bb_row.get("HARGA PENYERAHAN"), "harga_perolehan": bb_row.get("HARGA PEROLEHAN"),
+                    "ndpbm": bb_row.get("NDPBM"), "netto": bb_row.get("NETTO"), "bruto": bb_row.get("BRUTO"),
+                    "volume": bb_row.get("VOLUME"), "kode_bkc": bb_row.get("KODE BKC"),
+                    "kode_komoditi_bkc": bb_row.get("KODE KOMODITI BKC"), "kode_sub_komoditi_bkc": bb_row.get("KODE SUB KOMODITI BKC"),
+                    "flag_tis": bb_row.get("FLAG TIS"), "isi_per_kemasan": bb_row.get("ISI PER KEMASAN"),
+                    "jumlah_dilekatkan": bb_row.get("JUMLAH DILEKATKAN"), "jumlah_pita_cukai": bb_row.get("JUMLAH PITA CUKAI"),
+                    "hje_cukai": bb_row.get("HJE CUKAI"), "tarif_cukai": bb_row.get("TARIF CUKAI"),
+                    "nomor_aju_asal": bb_row.get("NOMOR AJU ASAL"), "nomor_daftar_asal": bb_row.get("NOMOR DAFTAR ASAL"),
+                    "tanggal_daftar_asal": bb_row.get("TANGGAL DAFTAR ASAL"), "kode_dokumen_asal": bb_row.get("KODE DOKUMEN ASAL"),
+                    "kode_kantor_asal": bb_row.get("KODE KANTOR ASAL")
+                }
+                for fieldname, val in bb_mapping.items():
+                    cleaned_val = clean_excel_val("BAHAN BAKU", fieldname, val)
+                    old_val = bb_doc.get(fieldname)
+                    if str(cleaned_val if cleaned_val is not None else "") != str(old_val if old_val is not None else ""):
+                        bb_doc.set(fieldname, cleaned_val)
+                        bahan_dirty = True
+
+                # Children of Bahan Baku
+                key = (seri_barang, seri_bahan_baku)
+                
+                child_bbt = []
+                for r in bbt_by_key.get(key, []):
+                    child_bbt.append({
+                        "kode_pungutan": clean_excel_val("BAHAN BAKU TARIF", "kode_pungutan", r.get("KODE PUNGUTAN")),
+                        "kode_tarif": clean_excel_val("BAHAN BAKU TARIF", "kode_tarif", r.get("KODE TARIF")),
+                        "tarif": clean_excel_val("BAHAN BAKU TARIF", "tarif", r.get("TARIF")),
+                        "kode_fasilitas": clean_excel_val("BAHAN BAKU TARIF", "kode_fasilitas", r.get("KODE FASILITAS")),
+                        "tarif_fasilitas": clean_excel_val("BAHAN BAKU TARIF", "tarif_fasilitas", r.get("TARIF FASILITAS")),
+                        "nilai_bayar": clean_excel_val("BAHAN BAKU TARIF", "nilai_bayar", r.get("NILAI BAYAR")),
+                        "nilai_fasilitas": clean_excel_val("BAHAN BAKU TARIF", "nilai_fasilitas", r.get("NILAI FASILITAS")),
+                        "kode_asal_bahan_baku": clean_excel_val("BAHAN BAKU TARIF", "kode_asal_bahan_baku", r.get("KODE ASAL BAHAN BAKU")),
+                        "jumlah_satuan": clean_excel_val("BAHAN BAKU TARIF", "jumlah_satuan", r.get("JUMLAH SATUAN")),
+                        "kode_satuan": clean_excel_val("BAHAN BAKU TARIF", "kode_satuan", r.get("KODE SATUAN"))
+                    })
+                bbt_fields = ["kode_pungutan", "kode_tarif", "tarif", "kode_fasilitas", "tarif_fasilitas", "nilai_bayar", "nilai_fasilitas", "kode_asal_bahan_baku", "jumlah_satuan", "kode_satuan"]
+                if not are_child_tables_identical(child_bbt, bb_doc.bahan_tarif, bbt_fields):
+                    bb_doc.set("bahan_tarif", child_bbt)
+                    bahan_dirty = True
+
+                child_bbd = []
+                for r in bbd_by_key.get(key, []):
+                    child_bbd.append({
+                        "seri_dokumen": clean_excel_val("BAHAN BAKU DOKUMEN", "seri_dokumen", r.get("SERI DOKUMEN")),
+                        "seri_izin": clean_excel_val("BAHAN BAKU DOKUMEN", "seri_izin", r.get("SERI IZIN")),
+                        "kode_asal_bahan_baku": clean_excel_val("BAHAN BAKU DOKUMEN", "kode_asal_bahan_baku", r.get("KODE ASAL BAHAN BAKU"))
+                    })
+                bbd_fields = ["seri_dokumen", "seri_izin", "kode_asal_bahan_baku"]
+                if not are_child_tables_identical(child_bbd, bb_doc.bahan_baku_dokumen, bbd_fields):
+                    bb_doc.set("bahan_baku_dokumen", child_bbd)
+                    bahan_dirty = True
+
+                if bahan_dirty or bb_doc.is_new():
+                    save_doc(bb_doc)
+                    audit_report["stats"]["saves_performed"] += 1
+                else:
+                    audit_report["stats"]["saves_skipped"] += 1
+
+                audit_report["stats"]["BAHAN BAKU"] = audit_report["stats"].get("BAHAN BAKU", 0) + 1
+                audit_report["stats"]["BAHAN BAKU TARIF"] = audit_report["stats"].get("BAHAN BAKU TARIF", 0) + len(child_bbt)
+                audit_report["stats"]["BAHAN BAKU DOKUMEN"] = audit_report["stats"].get("BAHAN BAKU DOKUMEN", 0) + len(child_bbd)
+
+        message = f"<b>Successfully processed {nomor_aju} (V2 Optimized)</b>"
+        if audit_report["stats"]:
+            message += "<br><br><b>📊 Import Statistics:</b><br>"
+            for table, count in audit_report["stats"].items():
+                message += f"- {table}: {count} records<br>"
+        
+        if audit_report["unmapped_columns"]:
+            message += "<br><b>⚠️ Unmapped Columns:</b><br>"
+            for sheet, cols in audit_report["unmapped_columns"].items():
+                message += f"- {sheet}: {', '.join(cols)}<br>"
+        
+        if audit_report["missing_columns"]:
+            message += "<br><b>ℹ️ Missing Columns:</b><br>"
+            for sheet, cols in audit_report["missing_columns"].items():
+                message += f"- {sheet}: {', '.join(cols)}<br>"
+        
+        if cint(dry_run):
+            frappe.db.rollback()
+            return {"status": "success", "message": "[DRY RUN] " + message, "audit": audit_report, "nomor_aju": nomor_aju}
+        
+        frappe.db.commit()
+        return {"status": "success", "message": message, "audit": audit_report, "nomor_aju": nomor_aju}
+
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Import CEISA Excel V2 Error")
+        error_msg = f"<b>Error during import (V2):</b> {str(e)}"
+        if audit_report["stats"]:
+           error_msg += "<br><br><b>Partial Statistics:</b><br>"
+           for k, v in audit_report["stats"].items():
+                 error_msg += f"- {k}: {v}<br>"
+        return {"status": "error", "message": error_msg, "audit": audit_report}
