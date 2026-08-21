@@ -1281,7 +1281,7 @@ function open_ceisa_import_dialog(frm) {
 		primary_action: function (values) {
 			d.hide();
 			let method_name = values.use_v2 ? 'singlecore_apps.api.import_ceisa_excel_v2' : 'singlecore_apps.api.import_ceisa_excel';
-			
+
 			// Step 1: DRY RUN
 			frappe.call({
 				method: method_name,
