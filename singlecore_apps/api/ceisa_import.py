@@ -1291,12 +1291,119 @@ def import_ceisa_excel_v2(file_data, dry_run=False):
             key = (cint(r.get("SERI BARANG")), cint(r.get("SERI BAHAN BAKU")))
             bbd_by_key.setdefault(key, []).append(r)
 
-        # OPTIMIZATION: Bulk pre-fetch existing records to avoid N+1 DB hits
-        existing_barang = frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["name", "seri_barang"])
-        barang_map = {cint(b.seri_barang): b.name for b in existing_barang}
+        # OPTIMIZATION: Bulk delete existing records and perform fast bulk insert
+        
+        # Get standard database fields for bulk insert dynamically
+        from frappe.model import no_value_fields
+        
+        # Build field types map to prevent "cannot be null" errors for numeric/check fields
+        def get_field_type_map(dt):
+            m = frappe.get_meta(dt)
+            return {df.fieldname: df.fieldtype for df in m.fields}
 
-        existing_bahan = frappe.get_all("BAHAN BAKU", filters={"nomoraju": nomor_aju}, fields=["name", "seri_barang", "seri_bahan_baku"])
-        bahan_map = {(cint(b.seri_barang), cint(b.seri_bahan_baku)): b.name for b in existing_bahan}
+        field_types = {
+            "BARANG V1": get_field_type_map("BARANG V1"),
+            "BARANG TARIF": get_field_type_map("BARANG TARIF"),
+            "BARANG DOKUMEN": get_field_type_map("BARANG DOKUMEN"),
+            "BARANG ENTITAS": get_field_type_map("BARANG ENTITAS"),
+            "BARANG SPEK KHUSUS": get_field_type_map("BARANG SPEK KHUSUS"),
+            "BARANG VD": get_field_type_map("BARANG VD"),
+            "BAHAN BAKU": get_field_type_map("BAHAN BAKU"),
+            "BAHAN BAKU TARIF": get_field_type_map("BAHAN BAKU TARIF"),
+            "BAHAN BAKU DOKUMEN": get_field_type_map("BAHAN BAKU DOKUMEN"),
+        }
+
+        def get_clean_value(dt, fieldname, val):
+            if val is not None:
+                return val
+            if fieldname in ["docstatus", "idx"]:
+                return 0
+            t = field_types[dt].get(fieldname)
+            if t in ["Int", "Check"]:
+                return 0
+            elif t in ["Float", "Currency", "Percent"]:
+                return 0.0
+            return None
+
+        def get_db_fields(dt, is_child=False):
+            meta_dt = frappe.get_meta(dt)
+            fields_dt = [df.fieldname for df in meta_dt.fields if df.fieldtype not in no_value_fields]
+            std_fields = ["name", "owner", "creation", "modified", "modified_by", "docstatus", "idx"]
+            if is_child:
+                std_fields += ["parent", "parentfield", "parenttype"]
+            return std_fields + fields_dt
+
+        barang_fields = get_db_fields("BARANG V1")
+        b_tarif_fields = get_db_fields("BARANG TARIF", is_child=True)
+        b_dokumen_fields = get_db_fields("BARANG DOKUMEN", is_child=True)
+        b_entitas_fields = get_db_fields("BARANG ENTITAS", is_child=True)
+        b_spek_fields = get_db_fields("BARANG SPEK KHUSUS", is_child=True)
+        b_vd_fields = get_db_fields("BARANG VD", is_child=True)
+
+        bahan_fields = get_db_fields("BAHAN BAKU")
+        bb_tarif_fields = get_db_fields("BAHAN BAKU TARIF", is_child=True)
+        bb_dokumen_fields = get_db_fields("BAHAN BAKU DOKUMEN", is_child=True)
+
+        # 1. Bulk Delete existing records (Clean Overwrite)
+        existing_barang = frappe.get_all("BARANG V1", filters={"nomoraju": doc.name}, fields=["name"])
+        barang_names = [b.name for b in existing_barang]
+
+        if barang_names:
+            existing_bahan = frappe.get_all("BAHAN BAKU", filters={"parent_barang": ["in", barang_names]}, fields=["name"])
+            bahan_names = [b.name for b in existing_bahan]
+
+            frappe.db.delete("BARANG TARIF", {"parent": ["in", barang_names]})
+            frappe.db.delete("BARANG DOKUMEN", {"parent": ["in", barang_names]})
+            frappe.db.delete("BARANG ENTITAS", {"parent": ["in", barang_names]})
+            frappe.db.delete("BARANG SPEK KHUSUS", {"parent": ["in", barang_names]})
+            frappe.db.delete("BARANG VD", {"parent": ["in", barang_names]})
+            
+            if bahan_names:
+                frappe.db.delete("BAHAN BAKU TARIF", {"parent": ["in", bahan_names]})
+                frappe.db.delete("BAHAN BAKU DOKUMEN", {"parent": ["in", bahan_names]})
+                frappe.db.delete("BAHAN BAKU", {"name": ["in", bahan_names]})
+                
+            frappe.db.delete("BARANG V1", {"name": ["in", barang_names]})
+
+        # Count target Barang V1 records to be inserted
+        barang_rows_to_insert = []
+        for b_row in barang_rows:
+            row_nomor_aju = str(b_row.get("NOMOR AJU") or "").strip()
+            if row_nomor_aju and row_nomor_aju != nomor_aju: continue
+            
+            seri_barang = cint(b_row.get("SERI BARANG"))
+            if not seri_barang: continue
+            barang_rows_to_insert.append((seri_barang, b_row))
+
+        N_barang = len(barang_rows_to_insert)
+
+        # 2. Generate series names for BARANG V1 in-memory
+        barang_names_generated = []
+        if N_barang > 0:
+            prefix = "BRG-"
+            frappe.db.sql(
+                "insert into `tabSeries` (name, current) values (%s, %s) "
+                "on duplicate key update current = current + %s",
+                (prefix, N_barang, N_barang)
+            )
+            current = frappe.db.sql("select current from `tabSeries` where name = %s", prefix)[0][0]
+            start = current - N_barang + 1
+            barang_names_generated = [f"{prefix}{str(i).zfill(5)}" for i in range(start, current + 1)]
+
+        # 3. Construct records in memory
+        records_barang = []
+        records_b_tarif = []
+        records_b_dokumen = []
+        records_b_entitas = []
+        records_b_spek = []
+        records_b_vd = []
+
+        records_bahan = []
+        records_bb_tarif = []
+        records_bb_dokumen = []
+
+        from frappe.model.naming import make_autoname
+        now = datetime.now()
 
         BARANG_MAPPING = {
             "NOMOR AJU": "nomoraju", "SERI BARANG": "seri_barang", "HS": "hs",
@@ -1330,35 +1437,44 @@ def import_ceisa_excel_v2(file_data, dry_run=False):
             "JUMLAH DILEKATKAN": "jumlah_dilekatkan"
         }
 
-        for b_row in barang_rows:
-            row_nomor_aju = str(b_row.get("NOMOR AJU") or "").strip()
-            if row_nomor_aju and row_nomor_aju != nomor_aju: continue
-
-            seri_barang = cint(b_row.get("SERI BARANG"))
-            if not seri_barang: continue
-
-            existing_name = barang_map.get(seri_barang)
-            if existing_name:
-                b_doc = frappe.get_doc("BARANG V1", existing_name)
-            else:
-                b_doc = frappe.new_doc("BARANG V1")
-                b_doc.nomoraju = doc.name
-                b_doc.seri_barang = seri_barang
-
-            # Map & Dirty Check Barang fields
-            barang_dirty = False
+        # Build Barang and Bahan Baku records loop
+        for idx_b, (seri_barang, b_row) in enumerate(barang_rows_to_insert):
+            b_name = barang_names_generated[idx_b]
+            
+            # Map parent fields from Excel row
+            b_dict = {
+                "name": b_name,
+                "owner": frappe.session.user or "Administrator",
+                "creation": now,
+                "modified": now,
+                "modified_by": frappe.session.user or "Administrator",
+                "docstatus": 0,
+                "idx": idx_b + 1,
+                "nomoraju": doc.name
+            }
+            
             for excel_col, doc_field in BARANG_MAPPING.items():
                 if excel_col in b_row:
-                    new_val = clean_excel_val("BARANG V1", doc_field, b_row.get(excel_col))
-                    old_val = b_doc.get(doc_field)
-                    if str(new_val if new_val is not None else "") != str(old_val if old_val is not None else ""):
-                        b_doc.set(doc_field, new_val)
-                        barang_dirty = True
+                    b_dict[doc_field] = clean_excel_val("BARANG V1", doc_field, b_row.get(excel_col))
+            
+            b_dict["nomoraju"] = doc.name
+            records_barang.append(b_dict)
 
-            # Child Tables for BARANG
-            child_bt = []
-            for r in bt_by_seri.get(seri_barang, []):
-                child_bt.append({
+            # Child Tables for BARANG V1
+            
+            # Tarif
+            for idx_t, r in enumerate(bt_by_seri.get(seri_barang, [])):
+                t_dict = {
+                    "name": make_autoname('hash'),
+                    "owner": frappe.session.user or "Administrator",
+                    "creation": now,
+                    "modified": now,
+                    "modified_by": frappe.session.user or "Administrator",
+                    "docstatus": 0,
+                    "idx": idx_t + 1,
+                    "parent": b_name,
+                    "parentfield": "barang_tarif",
+                    "parenttype": "BARANG V1",
                     "seri_barang": seri_barang,
                     "kode_pungutan": clean_excel_val("BARANG TARIF", "kode_pungutan", r.get("KODE PUNGUTAN")),
                     "kode_tarif": clean_excel_val("BARANG TARIF", "kode_tarif", r.get("KODE TARIF")),
@@ -1372,155 +1488,216 @@ def import_ceisa_excel_v2(file_data, dry_run=False):
                     "kode_sub_komoditi_cukai": clean_excel_val("BARANG TARIF", "kode_sub_komoditi_cukai", r.get("KODE SUB KOMODITI CUKAI")),
                     "jumlah_satuan": clean_excel_val("BARANG TARIF", "jumlah_satuan", r.get("JUMLAH SATUAN")),
                     "kode_satuan": clean_excel_val("BARANG TARIF", "kode_satuan", r.get("KODE SATUAN"))
-                })
-            bt_fields = ["seri_barang", "kode_pungutan", "kode_tarif", "tarif", "kode_fasilitas", "tarif_fasilitas", "nilai_bayar", "nilai_fasilitas", "nilai_sudah_dilunasi", "kode_komoditi_cukai", "kode_sub_komoditi_cukai", "jumlah_satuan", "kode_satuan"]
-            if not are_child_tables_identical(child_bt, b_doc.barang_tarif, bt_fields):
-                b_doc.set("barang_tarif", child_bt)
-                barang_dirty = True
-
-            child_bd = []
-            for r in bd_by_seri.get(seri_barang, []):
-                child_bd.append({
+                }
+                records_b_tarif.append(t_dict)
+                
+            # Dokumen
+            for idx_d, r in enumerate(bd_by_seri.get(seri_barang, [])):
+                d_dict = {
+                    "name": make_autoname('hash'),
+                    "owner": frappe.session.user or "Administrator",
+                    "creation": now,
+                    "modified": now,
+                    "modified_by": frappe.session.user or "Administrator",
+                    "docstatus": 0,
+                    "idx": idx_d + 1,
+                    "parent": b_name,
+                    "parentfield": "barang_dokumen",
+                    "parenttype": "BARANG V1",
                     "seri_dokumen": clean_excel_val("BARANG DOKUMEN", "seri_dokumen", r.get("SERI DOKUMEN")),
                     "seri_izin": clean_excel_val("BARANG DOKUMEN", "seri_izin", r.get("SERI IZIN"))
-                })
-            bd_fields = ["seri_dokumen", "seri_izin"]
-            if not are_child_tables_identical(child_bd, b_doc.barang_dokumen, bd_fields):
-                b_doc.set("barang_dokumen", child_bd)
-                barang_dirty = True
-
-            child_be = []
-            for r in be_by_seri.get(seri_barang, []):
-                child_be.append({
+                }
+                records_b_dokumen.append(d_dict)
+                
+            # Pemilik (Entitas)
+            for idx_e, r in enumerate(be_by_seri.get(seri_barang, [])):
+                e_dict = {
+                    "name": make_autoname('hash'),
+                    "owner": frappe.session.user or "Administrator",
+                    "creation": now,
+                    "modified": now,
+                    "modified_by": frappe.session.user or "Administrator",
+                    "docstatus": 0,
+                    "idx": idx_e + 1,
+                    "parent": b_name,
+                    "parentfield": "barang_pemilik",
+                    "parenttype": "BARANG V1",
                     "seri_entitas": clean_excel_val("BARANG ENTITAS", "seri_entitas", r.get("SERI ENTITAS"))
-                })
-            be_fields = ["seri_entitas"]
-            if not are_child_tables_identical(child_be, b_doc.barang_pemilik, be_fields):
-                b_doc.set("barang_pemilik", child_be)
-                barang_dirty = True
-
-            child_sp = []
-            for r in bspe_by_seri.get(seri_barang, []):
-                child_sp.append({
+                }
+                records_b_entitas.append(e_dict)
+                
+            # Spek Khusus
+            for idx_sp, r in enumerate(bspe_by_seri.get(seri_barang, [])):
+                sp_dict = {
+                    "name": make_autoname('hash'),
+                    "owner": frappe.session.user or "Administrator",
+                    "creation": now,
+                    "modified": now,
+                    "modified_by": frappe.session.user or "Administrator",
+                    "docstatus": 0,
+                    "idx": idx_sp + 1,
+                    "parent": b_name,
+                    "parentfield": "barang_spek_khusus",
+                    "parenttype": "BARANG V1",
                     "kode": clean_excel_val("BARANG SPEK KHUSUS", "kode", r.get("KODE")),
                     "uraian": clean_excel_val("BARANG SPEK KHUSUS", "uraian", r.get("URAIAN"))
-                })
-            sp_fields = ["kode", "uraian"]
-            if not are_child_tables_identical(child_sp, b_doc.barang_spek_khusus, sp_fields):
-                b_doc.set("barang_spek_khusus", child_sp)
-                barang_dirty = True
-
-            child_vd = []
-            for r in bvd_by_seri.get(seri_barang, []):
-                child_vd.append({
+                }
+                records_b_spek.append(sp_dict)
+                
+            # VD
+            for idx_vd, r in enumerate(bvd_by_seri.get(seri_barang, [])):
+                vd_dict = {
+                    "name": make_autoname('hash'),
+                    "owner": frappe.session.user or "Administrator",
+                    "creation": now,
+                    "modified": now,
+                    "modified_by": frappe.session.user or "Administrator",
+                    "docstatus": 0,
+                    "idx": idx_vd + 1,
+                    "parent": b_name,
+                    "parentfield": "barang_vd",
+                    "parenttype": "BARANG V1",
                     "kode_jenis_vd": clean_excel_val("BARANG VD", "kode_jenis_vd", r.get("KODE VD")),
                     "nilai_barang": clean_excel_val("BARANG VD", "nilai_barang", r.get("NILAI BARANG")),
                     "biaya_tambahan": clean_excel_val("BARANG VD", "biaya_tambahan", r.get("BIAYA TAMBAHAN")),
                     "biaya_pengurang": clean_excel_val("BARANG VD", "biaya_pengurang", r.get("BIAYA PENGURANG")),
                     "jatuh_tempo": clean_excel_val("BARANG VD", "jatuh_tempo", r.get("JATUH TEMPO"))
-                })
-            vd_fields = ["kode_jenis_vd", "nilai_barang", "biaya_tambahan", "biaya_pengurang", "jatuh_tempo"]
-            if not are_child_tables_identical(child_vd, b_doc.barang_vd, vd_fields):
-                b_doc.set("barang_vd", child_vd)
-                barang_dirty = True
+                }
+                records_b_vd.append(vd_dict)
 
-            if barang_dirty or b_doc.is_new():
-                save_doc(b_doc)
-                audit_report["stats"]["saves_performed"] += 1
-            else:
-                audit_report["stats"]["saves_skipped"] += 1
-
-            audit_report["stats"]["BARANG V1"] += 1
-            audit_report["stats"]["BARANG TARIF"] += len(child_bt)
-            audit_report["stats"]["BARANG DOKUMEN"] += len(child_bd)
-            audit_report["stats"]["BARANG PEMILIK"] += len(child_be)
-            audit_report["stats"]["BARANG SPEK KHUSUS"] += len(child_sp)
-            audit_report["stats"]["BARANG VD"] += len(child_vd)
-
-            # --- BAHAN BAKU ---
-            for bb_row in bb_by_seri.get(seri_barang, []):
+            # BAHAN BAKU under this barang
+            for idx_bb, bb_row in enumerate(bb_by_seri.get(seri_barang, [])):
                 seri_bahan_baku = cint(bb_row.get("SERI BAHAN BAKU"))
                 if not seri_bahan_baku: continue
-
-                existing_bb_name = bahan_map.get((seri_barang, seri_bahan_baku))
-                if existing_bb_name:
-                    bb_doc = frappe.get_doc("BAHAN BAKU", existing_bb_name)
-                else:
-                    bb_doc = frappe.new_doc("BAHAN BAKU")
-                    bb_doc.nomoraju = nomor_aju
-                    bb_doc.seri_barang = seri_barang
-                    bb_doc.seri_bahan_baku = seri_bahan_baku
-                    bb_doc.parent_barang = b_doc.name
-
-                # Map & Dirty Check Bahan Baku fields
-                bahan_dirty = False
-                bb_mapping = {
-                    "hs": bb_row.get("HS"), "kode_barang": bb_row.get("KODE BARANG"), "uraian": bb_row.get("URAIAN"),
-                    "merek": bb_row.get("MEREK"), "tipe": bb_row.get("TIPE"), "ukuran": bb_row.get("UKURAN"),
-                    "spesifikasi_lain": bb_row.get("SPESIFIKASI LAIN"), "kode_satuan": bb_row.get("KODE SATUAN"),
-                    "jumlah_satuan": bb_row.get("JUMLAH SATUAN"), "kode_asal_bahan_baku": bb_row.get("KODE ASAL BAHAN BAKU"),
-                    "cif": bb_row.get("CIF"), "cif_rupiah": bb_row.get("CIF RUPIAH"),
-                    "harga_penyerahan": bb_row.get("HARGA PENYERAHAN"), "harga_perolehan": bb_row.get("HARGA PEROLEHAN"),
-                    "ndpbm": bb_row.get("NDPBM"), "netto": bb_row.get("NETTO"), "bruto": bb_row.get("BRUTO"),
-                    "volume": bb_row.get("VOLUME"), "kode_bkc": bb_row.get("KODE BKC"),
-                    "kode_komoditi_bkc": bb_row.get("KODE KOMODITI BKC"), "kode_sub_komoditi_bkc": bb_row.get("KODE SUB KOMODITI BKC"),
-                    "flag_tis": bb_row.get("FLAG TIS"), "isi_per_kemasan": bb_row.get("ISI PER KEMASAN"),
-                    "jumlah_dilekatkan": bb_row.get("JUMLAH DILEKATKAN"), "jumlah_pita_cukai": bb_row.get("JUMLAH PITA CUKAI"),
-                    "hje_cukai": bb_row.get("HJE CUKAI"), "tarif_cukai": bb_row.get("TARIF CUKAI"),
-                    "nomor_aju_asal": bb_row.get("NOMOR AJU ASAL"), "nomor_daftar_asal": bb_row.get("NOMOR DAFTAR ASAL"),
-                    "tanggal_daftar_asal": bb_row.get("TANGGAL DAFTAR ASAL"), "kode_dokumen_asal": bb_row.get("KODE DOKUMEN ASAL"),
-                    "kode_kantor_asal": bb_row.get("KODE KANTOR ASAL")
+                
+                bb_name = make_autoname('hash')
+                bb_dict = {
+                    "name": bb_name,
+                    "owner": frappe.session.user or "Administrator",
+                    "creation": now,
+                    "modified": now,
+                    "modified_by": frappe.session.user or "Administrator",
+                    "docstatus": 0,
+                    "idx": idx_bb + 1,
+                    "nomoraju": nomor_aju,
+                    "seri_barang": seri_barang,
+                    "seri_bahan_baku": seri_bahan_baku,
+                    "parent_barang": b_name,
+                    "hs": clean_excel_val("BAHAN BAKU", "hs", bb_row.get("HS")),
+                    "kode_barang": clean_excel_val("BAHAN BAKU", "kode_barang", bb_row.get("KODE BARANG")),
+                    "uraian": clean_excel_val("BAHAN BAKU", "uraian", bb_row.get("URAIAN")),
+                    "merek": clean_excel_val("BAHAN BAKU", "merek", bb_row.get("MEREK")),
+                    "tipe": clean_excel_val("BAHAN BAKU", "tipe", bb_row.get("TIPE")),
+                    "ukuran": clean_excel_val("BAHAN BAKU", "ukuran", bb_row.get("UKURAN")),
+                    "spesifikasi_lain": clean_excel_val("BAHAN BAKU", "spesifikasi_lain", bb_row.get("SPESIFIKASI LAIN")),
+                    "kode_satuan": clean_excel_val("BAHAN BAKU", "kode_satuan", bb_row.get("KODE SATUAN")),
+                    "jumlah_satuan": clean_excel_val("BAHAN BAKU", "jumlah_satuan", bb_row.get("JUMLAH SATUAN")),
+                    "kode_asal_bahan_baku": clean_excel_val("BAHAN BAKU", "kode_asal_bahan_baku", bb_row.get("KODE ASAL BAHAN BAKU")),
+                    "cif": clean_excel_val("BAHAN BAKU", "cif", bb_row.get("CIF")),
+                    "cif_rupiah": clean_excel_val("BAHAN BAKU", "cif_rupiah", bb_row.get("CIF RUPIAH")),
+                    "harga_penyerahan": clean_excel_val("BAHAN BAKU", "harga_penyerahan", bb_row.get("HARGA PENYERAHAN")),
+                    "harga_perolehan": clean_excel_val("BAHAN BAKU", "harga_perolehan", bb_row.get("HARGA PEROLEHAN")),
+                    "ndpbm": clean_excel_val("BAHAN BAKU", "ndpbm", bb_row.get("NDPBM")),
+                    "netto": clean_excel_val("BAHAN BAKU", "netto", bb_row.get("NETTO")),
+                    "bruto": clean_excel_val("BAHAN BAKU", "bruto", bb_row.get("BRUTO")),
+                    "volume": clean_excel_val("BAHAN BAKU", "volume", bb_row.get("VOLUME")),
+                    "kode_bkc": clean_excel_val("BAHAN BAKU", "kode_bkc", bb_row.get("KODE BKC")),
+                    "kode_komoditi_bkc": clean_excel_val("BAHAN BAKU", "kode_komoditi_bkc", bb_row.get("KODE KOMODITI BKC")),
+                    "kode_sub_komoditi_bkc": clean_excel_val("BAHAN BAKU", "kode_sub_komoditi_bkc", bb_row.get("KODE SUB KOMODITI BKC")),
+                    "flag_tis": clean_excel_val("BAHAN BAKU", "flag_tis", bb_row.get("FLAG TIS")),
+                    "isi_per_kemasan": clean_excel_val("BAHAN BAKU", "isi_per_kemasan", bb_row.get("ISI PER KEMASAN")),
+                    "jumlah_dilekatkan": clean_excel_val("BAHAN BAKU", "jumlah_dilekatkan", bb_row.get("JUMLAH DILEKATKAN")),
+                    "jumlah_pita_cukai": clean_excel_val("BAHAN BAKU", "jumlah_pita_cukai", bb_row.get("JUMLAH PITA CUKAI")),
+                    "hje_cukai": clean_excel_val("BAHAN BAKU", "hje_cukai", bb_row.get("HJE CUKAI")),
+                    "tarif_cukai": clean_excel_val("BAHAN BAKU", "tarif_cukai", bb_row.get("TARIF CUKAI")),
+                    "nomor_aju_asal": clean_excel_val("BAHAN BAKU", "nomor_aju_asal", bb_row.get("NOMOR AJU ASAL")),
+                    "nomor_daftar_asal": clean_excel_val("BAHAN BAKU", "nomor_daftar_asal", bb_row.get("NOMOR DAFTAR ASAL")),
+                    "tanggal_daftar_asal": clean_excel_val("BAHAN BAKU", "tanggal_daftar_asal", bb_row.get("TANGGAL DAFTAR ASAL")),
+                    "kode_dokumen_asal": clean_excel_val("BAHAN BAKU", "kode_dokumen_asal", bb_row.get("KODE DOKUMEN ASAL")),
+                    "kode_kantor_asal": clean_excel_val("BAHAN BAKU", "kode_kantor_asal", bb_row.get("KODE KANTOR ASAL"))
                 }
-                for fieldname, val in bb_mapping.items():
-                    cleaned_val = clean_excel_val("BAHAN BAKU", fieldname, val)
-                    old_val = bb_doc.get(fieldname)
-                    if str(cleaned_val if cleaned_val is not None else "") != str(old_val if old_val is not None else ""):
-                        bb_doc.set(fieldname, cleaned_val)
-                        bahan_dirty = True
+                records_bahan.append(bb_dict)
 
                 # Children of Bahan Baku
                 key = (seri_barang, seri_bahan_baku)
                 
-                child_bbt = []
-                for r in bbt_by_key.get(key, []):
-                    child_bbt.append({
-                        "kode_pungutan": clean_excel_val("BAHAN BAKU TARIF", "kode_pungutan", r.get("KODE PUNGUTAN")),
-                        "kode_tarif": clean_excel_val("BAHAN BAKU TARIF", "kode_tarif", r.get("KODE TARIF")),
-                        "tarif": clean_excel_val("BAHAN BAKU TARIF", "tarif", r.get("TARIF")),
-                        "kode_fasilitas": clean_excel_val("BAHAN BAKU TARIF", "kode_fasilitas", r.get("KODE FASILITAS")),
-                        "tarif_fasilitas": clean_excel_val("BAHAN BAKU TARIF", "tarif_fasilitas", r.get("TARIF FASILITAS")),
-                        "nilai_bayar": clean_excel_val("BAHAN BAKU TARIF", "nilai_bayar", r.get("NILAI BAYAR")),
-                        "nilai_fasilitas": clean_excel_val("BAHAN BAKU TARIF", "nilai_fasilitas", r.get("NILAI FASILITAS")),
-                        "kode_asal_bahan_baku": clean_excel_val("BAHAN BAKU TARIF", "kode_asal_bahan_baku", r.get("KODE ASAL BAHAN BAKU")),
-                        "jumlah_satuan": clean_excel_val("BAHAN BAKU TARIF", "jumlah_satuan", r.get("JUMLAH SATUAN")),
-                        "kode_satuan": clean_excel_val("BAHAN BAKU TARIF", "kode_satuan", r.get("KODE SATUAN"))
-                    })
-                bbt_fields = ["kode_pungutan", "kode_tarif", "tarif", "kode_fasilitas", "tarif_fasilitas", "nilai_bayar", "nilai_fasilitas", "kode_asal_bahan_baku", "jumlah_satuan", "kode_satuan"]
-                if not are_child_tables_identical(child_bbt, bb_doc.bahan_tarif, bbt_fields):
-                    bb_doc.set("bahan_tarif", child_bbt)
-                    bahan_dirty = True
+                # BB Tarif
+                for idx_bbt, r_bbt in enumerate(bbt_by_key.get(key, [])):
+                    bbt_dict = {
+                        "name": make_autoname('hash'),
+                        "owner": frappe.session.user or "Administrator",
+                        "creation": now,
+                        "modified": now,
+                        "modified_by": frappe.session.user or "Administrator",
+                        "docstatus": 0,
+                        "idx": idx_bbt + 1,
+                        "parent": bb_name,
+                        "parentfield": "bahan_tarif",
+                        "parenttype": "BAHAN BAKU",
+                        "kode_pungutan": clean_excel_val("BAHAN BAKU TARIF", "kode_pungutan", r_bbt.get("KODE PUNGUTAN")),
+                        "kode_tarif": clean_excel_val("BAHAN BAKU TARIF", "kode_tarif", r_bbt.get("KODE TARIF")),
+                        "tarif": clean_excel_val("BAHAN BAKU TARIF", "tarif", r_bbt.get("TARIF")),
+                        "kode_fasilitas": clean_excel_val("BAHAN BAKU TARIF", "kode_fasilitas", r_bbt.get("KODE FASILITAS")),
+                        "tarif_fasilitas": clean_excel_val("BAHAN BAKU TARIF", "tarif_fasilitas", r_bbt.get("TARIF FASILITAS")),
+                        "nilai_bayar": clean_excel_val("BAHAN BAKU TARIF", "nilai_bayar", r_bbt.get("NILAI BAYAR")),
+                        "nilai_fasilitas": clean_excel_val("BAHAN BAKU TARIF", "nilai_fasilitas", r_bbt.get("NILAI FASILITAS")),
+                        "kode_asal_bahan_baku": clean_excel_val("BAHAN BAKU TARIF", "kode_asal_bahan_baku", r_bbt.get("KODE ASAL BAHAN BAKU")),
+                        "jumlah_satuan": clean_excel_val("BAHAN BAKU TARIF", "jumlah_satuan", r_bbt.get("JUMLAH SATUAN")),
+                        "kode_satuan": clean_excel_val("BAHAN BAKU TARIF", "kode_satuan", r_bbt.get("KODE SATUAN"))
+                    }
+                    records_bb_tarif.append(bbt_dict)
 
-                child_bbd = []
-                for r in bbd_by_key.get(key, []):
-                    child_bbd.append({
-                        "seri_dokumen": clean_excel_val("BAHAN BAKU DOKUMEN", "seri_dokumen", r.get("SERI DOKUMEN")),
-                        "seri_izin": clean_excel_val("BAHAN BAKU DOKUMEN", "seri_izin", r.get("SERI IZIN")),
-                        "kode_asal_bahan_baku": clean_excel_val("BAHAN BAKU DOKUMEN", "kode_asal_bahan_baku", r.get("KODE ASAL BAHAN BAKU"))
-                    })
-                bbd_fields = ["seri_dokumen", "seri_izin", "kode_asal_bahan_baku"]
-                if not are_child_tables_identical(child_bbd, bb_doc.bahan_baku_dokumen, bbd_fields):
-                    bb_doc.set("bahan_baku_dokumen", child_bbd)
-                    bahan_dirty = True
+                # BB Dokumen
+                for idx_bbd, r_bbd in enumerate(bbd_by_key.get(key, [])):
+                    bbd_dict = {
+                        "name": make_autoname('hash'),
+                        "owner": frappe.session.user or "Administrator",
+                        "creation": now,
+                        "modified": now,
+                        "modified_by": frappe.session.user or "Administrator",
+                        "docstatus": 0,
+                        "idx": idx_bbd + 1,
+                        "parent": bb_name,
+                        "parentfield": "bahan_baku_dokumen",
+                        "parenttype": "BAHAN BAKU",
+                        "seri_dokumen": clean_excel_val("BAHAN BAKU DOKUMEN", "seri_dokumen", r_bbd.get("SERI DOKUMEN")),
+                        "seri_izin": clean_excel_val("BAHAN BAKU DOKUMEN", "seri_izin", r_bbd.get("SERI IZIN")),
+                        "kode_asal_bahan_baku": clean_excel_val("BAHAN BAKU DOKUMEN", "kode_asal_bahan_baku", r_bbd.get("KODE ASAL BAHAN BAKU"))
+                    }
+                    records_bb_dokumen.append(bbd_dict)
 
-                if bahan_dirty or bb_doc.is_new():
-                    save_doc(bb_doc)
-                    audit_report["stats"]["saves_performed"] += 1
-                else:
-                    audit_report["stats"]["saves_skipped"] += 1
+        # 4. Perform bulk insert
+        def get_values_list(dt, doc_dict, fields_list):
+            return [get_clean_value(dt, f, doc_dict.get(f)) for f in fields_list]
 
-                audit_report["stats"]["BAHAN BAKU"] = audit_report["stats"].get("BAHAN BAKU", 0) + 1
-                audit_report["stats"]["BAHAN BAKU TARIF"] = audit_report["stats"].get("BAHAN BAKU TARIF", 0) + len(child_bbt)
-                audit_report["stats"]["BAHAN BAKU DOKUMEN"] = audit_report["stats"].get("BAHAN BAKU DOKUMEN", 0) + len(child_bbd)
+        def execute_bulk(dt, records, fields_list):
+            if not records: return
+            values = [get_values_list(dt, r, fields_list) for r in records]
+            frappe.db.bulk_insert(dt, fields_list, values)
+
+        execute_bulk("BARANG V1", records_barang, barang_fields)
+        execute_bulk("BARANG TARIF", records_b_tarif, b_tarif_fields)
+        execute_bulk("BARANG DOKUMEN", records_b_dokumen, b_dokumen_fields)
+        execute_bulk("BARANG ENTITAS", records_b_entitas, b_entitas_fields)
+        execute_bulk("BARANG SPEK KHUSUS", records_b_spek, b_spek_fields)
+        execute_bulk("BARANG VD", records_b_vd, b_vd_fields)
+
+        execute_bulk("BAHAN BAKU", records_bahan, bahan_fields)
+        execute_bulk("BAHAN BAKU TARIF", records_bb_tarif, bb_tarif_fields)
+        execute_bulk("BAHAN BAKU DOKUMEN", records_bb_dokumen, bb_dokumen_fields)
+
+        audit_report["stats"]["BARANG V1"] = len(records_barang)
+        audit_report["stats"]["BARANG TARIF"] = len(records_b_tarif)
+        audit_report["stats"]["BARANG DOKUMEN"] = len(records_b_dokumen)
+        audit_report["stats"]["BARANG PEMILIK"] = len(records_b_entitas)
+        audit_report["stats"]["BARANG SPEK KHUSUS"] = len(records_b_spek)
+        audit_report["stats"]["BARANG VD"] = len(records_b_vd)
+        
+        audit_report["stats"]["BAHAN BAKU"] = len(records_bahan)
+        audit_report["stats"]["BAHAN BAKU TARIF"] = len(records_bb_tarif)
+        audit_report["stats"]["BAHAN BAKU DOKUMEN"] = len(records_bb_dokumen)
+        audit_report["stats"]["saves_performed"] = 1
+        audit_report["stats"]["saves_skipped"] = 0
 
         message = f"<b>Successfully processed {nomor_aju} (V2 Optimized)</b>"
         if audit_report["stats"]:

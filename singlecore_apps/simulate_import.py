@@ -3,7 +3,7 @@ import sys
 import os
 import base64
 import openpyxl
-from singlecore_apps.api.ceisa_import import import_ceisa_excel
+from singlecore_apps.api.ceisa_import import import_ceisa_excel_v2
 
 FILE_PATH = "/home/acer25/frappe-bench/base erp xls/00002372017220250925000113.xlsx"
 
@@ -64,8 +64,8 @@ def run_simulation():
             print(f"  {k}: {v}")
 
         # 3. Run Import
-        print("\n>>> Running import_ceisa_excel()...")
-        result = import_ceisa_excel(file_data)
+        print("\n>>> Running import_ceisa_excel_v2()...")
+        result = import_ceisa_excel_v2(file_data)
         
         if result.get("status") == "error":
             print(f"\n[FAIL] Import returned error: {result.get('message')}")
@@ -80,7 +80,7 @@ def run_simulation():
             print(f"\n>>> Verifying Database Records for {nomor_aju}...")
             
             # Check Header
-            hdr = frappe.get_doc("HEADER V21", nomor_aju)
+            hdr = frappe.get_doc("HEADER V21", {"nomoraju": nomor_aju})
             print(f"  HEADER V21 found: {hdr.name}")
             
             # Check Child Tables
@@ -90,7 +90,7 @@ def run_simulation():
                 "DOKUMEN": len(hdr.dokumen),
                 "PENGANGKUT": len(hdr.pengangkut),
                 # Barang is separate
-                "BARANG": frappe.db.count("BARANG V1", {"nomoraju": nomor_aju})
+                "BARANG": frappe.db.count("BARANG V1", {"nomoraju": hdr.name})
             }
             
             print("\n[Comparison] Excel vs Database:")
