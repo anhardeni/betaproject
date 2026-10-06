@@ -129,6 +129,7 @@
   "kontainer",
   "data_6_tab",
   "bank_devisa",
+  "komponen_biaya",
   "data_7_tab",
   "kesiapan_barang"
  ],
@@ -762,6 +763,12 @@
    "fieldtype": "Table",
    "label": "BANK DEVISA",
    "options": "BANK DEVISA"
+  },
+  {
+   "fieldname": "komponen_biaya",
+   "fieldtype": "Table",
+   "label": "KOMPONEN BIAYA",
+   "options": "KOMPONEN BIAYA"
   },
   {
    "fieldname": "kesiapan_barang",
