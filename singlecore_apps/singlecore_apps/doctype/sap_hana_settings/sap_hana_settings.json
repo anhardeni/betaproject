@@ -1,0 +1,182 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-10-12 15:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "connection_settings_section",
+  "connection_mode",
+  "sap_client",
+  "column_break_conn",
+  "enabled",
+  "verify_ssl",
+  "auto_create_master",
+  "endpoint_section",
+  "base_url",
+  "pemasukan_endpoint",
+  "pengeluaran_endpoint",
+  "credentials_section",
+  "auth_type",
+  "user",
+  "column_break_cred",
+  "password",
+  "api_token",
+  "sync_settings_section",
+  "auto_sync",
+  "column_break_sync",
+  "last_sync",
+  "last_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "connection_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Mode Penarikan Data (Pull Configuration)"
+  },
+  {
+   "default": "OData / REST API Pull (Recommended)",
+   "fieldname": "connection_mode",
+   "fieldtype": "Select",
+   "label": "Metode Koneksi",
+   "options": "OData / REST API Pull (Recommended)\nSimulation (Demo)",
+   "reqd": 1
+  },
+  {
+   "default": "100",
+   "description": "Kode Client SAP (MANDT), contoh: 100, 200, 300, atau 800",
+   "fieldname": "sap_client",
+   "fieldtype": "Data",
+   "label": "SAP Client (sap-client)"
+  },
+  {
+   "fieldname": "column_break_conn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Aktifkan Integrasi SAP HANA"
+  },
+  {
+   "default": "0",
+   "description": "Matikan (uncheck) jika server SAP internal menggunakan sertifikat SSL Self-Signed",
+   "fieldname": "verify_ssl",
+   "fieldtype": "Check",
+   "label": "Verifikasi Sertifikat SSL Ketat"
+  },
+  {
+   "default": "1",
+   "description": "Otomatis buat UOM, Item, Batch, atau Supplier baru di ERPNext jika belum terdaftar agar sinkronisasi tidak ditolak",
+   "fieldname": "auto_create_master",
+   "fieldtype": "Check",
+   "label": "Auto-Create Master Data (UOM, Item, Batch)"
+  },
+  {
+   "fieldname": "endpoint_section",
+   "fieldtype": "Section Break",
+   "label": "Endpoint URL Penarikan Data SAP (OData / REST)"
+  },
+  {
+   "default": "https://saphana.perusahaan.com:44300",
+   "description": "URL dasar server SAP Gateway / S4HANA (tanpa garis miring di akhir)",
+   "fieldname": "base_url",
+   "fieldtype": "Data",
+   "label": "SAP Base URL",
+   "reqd": 1
+  },
+  {
+   "default": "/sap/opu/odata/sap/API_MATERIAL_DOCUMENT_SRV/A_MaterialDocumentItem",
+   "description": "Endpoint OData untuk menarik data Pemasukan Barang (MIGO 101, 103, 501)",
+   "fieldname": "pemasukan_endpoint",
+   "fieldtype": "Data",
+   "label": "Endpoint Pemasukan (Material Doc)"
+  },
+  {
+   "default": "/sap/opu/odata/sap/API_MATERIAL_DOCUMENT_SRV/A_MaterialDocumentItem",
+   "description": "Endpoint OData untuk menarik data Pengeluaran Barang / Delivery (601, 261, 311)",
+   "fieldname": "pengeluaran_endpoint",
+   "fieldtype": "Data",
+   "label": "Endpoint Pengeluaran (Delivery / GI)"
+  },
+  {
+   "fieldname": "credentials_section",
+   "fieldtype": "Section Break",
+   "label": "Autentikasi API SAP"
+  },
+  {
+   "default": "Basic Auth (Username & Password)",
+   "fieldname": "auth_type",
+   "fieldtype": "Select",
+   "label": "Tipe Autentikasi",
+   "options": "Basic Auth (Username & Password)\nBearer Token / API Key"
+  },
+  {
+   "default": "SAP_API_USER",
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "SAP Username"
+  },
+  {
+   "fieldname": "column_break_cred",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "SAP Password"
+  },
+  {
+   "depends_on": "eval:doc.auth_type=='Bearer Token / API Key'",
+   "fieldname": "api_token",
+   "fieldtype": "Password",
+   "label": "API Key / Bearer Token"
+  },
+  {
+   "fieldname": "sync_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Status & Penjadwalan Sinkronisasi"
+  },
+  {
+   "default": "1",
+   "fieldname": "auto_sync",
+   "fieldtype": "Check",
+   "label": "Auto-Pull Terjadwal (Tiap Jam)"
+  },
+  {
+   "fieldname": "column_break_sync",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_sync",
+   "fieldtype": "Datetime",
+   "label": "Terakhir Sinkronisasi",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_status",
+   "fieldtype": "Data",
+   "label": "Status Terakhir",
+   "read_only": 1
+  }
+ ],
+ "issingle": 1,
+ "module": "Singlecore Apps",
+ "name": "SAP HANA Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

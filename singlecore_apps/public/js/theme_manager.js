@@ -1,4 +1,14 @@
-/* Theme Manager for Singlecore Apps */
+/* Theme Manager & Global Compatibility for Singlecore Apps */
+
+// Polyfill: Mengembalikan frappe.ready di Frappe v15 Desk agar kompatibel
+// dengan seluruh script lama tanpa perlu mengubah script satu per satu
+if (typeof frappe !== 'undefined' && !frappe.ready) {
+    frappe.ready = function (fn) {
+        if (typeof fn === 'function') {
+            $(document).ready(fn);
+        }
+    };
+}
 
 frappe.provide('singlecore_apps.theme');
 

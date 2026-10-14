@@ -39,10 +39,9 @@ doctype_js = {
     # HEADER V21 - both integrations
     "HEADER V21": ["public/js/erpnext_integration.js", "public/js/erpnext_export_integration.js"],
     # Customs Status Log - Pull Now button & status badge
-    "Customs Status Log": "public/js/customs_status_log.js", 
-    "Role": "public/js/custom_role.js"
+    "Customs Status Log": "public/js/customs_status_log.js"
 }
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -126,19 +125,11 @@ doctype_js = {
 # ---------------
 
 scheduler_events = {
-	#"hourly": [
-    "hourly_long": [
+	"hourly": [
 		"singlecore_apps.singlecore_apps.doctype.customs_status_log.customs_status_log.update_all_active_status",
-        "singlecore_apps.api.ceisa_api.external_sync.smart_ceisa_polling"
+        "singlecore_apps.api.ceisa_api.external_sync.smart_ceisa_polling",
+        "singlecore_apps.utils.sync_engine_direct.trigger_direct_sync"
 	],
-    "daily": [
-        # Fase 2: Early Warning System - Subkontrak Deadline Monitor
-        # Kirim email alert H-14, H-7, H-3, H-0 & Expired untuk BC 261
-        "singlecore_apps.api.subcontract_monitor.check_subcontract_deadlines",
-    ],
-    "weekly": [
-        "singlecore_apps.api.ceisa_api.kurs_scheduler.fetch_and_update_ceisa_kurs"
-    ]
 }
 
 # Testing
@@ -213,23 +204,7 @@ scheduler_events = {
 fixtures = [
     {"dt": "Custom Field", "filters": [["module", "=", "Singlecore Apps"]]},
     {"dt": "Workspace", "filters": [["module", "=", "Singlecore Apps"]]},
-    {"dt": "Role", "filters": [["is_custom", "=", 1]]},
-    "Referensi Asal Barang",
-    "Referensi Asal Barang FTZ",
-    "Referensi Bank",
-    "Referensi Cara Angkut",
-    "Referensi Cara Bayar",
-    "Referensi Cara Dagang",
-    "Referensi Catatan Petugas",
-    "Referensi Catatan Petugas1",
-    "Referensi Daerah Asal",
-    "Referensi Dokumen",
-    "Referensi Entitas",
-    "Referensi Fasilitas",
-    "Referensi Fasilitas Tarif",
-    "Referensi Fasilitas Tarif Baru",
     "Referensi Gudang",
-    "Referensi HS 2022 v1",
     "Referensi Ijin",
     "Referensi Incoterm",
     "Referensi Jenis API",
@@ -239,11 +214,11 @@ fixtures = [
     "Referensi Jenis Jaminan",
     "Referensi Jenis Kemasan",
     "Referensi Jenis Kontainer",
-    "Referensi Jenis Pengangkutan",
+    "Referensi Layanan Fix",
     "Referensi Jenis Pib",
     "Referensi Jenis Pungutan",
-    "Referensi Jenis Tarif",
     "Referensi Jenis TPB",
+    "Referensi Jenis Tarif",
     "Referensi Jenis Transaksi Perdagangan",
     "Referensi Jenis VD",
     "Referensi Kantor",
@@ -251,24 +226,17 @@ fixtures = [
     "Referensi Kategori Barang",
     "Referensi Kategori Ekspor",
     "Referensi Kategori Keluar FTZ",
-    "Referensi Kategori Konsolidator",
-    "Komponen Biaya",
     "Referensi Komoditi Cukai",
     "Referensi Kondisi Barang",
-    "Referensi Layanan",
-    "Referensi Layanan Fix",
     "Referensi Lokasi Bayar",
     "Referensi Negara",
     "Referensi Pelabuhan Dalam Negeri",
     "Referensi Pelabuhan Luar Negeri",
     "Referensi Putusan Petugas",
-    #"Referensi Respon",
-    "Referensi Respon1",
+    "Referensi Respon",
     "Referensi Satuan Barang",
     "Referensi Spesifikasi Khusus",
-    "Referensi Spesifikasi Khusus Detail",
-    #"Referensi Status",
-    "Referensi Status1",
+    "Referensi Status",
     "Referensi Status Pengusaha",
     "Referensi Tipe Kontainer",
     "Referensi Tujuan Pemasukan",
@@ -276,9 +244,9 @@ fixtures = [
     "Referensi Tujuan Pengiriman",
     "Referensi Tutup Pu",
     "Referensi Ukuran Kontainer",
-    "Referensi Valuta",
-    "Subcontract Reconciliation",
-    "Subcontract Reconciliation Item"
+    "Referensi Valuta"
 ]
 
-import singlecore_apps.mcp
+# CATATAN: import singlecore_apps.mcp dipindah ke after_app_install hook
+# agar tidak menyebabkan circular import saat Frappe load hooks.py
+# import singlecore_apps.mcp  # <-- JANGAN diaktifkan di sini

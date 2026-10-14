@@ -1,0 +1,48 @@
+{
+  "integration_mode": "DIRECT_SAP_HANA_TO_ERPNEXT",
+  "sap_hana_tables": {
+    "header_movement": "MKPF",
+    "item_movement": "MSEG",
+    "customs_header": "ZPBEK_HEADER"
+  },
+  "direct_field_mappings": {
+    "Purchase Receipt": {
+      "sap_filters": {
+        "movement_types": ["101", "103", "501"]
+      },
+      "fields": {
+        "MBLNR": "custom_sap_doc_num",
+        "MJAHR": "custom_sap_doc_year",
+        "ZEILE": "custom_sap_item_num",
+        "BUDAT": "posting_date",
+        "MATNR": "item_code",
+        "MAKTX": "item_name",
+        "MENGE": "qty",
+        "MEINS": "uom",
+        "CHARG": "batch_no",
+        "ZPPKEK_TYPE": ["custom_jenis_dok_ppkek", "jenis_ppkek", "custom_jenis_dok_bc"],
+        "ZPPKEK_NO": ["custom_no_ppkek", "no_ppkek", "custom_no_daftar_bc"],
+        "ZPPKEK_DATE": ["custom_tgl_ppkek", "tgl_ppkek", "custom_tgl_daftar_bc"]
+      }
+    },
+    "Delivery Note": {
+      "sap_filters": {
+        "movement_types": ["261", "311", "601"]
+      },
+      "fields": {
+        "MBLNR": "custom_sap_doc_num",
+        "MJAHR": "custom_sap_doc_year",
+        "ZEILE": "custom_sap_item_num",
+        "BUDAT": "posting_date",
+        "MATNR": "item_code",
+        "MAKTX": "item_name",
+        "MENGE": "qty",
+        "MEINS": "uom",
+        "CHARG": "batch_no",
+        "ZPPKEK_TYPE": ["custom_jenis_dok_ppkek", "jenis_ppkek", "custom_jenis_dok_bc"],
+        "ZPPKEK_NO": ["custom_no_ppkek", "no_ppkek", "custom_no_daftar_bc"],
+        "ZPPKEK_DATE": ["custom_tgl_ppkek", "tgl_ppkek", "custom_tgl_daftar_bc"]
+      }
+    }
+  }
+}

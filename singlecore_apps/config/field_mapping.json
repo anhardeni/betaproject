@@ -1,0 +1,22 @@
+{
+  "Purchase Receipt": {
+    "jenis_dok": ["custom_jenis_dok_ppkek", "jenis_ppkek", "custom_jenis_dok_bc", "jenis_dok_bc"],
+    "no_daftar": ["custom_no_ppkek", "no_ppkek", "custom_no_daftar_bc", "no_daftar_bc"],
+    "tgl_daftar": ["custom_tgl_ppkek", "tgl_ppkek", "custom_tgl_daftar_bc", "tgl_daftar_bc"]
+  },
+  "Delivery Note": {
+    "jenis_dok": ["custom_jenis_dok_ppkek", "jenis_ppkek", "custom_jenis_dok_bc", "jenis_dok_bc"],
+    "no_daftar": ["custom_no_ppkek", "no_ppkek", "custom_no_daftar_bc", "no_daftar_bc"],
+    "tgl_daftar": ["custom_tgl_ppkek", "tgl_ppkek", "custom_tgl_daftar_bc", "tgl_daftar_bc"]
+  },
+  "Stock Entry": {
+    "jenis_dok": ["custom_jenis_dok_ppkek", "jenis_ppkek", "custom_jenis_dok_bc", "jenis_dok_bc"],
+    "no_daftar": ["custom_no_ppkek", "no_ppkek", "custom_no_daftar_bc", "no_daftar_bc"],
+    "tgl_daftar": ["custom_tgl_ppkek", "tgl_ppkek", "custom_tgl_daftar_bc", "tgl_daftar_bc"]
+  },
+  "Purchase Order": {
+    "jenis_dok": ["custom_jenis_dok_ppkek", "jenis_ppkek", "custom_jenis_dok_bc", "jenis_dok_bc"],
+    "no_daftar": ["custom_no_ppkek", "no_ppkek", "custom_no_daftar_bc", "no_daftar_bc"],
+    "tgl_daftar": ["custom_tgl_ppkek", "tgl_ppkek", "custom_tgl_daftar_bc", "tgl_daftar_bc"]
+  }
+}
